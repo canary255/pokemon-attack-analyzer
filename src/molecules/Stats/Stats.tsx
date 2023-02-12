@@ -1,3 +1,4 @@
+import { Label } from "../../atom/Label/Label";
 import { SelectorUI } from "../../atom/Selector/Selector";
 import { TextField } from "../../atom/Textfield/TextField";
 import { heightSize, widthSize } from "../../utils/consts";
@@ -15,9 +16,9 @@ const Layer = () => {
   return (
     <>
       <div></div>
-      <p>Base</p>
-      <p>IV</p>
-      <p>EV</p>
+      <Label>Base</Label>
+      <Label>IV</Label>
+      <Label>EV</Label>
       <div></div>
       <div></div>
     </>
@@ -36,12 +37,8 @@ const FieldStats = ({
   const inputHeightSize = "XS";
   return (
     <>
-      <p>{categoryName}</p>
-      <TextField
-        name={baseName}
-        width={inputWidthSize}
-        height={inputHeightSize}
-      />
+      <Label>{categoryName}</Label>
+      <Label>170</Label>
       <TextField
         name={ivName}
         width={inputWidthSize}

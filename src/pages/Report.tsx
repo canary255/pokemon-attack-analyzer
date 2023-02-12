@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { FormProvider } from "react-hook-form";
 import { Button } from "../atom/Button/Button";
 import { Attacker } from "../organisms/Attacker/Attacker";
+import { reportInitialState } from "../schema/schema";
 
 type ReportProps = {
   name: string;
@@ -10,7 +11,7 @@ type ReportProps = {
   item: string;
   move: string;
   category: string;
-  crit: string;
+  crit: boolean;
   baseAtk: string;
   boostAtk: string;
   evAtk: string;
@@ -22,7 +23,9 @@ type ReportProps = {
 };
 
 export const Report = () => {
-  const methods = useForm<ReportProps>();
+  const methods = useForm<ReportProps>({
+    defaultValues: reportInitialState,
+  });
   const onSubmit = (data: ReportProps) => console.log(data);
 
   return (
@@ -32,9 +35,7 @@ export const Report = () => {
           <div className="bg-gray-100 border-r border-black">
             <Attacker />
           </div>
-          <div className="bg-blue-500 h-[91.5vh] border-r border-black">
-            Sexo
-          </div>
+          <div className="bg-blue-500 h-[91.5vh] border-r border-black">A</div>
           <div className="bg-green-500 h-[91.5vh] xl:col-span-1 md:col-span-2">
             <Button
               name="upload"

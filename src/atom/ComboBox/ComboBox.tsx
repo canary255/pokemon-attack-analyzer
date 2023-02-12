@@ -1,6 +1,6 @@
 import { Combobox } from "@headlessui/react";
 import { useState } from "react";
-import { useFormContext } from "react-hook-form";
+import { Controller, useFormContext } from "react-hook-form";
 import { SizeProps } from "../../types/size";
 import { heightSize, widthSize } from "../../utils/consts";
 import { isSmall } from "../../utils/isSmall";
@@ -33,8 +33,7 @@ export const ComboBoxUI = ({
   label,
 }: ComboBoxProps) => {
   const [query, setQuery] = useState("");
-  const { setValue, getValues } = useFormContext();
-  const value = getValues(name);
+  const { control } = useFormContext();
 
   const filteredPeople =
     query === ""
@@ -50,58 +49,62 @@ export const ComboBoxUI = ({
   };
 
   return (
-    <>
-      <div className="flex flex-col">
-        {label ? <p className="mb-1">{label}</p> : null}
-        <Combobox
-          name={name}
-          value={value ?? ""}
-          onChange={(e: string) => {
-            setValue(name, e);
-          }}
-        >
-          <Combobox.Input
-            className={`${
-              centerText ? "text-center" : ""
-            } py-2 pl-5 pr-4 border border-black ${widthSize[width]}
+    <Controller
+      name={name}
+      control={control}
+      defaultValue={people[0].name}
+      render={({ field }) => (
+        <div className="flex flex-col">
+          {label ? <p className="mb-1">{label}</p> : null}
+          <Combobox
+            defaultValue={field.value}
+            onChange={field.onChange}
+            refName={field.name}
+          >
+            <Combobox.Input
+              className={`${
+                centerText ? "text-center" : ""
+              } py-2 pl-5 pr-4 border border-black ${widthSize[width]}
             ${isSmall(width) ? "pl-1 pr-0" : "pl-5"}
              ${heightSize[height]} ${className}`}
-            onChange={(event) => setQuery(event.target.value)}
-          />
-          <Combobox.Options
-            className={`rounded-md border absolute mt-[69px] ${widthSize[width]} border-black overflow-auto max-h-60 mt-1`}
-          >
-            {filteredPeople.length > 0 ? (
-              filteredPeople.map((person, index) => (
-                <Combobox.Option
-                  key={index}
-                  value={person.name}
-                  className={({ active, selected }) =>
-                    `cursor-default select-none py-2 
+              onChange={(event) => setQuery(event.target.value)}
+            />
+            <Combobox.Options
+              className={`rounded-md border absolute mt-[69px] ${widthSize[width]} border-black overflow-auto max-h-60`}
+            >
+              {filteredPeople.length > 0 ? (
+                filteredPeople.map((person, index) => (
+                  <Combobox.Option
+                    key={index}
+                    value={person.name}
+                    className={({
+                      active,
+                      selected,
+                    }) => `cursor-default select-none py-2 
                   pl-5 pr-4 
                   ${isSmall(width) ? "pl-1 pr-0" : "pl-5"}
-                  ${selectedOrActiveStyles(selected, active)}`
-                  }
-                >
-                  {({ selected }) => (
-                    <span
-                      className={`block truncate ${
-                        selected ? "font-medium " : "font-normal"
-                      }`}
-                    >
-                      {person.name}
-                    </span>
-                  )}
-                </Combobox.Option>
-              ))
-            ) : (
-              <span className="block bg-white truncate select-none py-2 pl-5 pr-4">
-                Results not found
-              </span>
-            )}
-          </Combobox.Options>
-        </Combobox>
-      </div>
-    </>
+                  ${selectedOrActiveStyles(selected, active)}`}
+                  >
+                    {({ selected }) => (
+                      <span
+                        className={`block truncate ${
+                          selected ? "font-medium " : "font-normal"
+                        }`}
+                      >
+                        {person.name}
+                      </span>
+                    )}
+                  </Combobox.Option>
+                ))
+              ) : (
+                <span className="block bg-white truncate select-none py-2 pl-5 pr-4">
+                  Results not found
+                </span>
+              )}
+            </Combobox.Options>
+          </Combobox>
+        </div>
+      )}
+    />
   );
 };

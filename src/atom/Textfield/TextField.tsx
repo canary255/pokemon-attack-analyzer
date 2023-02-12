@@ -32,11 +32,11 @@ export const TextField = ({
       {label ? <p className="mb-1">{label}</p> : null}
       <input
         {...register(name)}
-        className={`border py-2 pl-5 pr-4 border-black 
-          ${isSmall(width) ? "pl-1 pr-0" : "pl-5"}
-         ${centerText ? "text-center" : ""} ${widthSize[width]} ${
-          heightSize[height]
-        } ${className}`}
+        className={`border py-2 pl-5 pr-4 mt-[-4px] border-black 
+         ${isSmall(width) ? "pl-1 pr-0" : "pl-5"}
+         ${readonly ? "bg-gray-100" : "bg-white"}
+         ${centerText ? "text-center" : ""} ${widthSize[width]}
+         ${heightSize[height]} ${className}`}
         type={type}
         name={name}
         onChange={onChange}

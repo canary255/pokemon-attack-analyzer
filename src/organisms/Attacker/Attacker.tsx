@@ -2,6 +2,7 @@ import { Avatar } from "../../atom/Avatar/Avatar";
 import { Button } from "../../atom/Button/Button";
 import { ComboBoxUI } from "../../atom/ComboBox/ComboBox";
 import { SelectorUI } from "../../atom/Selector/Selector";
+import { SwitchUI } from "../../atom/Switch/Switch";
 import { Stats } from "../../molecules/Stats/Stats";
 
 export const Attacker = () => {
@@ -22,7 +23,7 @@ export const Attacker = () => {
             <ComboBoxUI name="move" width="L" label="Select a Move" />
             <SelectorUI width="XS" name="category" label="Category" />
           </div>
-          <Button
+          <SwitchUI
             circleBorder="all"
             label="Crit"
             className="mt-7 w-[48px] h-[48px]"
@@ -48,7 +49,7 @@ export const Attacker = () => {
               circleBorder="right"
               label="Tera"
               className="mt-6 w-20"
-              name="crit"
+              name="tera"
             />
           </div>
         </div>
