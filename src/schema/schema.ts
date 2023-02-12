@@ -2,6 +2,7 @@ export const reportInitialState = {
   name: "",
   teraType: "",
   ability: "",
+  nature: "",
   item: "",
   move: "",
   category: "",
@@ -14,4 +15,5 @@ export const reportInitialState = {
   boostSpa: "",
   evSpa: "",
   ivSpa: "",
+  target: "",
 };

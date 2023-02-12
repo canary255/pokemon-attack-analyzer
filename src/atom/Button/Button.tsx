@@ -20,7 +20,7 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      className={`${className} ${borderDirection[circleBorder]} border border-black bg-[#5C6AC4] text-white`}
+      className={`${className} ${borderDirection[circleBorder]} border border-black bg-primary text-white`}
       name={name}
       type={type}
       onClick={onClick}

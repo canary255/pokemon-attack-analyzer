@@ -28,7 +28,7 @@ export const SwitchUI = ({
           className={`items-center
           ${className}
       ${borderDirection[circleBorder]} 
-      ${field.value ? "bg-[#5C6AC4]" : "bg-gray-200"}`}
+      ${field.value ? "bg-primary" : "bg-gray-200"}`}
         >
           <span
             className={`transition ${

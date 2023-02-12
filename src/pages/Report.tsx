@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FormProvider } from "react-hook-form";
 import { Button } from "../atom/Button/Button";
+import { RadioGroupUI } from "../atom/RadioGroup/RadioGroup";
 import { Attacker } from "../organisms/Attacker/Attacker";
 import { reportInitialState } from "../schema/schema";
 
@@ -8,6 +10,7 @@ type ReportProps = {
   name: string;
   teraType: string;
   ability: string;
+  nature: string;
   item: string;
   move: string;
   category: string;
@@ -20,13 +23,15 @@ type ReportProps = {
   boostSpa: string;
   evSpa: string;
   ivSpa: string;
+  target: string;
 };
 
 export const Report = () => {
   const methods = useForm<ReportProps>({
     defaultValues: reportInitialState,
   });
-  const onSubmit = (data: ReportProps) => console.log(data);
+  const [dataForm, setDataForm] = useState<ReportProps>();
+  const onSubmit = (data: ReportProps) => setDataForm(data);
 
   return (
     <FormProvider {...methods}>
@@ -35,8 +40,10 @@ export const Report = () => {
           <div className="bg-gray-100 border-r border-black">
             <Attacker />
           </div>
-          <div className="bg-blue-500 h-[91.5vh] border-r border-black">A</div>
-          <div className="bg-green-500 h-[91.5vh] xl:col-span-1 md:col-span-2">
+          <div className="bg-blue-500 h-[91.5vh] border-r border-black">
+            <RadioGroupUI name="target" />
+          </div>
+          <div className="bg-green-500 h-[91.5vh] xl:col-span-1 md:col-span-2 flex flex-col">
             <Button
               name="upload"
               type="submit"
@@ -44,6 +51,7 @@ export const Report = () => {
               className="w-64 h-36"
               label="SUBMIT"
             />
+            {dataForm ? JSON.stringify(dataForm, null, "\t") : null}
           </div>
         </div>
       </form>
