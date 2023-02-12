@@ -15,7 +15,7 @@ interface RadioGroupProps {
   }[];
 }
 
-const options = [
+const optionsExample = [
   {
     name: "Single",
     value: "single",
@@ -32,37 +32,47 @@ const setBorderDirection = (index: number, length: number) => {
   return "none";
 };
 
-export const RadioGroupUI = ({ name }: RadioGroupProps) => {
-  let [plan, setPlan] = useState(options[0].value);
+export const RadioGroupUI = ({
+  name,
+  label,
+  className,
+  options,
+}: RadioGroupProps) => {
   const { control } = useFormContext();
 
   return (
     <Controller
       name={name}
       control={control}
-      defaultValue={options[0].value}
+      defaultValue={optionsExample[0].value}
       render={({ field }) => (
         <>
-          <Label>Plan</Label>
+          {label && <Label>{label}</Label>}
           <RadioGroup
             defaultValue={field.value}
             onChange={field.onChange}
             className="flex flex-row"
           >
-            {options.map((option, index) => (
+            {optionsExample.map((option, index) => (
               <RadioGroup.Option
                 key={option.value}
                 value={option.value}
                 className={({ checked }) =>
                   `h-10 p-3 flex items-center justify-center border cursor-pointer border-black col-span-1
-            ${borderDirection[setBorderDirection(index, options.length)]}
-             ${checked ? "bg-primary text-white" : "bg-white text-black"}`
+            ${borderDirection[setBorderDirection(index, optionsExample.length)]}
+             ${
+               checked ? "bg-primary text-white" : "bg-white text-black"
+             } ${className}`
                 }
               >
                 {({ checked }) => (
                   <span
                     className={`
-              ${borderDirection[setBorderDirection(index, options.length)]}
+              ${
+                borderDirection[
+                  setBorderDirection(index, optionsExample.length)
+                ]
+              }
                 ${
                   checked ? "bg-primary text-white font-medium" : "text-black"
                 }`}
