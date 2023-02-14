@@ -4,7 +4,7 @@ import { Controller, useFormContext } from "react-hook-form";
 
 interface SwitchProps {
   name: string;
-  label?: string;
+  label?: string | null;
   className?: string;
   circleBorder?: "left" | "right" | "all" | "none";
 }
@@ -25,7 +25,7 @@ export const SwitchUI = ({
         <Switch
           checked={field.value}
           onChange={field.onChange}
-          className={`items-center
+          className={`items-center p-2
           ${className}
       ${borderDirection[circleBorder]} 
       ${field.value ? "bg-primary" : "bg-gray-200"}`}

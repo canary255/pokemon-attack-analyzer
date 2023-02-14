@@ -1,0 +1,59 @@
+{
+    "common": {
+        "atk": "Atk",
+        "def": "Def",
+        "spa": "SpA",
+        "spd": "SpD",
+        "spe": "Spe",
+        "hp": "HP",
+        "accuracy": "Accuracy",
+        "evasion": "Evasion",
+        "level": "Level"
+    },
+    "attacker": {
+        "selectPokemon": "Select a Pokémon",
+        "selectTeraType": "Select Tera Type",
+        "selectAbility": "Ability",
+        "selectItem": "Item",
+        "selectMove": "Select a Move",
+        "category": "Category",
+        "nature": "Nature"
+    },
+    "button": {
+        "crit": "Crit",
+        "zMove": "Z-Move",
+        "dynamax": "Dynamax",
+        "tera": "Tera",
+        "single": "Single",
+        "double": "Double"
+        
+    },
+    "nature": {
+        "adamant": "Adamant",
+        "brave": "Brave",
+        "naughty": "Naughty",
+        "bold": "Bold",
+        "relaxed": "Relaxed",
+        "impish": "Impish",
+        "lax": "Lax",
+        "timid": "Timid",
+        "hasty": "Hasty",
+        "jolly": "Jolly",
+        "naive": "Naive",
+        "modest": "Modest",
+        "mild": "Mild",
+        "quiet": "Quiet",
+        "rash": "Rash",
+        "calm": "Calm",
+        "gentle": "Gentle",
+        "sassy": "Sassy",
+        "careful": "Careful",
+        "docile": "Docile",
+        "hardy": "Hardy",
+        "bashful": "Bashful",
+        "quirky": "Quirky",
+        "lonely": "Lonely",
+        "serious": "Serious"
+    }
+    
+}

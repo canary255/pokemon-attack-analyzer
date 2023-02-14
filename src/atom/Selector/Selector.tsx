@@ -12,7 +12,7 @@ interface SelectorProps {
   width?: SizeProps;
   height?: SizeProps;
   centerText?: boolean;
-  label?: string;
+  label?: string | null;
   side?: "up" | "down";
 }
 
@@ -69,7 +69,7 @@ export const SelectorUI = ({
               <Listbox.Button
                 className={`${
                   centerText ? "text-center" : ""
-                }  pr-4 border border-black bg-white ${widthSize[width]} ${
+                } pr-4 border border-black bg-white ${widthSize[width]} ${
                   heightSize[height]
                 } ${className}`}
               >

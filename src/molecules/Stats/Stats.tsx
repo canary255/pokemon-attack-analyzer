@@ -1,11 +1,10 @@
 import { Label } from "../../atom/Label/Label";
 import { SelectorUI } from "../../atom/Selector/Selector";
 import { TextField } from "../../atom/Textfield/TextField";
-import { heightSize, widthSize } from "../../utils/consts";
+import { useTranslation } from "react-i18next";
 
 interface FieldStatsProps {
-  categoryName: string;
-  baseName: string;
+  categoryName: string | null;
   ivName: string;
   evName: string;
   stat: number;
@@ -27,7 +26,6 @@ const Layer = () => {
 
 const FieldStats = ({
   categoryName,
-  baseName,
   ivName,
   evName,
   stat,
@@ -40,11 +38,13 @@ const FieldStats = ({
       <Label>{categoryName}</Label>
       <Label>170</Label>
       <TextField
+        className="mt-[-4px]"
         name={ivName}
         width={inputWidthSize}
         height={inputHeightSize}
       />
       <TextField
+        className="mt-[-4px]"
         name={evName}
         width={inputWidthSize}
         height={inputHeightSize}
@@ -52,6 +52,7 @@ const FieldStats = ({
       <p>{stat}</p>
       <SelectorUI
         side="up"
+        className="mt-[-4px]"
         name={boostName}
         width={inputWidthSize}
         height={inputHeightSize}
@@ -61,22 +62,21 @@ const FieldStats = ({
 };
 
 export const Stats = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="w-[60%] grid grid-rows-3 gap-y-2 grid-cols-6">
         <Layer />
         <FieldStats
-          baseName="baseAtk"
           boostName="boostAtk"
-          categoryName="Atk"
+          categoryName={t("common.atk")}
           evName="evAtk"
           ivName="ivAtk"
           stat={679}
         />
         <FieldStats
-          baseName="baseSpa"
           boostName="boostSpa"
-          categoryName="SpA"
+          categoryName={t("common.spa")}
           evName="evSpa"
           ivName="ivSpa"
           stat={679}

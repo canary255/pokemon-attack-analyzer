@@ -12,7 +12,7 @@ interface ComboBoxProps {
   width?: SizeProps;
   height?: SizeProps;
   centerText?: boolean;
-  label?: string;
+  label?: string | null;
 }
 
 const people = [
