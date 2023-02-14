@@ -1,5 +1,5 @@
 import { capitalizeEveryWord } from "../../utils/capitalize";
-import { borderDirection } from "../../utils/consts";
+import { borderDirection } from "../../utils/styleConsts";
 
 interface ButtonProps {
   type?: "button" | "reset" | "submit";

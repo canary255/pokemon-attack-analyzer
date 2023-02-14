@@ -51,7 +51,7 @@ const FieldStats = ({
       />
       <p>{stat}</p>
       <SelectorUI
-        side="up"
+        selectorAbove
         className="mt-[-4px]"
         name={boostName}
         width={inputWidthSize}

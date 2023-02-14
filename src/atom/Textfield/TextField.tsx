@@ -1,6 +1,6 @@
 import { useFormContext } from "react-hook-form";
 import { SizeProps } from "../../types/size";
-import { heightSize, widthSize } from "../../utils/consts";
+import { heightSize, widthSize } from "../../utils/styleConsts";
 import { isSmall } from "../../utils/isSmall";
 
 interface TextFieldProps {

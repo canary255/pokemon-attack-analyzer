@@ -22,14 +22,3 @@ export const borderDirection = {
   all: "rounded-full",
   none: "",
 };
-
-export const targetOptions = [
-  {
-    name: "single",
-    value: "single",
-  },
-  {
-    name: "double",
-    value: "double",
-  },
-];

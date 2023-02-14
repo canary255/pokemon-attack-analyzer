@@ -2,8 +2,10 @@ import { Combobox } from "@headlessui/react";
 import { useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { SizeProps } from "../../types/size";
-import { heightSize, widthSize } from "../../utils/consts";
+import { heightSize, widthSize } from "../../utils/styleConsts";
 import { isSmall } from "../../utils/isSmall";
+import { OptionsType } from "../../type/options";
+import { useTranslation } from "react-i18next";
 
 interface ComboBoxProps {
   name: string;
@@ -13,15 +15,8 @@ interface ComboBoxProps {
   height?: SizeProps;
   centerText?: boolean;
   label?: string | null;
+  options?: OptionsType[];
 }
-
-const people = [
-  { value: 0, name: "Durward Reynolds" },
-  { value: 1, name: "Kenton Towne" },
-  { value: 2, name: "Therese Wunsch" },
-  { value: 3, name: "Benedict Kessler" },
-  { value: 4, name: "Katelyn Rohan" },
-];
 
 export const ComboBoxUI = ({
   name,
@@ -31,15 +26,18 @@ export const ComboBoxUI = ({
   height = "S",
   centerText = false,
   label,
+  options = [],
 }: ComboBoxProps) => {
+  const array: OptionsType[] | undefined = [...options];
   const [query, setQuery] = useState("");
   const { control } = useFormContext();
+  const { t } = useTranslation();
 
-  const filteredPeople =
+  const filteredArray =
     query === ""
-      ? people
-      : people.filter((person) => {
-          return person.name.toLowerCase().includes(query.toLowerCase());
+      ? array
+      : array?.filter((item) => {
+          return item.name.toLowerCase().includes(query.toLowerCase());
         });
 
   const selectedOrActiveStyles = (selected: boolean, active: boolean) => {
@@ -52,7 +50,7 @@ export const ComboBoxUI = ({
     <Controller
       name={name}
       control={control}
-      defaultValue={people[0].name}
+      defaultValue={""}
       render={({ field }) => (
         <div className="flex flex-col">
           {label ? <p className="mb-1">{label}</p> : null}
@@ -72,11 +70,11 @@ export const ComboBoxUI = ({
             <Combobox.Options
               className={`rounded-md border absolute mt-[69px] ${widthSize[width]} border-black overflow-auto max-h-60`}
             >
-              {filteredPeople.length > 0 ? (
-                filteredPeople.map((person, index) => (
+              {filteredArray && filteredArray?.length > 0 ? (
+                filteredArray?.map((item, index) => (
                   <Combobox.Option
                     key={index}
-                    value={person.name}
+                    value={item.name}
                     className={({
                       active,
                       selected,
@@ -91,14 +89,14 @@ export const ComboBoxUI = ({
                           selected ? "font-medium " : "font-normal"
                         }`}
                       >
-                        {person.name}
+                        {t(item.name)}
                       </span>
                     )}
                   </Combobox.Option>
                 ))
               ) : (
                 <span className="block bg-white truncate select-none py-2 pl-5 pr-4">
-                  Results not found
+                  {t("error.resultNotFound")}
                 </span>
               )}
             </Combobox.Options>

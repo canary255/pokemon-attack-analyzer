@@ -5,7 +5,7 @@ import { Button } from "../atom/Button/Button";
 import { RadioGroupUI } from "../atom/RadioGroup/RadioGroup";
 import { Attacker } from "../organisms/Attacker/Attacker";
 import { reportInitialState } from "../schema/schema";
-import { targetOptions } from "../utils/consts";
+import { target } from "../utils/pokemonConsts";
 
 type ReportProps = {
   name: string;
@@ -42,7 +42,7 @@ export const Report = () => {
             <Attacker />
           </div>
           <div className="bg-blue-500 h-[91.5vh] border-r border-black">
-            <RadioGroupUI options={targetOptions} name="target" />
+            <RadioGroupUI options={target} name="target" />
           </div>
           <div className="bg-green-500 h-[91.5vh] xl:col-span-1 md:col-span-2 flex flex-col">
             <Button

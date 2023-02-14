@@ -1,5 +1,5 @@
 import { Switch } from "@headlessui/react";
-import { borderDirection } from "../../utils/consts";
+import { borderDirection } from "../../utils/styleConsts";
 import { Controller, useFormContext } from "react-hook-form";
 
 interface SwitchProps {

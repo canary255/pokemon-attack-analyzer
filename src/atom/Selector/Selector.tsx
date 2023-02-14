@@ -1,9 +1,10 @@
-import { useState } from "react";
 import { Listbox } from "@headlessui/react";
-import { heightSize, widthSize } from "../../utils/consts";
+import { heightSize, widthSize } from "../../utils/styleConsts";
 import { SizeProps } from "../../types/size";
 import { isSmall } from "../../utils/isSmall";
 import { Controller, useFormContext } from "react-hook-form";
+import { OptionsType } from "../../type/options";
+import { useTranslation } from "react-i18next";
 
 interface SelectorProps {
   name: string;
@@ -13,16 +14,9 @@ interface SelectorProps {
   height?: SizeProps;
   centerText?: boolean;
   label?: string | null;
-  side?: "up" | "down";
+  selectorAbove?: boolean;
+  options: OptionsType[];
 }
-
-const people = [
-  { id: 1, name: "Durward Reynolds ssf sdfsdf sdf", unavailable: false },
-  { id: 2, name: "Kenton Towne", unavailable: false },
-  { id: 3, name: "Therese Wunsch", unavailable: false },
-  { id: 6, name: "Atk", unavailable: false },
-  { id: 7, name: "Def", unavailable: false },
-];
 
 export const SelectorUI = ({
   name,
@@ -32,9 +26,13 @@ export const SelectorUI = ({
   height = "S",
   centerText = false,
   label,
-  side = "down",
+  selectorAbove = false,
+  options,
 }: SelectorProps) => {
   const { control } = useFormContext();
+  const { t } = useTranslation();
+
+  const firstElement = options && options.length > 0 ? options[0].value : "";
 
   const optionStyles = (
     selected: boolean,
@@ -59,7 +57,7 @@ export const SelectorUI = ({
         <Controller
           name={name}
           control={control}
-          defaultValue={people[0].name}
+          defaultValue={firstElement}
           render={({ field }) => (
             <Listbox
               defaultValue={field.value}
@@ -85,31 +83,32 @@ export const SelectorUI = ({
               <div>
                 <Listbox.Options
                   className={`bg-white absolute ${widthSize[width]} 
-              ${side == "up" ? "mt-[-15rem]" : ""}
+              ${selectorAbove ? "mt-[-15rem]" : ""}
                rounded-md border border-black overflow-auto max-h-60`}
                 >
-                  {people.map((person, index) => (
-                    <Listbox.Option
-                      key={index}
-                      value={person?.name}
-                      className={({ selected, active, disabled }) =>
-                        `cursor-default select-none py-2 
+                  {options?.length > 0
+                    ? options.map((item, index) => (
+                        <Listbox.Option
+                          key={index}
+                          value={item?.name}
+                          className={({ selected, active, disabled }) =>
+                            `cursor-default select-none py-2 
                     ${isSmall(width) ? "pl-1 pr-0" : "pl-5"}
                      pr-4 ${optionStyles(selected, active, disabled)}`
-                      }
-                      disabled={person?.unavailable}
-                    >
-                      {({ selected }) => (
-                        <span
-                          className={`block truncate ${
-                            selected ? "font-medium" : "font-normal"
-                          }`}
+                          }
                         >
-                          {limitText(person?.name)}
-                        </span>
-                      )}
-                    </Listbox.Option>
-                  ))}
+                          {({ selected }) => (
+                            <span
+                              className={`block truncate ${
+                                selected ? "font-medium" : "font-normal"
+                              }`}
+                            >
+                              {limitText(t(item?.name))}
+                            </span>
+                          )}
+                        </Listbox.Option>
+                      ))
+                    : null}
                 </Listbox.Options>
               </div>
             </Listbox>

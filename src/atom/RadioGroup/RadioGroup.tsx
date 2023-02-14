@@ -1,19 +1,16 @@
 import { RadioGroup } from "@headlessui/react";
-import { borderDirection } from "../../utils/consts";
+import { borderDirection } from "../../utils/styleConsts";
 import { Label } from "../Label/Label";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
+import { OptionsType } from "../../type/options";
 
 interface RadioGroupProps {
   name: string;
   label?: string;
   className?: string;
   circleBorder?: "left" | "right" | "all" | "none";
-  options?:
-    | {
-        name: string;
-        value: string;
-      }[];
+  options: OptionsType[];
 }
 
 const setBorderDirection = (index: number, length: number) => {
@@ -65,7 +62,7 @@ export const RadioGroupUI = ({
                   checked ? "bg-primary text-white font-medium" : "text-black"
                 }`}
                       >
-                        {t(`button.${option.name}`)}
+                        {t(option.name)}
                       </span>
                     )}
                   </RadioGroup.Option>
