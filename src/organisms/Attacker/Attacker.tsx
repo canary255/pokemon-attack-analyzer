@@ -1,11 +1,11 @@
 import { Avatar } from "../../atom/Avatar/Avatar";
-import { Button } from "../../atom/Button/Button";
 import { ComboBoxUI } from "../../atom/ComboBox/ComboBox";
 import { SelectorUI } from "../../atom/Selector/Selector";
 import { SwitchUI } from "../../atom/Switch/Switch";
 import { Stats } from "../../molecules/Stats/Stats";
 import { useTranslation } from "react-i18next";
-import { nature } from "../../utils/pokemonConsts/nature";
+import { nature, mechanic, category } from "../../utils/pokemonConsts";
+import { RadioGroupUI } from "../../atom/RadioGroup/RadioGroup";
 
 export const Attacker = () => {
   const { t } = useTranslation();
@@ -46,7 +46,7 @@ export const Attacker = () => {
               label={t("attacker.selectMove")}
             />
             <SelectorUI
-              options={nature}
+              options={category}
               width="XS"
               name="category"
               label={t("attacker.category")}
@@ -67,24 +67,7 @@ export const Attacker = () => {
             selectorAbove
           />
           <div>
-            <Button
-              circleBorder="left"
-              label={t("button.zMove")}
-              className="mt-6 w-20"
-              name="zMove"
-            />
-            <Button
-              circleBorder="none"
-              label={t("button.dynamax")}
-              className="mt-6 w-20"
-              name="dynamax"
-            />
-            <Button
-              circleBorder="right"
-              label={t("button.tera")}
-              className="mt-6 w-20"
-              name="tera"
-            />
+            <RadioGroupUI name="mechanic" options={mechanic} />
           </div>
         </div>
         <div className="mt-3 grid place-items-center  gap-x-2">

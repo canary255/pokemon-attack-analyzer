@@ -5,6 +5,7 @@ export const reportInitialState = {
   nature: "",
   item: "",
   move: "",
+  mechanic: "",
   category: "",
   crit: false,
   baseAtk: "",

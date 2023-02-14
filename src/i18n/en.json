@@ -22,6 +22,11 @@
         "category": "Category",
         "nature": "Nature"
     },
+    "category": {
+        "physical": "Phy",
+        "special": "Spe"
+    },
+    
     "button": {
         "crit": "Crit",
         "zMove": "Z-Move",
