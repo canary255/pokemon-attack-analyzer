@@ -15,7 +15,7 @@ interface ComboBoxProps {
   height?: SizeProps;
   centerText?: boolean;
   label?: string | null;
-  options?: OptionsType[];
+  options?: string[];
 }
 
 export const ComboBoxUI = ({
@@ -28,7 +28,7 @@ export const ComboBoxUI = ({
   label,
   options = [],
 }: ComboBoxProps) => {
-  const array: OptionsType[] | undefined = [...options];
+  const array: string[] | undefined = [...options];
   const [query, setQuery] = useState("");
   const { control } = useFormContext();
   const { t } = useTranslation();
@@ -37,7 +37,7 @@ export const ComboBoxUI = ({
     query === ""
       ? array
       : array?.filter((item) => {
-          return item.name.toLowerCase().includes(query.toLowerCase());
+          return item?.toLowerCase().includes(query.toLowerCase());
         });
 
   const selectedOrActiveStyles = (selected: boolean, active: boolean) => {
@@ -74,7 +74,7 @@ export const ComboBoxUI = ({
                 filteredArray?.map((item, index) => (
                   <Combobox.Option
                     key={index}
-                    value={item.name}
+                    value={item}
                     className={({
                       active,
                       selected,
@@ -89,7 +89,7 @@ export const ComboBoxUI = ({
                           selected ? "font-medium " : "font-normal"
                         }`}
                       >
-                        {t(item.name)}
+                        {item}
                       </span>
                     )}
                   </Combobox.Option>

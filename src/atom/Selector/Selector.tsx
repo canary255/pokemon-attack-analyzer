@@ -50,6 +50,10 @@ export const SelectorUI = ({
     return title;
   };
 
+  const getTitle = (value: string) => {
+    return options.find((item) => item.value == value)?.name ?? "";
+  };
+
   return (
     <>
       <div className="flex flex-col">
@@ -73,7 +77,7 @@ export const SelectorUI = ({
               >
                 <div className="grid grid-cols-8">
                   <span className="col-span-7">
-                    {limitText(field.value ?? "")}
+                    {limitText(t(getTitle(field.value)) ?? "")}
                   </span>
                   <span className="col-span-1 material-symbols-outlined">
                     expand_more
@@ -90,7 +94,7 @@ export const SelectorUI = ({
                     ? options.map((item, index) => (
                         <Listbox.Option
                           key={index}
-                          value={item?.name}
+                          value={item?.value}
                           className={({ selected, active, disabled }) =>
                             `cursor-default select-none py-2 
                     ${isSmall(width) ? "pl-1 pr-0" : "pl-5"}

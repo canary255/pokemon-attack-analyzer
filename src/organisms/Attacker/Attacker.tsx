@@ -15,7 +15,7 @@ export const Attacker = () => {
         <Avatar className="flex flex-row justify-center mt-5" />
         <div className=" mt-3 grid place-items-center sm:grid-cols-2 xs:grid-cols-1 gap-x-2">
           <ComboBoxUI
-            options={nature}
+            options={[]}
             name="name"
             label={t("attacker.selectPokemon")}
           />
@@ -27,12 +27,12 @@ export const Attacker = () => {
         </div>
         <div className="mt-3 grid place-items-center sm:grid-cols-2  xs:grid-cols-1 gap-x-2">
           <ComboBoxUI
-            options={nature}
+            options={[]}
             name="ability"
             label={t("attacker.selectAbility")}
           />
           <ComboBoxUI
-            options={nature}
+            options={[]}
             name="item"
             label={t("attacker.selectItem")}
           />
@@ -40,7 +40,7 @@ export const Attacker = () => {
         <div className="mt-3 grid place-items-center sm:grid-cols-4 xs:grid-cols-1">
           <div className="flex col-span-3 flex-row gap-x-2">
             <ComboBoxUI
-              options={nature}
+              options={[]}
               name="move"
               width="L"
               label={t("attacker.selectMove")}

@@ -2,6 +2,7 @@ import { Label } from "../../atom/Label/Label";
 import { SelectorUI } from "../../atom/Selector/Selector";
 import { TextField } from "../../atom/Textfield/TextField";
 import { useTranslation } from "react-i18next";
+import { boost } from "../../utils/pokemonConsts/boost";
 
 interface FieldStatsProps {
   categoryName: string | null;
@@ -31,7 +32,8 @@ const FieldStats = ({
   stat,
   boostName,
 }: FieldStatsProps) => {
-  const inputWidthSize = "XXS";
+  const textFieldWidthSize = "XXS";
+  const selectorWidthSize = "XS";
   const inputHeightSize = "XS";
   return (
     <>
@@ -40,21 +42,22 @@ const FieldStats = ({
       <TextField
         className="mt-[-4px]"
         name={ivName}
-        width={inputWidthSize}
+        width={textFieldWidthSize}
         height={inputHeightSize}
       />
       <TextField
         className="mt-[-4px]"
         name={evName}
-        width={inputWidthSize}
+        width={textFieldWidthSize}
         height={inputHeightSize}
       />
       <p>{stat}</p>
       <SelectorUI
+        options={boost}
         selectorAbove
         className="mt-[-4px]"
         name={boostName}
-        width={inputWidthSize}
+        width={selectorWidthSize}
         height={inputHeightSize}
       />
     </>
@@ -69,14 +72,14 @@ export const Stats = () => {
         <Layer />
         <FieldStats
           boostName="boostAtk"
-          categoryName={t("common.atk")}
+          categoryName={t("stats.atk")}
           evName="evAtk"
           ivName="ivAtk"
           stat={679}
         />
         <FieldStats
           boostName="boostSpa"
-          categoryName={t("common.spa")}
+          categoryName={t("stats.spa")}
           evName="evSpa"
           ivName="ivSpa"
           stat={679}
