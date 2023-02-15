@@ -33,7 +33,14 @@
         "dynamax": "Dynamax",
         "tera": "Tera",
         "single": "Single",
-        "double": "Double"
+        "double": "Double",
+        "allPokemon": "All Pokémon",
+        "somePokemon": "Some Pokémon"
+    },
+    "message": {
+        "specifyPokemon": "Specify Pokémon by writing the name and separating it with a comma...",
+        "defStatBoost": "Def stat boost",
+        "spdStatBoost": "SpD stat boost"
         
     },
     "nature": {

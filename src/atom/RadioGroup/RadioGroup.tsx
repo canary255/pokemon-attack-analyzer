@@ -56,7 +56,7 @@ export const RadioGroupUI = ({
                   >
                     {({ checked }) => (
                       <span
-                        className={`
+                        className={`text-sm
               ${borderDirection[setBorderDirection(index, options?.length)]}
                 ${
                   checked ? "bg-primary text-white font-medium" : "text-black"

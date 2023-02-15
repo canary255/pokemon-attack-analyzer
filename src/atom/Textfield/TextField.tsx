@@ -12,7 +12,7 @@ interface TextFieldProps {
   height?: SizeProps;
   centerText?: boolean;
   readonly?: boolean;
-  label?: string;
+  label?: string | null;
 }
 
 export const TextField = ({

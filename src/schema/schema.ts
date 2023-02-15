@@ -17,4 +17,8 @@ export const reportInitialState = {
   evSpa: "",
   ivSpa: "",
   target: "",
+  selectPokemon: "",
+  defenderList: "",
+  boostDef: "",
+  boostSpd: "",
 };
