@@ -51,12 +51,7 @@ export const Attacker = () => {
               name="category"
               label={t("attacker.category")}
             />
-            <SwitchUI
-              circleBorder="all"
-              label={t("button.crit")}
-              className="mt-5 "
-              name="crit"
-            />
+            <SwitchUI label={t("button.crit")} className="mt-5 " name="crit" />
           </div>
         </div>
         <div className="mt-3 grid grid-cols-2 place-items-center gap-x-2">

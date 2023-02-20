@@ -12,24 +12,30 @@ import { RadioGroupUI } from "../../atom/RadioGroup/RadioGroup";
 import { TextField } from "../../atom/Textfield/TextField";
 import { SelectorUI } from "../../atom/Selector/Selector";
 import { Divider } from "../../atom/Divider/Divider";
+import { SwitchUI } from "../../atom/Switch/Switch";
+import { useFormContext } from "react-hook-form";
 
 export const Defender = () => {
   const { t } = useTranslation();
-  const margin = "mt-5";
+  const { watch } = useFormContext();
+  const valueSelectPokemon = watch("selectPokemon");
+  const margin = "mt-3";
   return (
     <>
       <div className="flex flex-col">
         <div className={`${margin} grid place-items-center`}>
           <RadioGroupUI name="selectPokemon" options={selectPokemon} />
         </div>
-        <div className={`${margin} px-5 mt-3 grid place-items-center`}>
-          <TextField
-            className="w-full"
-            centerText
-            label={t("message.specifyPokemon")}
-            name="defenderList"
-          />
-        </div>
+        {valueSelectPokemon === "some" && (
+          <div className={`${margin} px-5 mt-3 grid place-items-center`}>
+            <TextField
+              className="w-full"
+              centerText
+              label={t("message.specifyPokemon")}
+              name="defenderList"
+            />
+          </div>
+        )}
         <div className={`${margin} grid grid-cols-2 place-items-center`}>
           <SelectorUI
             options={boost}
@@ -66,8 +72,25 @@ export const Defender = () => {
         </div>
         <Divider />
 
-        <div className="grid place-items-center">
-          <RadioGroupUI options={spikes} name="spikes" />
+        <div className={`grid grid-cols-3 place-items-center`}>
+          <SwitchUI label={t("button.protect")} name="protect" />
+          <SwitchUI label={t("button.stealthRock")} name="stealthRock" />
+          <SwitchUI label={t("button.foresight")} name="foresight" />
+        </div>
+        <div className={`${margin} grid grid-cols-4 place-items-center`}>
+          <RadioGroupUI className="col-span-2" options={spikes} name="spikes" />
+          <SwitchUI label={t("button.helpingHand")} name="helpingHand" />
+          <SwitchUI label={t("button.gravity")} name="gravity" />
+        </div>
+        <div className={`${margin} grid grid-cols-3 place-items-center`}>
+          <SwitchUI label={t("button.lightScreen")} name="lightScreen" />
+          <SwitchUI label={t("button.reflect")} name="reflect" />
+          <SwitchUI label={t("button.auroraVeil")} name="auroraVeil" />
+        </div>
+        <div className={`${margin} grid grid-cols-3 place-items-center`}>
+          <SwitchUI label={t("button.battery")} name="battery" />
+          <SwitchUI label={t("button.friendGuard")} name="friendGuard" />
+          <SwitchUI label={t("button.tailwind")} name="tailwind" />
         </div>
       </div>
     </>

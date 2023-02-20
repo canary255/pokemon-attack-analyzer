@@ -38,7 +38,18 @@
         "single": "Single",
         "double": "Double",
         "allPokemon": "All Pokémon",
-        "somePokemon": "Some Pokémon"
+        "somePokemon": "Some Pokémon",
+        "helpingHand": "Helping Hand",
+        "gravity": "Gravity",
+        "protect": "Protect",
+        "stealthRock": "Stealth Rock",
+        "foresight": "Foresight",
+        "reflect": "Reflect",
+        "lightScreen": "Light Screen",
+        "auroraVeil": "Aurora Veil",
+        "battery": "Battery",
+        "friendGuard": "Friend Guard",
+        "tailwind": "Tailwind"
     },
     "message": {
         "specifyPokemon": "Specify Pokémon by writing the name and separating it with a comma...",
