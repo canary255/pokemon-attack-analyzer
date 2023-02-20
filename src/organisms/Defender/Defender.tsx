@@ -17,7 +17,10 @@ export const Defender = () => {
     <>
       <div className="flex flex-col">
         <div className="mt-5 grid place-items-center">
-          <RadioGroupUI name="selectPokemon" options={selectPokemon} />
+          <RadioGroupUI
+            name="selectPokemon"
+            options={selectPokemon}
+          />
         </div>
         <div className="px-5 py-1 grid place-items-center">
           <TextField
@@ -30,7 +33,6 @@ export const Defender = () => {
         <div className="grid grid-cols-2 place-items-center">
           <SelectorUI
             options={boost}
-            selectorAbove
             label={t("message.defStatBoost")}
             name={"boostDef"}
             width={"XS"}
@@ -38,7 +40,6 @@ export const Defender = () => {
           />
           <SelectorUI
             options={boost}
-            selectorAbove
             label={t("message.spdStatBoost")}
             name={"boostSpd"}
             width={"XS"}
@@ -49,6 +50,7 @@ export const Defender = () => {
         <div className="mt-5 grid place-items-center">
           <RadioGroupUI options={target} name="target" />
         </div>
+        <br />
       </div>
     </>
   );

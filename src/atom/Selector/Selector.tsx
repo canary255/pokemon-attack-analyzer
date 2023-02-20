@@ -5,6 +5,7 @@ import { isSmall } from "../../utils/isSmall";
 import { Controller, useFormContext } from "react-hook-form";
 import { OptionsType } from "../../type/options";
 import { useTranslation } from "react-i18next";
+import { Label } from "../Label/Label";
 
 interface SelectorProps {
   name: string;
@@ -57,7 +58,7 @@ export const SelectorUI = ({
   return (
     <>
       <div className="flex flex-col">
-        {label ? <p className="mb-1">{label}</p> : null}
+        {label ? <Label className="mb-1">{label}</Label> : null}
         <Controller
           name={name}
           control={control}

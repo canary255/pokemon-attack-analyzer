@@ -2,6 +2,7 @@ import { useFormContext } from "react-hook-form";
 import { SizeProps } from "../../types/size";
 import { heightSize, widthSize } from "../../utils/styleConsts";
 import { isSmall } from "../../utils/isSmall";
+import { Label } from "../Label/Label";
 
 interface TextFieldProps {
   type?: string;
@@ -29,7 +30,7 @@ export const TextField = ({
   const { register } = useFormContext();
   return (
     <div className="flex flex-col">
-      {label ? <p className="mb-1">{label}</p> : null}
+      {label ? <Label className="mb-1">{label}</Label> : null}
       <input
         {...register(name)}
         className={`border py-2 pl-5 pr-4 border-black 
