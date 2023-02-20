@@ -6,5 +6,5 @@ interface LabelProps {
 }
 
 export const Label = ({ className, children }: LabelProps) => {
-  return <p className={`${className}`}>{children}</p>;
+  return <p className={`${className} text-sm`}>{children}</p>;
 };

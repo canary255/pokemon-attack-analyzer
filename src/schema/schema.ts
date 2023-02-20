@@ -21,4 +21,6 @@ export const reportInitialState = {
   defenderList: "",
   boostDef: "",
   boostSpd: "",
+  weather: "",
+  terrain: "",
 };

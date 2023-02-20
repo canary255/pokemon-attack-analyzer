@@ -69,6 +69,24 @@
         "quirky": "Quirky",
         "lonely": "Lonely",
         "serious": "Serious"
+    },
+    "weather": {
+        "none": "None",
+        "sun": "Sun",
+        "rain": "Rain",
+        "sand": "Sand",
+        "snow": "Snow",
+
+        "harshSun": "Harsh Sun",
+        "heavyRain": "Heavy Rain",
+        "strongWinds": "Strong Winds"
+    },
+    "terrain": {
+        "none": "None",
+        "electric": "Electric",
+        "grassy": "Grassy",
+        "misty": "Misty",
+        "psychic": "Psychic"
     }
     
 }

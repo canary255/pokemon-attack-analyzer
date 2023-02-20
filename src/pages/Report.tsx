@@ -37,11 +37,11 @@ export const Report = () => {
   return (
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
-        <div className="grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1">
-          <div className="bg-gray-100 border-r border-black">
+        <div className="grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 bg-gray-100">
+          <div className="border-r border-black">
             <Attacker />
           </div>
-          <div className="bg-blue-500 h-[91.5vh] border-r border-black">
+          <div className="border-r border-black">
             <Defender />
           </div>
           <div className="bg-green-500 h-[91.5vh] xl:col-span-1 md:col-span-2 flex flex-col">

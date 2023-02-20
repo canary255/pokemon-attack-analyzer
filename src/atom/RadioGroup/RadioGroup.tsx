@@ -26,7 +26,8 @@ export const RadioGroupUI = ({
   options,
 }: RadioGroupProps) => {
   const { t } = useTranslation();
-  const { control } = useFormContext();
+  const { control, watch } = useFormContext();
+  const value = watch(name);
 
   return (
     <Controller
@@ -39,32 +40,34 @@ export const RadioGroupUI = ({
           <RadioGroup
             defaultValue={field.value}
             onChange={field.onChange}
-            className="flex flex-row"
+            className={`flex flex-row ${className}`}
           >
             {options
               ? options?.map((option, index) => (
                   <RadioGroup.Option
-                    key={option.value}
+                    key={index}
                     value={option.value}
-                    className={({ checked }) =>
-                      `h-10 p-3 flex items-center justify-center border cursor-pointer border-black col-span-1
+                    className={`h-10 p-3 flex items-center justify-center border cursor-pointer border-black col-span-1
             ${borderDirection[setBorderDirection(index, options?.length)]}
              ${
-               checked ? "bg-primary text-white" : "bg-white text-black"
-             } ${className}`
-                    }
+               value === option.value
+                 ? "bg-primary text-white"
+                 : "bg-white text-black"
+             }`}
                   >
-                    {({ checked }) => (
+                    {
                       <span
                         className={`text-sm
               ${borderDirection[setBorderDirection(index, options?.length)]}
                 ${
-                  checked ? "bg-primary text-white font-medium" : "text-black"
+                  value === option.value
+                    ? "bg-primary text-white font-medium"
+                    : "text-black"
                 }`}
                       >
                         {t(option.name)}
                       </span>
-                    )}
+                    }
                   </RadioGroup.Option>
                 ))
               : null}
