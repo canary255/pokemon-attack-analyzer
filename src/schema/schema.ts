@@ -23,4 +23,6 @@ export const reportInitialState = {
   boostSpd: "",
   weather: "",
   terrain: "",
+  aura: "",
+  spikes: "",
 };

@@ -1,5 +1,5 @@
 export const weather = [
-  { name: "weather.none", value: "none" },
+  { name: "common.none", value: "none" },
   { name: "weather.sun", value: "sun" },
   { name: "weather.rain", value: "rain" },
   { name: "weather.sand", value: "sand" },

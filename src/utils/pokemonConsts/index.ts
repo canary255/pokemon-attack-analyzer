@@ -6,3 +6,5 @@ export * from "./category";
 export * from "./selectPokemon";
 export * from "./weather";
 export * from "./terrain";
+export * from "./aura";
+export * from "./spikes";

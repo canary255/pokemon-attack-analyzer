@@ -10,6 +10,9 @@
         "evasion": "Evasion",
         "level": "Level"
     },
+    "common": {
+        "none": "None"
+    },
     "error":{
         "resultNotFound": "Result not found"
     },
@@ -40,7 +43,8 @@
     "message": {
         "specifyPokemon": "Specify Pokémon by writing the name and separating it with a comma...",
         "defStatBoost": "Def stat boost",
-        "spdStatBoost": "SpD stat boost"
+        "spdStatBoost": "SpD stat boost",
+        "spikes": "3 Spikes"
         
     },
     "nature": {
@@ -70,8 +74,7 @@
         "lonely": "Lonely",
         "serious": "Serious"
     },
-    "weather": {
-        "none": "None",
+    "weather": {  
         "sun": "Sun",
         "rain": "Rain",
         "sand": "Sand",
@@ -82,11 +85,15 @@
         "strongWinds": "Strong Winds"
     },
     "terrain": {
-        "none": "None",
         "electric": "Electric",
         "grassy": "Grassy",
         "misty": "Misty",
         "psychic": "Psychic"
+    },
+    "aura": {
+        "break": "Aura Break",
+        "fairy": "Fairy Aura",
+        "dark": "Dark Aura"
     }
     
 }
