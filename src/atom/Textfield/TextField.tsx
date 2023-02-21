@@ -14,6 +14,7 @@ interface TextFieldProps {
   centerText?: boolean;
   readonly?: boolean;
   label?: string | null;
+  onlyNumber?: boolean;
 }
 
 export const TextField = ({
@@ -26,6 +27,7 @@ export const TextField = ({
   centerText = false,
   readonly = false,
   label,
+  onlyNumber = false,
 }: TextFieldProps) => {
   const { control } = useFormContext();
   return (
