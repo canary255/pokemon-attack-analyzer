@@ -1,4 +1,10 @@
-import { Controller, useFormContext } from "react-hook-form";
+import {
+  Controller,
+  ControllerRenderProps,
+  FieldValues,
+  useFormContext,
+  UseFormSetValue,
+} from "react-hook-form";
 import { SizeProps } from "../../types/size";
 import { heightSize, widthSize } from "../../utils/styleConsts";
 import { isSmall } from "../../utils/isSmall";
@@ -15,7 +21,33 @@ interface TextFieldProps {
   readonly?: boolean;
   label?: string | null;
   onlyNumber?: boolean;
+  maxLength?: number;
+  minNumber?: number;
+  maxNumber?: number;
 }
+
+const handleNumber = (
+  e: React.ChangeEvent<HTMLInputElement>,
+  setValue: UseFormSetValue<FieldValues>,
+  name: string,
+  onlyNumber: boolean,
+  maxNumber: number,
+  minNumber: number
+) => {
+  const regex = /^[0-9\b]+$/;
+  let value = e.currentTarget.value;
+  if (onlyNumber) {
+    if (value === "") value = "0";
+    if (!regex.test(value)) {
+      return;
+    }
+    const valueIntoNumber = +value;
+    value = valueIntoNumber.toString();
+    if (valueIntoNumber > maxNumber) value = maxNumber.toString();
+    if (valueIntoNumber < minNumber) value = minNumber.toString();
+  }
+  setValue(name, value);
+};
 
 export const TextField = ({
   type = "text",
@@ -28,31 +60,28 @@ export const TextField = ({
   readonly = false,
   label,
   onlyNumber = false,
+  maxLength,
+  minNumber = 0,
+  maxNumber = 999,
 }: TextFieldProps) => {
-  const { control } = useFormContext();
+  const { getValues, setValue } = useFormContext();
   return (
     <div className="flex flex-col">
-      <Controller
-        name={name}
-        control={control}
-        defaultValue=""
-        render={({ field }) => (
-          <>
-            {label ? <Label className="mb-1">{label}</Label> : null}
-            <input
-              onChange={field.onChange}
-              value={field.value}
-              className={`border py-2 pl-5 pr-4 border-black 
+      {label ? <Label className="mb-1">{label}</Label> : null}
+      <input
+        onChange={(e: any) => {
+          handleNumber(e, setValue, name, onlyNumber, maxNumber, minNumber);
+        }}
+        value={getValues(name)}
+        className={`border py-2 pl-5 pr-4 border-black 
               ${isSmall(width) ? "pl-1 pr-0" : "pl-5"}
               ${readonly ? "bg-gray-100" : "bg-white"}
               ${centerText ? "text-center" : ""} ${widthSize[width]}
               ${heightSize[height]} ${className}`}
-              type={type}
-              name={name}
-              readOnly={readonly}
-            />
-          </>
-        )}
+        type={type}
+        name={name}
+        readOnly={readonly}
+        maxLength={maxLength}
       />
     </div>
   );

@@ -32,11 +32,6 @@ export const FieldStats = ({
   const boostStat = values[boostName];
   const nature = values["nature"];
 
-  if (ev > 252) setValue(evName, "252");
-  if (ev < 0) setValue(evName, "0");
-  if (iv > 31) setValue(ivName, "31");
-  if (iv < 0) setValue(ivName, "0");
-
   return (
     <>
       <Label className="text-base">{categoryName}</Label>
@@ -46,6 +41,8 @@ export const FieldStats = ({
         name={ivName}
         width={textFieldWidthSize}
         height={inputHeightSize}
+        maxLength={2}
+        maxNumber={31}
         onlyNumber
       />
       <TextField
@@ -53,6 +50,8 @@ export const FieldStats = ({
         name={evName}
         width={textFieldWidthSize}
         height={inputHeightSize}
+        maxLength={3}
+        maxNumber={252}
         onlyNumber
       />
       <p>{getStat(base, ev, iv, boostStat, nature, isPhysical)}</p>
