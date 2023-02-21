@@ -1,5 +1,9 @@
 export const mechanic = [
   {
+    name: "common.none",
+    value: "none",
+  },
+  {
     name: "button.zMove",
     value: "zMove",
   },

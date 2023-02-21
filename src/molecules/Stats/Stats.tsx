@@ -43,11 +43,11 @@ export const Stats = () => {
     const selectorWidthSize = "XS";
     const inputHeightSize = "XS";
     const { watch } = useFormContext();
-    const iv = watch(ivName);
-    const ev = watch(evName);
-    const boostStat = watch(boostName);
-    const nature = watch("nature");
-    console.log(boostStat, nature, iv, ev, base);
+    const values = watch();
+    const iv = values[ivName];
+    const ev = values[evName];
+    const boostStat = values[boostName];
+    const nature = values["nature"];
 
     return (
       <>

@@ -1,4 +1,4 @@
-import { useFormContext } from "react-hook-form";
+import { Controller, useFormContext } from "react-hook-form";
 import { SizeProps } from "../../types/size";
 import { heightSize, widthSize } from "../../utils/styleConsts";
 import { isSmall } from "../../utils/isSmall";
@@ -27,21 +27,30 @@ export const TextField = ({
   readonly = false,
   label,
 }: TextFieldProps) => {
-  const { register } = useFormContext();
+  const { control } = useFormContext();
   return (
     <div className="flex flex-col">
-      {label ? <Label className="mb-1">{label}</Label> : null}
-      <input
-        {...register(name)}
-        className={`border py-2 pl-5 pr-4 border-black 
-         ${isSmall(width) ? "pl-1 pr-0" : "pl-5"}
-         ${readonly ? "bg-gray-100" : "bg-white"}
-         ${centerText ? "text-center" : ""} ${widthSize[width]}
-         ${heightSize[height]} ${className}`}
-        type={type}
+      <Controller
         name={name}
-        onChange={onChange}
-        readOnly={readonly}
+        control={control}
+        defaultValue=""
+        render={({ field }) => (
+          <>
+            {label ? <Label className="mb-1">{label}</Label> : null}
+            <input
+              onChange={field.onChange}
+              value={field.value}
+              className={`border py-2 pl-5 pr-4 border-black 
+              ${isSmall(width) ? "pl-1 pr-0" : "pl-5"}
+              ${readonly ? "bg-gray-100" : "bg-white"}
+              ${centerText ? "text-center" : ""} ${widthSize[width]}
+              ${heightSize[height]} ${className}`}
+              type={type}
+              name={name}
+              readOnly={readonly}
+            />
+          </>
+        )}
       />
     </div>
   );

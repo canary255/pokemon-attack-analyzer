@@ -5,27 +5,7 @@ import { Button } from "../atom/Button/Button";
 import { Attacker } from "../organisms/Attacker/Attacker";
 import { Defender } from "../organisms/Defender/Defender";
 import { reportInitialState } from "../schema/schema";
-
-type ReportProps = {
-  name: string;
-  teraType: string;
-  ability: string;
-  nature: string;
-  item: string;
-  move: string;
-  category: string;
-  crit: boolean;
-  baseAtk: string;
-  boostAtk: string;
-  evAtk: string;
-  ivAtk: string;
-  baseSpa: string;
-  boostSpa: string;
-  evSpa: string;
-  ivSpa: string;
-  target: string;
-  selectPokemon: string;
-};
+import { ReportProps } from "../types/reportProps";
 
 export const Report = () => {
   const methods = useForm<ReportProps>({

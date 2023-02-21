@@ -62,7 +62,11 @@ export const Attacker = () => {
             selectorAbove
           />
           <div>
-            <RadioGroupUI className="mt-7" name="mechanic" options={mechanic} />
+            <RadioGroupUI
+              className="mt-6 mr-4"
+              name="mechanic"
+              options={mechanic}
+            />
           </div>
         </div>
         <div className="mt-3 grid place-items-center  gap-x-2">
