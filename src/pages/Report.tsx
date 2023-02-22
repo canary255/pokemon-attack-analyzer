@@ -4,6 +4,7 @@ import { FormProvider } from "react-hook-form";
 import { Button } from "../atom/Button/Button";
 import { Attacker } from "../organisms/Attacker/Attacker";
 import { Defender } from "../organisms/Defender/Defender";
+import { Information } from "../organisms/Information/Information";
 import { reportInitialState } from "../schema/schema";
 import { ReportProps } from "../types/reportProps";
 
@@ -25,13 +26,7 @@ export const Report = () => {
             <Defender />
           </div>
           <div className="xl:col-span-1 md:col-span-2 flex flex-col">
-            <Button
-              name="upload"
-              type="submit"
-              circleBorder="all"
-              className="w-64 h-36"
-              label="SUBMIT"
-            />
+            <Information />
             {dataForm ? JSON.stringify(dataForm, null, "\t") : null}
           </div>
         </div>

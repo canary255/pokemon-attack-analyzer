@@ -6,6 +6,7 @@ import { Stats } from "../../molecules/Stats/Stats";
 import { useTranslation } from "react-i18next";
 import { nature, mechanic, category } from "../../utils/pokemonConsts";
 import { RadioGroupUI } from "../../atom/RadioGroup/RadioGroup";
+import { teraType } from "../../utils/pokemonConsts/teraType";
 
 export const Attacker = () => {
   const { t } = useTranslation();
@@ -20,7 +21,7 @@ export const Attacker = () => {
             label={t("attacker.selectPokemon")}
           />
           <SelectorUI
-            options={nature}
+            options={teraType}
             name="teraType"
             label={t("attacker.selectTeraType")}
           />
