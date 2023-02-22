@@ -1,10 +1,4 @@
-import {
-  Controller,
-  ControllerRenderProps,
-  FieldValues,
-  useFormContext,
-  UseFormSetValue,
-} from "react-hook-form";
+import { FieldValues, useFormContext, UseFormSetValue } from "react-hook-form";
 import { SizeProps } from "../../types/size";
 import { heightSize, widthSize } from "../../utils/styleConsts";
 import { isSmall } from "../../utils/isSmall";

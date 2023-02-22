@@ -63,7 +63,7 @@ export const Attacker = () => {
           />
           <div>
             <RadioGroupUI
-              className="mt-6 mr-4"
+              className="mt-6 mr-11 w-full"
               name="mechanic"
               options={mechanic}
             />

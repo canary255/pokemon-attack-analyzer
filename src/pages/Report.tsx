@@ -17,14 +17,14 @@ export const Report = () => {
   return (
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
-        <div className="grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 bg-gray-100">
+        <div className="grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 xl:h-[91.5vh] bg-gray-100">
           <div className="border-r border-black">
             <Attacker />
           </div>
           <div className="border-r border-black">
             <Defender />
           </div>
-          <div className="bg-green-500 h-[91.5vh] xl:col-span-1 md:col-span-2 flex flex-col">
+          <div className="xl:col-span-1 md:col-span-2 flex flex-col">
             <Button
               name="upload"
               type="submit"
