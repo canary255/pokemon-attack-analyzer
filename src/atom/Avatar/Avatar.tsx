@@ -1,6 +1,6 @@
 interface AvatarProps {
   className: string;
-  url: string;
+  url: string | undefined;
 }
 
 export const Avatar = ({ className, url }: AvatarProps) => {
