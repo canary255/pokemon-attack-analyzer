@@ -72,7 +72,7 @@ export const ComboBoxUI = ({
 
             {filteredArray && (
               <Combobox.Options
-                className={`rounded-md border absolute mt-[69px] ${widthSize[width]} border-black overflow-auto max-h-60`}
+                className={`rounded-md border absolute mt-[60px] ${widthSize[width]} border-black overflow-auto max-h-60`}
               >
                 {filteredArray?.length > 0 ? (
                   <>
