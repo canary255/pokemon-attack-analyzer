@@ -1,4 +1,3 @@
-import { Dex } from "@pkmn/dex";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FormProvider } from "react-hook-form";
@@ -7,7 +6,12 @@ import { Defender } from "../organisms/Defender/Defender";
 import { Information } from "../organisms/Information/Information";
 import { reportInitialState } from "../schema/schema";
 import { ReportProps } from "../types/reportProps";
-import { notAllowedForms } from "../utils/pokemonConsts/notAllowedForms";
+import {
+  getAbilityList,
+  getDexList,
+  getItemList,
+  getMoveList,
+} from "../utils/pokemonConsts/lists";
 
 export const Report = () => {
   const methods = useForm<ReportProps>({
@@ -16,22 +20,22 @@ export const Report = () => {
   const [dataForm, setDataForm] = useState<ReportProps>();
   const onSubmit = (data: ReportProps) => setDataForm(data);
 
-  const map = new Map(Object.entries(Dex.data.Species));
-  const dexList: any = [];
-
-  map.forEach((value) => {
-    const form = value.name.split("-");
-    const notAllowed = form[form.length - 1].toLowerCase();
-    if (form.length > 1 && notAllowedForms.includes(notAllowed)) return;
-    if (value.num > 0) dexList.push(value.name);
-  });
+  const dexList = getDexList();
+  const itemList = getItemList();
+  const abilityList = getAbilityList();
+  const moveList = getMoveList();
 
   return (
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
         <div className="grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 xl:h-[91.5vh] bg-gray-100">
           <div className="border-r border-black">
-            <Attacker dex={dexList} />
+            <Attacker
+              dex={dexList}
+              itemList={itemList}
+              abilityList={abilityList}
+              moveList={moveList}
+            />
           </div>
           <div className="border-r border-black">
             <Defender />

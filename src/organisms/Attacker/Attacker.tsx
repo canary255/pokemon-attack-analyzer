@@ -10,9 +10,17 @@ import { teraType } from "../../utils/pokemonConsts/teraType";
 
 interface AttackerProps {
   dex: string[];
+  itemList: string[];
+  abilityList: string[];
+  moveList: string[];
 }
 
-export const Attacker = ({ dex }: AttackerProps) => {
+export const Attacker = ({
+  dex,
+  itemList,
+  abilityList,
+  moveList,
+}: AttackerProps) => {
   const { t } = useTranslation();
   return (
     <>
@@ -32,12 +40,12 @@ export const Attacker = ({ dex }: AttackerProps) => {
         </div>
         <div className="mt-3 grid place-items-center sm:grid-cols-2  xs:grid-cols-1 gap-x-2">
           <ComboBoxUI
-            options={[]}
+            options={abilityList}
             name="ability"
             label={t("attacker.selectAbility")}
           />
           <ComboBoxUI
-            options={[]}
+            options={itemList}
             name="item"
             label={t("attacker.selectItem")}
           />
@@ -45,7 +53,7 @@ export const Attacker = ({ dex }: AttackerProps) => {
         <div className="mt-3 grid w-full place-items-center xs:grid-cols-1">
           <div className="flex flex-row gap-x-2">
             <ComboBoxUI
-              options={[]}
+              options={moveList}
               name="move"
               width="L"
               label={t("attacker.selectMove")}
