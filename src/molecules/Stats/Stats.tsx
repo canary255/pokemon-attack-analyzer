@@ -2,7 +2,12 @@ import { Label } from "../../atom/Label/Label";
 import { useTranslation } from "react-i18next";
 import { FieldStats } from "../FieldStat/FieldStat";
 
-export const Stats = () => {
+interface StatsProps {
+  atk: string;
+  spa: string;
+}
+
+export const Stats = ({ atk, spa }: StatsProps) => {
   const { t } = useTranslation();
 
   const Layer = () => {
@@ -24,6 +29,7 @@ export const Stats = () => {
         <Layer />
         <FieldStats
           boostName="boostAtk"
+          base={atk}
           categoryName={t("stats.atk")}
           evName="evAtk"
           ivName="ivAtk"
@@ -31,6 +37,7 @@ export const Stats = () => {
         />
         <FieldStats
           boostName="boostSpa"
+          base={spa}
           categoryName={t("stats.spa")}
           evName="evSpa"
           ivName="ivSpa"

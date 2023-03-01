@@ -25,7 +25,9 @@ export const Attacker = ({
 }: AttackerProps) => {
   const { t } = useTranslation();
   const { watch } = useFormContext();
-  const [avatar, setAvatar] = useState<string>("");
+  const [avatar, setAvatar] = useState<string | undefined>();
+  const [atk, setAtk] = useState<string>("90");
+  const [spa, setSpa] = useState<string>("90");
   const specie: string = watch("name");
 
   useEffect(() => {
@@ -41,10 +43,22 @@ export const Attacker = ({
             setAvatar(() => {
               return data.sprites.front_default;
             });
+            setAtk(() => {
+              return data.stats[1].base_stat.toString();
+            });
+            setSpa(() => {
+              return data.stats[3].base_stat.toString();
+            });
           })
           .catch(() => {
             setAvatar(() => {
               return "https://upload.wikimedia.org/wikipedia/commons/6/62/MissingNo.png";
+            });
+            setAtk(() => {
+              return "90";
+            });
+            setSpa(() => {
+              return "90";
             });
           });
       });
@@ -111,7 +125,7 @@ export const Attacker = ({
           </div>
         </div>
         <div className="mt-3 grid place-items-center  gap-x-2">
-          <Stats />
+          <Stats atk={atk} spa={spa} />
         </div>
       </div>
     </>
