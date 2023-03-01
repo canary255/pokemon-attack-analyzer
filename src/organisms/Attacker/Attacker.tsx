@@ -55,7 +55,7 @@ export const Attacker = () => {
             <SwitchUI label={t("button.crit")} className="mt-5 " name="crit" />
           </div>
         </div>
-        <div className="mt-3 grid grid-cols-2 place-items-center gap-x-2">
+        <div className="mt-3 grid lg:grid-cols-2 md:grid-cols-1 place-items-center gap-x-2">
           <SelectorUI
             name="nature"
             options={nature}
@@ -64,7 +64,7 @@ export const Attacker = () => {
           />
           <div>
             <RadioGroupUI
-              className="mt-6 mr-11 w-full"
+              className="mt-6 lg:mr-11 w-full"
               name="mechanic"
               options={mechanic}
             />
