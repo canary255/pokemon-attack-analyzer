@@ -2,7 +2,6 @@ import { Dex } from "@pkmn/dex";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FormProvider } from "react-hook-form";
-import { Button } from "../atom/Button/Button";
 import { Attacker } from "../organisms/Attacker/Attacker";
 import { Defender } from "../organisms/Defender/Defender";
 import { Information } from "../organisms/Information/Information";
@@ -32,7 +31,7 @@ export const Report = () => {
       <form onSubmit={methods.handleSubmit(onSubmit)}>
         <div className="grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 xl:h-[91.5vh] bg-gray-100">
           <div className="border-r border-black">
-            <Attacker />
+            <Attacker dex={dexList} />
           </div>
           <div className="border-r border-black">
             <Defender />

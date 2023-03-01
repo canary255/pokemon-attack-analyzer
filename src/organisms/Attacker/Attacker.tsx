@@ -8,7 +8,11 @@ import { nature, mechanic, category } from "../../utils/pokemonConsts";
 import { RadioGroupUI } from "../../atom/RadioGroup/RadioGroup";
 import { teraType } from "../../utils/pokemonConsts/teraType";
 
-export const Attacker = () => {
+interface AttackerProps {
+  dex: string[];
+}
+
+export const Attacker = ({ dex }: AttackerProps) => {
   const { t } = useTranslation();
   return (
     <>
@@ -16,7 +20,7 @@ export const Attacker = () => {
         <Avatar className="flex flex-row justify-center mt-5" />
         <div className=" mt-3 grid place-items-center sm:grid-cols-2 xs:grid-cols-1 gap-x-2">
           <ComboBoxUI
-            options={[]}
+            options={dex}
             name="name"
             label={t("attacker.selectPokemon")}
           />
