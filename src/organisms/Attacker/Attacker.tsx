@@ -7,6 +7,8 @@ import { useTranslation } from "react-i18next";
 import { nature, mechanic, category } from "../../utils/pokemonConsts";
 import { RadioGroupUI } from "../../atom/RadioGroup/RadioGroup";
 import { teraType } from "../../utils/pokemonConsts/teraType";
+import { useFormContext } from "react-hook-form";
+import { useEffect, useState } from "react";
 
 interface AttackerProps {
   dex: string[];
@@ -22,10 +24,36 @@ export const Attacker = ({
   moveList,
 }: AttackerProps) => {
   const { t } = useTranslation();
+  const { watch } = useFormContext();
+  const [avatar, setAvatar] = useState<string>("");
+  const specie: string = watch("name");
+
+  useEffect(() => {
+    if (specie !== "") {
+      fetch(
+        `https://pokeapi.co/api/v2/pokemon/${specie
+          .replace(" ", "-")
+          .toLowerCase()}`
+      ).then((res) => {
+        res
+          .json()
+          .then((data) => {
+            setAvatar(() => {
+              return data.sprites.front_default;
+            });
+          })
+          .catch(() => {
+            setAvatar(() => {
+              return "https://upload.wikimedia.org/wikipedia/commons/6/62/MissingNo.png";
+            });
+          });
+      });
+    }
+  }, [specie]);
   return (
     <>
       <div className="flex flex-col">
-        <Avatar className="flex flex-row justify-center mt-5" />
+        <Avatar url={avatar} className="flex flex-row justify-center mt-5" />
         <div className=" mt-3 grid place-items-center sm:grid-cols-2 xs:grid-cols-1 gap-x-2">
           <ComboBoxUI
             options={dex}
