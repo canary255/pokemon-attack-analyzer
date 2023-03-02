@@ -67,7 +67,7 @@ export const TextField = ({
           handleNumber(e, setValue, name, onlyNumber, maxNumber, minNumber);
         }}
         value={getValues(name)}
-        className={`border py-2 pl-5 pr-4 border-black 
+        className={`border py-2 pl-1 pr-4 border-black 
               ${isSmall(width) ? "pl-1 pr-0" : "pl-5"}
               ${readonly ? "bg-gray-100" : "bg-white"}
               ${centerText ? "text-center" : ""} ${widthSize[width]}

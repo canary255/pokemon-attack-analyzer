@@ -67,7 +67,11 @@ export const Attacker = ({
   return (
     <>
       <div className="flex flex-col">
-        <Avatar url={avatar} className="flex flex-row justify-center mt-5" />
+        <Avatar
+          url={avatar}
+          teratype={watch("teraType")}
+          className="flex flex-row justify-center mt-5"
+        />
         <div className=" mt-3 grid place-items-center sm:grid-cols-2 xs:grid-cols-1 gap-x-2">
           <ComboBoxUI
             options={dex}
