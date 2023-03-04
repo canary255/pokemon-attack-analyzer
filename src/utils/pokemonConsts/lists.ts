@@ -11,6 +11,11 @@ export const getDexList = () => {
     if (value.num > 0) list.push(value.name);
   });
   return list;
+
+  /*  
+  const result = await fetch(
+    "https://www.pikalytics.com/api/l/2023-02/gen9nationaldex-1760"
+  ); */
 };
 
 export const get9thGenDex = async () => {

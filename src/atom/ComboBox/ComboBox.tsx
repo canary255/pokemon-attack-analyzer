@@ -58,6 +58,7 @@ export const ComboBoxUI = ({
           {label ? <Label className="mb-1">{label}</Label> : null}
           <Combobox
             defaultValue={field.value}
+            value={field.value}
             onChange={field.onChange}
             refName={field.name}
           >

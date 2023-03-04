@@ -9,6 +9,7 @@ import { RadioGroupUI } from "../../atom/RadioGroup/RadioGroup";
 import { teraType } from "../../utils/pokemonConsts/teraType";
 import { useFormContext } from "react-hook-form";
 import { useEffect, useState } from "react";
+import { capitalizeEveryWord } from "../../utils/capitalize";
 
 interface AttackerProps {
   dex: string[];
@@ -24,11 +25,12 @@ export const Attacker = ({
   moveList,
 }: AttackerProps) => {
   const { t } = useTranslation();
-  const { watch } = useFormContext();
+  const { watch, setValue } = useFormContext();
   const [avatar, setAvatar] = useState<string | undefined>();
   const [atk, setAtk] = useState<string>("90");
   const [spa, setSpa] = useState<string>("90");
   const specie: string = watch("name");
+  //const { update } = useFieldArray({ name: "ability" });
 
   useEffect(() => {
     if (specie !== "") {
@@ -40,26 +42,22 @@ export const Attacker = ({
         res
           .json()
           .then((data) => {
-            setAvatar(() => {
-              return data.sprites.front_default;
-            });
-            setAtk(() => {
-              return data.stats[1].base_stat.toString();
-            });
-            setSpa(() => {
-              return data.stats[3].base_stat.toString();
-            });
+            setAvatar(data.sprites.front_default);
+            setAtk(data.stats[1].base_stat.toString());
+            setSpa(data.stats[3].base_stat.toString());
+            setValue(
+              "ability",
+              capitalizeEveryWord(
+                data.abilities[0].ability.name.replaceAll("-", " ")
+              )
+            );
           })
           .catch(() => {
-            setAvatar(() => {
-              return "https://upload.wikimedia.org/wikipedia/commons/6/62/MissingNo.png";
-            });
-            setAtk(() => {
-              return "90";
-            });
-            setSpa(() => {
-              return "90";
-            });
+            setAvatar(
+              "https://upload.wikimedia.org/wikipedia/commons/6/62/MissingNo.png"
+            );
+            setAtk("90");
+            setSpa("90");
           });
       });
     }
