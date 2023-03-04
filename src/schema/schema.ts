@@ -21,6 +21,7 @@ export const reportInitialState = {
   boostSpd: "0",
   weather: "none",
   terrain: "none",
+  ruins: "none",
   aura: "none",
   spikes: "0",
   helpingHand: false,

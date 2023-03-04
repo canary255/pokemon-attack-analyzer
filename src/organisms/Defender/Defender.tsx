@@ -7,6 +7,7 @@ import {
   terrain,
   aura,
   spikes,
+  ruins,
 } from "../../utils/pokemonConsts";
 import { RadioGroupUI } from "../../atom/RadioGroup/RadioGroup";
 import { TextField } from "../../atom/Textfield/TextField";
@@ -60,6 +61,9 @@ export const Defender = () => {
         <Divider />
         <div className={`grid place-items-center`}>
           <RadioGroupUI options={terrain} name="terrain" />
+        </div>
+        <div className={`${margin} grid place-items-center`}>
+          <RadioGroupUI options={ruins} name="ruins" />
         </div>
         <div className={`${margin} grid place-items-center`}>
           <WeatherGroup

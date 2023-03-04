@@ -9,3 +9,4 @@ export * from "./terrain";
 export * from "./aura";
 export * from "./spikes";
 export * from "./teraType";
+export * from "./ruins";

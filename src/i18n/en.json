@@ -126,6 +126,13 @@
         "break": "Aura Break",
         "fairy": "Fairy Aura",
         "dark": "Dark Aura"
+    },
+    "ruins": {
+        "tablets": "Tables of Ruin",
+        "sword": "Sword of Ruin",
+        "vessel": "Vessel of Ruin",
+        "beads": "Beads of Ruin"
+
     }
     
 }
