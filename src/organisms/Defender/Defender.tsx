@@ -62,8 +62,29 @@ export const Defender = () => {
         <div className={`grid place-items-center`}>
           <RadioGroupUI options={terrain} name="terrain" />
         </div>
-        <div className={`${margin} grid place-items-center`}>
-          <RadioGroupUI options={ruins} name="ruins" />
+        <div
+          className={`${margin} grid grid-cols-2 gap-y-4 place-items-center`}
+        >
+          <SwitchUI
+            className="text-[12px]"
+            label={`${t("ruins.tablets")} (-Atk)`}
+            name="tablets"
+          />
+          <SwitchUI
+            className="text-[12px]"
+            label={`${t("ruins.vessel")} (-SpA)`}
+            name="vessel"
+          />
+          <SwitchUI
+            className="text-[12px]"
+            label={`${t("ruins.sword")} (-Def)`}
+            name="sword"
+          />
+          <SwitchUI
+            className="text-[12px]"
+            label={`${t("ruins.beads")} (-SpD)`}
+            name="beads"
+          />
         </div>
         <div className={`${margin} grid place-items-center`}>
           <WeatherGroup

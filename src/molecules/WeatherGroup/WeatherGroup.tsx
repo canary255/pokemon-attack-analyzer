@@ -40,7 +40,7 @@ export const WeatherGroup = ({ name, label, className }: RadioGroupProps) => {
               <RadioGroup.Option
                 key={index}
                 value={option.value}
-                className={`h-10 p-3 flex items-center justify-center border cursor-pointer border-black col-span-1
+                className={`h-7 p-3 flex items-center justify-center border cursor-pointer border-black col-span-1
             ${borderDirection[setBorderDirection(index, weather?.length)]}
              ${
                value === option.value
@@ -69,7 +69,7 @@ export const WeatherGroup = ({ name, label, className }: RadioGroupProps) => {
                 <RadioGroup.Option
                   key={index}
                   value={option.value}
-                  className={`h-10 p-3 flex items-center justify-center border cursor-pointer border-black col-span-1
+                  className={`h-7 p-3 mt-1 flex items-center justify-center border cursor-pointer border-black col-span-1
             ${borderDirection[setBorderDirection(index, strongWeather?.length)]}
              ${
                value === option.value

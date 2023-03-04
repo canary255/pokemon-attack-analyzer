@@ -21,7 +21,6 @@ export const reportInitialState = {
   boostSpd: "0",
   weather: "none",
   terrain: "none",
-  ruins: "none",
   aura: "none",
   spikes: "0",
   helpingHand: false,
@@ -35,4 +34,8 @@ export const reportInitialState = {
   battery: false,
   friendGuard: false,
   tailwind: false,
+  vessel: false,
+  tablets: false,
+  sword: false,
+  beads: false,
 };

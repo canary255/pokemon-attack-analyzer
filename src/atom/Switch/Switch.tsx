@@ -32,7 +32,7 @@ export const SwitchUI = ({
         >
           <span
             className={`transition ${
-              field.value ? "text-white" : "text-black"
+              field.value ? "text-white bold" : "text-black"
             }`}
           >
             {label}

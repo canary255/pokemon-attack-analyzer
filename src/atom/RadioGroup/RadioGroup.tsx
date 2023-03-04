@@ -47,7 +47,7 @@ export const RadioGroupUI = ({
                   <RadioGroup.Option
                     key={index}
                     value={option.value}
-                    className={`h-10 p-3 flex items-center justify-center border cursor-pointer border-black col-span-1
+                    className={`h-7 p-3 flex items-center justify-center border cursor-pointer border-black col-span-1
             ${borderDirection[setBorderDirection(index, options?.length)]}
              ${
                value === option.value

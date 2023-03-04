@@ -35,4 +35,8 @@ export type ReportProps = {
   battery: boolean;
   friendGuard: boolean;
   tailwind: boolean;
+  vessel: boolean;
+  tablets: boolean;
+  sword: boolean;
+  beads: boolean;
 };
