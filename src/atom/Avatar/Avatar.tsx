@@ -7,7 +7,7 @@ interface AvatarProps {
 }
 
 export const Avatar = ({ className, url, teratype }: AvatarProps) => {
-  //TODO: Añadir el logo del teratipo que haya seleccionado el usuario
+  //TODO: Añrreglar z-index
   return (
     <>
       <div className={className}>

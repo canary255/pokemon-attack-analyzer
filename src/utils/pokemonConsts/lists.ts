@@ -13,6 +13,15 @@ export const getDexList = () => {
   return list;
 };
 
+export const get9thGenDex = async () => {
+  const result = await fetch(
+    "https://www.pikalytics.com/api/l/2023-02/gen9ubers-1760"
+  );
+  const list = await result.json();
+  const array = await list.map((value: any) => value.name);
+  return array;
+};
+
 export const getItemList = () => {
   const map = new Map(Object.entries(Dex.data.Items));
   const list: any = [];

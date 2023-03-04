@@ -7,6 +7,7 @@ import { Information } from "../organisms/Information/Information";
 import { reportInitialState } from "../schema/schema";
 import { ReportProps } from "../types/reportProps";
 import {
+  get9thGenDex,
   getAbilityList,
   getDexList,
   getItemList,

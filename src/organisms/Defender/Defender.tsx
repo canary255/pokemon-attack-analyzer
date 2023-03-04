@@ -14,6 +14,7 @@ import { SelectorUI } from "../../atom/Selector/Selector";
 import { Divider } from "../../atom/Divider/Divider";
 import { SwitchUI } from "../../atom/Switch/Switch";
 import { useFormContext } from "react-hook-form";
+import { WeatherGroup } from "../../molecules/WeatherGroup/WeatherGroup";
 
 export const Defender = () => {
   const { t } = useTranslation();
@@ -26,7 +27,7 @@ export const Defender = () => {
         <div className={`${margin} grid place-items-center`}>
           <RadioGroupUI name="selectPokemon" options={selectPokemon} />
         </div>
-        {valueSelectPokemon === "some" && (
+        {/*valueSelectPokemon === "some" && (
           <div className={`${margin} px-5 mt-3 grid place-items-center`}>
             <TextField
               className="w-full"
@@ -35,7 +36,7 @@ export const Defender = () => {
               name="defenderList"
             />
           </div>
-        )}
+        )*/}
         <div className={`${margin} grid grid-cols-2 place-items-center`}>
           <SelectorUI
             options={boost}
@@ -61,9 +62,8 @@ export const Defender = () => {
           <RadioGroupUI options={terrain} name="terrain" />
         </div>
         <div className={`${margin} grid place-items-center`}>
-          <RadioGroupUI
+          <WeatherGroup
             className={`grid grid-cols-5 w-[70%] items-center`}
-            options={weather}
             name="weather"
           />
         </div>
