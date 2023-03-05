@@ -6,6 +6,7 @@ import { Controller, useFormContext } from "react-hook-form";
 import { OptionsType } from "../../type/options";
 import { useTranslation } from "react-i18next";
 import { Label } from "../Label/Label";
+import { limitText } from "../../utils/limitText";
 
 interface SelectorProps {
   name: string;
@@ -44,11 +45,6 @@ export const SelectorUI = ({
     if (selected) return "bg-purple-600 text-white";
     if (active) return "bg-purple-500 text-white cursor-pointer";
     return "text-gray-900";
-  };
-
-  const limitText = (title: string, limit: number = 12) => {
-    if (title.length > limit) return title.slice(0, limit) + "...";
-    return title;
   };
 
   const getTitle = (value: string) => {

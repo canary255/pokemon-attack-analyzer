@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 import { capitalizeEveryWord } from "../../utils/capitalize";
 import { getMoveDetails } from "../../utils/pokemonConsts/lists";
 import { SelectorArray } from "../../atom/SelectorArray/SelectorArray";
+import { numberOfHits } from "../../utils/numberOfHits";
 
 interface AttackerProps {
   dex: string[];
@@ -19,20 +20,6 @@ interface AttackerProps {
   abilityList: string[];
   moveList: string[];
 }
-
-const numberOfHits = (move: string | number[]) => {
-  if (move && typeof move === "object") return getArrayHits(move);
-  if (move && typeof move === "number") return getArrayHits([1, move]);
-  return [1];
-};
-
-const getArrayHits = (hits: number[]) => {
-  const array = [];
-  for (let i = hits[0]; i <= hits[1]; i++) {
-    array.push(String(i));
-  }
-  return array;
-};
 
 export const Attacker = ({
   dex,
@@ -70,7 +57,11 @@ export const Attacker = ({
         res
           .json()
           .then((data) => {
-            setAvatar(data.sprites.front_default);
+            setAvatar(
+              data.name === "porygon-z"
+                ? data.sprites.front_shiny
+                : data.sprites.front_default
+            );
             setAtk(data.stats[1].base_stat.toString());
             setSpa(data.stats[3].base_stat.toString());
             setValue(
@@ -90,6 +81,7 @@ export const Attacker = ({
       });
     }
   }, [specie]);
+
   return (
     <>
       <div className="flex flex-col">
