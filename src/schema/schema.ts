@@ -38,4 +38,5 @@ export const reportInitialState = {
   tablets: false,
   sword: false,
   beads: false,
+  hits: "",
 };

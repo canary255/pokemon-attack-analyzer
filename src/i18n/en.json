@@ -23,7 +23,8 @@
         "selectItem": "Item",
         "selectMove": "Select a Move",
         "category": "Category",
-        "nature": "Nature"
+        "nature": "Nature",
+        "numHits": "Hits"
     },
     "category": {
         "physical": "Phy",

@@ -10,6 +10,8 @@ import { teraType } from "../../utils/pokemonConsts/teraType";
 import { useFormContext } from "react-hook-form";
 import { useEffect, useState } from "react";
 import { capitalizeEveryWord } from "../../utils/capitalize";
+import { getMoveDetails } from "../../utils/pokemonConsts/lists";
+import { SelectorArray } from "../../atom/SelectorArray/SelectorArray";
 
 interface AttackerProps {
   dex: string[];
@@ -17,6 +19,20 @@ interface AttackerProps {
   abilityList: string[];
   moveList: string[];
 }
+
+const numberOfHits = (move: string | number[]) => {
+  if (move && typeof move === "object") return getArrayHits(move);
+  if (move && typeof move === "number") return getArrayHits([1, move]);
+  return [1];
+};
+
+const getArrayHits = (hits: number[]) => {
+  const array = [];
+  for (let i = hits[0]; i <= hits[1]; i++) {
+    array.push(String(i));
+  }
+  return array;
+};
 
 export const Attacker = ({
   dex,
@@ -29,8 +45,20 @@ export const Attacker = ({
   const [avatar, setAvatar] = useState<string | undefined>();
   const [atk, setAtk] = useState<string>("90");
   const [spa, setSpa] = useState<string>("90");
+  const [moveDetails, setMoveDetails] = useState<any>();
   const specie: string = watch("name");
-  //const { update } = useFieldArray({ name: "ability" });
+  const move: string = watch("move");
+
+  useEffect(() => {
+    if (move !== "") {
+      const oneMove = getMoveDetails(move);
+      setMoveDetails(oneMove);
+      setValue(
+        "hits",
+        oneMove?.multihit ? String(numberOfHits(oneMove.multihit)[0]) : ""
+      );
+    }
+  }, [move]);
 
   useEffect(() => {
     if (specie !== "") {
@@ -94,8 +122,8 @@ export const Attacker = ({
             label={t("attacker.selectItem")}
           />
         </div>
-        <div className="mt-3 grid w-full place-items-center xs:grid-cols-1">
-          <div className="flex flex-row gap-x-2">
+        <div className="mt-3 grid w-full place-items-center lg:grid-cols-6 md:grid-cols-5 sm:grid-cols-8 xs:grid-cols-1">
+          <div className="flex flex-row gap-x-2 lg:col-span-4 md:col-span-4 sm:col-span-6">
             <ComboBoxUI
               options={moveList}
               name="move"
@@ -108,8 +136,16 @@ export const Attacker = ({
               name="category"
               label={t("attacker.category")}
             />
-            <SwitchUI label={t("button.crit")} className="mt-5 " name="crit" />
           </div>
+          {moveDetails?.multihit && (
+            <SelectorArray
+              options={numberOfHits(moveDetails?.multihit)}
+              width="XS"
+              name="hits"
+              label={t("attacker.numHits")}
+            />
+          )}
+          <SwitchUI label={t("button.crit")} className="mt-5 " name="crit" />
         </div>
         <div className="mt-3 grid lg:grid-cols-2 md:grid-cols-1 place-items-center gap-x-2">
           <SelectorUI

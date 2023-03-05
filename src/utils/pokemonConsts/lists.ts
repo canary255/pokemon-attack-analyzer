@@ -1,6 +1,12 @@
 import { Dex } from "@pkmn/dex";
 import { notAllowedForms } from "./notAllowedForms";
 
+const moveMap = new Map(Object.entries(Dex.data.Moves));
+const moveList: any = [];
+moveMap.forEach((value) => {
+  if (value.category !== "Status") moveList.push(value);
+});
+
 export const getDexList = () => {
   const map = new Map(Object.entries(Dex.data.Species));
   const list: any = [];
@@ -46,10 +52,9 @@ export const getAbilityList = () => {
 };
 
 export const getMoveList = () => {
-  const map = new Map(Object.entries(Dex.data.Moves));
-  const list: any = [];
-  map.forEach((value) => {
-    if (value.category !== "Status") list.push(value.name);
-  });
-  return list;
+  return moveList.map((value: any) => value.name);
+};
+
+export const getMoveDetails = (move: string) => {
+  return moveList.find((value: any) => value.name === move);
 };
