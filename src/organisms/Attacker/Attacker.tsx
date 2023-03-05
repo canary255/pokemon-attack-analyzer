@@ -72,9 +72,7 @@ export const Attacker = ({
             );
           })
           .catch(() => {
-            setAvatar(
-              "https://upload.wikimedia.org/wikipedia/commons/6/62/MissingNo.png"
-            );
+            setAvatar(undefined);
             setAtk("90");
             setSpa("90");
           });

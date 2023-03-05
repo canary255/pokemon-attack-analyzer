@@ -1,4 +1,5 @@
 import { teratypeImage } from "../../utils/teratypeImage";
+import missingno from "../../assets/const/Missingno.png";
 
 interface AvatarProps {
   className: string;
@@ -16,10 +17,7 @@ export const Avatar = ({ className, url, teratype }: AvatarProps) => {
         >
           <img
             className={`w-[70%] h-[70%] `}
-            src={
-              url ??
-              "https://upload.wikimedia.org/wikipedia/commons/6/62/MissingNo.png"
-            }
+            src={url ?? missingno}
             alt="Rounded avatar"
           />
           <img
