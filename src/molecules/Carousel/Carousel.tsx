@@ -1,32 +1,36 @@
-import { Transition } from "@headlessui/react";
-import { createRef, Fragment, useState } from "react";
+import { createRef, useState } from "react";
 
-const images = [
-  "https://images.unsplash.com/photo-1506501139174-099022df5260?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80",
-  "https://images.unsplash.com/photo-1523438097201-512ae7d59c44?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
-  "https://images.unsplash.com/photo-1513026705753-bc3fffca8bf4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
+const content = [
+  {
+    type: "image",
+    url: "https://images.unsplash.com/photo-1506501139174-099022df5260?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80",
+  },
+  {
+    type: "image",
+    url: "https://images.unsplash.com/photo-1523438097201-512ae7d59c44?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
+  },
+  {
+    type: "image",
+    url: "https://images.unsplash.com/photo-1513026705753-bc3fffca8bf4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
+  },
+  {
+    type: "video",
+    url: "https://www.youtube.com/embed/LRTOUqLmuAU",
+  },
 ];
-// images must be an array of urls , if using Next JS this could something like
-// const images = ['/img/img1.png', '/img/img2.png', '/img/img3.png']
-// images must be an array of urls , if using Next JS this could something like
-// const images = ['/img/img1.png', '/img/img2.png', '/img/img3.png']
 
 export const Carousel = () => {
   // We will start by storing the index of the current image in the state.
-  const [currentImage, setCurrentImage] = useState(0);
-  const [isShowing, setIsShowing] = useState(true);
+  const [currentContent, setCurrentContent] = useState(0);
 
-  // We are using react ref to 'tag' each of the images. Below will create an array of
-  // objects with numbered keys. We will use those numbers (i) later to access a ref of a
-  // specific image in this array.
-  const refs = images.reduce((acc: any, val, i: number) => {
+  const refs = content.reduce((acc: any, val, i: number) => {
     acc[i] = createRef();
     return acc;
   }, {});
 
   const scrollToImage = (i: any) => {
     // First let's set the index of the image we want to see next
-    setCurrentImage(i);
+    setCurrentContent(i);
     // Now, this is where the magic happens. We 'tagged' each one of the images with a ref,
     // we can then use built-in scrollIntoView API to do eaxactly what it says on the box - scroll it into
     // your current view! To do so we pass an index of the image, which is then use to identify our current
@@ -42,23 +46,23 @@ export const Carousel = () => {
   };
 
   // Some validation for checking the array length could be added if needed
-  const totalImages = images.length;
+  const totalImages = content.length;
 
   // Below functions will assure that after last image we'll scroll back to the start,
   // or another way round - first to last in previousImage method.
   const nextImage = () => {
-    if (currentImage >= totalImages - 1) {
+    if (currentContent >= totalImages - 1) {
       scrollToImage(0);
     } else {
-      scrollToImage(currentImage + 1);
+      scrollToImage(currentContent + 1);
     }
   };
 
   const previousImage = () => {
-    if (currentImage === 0) {
+    if (currentContent === 0) {
       scrollToImage(totalImages - 1);
     } else {
-      scrollToImage(currentImage - 1);
+      scrollToImage(currentContent - 1);
     }
   };
 
@@ -90,11 +94,26 @@ export const Carousel = () => {
     // absolute positioning on each side of the image.
     <div className="relative">
       <SliderControl isLeft />
-      {images.map((img, i) => (
+      {content.map((content, i) => (
         <>
-          {i === currentImage && (
+          {i === currentContent && (
             <div className="w-full flex-shrink-0" key={i} ref={refs[i]}>
-              <img src={img} className="w-full h-full object-contain" />
+              {content.type === "image" && (
+                <img
+                  src={content.url}
+                  className="w-full h-full object-contain"
+                />
+              )}
+              {content.type === "video" && (
+                <iframe
+                  width="100%"
+                  height="341"
+                  src={content.url}
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              )}
             </div>
           )}
         </>
