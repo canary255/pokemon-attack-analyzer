@@ -11,7 +11,17 @@
         "level": "Level"
     },
     "common": {
-        "none": "None"
+        "none": "None",
+        "reportGenerator": "Pokémon Report Generator"
+    },
+    "proyectExplain": {
+        "description": "is a proyect where a user can check if Pokémon can survive an attack with certain conditions of a Pokémon attacker. It also allows to create a PDF with those calculations.",
+        "step1": "Fill the attacker section with the Pokémon, item, move, etc.",
+        "step2": "Put the boost of the defensive Pokémon, and mark the target.",
+        "step3": "Add any field conditions",
+        "step4": "Click on Generate Report.",
+        "step5": "Wait until all calcs are done.",
+        "step6": "After that, you can check the calcs of every Pokémon, if it survives or not. Also you can download a PDF with the inform of calculations."
     },
     "error":{
         "resultNotFound": "Result not found"
@@ -51,7 +61,8 @@
         "auroraVeil": "Aurora Veil",
         "battery": "Battery",
         "friendGuard": "Friend Guard",
-        "tailwind": "Tailwind"
+        "tailwind": "Tailwind",
+        "generateReport": "Generate Report!"
     },
     "message": {
         "specifyPokemon": "Specify Pokémon by writing the name and separating it with a comma...",

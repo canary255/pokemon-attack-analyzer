@@ -7,7 +7,7 @@ interface TextProps {
 
 export const Text = ({ className, children }: TextProps) => {
   return (
-    <p className={`${className} text-sm text-black dark:text-white`}>
+    <p className={`text-sm text-black dark:text-white ${className} `}>
       {children}
     </p>
   );

@@ -10,7 +10,6 @@ import {
   ruins,
 } from "../../utils/pokemonConsts";
 import { RadioGroupUI } from "../../atom/RadioGroup/RadioGroup";
-import { TextField } from "../../atom/Textfield/TextField";
 import { SelectorUI } from "../../atom/Selector/Selector";
 import { Divider } from "../../atom/Divider/Divider";
 import { SwitchUI } from "../../atom/Switch/Switch";
@@ -20,7 +19,7 @@ import { WeatherGroup } from "../../molecules/WeatherGroup/WeatherGroup";
 export const Defender = () => {
   const { t } = useTranslation();
   const { watch } = useFormContext();
-  const valueSelectPokemon = watch("selectPokemon");
+  //const valueSelectPokemon = watch("selectPokemon");
   const margin = "mt-3";
   return (
     <>
