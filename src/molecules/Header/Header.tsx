@@ -10,6 +10,14 @@ export const Header = ({ children }: HeaderProps) => {
     localStorage.getItem("darkMode") === "true" ? true : false
   );
 
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, []);
+
   const handleDarkMode = () => {
     if (darkMode) {
       localStorage.setItem("darkMode", "false");
@@ -22,17 +30,15 @@ export const Header = ({ children }: HeaderProps) => {
   };
 
   return (
-    <div className="sticky z-10 top-0 grid grid-cols-2 content-center bg-[#009DFF] h-16 w-full">
-      <div className="009DFF">
-        <p className="ml-3 text-white sm:text-4xl xs:text-lg">
-          Pokémon Report Generator
-        </p>
-      </div>
+    <div className="sticky z-10 top-0 grid grid-cols-4 content-center bg-[#009DFF] h-16 w-full">
+      <p className="ml-3 text-white sm:text-4xl xs:text-2xl col-span-3">
+        Pokémon Report Generator
+      </p>
       <div className="grid place-items-end">
         <Switch checked={darkMode} onChange={handleDarkMode}>
           {({ checked }) => (
             /* Use the `checked` state to conditionally style the button. */
-            <button
+            <div
               className={`${
                 checked ? "bg-blue-600" : "bg-gray-200"
               } relative inline-flex h-10 w-16 items-center rounded-full`}
@@ -50,7 +56,7 @@ export const Header = ({ children }: HeaderProps) => {
               >
                 {checked ? "dark_mode" : "light_mode"}
               </span>
-            </button>
+            </div>
           )}
         </Switch>
       </div>

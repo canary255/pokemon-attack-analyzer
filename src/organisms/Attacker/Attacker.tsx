@@ -152,7 +152,7 @@ export const Attacker = ({
             />
           </div>
         </div>
-        <div className="mt-3 grid place-items-center  gap-x-2">
+        <div className="mt-3 grid place-items-center sm:mb-4 gap-x-2">
           <Stats atk={atk} spa={spa} />
         </div>
       </div>

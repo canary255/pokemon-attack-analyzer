@@ -3,8 +3,8 @@ import { Text } from "../../atom/Text/Text";
 
 export const Information = () => {
   return (
-    <div className="p-3 grid grid-rows-4 gap-y-6">
-      <div>
+    <div className="grid grid-rows-3 gap-y-6">
+      <div className="p-3">
         <Text className="text-xl font-medium">Pokémon Report Generator</Text>
         <Text className="text-sm font-medium">
           is a Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
@@ -14,7 +14,7 @@ export const Information = () => {
           turpis dignissim felis, sit amet tempus magna ante vitae nunc.{" "}
         </Text>
       </div>
-      <div>
+      <div className="p-3">
         <Text className="text-xl font-medium">Instructions:</Text>
         <ul className="list-disc pl-6 text-sm font-semibold dark:text-white">
           <li>Lorem ipsum dolor sit amet</li>
@@ -26,7 +26,7 @@ export const Information = () => {
         </ul>
       </div>
 
-      <div className="items-end flex justify-center row-span-2">
+      <div className="items-end flex justify-center">
         <Button
           name="upload"
           type="submit"

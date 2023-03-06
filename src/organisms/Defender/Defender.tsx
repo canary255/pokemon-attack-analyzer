@@ -118,7 +118,9 @@ export const Defender = () => {
           <SwitchUI label={t("button.reflect")} name="reflect" />
           <SwitchUI label={t("button.auroraVeil")} name="auroraVeil" />
         </div>
-        <div className={`${margin} grid grid-cols-3 place-items-center`}>
+        <div
+          className={`${margin} grid grid-cols-3 place-items-center sm:mb-4`}
+        >
           <SwitchUI label={t("button.battery")} name="battery" />
           <SwitchUI label={t("button.friendGuard")} name="friendGuard" />
           <SwitchUI label={t("button.tailwind")} name="tailwind" />
