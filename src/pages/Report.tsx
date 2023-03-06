@@ -4,6 +4,7 @@ import { FormProvider } from "react-hook-form";
 import { Attacker } from "../organisms/Attacker/Attacker";
 import { Defender } from "../organisms/Defender/Defender";
 import { Information } from "../organisms/Information/Information";
+import { LoadingCalcs } from "../organisms/LoadingCalcs/LoadingCalcs";
 import { reportInitialState } from "../schema/schema";
 import { ReportProps } from "../types/reportProps";
 import {
@@ -19,6 +20,7 @@ export const Report = () => {
   });
   const [dataForm, setDataForm] = useState<ReportProps>();
   const onSubmit = (data: ReportProps) => setDataForm(data);
+  const [page, setPage] = useState<number>(1);
 
   const dexList = getDexList();
   const itemList = getItemList();
@@ -41,10 +43,8 @@ export const Report = () => {
             <Defender />
           </div>
           <div className="xl:col-span-1 md:col-span-2">
-            <>
-              <Information />
-              {dataForm ? JSON.stringify(dataForm, null, "\t") : null}
-            </>
+            {page === 0 && <Information />}
+            {page === 1 && <LoadingCalcs />}
           </div>
         </div>
       </form>

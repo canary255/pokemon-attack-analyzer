@@ -3,23 +3,18 @@ import {
   selectPokemon,
   target,
   boost,
-  weather,
   terrain,
   aura,
   spikes,
-  ruins,
 } from "../../utils/pokemonConsts";
 import { RadioGroupUI } from "../../atom/RadioGroup/RadioGroup";
 import { SelectorUI } from "../../atom/Selector/Selector";
 import { Divider } from "../../atom/Divider/Divider";
 import { SwitchUI } from "../../atom/Switch/Switch";
-import { useFormContext } from "react-hook-form";
 import { WeatherGroup } from "../../molecules/WeatherGroup/WeatherGroup";
 
 export const Defender = () => {
   const { t } = useTranslation();
-  const { watch } = useFormContext();
-  //const valueSelectPokemon = watch("selectPokemon");
   const margin = "mt-3";
   return (
     <>
@@ -27,16 +22,6 @@ export const Defender = () => {
         <div className={`${margin} grid place-items-center`}>
           <RadioGroupUI name="selectPokemon" options={selectPokemon} />
         </div>
-        {/*valueSelectPokemon === "some" && (
-          <div className={`${margin} px-5 mt-3 grid place-items-center`}>
-            <TextField
-              className="w-full"
-              centerText
-              label={t("message.specifyPokemon")}
-              name="defenderList"
-            />
-          </div>
-        )*/}
         <div className={`${margin} grid grid-cols-2 place-items-center`}>
           <SelectorUI
             options={boost}
