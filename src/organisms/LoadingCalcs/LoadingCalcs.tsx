@@ -9,11 +9,9 @@ export const LoadingCalcs = () => {
     <div className="flex flex-col gap-y-3">
       <Text className="p-5 text-xl font-semibold">
         We are doing the calcs, it will take until 20 minutes long. Meanwhile,
-        you can do other stuff and be relaxed :D
+        you can do other stuff or watch some content here and be relaxed :D
       </Text>
-      <div className="w-full">
-        <Carousel />
-      </div>
+      <Carousel />
       <Text>Poner el pokemon que va aqui</Text>
     </div>
   );
