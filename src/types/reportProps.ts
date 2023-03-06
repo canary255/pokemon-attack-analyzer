@@ -6,12 +6,13 @@ export type ReportProps = {
   item: string;
   move: string;
   category: string;
+  mechanic: string;
   crit: boolean;
-  baseAtk: string;
+  //baseAtk: string;
   boostAtk: string;
   evAtk: string;
   ivAtk: string;
-  baseSpa: string;
+  //baseSpa: string;
   boostSpa: string;
   evSpa: string;
   ivSpa: string;

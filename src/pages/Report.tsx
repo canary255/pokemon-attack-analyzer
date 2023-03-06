@@ -5,7 +5,7 @@ import { Attacker } from "../organisms/Attacker/Attacker";
 import { Defender } from "../organisms/Defender/Defender";
 import { Information } from "../organisms/Information/Information";
 import { LoadingCalcs } from "../organisms/LoadingCalcs/LoadingCalcs";
-import { reportInitialState } from "../schema/schema";
+import { reportInitialState, testingSet } from "../schema/schema";
 import { ReportProps } from "../types/reportProps";
 import {
   getAbilityList,
@@ -16,11 +16,14 @@ import {
 
 export const Report = () => {
   const methods = useForm<ReportProps>({
-    defaultValues: reportInitialState,
+    defaultValues: testingSet,
   });
   const [dataForm, setDataForm] = useState<ReportProps>();
-  const onSubmit = (data: ReportProps) => setDataForm(data);
+  const onSubmit = (data: ReportProps) => {
+    setDataForm(data);
+  };
   const [page, setPage] = useState<number>(1);
+  const [resultCalcs, setResultCalcs] = useState([]);
 
   const dexList = getDexList();
   const itemList = getItemList();
@@ -44,7 +47,9 @@ export const Report = () => {
           </div>
           <div className="xl:col-span-1 md:col-span-2">
             {page === 0 && <Information />}
-            {page === 1 && <LoadingCalcs />}
+            {page === 1 && (
+              <LoadingCalcs data={testingSet} setResultCalcs={setResultCalcs} />
+            )}
           </div>
         </div>
       </form>
