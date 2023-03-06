@@ -4,7 +4,7 @@ import { SizeProps } from "../../types/size";
 import { isSmall } from "../../utils/isSmall";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { Label } from "../Label/Label";
+import { Text } from "../Text/Text";
 import { limitText } from "../../utils/limitText";
 
 interface SelectorProps {
@@ -49,7 +49,7 @@ export const SelectorArray = ({
   return (
     <>
       <div className="flex flex-col">
-        {label ? <Label className="mb-1">{label}</Label> : null}
+        {label ? <Text className="mb-1">{label}</Text> : null}
         <Controller
           name={name}
           control={control}

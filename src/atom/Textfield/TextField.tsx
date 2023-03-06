@@ -2,7 +2,7 @@ import { FieldValues, useFormContext, UseFormSetValue } from "react-hook-form";
 import { SizeProps } from "../../types/size";
 import { heightSize, widthSize } from "../../utils/styleConsts";
 import { isSmall } from "../../utils/isSmall";
-import { Label } from "../Label/Label";
+import { Text } from "../Text/Text";
 
 interface TextFieldProps {
   type?: string;
@@ -61,7 +61,7 @@ export const TextField = ({
   const { getValues, setValue } = useFormContext();
   return (
     <div className="flex flex-col">
-      {label ? <Label className="mb-1">{label}</Label> : null}
+      {label ? <Text className="mb-1">{label}</Text> : null}
       <input
         onChange={(e: any) => {
           handleNumber(e, setValue, name, onlyNumber, maxNumber, minNumber);

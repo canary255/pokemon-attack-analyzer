@@ -1,4 +1,4 @@
-import { Label } from "../../atom/Label/Label";
+import { Text } from "../../atom/Text/Text";
 import { useTranslation } from "react-i18next";
 import { FieldStats } from "../FieldStat/FieldStat";
 
@@ -14,9 +14,9 @@ export const Stats = ({ atk, spa }: StatsProps) => {
     return (
       <>
         <div></div>
-        <Label>Base</Label>
-        <Label>IV</Label>
-        <Label>EV</Label>
+        <Text>Base</Text>
+        <Text>IV</Text>
+        <Text>EV</Text>
         <div></div>
         <div></div>
       </>

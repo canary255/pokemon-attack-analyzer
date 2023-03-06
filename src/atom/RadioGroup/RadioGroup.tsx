@@ -1,6 +1,6 @@
 import { RadioGroup } from "@headlessui/react";
 import { borderDirection } from "../../utils/styleConsts";
-import { Label } from "../Label/Label";
+import { Text } from "../Text/Text";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { OptionsType } from "../../type/options";
@@ -36,7 +36,7 @@ export const RadioGroupUI = ({
       defaultValue={options ? options[0].value : ""}
       render={({ field }) => (
         <>
-          {label && <Label>{label}</Label>}
+          {label && <Text>{label}</Text>}
           <RadioGroup
             defaultValue={field.value}
             onChange={field.onChange}

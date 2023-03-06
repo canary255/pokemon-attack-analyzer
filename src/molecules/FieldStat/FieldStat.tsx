@@ -1,5 +1,5 @@
 import { useFormContext } from "react-hook-form";
-import { Label } from "../../atom/Label/Label";
+import { Text } from "../../atom/Text/Text";
 import { SelectorUI } from "../../atom/Selector/Selector";
 import { TextField } from "../../atom/Textfield/TextField";
 import { getStat } from "../../utils/getStat";
@@ -34,8 +34,8 @@ export const FieldStats = ({
 
   return (
     <>
-      <Label className="text-base">{categoryName}</Label>
-      <Label className="text-base">{base}</Label>
+      <Text className="text-base">{categoryName}</Text>
+      <Text className="text-base">{base}</Text>
       <TextField
         className="mt-[-4px]"
         name={ivName}
@@ -54,7 +54,7 @@ export const FieldStats = ({
         maxNumber={252}
         onlyNumber
       />
-      <p>{getStat(base, ev, iv, boostStat, nature, isPhysical)}</p>
+      <Text>{getStat(base, ev, iv, boostStat, nature, isPhysical)}</Text>
       <SelectorUI
         options={boost}
         selectorAbove

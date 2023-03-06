@@ -28,7 +28,7 @@ export const Report = () => {
   return (
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
-        <div className="grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 xl:h-[91.5vh] bg-gray-100">
+        <div className="grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 xl:h-[91.5vh] bg-gray-100 dark:bg-slate-600">
           <div className="border-r border-black">
             <Attacker
               dex={dexList}
@@ -40,7 +40,7 @@ export const Report = () => {
           <div className="border-r border-black">
             <Defender />
           </div>
-          <div className="xl:col-span-1 md:col-span-2 flex flex-col">
+          <div className="xl:col-span-1 md:col-span-2">
             <>
               <Information />
               {dataForm ? JSON.stringify(dataForm, null, "\t") : null}

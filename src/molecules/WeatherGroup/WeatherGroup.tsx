@@ -2,7 +2,7 @@ import { RadioGroup } from "@headlessui/react";
 import { borderDirection } from "../../utils/styleConsts";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { Label } from "../../atom/Label/Label";
+import { Text } from "../../atom/Text/Text";
 import { strongWeather, weather } from "../../utils/pokemonConsts";
 
 interface RadioGroupProps {
@@ -30,7 +30,7 @@ export const WeatherGroup = ({ name, label, className }: RadioGroupProps) => {
       defaultValue={weather[0].value}
       render={({ field }) => (
         <>
-          {label && <Label>{label}</Label>}
+          {label && <Text>{label}</Text>}
           <RadioGroup
             defaultValue={field.value}
             onChange={field.onChange}

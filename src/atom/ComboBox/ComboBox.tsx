@@ -5,7 +5,7 @@ import { SizeProps } from "../../types/size";
 import { heightSize, widthSize } from "../../utils/styleConsts";
 import { isSmall } from "../../utils/isSmall";
 import { useTranslation } from "react-i18next";
-import { Label } from "../Label/Label";
+import { Text } from "../Text/Text";
 
 interface ComboBoxProps {
   name: string;
@@ -55,7 +55,7 @@ export const ComboBoxUI = ({
       defaultValue={""}
       render={({ field }) => (
         <div className="flex flex-col">
-          {label ? <Label className="mb-1">{label}</Label> : null}
+          {label ? <Text className="mb-1">{label}</Text> : null}
           <Combobox
             defaultValue={field.value}
             value={field.value}
