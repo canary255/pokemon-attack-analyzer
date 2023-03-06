@@ -45,7 +45,7 @@ export const Header = ({ children }: HeaderProps) => {
               />
               <span
                 className={` ${
-                  checked ? "translate-x-[-19px]" : "translate-x-2"
+                  checked ? "translate-x-[-19px] text-white" : "translate-x-2"
                 } material-symbols-outlined`}
               >
                 {checked ? "dark_mode" : "light_mode"}
