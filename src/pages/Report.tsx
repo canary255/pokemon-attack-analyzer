@@ -7,10 +7,10 @@ import { Information } from "../organisms/Information/Information";
 import { LoadingCalcs } from "../organisms/LoadingCalcs/LoadingCalcs";
 import { reportInitialState, testingSet } from "../schema/schema";
 import { ReportProps } from "../types/reportProps";
-import { calculateDamage } from "../utils/calculateDamage";
+import { loadDataCalculator } from "../utils/calculateDamage";
 import {
   getAbilityList,
-  getDexList,
+  getCompleteDexNames,
   getItemList,
   getMoveList,
 } from "../utils/pokemonConsts/lists";
@@ -25,10 +25,10 @@ export const Report = () => {
   const onSubmit = (data: ReportProps) => {
     setDataForm(data);
     setPage(1);
-    calculateDamage(data);
+    loadDataCalculator(data);
   };
 
-  const dexList = getDexList();
+  const dexList = getCompleteDexNames();
   const itemList = getItemList();
   const abilityList = getAbilityList();
   const moveList = getMoveList();

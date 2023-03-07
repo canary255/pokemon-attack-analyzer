@@ -7,30 +7,34 @@ moveMap.forEach((value) => {
   if (value.category !== "Status") moveList.push(value);
 });
 
-export const getDexList = () => {
+export const getCompleteDex = () => {
   const map = new Map(Object.entries(Dex.data.Species));
   const list: any = [];
   map.forEach((value) => {
     const form = value.name.split("-");
     const notAllowed = form[form.length - 1].toLowerCase();
     if (form.length > 1 && notAllowedForms.includes(notAllowed)) return;
-    if (value.num > 0) list.push(value.name);
+    if (value.num > 0) list.push(value);
   });
   return list;
+};
 
-  /*  
-  const result = await fetch(
-    "https://www.pikalytics.com/api/l/2023-02/gen9nationaldex-1760"
-  ); */
+export const getCompleteDexNames = () => {
+  return getCompleteDex().map((value: any) => value.name);
 };
 
 export const get9thGenDex = async () => {
   const result = await fetch(
-    "https://www.pikalytics.com/api/l/2023-02/gen9ubers-1760"
+    "https://www.pikalytics.com/api/l/2023-02/gen9vgc2023series2-1760"
   );
   const list = await result.json();
-  const array = await list.map((value: any) => value.name);
+  const array = await list.map((value: any) => value);
   return array;
+};
+
+export const get9thGenDexNames = async () => {
+  const list = await get9thGenDex();
+  return list.map((value: any) => value.name);
 };
 
 export const getItemList = () => {

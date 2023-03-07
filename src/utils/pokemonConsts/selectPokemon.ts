@@ -4,7 +4,7 @@ export const selectPokemon = [
     value: "all",
   },
   {
-    name: "button.9GenLocalDex",
-    value: "9gen",
+    name: "button.9GenVgc",
+    value: "vgc",
   },
 ];
