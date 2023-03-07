@@ -9,9 +9,9 @@ export const Information = () => {
       <div className="p-3">
         <Text className="text-xl font-medium">
           {t("common.reportGenerator")}{" "}
-          <Text className="text-sm font-medium">
-            {t("proyectExplain.description")}
-          </Text>
+        </Text>
+        <Text className="text-sm font-medium">
+          {t("proyectExplain.description")}
         </Text>
       </div>
       <div>
