@@ -7,11 +7,12 @@ import { ReportProps } from "../../types/reportProps";
 interface LoadingCalcsProps {
   //data: ReportProps | undefined;
   //Recordatorio cambiar el any
+  currentPokemon: string;
+  avatar: string;
 }
 
-export const LoadingCalcs = ({}: LoadingCalcsProps) => {
+export const LoadingCalcs = ({ currentPokemon, avatar }: LoadingCalcsProps) => {
   const { t } = useTranslation();
-  const [text, setText] = React.useState<string>("Paso 1");
 
   //todo: obtener lista de pokes, crear un array vacio, e ir añadiendo los pokes que se van calculando de 1 en 1
 
@@ -22,7 +23,8 @@ export const LoadingCalcs = ({}: LoadingCalcsProps) => {
         you can do other stuff or watch some content here and be relaxed :D
       </Text>
       <Carousel />
-      <Text>{text}</Text>
+      <img className={`w-[30%] h-[30%] `} src={avatar} alt="Rounded avatar" />
+      <Text>{currentPokemon}</Text>
     </div>
   );
 };

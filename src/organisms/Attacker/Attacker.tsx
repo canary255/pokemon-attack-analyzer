@@ -19,6 +19,8 @@ interface AttackerProps {
   itemList: string[];
   abilityList: string[];
   moveList: string[];
+  avatar: string;
+  setAvatar: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export const Attacker = ({
@@ -26,10 +28,11 @@ export const Attacker = ({
   itemList,
   abilityList,
   moveList,
+  avatar,
+  setAvatar,
 }: AttackerProps) => {
   const { t } = useTranslation();
   const { watch, setValue } = useFormContext();
-  const [avatar, setAvatar] = useState<string | undefined>();
   const [atk, setAtk] = useState<string>("90");
   const [spa, setSpa] = useState<string>("90");
   const [moveDetails, setMoveDetails] = useState<any>();
@@ -60,7 +63,7 @@ export const Attacker = ({
             setAvatar(
               data.name === "porygon-z"
                 ? data.sprites.front_shiny
-                : data.sprites.front_default
+                : data.sprites.front_default ?? ""
             );
             setAtk(data.stats[1].base_stat.toString());
             setSpa(data.stats[3].base_stat.toString());
@@ -72,7 +75,7 @@ export const Attacker = ({
             );
           })
           .catch(() => {
-            setAvatar(undefined);
+            setAvatar("");
             setAtk("90");
             setSpa("90");
           });

@@ -1,17 +1,28 @@
 import { ReportProps } from "../types/reportProps";
-import { get9thGenDexNames, getCompleteDexNames } from "./pokemonConsts/lists";
+import {
+  get9thGenDexNames,
+  getCompleteDex,
+  getCompleteDexNames,
+} from "./pokemonConsts/lists";
 import { calculate, Generations, Pokemon, Move } from "@smogon/calc";
+import React, { SetStateAction } from "react";
 
-const gen = Generations.get(5); // alternatively: const gen = 5;
+const gen = Generations.get(8); // alternatively: const gen = 5;
 
-export const loadDataCalculator = async (form: ReportProps) => {
+export const loadDataCalculator = async (
+  form: ReportProps,
+  setCurrentPokemon: React.Dispatch<SetStateAction<string>>
+) => {
   const dex =
     form.selectPokemon === "all"
       ? getCompleteDexNames()
       : await get9thGenDexNames();
   const calcsList = [];
 
+  console.log(getCompleteDex());
+
   for (const pokemon of dex) {
+    setCurrentPokemon(pokemon);
     try {
       const fetchData = await fetch(
         `https://www.pikalytics.com/api/p/2023-02/gen9vgc2023series2-1760/${pokemon
@@ -19,6 +30,7 @@ export const loadDataCalculator = async (form: ReportProps) => {
           .trim()}`
       );
       const defensiveData = await fetchData.json();
+      console.log(defensiveData);
       calculateDamage(form, pokemon, defensiveData);
     } catch (e) {
       console.log("Invalid data", pokemon, e);
@@ -32,6 +44,7 @@ const calculateDamage = (
   defensiveData: any
 ) => {
   const evSpread = getEvSpread(defensiveData.spreads[0].ev);
+  console.log(evSpread);
   const result = calculate(
     gen,
     new Pokemon(gen, form.name, {
@@ -45,6 +58,7 @@ const calculateDamage = (
       item: defensiveData.items[0].item,
       nature: defensiveData.spreads[0].nature,
       evs: { hp: evSpread.hp, def: evSpread.def, spd: evSpread.spd },
+      ivs: { hp: 31, def: 31, spd: 31 },
     }),
     new Move(gen, form.move)
   );

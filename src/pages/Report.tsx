@@ -22,16 +22,20 @@ export const Report = () => {
   const [page, setPage] = useState<number>(0);
   const [resultCalcs, setResultCalcs] = useState([]);
   const [dataForm, setDataForm] = useState<ReportProps>();
+  const [currentPokemon, setCurrentPokemon] = useState<string>("");
+  const [avatar, setAvatar] = useState<string>("");
   const onSubmit = (data: ReportProps) => {
     setDataForm(data);
     setPage(1);
-    loadDataCalculator(data);
+    loadDataCalculator(data, setCurrentPokemon);
   };
 
   const dexList = getCompleteDexNames();
   const itemList = getItemList();
   const abilityList = getAbilityList();
   const moveList = getMoveList();
+
+  console.log(avatar);
 
   return (
     <FormProvider {...methods}>
@@ -43,6 +47,8 @@ export const Report = () => {
               itemList={itemList}
               abilityList={abilityList}
               moveList={moveList}
+              avatar={avatar}
+              setAvatar={setAvatar}
             />
           </div>
           <div className="border-r lg:border-b-0 sm:border-b border-black dark:border-white">
@@ -50,7 +56,9 @@ export const Report = () => {
           </div>
           <div className="xl:col-span-1 md:col-span-2">
             {page === 0 && <Information />}
-            {page === 1 && <LoadingCalcs />}
+            {page === 1 && (
+              <LoadingCalcs currentPokemon={currentPokemon} avatar={avatar} />
+            )}
           </div>
         </div>
       </form>
