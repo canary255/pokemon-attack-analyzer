@@ -11,18 +11,20 @@ const gen = Generations.get(8); // alternatively: const gen = 5;
 
 export const loadDataCalculator = async (
   form: ReportProps,
-  setCurrentPokemon: React.Dispatch<SetStateAction<string>>
+  setNumberDex: React.Dispatch<SetStateAction<number>>,
+  setTotalDex: React.Dispatch<SetStateAction<number>>
 ) => {
   const dex =
     form.selectPokemon === "all"
       ? getCompleteDexNames()
       : await get9thGenDexNames();
+  setTotalDex(dex.length);
   const calcsList = [];
 
   console.log(getCompleteDex());
-
+  let i = 1;
   for (const pokemon of dex) {
-    setCurrentPokemon(pokemon);
+    setNumberDex(i);
     try {
       const fetchData = await fetch(
         `https://www.pikalytics.com/api/p/2023-02/gen9vgc2023series2-1760/${pokemon
@@ -34,6 +36,8 @@ export const loadDataCalculator = async (
       calculateDamage(form, pokemon, defensiveData);
     } catch (e) {
       console.log("Invalid data", pokemon, e);
+    } finally {
+      i++;
     }
   }
 };

@@ -87,7 +87,7 @@ export const Carousel = () => {
   );
 
   return (
-    <div className="relative p-2 h-[345px] mb-5 flex flex-row justify-center items-center">
+    <div className="relative p-2 h-[345px] mb-3 flex flex-row justify-center items-center">
       <SliderControl isLeft />
       <Transition
         show={isShowing}
