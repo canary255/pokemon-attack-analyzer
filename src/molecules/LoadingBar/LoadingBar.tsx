@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Text } from "../../atom/Text/Text";
 
 export const LoadingBar = ({ width }: { width: string }) => {
@@ -6,7 +5,7 @@ export const LoadingBar = ({ width }: { width: string }) => {
 
   return (
     <div className="w-[50%] h-full relative">
-      <div className="h-20 bg-gray-300 rounded-md overflow-hidden">
+      <div className="h-20 bg-gray-300 dark:bg-gray-700 rounded-md overflow-hidden">
         <div
           className="h-full bg-blue-500 rounded-md"
           style={{ width: `${percentage}%` }}

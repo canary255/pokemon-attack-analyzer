@@ -1,5 +1,6 @@
 import { Switch } from "@headlessui/react";
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 interface HeaderProps {
   children?: React.ReactNode;
@@ -10,6 +11,8 @@ export const Header = ({ children }: HeaderProps) => {
     localStorage.getItem("darkMode") === "true" ? true : false
   );
 
+  const { t, i18n } = useTranslation();
+
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -17,6 +20,10 @@ export const Header = ({ children }: HeaderProps) => {
       document.documentElement.classList.remove("dark");
     }
   }, []);
+
+  const changeLanguageHandler = (lang: string) => {
+    i18n.changeLanguage(lang);
+  };
 
   const handleDarkMode = () => {
     if (darkMode) {
@@ -30,10 +37,18 @@ export const Header = ({ children }: HeaderProps) => {
   };
 
   return (
-    <div className="sticky z-10 top-0 grid grid-cols-4 content-center bg-[#009DFF] h-16 w-full">
+    <div className="sticky z-10 top-0 grid grid-cols-5 content-center bg-[#009DFF] h-16 w-full">
       <p className="ml-3 text-white sm:text-4xl xs:text-2xl col-span-3">
         Pokémon Report Generator
       </p>
+      <select
+        value={i18n.language}
+        onChange={(e) => changeLanguageHandler(e.target.value)}
+        className="mr-3 w-16"
+      >
+        <option value="es">ES</option>
+        <option value="en">EN</option>
+      </select>
       <div className="grid place-items-end">
         <Switch checked={darkMode} onChange={handleDarkMode}>
           {({ checked }) => (

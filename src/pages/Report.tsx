@@ -8,6 +8,7 @@ import { LoadingCalcs } from "../organisms/LoadingCalcs/LoadingCalcs";
 import { reportInitialState, testingSet } from "../schema/schema";
 import { ReportProps } from "../types/reportProps";
 import { loadDataCalculator } from "../utils/calculateDamage";
+import missingno from "../assets/const/Missingno.png";
 import {
   getAbilityList,
   getCompleteDexNames,
@@ -17,14 +18,14 @@ import {
 
 export const Report = () => {
   const methods = useForm<ReportProps>({
-    defaultValues: testingSet,
+    defaultValues: reportInitialState,
   });
   const [page, setPage] = useState<number>(0);
   const [resultCalcs, setResultCalcs] = useState([]);
   const [dataForm, setDataForm] = useState<ReportProps>();
   const [numberDex, setNumberDex] = useState<number>(0);
   const [totalDex, setTotalDex] = useState<number>(0);
-  const [avatar, setAvatar] = useState<string>("");
+  const [avatar, setAvatar] = useState<string>(missingno);
   const onSubmit = (data: ReportProps) => {
     setDataForm(data);
     setPage(1);

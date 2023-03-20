@@ -86,22 +86,24 @@ export const Attacker = ({
   return (
     <>
       <div className="flex flex-col">
-        <Avatar
-          url={avatar}
-          teratype={watch("teraType")}
-          className="flex flex-row justify-center mt-5"
-        />
-        <div className=" mt-3 grid place-items-center sm:grid-cols-2 xs:grid-cols-1 gap-x-2">
-          <ComboBoxUI
-            options={dex}
-            name="name"
-            label={t("attacker.selectPokemon")}
+        <div className="flex flex-row justify-center gap-x-16">
+          <Avatar
+            url={avatar}
+            teratype={watch("teraType")}
+            className="flex flex-row justify-center mt-5"
           />
-          <SelectorUI
-            options={teraType}
-            name="teraType"
-            label={t("attacker.selectTeraType")}
-          />
+          <div className=" mt-3 grid place-items-center sm:grid-rows-2 xs:grid-cols-1 gap-x-2">
+            <ComboBoxUI
+              options={dex}
+              name="name"
+              label={t("attacker.selectPokemon")}
+            />
+            <SelectorUI
+              options={teraType}
+              name="teraType"
+              label={t("attacker.selectTeraType")}
+            />
+          </div>
         </div>
         <div className="mt-3 grid place-items-center sm:grid-cols-2  xs:grid-cols-1 gap-x-2">
           <ComboBoxUI
@@ -114,6 +116,24 @@ export const Attacker = ({
             name="item"
             label={t("attacker.selectItem")}
           />
+        </div>
+        <div className="mt-6">
+          <RadioGroupUI
+            className="w-full justify-center"
+            name="mechanic"
+            options={mechanic}
+          />
+        </div>
+        <div className="mt-3 grid grid-cols-1 place-items-center gap-x-2">
+          <SelectorUI
+            name="nature"
+            options={nature}
+            label={t("attacker.nature")}
+            selectorAbove
+          />
+        </div>
+        <div className="mt-3 grid place-items-center sm:mb-4 gap-x-2">
+          <Stats atk={atk} spa={spa} />
         </div>
         <div className="mt-3 grid w-full place-items-center lg:grid-cols-6 md:grid-cols-5 sm:grid-cols-8 xs:grid-cols-1">
           <div className="flex flex-row gap-x-2 lg:col-span-4 md:col-span-4 sm:col-span-6">
@@ -139,24 +159,6 @@ export const Attacker = ({
             />
           )}
           <SwitchUI label={t("button.crit")} className="mt-5 " name="crit" />
-        </div>
-        <div className="mt-3 grid lg:grid-cols-2 md:grid-cols-1 place-items-center gap-x-2">
-          <SelectorUI
-            name="nature"
-            options={nature}
-            label={t("attacker.nature")}
-            selectorAbove
-          />
-          <div>
-            <RadioGroupUI
-              className="mt-6 lg:mr-11 w-full"
-              name="mechanic"
-              options={mechanic}
-            />
-          </div>
-        </div>
-        <div className="mt-3 grid place-items-center sm:mb-4 gap-x-2">
-          <Stats atk={atk} spa={spa} />
         </div>
       </div>
     </>

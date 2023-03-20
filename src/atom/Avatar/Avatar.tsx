@@ -8,7 +8,6 @@ interface AvatarProps {
 }
 
 export const Avatar = ({ className, url, teratype }: AvatarProps) => {
-  //TODO: Añrreglar z-index
   return (
     <>
       <div className={className}>
