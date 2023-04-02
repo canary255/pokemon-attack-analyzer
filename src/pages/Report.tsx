@@ -18,7 +18,7 @@ import {
 
 export const Report = () => {
   const methods = useForm<ReportProps>({
-    defaultValues: reportInitialState,
+    defaultValues: testingSet,
   });
   const [page, setPage] = useState<number>(0);
   const [resultCalcs, setResultCalcs] = useState([]);

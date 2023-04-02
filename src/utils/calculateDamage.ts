@@ -4,10 +4,10 @@ import {
   getCompleteDex,
   getCompleteDexNames,
 } from "./pokemonConsts/lists";
-import { calculate, Generations, Pokemon, Move } from "@smogon/calc";
 import React, { SetStateAction } from "react";
-
-const gen = Generations.get(8); // alternatively: const gen = 5;
+import { calculate, Generations } from "./calc";
+import { Pokemon } from "./calc/pokemon";
+import { Move } from "./calc/move";
 
 export const loadDataCalculator = async (
   form: ReportProps,
@@ -18,6 +18,7 @@ export const loadDataCalculator = async (
     form.selectPokemon === "all"
       ? getCompleteDexNames()
       : await get9thGenDexNames();
+
   setTotalDex(dex.length);
   const calcsList = [];
 
@@ -50,21 +51,21 @@ const calculateDamage = (
   const evSpread = getEvSpread(defensiveData.spreads[0].ev);
   console.log(evSpread);
   const result = calculate(
-    gen,
-    new Pokemon(gen, form.name, {
-      item: form.item,
-      nature: form.nature,
+    9,
+    new Pokemon(Generations.get(9), form.name, {
+      item: form.item as any,
+      nature: form.nature as any,
       evs: { atk: +form.evAtk, spa: +form.evSpa },
       ivs: { atk: +form.ivAtk, spa: +form.ivSpa },
       boosts: { atk: +form.boostAtk, spa: +form.boostSpa },
     }),
-    new Pokemon(gen, pokemon, {
+    new Pokemon(Generations.get(9), pokemon, {
       item: defensiveData.items[0].item,
       nature: defensiveData.spreads[0].nature,
       evs: { hp: evSpread.hp, def: evSpread.def, spd: evSpread.spd },
       ivs: { hp: 31, def: 31, spd: 31 },
     }),
-    new Move(gen, form.move)
+    new Move(Generations.get(9), form.move)
   );
   const sendData = {
     description: result.desc(),
