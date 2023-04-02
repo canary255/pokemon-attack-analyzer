@@ -1,20 +1,21 @@
-import { Dex } from "@pkmn/dex";
+import { ABILITIES, ITEMS, MOVES, SPECIES } from "../calc";
 import { notAllowedForms } from "./notAllowedForms";
 
-const moveMap = new Map(Object.entries(Dex.data.Moves));
+const moveMap = new Map(Object.entries(MOVES[MOVES.length - 1]));
 const moveList: any = [];
-moveMap.forEach((value) => {
-  if (value.category !== "Status") moveList.push(value);
+moveMap.forEach((value, key) => {
+  if (value.category !== "Status") moveList.push({ ...value, name: key });
 });
 
 export const getCompleteDex = () => {
-  const map = new Map(Object.entries(Dex.data.Species));
+  const map = new Map(Object.entries(SPECIES[SPECIES.length - 1]));
   const list: any = [];
-  map.forEach((value) => {
-    const form = value.name.split("-");
+
+  map.forEach((value, key) => {
+    const form = key.split("-");
     const notAllowed = form[form.length - 1].toLowerCase();
     if (form.length > 1 && notAllowedForms.includes(notAllowed)) return;
-    if (value.num > 0) list.push(value);
+    list.push({ ...value, name: key });
   });
   return list;
 };
@@ -38,19 +39,19 @@ export const get9thGenDexNames = async () => {
 };
 
 export const getItemList = () => {
-  const map = new Map(Object.entries(Dex.data.Items));
+  const map = new Map(Object.entries(ITEMS[ITEMS.length - 1]));
   const list: any = [];
   map.forEach((value) => {
-    list.push(value.name);
+    list.push(value);
   });
   return list;
 };
 
 export const getAbilityList = () => {
-  const map = new Map(Object.entries(Dex.data.Abilities));
+  const map = new Map(Object.entries(ABILITIES[ABILITIES.length - 1]));
   const list: any = [];
   map.forEach((value) => {
-    list.push(value.name);
+    list.push(value);
   });
   return list;
 };
