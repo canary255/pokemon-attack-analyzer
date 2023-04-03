@@ -24,12 +24,10 @@ export const Report = () => {
   });
   const [page, setPage] = useState<number>(0);
   const [resultCalcs, setResultCalcs] = useState<CalcList[]>([]);
-  //const [dataForm, setDataForm] = useState<ReportProps>();
   const [numberDex, setNumberDex] = useState<number>(0);
   const [totalDex, setTotalDex] = useState<number>(0);
   const [avatar, setAvatar] = useState<string>(missingno);
   const onSubmit = (data: ReportProps) => {
-    //setDataForm(data);
     setPage(1);
     loadDataCalculator(
       data,

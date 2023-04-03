@@ -16,6 +16,7 @@ interface TextFieldProps {
   onlyNumber?: boolean;
   maxLength?: number;
   value?: string;
+  placeholder?: string;
 }
 
 export const TextFieldCommon = ({
@@ -29,11 +30,13 @@ export const TextFieldCommon = ({
   label,
   value,
   maxLength,
+  placeholder,
 }: TextFieldProps) => {
   return (
     <div className="flex flex-col">
       {label ? <Text className="mb-1">{label}</Text> : null}
       <input
+        placeholder={placeholder}
         onChange={onChange}
         value={value}
         className={`border py-2 pl-1 pr-4 border-black 

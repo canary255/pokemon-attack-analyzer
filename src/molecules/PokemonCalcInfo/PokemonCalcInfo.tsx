@@ -55,7 +55,9 @@ export const PokemonCalcInfo = ({
               className={`${survivalColor(pokemonInfo?.calcSet?.ko_chance)}
           p-3 ml-4 mr-4 rounded-xl shadow-md`}
             >
-              <Text className="font-bold">Pokémon with set case:</Text>
+              <Text className="font-bold">
+                Pokémon with set case: {pokemonInfo.calcSet.text_evs}
+              </Text>
               <Text>{pokemonInfo.calcSet.description}</Text>
             </div>
           )}
