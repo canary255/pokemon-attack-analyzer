@@ -22,7 +22,7 @@ export const ColorKey = () => {
   };
 
   return (
-    <div className="p-2 flex flex-col gap-y-2">
+    <div className="p-1 flex flex-col gap-y-2">
       <ColorWrapper color="green" text="common.canSurvive" />
       <ColorWrapper color="yellow" text="common.barelySurvive" />
       <ColorWrapper color="red" text="common.cannotSurvive" />

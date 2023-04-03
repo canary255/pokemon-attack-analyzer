@@ -1,11 +1,12 @@
+import { useState } from "react";
 import { Sprite } from "../../atom/Sprite/Sprite";
 import { TextFieldCommon } from "../../atom/TextFieldCommon/TextFieldCommon";
-import { TextField } from "../../atom/Textfield/TextField";
 import { CalcList } from "../../types/calcList";
 import { COLOR } from "../../utils/color";
 
 type PokemonCalcResultProps = {
   resultsCalcs: CalcList[];
+  setPokemonInfo: React.Dispatch<React.SetStateAction<CalcList | undefined>>;
 };
 
 const survivalColor = (
@@ -23,14 +24,31 @@ const survivalColor = (
   return COLOR["green"];
 };
 
-export const PokemonCalcResult = ({ resultsCalcs }: PokemonCalcResultProps) => {
+export const PokemonCalcResultList = ({
+  resultsCalcs,
+  setPokemonInfo,
+}: PokemonCalcResultProps) => {
+  const [filteredList, setFilteredList] = useState<CalcList[]>([
+    ...resultsCalcs,
+  ]);
+  const [textInput, setTextInput] = useState<string>("");
+
+  const handleFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setTextInput(value);
+    const filtered = resultsCalcs.filter((item) => {
+      return item.pokemon.toLowerCase().includes(value.toLowerCase());
+    });
+    setFilteredList(filtered);
+  };
+
   return (
-    <div className="border-t border-b border-black">
+    <>
       <div className="flex justify-center mt-2">
-        <TextFieldCommon width="L" />
+        <TextFieldCommon width="L" onChange={handleFilter} />
       </div>
       <div className="grid grid-cols-5 gap-y-10 max-h-96 overflow-auto p-6">
-        {resultsCalcs.map((item, index) => {
+        {filteredList.map((item, index) => {
           return (
             <Sprite
               key={index}
@@ -39,10 +57,11 @@ export const PokemonCalcResult = ({ resultsCalcs }: PokemonCalcResultProps) => {
               className={`${survivalColor(
                 item?.calcExtreme?.ko_chance
               )} w-[72px] cursor-pointer`}
+              onClick={() => setPokemonInfo(item)}
             />
           );
         })}
       </div>
-    </div>
+    </>
   );
 };

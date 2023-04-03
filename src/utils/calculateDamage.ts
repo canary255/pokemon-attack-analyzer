@@ -11,6 +11,7 @@ import { Move } from "./calc/move";
 import { CalcData } from "../types/calcData";
 import { ItemName, NatureName } from "./calc/data/interface";
 import { CalcList } from "../types/calcList";
+import { getPokemonSprite } from "./getPokemonSprite";
 
 type PokemonData = {
   items: string;
@@ -189,16 +190,4 @@ function getEvsText(evs: { [key: string]: number }) {
 function getPercentDamage(num: number, maxHP: number) {
   const percent = (num / maxHP) * 100 ?? 0;
   return percent;
-}
-
-async function getPokemonSprite(name: string) {
-  var pokemonName = name.toLowerCase().trim().replace(" ", "-");
-  var url = "https://pokeapi.co/api/v2/pokemon/" + pokemonName;
-
-  return await fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-      return data.sprites.versions["generation-viii"].icons.front_default;
-    })
-    .catch((error) => console.error(error));
 }

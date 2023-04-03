@@ -3,6 +3,7 @@ type SpriteProps = {
   src?: string;
   isExample?: boolean;
   pokemonName?: string;
+  onClick?: () => void;
 };
 
 export const Sprite = ({
@@ -10,10 +11,12 @@ export const Sprite = ({
   src,
   className = "bg-white",
   pokemonName,
+  onClick,
 }: SpriteProps) => {
   return (
     <div
-      className={`flex flex-row justify-center p-3 border rounded-xl shadow-md ${className}  `}
+      className={`flex flex-row justify-center p-3 border rounded-xl shadow-md ${className}`}
+      onClick={onClick}
     >
       {isExample ? null : (
         <img

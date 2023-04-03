@@ -7,7 +7,7 @@ import { Text } from "../Text/Text";
 interface TextFieldProps {
   type?: string;
   className?: string;
-  onChange?: () => void;
+  onChange?: (e: any) => void;
   width?: SizeProps;
   height?: SizeProps;
   centerText?: boolean;
