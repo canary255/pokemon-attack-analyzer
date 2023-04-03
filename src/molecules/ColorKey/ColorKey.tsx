@@ -15,7 +15,7 @@ export const ColorKey = () => {
   }) => {
     return (
       <div className="flex flex-row gap-x-9 items-center">
-        <Sprite src="" className={`${COLOR[color]} w-8 h-8`} />
+        <Sprite isExample className={`${COLOR[color]} w-10 h-10`} />
         <Text className="text-lg">{t(text)}</Text>
       </div>
     );

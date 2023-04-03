@@ -1,18 +1,21 @@
 type SpriteProps = {
   className?: string;
-  src: string;
+  src?: string;
+  isExample?: boolean;
 };
 
-export const Sprite = ({ src, className = "bg-white" }: SpriteProps) => {
+export const Sprite = ({
+  isExample = false,
+  src,
+  className = "bg-white",
+}: SpriteProps) => {
   return (
     <div
-      className={`flex flex-row justify-center p-6 w-20 border rounded-xl shadow-md ${className}  `}
+      className={`flex flex-row justify-center p-3 border rounded-xl shadow-md ${className}  `}
     >
-      <img
-        src="https://img.pokemondb.net/sprites/sun-moon/icon/bulbasaur.png"
-        alt="Bulbasaur"
-        className="max-w-md max-h-lg"
-      />
+      {isExample ? null : (
+        <img src={src} alt="Avatar" className="max-w-md h-12" />
+      )}
     </div>
   );
 };

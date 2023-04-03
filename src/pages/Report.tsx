@@ -22,7 +22,7 @@ export const Report = () => {
   const methods = useForm<ReportProps>({
     defaultValues: testingSet,
   });
-  const [page, setPage] = useState<number>(2);
+  const [page, setPage] = useState<number>(0);
   const [resultCalcs, setResultCalcs] = useState<CalcList[]>([]);
   //const [dataForm, setDataForm] = useState<ReportProps>();
   const [numberDex, setNumberDex] = useState<number>(0);
@@ -71,7 +71,7 @@ export const Report = () => {
                 avatar={avatar}
               />
             )}
-            {page === 2 && <Results />}
+            {page === 2 && <Results resultsCalcs={resultCalcs} />}
           </div>
         </div>
       </form>
