@@ -10,6 +10,7 @@ import { Pokemon } from "./calc/pokemon";
 import { Move } from "./calc/move";
 import { CalcData } from "../types/calcData";
 import { ItemName, NatureName } from "./calc/data/interface";
+import { CalcList } from "../types/calcList";
 
 type PokemonData = {
   items: string;
@@ -20,7 +21,9 @@ type PokemonData = {
 export const loadDataCalculator = async (
   form: ReportProps,
   setNumberDex: React.Dispatch<SetStateAction<number>>,
-  setTotalDex: React.Dispatch<SetStateAction<number>>
+  setTotalDex: React.Dispatch<SetStateAction<number>>,
+  setPage: React.Dispatch<SetStateAction<number>>,
+  setCalcList: React.Dispatch<SetStateAction<CalcList[]>>
 ) => {
   const dex =
     form.selectPokemon === "all"
@@ -45,14 +48,14 @@ export const loadDataCalculator = async (
       (pokemonType[1] && typeValue?.[moveType]?.[pokemonType[1]] === 0)
     ) {
       calcsList.push({
-        pokemon: pokemon,
+        pokemon: pokemon as string,
         isInmune: true,
         description: "You can't hit it bro",
         damage_range: 0,
         percent_range: [0, 0],
         ko_chance: { chance: 0, n: 0, text: "0%" },
         defender_evs: { atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
-        text_evs: "0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe",
+        text_evs: "0/0/0/0/0",
         move_category: MOVES[MOVES.length - 1][form.move].category,
       });
       continue;
@@ -60,22 +63,35 @@ export const loadDataCalculator = async (
 
     //PASOS:
     //2 - el pokemon no tiene un set almacenado
-    const setCalc = calculateDamageWithSet(pokemon, form);
+    const setCalc = await calculateDamageWithSet(pokemon, form);
     //3 - Añadir set Extremo
     const extremeCalc = calculateExtremeDamage(pokemon, form);
     //4 - Añadir set Óptimo
-
+    //const optimalCalc = calculateOptimalDamage(pokemon, form);
     //////////////////////////////////////////
     ///////                            ///////
     ///////     OBTENCIÓN DE SET       ///////
     ///////                            ///////
     //////////////////////////////////////////
 
+    calcsList.push({
+      pokemon: pokemon as string,
+      isInmune: false,
+      calcSet: setCalc,
+      calcExtreme: extremeCalc,
+      img: await getPokemonSprite(pokemon),
+    });
+
     i++;
   }
+  console.log(calcsList);
+  setPage((prev) => {
+    return prev + 1;
+  });
+  setCalcList(calcsList);
 };
 
-const calculateExtremeDamage = async (pokemon: any, form: ReportProps) => {
+const calculateExtremeDamage = (pokemon: any, form: ReportProps) => {
   try {
     const defensiveData: PokemonData = {
       items: SPECIES[SPECIES.length - 1][pokemon].nfe ? "Eviolite" : "",
@@ -169,4 +185,16 @@ function getEvsText(evs: { [key: string]: number }) {
 function getPercentDamage(num: number, maxHP: number) {
   const percent = (num / maxHP) * 100 ?? 0;
   return percent;
+}
+
+async function getPokemonSprite(name: string) {
+  var pokemonName = name.toLowerCase();
+  var url = "https://pokeapi.co/api/v2/pokemon/" + pokemonName;
+
+  return await fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      return data.sprites.versions["generation-viii"].icons.front_default;
+    })
+    .catch((error) => console.error(error));
 }

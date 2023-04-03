@@ -15,6 +15,7 @@ import {
   getItemList,
   getMoveList,
 } from "../utils/pokemonConsts/lists";
+import { CalcList } from "../types/calcList";
 
 export const Report = () => {
   const methods = useForm<ReportProps>({
@@ -26,10 +27,11 @@ export const Report = () => {
   const [numberDex, setNumberDex] = useState<number>(0);
   const [totalDex, setTotalDex] = useState<number>(0);
   const [avatar, setAvatar] = useState<string>(missingno);
+  const [calcList, setCalcList] = useState<CalcList[]>([]);
   const onSubmit = (data: ReportProps) => {
     setDataForm(data);
     setPage(1);
-    loadDataCalculator(data, setNumberDex, setTotalDex);
+    loadDataCalculator(data, setNumberDex, setTotalDex, setPage, setCalcList);
   };
 
   const dexList = getCompleteDexNames();
