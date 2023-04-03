@@ -50,14 +50,18 @@ export const loadDataCalculator = async (
       calcsList.push({
         pokemon: pokemon as string,
         isInmune: true,
-        description: "You can't hit it bro",
-        damage_range: 0,
-        percent_range: [0, 0],
-        ko_chance: { chance: 0, n: 0, text: "0%" },
-        defender_evs: { atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
-        text_evs: "0/0/0/0/0",
-        move_category: MOVES[MOVES.length - 1][form.move].category,
-      });
+        calcExtreme: {
+          description: "You can't hit it bro",
+          damage_range: 0,
+          percent_range: [0, 0],
+          ko_chance: { chance: 0, n: 0, text: "0%" },
+          defender_evs: { atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+          text_evs: "0/0/0/0/0",
+          move_category: MOVES[MOVES.length - 1][form.move].category,
+        },
+        calcsSet: undefined,
+        img: await getPokemonSprite(pokemon),
+      } as unknown as CalcList);
       continue;
     }
 
@@ -108,7 +112,7 @@ const calculateExtremeDamage = (pokemon: any, form: ReportProps) => {
 const calculateDamageWithSet = async (pokemon: any, form: ReportProps) => {
   try {
     const fetchData = await fetch(
-      `https://www.pikalytics.com/api/p/2023-02/gen9vgc2023series2-1760/${pokemon
+      `https://www.pikalytics.com/api/p/2023-03/gen9vgc2023regc-1760/${pokemon
         .toLowerCase()
         .trim()}`
     );
@@ -188,7 +192,7 @@ function getPercentDamage(num: number, maxHP: number) {
 }
 
 async function getPokemonSprite(name: string) {
-  var pokemonName = name.toLowerCase();
+  var pokemonName = name.toLowerCase().trim().replace(" ", "-");
   var url = "https://pokeapi.co/api/v2/pokemon/" + pokemonName;
 
   return await fetch(url)

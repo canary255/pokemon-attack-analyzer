@@ -17,7 +17,7 @@ const survivalColor = (
       }
     | undefined
 ) => {
-  if (!ko_chance || !ko_chance.chance) return "";
+  if (!ko_chance || ko_chance.chance === undefined) return "";
   if (ko_chance.chance === 1 && ko_chance.n === 1) return COLOR["red"];
   if (ko_chance.chance < 1 && ko_chance.n === 1) return COLOR["yellow"];
   return COLOR["green"];
@@ -31,14 +31,14 @@ export const PokemonCalcResult = ({ resultsCalcs }: PokemonCalcResultProps) => {
       </div>
       <div className="grid grid-cols-5 gap-y-10 max-h-96 overflow-auto p-6">
         {resultsCalcs.map((item, index) => {
-          console.log(item);
           return (
             <Sprite
               key={index}
               src={item?.img}
+              pokemonName={item?.pokemon}
               className={`${survivalColor(
                 item?.calcExtreme?.ko_chance
-              )} w-[72px]`}
+              )} w-[72px] cursor-pointer`}
             />
           );
         })}

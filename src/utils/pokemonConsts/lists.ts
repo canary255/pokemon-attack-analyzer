@@ -26,7 +26,7 @@ export const getCompleteDexNames = () => {
 
 export const get9thGenDex = async () => {
   const result = await fetch(
-    "https://www.pikalytics.com/api/l/2023-02/gen9vgc2023series2-1760"
+    "https://www.pikalytics.com/api/l/2023-03/gen9vgc2023regc-1760"
   );
   const list = await result.json();
   const array = await list.map((value: any) => value);
