@@ -12,7 +12,10 @@
     },
     "common": {
         "none": "None",
-        "reportGenerator": "Pokémon Report Generator"
+        "reportGenerator": "Pokémon Report Generator",
+        "cannotSurvive": "Cannot survive",
+        "barelySurvive": "Barely survive",
+        "canSurvive": "Can survive"
     },
     "proyectExplain": {
         "description": "is a proyect where a user can check if Pokémon can survive an attack with certain conditions of a Pokémon attacker. It also allows to create a PDF with those calculations.",

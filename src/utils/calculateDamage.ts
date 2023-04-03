@@ -23,7 +23,7 @@ export const loadDataCalculator = async (
   setNumberDex: React.Dispatch<SetStateAction<number>>,
   setTotalDex: React.Dispatch<SetStateAction<number>>,
   setPage: React.Dispatch<SetStateAction<number>>,
-  setCalcList: React.Dispatch<SetStateAction<CalcList[]>>
+  setResultCalcs: React.Dispatch<SetStateAction<CalcList[]>>
 ) => {
   const dex =
     form.selectPokemon === "all"
@@ -88,7 +88,7 @@ export const loadDataCalculator = async (
   setPage((prev) => {
     return prev + 1;
   });
-  setCalcList(calcsList);
+  setResultCalcs(calcsList);
 };
 
 const calculateExtremeDamage = (pokemon: any, form: ReportProps) => {

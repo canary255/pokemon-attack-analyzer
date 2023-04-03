@@ -16,22 +16,28 @@ import {
   getMoveList,
 } from "../utils/pokemonConsts/lists";
 import { CalcList } from "../types/calcList";
+import { Results } from "../organisms/Results/Results";
 
 export const Report = () => {
   const methods = useForm<ReportProps>({
     defaultValues: testingSet,
   });
-  const [page, setPage] = useState<number>(0);
-  const [resultCalcs, setResultCalcs] = useState([]);
-  const [dataForm, setDataForm] = useState<ReportProps>();
+  const [page, setPage] = useState<number>(2);
+  const [resultCalcs, setResultCalcs] = useState<CalcList[]>([]);
+  //const [dataForm, setDataForm] = useState<ReportProps>();
   const [numberDex, setNumberDex] = useState<number>(0);
   const [totalDex, setTotalDex] = useState<number>(0);
   const [avatar, setAvatar] = useState<string>(missingno);
-  const [calcList, setCalcList] = useState<CalcList[]>([]);
   const onSubmit = (data: ReportProps) => {
-    setDataForm(data);
+    //setDataForm(data);
     setPage(1);
-    loadDataCalculator(data, setNumberDex, setTotalDex, setPage, setCalcList);
+    loadDataCalculator(
+      data,
+      setNumberDex,
+      setTotalDex,
+      setPage,
+      setResultCalcs
+    );
   };
 
   const dexList = getCompleteDexNames();
@@ -65,6 +71,7 @@ export const Report = () => {
                 avatar={avatar}
               />
             )}
+            {page === 2 && <Results />}
           </div>
         </div>
       </form>
