@@ -135,7 +135,7 @@ export const Attacker = ({
         <div className="mt-3 grid place-items-center sm:mb-4 gap-x-2">
           <Stats atk={atk} spa={spa} />
         </div>
-        <div className="mt-3 grid w-full place-items-center lg:grid-cols-8 md:grid-cols-5 sm:grid-cols-8 xs:grid-cols-1">
+        <div className="mt-3 grid w-full place-items-center lg:grid-cols-9 md:grid-cols-5 sm:grid-cols-8 xs:grid-cols-1">
           <div className="flex flex-row gap-x-2 lg:col-span-6 md:col-span-5 sm:col-span-6">
             <ComboBoxUI
               options={moveList}
