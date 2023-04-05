@@ -23,10 +23,11 @@ export const Report = () => {
     defaultValues: testingSet,
   });
   const [page, setPage] = useState<number>(0);
-  const [resultCalcs, setResultCalcs] = useState<CalcList[]>([]);
+  const [resultsCalcs, setResultCalcs] = useState<CalcList[]>([]);
   const [numberDex, setNumberDex] = useState<number>(0);
   const [totalDex, setTotalDex] = useState<number>(0);
   const [avatar, setAvatar] = useState<string>(missingno);
+  const [data, setData] = useState<ReportProps>();
   const onSubmit = (data: ReportProps) => {
     setPage(1);
     loadDataCalculator(
@@ -36,6 +37,7 @@ export const Report = () => {
       setPage,
       setResultCalcs
     );
+    setData(data);
   };
 
   const dexList = getCompleteDexNames();
@@ -70,7 +72,12 @@ export const Report = () => {
               />
             )}
             {page === 2 && (
-              <Results resultsCalcs={resultCalcs} setPage={setPage} />
+              <Results
+                resultsCalcs={resultsCalcs}
+                setPage={setPage}
+                data={data}
+                avatar={avatar}
+              />
             )}
           </div>
         </div>

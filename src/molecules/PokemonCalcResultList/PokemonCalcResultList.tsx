@@ -2,26 +2,11 @@ import { useState } from "react";
 import { Sprite } from "../../atom/Sprite/Sprite";
 import { TextFieldCommon } from "../../atom/TextFieldCommon/TextFieldCommon";
 import { CalcList } from "../../types/calcList";
-import { COLOR } from "../../utils/color";
+import { COLOR, survivalColor } from "../../utils/color";
 
 type PokemonCalcResultProps = {
   resultsCalcs: CalcList[];
   setPokemonInfo: React.Dispatch<React.SetStateAction<CalcList | undefined>>;
-};
-
-const survivalColor = (
-  ko_chance:
-    | {
-        chance?: number;
-        n: number;
-        text: string;
-      }
-    | undefined
-) => {
-  if (!ko_chance || ko_chance.chance === undefined) return "";
-  if (ko_chance.chance === 1 && ko_chance.n === 1) return COLOR["red"];
-  if (ko_chance.chance < 1 && ko_chance.n === 1) return COLOR["yellow"];
-  return COLOR["green"];
 };
 
 export const PokemonCalcResultList = ({
