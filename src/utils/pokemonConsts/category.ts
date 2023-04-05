@@ -1,10 +1,10 @@
 export const category = [
   {
     name: "category.physical",
-    value: "physical",
+    value: "Physical",
   },
   {
     name: "category.special",
-    value: "special",
+    value: "Special",
   },
 ];

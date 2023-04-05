@@ -1,10 +1,10 @@
 export const target = [
   {
     name: "button.single",
-    value: "single",
+    value: "Singles",
   },
   {
     name: "button.double",
-    value: "double",
+    value: "Doubles",
   },
 ];

@@ -69,7 +69,9 @@ export const Report = () => {
                 avatar={avatar}
               />
             )}
-            {page === 2 && <Results resultsCalcs={resultCalcs} />}
+            {page === 2 && (
+              <Results resultsCalcs={resultCalcs} setPage={setPage} />
+            )}
           </div>
         </div>
       </form>

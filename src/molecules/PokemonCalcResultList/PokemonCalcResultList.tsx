@@ -44,14 +44,14 @@ export const PokemonCalcResultList = ({
 
   return (
     <>
-      <div className="flex justify-center mt-2">
+      <div className="flex justify-center mt-2 mb-3">
         <TextFieldCommon
           placeholder="Write the Pokémon name"
           width="L"
           onChange={handleFilter}
         />
       </div>
-      <div className="grid grid-cols-5 gap-y-6 max-h-72 overflow-auto p-6">
+      <div className="grid grid-cols-5 gap-y-6 max-h-72 overflow-auto px-6">
         {filteredList.map((item, index) => {
           return (
             <Sprite

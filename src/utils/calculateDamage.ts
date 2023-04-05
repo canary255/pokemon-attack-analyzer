@@ -5,11 +5,26 @@ import {
   getCompleteDexNames,
 } from "./pokemonConsts/lists";
 import React, { SetStateAction } from "react";
-import { calculate, Generations, MOVES, SPECIES, TYPE_CHART } from "./calc";
+import {
+  calculate,
+  Field,
+  Generations,
+  MOVES,
+  SPECIES,
+  TYPE_CHART,
+} from "./calc";
 import { Pokemon } from "./calc/pokemon";
 import { Move } from "./calc/move";
 import { CalcData } from "../types/calcData";
-import { ItemName, NatureName } from "./calc/data/interface";
+import {
+  AbilityName,
+  GameType,
+  ItemName,
+  MoveCategory,
+  NatureName,
+  Terrain,
+  Weather,
+} from "./calc/data/interface";
 import { CalcList } from "../types/calcList";
 import { getPokemonSprite } from "./getPokemonSprite";
 
@@ -37,7 +52,7 @@ export const loadDataCalculator = async (
 
   let i = 1;
   for (const pokemon of dex) {
-    if (i === 10) break;
+    //if (i === 10) break;
     setNumberDex(i);
     const pokemonType = SPECIES[SPECIES.length - 1][pokemon].types;
     const typeValue = TYPE_CHART[TYPE_CHART.length - 1];
@@ -67,17 +82,12 @@ export const loadDataCalculator = async (
     }
 
     //PASOS:
-    //2 - el pokemon no tiene un set almacenado
+    //2 - el pokemon tiene un set almacenado
     const setCalc = await calculateDamageWithSet(pokemon, form);
     //3 - Añadir set Extremo
     const extremeCalc = calculateExtremeDamage(pokemon, form);
     //4 - Añadir set Óptimo
     //const optimalCalc = calculateOptimalDamage(pokemon, form);
-    //////////////////////////////////////////
-    ///////                            ///////
-    ///////     OBTENCIÓN DE SET       ///////
-    ///////                            ///////
-    //////////////////////////////////////////
 
     calcsList.push({
       pokemon: pokemon as string,
@@ -112,6 +122,11 @@ const calculateExtremeDamage = (pokemon: any, form: ReportProps) => {
 
 const calculateDamageWithSet = async (pokemon: any, form: ReportProps) => {
   try {
+    //////////////////////////////////////////
+    ///////                            ///////
+    ///////     OBTENCIÓN DE SET       ///////
+    ///////                            ///////
+    //////////////////////////////////////////
     const fetchData = await fetch(
       `https://www.pikalytics.com/api/p/2023-03/gen9vgc2023regc-1760/${pokemon
         .toLowerCase()
@@ -145,6 +160,7 @@ const calculateDamage = (
       evs: { atk: +form.evAtk, spa: +form.evSpa },
       ivs: { atk: +form.ivAtk, spa: +form.ivSpa },
       boosts: { atk: +form.boostAtk, spa: +form.boostSpa },
+      level: 50,
     }),
     new Pokemon(Generations.get(9), pokemon, {
       item: defensiveData.items as ItemName,
@@ -152,8 +168,48 @@ const calculateDamage = (
       evs: { hp: evSpread.hp, def: evSpread.def, spd: evSpread.spd },
       ivs: { hp: 31, def: 31, spd: 31 },
       boosts: { def: +form.boostDef, spd: +form.boostSpd },
+      level: 50,
     }),
-    new Move(Generations.get(9), form.move)
+
+    //AÑADIR CONDICIONES Y TAMBIÉN METER BOTÓN DE VOLVER ATRÁS
+    new Move(Generations.get(9), form?.move, {
+      ability: form?.ability as AbilityName,
+      item: form?.item as ItemName,
+      isCrit: form?.crit,
+      hits: +form?.hits,
+      useZ: form?.mechanic === "Z-Move",
+      useMax: form?.mechanic === "Dynamax",
+      overrides: { category: form?.category as MoveCategory },
+    }),
+    new Field({
+      isGravity: form.gravity,
+      terrain: form.terrain as Terrain,
+      isBeadsOfRuin: form.beads,
+      isSwordOfRuin: form.sword,
+      isTabletsOfRuin: form.tablets,
+      isVesselOfRuin: form.vessel,
+      weather: form.weather as Weather,
+      //isAuraBreak: form.aura,
+      //isFairyAura: form.,
+      //isDarkAura: form.,
+      gameType: form.target as GameType,
+      defenderSide: {
+        isAuroraVeil: form.auroraVeil,
+        isBattery: form.battery,
+        isFriendGuard: form.friendGuard,
+        isReflect: form.reflect,
+        isLightScreen: form.lightScreen,
+        //isTailwind: form.tailwind,
+        spikes: +form.spikes,
+        isProtected: form.protect,
+        isSR: form.stealthRock,
+        isForesight: form.foresight,
+      },
+      attackerSide: {
+        isHelpingHand: form.helpingHand,
+        isTailwind: form.tailwind,
+      },
+    })
   );
   const sendData: CalcData = {
     description: result.desc(),
