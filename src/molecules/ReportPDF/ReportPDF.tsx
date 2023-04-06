@@ -10,7 +10,6 @@ import {
 } from "@react-pdf/renderer";
 import { ReportProps } from "../../types/reportProps";
 import { CalcList } from "../../types/calcList";
-import { survivalColor } from "../../utils/color";
 
 type ReportPDFProps = {
   avatar: string;
@@ -18,7 +17,7 @@ type ReportPDFProps = {
   resultsCalcs: CalcList[] | undefined;
 };
 
-const negativeMargin = "-96px";
+const negativeMargin = "-100px";
 
 const bgColor = (
   ko_chance:
@@ -42,9 +41,14 @@ export const ReportPDF = ({ avatar, data, resultsCalcs }: ReportPDFProps) => (
       <Text style={styles.title}>
         Can you survive "{data?.move}" from {data?.name}?
       </Text>
-      <Image src={avatar} style={styles.image} />
 
-      <View>
+      <View
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+        }}
+      >
         {/**Bucle para los calcs */}
         {resultsCalcs?.map((calc, index) => {
           return (
@@ -53,22 +57,14 @@ export const ReportPDF = ({ avatar, data, resultsCalcs }: ReportPDFProps) => (
                 display: "flex",
                 flexDirection: "column",
                 marginBottom: 48,
+                width: "100%",
               }}
+              key={index}
             >
               <View
-                key={index}
                 style={{ display: "flex", flexDirection: "row", rowGap: 32 }}
               >
                 <Text style={styles.section}>{calc?.pokemon}</Text>
-                <Image
-                  source={calc.img}
-                  style={{
-                    width: "96px",
-                    height: "96px",
-                    marginBottom: negativeMargin,
-                    marginTop: "-20px",
-                  }}
-                />
               </View>
               {calc.calcSet && (
                 <View
@@ -83,7 +79,7 @@ export const ReportPDF = ({ avatar, data, resultsCalcs }: ReportPDFProps) => (
                     style={{
                       ...styles.text,
                       borderRadius: 8,
-                      backgroundColor: bgColor(calc?.calcExtreme?.ko_chance),
+                      backgroundColor: bgColor(calc?.calcSet?.ko_chance),
                       padding: 8,
                       marginTop: 2,
                     }}
@@ -173,6 +169,7 @@ const styles = StyleSheet.create({
   image: {
     marginVertical: 15,
     marginHorizontal: 100,
+    marginBottom: "-125px",
   },
   header: {
     fontSize: 12,

@@ -52,7 +52,7 @@ export const loadDataCalculator = async (
 
   let i = 1;
   for (const pokemon of dex) {
-    if (i === 10) break;
+    //if (i === 10) break;
     setNumberDex(i);
     const pokemonType = SPECIES[SPECIES.length - 1][pokemon].types;
     const typeValue = TYPE_CHART[TYPE_CHART.length - 1];

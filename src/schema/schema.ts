@@ -59,7 +59,7 @@ export const testingSet: ReportProps = {
   boostSpa: "0",
   evSpa: "252",
   ivSpa: "31",
-  target: "single",
+  target: "Singles",
   selectPokemon: "all",
   defenderList: "",
   boostDef: "0",

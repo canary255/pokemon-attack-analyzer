@@ -36,7 +36,7 @@ export const PokemonCalcResultList = ({
           onChange={handleFilter}
         />
       </div>
-      <div className="grid grid-cols-5 gap-y-6 max-h-72 overflow-auto px-6">
+      <div className="grid grid-cols-5 gap-y-6 max-h-72 overflow-auto place-items-center px-6">
         {filteredList.map((item, index) => {
           return (
             <Sprite
