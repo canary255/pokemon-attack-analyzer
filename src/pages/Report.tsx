@@ -28,8 +28,11 @@ export const Report = () => {
   const [totalDex, setTotalDex] = useState<number>(0);
   const [avatar, setAvatar] = useState<string>(missingno);
   const [data, setData] = useState<ReportProps>();
+  const [isCancel, setIsCancel] = useState<boolean>(false);
   const onSubmit = (data: ReportProps) => {
-    setPage(1);
+    setPage((prev) => {
+      return prev + 1;
+    });
     loadDataCalculator(
       data,
       setNumberDex,

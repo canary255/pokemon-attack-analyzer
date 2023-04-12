@@ -23,10 +23,12 @@ import {
   MoveCategory,
   NatureName,
   Terrain,
+  TypeName,
   Weather,
 } from "./calc/data/interface";
 import { CalcList } from "../types/calcList";
 import { getPokemonSprite } from "./getPokemonSprite";
+import { getCancelAction, setCancelAction } from "./cancelAction";
 
 type PokemonData = {
   items: string;
@@ -52,6 +54,14 @@ export const loadDataCalculator = async (
 
   let i = 1;
   for (const pokemon of dex) {
+    const isCancelledAction = getCancelAction();
+    if (isCancelledAction) {
+      setPage((prev) => {
+        return prev - 1;
+      });
+      setCancelAction();
+      return;
+    }
     //if (i === 10) break;
     setNumberDex(i);
     const pokemonType = SPECIES[SPECIES.length - 1][pokemon].types;
@@ -151,6 +161,7 @@ const calculateDamage = (
   defensiveData: PokemonData
 ) => {
   const evSpread = getEvSpread(defensiveData.evs);
+  const LEVEL = 50;
 
   const result = calculate(
     9,
@@ -160,7 +171,10 @@ const calculateDamage = (
       evs: { atk: +form.evAtk, spa: +form.evSpa },
       ivs: { atk: +form.ivAtk, spa: +form.ivSpa },
       boosts: { atk: +form.boostAtk, spa: +form.boostSpa },
-      level: 50,
+      level: LEVEL,
+      ability: form.ability as AbilityName,
+      teraType:
+        form.mechanic === "tera" ? (form.teraType as TypeName) : undefined,
     }),
     new Pokemon(Generations.get(9), pokemon, {
       item: defensiveData.items as ItemName,
@@ -168,10 +182,9 @@ const calculateDamage = (
       evs: { hp: evSpread.hp, def: evSpread.def, spd: evSpread.spd },
       ivs: { hp: 31, def: 31, spd: 31 },
       boosts: { def: +form.boostDef, spd: +form.boostSpd },
-      level: 50,
+      level: LEVEL,
     }),
 
-    //AÑADIR CONDICIONES Y TAMBIÉN METER BOTÓN DE VOLVER ATRÁS
     new Move(Generations.get(9), form?.move, {
       ability: form?.ability as AbilityName,
       item: form?.item as ItemName,

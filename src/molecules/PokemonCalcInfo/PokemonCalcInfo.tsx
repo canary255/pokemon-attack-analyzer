@@ -16,13 +16,13 @@ export const PokemonCalcInfo = ({
 }: PokemonCalcResultProps) => {
   return (
     <>
-      <div className="flex flex-col">
-        <Button
-          name="back"
-          onClick={() => setPokemonInfo(undefined)}
-          label="back"
-          className="rounded-xl w-24 ml-4"
-        />
+      <Button
+        name="back"
+        onClick={() => setPokemonInfo(undefined)}
+        label="back"
+        className="rounded-xl w-24 ml-4 mb-2"
+      />
+      <div className="flex flex-col gap-y-6 max-h-72 overflow-auto px-6">
         <div className="flex flex-row gap-x-8 p-4 items-center">
           <Sprite
             src={pokemonInfo?.img}

@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import React, { SetStateAction } from "react";
 import { useTranslation } from "react-i18next";
 import { Text } from "../../atom/Text/Text";
 import { Carousel } from "../../molecules/Carousel/Carousel";
 import { LoadingBar } from "../../molecules/LoadingBar/LoadingBar";
-import { ReportProps } from "../../types/reportProps";
+import { Button } from "../../atom/Button/Button";
+import { setCancelAction } from "../../utils/cancelAction";
 
 interface LoadingCalcsProps {
   //data: ReportProps | undefined;
@@ -37,6 +38,11 @@ export const LoadingCalcs = ({
           alt="Rounded avatar"
         />
         <LoadingBar width={isNaN(percentage) ? "0" : percentage.toFixed(2)} />
+        <Button
+          name="cancel"
+          label="Cancel process"
+          onClick={() => setCancelAction()}
+        />
       </div>
     </div>
   );
