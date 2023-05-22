@@ -36,6 +36,21 @@ type PokemonData = {
   evs: string;
 };
 
+const canSurvive = (
+  ko_chance:
+    | {
+        chance?: number;
+        n: number;
+        text: string;
+      }
+    | undefined
+) => {
+  if (!ko_chance || ko_chance.chance === undefined) return "yes";
+  if (ko_chance.chance === 1 && ko_chance.n === 1) return "no";
+  if (ko_chance.chance < 1 && ko_chance.n === 1) return "barely";
+  return "yes";
+};
+
 export const loadDataCalculator = async (
   form: ReportProps,
   setNumberDex: React.Dispatch<SetStateAction<number>>,
@@ -62,7 +77,7 @@ export const loadDataCalculator = async (
       setCancelAction();
       return;
     }
-    //if (i === 10) break;
+    if (i === 30) break;
     setNumberDex(i);
     const pokemonType = SPECIES[SPECIES.length - 1][pokemon].types;
     const typeValue = TYPE_CHART[TYPE_CHART.length - 1];
@@ -76,6 +91,7 @@ export const loadDataCalculator = async (
       calcsList.push({
         pokemon: pokemon as string,
         isInmune: true,
+        canSurvive: "yes",
         calcExtreme: {
           description: "You can't hit it bro",
           damage_range: 0,
@@ -104,6 +120,7 @@ export const loadDataCalculator = async (
       isInmune: false,
       calcSet: setCalc,
       calcExtreme: extremeCalc,
+      canSurvive: canSurvive(extremeCalc?.ko_chance),
       img: await getPokemonSprite(pokemon),
     });
 
@@ -113,7 +130,7 @@ export const loadDataCalculator = async (
   setPage((prev) => {
     return prev + 1;
   });
-  setResultCalcs(calcsList);
+  setResultCalcs(calcsList as any);
 };
 
 const calculateExtremeDamage = (pokemon: any, form: ReportProps) => {
@@ -138,7 +155,7 @@ const calculateDamageWithSet = async (pokemon: any, form: ReportProps) => {
     ///////                            ///////
     //////////////////////////////////////////
     const fetchData = await fetch(
-      `https://www.pikalytics.com/api/p/2023-03/gen9vgc2023regc-1760/${pokemon
+      `https://www.pikalytics.com/api/p/2023-04/gen9vgc2023regc-1760/${pokemon
         .toLowerCase()
         .trim()}`
     );

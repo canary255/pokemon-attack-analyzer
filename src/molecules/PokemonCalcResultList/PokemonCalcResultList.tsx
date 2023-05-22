@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Sprite } from "../../atom/Sprite/Sprite";
 import { TextFieldCommon } from "../../atom/TextFieldCommon/TextFieldCommon";
 import { CalcList } from "../../types/calcList";
-import { COLOR, survivalColor } from "../../utils/color";
+import { survivalColor } from "../../utils/color";
+import { Button } from "../../atom/Button/Button";
 
 type PokemonCalcResultProps = {
   resultsCalcs: CalcList[];
@@ -27,6 +28,13 @@ export const PokemonCalcResultList = ({
     setFilteredList(filtered);
   };
 
+  const filterBySurvival = (canSurvive: "yes" | "barely" | "no") => {
+    const filtered = resultsCalcs.filter((item) => {
+      return item.canSurvive.includes(canSurvive);
+    });
+    setFilteredList(filtered);
+  };
+
   return (
     <>
       <div className="flex justify-center mt-2 mb-3">
@@ -35,6 +43,27 @@ export const PokemonCalcResultList = ({
           width="L"
           onChange={handleFilter}
         />
+        <Button
+          name="yes"
+          label="Si"
+          onClick={() => filterBySurvival("yes")}
+        ></Button>
+        <Button
+          name="barely"
+          label="barely"
+          onClick={() => filterBySurvival("barely")}
+        ></Button>
+        <Button
+          name="no"
+          label="no"
+          onClick={() => filterBySurvival("no")}
+        ></Button>
+        <Button
+          name="all"
+          label="all"
+          onClick={() => setFilteredList(resultsCalcs)}
+        ></Button>
+        {filteredList.length}
       </div>
       <div className="grid grid-cols-5 gap-y-6 max-h-72 overflow-auto place-items-center px-6">
         {filteredList.map((item, index) => {

@@ -1,4 +1,3 @@
-import { Pokemon } from "../utils/calc";
 import { CalcData } from "./calcData";
 
 export interface CalcList {
@@ -6,5 +5,6 @@ export interface CalcList {
   isInmune: boolean;
   calcSet?: CalcData;
   calcExtreme?: CalcData;
+  canSurvive: "yes" | "barely" | "no";
   img?: string;
 }
