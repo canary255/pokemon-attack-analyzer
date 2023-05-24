@@ -92,9 +92,9 @@ export const Defender = () => {
           <SwitchUI label={t("button.stealthRock")} name="stealthRock" />
           <SwitchUI label={t("button.foresight")} name="foresight" />
         </div>
-        <div className={`${margin} grid grid-cols-4 place-items-center`}>
-          <RadioGroupUI className="col-span-2" options={spikes} name="spikes" />
+        <div className={`${margin} grid grid-cols-3 place-items-center`}>
           <SwitchUI label={t("button.helpingHand")} name="helpingHand" />
+          <SwitchUI label={t("button.friendGuard")} name="friendGuard" />
           <SwitchUI label={t("button.gravity")} name="gravity" />
         </div>
         <div className={`${margin} grid grid-cols-3 place-items-center`}>
@@ -103,10 +103,10 @@ export const Defender = () => {
           <SwitchUI label={t("button.auroraVeil")} name="auroraVeil" />
         </div>
         <div
-          className={`${margin} grid grid-cols-3 place-items-center sm:mb-4`}
+          className={`${margin} grid grid-cols-4 place-items-center sm:mb-4`}
         >
           <SwitchUI label={t("button.battery")} name="battery" />
-          <SwitchUI label={t("button.friendGuard")} name="friendGuard" />
+          <RadioGroupUI className="col-span-2" options={spikes} name="spikes" />
           <SwitchUI label={t("button.tailwind")} name="tailwind" />
         </div>
       </div>

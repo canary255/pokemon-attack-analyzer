@@ -13,7 +13,7 @@ export const survivalColor = (
       }
     | undefined
 ) => {
-  if (!ko_chance || ko_chance.chance === undefined) return "";
+  if (!ko_chance || ko_chance.chance === undefined) return COLOR["green"];
   if (ko_chance.chance === 1 && ko_chance.n === 1) return COLOR["red"];
   if (ko_chance.chance < 1 && ko_chance.n === 1) return COLOR["yellow"];
   return COLOR["green"];

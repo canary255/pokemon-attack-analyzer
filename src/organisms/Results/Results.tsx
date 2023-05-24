@@ -27,7 +27,7 @@ export const Results = ({
   const [pokemonInfo, setPokemonInfo] = useState<CalcList | undefined>();
 
   return (
-    <div className="flex flex-col gap-y-5">
+    <div className="flex flex-col gap-y-2">
       <ColorKey />
       <Divider className="my-0" />
       <div className="h-80">
@@ -43,7 +43,7 @@ export const Results = ({
           />
         )}
       </div>
-      <Divider />
+      <Divider className="mt-16" />
 
       <div className="flex flex-row gap-x-4">
         {
