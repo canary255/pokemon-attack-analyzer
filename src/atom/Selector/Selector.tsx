@@ -66,7 +66,7 @@ export const SelectorUI = ({
               refName={field.name}
             >
               <Listbox.Button
-                className={`${
+                className={`dark:bg-inputBackground ${
                   centerText ? "text-center" : ""
                 } pr-4 border border-black bg-white ${widthSize[width]} ${
                   heightSize[height]

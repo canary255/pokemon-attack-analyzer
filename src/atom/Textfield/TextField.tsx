@@ -69,7 +69,7 @@ export const TextField = ({
         value={getValues(name)}
         className={`border py-2 pl-1 pr-4 border-black 
               ${isSmall(width) ? "pl-1 pr-0" : "pl-5"}
-              ${readonly ? "bg-gray-100" : "bg-white"}
+              ${readonly ? "bg-gray-100 " : "bg-white dark:bg-inputBackground"}
               ${centerText ? "text-center" : ""} ${widthSize[width]}
               ${heightSize[height]} ${className}`}
         type={type}

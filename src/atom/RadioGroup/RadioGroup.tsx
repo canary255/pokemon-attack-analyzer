@@ -52,7 +52,7 @@ export const RadioGroupUI = ({
              ${
                value === option.value
                  ? "bg-primary text-white"
-                 : "bg-white text-black"
+                 : "bg-white text-black dark:bg-inputBackground"
              }`}
                   >
                     {

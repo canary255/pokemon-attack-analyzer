@@ -63,7 +63,7 @@ export const ComboBoxUI = ({
             refName={field.name}
           >
             <Combobox.Input
-              className={`${
+              className={` dark:bg-inputBackground${
                 centerText ? "text-center" : ""
               } py-2 pl-3 pr-4 border border-black ${widthSize[width]}
             ${isSmall(width) ? "pl-1 pr-0" : "pl-5"}

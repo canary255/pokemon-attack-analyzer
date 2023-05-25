@@ -51,7 +51,7 @@ export const Report = () => {
   return (
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
-        <div className="grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 xl:h-[91.5vh] bg-gray-100 dark:bg-slate-600">
+        <div className="grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 xl:h-[91.5vh] bg-gray-100 dark:bg-darkGray">
           <div className="border-r lg:border-b-0 sm:border-b border-black dark:border-white">
             <Attacker
               dex={dexList}

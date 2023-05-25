@@ -45,7 +45,7 @@ export const WeatherGroup = ({ name, label, className }: RadioGroupProps) => {
              ${
                value === option.value
                  ? "bg-primary text-white"
-                 : "bg-white text-black"
+                 : "bg-white text-black dark:bg-inputBackground"
              }`}
               >
                 {
@@ -74,7 +74,7 @@ export const WeatherGroup = ({ name, label, className }: RadioGroupProps) => {
              ${
                value === option.value
                  ? "bg-primary text-white"
-                 : "bg-white text-black"
+                 : "bg-white text-black dark:bg-inputBackground"
              }`}
                 >
                   {

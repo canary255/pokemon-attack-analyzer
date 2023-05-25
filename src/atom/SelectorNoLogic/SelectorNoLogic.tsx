@@ -53,7 +53,7 @@ export const SelectorNoLogic = ({
         {label ? <Text className="mb-1">{label}</Text> : null}
         <Listbox defaultValue={value} onChange={onChange}>
           <Listbox.Button
-            className={`${
+            className={`dark:bg-inputBackground ${
               centerText ? "text-center" : ""
             } pr-4 border border-black bg-white ${widthSize[width]} ${
               heightSize[height]
