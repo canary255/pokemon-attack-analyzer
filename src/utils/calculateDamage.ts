@@ -29,6 +29,7 @@ import {
 import { CalcList } from "../types/calcList";
 import { getPokemonSprite } from "./getPokemonSprite";
 import { getCancelAction, setCancelAction } from "./cancelAction";
+import { capitalizeOneWord } from "./capitalize";
 
 type PokemonData = {
   items: string;
@@ -180,67 +181,70 @@ const calculateDamage = (
   const evSpread = getEvSpread(defensiveData.evs);
   const LEVEL = 50;
 
-  const result = calculate(
-    9,
-    new Pokemon(Generations.get(9), form.name, {
-      item: form.item as any,
-      nature: form.nature as any,
-      evs: { atk: +form.evAtk, spa: +form.evSpa },
-      ivs: { atk: +form.ivAtk, spa: +form.ivSpa },
-      boosts: { atk: +form.boostAtk, spa: +form.boostSpa },
-      level: LEVEL,
-      ability: form.ability as AbilityName,
-      teraType:
-        form.mechanic === "tera" ? (form.teraType as TypeName) : undefined,
-    }),
-    new Pokemon(Generations.get(9), pokemon, {
-      item: defensiveData.items as ItemName,
-      nature: defensiveData.nature as NatureName,
-      evs: { hp: evSpread.hp, def: evSpread.def, spd: evSpread.spd },
-      ivs: { hp: 31, def: 31, spd: 31 },
-      boosts: { def: +form.boostDef, spd: +form.boostSpd },
-      level: LEVEL,
-    }),
+  const ATTACKER = new Pokemon(Generations.get(9), form.name, {
+    item: form.item as any,
+    nature: form.nature as any,
+    evs: { atk: +form.evAtk, spa: +form.evSpa },
+    ivs: { atk: +form.ivAtk, spa: +form.ivSpa },
+    boosts: { atk: +form.boostAtk, spa: +form.boostSpa },
+    level: LEVEL,
+    ability: form.ability as AbilityName,
+    teraType:
+      form.mechanic === "tera"
+        ? (capitalizeOneWord(form.teraType) as TypeName)
+        : undefined,
+  });
 
-    new Move(Generations.get(9), form?.move, {
-      ability: form?.ability as AbilityName,
-      item: form?.item as ItemName,
-      isCrit: form?.crit,
-      hits: +form?.hits,
-      useZ: form?.mechanic === "Z-Move",
-      useMax: form?.mechanic === "Dynamax",
-      overrides: { category: form?.category as MoveCategory },
-    }),
-    new Field({
-      isGravity: form.gravity,
-      terrain: form.terrain as Terrain,
-      isBeadsOfRuin: form.beads,
-      isSwordOfRuin: form.sword,
-      isTabletsOfRuin: form.tablets,
-      isVesselOfRuin: form.vessel,
-      weather: form.weather as Weather,
-      //isAuraBreak: form.aura,
-      //isFairyAura: form.,
-      //isDarkAura: form.,
-      gameType: form.target as GameType,
-      defenderSide: {
-        isAuroraVeil: form.auroraVeil,
-        isBattery: form.battery,
-        isFriendGuard: form.friendGuard,
-        isReflect: form.reflect,
-        isLightScreen: form.lightScreen,
-        //isTailwind: form.tailwind,
-        spikes: +form.spikes,
-        isProtected: form.protect,
-        isSR: form.stealthRock,
-        isForesight: form.foresight,
-      },
-      attackerSide: {
-        isHelpingHand: form.helpingHand,
-        isTailwind: form.tailwind,
-      },
-    })
-  );
+  const DEFENDER = new Pokemon(Generations.get(9), pokemon, {
+    item: defensiveData.items as ItemName,
+    nature: defensiveData.nature as NatureName,
+    evs: { hp: evSpread.hp, def: evSpread.def, spd: evSpread.spd },
+    ivs: { hp: 31, def: 31, spd: 31 },
+    boosts: { def: +form.boostDef, spd: +form.boostSpd },
+    level: LEVEL,
+  });
+
+  const MOVE = new Move(Generations.get(9), form?.move, {
+    ability: form?.ability as AbilityName,
+    item: form?.item as ItemName,
+    isCrit: form?.crit,
+    hits: +form?.hits,
+    useZ: form?.mechanic === "Z-Move",
+    useMax: form?.mechanic === "Dynamax",
+    overrides: { category: form?.category as MoveCategory },
+  });
+
+  const FIELD = new Field({
+    isGravity: form.gravity,
+    terrain: form.terrain as Terrain,
+    isBeadsOfRuin: form.beads,
+    isSwordOfRuin: form.sword,
+    isTabletsOfRuin: form.tablets,
+    isVesselOfRuin: form.vessel,
+    weather: form.weather as Weather,
+    //isAuraBreak: form.aura,
+    //isFairyAura: form.,
+    //isDarkAura: form.,
+    gameType: form.target as GameType,
+    defenderSide: {
+      isAuroraVeil: form.auroraVeil,
+      isBattery: form.battery,
+      isFriendGuard: form.friendGuard,
+      isReflect: form.reflect,
+      isLightScreen: form.lightScreen,
+      //isTailwind: form.tailwind,
+      spikes: +form.spikes,
+      isProtected: form.protect,
+      isSR: form.stealthRock,
+      isForesight: form.foresight,
+    },
+    attackerSide: {
+      isHelpingHand: form.helpingHand,
+      isTailwind: form.tailwind,
+    },
+  });
+
+  const result = calculate(9, ATTACKER, DEFENDER, MOVE, FIELD);
   const sendData: CalcData = {
     description: result.desc(),
     damage_range: result.damage,

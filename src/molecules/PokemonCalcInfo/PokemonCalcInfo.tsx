@@ -43,7 +43,9 @@ export const PokemonCalcInfo = ({
               <Text className="font-bold">
                 Pokémon with set case: {pokemonInfo.calcSet.text_evs}
               </Text>
-              <Text>{pokemonInfo.calcSet.description}</Text>
+              <Text className="dark:text-shadow-sm dark:shadow-black dark:font-bold">
+                {pokemonInfo.calcSet.description}
+              </Text>
             </div>
           )}
 
@@ -53,7 +55,9 @@ export const PokemonCalcInfo = ({
           p-3 ml-4 mr-4 rounded-xl shadow-md`}
             >
               <Text className="font-bold">Extreme case:</Text>
-              <Text>{pokemonInfo.calcExtreme.description}</Text>
+              <Text className="dark:text-shadow-sm dark:shadow-black dark:font-bold">
+                {pokemonInfo.calcExtreme.description}
+              </Text>
             </div>
           )}
         </div>

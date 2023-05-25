@@ -1,7 +1,7 @@
 export const COLOR = {
-  red: "bg-red-300",
-  green: "bg-green-200",
-  yellow: "bg-yellow-300",
+  red: "bg-red-300 dark:bg-redSemaphore",
+  green: "bg-green-200 dark:bg-greenSemaphore",
+  yellow: "bg-yellow-300 dark:bg-yellowSemaphore",
 };
 
 export const survivalColor = (
