@@ -25,7 +25,7 @@ export const Stats = ({ atk, spa }: StatsProps) => {
 
   return (
     <>
-      <div className="w-[60%] grid grid-rows-3 gap-y-2 grid-cols-6">
+      <div className="w-[80%] grid grid-rows-3 gap-y-2 grid-cols-6">
         <Layer />
         <FieldStats
           boostName="boostAtk"

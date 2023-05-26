@@ -59,8 +59,8 @@ export const PokemonCalcResultList = ({
   return (
     <>
       <div className="flex justify-center mb-3">
-        <div className="grid grid-cols-2 px-6 gap-x-12 gap-y-1">
-          <Text className="text-3xl col-span-2 mb-1">
+        <div className="grid lg:grid-cols-2 grid-cols-1 px-6 gap-x-12 gap-y-1">
+          <Text className="text-3xl lg:col-span-2 mb-1">
             Total: {filteredList.length}
           </Text>
           <TextFieldCommon
@@ -81,7 +81,7 @@ export const PokemonCalcResultList = ({
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-5 gap-y-6 max-h-80 overflow-auto place-items-center px-6">
+      <div className="grid min-[315px]:grid-cols-3 sm:grid-cols-5 gap-y-6 lg:max-h-80 min-[315px]:max-h-64 overflow-auto place-items-center px-6">
         {filteredList.map((item, index) => {
           return (
             <Sprite

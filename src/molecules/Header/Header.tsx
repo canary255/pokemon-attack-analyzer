@@ -53,30 +53,32 @@ export const Header = ({ children }: HeaderProps) => {
             <option value="en">EN</option>
           </select>
         </div>
-        <Switch checked={darkMode} onChange={handleDarkMode}>
-          {({ checked }) => (
-            /* Use the `checked` state to conditionally style the button. */
-            <div
-              className={`${
-                checked ? "bg-blue-900" : "bg-gray-200"
-              } relative inline-flex h-10 w-16 items-center rounded-full`}
-            >
-              <span className="sr-only">Dark mode</span>
-              <span
+        <div className="flex flex-row justify-center">
+          <Switch checked={darkMode} onChange={handleDarkMode}>
+            {({ checked }) => (
+              /* Use the `checked` state to conditionally style the button. */
+              <div
                 className={`${
-                  checked ? "translate-x-8" : "translate-x-1"
-                } inline-block h-6 w-6 transform rounded-full bg-white transition`}
-              />
-              <span
-                className={` ${
-                  checked ? "translate-x-[-19px] text-white" : "translate-x-2"
-                } material-symbols-outlined`}
+                  checked ? "bg-blue-900" : "bg-gray-200"
+                } relative inline-flex h-10 w-16 items-center rounded-full`}
               >
-                {checked ? "dark_mode" : "light_mode"}
-              </span>
-            </div>
-          )}
-        </Switch>
+                <span className="sr-only">Dark mode</span>
+                <span
+                  className={`${
+                    checked ? "translate-x-8" : "translate-x-1"
+                  } inline-block h-6 w-6 transform rounded-full bg-white transition`}
+                />
+                <span
+                  className={` ${
+                    checked ? "translate-x-[-19px] text-white" : "translate-x-2"
+                  } material-symbols-outlined`}
+                >
+                  {checked ? "dark_mode" : "light_mode"}
+                </span>
+              </div>
+            )}
+          </Switch>
+        </div>
       </div>
     </div>
   );
