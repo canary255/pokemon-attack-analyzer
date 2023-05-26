@@ -14,7 +14,7 @@ export const ColorKey = () => {
     text: string;
   }) => {
     return (
-      <div className="flex flex-row gap-x-9 items-center">
+      <div className="flex flex-row gap-x-1 items-center">
         <Sprite isExample className={`${COLOR[color]} w-10 h-10`} />
         <Text className="text-lg">{t(text)}</Text>
       </div>
@@ -22,7 +22,7 @@ export const ColorKey = () => {
   };
 
   return (
-    <div className="p-1 flex flex-col gap-y-2">
+    <div className="p-1 grid grid-cols-3 px-8 py-3 gap-x-8">
       <ColorWrapper color="green" text="common.canSurvive" />
       <ColorWrapper color="yellow" text="common.barelySurvive" />
       <ColorWrapper color="red" text="common.cannotSurvive" />

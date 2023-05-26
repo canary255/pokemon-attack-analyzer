@@ -86,7 +86,7 @@ export const Attacker = ({
   return (
     <>
       <div className="flex flex-col">
-        <div className="flex flex-row justify-center gap-x-16">
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 justify-center gap-x-16">
           <Avatar
             url={avatar}
             teratype={watch("teraType")}
@@ -136,7 +136,7 @@ export const Attacker = ({
           <Stats atk={atk} spa={spa} />
         </div>
         <div className="mt-3 grid w-full place-items-center lg:grid-cols-9 md:grid-cols-5 sm:grid-cols-8 xs:grid-cols-1">
-          <div className="flex flex-row gap-x-2 lg:col-span-6 md:col-span-5 sm:col-span-6">
+          <div className="flex flex-row gap-x-2 lg:col-span-6 md:col-span-4 sm:col-span-6">
             <ComboBoxUI
               options={moveList}
               name="move"

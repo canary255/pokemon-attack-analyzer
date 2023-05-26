@@ -37,25 +37,28 @@ export const Header = ({ children }: HeaderProps) => {
   };
 
   return (
-    <div className="sticky z-10 top-0 grid grid-cols-5 content-center bg-[#009DFF] h-16 w-full">
-      <p className="ml-3 text-white sm:text-4xl xs:text-2xl col-span-3">
+    <div className="p-4 sticky z-10 top-0 grid grid-cols-4 content-center bg-[#009DFF] dark:bg-blue-600 h-16 w-full">
+      <p className="text-white md:text-3xl sm:text-2xl max-[315px]:text-md col-span-2 p-4">
         Pokémon Report Generator
       </p>
-      <select
-        value={i18n.language}
-        onChange={(e) => changeLanguageHandler(e.target.value)}
-        className="mr-3 w-16"
-      >
-        <option value="es">ES</option>
-        <option value="en">EN</option>
-      </select>
-      <div className="grid place-items-end">
+
+      <div className="grid grid-cols-2 col-span-2">
+        <div className="flex flex-row justify-center w-full h-full p-4">
+          <select
+            value={i18n.language}
+            onChange={(e) => changeLanguageHandler(e.target.value)}
+            className="w-16"
+          >
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+          </select>
+        </div>
         <Switch checked={darkMode} onChange={handleDarkMode}>
           {({ checked }) => (
             /* Use the `checked` state to conditionally style the button. */
             <div
               className={`${
-                checked ? "bg-blue-600" : "bg-gray-200"
+                checked ? "bg-blue-900" : "bg-gray-200"
               } relative inline-flex h-10 w-16 items-center rounded-full`}
             >
               <span className="sr-only">Dark mode</span>

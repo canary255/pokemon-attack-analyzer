@@ -81,7 +81,7 @@ export const PokemonCalcResultList = ({
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-5 gap-y-6 max-h-64 overflow-auto place-items-center px-6">
+      <div className="grid grid-cols-5 gap-y-6 max-h-80 overflow-auto place-items-center px-6">
         {filteredList.map((item, index) => {
           return (
             <Sprite

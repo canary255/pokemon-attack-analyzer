@@ -13,9 +13,9 @@
     "common": {
         "none": "None",
         "reportGenerator": "Pokémon Report Generator",
-        "cannotSurvive": "Cannot survive",
-        "barelySurvive": "Barely survive",
-        "canSurvive": "Can survive",
+        "cannotSurvive": "Cannot",
+        "barelySurvive": "Barely",
+        "canSurvive": "Survive",
         "filter" : "Filter",
         "search": "Search",
         "filterBy": "Filter By",
