@@ -1,9 +1,8 @@
 import { Button } from "../../atom/Button/Button";
 import { Sprite } from "../../atom/Sprite/Sprite";
 import { Text } from "../../atom/Text/Text";
-import { TextFieldCommon } from "../../atom/TextFieldCommon/TextFieldCommon";
 import { CalcList } from "../../types/calcList";
-import { COLOR, survivalColor } from "../../utils/color";
+import { survivalColor } from "../../utils/color";
 
 type PokemonCalcResultProps = {
   pokemonInfo: CalcList | undefined;

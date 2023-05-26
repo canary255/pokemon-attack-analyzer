@@ -23,7 +23,9 @@
         "survive": "Survive",
         "cannot": "Cannot",
         "barely": "Barely",
-        "searchPokemon": "Search Pokémon"
+        "searchPokemon": "Search Pokémon",
+        "generatePdf": "Generate PDF",
+        "downloadReport": "Download Report"
     },
     "proyectExplain": {
         "description": "is a proyect where a user can check if Pokémon can survive an attack with certain conditions of a Pokémon attacker. It also allows to create a PDF with those calculations.",

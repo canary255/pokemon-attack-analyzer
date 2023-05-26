@@ -11,6 +11,9 @@ import { useTranslation } from "react-i18next";
 type PokemonCalcResultProps = {
   resultsCalcs: CalcList[];
   setPokemonInfo: React.Dispatch<React.SetStateAction<CalcList | undefined>>;
+  filteredList: CalcList[];
+  setFilteredList: React.Dispatch<React.SetStateAction<CalcList[]>>;
+  setGeneratePDF: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 type SurvivalOptions = "all" | "yes" | "barely" | "no";
@@ -18,13 +21,13 @@ type SurvivalOptions = "all" | "yes" | "barely" | "no";
 export const PokemonCalcResultList = ({
   resultsCalcs,
   setPokemonInfo,
+  filteredList,
+  setFilteredList,
+  setGeneratePDF,
 }: PokemonCalcResultProps) => {
-  const [filteredList, setFilteredList] = useState<CalcList[]>([
-    ...resultsCalcs,
-  ]);
   const { t } = useTranslation();
-  const [textInput, setTextInput] = useState<string>("");
   const [selector, setSelector] = useState<SurvivalOptions>("all");
+  const [text, setText] = useState<string>("");
 
   const survivalOptions: OptionsType[] = [
     { name: "common.all", value: "all" },
@@ -34,6 +37,10 @@ export const PokemonCalcResultList = ({
   ];
 
   useEffect(() => {
+    setText("");
+    setGeneratePDF(() => {
+      return false;
+    });
     if (selector === "all") {
       setFilteredList(resultsCalcs);
       return;
@@ -43,8 +50,17 @@ export const PokemonCalcResultList = ({
 
   const handleFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
+    setText(value);
     const filtered = resultsCalcs.filter((item) => {
-      return item.pokemon.toLowerCase().includes(value.toLowerCase());
+      if (selector === "all")
+        return item.pokemon.toLowerCase().includes(value.toLowerCase());
+      return (
+        item.pokemon.toLowerCase().includes(value.toLowerCase()) &&
+        item.canSurvive.includes(selector)
+      );
+    });
+    setGeneratePDF(() => {
+      return false;
     });
     setFilteredList(filtered);
   };
@@ -67,6 +83,7 @@ export const PokemonCalcResultList = ({
             label={t("common.searchPokemon")}
             placeholder="Write the Pokémon name"
             width="L"
+            value={text}
             onChange={handleFilter}
           />
           <div>

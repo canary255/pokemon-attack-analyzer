@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ColorKey } from "../../molecules/ColorKey/ColorKey";
 import { PokemonCalcResultList } from "../../molecules/PokemonCalcResultList/PokemonCalcResultList";
@@ -17,6 +17,9 @@ interface LoadingCalcsProps {
   avatar: string;
 }
 
+const DOWNLOAD_BUTTON_CLASS =
+  "border border-red-300 bg-red-600 text-white font-semibold rounded-full w-1/2 h-24 mx-auto flex justify-center items-center hover:bg-red-700";
+
 export const Results = ({
   resultsCalcs,
   setPage,
@@ -25,6 +28,17 @@ export const Results = ({
 }: LoadingCalcsProps) => {
   const { t } = useTranslation();
   const [pokemonInfo, setPokemonInfo] = useState<CalcList | undefined>();
+  const [filteredList, setFilteredList] = useState<CalcList[]>([
+    ...resultsCalcs,
+  ]);
+  const [generatePDF, setGeneratePDF] = useState<boolean>(false);
+
+  const resetPage = () => {
+    setPage(0);
+    setGeneratePDF(() => {
+      return false;
+    });
+  };
 
   return (
     <div className="flex flex-col gap-y-2">
@@ -39,21 +53,24 @@ export const Results = ({
         ) : (
           <PokemonCalcResultList
             resultsCalcs={resultsCalcs}
+            filteredList={filteredList}
+            setFilteredList={setFilteredList}
             setPokemonInfo={setPokemonInfo}
+            setGeneratePDF={setGeneratePDF}
           />
         )}
       </div>
       <Divider className="mt-16" />
 
       <div className="flex flex-row gap-x-4">
-        {
+        {generatePDF ? (
           <PDFDownloadLink
-            className="border border-red-300 bg-red-600 text-white font-semibold rounded-full w-1/2 h-24 mx-auto flex justify-center items-center hover:bg-red-700"
+            className={DOWNLOAD_BUTTON_CLASS}
             document={
               <ReportPDF
                 avatar={avatar}
                 data={data}
-                resultsCalcs={resultsCalcs}
+                resultsCalcs={filteredList}
               />
             }
             fileName={`${data?.name} - ${data?.move}.pdf`}
@@ -63,19 +80,30 @@ export const Results = ({
                 "Loading document..."
               ) : (
                 <div className="flex flex-col items-center">
-                  Download Report as PDF
+                  {t("common.downloadReport")}
                   <span className="material-symbols-outlined">download</span>
                 </div>
               )
             }
           </PDFDownloadLink>
-        }
+        ) : (
+          <Button
+            name=""
+            onClick={() => {
+              setGeneratePDF(true);
+            }}
+            label={t("common.generatePdf")}
+            className={DOWNLOAD_BUTTON_CLASS}
+          ></Button>
+        )}
         <Button
           circleBorder="all"
           className="w-1/2 h-24 mx-auto"
-          name="backMainPage"
+          name=""
           label="Generate another report"
-          onClick={() => setPage(0)}
+          onClick={() => {
+            resetPage();
+          }}
         />
       </div>
     </div>

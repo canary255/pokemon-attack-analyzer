@@ -78,7 +78,8 @@ export const loadDataCalculator = async (
       setCancelAction();
       return;
     }
-    if (i === 30) break;
+    //Descomentar para pruebas
+    //if (i === 30) break;
     setNumberDex(i);
     const pokemonType = SPECIES[SPECIES.length - 1][pokemon].types;
     const typeValue = TYPE_CHART[TYPE_CHART.length - 1];
