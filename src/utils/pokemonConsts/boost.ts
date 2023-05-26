@@ -1,4 +1,4 @@
-import { OptionsType } from "../../type/options";
+import { OptionsType } from "../../types/options";
 
 const boost: OptionsType[] = [];
 for (let i = 0; i <= 6; i++) {

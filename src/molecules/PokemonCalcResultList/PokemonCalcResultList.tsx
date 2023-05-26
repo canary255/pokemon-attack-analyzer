@@ -5,7 +5,7 @@ import { CalcList } from "../../types/calcList";
 import { survivalColor } from "../../utils/color";
 import { Text } from "../../atom/Text/Text";
 import { SelectorNoLogic } from "../../atom/SelectorNoLogic/SelectorNoLogic";
-import { OptionsType } from "../../type/options";
+import { OptionsType } from "../../types/options";
 import { useTranslation } from "react-i18next";
 
 type PokemonCalcResultProps = {

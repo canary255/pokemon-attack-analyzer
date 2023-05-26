@@ -2,7 +2,7 @@ import { Listbox } from "@headlessui/react";
 import { heightSize, widthSize } from "../../utils/styleConsts";
 import { SizeProps } from "../../types/size";
 import { isSmall } from "../../utils/isSmall";
-import { OptionsType } from "../../type/options";
+import { OptionsType } from "../../types/options";
 import { useTranslation } from "react-i18next";
 import { Text } from "../Text/Text";
 import { limitText } from "../../utils/limitText";

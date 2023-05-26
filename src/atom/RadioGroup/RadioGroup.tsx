@@ -3,7 +3,7 @@ import { borderDirection } from "../../utils/styleConsts";
 import { Text } from "../Text/Text";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { OptionsType } from "../../type/options";
+import { OptionsType } from "../../types/options";
 
 interface RadioGroupProps {
   name: string;
