@@ -34,7 +34,9 @@
         "step3": "Add any field conditions",
         "step4": "Click on Generate Report.",
         "step5": "Wait until all calcs are done.",
-        "step6": "After that, you can check the calcs of every Pokémon, if it survives or not. Also you can download a PDF with the inform of calculations."
+        "step6": "After that, you can check the calcs of every Pokémon, if it survives or not. Also you can download a PDF with the report of calculations.",
+        "step7": "Sometimes generating a report can take a while, so please be patient.",
+        "note": "Note: This proyect is still in development, so it may have some bugs. If you find one, please report it in the issues section of the GitHub repository."
     },
     "error":{
         "resultNotFound": "Result not found"

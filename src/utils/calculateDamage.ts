@@ -1,9 +1,5 @@
 import { ReportProps } from "../types/reportProps";
-import {
-  get9thGenDexNames,
-  //getCompleteDex,
-  getCompleteDexNames,
-} from "./pokemonConsts/lists";
+import { get9thGenDexNames, getCompleteDexNames } from "./pokemonConsts/lists";
 import React, { SetStateAction } from "react";
 import {
   calculate,
@@ -79,7 +75,7 @@ export const loadDataCalculator = async (
       return;
     }
     //Descomentar para pruebas
-    //if (i === 30) break;
+    if (i === 30) break;
     setNumberDex(i);
     const pokemonType = SPECIES[SPECIES.length - 1][pokemon].types;
     const typeValue = TYPE_CHART[TYPE_CHART.length - 1];

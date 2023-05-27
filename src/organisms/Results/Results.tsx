@@ -9,6 +9,7 @@ import { Button } from "../../atom/Button/Button";
 import { ReportProps } from "../../types/reportProps";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 import { ReportPDF } from "../../molecules/ReportPDF/ReportPDF";
+import { Text } from "../../atom/Text/Text";
 
 interface LoadingCalcsProps {
   resultsCalcs: CalcList[];
@@ -18,7 +19,7 @@ interface LoadingCalcsProps {
 }
 
 const DOWNLOAD_BUTTON_CLASS =
-  "border border-red-300 bg-red-600 text-white font-semibold rounded-full w-1/2 h-24 mx-auto flex justify-center items-center hover:bg-red-700";
+  "text-[14px] border border-red-300 bg-red-600 text-white font-semibold rounded-full w-1/4 h-16 mx-auto flex justify-center items-center hover:bg-red-700";
 
 export const Results = ({
   resultsCalcs,
@@ -62,6 +63,10 @@ export const Results = ({
       </div>
       <Divider className="mt-16" />
 
+      <Text className="px-2 font-semibold">
+        Note: Pressing the button may freeze the page. There is not problem,
+        just wait until the button "{t("common.downloadReport")}" appears.
+      </Text>
       <div className="flex flex-row gap-x-4">
         {generatePDF ? (
           <PDFDownloadLink
@@ -98,7 +103,7 @@ export const Results = ({
         )}
         <Button
           circleBorder="all"
-          className="w-1/2 h-24 mx-auto"
+          className="w-1/2 h-16 mx-auto"
           name=""
           label="Generate another report"
           onClick={() => {

@@ -52,7 +52,7 @@ export const Report = () => {
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
         <div className="grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 xl:h-[91.5vh] bg-gray-100 dark:bg-darkGray">
-          <div className="border-r lg:border-b-0 sm:border-b border-black dark:border-white">
+          <div className="border lg:border-b-0 sm:border-b border-black dark:border-white">
             <Attacker
               dex={dexList}
               itemList={itemList}
@@ -62,10 +62,10 @@ export const Report = () => {
               setAvatar={setAvatar}
             />
           </div>
-          <div className="border-r lg:border-b-0 sm:border-b border-black dark:border-white">
+          <div className="border lg:border-b-0 sm:border-b border-black dark:border-white">
             <Defender />
           </div>
-          <div className="xl:col-span-1 md:col-span-2">
+          <div className="border border-black xl:col-span-1 md:col-span-2">
             {page === 0 && <Information />}
             {page === 1 && (
               <LoadingCalcs

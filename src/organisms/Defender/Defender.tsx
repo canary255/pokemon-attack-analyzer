@@ -13,6 +13,8 @@ import { Divider } from "../../atom/Divider/Divider";
 import { SwitchUI } from "../../atom/Switch/Switch";
 import { WeatherGroup } from "../../molecules/WeatherGroup/WeatherGroup";
 
+const SWITCH_UI_BLACK = "text-[12px] border border-black dark:border-white";
+
 export const Defender = () => {
   const { t } = useTranslation();
   const margin = "mt-3";
@@ -42,20 +44,22 @@ export const Defender = () => {
         <div className={`${margin} grid place-items-center`}>
           <RadioGroupUI options={target} name="target" />
         </div>
+
         <Divider />
+
         <div className={`grid place-items-center`}>
           <RadioGroupUI options={terrain} name="terrain" />
         </div>
         <div className={`${margin} grid gap-y-1 place-items-center`}>
           <div>
             <SwitchUI
-              className="text-[12px] border border-r-black"
+              className={SWITCH_UI_BLACK}
               label={`${t("ruins.tablets")} (-Atk)`}
               circleBorder="left"
               name="tablets"
             />
             <SwitchUI
-              className="text-[12px] "
+              className={SWITCH_UI_BLACK}
               label={`${t("ruins.vessel")} (-SpA)`}
               circleBorder="right"
               name="vessel"
@@ -63,13 +67,13 @@ export const Defender = () => {
           </div>
           <div>
             <SwitchUI
-              className="text-[12px] border border-r-black"
+              className={SWITCH_UI_BLACK}
               label={`${t("ruins.sword")} (-Def)`}
               circleBorder="left"
               name="sword"
             />
             <SwitchUI
-              className="text-[12px]"
+              className={SWITCH_UI_BLACK}
               label={`${t("ruins.beads")} (-SpD)`}
               circleBorder="right"
               name="beads"
@@ -83,7 +87,26 @@ export const Defender = () => {
           />
         </div>
         <div className={`${margin} grid place-items-center`}>
-          <RadioGroupUI options={aura} name="aura" />
+          <div>
+            <SwitchUI
+              className={SWITCH_UI_BLACK}
+              label={t("aura.fairy")}
+              circleBorder="left"
+              name="fairy"
+            />
+            <SwitchUI
+              className={SWITCH_UI_BLACK}
+              label={t("aura.dark")}
+              circleBorder="none"
+              name="dark"
+            />
+            <SwitchUI
+              className={SWITCH_UI_BLACK}
+              label={t("aura.break")}
+              circleBorder="right"
+              name="break"
+            />
+          </div>
         </div>
         <Divider />
 

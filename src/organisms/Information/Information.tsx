@@ -5,8 +5,8 @@ import { Text } from "../../atom/Text/Text";
 export const Information = () => {
   const { t } = useTranslation();
   return (
-    <div className="grid grid-rows-3 gap-y-3">
-      <div className="p-3">
+    <div className="flex flex-col gap-y-3 p-3">
+      <div>
         <Text className="text-xl font-medium">
           {t("common.reportGenerator")}{" "}
         </Text>
@@ -15,7 +15,7 @@ export const Information = () => {
         </Text>
       </div>
       <div>
-        <div className="p-3">
+        <div className="py-3 flex flex-col">
           <Text className="text-xl font-medium">Instructions:</Text>
           <ul className="list-disc pl-6 text-sm font-semibold dark:text-white">
             <li>{t("proyectExplain.step1")}</li>
@@ -24,11 +24,17 @@ export const Information = () => {
             <li>{t("proyectExplain.step4")}</li>
             <li>{t("proyectExplain.step5")}</li>
             <li>{t("proyectExplain.step6")}</li>
+            <li className="font-bold text-[15px]">
+              {t("proyectExplain.step7")}
+            </li>
           </ul>
+          <Text className="font-medium text-[17px] my-8">
+            {t("proyectExplain.note")}
+          </Text>
         </div>
       </div>
 
-      <div className="items-end flex justify-center">
+      <div className="items-end flex justify-center py-16">
         <Button
           name="upload"
           type="submit"

@@ -23,7 +23,9 @@ export type ReportProps = {
   boostSpd: string;
   weather: string;
   terrain: string;
-  aura: string;
+  fairy: boolean;
+  dark: boolean;
+  break: boolean;
   spikes: string;
   helpingHand: boolean;
   gravity: boolean;
