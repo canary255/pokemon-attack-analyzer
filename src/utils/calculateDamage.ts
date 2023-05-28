@@ -74,13 +74,13 @@ export const loadDataCalculator = async (
       setCancelAction();
       return;
     }
-    //Descomentar para pruebas
-    if (i === 30) break;
+    //Uncomment for testing
+    //if (i === 30) break;
     setNumberDex(i);
     const pokemonType = SPECIES[SPECIES.length - 1][pokemon].types;
     const typeValue = TYPE_CHART[TYPE_CHART.length - 1];
 
-    //1 - añadir inmunidad de tipos
+    //1 - add type inmunity
 
     if (
       typeValue?.[moveType]?.[pokemonType[0]] === 0 ||
@@ -105,12 +105,12 @@ export const loadDataCalculator = async (
       continue;
     }
 
-    //PASOS:
-    //2 - el pokemon tiene un set almacenado
+    //STEPS:
+    //2 - The pokemon has a set stored
     const setCalc = await calculateDamageWithSet(pokemon, form);
-    //3 - Añadir set Extremo
+    //3 - Add extreme set
     const extremeCalc = calculateExtremeDamage(pokemon, form);
-    //4 - Añadir set Óptimo
+    //4 - Add optimal set
     //const optimalCalc = calculateOptimalDamage(pokemon, form);
 
     calcsList.push({
@@ -149,7 +149,7 @@ const calculateDamageWithSet = async (pokemon: any, form: ReportProps) => {
   try {
     //////////////////////////////////////////
     ///////                            ///////
-    ///////     OBTENCIÓN DE SET       ///////
+    ///////       SET OBTENTION        ///////
     ///////                            ///////
     //////////////////////////////////////////
     const fetchData = await fetch(

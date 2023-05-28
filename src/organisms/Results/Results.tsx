@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ColorKey } from "../../molecules/ColorKey/ColorKey";
 import { PokemonCalcResultList } from "../../molecules/PokemonCalcResultList/PokemonCalcResultList";
@@ -7,9 +7,10 @@ import { PokemonCalcInfo } from "../../molecules/PokemonCalcInfo/PokemonCalcInfo
 import { Divider } from "../../atom/Divider/Divider";
 import { Button } from "../../atom/Button/Button";
 import { ReportProps } from "../../types/reportProps";
-import { PDFDownloadLink } from "@react-pdf/renderer";
+import { renderToString } from "react-dom/server";
 import { ReportPDF } from "../../molecules/ReportPDF/ReportPDF";
 import { Text } from "../../atom/Text/Text";
+import jsPDF from "jspdf";
 
 interface LoadingCalcsProps {
   resultsCalcs: CalcList[];
@@ -32,12 +33,24 @@ export const Results = ({
   const [filteredList, setFilteredList] = useState<CalcList[]>([
     ...resultsCalcs,
   ]);
-  const [generatePDF, setGeneratePDF] = useState<boolean>(false);
 
   const resetPage = () => {
     setPage(0);
-    setGeneratePDF(() => {
-      return false;
+  };
+
+  const print = () => {
+    const string = renderToString(
+      <ReportPDF avatar={avatar} data={data} resultsCalcs={filteredList} />
+    );
+    const pdf = new jsPDF({ format: "a4" });
+    pdf.html(string, {
+      callback: function (doc) {
+        doc.save(`${data?.name} - ${data?.move}`);
+      },
+      x: 15,
+      y: 15,
+      width: 170, //target width in the PDF document
+      windowWidth: 650, //window width in CSS pixels
     });
   };
 
@@ -57,50 +70,25 @@ export const Results = ({
             filteredList={filteredList}
             setFilteredList={setFilteredList}
             setPokemonInfo={setPokemonInfo}
-            setGeneratePDF={setGeneratePDF}
           />
         )}
       </div>
       <Divider className="mt-16" />
 
       <Text className="px-2 font-semibold">
-        Note: Pressing the button may freeze the page. There is not problem,
-        just wait until the button "{t("common.downloadReport")}" appears.
+        Note: Pressing the button may freeze the page. There is no problem, just
+        wait until the button "{t("common.downloadReport")}" appears.
       </Text>
       <div className="flex flex-row gap-x-4">
-        {generatePDF ? (
-          <PDFDownloadLink
-            className={DOWNLOAD_BUTTON_CLASS}
-            document={
-              <ReportPDF
-                avatar={avatar}
-                data={data}
-                resultsCalcs={filteredList}
-              />
-            }
-            fileName={`${data?.name} - ${data?.move}.pdf`}
-          >
-            {({ blob, url, loading, error }) =>
-              loading ? (
-                "Loading document..."
-              ) : (
-                <div className="flex flex-col items-center">
-                  {t("common.downloadReport")}
-                  <span className="material-symbols-outlined">download</span>
-                </div>
-              )
-            }
-          </PDFDownloadLink>
-        ) : (
-          <Button
-            name=""
-            onClick={() => {
-              setGeneratePDF(true);
-            }}
-            label={t("common.generatePdf")}
-            className={DOWNLOAD_BUTTON_CLASS}
-          ></Button>
-        )}
+        <Button
+          name=""
+          onClick={() => {
+            print();
+          }}
+          label={t("common.generatePdf")}
+          className={DOWNLOAD_BUTTON_CLASS}
+        ></Button>
+
         <Button
           circleBorder="all"
           className="w-1/2 h-16 mx-auto"

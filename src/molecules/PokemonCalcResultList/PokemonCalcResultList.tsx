@@ -13,7 +13,6 @@ type PokemonCalcResultProps = {
   setPokemonInfo: React.Dispatch<React.SetStateAction<CalcList | undefined>>;
   filteredList: CalcList[];
   setFilteredList: React.Dispatch<React.SetStateAction<CalcList[]>>;
-  setGeneratePDF: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 type SurvivalOptions = "all" | "yes" | "barely" | "no";
@@ -23,7 +22,6 @@ export const PokemonCalcResultList = ({
   setPokemonInfo,
   filteredList,
   setFilteredList,
-  setGeneratePDF,
 }: PokemonCalcResultProps) => {
   const { t } = useTranslation();
   const [selector, setSelector] = useState<SurvivalOptions>("all");
@@ -38,9 +36,6 @@ export const PokemonCalcResultList = ({
 
   useEffect(() => {
     setText("");
-    setGeneratePDF(() => {
-      return false;
-    });
     if (selector === "all") {
       setFilteredList(resultsCalcs);
       return;
@@ -59,9 +54,7 @@ export const PokemonCalcResultList = ({
         item.canSurvive.includes(selector)
       );
     });
-    setGeneratePDF(() => {
-      return false;
-    });
+
     setFilteredList(filtered);
   };
 

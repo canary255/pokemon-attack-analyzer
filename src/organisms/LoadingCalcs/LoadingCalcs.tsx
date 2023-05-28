@@ -1,4 +1,3 @@
-import React, { SetStateAction } from "react";
 import { useTranslation } from "react-i18next";
 import { Text } from "../../atom/Text/Text";
 import { Carousel } from "../../molecules/Carousel/Carousel";
@@ -31,7 +30,7 @@ export const LoadingCalcs = ({
         you can do other stuff or watch some content here and be relaxed :D
       </Text>
       {/*<Carousel />*/}
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center gap-y-16">
         <img
           className={`w-[20%] h-[20%] flex-none`}
           src={avatar}
@@ -41,6 +40,8 @@ export const LoadingCalcs = ({
         <Button
           name="cancel"
           label="Cancel process"
+          circleBorder="all"
+          className="w-80 h-36 text-4xl font-semibold border border-red-300 bg-red-600"
           onClick={() => setCancelAction()}
         />
       </div>

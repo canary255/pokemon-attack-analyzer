@@ -1,13 +1,3 @@
-import Helvetica from "../../fonts/Helvetica.ttf";
-import {
-  Page,
-  Text,
-  View,
-  Document,
-  StyleSheet,
-  Font,
-  Image,
-} from "@react-pdf/renderer";
 import { ReportProps } from "../../types/reportProps";
 import { CalcList } from "../../types/calcList";
 
@@ -16,8 +6,6 @@ type ReportPDFProps = {
   data: ReportProps | undefined;
   resultsCalcs: CalcList[] | undefined;
 };
-
-const negativeMargin = "-100px";
 
 const bgColor = (
   ko_chance:
@@ -28,162 +16,64 @@ const bgColor = (
       }
     | undefined
 ) => {
-  if (!ko_chance || ko_chance.chance === undefined) return "";
-  if (ko_chance.chance === 1 && ko_chance.n === 1) return "#fca5a5";
-  if (ko_chance.chance < 1 && ko_chance.n === 1) return "#fde047";
-  return "#bbf7d0";
+  if (!ko_chance || ko_chance.chance === undefined) return "bg-green-200";
+  if (ko_chance.chance === 1 && ko_chance.n === 1) return "bg-red-300";
+  if (ko_chance.chance < 1 && ko_chance.n === 1) return "bg-yellow-300";
+  return "bg-green-200";
 };
+
+const PAGE_CLASS = "w-[650px] h-[1136px] break-after-page";
 
 // Create Document Component
 export const ReportPDF = ({ avatar, data, resultsCalcs }: ReportPDFProps) => (
-  <Document>
-    <Page size="A4" style={styles.body}>
-      <Text style={styles.title}>
-        Can you survive "{data?.move}" from {data?.name}?
-      </Text>
+  <>
+    <div className={` ${PAGE_CLASS} flex flex-col items-center `}>
+      <img width="128" height="128" src={avatar} />
+      <p className="text-2xl font-bold">
+        Can you survive {data?.name} {data?.move}?
+      </p>
+    </div>
+    <div>
+      {resultsCalcs?.map((calc, i) => (
+        <>
+          <div className={`flex flex-col h-[378px] pl-4`}>
+            <div className="flex flex-row gap-x-3 h-[100px] justify-start items-center">
+              <p className="text-xl">Vs. {calc.pokemon}</p>
+              <img width="100" height="100" src={calc.img} />
+            </div>
 
-      <View
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-        }}
-      >
-        {/**Bucle para los calcs */}
-        {resultsCalcs?.map((calc, index) => {
-          return (
-            <View
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                marginBottom: 48,
-                width: "100%",
-              }}
-              key={index}
-            >
-              <View
-                style={{ display: "flex", flexDirection: "row", rowGap: 32 }}
+            {calc.calcSet && (
+              <div
+                className={`${
+                  calc.calcSet && bgColor(calc.calcSet.ko_chance)
+                } h-[100px] mb-1 px-2`}
               >
-                <Text style={styles.section}>{calc?.pokemon}</Text>
-              </View>
-              {calc.calcSet && (
-                <View
-                  style={{
-                    marginTop: 8,
-                  }}
-                >
-                  <Text style={styles.subsection}>
-                    Pokemon with set case: {calc?.calcSet?.text_evs}
-                  </Text>
-                  <Text
-                    style={{
-                      ...styles.text,
-                      borderRadius: 8,
-                      backgroundColor: bgColor(calc?.calcSet?.ko_chance),
-                      padding: 8,
-                      marginTop: 2,
-                    }}
-                  >
-                    {calc?.calcSet?.description}
-                  </Text>
-                </View>
-              )}
-              {calc?.calcExtreme && (
-                <View
-                  style={{
-                    marginTop: 8,
-                  }}
-                >
-                  <Text style={styles.subsection}>
-                    Pokemon with max HP and max Def case:{" "}
-                    {calc?.calcExtreme?.text_evs}
-                  </Text>
-                  <Text
-                    style={{
-                      ...styles.text,
-                      borderRadius: 8,
-                      backgroundColor: bgColor(calc?.calcExtreme?.ko_chance),
-                      padding: 8,
-                      marginTop: 2,
-                    }}
-                  >
-                    {calc?.calcExtreme?.description}
-                  </Text>
-                </View>
-              )}
-            </View>
-          );
-        })}
-        {/**Fin de bucle */}
-      </View>
-    </Page>
-  </Document>
+                <p className="font-bold text-left">
+                  Pokemon with set: {calc.calcSet.text_evs}
+                </p>
+                <p className="text-sm text-left">{calc.calcSet.description}</p>
+              </div>
+            )}
+            {calc.calcExtreme && (
+              <div
+                className={`${bgColor(
+                  calc.calcExtreme.ko_chance
+                )} h-[100px] px-2`}
+              >
+                <p className="font-bold text-left">
+                  Pokémon with Defensive set: {calc.calcExtreme.text_evs}
+                </p>
+                <p className="text-sm text-left">
+                  {calc.calcExtreme.description}
+                </p>
+              </div>
+            )}
+            {i !== 0 && i % 3 === 0 && (
+              <div className={`m-[${30 + i}px]`}></div>
+            )}
+          </div>
+        </>
+      ))}
+    </div>
+  </>
 );
-
-Font.register({
-  family: "Helvetica",
-  src: Helvetica,
-});
-
-const styles = StyleSheet.create({
-  body: {
-    paddingTop: 35,
-    paddingBottom: 65,
-    paddingHorizontal: 35,
-  },
-  title: {
-    fontSize: 24,
-    textAlign: "center",
-    fontFamily: "Helvetica",
-  },
-  author: {
-    fontSize: 12,
-    textAlign: "center",
-    marginBottom: 40,
-  },
-  subtitle: {
-    fontSize: 18,
-    margin: 12,
-    fontFamily: "Helvetica",
-  },
-  section: {
-    fontSize: 18,
-    fontFamily: "Helvetica",
-  },
-  subsection: {
-    fontSize: 14,
-    fontFamily: "Helvetica",
-  },
-  text: {
-    fontSize: 11,
-    textAlign: "justify",
-    fontFamily: "Helvetica",
-  },
-  calc: {
-    fontSize: 12,
-    marginTop: 8,
-    textAlign: "justify",
-    fontFamily: "Helvetica",
-    marginBottom: 36,
-  },
-  image: {
-    marginVertical: 15,
-    marginHorizontal: 100,
-    marginBottom: "-125px",
-  },
-  header: {
-    fontSize: 12,
-    marginBottom: 20,
-    textAlign: "center",
-    color: "grey",
-  },
-  pageNumber: {
-    position: "absolute",
-    fontSize: 12,
-    bottom: 30,
-    left: 0,
-    right: 0,
-    textAlign: "center",
-    color: "grey",
-  },
-});

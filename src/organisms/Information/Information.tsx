@@ -34,7 +34,7 @@ export const Information = () => {
         </div>
       </div>
 
-      <div className="items-end flex justify-center py-16">
+      <div className="items-end flex justify-center">
         <Button
           name="upload"
           type="submit"
