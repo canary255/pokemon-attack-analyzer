@@ -1,6 +1,6 @@
 # Pokémon Report Calc Generator
 
-The Pokémon Calc Report Generator is an application designed to assist Pokémon trainers in analyzing what Pokémon can survive a certain attack. This application allows users to input various parameters, such as Pokémon, nature, moves, EVs, IVs, and more, to generate detailed reports on survival probabilities and damage calculations. Made by [Canary255] (https://twitter.com/Canary255)
+The Pokémon Calc Report Generator is an application designed to assist Pokémon trainers in analyzing what Pokémon can survive a certain attack. This application allows users to input various parameters, such as Pokémon, nature, moves, EVs, IVs, and more, to generate detailed reports on survival probabilities and damage calculations. Made by [Canary255](https://twitter.com/Canary255)
 
 ⚠️ **Please Note**: This project is currently in development and may contain bugs or incomplete features. We appreciate your understanding and patience as we work to improve the application.
 
