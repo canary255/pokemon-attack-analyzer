@@ -3,7 +3,7 @@ export const widthSize = {
   XS: "w-16",
   S: "w-32",
   M: "w-48",
-  L: "w-64",
+  L: "w-60",
   XL: "w-80",
 };
 

@@ -1,85 +1,46 @@
-import { Label } from "../../atom/Label/Label";
-import { SelectorUI } from "../../atom/Selector/Selector";
-import { TextField } from "../../atom/Textfield/TextField";
-import { heightSize, widthSize } from "../../utils/consts";
+import { Text } from "../../atom/Text/Text";
+import { useTranslation } from "react-i18next";
+import { FieldStats } from "../FieldStat/FieldStat";
 
-interface FieldStatsProps {
-  categoryName: string;
-  baseName: string;
-  ivName: string;
-  evName: string;
-  stat: number;
-  boostName: string;
+interface StatsProps {
+  atk: string;
+  spa: string;
 }
 
-const Layer = () => {
-  return (
-    <>
-      <div></div>
-      <Label>Base</Label>
-      <Label>IV</Label>
-      <Label>EV</Label>
-      <div></div>
-      <div></div>
-    </>
-  );
-};
+export const Stats = ({ atk, spa }: StatsProps) => {
+  const { t } = useTranslation();
 
-const FieldStats = ({
-  categoryName,
-  baseName,
-  ivName,
-  evName,
-  stat,
-  boostName,
-}: FieldStatsProps) => {
-  const inputWidthSize = "XXS";
-  const inputHeightSize = "XS";
-  return (
-    <>
-      <Label>{categoryName}</Label>
-      <Label>170</Label>
-      <TextField
-        name={ivName}
-        width={inputWidthSize}
-        height={inputHeightSize}
-      />
-      <TextField
-        name={evName}
-        width={inputWidthSize}
-        height={inputHeightSize}
-      />
-      <p>{stat}</p>
-      <SelectorUI
-        side="up"
-        name={boostName}
-        width={inputWidthSize}
-        height={inputHeightSize}
-      />
-    </>
-  );
-};
+  const Layer = () => {
+    return (
+      <>
+        <div></div>
+        <Text>Base</Text>
+        <Text>IV</Text>
+        <Text>EV</Text>
+        <div></div>
+        <div></div>
+      </>
+    );
+  };
 
-export const Stats = () => {
   return (
     <>
-      <div className="w-[60%] grid grid-rows-3 gap-y-2 grid-cols-6">
+      <div className="w-[80%] grid grid-rows-3 gap-y-2 grid-cols-6">
         <Layer />
         <FieldStats
-          baseName="baseAtk"
           boostName="boostAtk"
-          categoryName="Atk"
+          base={atk}
+          categoryName={t("stats.atk")}
           evName="evAtk"
           ivName="ivAtk"
-          stat={679}
+          isPhysical
         />
         <FieldStats
-          baseName="baseSpa"
           boostName="boostSpa"
-          categoryName="SpA"
+          base={spa}
+          categoryName={t("stats.spa")}
           evName="evSpa"
           ivName="ivSpa"
-          stat={679}
         />
       </div>
     </>

@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "atk": "Atk",
+    "def": "Def",
+    "spa": "SpA",
+    "spd": "SpD",
+    "spe": "Spe",
+    "hp": "HP",
+    "accuracy": "Accuracy",
+    "evasion": "Evasion",
+    "level": "Level"
+  },
+  "common": {
+    "none": "None",
+    "reportGenerator": "Pokémon Report Generator",
+    "filter": "Filter",
+    "search": "Search",
+    "filterBy": "Filter By",
+    "all": "All",
+    "survive": "Survive",
+    "cannot": "Cannot",
+    "barely": "Barely",
+    "searchPokemon": "Search Pokémon",
+    "generatePdf": "Generate PDF",
+    "downloadReport": "Download Report",
+    "instructions": "Instructions",
+    "madeBy": "Made by"
+  },
+  "projectExplain": {
+    "description": "is a project where a user can check if Pokémon can survive an attack with certain conditions of a Pokémon attacker. It also allows to create a PDF with those calculations.",
+    "step1": "Fill the attacker section with the Pokémon, item, move, etc.",
+    "step2": "Put the boost of the defensive Pokémon, and mark the target.",
+    "step3": "Add any field conditions",
+    "step4": "Click on Generate Report.",
+    "step5": "Wait until all calcs are done.",
+    "step6": "After that, you can check the calcs of every Pokémon, if it survives or not. Also you can download a PDF with the report of calculations.",
+    "step7": "Sometimes generating a report can take a while, so please be patient.",
+    "note": "Note: This project is still in development, so it may have some bugs. If you find one, please report it in the issues section of the GitHub repository.",
+    "note2": "Note: Pressing the button may freeze the page. There is no problem, just wait until the download starts.",
+    "calcProcess": "We are Doing the calcs, it will take until 20 minutes long. Meanwhile, you can do other stuff peacefully :D"
+  },
+  "error": {
+    "resultNotFound": "Result not found"
+  },
+  "attacker": {
+    "selectPokemon": "Select a Pokémon",
+    "selectTeraType": "Select Tera Type",
+    "selectAbility": "Ability",
+    "selectItem": "Item",
+    "selectMove": "Select a Move",
+    "category": "Category",
+    "nature": "Nature",
+    "numHits": "Hits"
+  },
+  "category": {
+    "physical": "Phy",
+    "special": "Spe"
+  },
+
+  "button": {
+    "crit": "Crit",
+    "zMove": "Z-Move",
+    "dynamax": "Dynamax",
+    "tera": "Terastal",
+    "single": "Single",
+    "double": "Double",
+    "allPokemon": "All Pokémon",
+    "somePokemon": "Some Pokémon",
+    "9GenLocalDex": "Gen 9 Local Dex",
+    "9GenVgc": "Gen 9 VGC",
+    "helpingHand": "Helping Hand",
+    "gravity": "Gravity",
+    "protect": "Protect",
+    "stealthRock": "Stealth Rock",
+    "foresight": "Foresight",
+    "reflect": "Reflect",
+    "lightScreen": "Light Screen",
+    "auroraVeil": "Aurora Veil",
+    "battery": "Battery",
+    "friendGuard": "Friend Guard",
+    "tailwind": "Tailwind",
+    "generateReport": "Generate Report!"
+  },
+  "message": {
+    "specifyPokemon": "Specify Pokémon by writing the name and separating it with a comma...",
+    "defStatBoost": "Def stat changes",
+    "spdStatBoost": "SpD stat changes",
+    "spikes": "3 Spikes"
+  },
+  "nature": {
+    "adamant": "Adamant",
+    "brave": "Brave",
+    "naughty": "Naughty",
+    "bold": "Bold",
+    "relaxed": "Relaxed",
+    "impish": "Impish",
+    "lax": "Lax",
+    "timid": "Timid",
+    "hasty": "Hasty",
+    "jolly": "Jolly",
+    "naive": "Naive",
+    "modest": "Modest",
+    "mild": "Mild",
+    "quiet": "Quiet",
+    "rash": "Rash",
+    "calm": "Calm",
+    "gentle": "Gentle",
+    "sassy": "Sassy",
+    "careful": "Careful",
+    "docile": "Docile",
+    "hardy": "Hardy",
+    "bashful": "Bashful",
+    "quirky": "Quirky",
+    "lonely": "Lonely",
+    "serious": "Serious"
+  },
+  "type": {
+    "normal": "Normal",
+    "fire": "Fire",
+    "water": "Water",
+    "electric": "Electric",
+    "grass": "Grass",
+    "ice": "Ice",
+    "fighting": "Fighting",
+    "poison": "Poison",
+    "ground": "Ground",
+    "flying": "Flying",
+    "psychic": "Psychic",
+    "bug": "Bug",
+    "rock": "Rock",
+    "ghost": "Ghost",
+    "dragon": "Dragon",
+    "dark": "Dark",
+    "steel": "Steel",
+    "fairy": "Fairy"
+  },
+  "weather": {
+    "sun": "Sun",
+    "rain": "Rain",
+    "sand": "Sand",
+    "snow": "Snow",
+
+    "harshSun": "Harsh Sun",
+    "heavyRain": "Heavy Rain",
+    "strongWinds": "Strong Winds"
+  },
+  "terrain": {
+    "electric": "Electric",
+    "grassy": "Grassy",
+    "misty": "Misty",
+    "psychic": "Psychic"
+  },
+  "aura": {
+    "break": "Aura Break",
+    "fairy": "Fairy Aura",
+    "dark": "Dark Aura"
+  },
+  "ruins": {
+    "tablets": "Tables of Ruin",
+    "sword": "Sword of Ruin",
+    "vessel": "Vessel of Ruin",
+    "beads": "Beads of Ruin"
+  }
+}

@@ -1,10 +1,10 @@
-import { capitalizeEveryWord, capitalizeOneWord } from "../../utils/capitalize";
-import { borderDirection } from "../../utils/consts";
+import { capitalizeEveryWord } from "../../utils/capitalize";
+import { borderDirection } from "../../utils/styleConsts";
 
 interface ButtonProps {
   type?: "button" | "reset" | "submit";
   name: string;
-  label?: string;
+  label?: string | null;
   className?: string;
   onClick?: () => void;
   circleBorder?: "left" | "right" | "all" | "none";
@@ -20,12 +20,12 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      className={`${className} ${borderDirection[circleBorder]} border border-black bg-[#5C6AC4] text-white`}
+      className={`${className} ${borderDirection[circleBorder]} p-2 border border-black bg-primary text-white`}
       name={name}
       type={type}
       onClick={onClick}
     >
-      {capitalizeEveryWord(label)}
+      {capitalizeEveryWord(label ?? "")}
     </button>
   );
 };

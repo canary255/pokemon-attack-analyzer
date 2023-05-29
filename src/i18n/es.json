@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "atk": "Atq",
+    "def": "Def",
+    "spa": "At.Esp",
+    "spd": "Def.Esp",
+    "spe": "Vel",
+    "hp": "PS",
+    "accuracy": "Precisión",
+    "evasion": "Evasión",
+    "level": "Nivel"
+  },
+  "common": {
+    "none": "Ninguno",
+    "reportGenerator": "Generador de informes Pokémon",
+    "filter": "Filtrar",
+    "search": "Buscas",
+    "filterBy": "Filtrar por",
+    "all": "Todo",
+    "survive": "Sobrevive",
+    "cannot": "No sobrevive",
+    "barely": "Apenas",
+    "searchPokemon": "Buscar Pokémon",
+    "generatePdf": "Generar PDF",
+    "downloadReport": "Descargar informe",
+    "instructions": "Instrucciones",
+    "madeBy": "Hecho por"
+  },
+  "projectExplain": {
+    "description": "es un proyecto donde un usuario puede comprobar si un Pokémon puede sobrevivir a un ataque con ciertas condiciones de un Pokémon atacante. También permite crear un PDF con esos cálculos.",
+    "step1": "Rellena la sección de atacante con el Pokémon, objeto, movimiento, etc.",
+    "step2": "Indica cambio de estadística defensiva del Pokémon defensor y elige el objetivo.",
+    "step3": "Añade cualquier condición de campo.",
+    "step4": "Haz clic en Generar Informe.",
+    "step5": "Espera hasta que se completen todos los cálculos.",
+    "step6": "Después de eso, puedes comprobar los cálculos de cada Pokémon, si sobrevive o no. Puedes generar un PDF con el informe de los cálculos.",
+    "step7": "A veces, generar un informe puede llevar tiempo, así que ten paciencia.",
+    "note": "Nota: Este proyecto aún está en desarrollo, por lo que puede tener algunos errores. Si encuentras alguno, por favor, repórtalo en la sección de problemas del repositorio de GitHub.",
+    "note2": "Nota: Presionar el botón puede congelar la página. No hay problema, solo espera hasta que comience la descarga.",
+    "calcProcess": "Estamos haciendo los cálculos, puede tomar hasta 20 minutos. Mientras tanto, puedes hacer otras cosas con calma :D"
+  },
+  "error": {
+    "resultNotFound": "Resultado no encontrado"
+  },
+  "attacker": {
+    "selectPokemon": "Selecciona un Pokémon",
+    "selectTeraType": "Selecciona Teratipo",
+    "selectAbility": "Habilidad",
+    "selectItem": "Objeto",
+    "selectMove": "Selecciona un movimiento",
+    "category": "Categoría",
+    "nature": "Naturaleza",
+    "numHits": "Nº Golpes"
+  },
+  "category": {
+    "physical": "Fís",
+    "special": "Esp"
+  },
+
+  "button": {
+    "crit": "Crítico",
+    "zMove": "Mov. Z",
+    "dynamax": "Dinamax",
+    "tera": "Teracristal",
+    "single": "Único",
+    "double": "Doble",
+    "allPokemon": "Todos los Pokémon",
+    "somePokemon": "Algunos Pokémon",
+    "9GenLocalDex": "Dex Local Gen 9",
+    "9GenVgc": "Gen 9 VGC",
+    "helpingHand": "Refuerzo",
+    "gravity": "Gravedad",
+    "protect": "Protección",
+    "stealthRock": "Trampa Rocas",
+    "foresight": "Profecía",
+    "reflect": "Reflejo",
+    "lightScreen": "Pantalla Luz",
+    "auroraVeil": "Velo Aurora",
+    "battery": "Batería",
+    "friendGuard": "Compiescolta",
+    "tailwind": "Viento Afín",
+    "generateReport": "¡Generar Informe!"
+  },
+  "message": {
+    "specifyPokemon": "Especifica el Pokémon escribiendo el nombre y separandolo con una coma.",
+    "defStatBoost": "Cambios Def",
+    "spdStatBoost": "Cambios Def.Esp",
+    "spikes": "3 púas"
+  },
+  "nature": {
+    "adamant": "Firme",
+    "brave": "Audaz",
+    "naughty": "Pícara",
+    "bold": "Osada",
+    "relaxed": "Plácida",
+    "impish": "Agitada",
+    "lax": "Floja",
+    "timid": "Miedosa",
+    "hasty": "Activa",
+    "jolly": "Alegre",
+    "naive": "Ingenua",
+    "modest": "Modesta",
+    "mild": "Afable",
+    "quiet": "Mansa",
+    "rash": "Alocada",
+    "calm": "Serena",
+    "gentle": "Amable",
+    "sassy": "Grosera",
+    "careful": "Cauta",
+    "docile": "Dócil",
+    "hardy": "Fuerte",
+    "bashful": "Tímida",
+    "quirky": "Rara",
+    "lonely": "Huraña",
+    "serious": "Seria"
+  },
+  "type": {
+    "normal": "Normal",
+    "fire": "Fuego",
+    "water": "Agua",
+    "electric": "Eléctrico",
+    "grass": "Planta",
+    "ice": "Hielo",
+    "fighting": "Lucha",
+    "poison": "Veneno",
+    "ground": "Tierra",
+    "flying": "Volador",
+    "psychic": "Psíquico",
+    "bug": "Bicho",
+    "rock": "Roca",
+    "ghost": "Fantasma",
+    "dragon": "Dragón",
+    "dark": "Siniestro",
+    "steel": "Acero",
+    "fairy": "Hada"
+  },
+  "weather": {
+    "sun": "Sol",
+    "rain": "Lluvia",
+    "sand": "Arena",
+    "snow": "Nieve",
+
+    "harshSun": "Tierra del ocaso",
+    "heavyRain": "Mar del albor",
+    "strongWinds": "Ráfaga delta"
+  },
+  "terrain": {
+    "electric": "Eléctrico",
+    "grassy": "Hierba",
+    "misty": "Nieba",
+    "psychic": "Psíquico"
+  },
+  "aura": {
+    "break": "Rompeaura",
+    "fairy": "Aura Feérica",
+    "dark": "Aura Oscura"
+  },
+  "ruins": {
+    "tablets": "Tablilla Debacle",
+    "sword": "Espada Debacle",
+    "vessel": "Caldero Debacle",
+    "beads": "Abalorio Debacle"
+  }
+}

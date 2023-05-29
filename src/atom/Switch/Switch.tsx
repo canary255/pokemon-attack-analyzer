@@ -1,17 +1,17 @@
 import { Switch } from "@headlessui/react";
-import { borderDirection } from "../../utils/consts";
+import { borderDirection } from "../../utils/styleConsts";
 import { Controller, useFormContext } from "react-hook-form";
 
 interface SwitchProps {
   name: string;
-  label?: string;
+  label?: string | null;
   className?: string;
   circleBorder?: "left" | "right" | "all" | "none";
 }
 
 export const SwitchUI = ({
   label = "Switch",
-  circleBorder = "none",
+  circleBorder = "all",
   name,
   className,
 }: SwitchProps) => {
@@ -25,14 +25,14 @@ export const SwitchUI = ({
         <Switch
           checked={field.value}
           onChange={field.onChange}
-          className={`items-center
+          className={`items-center p-2
           ${className}
       ${borderDirection[circleBorder]} 
-      ${field.value ? "bg-[#5C6AC4]" : "bg-gray-200"}`}
+      ${field.value ? "bg-primary" : "bg-gray-200"}`}
         >
           <span
             className={`transition ${
-              field.value ? "text-white" : "text-black"
+              field.value ? "text-white bold" : "text-black"
             }`}
           >
             {label}
