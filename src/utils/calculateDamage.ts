@@ -153,9 +153,10 @@ const calculateDamageWithSet = async (pokemon: any, form: ReportProps) => {
     ///////                            ///////
     //////////////////////////////////////////
     const fetchData = await fetch(
-      `https://www.pikalytics.com/api/p/2023-04/gen9vgc2023regc-1760/${pokemon
-        .toLowerCase()
-        .trim()}`
+      `https://www.pikalytics.com/api/p/${new Date().getFullYear()}-${new Date()
+        .getMonth()
+        .toString()
+        .padStart(2, "0")}/gen9vgc2023regc-1760/${pokemon.toLowerCase().trim()}`
     );
     const responseData = await fetchData.json();
     const defensiveData: PokemonData = {

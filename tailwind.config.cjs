@@ -10,8 +10,8 @@ module.exports = {
         greenSemaphore: "#008000",
         yellowSemaphore: "#F3A505",
         redSemaphore: "#CB3234",
-        darkGray: "#3e3e42",
-        inputBackground: "rgb(219 234 254 / var(--tw-bg-opacity))",
+        darkGray: "rgb(72,73,76)",
+        inputBackground: "#EEEEEE",
       },
       textShadow: {
         sm: "0 1px 2px var(--tw-shadow-color)",
