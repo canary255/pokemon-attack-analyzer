@@ -20,7 +20,7 @@ import { Results } from "../organisms/Results/Results";
 
 export const Report = () => {
   const methods = useForm<ReportProps>({
-    defaultValues: testingSet,
+    defaultValues: reportInitialState,
   });
   const [page, setPage] = useState<number>(0);
   const [resultsCalcs, setResultCalcs] = useState<CalcList[]>([]);
@@ -28,7 +28,6 @@ export const Report = () => {
   const [totalDex, setTotalDex] = useState<number>(0);
   const [avatar, setAvatar] = useState<string>(missingno);
   const [data, setData] = useState<ReportProps>();
-  const [isCancel, setIsCancel] = useState<boolean>(false);
   const onSubmit = (data: ReportProps) => {
     setPage((prev) => {
       return prev + 1;
