@@ -68,9 +68,6 @@ export const ReportPDF = ({ avatar, data, resultsCalcs }: ReportPDFProps) => (
                 </p>
               </div>
             )}
-            {i !== 0 && i % 3 === 0 && (
-              <div className={`m-[${30 + i}px]`}></div>
-            )}
           </div>
         </>
       ))}

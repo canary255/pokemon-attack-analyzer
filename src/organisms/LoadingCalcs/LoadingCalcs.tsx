@@ -26,8 +26,7 @@ export const LoadingCalcs = ({
   return (
     <div className="flex flex-col gap-y-1">
       <Text className="p-5 text-xl font-semibold">
-        We are doing the calcs, it will take until 20 minutes long. Meanwhile,
-        you can do other stuff or watch some content here and be relaxed :D
+        {t("projectExplain.calcProcess")}
       </Text>
       {/*<Carousel />*/}
       <div className="flex flex-col items-center gap-y-16">

@@ -7,29 +7,29 @@ export const Information = () => {
   return (
     <div className="flex flex-col gap-y-3 p-3">
       <div>
-        <Text className="text-xl font-medium">
-          {t("common.reportGenerator")}{" "}
-        </Text>
+        <Text className="text-xl font-medium">Pokémon Report Generator</Text>
         <Text className="text-sm font-medium">
-          {t("proyectExplain.description")}
+          {t("projectExplain.description")}
         </Text>
       </div>
       <div>
         <div className="py-3 flex flex-col">
-          <Text className="text-xl font-medium">Instructions:</Text>
+          <Text className="text-xl font-medium">
+            {t("common.instructions")}
+          </Text>
           <ul className="list-disc pl-6 text-sm font-semibold dark:text-white">
-            <li>{t("proyectExplain.step1")}</li>
-            <li>{t("proyectExplain.step2")}</li>
-            <li>{t("proyectExplain.step3")}</li>
-            <li>{t("proyectExplain.step4")}</li>
-            <li>{t("proyectExplain.step5")}</li>
-            <li>{t("proyectExplain.step6")}</li>
+            <li>{t("projectExplain.step1")}</li>
+            <li>{t("projectExplain.step2")}</li>
+            <li>{t("projectExplain.step3")}</li>
+            <li>{t("projectExplain.step4")}</li>
+            <li>{t("projectExplain.step5")}</li>
+            <li>{t("projectExplain.step6")}</li>
             <li className="font-bold text-[15px]">
-              {t("proyectExplain.step7")}
+              {t("projectExplain.step7")}
             </li>
           </ul>
           <Text className="font-medium text-[17px] my-8">
-            {t("proyectExplain.note")}
+            {t("projectExplain.note")}
           </Text>
         </div>
       </div>

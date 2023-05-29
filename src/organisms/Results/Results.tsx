@@ -75,10 +75,7 @@ export const Results = ({
       </div>
       <Divider className="mt-16" />
 
-      <Text className="px-2 font-semibold">
-        Note: Pressing the button may freeze the page. There is no problem, just
-        wait until the button "{t("common.downloadReport")}" appears.
-      </Text>
+      <Text className="px-2 font-semibold">{t("projectExplain.note2")}</Text>
       <div className="flex flex-row gap-x-4">
         <Button
           name=""

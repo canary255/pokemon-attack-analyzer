@@ -23,9 +23,9 @@ export const ColorKey = () => {
 
   return (
     <div className="p-1 grid grid-cols-3 px-8 py-3 gap-x-8">
-      <ColorWrapper color="green" text="common.canSurvive" />
-      <ColorWrapper color="yellow" text="common.barelySurvive" />
-      <ColorWrapper color="red" text="common.cannotSurvive" />
+      <ColorWrapper color="green" text="common.survive" />
+      <ColorWrapper color="yellow" text="common.barely" />
+      <ColorWrapper color="red" text="common.cannot" />
     </div>
   );
 };
