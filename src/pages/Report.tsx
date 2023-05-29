@@ -29,6 +29,9 @@ export const Report = () => {
   const [avatar, setAvatar] = useState<string>(missingno);
   const [data, setData] = useState<ReportProps>();
   const onSubmit = (data: ReportProps) => {
+    if (data.name === "" || data.move === "" || data.category === "") {
+      return;
+    }
     setPage((prev) => {
       return prev + 1;
     });

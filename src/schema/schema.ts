@@ -8,7 +8,7 @@ export const reportInitialState: ReportProps = {
   item: "",
   move: "",
   mechanic: "none",
-  category: "physical",
+  category: "Physical",
   crit: false,
   boostAtk: "0",
   evAtk: "0",
