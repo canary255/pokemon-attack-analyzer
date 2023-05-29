@@ -75,7 +75,7 @@ export const loadDataCalculator = async (
       return;
     }
     //Uncomment for testing
-    if (i === 30) break;
+    //if (i === 30) break;
     setNumberDex(i);
     const pokemonType = SPECIES[SPECIES.length - 1][pokemon].types;
     const typeValue = TYPE_CHART[TYPE_CHART.length - 1];
