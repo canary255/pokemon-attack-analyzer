@@ -29,7 +29,7 @@ export const PokemonCalcResultList = ({
 
   const survivalOptions: OptionsType[] = [
     { name: "common.all", value: "all" },
-    { name: "common.canSurvive", value: "yes" },
+    { name: "common.survive", value: "yes" },
     { name: "common.barely", value: "barely" },
     { name: "common.cannot", value: "no" },
   ];

@@ -48,6 +48,24 @@ const canSurvive = (
   return "yes";
 };
 
+const inmmunePokemon = (pokemon: any, form: ReportProps) => {
+  return {
+    pokemon: pokemon as string,
+    isInmune: true,
+    canSurvive: "yes",
+    calcExtreme: {
+      description: "You can't hit it bro",
+      damage_range: 0,
+      percent_range: [0, 0],
+      ko_chance: { chance: 0, n: 0, text: "0%" },
+      defender_evs: { atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      text_evs: "0/0/0/0/0",
+      move_category: MOVES[MOVES.length - 1][form.move].category,
+    },
+    calcsSet: undefined,
+  } as unknown as CalcData;
+};
+
 export const loadDataCalculator = async (
   form: ReportProps,
   setNumberDex: React.Dispatch<SetStateAction<number>>,
@@ -80,28 +98,13 @@ export const loadDataCalculator = async (
     const pokemonType = SPECIES[SPECIES.length - 1][pokemon].types;
     const typeValue = TYPE_CHART[TYPE_CHART.length - 1];
 
-    //1 - add type inmunity
+    //1 - add type immunity
 
     if (
       typeValue?.[moveType]?.[pokemonType[0]] === 0 ||
       (pokemonType[1] && typeValue?.[moveType]?.[pokemonType[1]] === 0)
     ) {
-      calcsList.push({
-        pokemon: pokemon as string,
-        isInmune: true,
-        canSurvive: "yes",
-        calcExtreme: {
-          description: "You can't hit it bro",
-          damage_range: 0,
-          percent_range: [0, 0],
-          ko_chance: { chance: 0, n: 0, text: "0%" },
-          defender_evs: { atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
-          text_evs: "0/0/0/0/0",
-          move_category: MOVES[MOVES.length - 1][form.move].category,
-        },
-        calcsSet: undefined,
-        img: await getPokemonSprite(pokemon),
-      } as unknown as CalcList);
+      calcsList.push(inmmunePokemon(pokemon, form));
       continue;
     }
 
@@ -124,7 +127,6 @@ export const loadDataCalculator = async (
 
     i++;
   }
-  console.log(calcsList);
   setPage((prev) => {
     return prev + 1;
   });
@@ -140,8 +142,16 @@ const calculateExtremeDamage = (pokemon: any, form: ReportProps) => {
     };
     return calculateDamage(form, pokemon, defensiveData);
   } catch (e) {
-    console.log("Invalid data", pokemon, e);
-    return undefined;
+    //console.log("Invalid data", pokemon, e);
+    return {
+      description: "You can't hit it bro",
+      damage_range: 0,
+      percent_range: [0, 0],
+      ko_chance: { chance: 0, n: 0, text: "0%" },
+      defender_evs: { atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      text_evs: "0/0/0/0/0",
+      move_category: MOVES[MOVES.length - 1][form.move].category,
+    };
   }
 };
 
@@ -166,7 +176,7 @@ const calculateDamageWithSet = async (pokemon: any, form: ReportProps) => {
     };
     return calculateDamage(form, pokemon, defensiveData);
   } catch (e) {
-    console.log("Invalid data", pokemon, e);
+    //console.log("Invalid data", pokemon, e);
     return undefined;
   }
 };
