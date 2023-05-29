@@ -36,7 +36,7 @@ export const ReportPDF = ({ avatar, data, resultsCalcs }: ReportPDFProps) => (
     <div>
       {resultsCalcs?.map((calc, i) => (
         <>
-          <div className={`flex flex-col h-[378px] pl-4`}>
+          <div className={`flex flex-col h-[378.50px] pl-4`}>
             <div className="flex flex-row gap-x-3 h-[100px] justify-start items-center">
               <p className="text-xl">Vs. {calc.pokemon}</p>
               <img width="100" height="100" src={calc.img} />
