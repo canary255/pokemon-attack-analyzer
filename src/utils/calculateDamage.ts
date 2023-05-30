@@ -48,7 +48,7 @@ const canSurvive = (
   return "yes";
 };
 
-const inmmunePokemon = (pokemon: any, form: ReportProps) => {
+const inmmunePokemon = async (pokemon: any, form: ReportProps) => {
   return {
     pokemon: pokemon as string,
     isInmune: true,
@@ -63,6 +63,7 @@ const inmmunePokemon = (pokemon: any, form: ReportProps) => {
       move_category: MOVES[MOVES.length - 1][form.move].category,
     },
     calcsSet: undefined,
+    img: await getPokemonSprite(pokemon),
   } as unknown as CalcData;
 };
 
@@ -104,7 +105,7 @@ export const loadDataCalculator = async (
       typeValue?.[moveType]?.[pokemonType[0]] === 0 ||
       (pokemonType[1] && typeValue?.[moveType]?.[pokemonType[1]] === 0)
     ) {
-      calcsList.push(inmmunePokemon(pokemon, form));
+      calcsList.push(await inmmunePokemon(pokemon, form));
       continue;
     }
 
