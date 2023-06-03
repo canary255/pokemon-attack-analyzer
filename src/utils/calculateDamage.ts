@@ -82,7 +82,10 @@ export const loadDataCalculator = async (
 
   setTotalDex(dex.length);
   const calcsList = [];
-  const moveType = MOVES[MOVES.length - 1][form.move].type;
+  const moveType =
+    form.move === "Tera Blast" && form.mechanic === "tera"
+      ? form.teraType
+      : MOVES[MOVES.length - 1][form.move].type;
 
   let i = 1;
   for (const pokemon of dex) {
@@ -95,7 +98,7 @@ export const loadDataCalculator = async (
       return;
     }
     //Uncomment for testing
-    //if (i === 30) break;
+    if (i === 30) break;
     setNumberDex(i);
     const pokemonType = SPECIES[SPECIES.length - 1][pokemon].types;
     const typeValue = TYPE_CHART[TYPE_CHART.length - 1];
@@ -209,10 +212,7 @@ const calculateDamage = (
     boosts: { atk: +form.boostAtk, spa: +form.boostSpa },
     level: LEVEL,
     ability: form.ability as AbilityName,
-    teraType:
-      form.mechanic === "tera"
-        ? (capitalizeOneWord(form.teraType) as TypeName)
-        : undefined,
+    teraType: form.mechanic === "tera" ? form.teraType : undefined,
   });
 
   const DEFENDER = new Pokemon(Generations.get(9), pokemon, {

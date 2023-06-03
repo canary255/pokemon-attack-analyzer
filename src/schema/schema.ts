@@ -2,7 +2,7 @@ import { ReportProps } from "../types/reportProps";
 
 export const reportInitialState: ReportProps = {
   name: "",
-  teraType: "normal",
+  teraType: "Normal",
   ability: "",
   nature: "adamant",
   item: "",
@@ -47,7 +47,7 @@ export const reportInitialState: ReportProps = {
 
 export const testingSet: ReportProps = {
   name: "Porygon-Z",
-  teraType: "normal",
+  teraType: "Normal",
   ability: "Adaptability",
   nature: "modest",
   item: "Choice Scarf",

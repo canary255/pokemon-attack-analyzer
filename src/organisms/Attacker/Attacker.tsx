@@ -6,7 +6,7 @@ import { Stats } from "../../molecules/Stats/Stats";
 import { useTranslation } from "react-i18next";
 import { nature, mechanic, category } from "../../utils/pokemonConsts";
 import { RadioGroupUI } from "../../atom/RadioGroup/RadioGroup";
-import { teraType } from "../../utils/pokemonConsts/teraType";
+import teraType from "../../utils/pokemonConsts/teraType";
 import { useFormContext } from "react-hook-form";
 import { useEffect, useState } from "react";
 import { capitalizeEveryWord } from "../../utils/capitalize";

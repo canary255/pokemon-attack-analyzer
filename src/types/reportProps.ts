@@ -1,8 +1,8 @@
-import { Weather } from "../utils/calc/data/interface";
+import { TypeName, Weather } from "../utils/calc/data/interface";
 
 export type ReportProps = {
   name: string;
-  teraType: string;
+  teraType: TypeName;
   ability: string;
   nature: string;
   item: string;
