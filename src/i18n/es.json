@@ -160,5 +160,9 @@
     "sword": "Espada Debacle",
     "vessel": "Caldero Debacle",
     "beads": "Abalorio Debacle"
+  },
+  "validation": {
+    "pokemonName": "El nombre del pokémon es obligatorio.",
+    "move": "El nombre del movimiento es obligatorio."
   }
 }

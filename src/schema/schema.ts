@@ -1,14 +1,14 @@
 import { ReportProps } from "../types/reportProps";
 
 export const reportInitialState: ReportProps = {
-  name: "",
+  name: "Abra",
   teraType: "Normal",
-  ability: "",
-  nature: "adamant",
+  ability: "Absorb",
+  nature: "modest",
   item: "",
-  move: "",
+  move: "Absorb",
   mechanic: "none",
-  category: "Physical",
+  category: "Special",
   crit: false,
   boostAtk: "0",
   evAtk: "0",

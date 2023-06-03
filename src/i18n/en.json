@@ -160,5 +160,9 @@
     "sword": "Sword of Ruin",
     "vessel": "Vessel of Ruin",
     "beads": "Beads of Ruin"
+  },
+  "validation": {
+    "pokemonName": "The Pokémon name is required",
+    "move": "The move name is required"
   }
 }
