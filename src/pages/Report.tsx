@@ -73,7 +73,7 @@ export const Report = () => {
               <LoadingCalcs
                 numberDex={numberDex}
                 totalDex={totalDex}
-                avatar={avatar}
+                avatar={data?.avatar || missingno}
               />
             )}
             {page === 2 && (

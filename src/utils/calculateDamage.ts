@@ -19,13 +19,11 @@ import {
   MoveCategory,
   NatureName,
   Terrain,
-  TypeName,
   Weather,
 } from "./calc/data/interface";
 import { CalcList } from "../types/calcList";
 import { getPokemonSprite } from "./getPokemonSprite";
 import { getCancelAction, setCancelAction } from "./cancelAction";
-import { capitalizeOneWord } from "./capitalize";
 import { getDate } from "./obtainApiDate";
 
 type PokemonData = {

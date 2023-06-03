@@ -37,7 +37,7 @@ export const Header = ({ children }: HeaderProps) => {
   };
 
   return (
-    <div className="p-4 sticky z-10 top-0 grid sm:grid-cols-5 min-[315px]:grid-cols-6 content-center bg-[#009DFF] dark:bg-blue-600 h-16 w-full">
+    <div className="p-4 sticky z-10 top-0 grid grid-cols-4 content-center bg-[#009DFF] dark:bg-blue-600 h-16 w-full">
       <p className="text-white md:text-3xl sm:text-2xl max-[315px]:text-md col-span-2 p-4">
         Pokémon Report Generator
       </p>
@@ -80,9 +80,6 @@ export const Header = ({ children }: HeaderProps) => {
           </Switch>
         </div>
       </div>
-      <p className="min-[315px]:col-span-2 sm:col-span-1 text-center flex flex-col items-end justify-center text-white">
-        {t("common.madeBy")} @Canary255
-      </p>
     </div>
   );
 };

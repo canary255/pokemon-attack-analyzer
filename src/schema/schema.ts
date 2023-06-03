@@ -43,6 +43,7 @@ export const reportInitialState: ReportProps = {
   sword: false,
   beads: false,
   hits: "",
+  avatar: "",
 };
 
 export const testingSet: ReportProps = {
@@ -88,4 +89,6 @@ export const testingSet: ReportProps = {
   sword: false,
   beads: false,
   hits: "",
+  avatar:
+    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/474.png",
 };

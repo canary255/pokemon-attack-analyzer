@@ -60,11 +60,11 @@ export const Attacker = ({
         res
           .json()
           .then((data) => {
-            setAvatar(
+            const avatarUrl =
               data.name === "porygon-z"
                 ? data.sprites.front_shiny
-                : data.sprites.front_default ?? ""
-            );
+                : data.sprites.front_default ?? "";
+            setAvatar(avatarUrl);
             setAtk(data.stats[1].base_stat.toString());
             setSpa(data.stats[3].base_stat.toString());
             setValue(
@@ -73,6 +73,7 @@ export const Attacker = ({
                 data.abilities[0].ability.name.replaceAll("-", " ")
               )
             );
+            setValue("avatar", avatarUrl);
           })
           .catch(() => {
             setAvatar("");

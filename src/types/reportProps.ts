@@ -45,4 +45,5 @@ export type ReportProps = {
   sword: boolean;
   beads: boolean;
   hits: string;
+  avatar: string;
 };
