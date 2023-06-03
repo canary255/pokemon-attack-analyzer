@@ -184,7 +184,7 @@ const calculateDamageWithSet = async (pokemon: any, form: ReportProps) => {
       };
       return calculateDamage(form, pokemon, defensiveData);
     } catch (e) {
-      console.log("Error fetching data", e);
+      //console.log("Error fetching data", e);
       return undefined;
     }
   } catch (e) {
@@ -242,9 +242,9 @@ const calculateDamage = (
     isTabletsOfRuin: form.tablets,
     isVesselOfRuin: form.vessel,
     weather: form.weather as Weather,
-    //isAuraBreak: form.aura,
-    //isFairyAura: form.,
-    //isDarkAura: form.,
+    isAuraBreak: form.break,
+    isFairyAura: form.fairy,
+    isDarkAura: form.dark,
     gameType: form.target as GameType,
     defenderSide: {
       isAuroraVeil: form.auroraVeil,

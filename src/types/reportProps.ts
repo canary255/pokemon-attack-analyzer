@@ -1,3 +1,5 @@
+import { Weather } from "../utils/calc/data/interface";
+
 export type ReportProps = {
   name: string;
   teraType: string;
@@ -16,12 +18,12 @@ export type ReportProps = {
   boostSpa: string;
   evSpa: string;
   ivSpa: string;
-  target: string;
+  target: "Singles" | "Doubles";
   selectPokemon: string;
   defenderList: string;
   boostDef: string;
   boostSpd: string;
-  weather: string;
+  weather: "none" | Weather;
   terrain: string;
   fairy: boolean;
   dark: boolean;
