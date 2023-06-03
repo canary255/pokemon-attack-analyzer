@@ -85,27 +85,29 @@ export const Attacker = ({
 
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col p-4">
         <div className="grid lg:grid-cols-2 md:grid-cols-1 justify-center gap-x-16">
           <Avatar
             url={avatar}
             teratype={watch("teraType")}
             className="flex flex-row justify-center mt-5"
           />
-          <div className=" mt-3 grid place-items-center sm:grid-rows-2 xs:grid-cols-1 gap-x-2">
+          <div className=" mt-3 grid place-items-center sm:grid-rows-2 min-[315px]:grid-cols-1 gap-x-2">
             <ComboBoxUI
               options={dex}
               name="name"
+              className="xl:w-[90%]"
               label={t("attacker.selectPokemon")}
             />
             <SelectorUI
               options={teraType}
               name="teraType"
+              className="xl:w-[90%]"
               label={t("attacker.selectTeraType")}
             />
           </div>
         </div>
-        <div className="mt-3 grid place-items-center sm:grid-cols-2  xs:grid-cols-1 gap-x-2">
+        <div className="mt-3 grid place-items-center p-2 sm:grid-cols-2  xs:grid-cols-1 gap-x-2">
           <ComboBoxUI
             options={abilityList}
             name="ability"
@@ -113,6 +115,7 @@ export const Attacker = ({
           />
           <ComboBoxUI
             options={itemList}
+            className="md:w-[90%]"
             name="item"
             label={t("attacker.selectItem")}
           />
