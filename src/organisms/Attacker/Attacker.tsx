@@ -108,7 +108,7 @@ export const Attacker = ({
             />
           </div>
         </div>
-        <div className="mt-3 grid place-items-center p-2 sm:grid-cols-2  xs:grid-cols-1 gap-x-2">
+        <div className="mt-3 grid place-items-center p-2 sm:grid-cols-2 gap-x-2">
           <ComboBoxUI
             options={abilityList}
             name="ability"
@@ -136,17 +136,15 @@ export const Attacker = ({
             selectorAbove
           />
         </div>
-        <div className="mt-3 grid place-items-center sm:mb-4 gap-x-2">
-          <Stats atk={atk} spa={spa} />
-        </div>
-        <div className="mt-3 grid w-full place-items-center lg:grid-cols-9 md:grid-cols-5 sm:grid-cols-8 xs:grid-cols-1">
-          <div className="flex flex-row gap-x-2 lg:col-span-6 md:col-span-4 sm:col-span-6">
+        <div className="mt-3 grid w-full place-items-center sm:grid-cols-12 gap-x-6">
+          <div className="col-span-6">
             <ComboBoxUI
               options={moveList}
               name="move"
-              width="L"
               label={t("attacker.selectMove")}
             />
+          </div>
+          <div className="xl:col-span-2 sm:col-span-6 min-[315px]:col-span-2">
             <SelectorUI
               options={category}
               width="XS"
@@ -155,18 +153,23 @@ export const Attacker = ({
             />
           </div>
           {moveDetails?.multihit && (
-            <SelectorArray
-              options={numberOfHits(moveDetails?.multihit)}
-              width="XS"
-              name="hits"
-              label={t("attacker.numHits")}
-            />
+            <div className="xl:col-span-2 sm:col-span-6 min-[315px]:col-span-2">
+              <SelectorArray
+                options={numberOfHits(moveDetails?.multihit)}
+                width="XS"
+                name="hits"
+                label={t("attacker.numHits")}
+              />
+            </div>
           )}
           <SwitchUI
             label={t("button.crit")}
-            className="mt-5 lg:col-span-2 "
+            className="mt-5 xl:col-span-2 sm:col-span-6 min-[315px]:col-span-2"
             name="crit"
           />
+        </div>
+        <div className="mt-3 grid place-items-center sm:mb-4 gap-x-2">
+          <Stats atk={atk} spa={spa} />
         </div>
       </div>
     </>
