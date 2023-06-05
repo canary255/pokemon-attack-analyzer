@@ -43,14 +43,14 @@ export const Header = ({ children }: HeaderProps) => {
       </p>
 
       <div className="grid grid-cols-2 col-span-2">
-        <div className="flex flex-row justify-center w-full h-full p-4">
+        <div className="flex flex-row justify-center items-center w-full h-full p-4">
           <select
             value={i18n.language}
             onChange={(e) => changeLanguageHandler(e.target.value)}
-            className="w-16"
+            className="w-20 h-10 border border-black rounded-md"
           >
-            <option value="es">ES</option>
-            <option value="en">EN</option>
+            <option value="es">Español</option>
+            <option value="en">English</option>
           </select>
         </div>
         <div className="flex flex-row justify-center">
