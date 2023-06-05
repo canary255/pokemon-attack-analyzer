@@ -32,7 +32,9 @@ export const Information = () => {
             {t("projectExplain.note")}
           </Text>
         </div>
-        <p className="text-left">{t("common.madeBy")} @Canary255</p>
+        <p className="text-left dark:text-white">
+          {t("common.madeBy")} @Canary255
+        </p>
       </div>
 
       <div className="items-end flex justify-center">

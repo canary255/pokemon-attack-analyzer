@@ -1,4 +1,4 @@
-import { TypeName, Weather } from "../utils/calc/data/interface";
+import { Terrain, TypeName, Weather } from "../utils/calc/data/interface";
 
 export type ReportProps = {
   name: string;
@@ -24,7 +24,7 @@ export type ReportProps = {
   boostDef: string;
   boostSpd: string;
   weather: "none" | Weather;
-  terrain: string;
+  terrain: "none" | Terrain;
   fairy: boolean;
   dark: boolean;
   break: boolean;
