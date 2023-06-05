@@ -16,24 +16,30 @@ import dragon from "../assets/teraType/dragon.png";
 import dark from "../assets/teraType/dark.png";
 import steel from "../assets/teraType/steel.png";
 import fairy from "../assets/teraType/fairy.png";
+import { TypeName } from "./calc/data/interface";
 
-export const teratypeImage = (type: string) => {
-  if (type === "bug") return bug;
-  if (type === "fire") return fire;
-  if (type === "water") return water;
-  if (type === "electric") return electric;
-  if (type === "grass") return grass;
-  if (type === "ice") return ice;
-  if (type === "fighting") return fighting;
-  if (type === "poison") return poison;
-  if (type === "ground") return ground;
-  if (type === "flying") return flying;
-  if (type === "psychic") return psychic;
-  if (type === "rock") return rock;
-  if (type === "ghost") return ghost;
-  if (type === "dragon") return dragon;
-  if (type === "dark") return dark;
-  if (type === "steel") return steel;
-  if (type === "fairy") return fairy;
-  return normal;
+type Teratype = Exclude<TypeName, "Normal" | "???">;
+
+const teratypeImages: Record<Teratype, string> = {
+  Bug: bug,
+  Fire: fire,
+  Water: water,
+  Electric: electric,
+  Grass: grass,
+  Ice: ice,
+  Fighting: fighting,
+  Poison: poison,
+  Ground: ground,
+  Flying: flying,
+  Psychic: psychic,
+  Rock: rock,
+  Ghost: ghost,
+  Dragon: dragon,
+  Dark: dark,
+  Steel: steel,
+  Fairy: fairy,
+};
+
+export const teratypeImage = (type: Teratype): string => {
+  return teratypeImages[type] || normal;
 };

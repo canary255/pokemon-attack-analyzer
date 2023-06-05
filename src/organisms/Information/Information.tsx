@@ -5,7 +5,7 @@ import { Text } from "../../atom/Text/Text";
 export const Information = () => {
   const { t } = useTranslation();
   return (
-    <div className="flex flex-col gap-y-3 p-3">
+    <div className="flex flex-col gap-y-2 p-3">
       <div>
         <Text className="text-xl font-medium">Pokémon Report Generator</Text>
         <Text className="text-sm font-medium">
@@ -28,10 +28,13 @@ export const Information = () => {
               {t("projectExplain.step7")}
             </li>
           </ul>
-          <Text className="font-medium text-[17px] my-8">
+          <Text className="font-medium text-[17px] my-4">
             {t("projectExplain.note")}
           </Text>
         </div>
+        <p className="text-left dark:text-white">
+          {t("common.madeBy")} @Canary255
+        </p>
       </div>
 
       <div className="items-end flex justify-center">

@@ -6,7 +6,7 @@ import { Stats } from "../../molecules/Stats/Stats";
 import { useTranslation } from "react-i18next";
 import { nature, mechanic, category } from "../../utils/pokemonConsts";
 import { RadioGroupUI } from "../../atom/RadioGroup/RadioGroup";
-import { teraType } from "../../utils/pokemonConsts/teraType";
+import teraType from "../../utils/pokemonConsts/teraType";
 import { useFormContext } from "react-hook-form";
 import { useEffect, useState } from "react";
 import { capitalizeEveryWord } from "../../utils/capitalize";
@@ -60,11 +60,11 @@ export const Attacker = ({
         res
           .json()
           .then((data) => {
-            setAvatar(
+            const avatarUrl =
               data.name === "porygon-z"
                 ? data.sprites.front_shiny
-                : data.sprites.front_default ?? ""
-            );
+                : data.sprites.front_default ?? "";
+            setAvatar(avatarUrl);
             setAtk(data.stats[1].base_stat.toString());
             setSpa(data.stats[3].base_stat.toString());
             setValue(
@@ -73,6 +73,7 @@ export const Attacker = ({
                 data.abilities[0].ability.name.replaceAll("-", " ")
               )
             );
+            setValue("avatar", avatarUrl);
           })
           .catch(() => {
             setAvatar("");
@@ -85,27 +86,29 @@ export const Attacker = ({
 
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col p-4">
         <div className="grid lg:grid-cols-2 md:grid-cols-1 justify-center gap-x-16">
           <Avatar
             url={avatar}
             teratype={watch("teraType")}
             className="flex flex-row justify-center mt-5"
           />
-          <div className=" mt-3 grid place-items-center sm:grid-rows-2 xs:grid-cols-1 gap-x-2">
+          <div className=" mt-3 grid place-items-center sm:grid-rows-2 min-[315px]:grid-cols-1 gap-x-2">
             <ComboBoxUI
               options={dex}
               name="name"
+              className="xl:w-[90%]"
               label={t("attacker.selectPokemon")}
             />
             <SelectorUI
               options={teraType}
               name="teraType"
+              className="xl:w-[90%]"
               label={t("attacker.selectTeraType")}
             />
           </div>
         </div>
-        <div className="mt-3 grid place-items-center sm:grid-cols-2  xs:grid-cols-1 gap-x-2">
+        <div className="mt-3 grid place-items-center p-2 sm:grid-cols-2 gap-x-2">
           <ComboBoxUI
             options={abilityList}
             name="ability"
@@ -113,6 +116,7 @@ export const Attacker = ({
           />
           <ComboBoxUI
             options={itemList}
+            className="md:w-[90%]"
             name="item"
             label={t("attacker.selectItem")}
           />
@@ -132,17 +136,15 @@ export const Attacker = ({
             selectorAbove
           />
         </div>
-        <div className="mt-3 grid place-items-center sm:mb-4 gap-x-2">
-          <Stats atk={atk} spa={spa} />
-        </div>
-        <div className="mt-3 grid w-full place-items-center lg:grid-cols-9 md:grid-cols-5 sm:grid-cols-8 xs:grid-cols-1">
-          <div className="flex flex-row gap-x-2 lg:col-span-6 md:col-span-4 sm:col-span-6">
+        <div className="mt-3 grid w-full place-items-center sm:grid-cols-12 gap-x-6">
+          <div className="col-span-6">
             <ComboBoxUI
               options={moveList}
               name="move"
-              width="L"
               label={t("attacker.selectMove")}
             />
+          </div>
+          <div className="xl:col-span-2 sm:col-span-6 min-[315px]:col-span-2">
             <SelectorUI
               options={category}
               width="XS"
@@ -151,18 +153,23 @@ export const Attacker = ({
             />
           </div>
           {moveDetails?.multihit && (
-            <SelectorArray
-              options={numberOfHits(moveDetails?.multihit)}
-              width="XS"
-              name="hits"
-              label={t("attacker.numHits")}
-            />
+            <div className="xl:col-span-2 sm:col-span-6 min-[315px]:col-span-2">
+              <SelectorArray
+                options={numberOfHits(moveDetails?.multihit)}
+                width="XS"
+                name="hits"
+                label={t("attacker.numHits")}
+              />
+            </div>
           )}
           <SwitchUI
             label={t("button.crit")}
-            className="mt-5 lg:col-span-2 "
+            className="mt-5 xl:col-span-2 sm:col-span-6 min-[315px]:col-span-2"
             name="crit"
           />
+        </div>
+        <div className="mt-3 grid place-items-center sm:mb-4 gap-x-2">
+          <Stats atk={atk} spa={spa} />
         </div>
       </div>
     </>

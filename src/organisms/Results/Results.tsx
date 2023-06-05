@@ -90,7 +90,7 @@ export const Results = ({
           circleBorder="all"
           className="w-1/2 h-16 mx-auto"
           name=""
-          label="Generate another report"
+          label={t("message.generateAnother")}
           onClick={() => {
             resetPage();
           }}

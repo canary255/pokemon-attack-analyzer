@@ -1,6 +1,8 @@
+import { Terrain, TypeName, Weather } from "../utils/calc/data/interface";
+
 export type ReportProps = {
   name: string;
-  teraType: string;
+  teraType: TypeName;
   ability: string;
   nature: string;
   item: string;
@@ -16,13 +18,13 @@ export type ReportProps = {
   boostSpa: string;
   evSpa: string;
   ivSpa: string;
-  target: string;
+  target: "Singles" | "Doubles";
   selectPokemon: string;
   defenderList: string;
   boostDef: string;
   boostSpd: string;
-  weather: string;
-  terrain: string;
+  weather: "none" | Weather;
+  terrain: "none" | Terrain;
   fairy: boolean;
   dark: boolean;
   break: boolean;
@@ -43,4 +45,5 @@ export type ReportProps = {
   sword: boolean;
   beads: boolean;
   hits: string;
+  avatar: string;
 };

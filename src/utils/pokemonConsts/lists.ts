@@ -1,4 +1,6 @@
+import { set } from "react-hook-form";
 import { ABILITIES, ITEMS, MOVES, SPECIES } from "../calc";
+import { getDate, setPreviousDate } from "../obtainApiDate";
 import { notAllowedForms } from "./notAllowedForms";
 
 const moveMap = new Map(Object.entries(MOVES[MOVES.length - 1]));
@@ -25,15 +27,35 @@ export const getCompleteDexNames = () => {
 };
 
 export const get9thGenDex = async () => {
-  const result = await fetch(
-    `https://www.pikalytics.com/api/l/${new Date().getFullYear()}-${new Date()
-      .getMonth()
-      .toString()
-      .padStart(2, "0")}/gen9vgc2023regc-1760`
-  );
-  const list = await result.json();
-  const array = await list.map((value: any) => value);
-  return array;
+  try {
+    const { year, month } = getDate();
+    const result = await fetch(
+      `https://www.pikalytics.com/api/l/${year}-${month
+        .toString()
+        .padStart(2, "0")}/gen9vgc2023regc-1760`
+    );
+    const list = await result.json();
+    const array = await list.map((value: any) => value);
+    return array;
+  } catch (e) {
+    console.log("Error fetching data", e);
+    // Fallback to previous month or year if the initial fetch fails
+    setPreviousDate();
+    const { year, month } = getDate();
+    const fallbackFetchData = await fetch(
+      `https://www.pikalytics.com/api/l/${year}-${month
+        .toString()
+        .padStart(2, "0")}/gen9vgc2023regc-1760`
+    );
+
+    if (!fallbackFetchData.ok) {
+      throw new Error("Fallback request failed");
+    }
+
+    const list = await fallbackFetchData.json();
+    const array = await list.map((value: any) => value);
+    return array;
+  }
 };
 
 export const get9thGenDexNames = async () => {

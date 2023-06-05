@@ -60,8 +60,8 @@ export const TextField = ({
 }: TextFieldProps) => {
   const { getValues, setValue } = useFormContext();
   return (
-    <div className="flex flex-col">
-      {label ? <Text className="mb-1">{label}</Text> : null}
+    <div className="flex flex-col gap-y-1">
+      {label ? <Text>{label}</Text> : null}
       <input
         onChange={(e: any) => {
           handleNumber(e, setValue, name, onlyNumber, maxNumber, minNumber);

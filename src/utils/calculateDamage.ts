@@ -19,13 +19,12 @@ import {
   MoveCategory,
   NatureName,
   Terrain,
-  TypeName,
   Weather,
 } from "./calc/data/interface";
 import { CalcList } from "../types/calcList";
 import { getPokemonSprite } from "./getPokemonSprite";
 import { getCancelAction, setCancelAction } from "./cancelAction";
-import { capitalizeOneWord } from "./capitalize";
+import { getDate } from "./obtainApiDate";
 
 type PokemonData = {
   items: string;
@@ -81,7 +80,10 @@ export const loadDataCalculator = async (
 
   setTotalDex(dex.length);
   const calcsList = [];
-  const moveType = MOVES[MOVES.length - 1][form.move].type;
+  const moveType =
+    form.move === "Tera Blast" && form.mechanic === "tera"
+      ? form.teraType
+      : MOVES[MOVES.length - 1][form.move].type;
 
   let i = 1;
   for (const pokemon of dex) {
@@ -163,19 +165,29 @@ const calculateDamageWithSet = async (pokemon: any, form: ReportProps) => {
     ///////       SET OBTENTION        ///////
     ///////                            ///////
     //////////////////////////////////////////
-    const fetchData = await fetch(
-      `https://www.pikalytics.com/api/p/${new Date().getFullYear()}-${new Date()
-        .getMonth()
-        .toString()
-        .padStart(2, "0")}/gen9vgc2023regc-1760/${pokemon.toLowerCase().trim()}`
-    );
-    const responseData = await fetchData.json();
-    const defensiveData: PokemonData = {
-      items: responseData.items[0].item,
-      nature: responseData.spreads[0].nature,
-      evs: responseData.spreads[0].ev ?? "0/0/0/0/0/0",
-    };
-    return calculateDamage(form, pokemon, defensiveData);
+    const { year, month } = getDate();
+    try {
+      const fetchData = await fetch(
+        `https://www.pikalytics.com/api/p/${year}-${month
+          .toString()
+          .padStart(2, "0")}/gen9vgc2023regc-1760/${pokemon
+          .toLowerCase()
+          .trim()}`
+      );
+      if (!fetchData.ok) {
+        throw new Error("Request failed");
+      }
+      const responseData = await fetchData.json();
+      const defensiveData: PokemonData = {
+        items: responseData.items[0].item,
+        nature: responseData.spreads[0].nature,
+        evs: responseData.spreads[0].ev ?? "0/0/0/0/0/0",
+      };
+      return calculateDamage(form, pokemon, defensiveData);
+    } catch (e) {
+      //console.log("Error fetching data", e);
+      return undefined;
+    }
   } catch (e) {
     //console.log("Invalid data", pokemon, e);
     return undefined;
@@ -198,10 +210,7 @@ const calculateDamage = (
     boosts: { atk: +form.boostAtk, spa: +form.boostSpa },
     level: LEVEL,
     ability: form.ability as AbilityName,
-    teraType:
-      form.mechanic === "tera"
-        ? (capitalizeOneWord(form.teraType) as TypeName)
-        : undefined,
+    teraType: form.mechanic === "tera" ? form.teraType : undefined,
   });
 
   const DEFENDER = new Pokemon(Generations.get(9), pokemon, {
@@ -231,9 +240,9 @@ const calculateDamage = (
     isTabletsOfRuin: form.tablets,
     isVesselOfRuin: form.vessel,
     weather: form.weather as Weather,
-    //isAuraBreak: form.aura,
-    //isFairyAura: form.,
-    //isDarkAura: form.,
+    isAuraBreak: form.break,
+    isFairyAura: form.fairy,
+    isDarkAura: form.dark,
     gameType: form.target as GameType,
     defenderSide: {
       isAuroraVeil: form.auroraVeil,

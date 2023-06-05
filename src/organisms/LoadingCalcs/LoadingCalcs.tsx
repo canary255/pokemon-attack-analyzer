@@ -38,7 +38,7 @@ export const LoadingCalcs = ({
         <LoadingBar width={isNaN(percentage) ? "0" : percentage.toFixed(2)} />
         <Button
           name="cancel"
-          label="Cancel process"
+          label={t("message.cancelProcess")}
           circleBorder="all"
           className="w-80 h-36 text-4xl font-semibold border border-red-300 bg-red-600"
           onClick={() => setCancelAction()}

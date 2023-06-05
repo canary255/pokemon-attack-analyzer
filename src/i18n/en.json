@@ -85,7 +85,9 @@
     "specifyPokemon": "Specify Pokémon by writing the name and separating it with a comma...",
     "defStatBoost": "Def stat changes",
     "spdStatBoost": "SpD stat changes",
-    "spikes": "3 Spikes"
+    "spikes": "3 Spikes",
+    "generateAnother": "Generate another report",
+    "cancelProcess": "Cancel Process"
   },
   "nature": {
     "adamant": "Adamant",
@@ -160,5 +162,9 @@
     "sword": "Sword of Ruin",
     "vessel": "Vessel of Ruin",
     "beads": "Beads of Ruin"
+  },
+  "validation": {
+    "pokemonName": "The Pokémon name is required",
+    "move": "The move name is required"
   }
 }

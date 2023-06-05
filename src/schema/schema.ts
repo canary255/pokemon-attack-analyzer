@@ -1,14 +1,14 @@
 import { ReportProps } from "../types/reportProps";
 
 export const reportInitialState: ReportProps = {
-  name: "",
-  teraType: "normal",
-  ability: "",
-  nature: "adamant",
+  name: "Abra",
+  teraType: "Normal",
+  ability: "Absorb",
+  nature: "modest",
   item: "",
-  move: "",
+  move: "Absorb",
   mechanic: "none",
-  category: "Physical",
+  category: "Special",
   crit: false,
   boostAtk: "0",
   evAtk: "0",
@@ -43,11 +43,12 @@ export const reportInitialState: ReportProps = {
   sword: false,
   beads: false,
   hits: "",
+  avatar: "",
 };
 
 export const testingSet: ReportProps = {
   name: "Porygon-Z",
-  teraType: "normal",
+  teraType: "Normal",
   ability: "Adaptability",
   nature: "modest",
   item: "Choice Scarf",
@@ -88,4 +89,6 @@ export const testingSet: ReportProps = {
   sword: false,
   beads: false,
   hits: "",
+  avatar:
+    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/474.png",
 };

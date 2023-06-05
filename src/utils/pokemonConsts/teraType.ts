@@ -1,23 +1,32 @@
-export const teraType = [
-  { name: "type.normal", value: "normal" },
-  { name: "type.fire", value: "fire" },
-  { name: "type.water", value: "water" },
-  { name: "type.electric", value: "electric" },
-  { name: "type.grass", value: "grass" },
-  { name: "type.ice", value: "ice" },
-  { name: "type.fighting", value: "fighting" },
-  { name: "type.poison", value: "poison" },
-  { name: "type.ground", value: "ground" },
-  { name: "type.flying", value: "flying" },
-  { name: "type.psychic", value: "psychic" },
-  { name: "type.bug", value: "bug" },
-  { name: "type.rock", value: "rock" },
-  { name: "type.ghost", value: "ghost" },
-  { name: "type.dragon", value: "dragon" },
-  { name: "type.dark", value: "dark" },
-  { name: "type.steel", value: "steel" },
-  { name: "type.fairy", value: "fairy" },
-].sort((a, b) => {
+import type { TypeName } from "../calc/data/interface";
+
+type TypeProps = {
+  name: string;
+  value: TypeName;
+};
+
+const teraType: TypeProps[] = [
+  { name: "type.normal", value: "Normal" },
+  { name: "type.fire", value: "Fire" },
+  { name: "type.water", value: "Water" },
+  { name: "type.electric", value: "Electric" },
+  { name: "type.grass", value: "Grass" },
+  { name: "type.ice", value: "Ice" },
+  { name: "type.fighting", value: "Fighting" },
+  { name: "type.poison", value: "Poison" },
+  { name: "type.ground", value: "Ground" },
+  { name: "type.flying", value: "Flying" },
+  { name: "type.psychic", value: "Psychic" },
+  { name: "type.bug", value: "Bug" },
+  { name: "type.rock", value: "Rock" },
+  { name: "type.ghost", value: "Ghost" },
+  { name: "type.dragon", value: "Dragon" },
+  { name: "type.dark", value: "Dark" },
+  { name: "type.steel", value: "Steel" },
+  { name: "type.fairy", value: "Fairy" },
+];
+
+export default teraType.sort((a, b) => {
   if (a.value > b.value) {
     return 0;
   }

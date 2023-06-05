@@ -85,7 +85,9 @@
     "specifyPokemon": "Especifica el Pokémon escribiendo el nombre y separandolo con una coma.",
     "defStatBoost": "Cambios Def",
     "spdStatBoost": "Cambios Def.Esp",
-    "spikes": "3 púas"
+    "spikes": "3 púas",
+    "generateAnother": "Generate another report",
+    "cancelProcess": "Cancelar Proceso"
   },
   "nature": {
     "adamant": "Firme",
@@ -147,7 +149,7 @@
   "terrain": {
     "electric": "Eléctrico",
     "grassy": "Hierba",
-    "misty": "Nieba",
+    "misty": "Niebla",
     "psychic": "Psíquico"
   },
   "aura": {
@@ -160,5 +162,9 @@
     "sword": "Espada Debacle",
     "vessel": "Caldero Debacle",
     "beads": "Abalorio Debacle"
+  },
+  "validation": {
+    "pokemonName": "El nombre del pokémon es obligatorio.",
+    "move": "El nombre del movimiento es obligatorio."
   }
 }
