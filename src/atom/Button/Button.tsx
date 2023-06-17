@@ -3,7 +3,7 @@ import { borderDirection } from "../../utils/styleConsts";
 
 interface ButtonProps {
   type?: "button" | "reset" | "submit";
-  name: string;
+  name?: string;
   label?: string | null;
   className?: string;
   onClick?: () => void;

@@ -13,6 +13,8 @@ import { capitalizeEveryWord } from "../../utils/capitalize";
 import { getMoveDetails } from "../../utils/pokemonConsts/lists";
 import { SelectorArray } from "../../atom/SelectorArray/SelectorArray";
 import { numberOfHits } from "../../utils/numberOfHits";
+import { Button } from "../../atom/Button/Button";
+import { ReportProps } from "../../types/reportProps";
 
 interface AttackerProps {
   dex: string[];
@@ -32,7 +34,7 @@ export const Attacker = ({
   setAvatar,
 }: AttackerProps) => {
   const { t } = useTranslation();
-  const { watch, setValue } = useFormContext();
+  const { watch, setValue, reset } = useFormContext();
   const [atk, setAtk] = useState<string>("90");
   const [spa, setSpa] = useState<string>("90");
   const [moveDetails, setMoveDetails] = useState<any>();
@@ -84,6 +86,14 @@ export const Attacker = ({
     }
   }, [specie]);
 
+  const handleRestore = () => {
+    const data = localStorage.getItem("pokemonSetData");
+    if (data) {
+      const parsedData: ReportProps = JSON.parse(data);
+      reset(parsedData);
+    }
+  };
+
   return (
     <>
       <div className="flex flex-col p-4">
@@ -93,7 +103,14 @@ export const Attacker = ({
             teratype={watch("teraType")}
             className="flex flex-row justify-center mt-5"
           />
-          <div className=" mt-3 grid place-items-center sm:grid-rows-2 min-[315px]:grid-cols-1 gap-x-2">
+          <div className=" mt-3 grid place-items-center sm:grid-rows-3 min-[315px]:grid-cols-1 gap-x-2">
+            {localStorage.getItem("pokemonSetData") && (
+              <Button
+                onClick={() => handleRestore()}
+                className="w-48 xl:mr-5"
+                label="Restore last set"
+              ></Button>
+            )}
             <ComboBoxUI
               options={dex}
               name="name"

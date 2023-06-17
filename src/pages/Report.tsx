@@ -43,6 +43,7 @@ export const Report = () => {
       setResultCalcs
     );
     setData(data);
+    localStorage.setItem("pokemonSetData", JSON.stringify(data));
   };
 
   const dexList = getCompleteDexNames();
