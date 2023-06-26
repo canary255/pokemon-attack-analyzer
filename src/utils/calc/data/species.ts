@@ -4478,7 +4478,7 @@ const BW_PATCH: { [name: string]: DeepPartial<SpeciesData> } = {
     nfe: true,
     abilities: { 0: "Flash Fire" },
   },
-  Landorus: {
+  "Landorus-Incarnate": {
     types: ["Ground", "Flying"],
     bs: { hp: 89, at: 125, df: 90, sa: 115, sd: 80, sp: 101 },
     weightkg: 68,
@@ -4894,7 +4894,7 @@ const BW_PATCH: { [name: string]: DeepPartial<SpeciesData> } = {
     weightkg: 55.5,
     abilities: { 0: "Guts" },
   },
-  Thundurus: {
+  "Thundurus-Incarnate": {
     types: ["Electric", "Flying"],
     bs: { hp: 79, at: 115, df: 70, sa: 125, sd: 80, sp: 111 },
     weightkg: 61,
@@ -4928,7 +4928,7 @@ const BW_PATCH: { [name: string]: DeepPartial<SpeciesData> } = {
     weightkg: 37.2,
     abilities: { 0: "Intimidate" },
   },
-  Tornadus: {
+  "Tornadus-Incarnate": {
     types: ["Flying"],
     bs: { hp: 79, at: 115, df: 70, sa: 125, sd: 80, sp: 111 },
     weightkg: 63,
