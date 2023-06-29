@@ -12,7 +12,7 @@
   },
   "common": {
     "none": "None",
-    "reportGenerator": "Pokémon Report Generator",
+    "reportGenerator": "Pokémon Attack Analyzer",
     "filter": "Filter",
     "search": "Search",
     "filterBy": "Filter By",
