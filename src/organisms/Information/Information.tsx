@@ -7,7 +7,7 @@ export const Information = () => {
   return (
     <div className="flex flex-col gap-y-2 p-3">
       <div>
-        <Text className="text-xl font-medium">Pokémon Report Generator</Text>
+        <Text className="text-xl font-medium">Pokémon Attack Analyzer</Text>
         <Text className="text-sm font-medium">
           {t("projectExplain.description")}
         </Text>
