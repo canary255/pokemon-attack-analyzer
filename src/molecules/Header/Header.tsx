@@ -39,7 +39,7 @@ export const Header = ({ children }: HeaderProps) => {
   return (
     <div className="p-4 sticky z-10 top-0 grid grid-cols-4 content-center bg-[#009DFF] dark:bg-blue-600 h-16 w-full">
       <p className="text-white md:text-3xl sm:text-2xl max-[315px]:text-md col-span-2 p-4">
-        Pokémon Report Generator
+        Pokémon Attack Analyzer
       </p>
 
       <div className="grid grid-cols-2 col-span-2">
