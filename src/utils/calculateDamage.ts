@@ -227,8 +227,8 @@ const calculateDamage = (
     item: form?.item as ItemName,
     isCrit: form?.crit,
     hits: +form?.hits,
-    useZ: form?.mechanic === "Z-Move",
-    useMax: form?.mechanic === "Dynamax",
+    useZ: form?.mechanic === "zMove",
+    useMax: form?.mechanic === "dynamax",
     overrides: { category: form?.category as MoveCategory },
   });
 
