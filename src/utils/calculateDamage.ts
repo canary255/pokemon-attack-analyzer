@@ -96,7 +96,7 @@ export const loadDataCalculator = async (
       return;
     }
     //Uncomment for testing
-    //if (i === 30) break;
+    if (i === 30) break;
     setNumberDex(i);
     const pokemonType = SPECIES[SPECIES.length - 1][pokemon].types;
     const typeValue = TYPE_CHART[TYPE_CHART.length - 1];
@@ -227,8 +227,8 @@ const calculateDamage = (
     item: form?.item as ItemName,
     isCrit: form?.crit,
     hits: +form?.hits,
-    useZ: form?.mechanic === "Z-Move",
-    useMax: form?.mechanic === "Dynamax",
+    useZ: form?.mechanic === "zMove",
+    useMax: form?.mechanic === "dynamax",
     overrides: { category: form?.category as MoveCategory },
   });
 
