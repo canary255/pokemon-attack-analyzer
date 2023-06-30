@@ -26,43 +26,6 @@ export const getCompleteDexNames = () => {
   return getCompleteDex().map((value: any) => value.name);
 };
 
-export const get9thGenDex = async () => {
-  try {
-    const { year, month } = getDate();
-    const result = await fetch(
-      `https://www.pikalytics.com/api/l/${year}-${month
-        .toString()
-        .padStart(2, "0")}/gen9vgc2023regc-1760`
-    );
-    const list = await result.json();
-    const array = await list.map((value: any) => value);
-    return array;
-  } catch (e) {
-    console.log("Error fetching data", e);
-    // Fallback to previous month or year if the initial fetch fails
-    setPreviousDate();
-    const { year, month } = getDate();
-    const fallbackFetchData = await fetch(
-      `https://www.pikalytics.com/api/l/${year}-${month
-        .toString()
-        .padStart(2, "0")}/gen9vgc2023regc-1760`
-    );
-
-    if (!fallbackFetchData.ok) {
-      throw new Error("Fallback request failed");
-    }
-
-    const list = await fallbackFetchData.json();
-    const array = await list.map((value: any) => value);
-    return array;
-  }
-};
-
-export const get9thGenDexNames = async () => {
-  const list = await get9thGenDex();
-  return list.map((value: any) => value.name);
-};
-
 export const getItemList = () => {
   const map = new Map(Object.entries(ITEMS[ITEMS.length - 1]));
   const list: any = [];

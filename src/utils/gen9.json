@@ -1,0 +1,4205 @@
+[
+  {
+    "name": "Flutter Mane",
+    "rank": "1",
+    "search": "ghostfairyProtosynthesisChoice SpecsBooster EnergyFocus Sash Life Orb Other Shadow BallDazzling GleamMoonblastProtectThunderboltSubstitutePower GemIcy Wind Hex Psyshock Other",
+    "raw": "1682233",
+    "percent": "67.80",
+    "types": ["ghost", "fairy"],
+    "ss": true,
+    "id": 983,
+    "name_trans": "Flutter Mane",
+    "l": "en",
+    "stats": {
+      "hp": 55,
+      "atk": 55,
+      "def": 55,
+      "spa": 135,
+      "spd": 135,
+      "spe": 135
+    },
+    "abilities": [
+      {
+        "ability": "Protosynthesis",
+        "percent": "100.000"
+      }
+    ],
+    "raw_count": "1840",
+    "ranking": "1",
+    "viability": "B",
+    "items": [
+      {
+        "item": "Choice Specs",
+        "item_us": "Choice_Specs",
+        "percent": "42.999"
+      },
+      {
+        "item": "Booster Energy",
+        "item_us": "Booster_Energy",
+        "percent": "41.487"
+      },
+      {
+        "item": "Focus Sash",
+        "item_us": "Focus_Sash",
+        "percent": "9.024"
+      },
+      {
+        "item": "Life Orb",
+        "item_us": "Life_Orb",
+        "percent": "4.414"
+      },
+      {
+        "item": "Other",
+        "item_us": "Other",
+        "percent": "2.076"
+      }
+    ],
+    "spreads": [
+      {
+        "nature": "Timid",
+        "ev": "4/0/0/252/0/252",
+        "percent": "10.779"
+      },
+      {
+        "nature": "Timid",
+        "ev": "0/0/0/252/4/252",
+        "percent": "5.640"
+      },
+      {
+        "nature": "Modest",
+        "ev": "100/0/244/44/4/116",
+        "percent": "3.381"
+      },
+      {
+        "nature": "Modest",
+        "ev": "4/0/156/116/4/228",
+        "percent": "2.895"
+      },
+      {
+        "nature": "Modest",
+        "ev": "228/0/140/4/4/132",
+        "percent": "1.914"
+      },
+      {
+        "nature": "Modest",
+        "ev": "60/0/76/116/4/252",
+        "percent": "1.538"
+      },
+      {
+        "nature": "Modest",
+        "ev": "4/0/0/252/0/252",
+        "percent": "1.365"
+      },
+      {
+        "nature": "Timid",
+        "ev": "148/0/132/92/12/124",
+        "percent": "1.099"
+      },
+      {
+        "nature": "Quiet",
+        "ev": "252/0/4/252/0/0",
+        "percent": "1.019"
+      },
+      {
+        "nature": "Timid",
+        "ev": "116/0/4/252/4/132",
+        "percent": "0.871"
+      },
+      {
+        "nature": "Modest",
+        "ev": "84/0/228/36/4/156",
+        "percent": "0.869"
+      },
+      {
+        "nature": "Modest",
+        "ev": "76/0/100/108/4/220",
+        "percent": "0.867"
+      },
+      {
+        "nature": "Timid",
+        "ev": "116/0/0/252/0/140",
+        "percent": "0.863"
+      },
+      {
+        "nature": "Modest",
+        "ev": "0/0/0/252/4/252",
+        "percent": "0.849"
+      },
+      {
+        "nature": "Timid",
+        "ev": "100/0/92/60/4/252",
+        "percent": "0.814"
+      },
+      {
+        "nature": "Modest",
+        "ev": "196/0/156/36/4/116",
+        "percent": "0.795"
+      },
+      {
+        "nature": "Modest",
+        "ev": "20/0/84/196/4/204",
+        "percent": "0.787"
+      },
+      {
+        "nature": "Modest",
+        "ev": "100/0/244/36/4/124",
+        "percent": "0.732"
+      },
+      {
+        "nature": "Timid",
+        "ev": "148/0/252/100/4/4",
+        "percent": "0.700"
+      },
+      {
+        "nature": "Modest",
+        "ev": "228/0/84/36/4/156",
+        "percent": "0.666"
+      }
+    ],
+    "moves": [
+      {
+        "move": "Shadow Ball",
+        "percent": "92.992",
+        "type": "ghost"
+      },
+      {
+        "move": "Dazzling Gleam",
+        "percent": "84.017",
+        "type": "fairy"
+      },
+      {
+        "move": "Moonblast",
+        "percent": "83.201",
+        "type": "fairy"
+      },
+      {
+        "move": "Protect",
+        "percent": "54.516",
+        "type": "normal"
+      },
+      {
+        "move": "Thunderbolt",
+        "percent": "25.939",
+        "type": "electric"
+      },
+      {
+        "move": "Substitute",
+        "percent": "14.888",
+        "type": "normal"
+      },
+      {
+        "move": "Power Gem",
+        "percent": "10.938",
+        "type": "rock"
+      },
+      {
+        "move": "Icy Wind",
+        "percent": "6.740",
+        "type": "ice"
+      },
+      {
+        "move": "Hex",
+        "percent": "5.268",
+        "type": "ghost"
+      },
+      {
+        "move": "Psyshock",
+        "percent": "4.882",
+        "type": "psychic"
+      },
+      {
+        "move": "Other",
+        "percent": "16.620"
+      }
+    ],
+    "team": [
+      {
+        "pokemon": "Amoonguss",
+        "percent": "41.372",
+        "types": ["grass", "poison"],
+        "pokemon_trans": "Amoonguss",
+        "l": "en"
+      },
+      {
+        "pokemon": "Ting-Lu",
+        "percent": "35.654",
+        "types": ["dark", "ground"],
+        "ss": true,
+        "id": 994,
+        "pokemon_trans": "Ting-Lu",
+        "l": "en"
+      },
+      {
+        "pokemon": "Chi-Yu",
+        "percent": "31.671",
+        "types": ["dark", "fire"],
+        "ss": true,
+        "id": 997,
+        "pokemon_trans": "Chi-Yu",
+        "l": "en"
+      },
+      {
+        "pokemon": "Arcanine",
+        "percent": "31.170",
+        "types": ["fire"],
+        "pokemon_trans": "Arcanine",
+        "l": "en"
+      },
+      {
+        "pokemon": "Chien-Pao",
+        "percent": "27.242",
+        "types": ["dark", "ice"],
+        "ss": true,
+        "id": 995,
+        "pokemon_trans": "Chien-Pao",
+        "l": "en"
+      },
+      {
+        "pokemon": "Dragonite",
+        "percent": "24.229",
+        "types": ["dragon", "flying"],
+        "pokemon_trans": "Dragonite",
+        "l": "en"
+      },
+      {
+        "pokemon": "Palafin",
+        "percent": "22.558",
+        "types": ["water"],
+        "ss": true,
+        "id": 934,
+        "pokemon_trans": "Palafin",
+        "l": "en"
+      },
+      {
+        "pokemon": "Iron Bundle",
+        "percent": "19.921",
+        "types": ["ice", "water"],
+        "ss": true,
+        "id": 992,
+        "pokemon_trans": "Iron Bundle",
+        "l": "en"
+      },
+      {
+        "pokemon": "Gyarados",
+        "percent": "16.286",
+        "types": ["water", "flying"],
+        "pokemon_trans": "Gyarados",
+        "l": "en"
+      },
+      {
+        "pokemon": "Iron Hands",
+        "percent": "14.438",
+        "types": ["fighting", "electric"],
+        "ss": true,
+        "id": 989,
+        "pokemon_trans": "Iron Hands",
+        "l": "en"
+      }
+    ]
+  },
+  {
+    "name": "Amoonguss",
+    "rank": "2",
+    "search": "grasspoisonRegeneratorEffect Spore Sitrus BerryRocky HelmetMental Herb Wiki Berry Occa Berry Covert Cloak Aguav Berry Coba Berry Other SporeRage PowderPollen PuffProtectClear SmogOther ",
+    "raw": "1149433",
+    "percent": "40.05",
+    "types": ["grass", "poison"],
+    "name_trans": "Amoonguss",
+    "l": "en"
+  },
+  {
+    "name": "Ting-Lu",
+    "rank": "3",
+    "search": "darkgroundVessel of RuinAssault VestChoice BandSitrus Berry Clear Amulet Leftovers Weakness Policy Lum Berry Other Heavy SlamStomping TantrumRuinationEarthquakeFissureRock SlideThroat ChopProtectSand TombPayback Body Press Bulldoze Taunt Snarl Other",
+    "raw": "834117",
+    "percent": "34.78",
+    "types": ["dark", "ground"],
+    "ss": true,
+    "id": 994,
+    "l": "en"
+  },
+  {
+    "name": "Chi-Yu",
+    "rank": "4",
+    "search": "darkfireBeads of RuinChoice ScarfFocus SashLife OrbChoice SpecsSafety Goggles Covert Cloak Assault Vest Sitrus Berry Charcoal Leftovers Other Heat WaveDark PulseProtectOverheatTera BlastSnarlNasty PlotFlamethrowerOther",
+    "raw": "730797",
+    "percent": "29.82",
+    "types": ["dark", "fire"],
+    "ss": true,
+    "id": 997,
+    "l": "en"
+  },
+  {
+    "name": "Chien-Pao",
+    "rank": "5",
+    "search": "darkiceSword of RuinFocus SashLife Orb Sitrus Berry Other Ice SpinnerProtectSucker PunchSacred SwordHazeThroat ChopOther",
+    "raw": "831726",
+    "percent": "29.71",
+    "types": ["dark", "ice"],
+    "ss": true,
+    "id": 995,
+    "l": "en"
+  },
+  {
+    "name": "Arcanine",
+    "rank": "6",
+    "search": "fireIntimidateFlash Fire Justified Safety GogglesSitrus Berry Assault Vest Figy Berry Aguav Berry Mirror Herb Iapapa Berry Other Flare BlitzWill-O-WispExtreme SpeedProtectHowlSnarlClose Combat Morning Sun Other",
+    "raw": "844009",
+    "percent": "29.46",
+    "types": ["fire"],
+    "name_trans": "Arcanine",
+    "l": "en"
+  },
+  {
+    "name": "Dragonite",
+    "rank": "7",
+    "search": "dragonflyingMultiscaleInner FocusChoice BandLum BerryAssault Vest Clear Amulet Safety Goggles Silk Scarf Other Extreme SpeedTera BlastProtectOutrageLow KickStomping TantrumEarthquakeIce SpinnerDragon ClawDragon DanceAerial AceTailwindAqua JetIron HeadRock Slide Thunder Punch Other",
+    "raw": "563226",
+    "percent": "25.52",
+    "types": ["dragon", "flying"],
+    "name_trans": "Dragonite",
+    "l": "en"
+  },
+  {
+    "name": "Iron Bundle",
+    "rank": "8",
+    "search": "icewaterQuark DriveBooster EnergyFocus SashChoice Specs Covert Cloak Life Orb Other Freeze-DryProtectHydro PumpIcy WindBlizzardEncoreOther",
+    "raw": "546644",
+    "percent": "25.43",
+    "types": ["ice", "water"],
+    "ss": true,
+    "id": 992,
+    "l": "en"
+  },
+  {
+    "name": "Palafin",
+    "rank": "9",
+    "search": "waterZero to HeroMystic WaterSafety Goggles Choice Band Clear Amulet Other Jet PunchWave CrashProtectHazeClose Combat Substitute Other",
+    "raw": "710752",
+    "percent": "20.45",
+    "types": ["water"],
+    "ss": true,
+    "id": 934,
+    "l": "en"
+  },
+  {
+    "name": "Iron Hands",
+    "rank": "10",
+    "search": "fightingelectricQuark DriveAssault VestSafety GogglesSitrus BerryBooster Energy Clear Amulet Lum Berry Other Drain PunchFake OutWild ChargeVolt SwitchSwords DanceThunder PunchDetectClose CombatProtectHeavy SlamBelly Drum Ice Punch Other",
+    "raw": "427201",
+    "percent": "16.51",
+    "types": ["fighting", "electric"],
+    "ss": true,
+    "id": 989,
+    "l": "en"
+  },
+  {
+    "name": "Gyarados",
+    "rank": "11",
+    "search": "waterflyingIntimidateMoxie Sitrus BerrySafety GogglesLum BerryAguav Berry Leftovers Rocky Helmet Figy Berry Choice Scarf Clear Amulet Assault Vest Life Orb Other WaterfallThunder WaveTauntProtectIron HeadHelping HandTera BlastDragon DanceBulldoze Icy Wind Other",
+    "raw": "392894",
+    "percent": "15.66",
+    "types": ["water", "flying"],
+    "name_trans": "Gyarados",
+    "l": "en"
+  },
+  {
+    "name": "Dondozo",
+    "rank": "12",
+    "search": "waterUnawareObliviousWater Veil LeftoversLife Orb Lum Berry Sitrus Berry Clear Amulet Assault Vest Weakness Policy Mystic Water Other ProtectWave CrashEarthquakeTera BlastYawnOrder UpSubstituteHeavy SlamFissure Surf Bulldoze Sleep Talk Rest Other",
+    "raw": "235219",
+    "percent": "15.02",
+    "types": ["water"],
+    "ss": true,
+    "id": 931,
+    "l": "en"
+  },
+  {
+    "name": "Glimmora",
+    "rank": "13",
+    "search": "rockpoisonToxic DebrisCorrosionAssault VestFocus SashSitrus Berry Shuca Berry Choice Specs Other Power GemMortal SpinEarth PowerSludge BombSpiky ShieldEnergy BallVenoshock Other",
+    "raw": "298650",
+    "percent": "13.18",
+    "types": ["rock", "poison"],
+    "ss": true,
+    "id": 967,
+    "l": "en"
+  },
+  {
+    "name": "Tatsugiri",
+    "rank": "14",
+    "search": "dragonwaterCommanderStorm Drain Choice ScarfChoice Specs Focus Sash Sitrus Berry Lum Berry Wide Lens Safety Goggles Other Draco MeteorMuddy WaterIcy WindSleep TalkDragon PulseProtectTera BlastTaunt Hydro Pump Other",
+    "raw": "217385",
+    "percent": "12.81",
+    "types": ["dragon", "water"],
+    "ss": true,
+    "id": 952,
+    "l": "en"
+  },
+  {
+    "name": "Annihilape",
+    "rank": "15",
+    "search": "fightingghostDefiantVital SpiritInner Focus LeftoversSitrus BerryChoice ScarfSafety Goggles Assault Vest Life Orb Other Rage FistDrain PunchProtectBulk UpClose CombatFinal GambitU-turnShadow ClawOther",
+    "raw": "366896",
+    "percent": "12.69",
+    "types": ["fighting", "ghost"],
+    "ss": true,
+    "id": 1010,
+    "l": "en"
+  },
+  {
+    "name": "Gholdengo",
+    "rank": "16",
+    "search": "ghoststeelGood as GoldLeftoversChoice SpecsWeakness Policy Life Orb Sitrus Berry Choice Scarf Covert Cloak Other Make It RainShadow BallProtectNasty PlotThunderboltTrickPower GemOther",
+    "raw": "280745",
+    "percent": "11.94",
+    "types": ["ghost", "steel"],
+    "ss": true,
+    "id": 977,
+    "l": "en"
+  },
+  {
+    "name": "Great Tusk",
+    "rank": "17",
+    "search": "groundfightingProtosynthesisChoice ScarfFocus SashLife OrbAssault Vest Clear Amulet Booster Energy Other Headlong RushClose CombatEarthquakeRock SlideProtectIce SpinnerOther",
+    "raw": "330124",
+    "percent": "11.70",
+    "types": ["ground", "fighting"],
+    "ss": true,
+    "id": 978,
+    "l": "en"
+  },
+  {
+    "name": "Kingambit",
+    "rank": "18",
+    "search": "darksteelDefiantSupreme Overlord Pressure Assault VestSafety GogglesBlack GlassesLum BerryOther Sucker PunchIron HeadKowtow CleaveAssuranceTera BlastProtectLow KickSwords DanceOther ",
+    "raw": "317345",
+    "percent": "11.60",
+    "types": ["dark", "steel"],
+    "ss": true,
+    "id": 1008,
+    "l": "en"
+  },
+  {
+    "name": "Baxcalibur",
+    "rank": "19",
+    "search": "dragoniceThermal ExchangeIce Body Clear AmuletLoaded DiceAssault VestDragon Fang Life Orb Other Glaive RushIce ShardProtectIcicle CrashIcicle SpearEarthquakeDragon DanceOther",
+    "raw": "285573",
+    "percent": "10.32",
+    "types": ["dragon", "ice"],
+    "ss": true,
+    "id": 951,
+    "l": "en"
+  },
+  {
+    "name": "Maushold",
+    "rank": "20",
+    "search": "normalFriend GuardTechnicianCheek Pouch Safety GogglesWide LensRocky HelmetChople Berry Sitrus Berry Focus Sash Other ProtectFollow MeSuper FangBeat UpPopulation BombFeintBaby-Doll EyesTauntEncore Other",
+    "raw": "306647",
+    "percent": "9.40",
+    "types": ["normal"],
+    "ss": true,
+    "id": 946,
+    "l": "en"
+  },
+  {
+    "name": "Talonflame",
+    "rank": "21",
+    "search": "fireflyingGale WingsFlame Body Safety GogglesCovert CloakRocky HelmetSharp BeakLife Orb Focus Sash Wide Lens Other TailwindBrave BirdWill-O-WispTauntQuick GuardFlare BlitzProtectFeint Other",
+    "raw": "276266",
+    "percent": "8.64",
+    "types": ["fire", "flying"],
+    "name_trans": "Talonflame",
+    "l": "en"
+  },
+  {
+    "name": "Roaring Moon",
+    "rank": "22",
+    "search": "dragondarkProtosynthesisBooster EnergyChoice Band Life Orb Other ProtectAcrobaticsThroat ChopDragon DanceTailwindBreaking SwipeEarthquakeJaw Lock Dragon Claw Rock Slide Other",
+    "raw": "161466",
+    "percent": "7.98",
+    "types": ["dragon", "dark"],
+    "ss": true,
+    "id": 985,
+    "l": "en"
+  },
+  {
+    "name": "Wo-Chien",
+    "rank": "23",
+    "search": "darkgrassTablets of RuinLeftoversSitrus Berry Aguav Berry Assault Vest Big Root Other Leech SeedProtectPollen PuffFoul PlayGiga DrainRuinationSnarl Knock Off Substitute Other",
+    "raw": "264760",
+    "percent": "7.76",
+    "types": ["dark", "grass"],
+    "ss": true,
+    "id": 996,
+    "l": "en"
+  },
+  {
+    "name": "Torkoal",
+    "rank": "24",
+    "search": "fireDroughtWhite Smoke Shell Armor CharcoalEject PackChoice Specs Safety Goggles Assault Vest Heat Rock Life Orb Sitrus Berry Leftovers Other ProtectEruptionEarth PowerHeat WaveFlamethrowerClear SmogOverheatHelping HandYawnSolar BeamOther",
+    "raw": "249761",
+    "percent": "7.39",
+    "types": ["fire"],
+    "name_trans": "Torkoal",
+    "l": "en"
+  },
+  {
+    "name": "Garchomp",
+    "rank": "25",
+    "search": "dragongroundRough SkinSand Veil Clear AmuletLife OrbChoice ScarfChoice Band Lum Berry Safety Goggles Assault Vest Bright Powder Other EarthquakeProtectRock SlideDragon ClawStomping TantrumSwords DanceIron HeadOther",
+    "raw": "212224",
+    "percent": "7.19",
+    "types": ["dragon", "ground"],
+    "name_trans": "Garchomp",
+    "l": "en"
+  },
+  {
+    "name": "Indeedee-F",
+    "rank": "26",
+    "search": "psychicnormalPsychic SurgeSynchronize Own Tempo Psychic SeedSafety GogglesRocky HelmetEject Button Focus Sash Terrain Extender Sitrus Berry Mental Herb Other Follow MeTrick RoomHelping HandPsychicDazzling GleamProtectPsyshock Hyper Voice Imprison Other",
+    "raw": "192037",
+    "percent": "6.28",
+    "types": ["psychic", "normal"],
+    "ss": true,
+    "id": 876,
+    "l": "en"
+  },
+  {
+    "name": "Corviknight",
+    "rank": "27",
+    "search": "flyingsteelMirror ArmorPressure Unnerve Choice BandSafety GogglesLum BerrySitrus BerryLeftoversOcca Berry Rocky Helmet Other Brave BirdIron HeadRoostTailwindBulk UpBody PressU-turnTera BlastTauntOther",
+    "raw": "189925",
+    "percent": "5.97",
+    "types": ["flying", "steel"],
+    "ss": true,
+    "id": 823,
+    "name_trans": "Corviknight",
+    "l": "en"
+  },
+  {
+    "name": "Abomasnow",
+    "rank": "28",
+    "search": "grassiceSnow WarningSoundproof Focus SashLife OrbLight ClayAssault Vest Icy Rock Weakness Policy Occa Berry Choice Specs White Herb Choice Scarf Sitrus Berry Other BlizzardAurora VeilEnergy BallHelping HandProtectIce ShardEarth PowerGiga DrainLeaf StormWood Hammer Other",
+    "raw": "106114",
+    "percent": "5.58",
+    "types": ["grass", "ice"],
+    "name_trans": "Abomasnow",
+    "l": "en"
+  },
+  {
+    "name": "Azumarill",
+    "rank": "29",
+    "search": "waterfairyHuge PowerSap Sipper Thick Fat Sitrus BerryAssault VestChoice BandLife OrbSafety Goggles Lum Berry Other Play RoughAqua JetLiquidationProtectIce SpinnerBelly DrumSuperpower Other",
+    "raw": "124198",
+    "percent": "4.20",
+    "types": ["water", "fairy"],
+    "name_trans": "Azumarill",
+    "l": "en"
+  },
+  {
+    "name": "Tyranitar",
+    "rank": "30",
+    "search": "rockdarkSand StreamUnnerve Assault VestChoice BandWeakness Policy Clear Amulet Choice Specs Choice Scarf Chople Berry Lum Berry Life Orb Loaded Dice Psychic Seed Leftovers Other Rock SlideLow KickTera BlastCrunchAssuranceProtectIce PunchHeavy SlamNothing Earthquake Dragon Dance Stomping Tantrum Body Slam Brick Break Icy Wind Other",
+    "raw": "158728",
+    "percent": "4.19",
+    "types": ["rock", "dark"],
+    "name_trans": "Tyranitar",
+    "l": "en"
+  },
+  {
+    "name": "Murkrow",
+    "rank": "31",
+    "search": "darkflyingPranksterInsomnia Super Luck EvioliteFocus SashOther TailwindHazeFoul PlaySunny DayBrave BirdTauntQuashProtect Other",
+    "raw": "175997",
+    "percent": "4.17",
+    "types": ["dark", "flying"],
+    "name_trans": "Murkrow",
+    "l": "en"
+  },
+  {
+    "name": "Dragapult",
+    "rank": "32",
+    "search": "dragonghostClear BodyInfiltrator Cursed Body Choice BandLife OrbFocus Sash Choice Scarf Dragon Fang Safety Goggles Other Dragon DartsPhantom ForceU-turnTera BlastProtectOutrageSucker Punch Will-O-Wisp Psychic Fangs Draco Meteor Shadow Ball Other",
+    "raw": "228913",
+    "percent": "4.15",
+    "types": ["dragon", "ghost"],
+    "ss": true,
+    "id": 887,
+    "name_trans": "Dragapult",
+    "l": "en"
+  },
+  {
+    "name": "Scizor",
+    "rank": "33",
+    "search": "bugsteelTechnicianSwarm Light Metal Clear AmuletChoice BandLife OrbSafety Goggles Assault Vest Lum Berry Metal Coat Rocky Helmet Sitrus Berry Expert Belt Figy Berry Other Bullet PunchProtectClose CombatU-turnPounceSwords DanceFeintX-ScissorAerial AceTera BlastQuick Guard Tailwind Other",
+    "raw": "164136",
+    "percent": "3.86",
+    "types": ["bug", "steel"],
+    "name_trans": "Scizor",
+    "l": "en"
+  },
+  {
+    "name": "Armarouge",
+    "rank": "34",
+    "search": "firepsychicFlash FireWeak ArmorLife OrbWeakness PolicyTwisted Spoon Covert Cloak Shuca Berry Focus Sash Safety Goggles Leftovers Mirror Herb Wise Glasses White Herb Other Expanding ForceArmor CannonTrick RoomProtectHeat WaveEnergy BallAura SphereWide GuardStored Power Endure Clear Smog Other",
+    "raw": "129675",
+    "percent": "3.84",
+    "types": ["fire", "psychic"],
+    "ss": true,
+    "id": 1004,
+    "l": "en"
+  },
+  {
+    "name": "Brute Bonnet",
+    "rank": "35",
+    "search": "grassdarkProtosynthesisLoaded DiceSitrus Berry Life Orb Yache Berry Choice Scarf Focus Sash Covert Cloak Booster Energy Leftovers Other SporeSucker PunchBullet SeedRage PowderProtectSeed BombCrunchClear SmogOther",
+    "raw": "111281",
+    "percent": "3.57",
+    "types": ["grass", "dark"],
+    "ss": true,
+    "id": 979,
+    "l": "en"
+  },
+  {
+    "name": "Pelipper",
+    "rank": "36",
+    "search": "waterflyingDrizzleKeen Eye Rain Dish Damp RockFocus SashSitrus Berry Safety Goggles Life Orb Choice Scarf Eject Button Covert Cloak Other HurricaneTailwindHydro PumpProtectWide GuardHelping HandQuick Attack Chilling Water Other",
+    "raw": "132024",
+    "percent": "3.43",
+    "types": ["water", "flying"],
+    "name_trans": "Pelipper",
+    "l": "en"
+  },
+  {
+    "name": "Garganacl",
+    "rank": "37",
+    "search": "rockPurifying SaltClear Body Sturdy LeftoversSitrus BerryRocky Helmet Covert Cloak Assault Vest Other Salt CureRecoverProtectWide GuardStealth RockIron DefenseBody PressFissure Heavy Slam Other",
+    "raw": "147056",
+    "percent": "3.39",
+    "types": ["rock"],
+    "ss": true,
+    "id": 965,
+    "l": "en"
+  },
+  {
+    "name": "Farigiraf",
+    "rank": "38",
+    "search": "normalpsychicArmor TailSap Sipper Cud Chew Throat SpraySafety GogglesLife OrbSitrus Berry Mental Herb Focus Sash Colbur Berry Aguav Berry Other Trick RoomHyper VoiceProtectPsychicDazzling GleamHelping HandPsyshockBeat UpImprisonAlly Switch Tera Blast Wish Shadow Ball Thunderbolt Other",
+    "raw": "114716",
+    "percent": "3.37",
+    "types": ["normal", "psychic"],
+    "ss": true,
+    "id": 928,
+    "l": "en"
+  },
+  {
+    "name": "Orthworm",
+    "rank": "39",
+    "search": "steelEarth EaterSand Veil Sitrus BerryLeftoversOther Body PressHeavy SlamIron DefenseShed TailProtectOther",
+    "raw": "66350",
+    "percent": "3.27",
+    "types": ["steel"],
+    "ss": true,
+    "id": 944,
+    "l": "en"
+  },
+  {
+    "name": "Ceruledge",
+    "rank": "40",
+    "search": "fireghostFlash FireWeak Armor Clear AmuletLeftoversAssault VestLife Orb Safety Goggles Sitrus Berry Other Bitter BladeShadow SneakBulk UpProtectTera BlastClose Combat Clear Smog Substitute Other",
+    "raw": "152915",
+    "percent": "2.74",
+    "types": ["fire", "ghost"],
+    "ss": true,
+    "id": 1005,
+    "l": "en"
+  },
+  {
+    "name": "Grimmsnarl",
+    "rank": "41",
+    "search": "darkfairyPranksterFrisk Pickpocket Light ClayRoseli Berry Lagging Tail Focus Sash Covert Cloak Life Orb Wide Lens Other ReflectLight ScreenSpirit BreakParting ShotMisty TerrainFake OutThunder WaveFoul PlayTauntSucker Punch Other",
+    "raw": "131001",
+    "percent": "2.72",
+    "types": ["dark", "fairy"],
+    "ss": true,
+    "id": 861,
+    "name_trans": "Grimmsnarl",
+    "l": "en"
+  },
+  {
+    "name": "Gothitelle",
+    "rank": "42",
+    "search": "psychicShadow TagCompetitive Frisk Sitrus BerryLeftoversAguav Berry Safety Goggles Mental Herb Iapapa Berry Wiki Berry Colbur Berry Mago Berry Other Fake OutPsychicProtectTrick RoomHeal PulseHelping HandTauntCharm Foul Play Thunder Wave Other",
+    "raw": "111345",
+    "percent": "2.17",
+    "types": ["psychic"],
+    "name_trans": "Gothitelle",
+    "l": "en"
+  },
+  {
+    "name": "Rotom-Wash",
+    "rank": "43",
+    "search": "electricwaterLevitateSitrus BerrySafety GogglesWiki BerryChoice Specs Leftovers Life Orb Choice Scarf Covert Cloak Aguav Berry Other Hydro PumpThunderboltProtectWill-O-WispVolt SwitchDischargeNasty PlotTrickTera Blast Other",
+    "raw": "76767",
+    "percent": "2.12",
+    "types": ["electric", "water"],
+    "l": "en"
+  },
+  {
+    "name": "Volcarona",
+    "rank": "44",
+    "search": "bugfireFlame BodySwarm Sitrus BerrySafety GogglesLeftoversRocky Helmet Covert Cloak Focus Sash Wiki Berry Life Orb Wide Lens Other ProtectQuiver DanceGiga DrainFiery DanceHeat WaveRage PowderOverheatStruggle BugBug BuzzWill-O-WispTailwindOther",
+    "raw": "96117",
+    "percent": "2.10",
+    "types": ["bug", "fire"],
+    "name_trans": "Volcarona",
+    "l": "en"
+  },
+  {
+    "name": "Lilligant",
+    "rank": "45",
+    "search": "grassChlorophyllOwn Tempo Leaf Guard Focus SashWide LensCovert Cloak Other After YouLeaf StormSleep PowderProtectEncoreOther",
+    "raw": "71896",
+    "percent": "2.03",
+    "types": ["grass"],
+    "name_trans": "Lilligant",
+    "l": "en"
+  },
+  {
+    "name": "Hatterene",
+    "rank": "46",
+    "search": "psychicfairyMagic BounceHealer Anticipation Life OrbCovert Cloak Focus Sash Sitrus Berry Choice Specs Leftovers Psychic Seed Other Dazzling GleamTrick RoomPsychicProtectMystical FirePsyshock Tera Blast Other",
+    "raw": "70487",
+    "percent": "1.90",
+    "types": ["psychic", "fairy"],
+    "ss": true,
+    "id": 858,
+    "name_trans": "Hatterene",
+    "l": "en"
+  },
+  {
+    "name": "Scream Tail",
+    "rank": "47",
+    "search": "fairypsychicProtosynthesisBooster EnergySitrus Berry Power Band Mental Herb Light Clay Safety Goggles Rocky Helmet Other Play RoughProtectDisableHowlEncorePerish SongDazzling GleamThunder WaveTrick RoomReflectPsychic FangsLight Screen Fake Tears Sunny Day Drain Punch Other",
+    "raw": "96344",
+    "percent": "1.82",
+    "types": ["fairy", "psychic"],
+    "ss": true,
+    "id": 982,
+    "l": "en"
+  },
+  {
+    "name": "Lycanroc",
+    "rank": "48",
+    "search": "rockSand RushKeen Eye Steadfast Focus SashChoice BandOther Rock SlideEndeavorClose CombatProtectAccelerockNothingEndureBulldozeHowlAgility Other",
+    "raw": "53519",
+    "percent": "1.70",
+    "types": ["rock"],
+    "name_trans": "Lycanroc",
+    "l": "en"
+  },
+  {
+    "name": "Mimikyu",
+    "rank": "49",
+    "search": "ghostfairyDisguiseLife OrbSafety GogglesMental Herb Lum Berry Clear Amulet Other Play RoughShadow SneakTrick RoomProtectWill-O-WispCurseWood HammerTauntShadow ClawOther",
+    "raw": "56112",
+    "percent": "1.56",
+    "types": ["ghost", "fairy"],
+    "name_trans": "Mimikyu",
+    "l": "en"
+  },
+  {
+    "name": "Gastrodon",
+    "rank": "50",
+    "search": "watergroundStorm DrainSand Force Sticky Hold LeftoversCovert CloakSitrus BerrySafety Goggles Assault Vest Iapapa Berry Aguav Berry Life Orb Other Earth PowerProtectMuddy WaterRecoverYawnClear SmogIce BeamIcy WindChilling Water Other",
+    "raw": "118412",
+    "percent": "1.55",
+    "types": ["water", "ground"],
+    "name_trans": "Gastrodon",
+    "l": "en"
+  },
+  {
+    "name": "Oranguru",
+    "rank": "51",
+    "search": "normalpsychicTelepathyInner FocusSymbiosis Mental HerbSitrus BerrySafety Goggles Lum Berry Colbur Berry Covert Cloak Leftovers Other Trick RoomInstructProtectEncorePsyshockPsychicYawnFoul PlayBrick Break Taunt Other",
+    "raw": "45897",
+    "percent": "1.50",
+    "types": ["normal", "psychic"],
+    "name_trans": "Oranguru",
+    "l": "en"
+  },
+  {
+    "name": "Iron Jugulis",
+    "rank": "52",
+    "search": "darkflyingQuark DriveBooster EnergyOther TailwindSnarlAir SlashProtectTauntFlamethrowerDark PulseOther",
+    "raw": "40548",
+    "percent": "1.49",
+    "types": ["dark", "flying"],
+    "ss": true,
+    "id": 990,
+    "l": "en"
+  },
+  {
+    "name": "Sylveon",
+    "rank": "53",
+    "search": "fairyPixilateCute Charm Choice SpecsThroat SpraySitrus Berry Leftovers Safety Goggles Life Orb Other Hyper VoiceTera BlastQuick AttackProtectHyper BeamYawnShadow Ball Psych Up Psychic Calm Mind Substitute Other",
+    "raw": "63475",
+    "percent": "1.43",
+    "types": ["fairy"],
+    "name_trans": "Sylveon",
+    "l": "en"
+  },
+  {
+    "name": "Tauros-Paldea-Aqua",
+    "rank": "54",
+    "search": "IntimidateAnger Point Cud Chew Mirror HerbSafety GogglesAssault VestClear Amulet Choice Band Leftovers Sitrus Berry Life Orb Other Close CombatAqua JetProtectWave CrashRaging BullDouble Kick Rock Slide Other",
+    "raw": "35175",
+    "percent": "1.36",
+    "l": "en"
+  },
+  {
+    "name": "Klefki",
+    "rank": "55",
+    "search": "steelfairyPranksterMagician Light ClayRocky Helmet Other Light ScreenReflectDazzling GleamThunder WaveRain DanceTrick Room Foul Play Misty Terrain Other",
+    "raw": "33726",
+    "percent": "1.35",
+    "types": ["steel", "fairy"],
+    "name_trans": "Klefki",
+    "l": "en"
+  },
+  {
+    "name": "Bronzong",
+    "rank": "56",
+    "search": "steelpsychicLevitateHeatproof Heavy Metal Safety GogglesLeftoversMental HerbLum Berry Aguav Berry Sitrus Berry Kasib Berry Figy Berry Colbur Berry Other Trick RoomGyro BallBody PressIron DefenseSafeguardProtectIce Spinner Iron Head Heavy Slam Stomping Tantrum Hypnosis Helping Hand Bulldoze Stored Power Other",
+    "raw": "47859",
+    "percent": "1.27",
+    "types": ["steel", "psychic"],
+    "name_trans": "Bronzong",
+    "l": "en"
+  },
+  {
+    "name": "Vivillon",
+    "rank": "57",
+    "search": "bugflyingFriend GuardCompound Eyes Shield Dust Focus SashSitrus Berry Other Rage PowderPollen PuffProtectTailwindSafeguardSleep PowderOther",
+    "raw": "25603",
+    "percent": "1.24",
+    "types": ["bug", "flying"],
+    "name_trans": "Vivillon",
+    "l": "en"
+  },
+  {
+    "name": "Jumpluff",
+    "rank": "58",
+    "search": "grassflyingChlorophyllInfiltrator Leaf Guard Covert CloakFocus SashWide LensMental Herb Other Sleep PowderTailwindEncoreLeaf StormRage PowderPollen Puff Helping Hand Other",
+    "raw": "26395",
+    "percent": "1.18",
+    "types": ["grass", "flying"],
+    "name_trans": "Jumpluff",
+    "l": "en"
+  },
+  {
+    "name": "Meowscarada",
+    "rank": "59",
+    "search": "grassdarkOvergrowProteanFocus SashChoice BandChoice Scarf Life Orb Miracle Seed Eject Button Other Flower TrickKnock OffProtectSucker PunchU-turnPlay RoughBrick Break Trick Room Taunt Facade Ally Switch Toxic Spikes Other",
+    "raw": "79945",
+    "percent": "1.07",
+    "types": ["grass", "dark"],
+    "ss": true,
+    "id": 908,
+    "l": "en"
+  },
+  {
+    "name": "Sandy Shocks",
+    "rank": "60",
+    "search": "electricgroundProtosynthesisBooster EnergyLife Orb Assault Vest Choice Specs Magnet Choice Scarf Yache Berry Other Earth PowerProtectThunderboltTera BlastGravityThunderVolt SwitchSubstitute Flash Cannon Other",
+    "raw": "62970",
+    "percent": "1.06",
+    "types": ["electric", "ground"],
+    "ss": true,
+    "id": 981,
+    "l": "en"
+  },
+  {
+    "name": "Breloom",
+    "rank": "61",
+    "search": "grassfightingTechnicianPoison Heal Effect Spore Loaded DiceFocus SashToxic Orb Other SporeBullet SeedMach PunchClose CombatAerial AceProtectRock TombOther",
+    "raw": "43609",
+    "percent": "0.98",
+    "types": ["grass", "fighting"],
+    "name_trans": "Breloom",
+    "l": "en"
+  },
+  {
+    "name": "Iron Moth",
+    "rank": "62",
+    "search": "firepoisonQuark DriveBooster EnergyLife Orb Air Balloon Choice Specs Focus Sash Assault Vest Other ProtectEnergy BallHeat WaveSludge WaveAcid SprayFiery DanceDazzling Gleam Psychic Toxic Spikes Overheat Discharge Other",
+    "raw": "57186",
+    "percent": "0.97",
+    "types": ["fire", "poison"],
+    "ss": true,
+    "id": 988,
+    "l": "en"
+  },
+  {
+    "name": "Dachsbun",
+    "rank": "63",
+    "search": "fairyWell-Baked BodyAroma Veil LeftoversSitrus Berry Assault Vest Other Body PressProtectYawnWishPlay RoughSubstituteSnarlHelping Hand Tera Blast Trailblaze Howl Other",
+    "raw": "48588",
+    "percent": "0.96",
+    "types": ["fairy"],
+    "ss": true,
+    "id": 971,
+    "l": "en"
+  },
+  {
+    "name": "Drednaw",
+    "rank": "64",
+    "search": "waterrockSwift SwimStrong Jaw Shell Armor Choice BandLife OrbClear Amulet Focus Sash Assault Vest Other Rock SlideTera BlastEarthquakeLiquidationWaterfallIce SpinnerProtectOther",
+    "raw": "27471",
+    "percent": "0.91",
+    "types": ["water", "rock"],
+    "ss": true,
+    "id": 834,
+    "name_trans": "Drednaw",
+    "l": "en"
+  },
+  {
+    "name": "Iron Treads",
+    "rank": "65",
+    "search": "groundsteelQuark DriveBooster EnergyLife Orb Assault Vest Clear Amulet Expert Belt Choice Scarf Focus Sash Other Iron HeadProtectEarthquakeStomping TantrumMegahornRock SlideBulldozeIce SpinnerHeavy SlamWild Charge Other",
+    "raw": "27653",
+    "percent": "0.82",
+    "types": ["ground", "steel"],
+    "ss": true,
+    "id": 986,
+    "l": "en"
+  },
+  {
+    "name": "Hariyama",
+    "rank": "66",
+    "search": "fightingGutsThick Fat Sheer Force Flame OrbAssault Vest Other Fake OutClose CombatHeadlong RushDetectKnock OffWide GuardBullet PunchFeint Drain Punch Poison Jab Protect Earthquake Other",
+    "raw": "29242",
+    "percent": "0.78",
+    "types": ["fighting"],
+    "name_trans": "Hariyama",
+    "l": "en"
+  },
+  {
+    "name": "Pawmot",
+    "rank": "67",
+    "search": "electricfightingVolt AbsorbNatural CureIron FistFocus SashLeppa Berry Choice Scarf Eject Pack Life Orb Other Fake OutDouble ShockClose CombatRevival BlessingMach PunchNuzzle Ice Punch Other",
+    "raw": "23865",
+    "percent": "0.62",
+    "types": ["electric", "fighting"],
+    "ss": true,
+    "id": 956,
+    "l": "en"
+  },
+  {
+    "name": "Tinkaton",
+    "rank": "68",
+    "search": "fairysteelMold BreakerOwn TempoPickpocket Shuca BerryAssault VestSitrus BerrySafety Goggles Iapapa Berry Metal Coat Life Orb Leftovers Eject Button Occa Berry Covert Cloak Lum Berry Light Clay Other Gigaton HammerFake OutPlay RoughThunder WaveEncoreFeintBrutal SwingHelping HandKnock OffProtect Other",
+    "raw": "44921",
+    "percent": "0.61",
+    "types": ["fairy", "steel"],
+    "ss": true,
+    "id": 1002,
+    "l": "en"
+  },
+  {
+    "name": "Tauros-Paldea-Blaze",
+    "rank": "69",
+    "search": "IntimidateAnger Point Cud Chew Safety GogglesMirror HerbAssault Vest Sitrus Berry Aguav Berry Focus Sash Life Orb Rocky Helmet Eject Pack Choice Scarf Other Close CombatProtectWill-O-WispFlare BlitzRaging BullWild Charge Rock Slide Tera Blast Earthquake Other",
+    "raw": "33470",
+    "percent": "0.51",
+    "l": "en"
+  },
+  {
+    "name": "Tsareena",
+    "rank": "70",
+    "search": "grassQueenly MajestyLeaf Guard Sweet Veil Sitrus BerryAssault VestLoaded DiceLeftoversWide Lens Choice Scarf Life Orb Figy Berry Focus Sash Clear Amulet Mental Herb Other ProtectU-turnPower WhipTrop KickPlay RoughTauntLow KickHigh Jump KickTera BlastBullet SeedHelping HandSynthesisCharm Other",
+    "raw": "36783",
+    "percent": "0.51",
+    "types": ["grass"],
+    "name_trans": "Tsareena",
+    "l": "en"
+  },
+  {
+    "name": "Hydreigon",
+    "rank": "71",
+    "search": "darkdragonLevitateLife OrbSafety GogglesScope LensAssault Vest Choice Scarf Choice Specs Focus Sash Leftovers Razor Claw White Herb Aguav Berry Sitrus Berry Haban Berry Other Draco MeteorDark PulseTailwindProtectSnarlHeat WaveFlash CannonFocus EnergyTera Blast Earth Power U-turn Dragon Pulse Surf Other",
+    "raw": "44275",
+    "percent": "0.49",
+    "types": ["dark", "dragon"],
+    "name_trans": "Hydreigon",
+    "l": "en"
+  },
+  {
+    "name": "Salamence",
+    "rank": "72",
+    "search": "dragonflyingIntimidateMoxie Life OrbClear AmuletLum BerrySafety Goggles Eject Pack Choice Specs Mirror Herb Choice Scarf Sharp Beak Haban Berry Wide Lens Leftovers Roseli Berry Sitrus Berry Scope Lens Choice Band Assault Vest Covert Cloak Other ProtectDraco MeteorTailwindDual WingbeatIron HeadDragon DanceHurricaneHeat WaveDragon ClawAir SlashHydro Pump Earthquake Flamethrower Tera Blast Roost Helping Hand Fire Blast Other",
+    "raw": "33138",
+    "percent": "0.46",
+    "types": ["dragon", "flying"],
+    "name_trans": "Salamence",
+    "l": "en"
+  },
+  {
+    "name": "Espathra",
+    "rank": "73",
+    "search": "psychicSpeed BoostOpportunistFrisk Covert CloakFocus SashIron BallWeakness Policy Leftovers Mental Herb Safety Goggles Light Clay Lum Berry Expert Belt Choice Scarf Mirror Herb Other Lumina CrashProtectDazzling GleamHypnosisSkill SwapStored PowerTrick RoomLow Kick Calm Mind Roost Baton Pass Tera Blast Reflect Other",
+    "raw": "32020",
+    "percent": "0.45",
+    "types": ["psychic"],
+    "ss": true,
+    "id": 927,
+    "l": "en"
+  },
+  {
+    "name": "Iron Valiant",
+    "rank": "74",
+    "search": "fairyfightingQuark DriveBooster EnergyFocus SashAssault Vest Life Orb Clear Amulet Choice Scarf Other Close CombatProtectMoonblastSpirit BreakAura SphereDazzling GleamWide GuardShadow SneakIcy WindThunderbolt Destiny Bond Knock Off Drain Punch Tera Blast Encore Trick Room Shadow Ball Quick Guard Poison Jab Liquidation Swords Dance Focus Blast Leaf Blade Psyshock Psychic Psycho Cut Calm Mind Other",
+    "raw": "49909",
+    "percent": "0.45",
+    "types": ["fairy", "fighting"],
+    "ss": true,
+    "id": 993,
+    "l": "en"
+  },
+  {
+    "name": "Slither Wing",
+    "rank": "75",
+    "search": "bugfightingProtosynthesisAssault VestBooster EnergyLife Orb Clear Amulet Safety Goggles Choice Band Choice Scarf Salac Berry Silver Powder Other Close CombatFirst ImpressionLeech LifeFlare BlitzU-turnFlame ChargeProtectStomping TantrumHeavy SlamWild ChargeBulk Up Lunge Other",
+    "raw": "35108",
+    "percent": "0.43",
+    "types": ["bug", "fighting"],
+    "ss": true,
+    "id": 984,
+    "l": "en"
+  },
+  {
+    "name": "Barraskewda",
+    "rank": "76",
+    "search": "waterSwift SwimPropeller Tail Focus SashChoice BandLife OrbOther LiquidationClose CombatProtectTera BlastAqua JetPsychic FangsOther",
+    "raw": "23130",
+    "percent": "0.42",
+    "types": ["water"],
+    "ss": true,
+    "id": 847,
+    "name_trans": "Barraskewda",
+    "l": "en"
+  },
+  {
+    "name": "Braviary",
+    "rank": "77",
+    "search": "normalflyingDefiantSheer Force Keen Eye Safety GogglesChoice ScarfSitrus BerryYache Berry Lum Berry Leftovers Iapapa Berry Other Brave BirdClose CombatTailwindHelping HandBulk UpRoostProtectRock SlideU-turnOther",
+    "raw": "11188",
+    "percent": "0.42",
+    "types": ["normal", "flying"],
+    "name_trans": "Braviary",
+    "l": "en"
+  },
+  {
+    "name": "Skeledirge",
+    "rank": "78",
+    "search": "fireghostUnawareBlaze LeftoversSafety GogglesSitrus BerryThroat SprayAssault Vest Covert Cloak Weakness Policy Rocky Helmet Choice Specs Iapapa Berry Expert Belt Other Torch SongSlack OffProtectShadow BallWill-O-WispTera BlastYawnEarth Power Hex Encore Other",
+    "raw": "34585",
+    "percent": "0.42",
+    "types": ["fire", "ghost"],
+    "ss": true,
+    "id": 911,
+    "l": "en"
+  },
+  {
+    "name": "Sableye",
+    "rank": "79",
+    "search": "darkghostPranksterKeen Eye Stall Light ClaySafety GogglesRoseli BerryEject Button Focus Sash Lagging Tail Sitrus Berry Leftovers Wide Lens Iron Ball Other EncoreDisableReflectLight ScreenFake OutWill-O-WispQuashFoul PlaySkill SwapSunny Day Thunder Wave Taunt Shadow Sneak Trick Other",
+    "raw": "39683",
+    "percent": "0.39",
+    "types": ["dark", "ghost"],
+    "name_trans": "Sableye",
+    "l": "en"
+  },
+  {
+    "name": "Houndstone",
+    "rank": "80",
+    "search": "ghostSand RushFluffy Life OrbSitrus BerrySpell TagLum BerryKasib Berry Focus Sash Choice Band Safety Goggles Leftovers Choice Scarf Other Last RespectsProtectWill-O-WispPlay RoughShadow SneakHowlScary FaceBody Press Destiny Bond Snarl Ally Switch Other",
+    "raw": "27625",
+    "percent": "0.39",
+    "types": ["ghost"],
+    "ss": true,
+    "id": 925,
+    "l": "en"
+  },
+  {
+    "name": "Stonjourner",
+    "rank": "81",
+    "search": "rockPower SpotFocus SashCovert CloakChoice ScarfLum Berry Assault Vest Choice Band Sitrus Berry Other Wide GuardHeavy SlamRock SlideProtectEarthquakeRock BlastLow KickRock Tomb Other",
+    "raw": "11511",
+    "percent": "0.38",
+    "types": ["rock"],
+    "ss": true,
+    "id": 874,
+    "name_trans": "Stonjourner",
+    "l": "en"
+  },
+  {
+    "name": "Flamigo",
+    "rank": "82",
+    "search": "flyingfightingCostarScrappy Tangled Feet Choice ScarfWhite HerbSafety GogglesFocus SashCovert Cloak Life Orb Choice Band Sitrus Berry Lum Berry Nothing Assault Vest Expert Belt Other Close CombatBrave BirdRoostThroat ChopProtectDetectSubstituteLiquidationAcrobaticsFeintTailwind Wide Guard U-turn Double Kick Other",
+    "raw": "32359",
+    "percent": "0.34",
+    "types": ["flying", "fighting"],
+    "ss": true,
+    "id": 961,
+    "l": "en"
+  },
+  {
+    "name": "Kilowattrel",
+    "rank": "83",
+    "search": "electricflyingCompetitiveWind PowerVolt Absorb Focus SashCovert CloakLife Orb Safety Goggles Choice Specs Magnet Bright Powder Heavy-Duty Boots Other TailwindAir SlashProtectThunderboltDischargeVolt SwitchHurricaneEndeavor Thunder Wave Thunder Eerie Impulse Feather Dance Other",
+    "raw": "33298",
+    "percent": "0.32",
+    "types": ["electric", "flying"],
+    "ss": true,
+    "id": 958,
+    "l": "en"
+  },
+  {
+    "name": "Gallade",
+    "rank": "84",
+    "search": "psychicfightingSharpnessSteadfast Justified Focus SashLife OrbChoice Band Scope Lens Assault Vest Clear Amulet Covert Cloak Choice Scarf Razor Claw Black Belt Safety Goggles Mirror Herb Lum Berry Sitrus Berry Leftovers Other Sacred SwordPsycho CutProtectLeaf BladeTrick RoomShadow SneakWide GuardNight SlashAqua Cutter Quick Guard Feint Thunder Punch Imprison Close Combat Other",
+    "raw": "28013",
+    "percent": "0.31",
+    "types": ["psychic", "fighting"],
+    "name_trans": "Gallade",
+    "l": "en"
+  },
+  {
+    "name": "Rotom-Heat",
+    "rank": "85",
+    "search": "electricfireLevitateIapapa BerryChoice SpecsSitrus BerrySafety GogglesWhite Herb Life Orb Choice Scarf Mago Berry Aguav Berry Wiki Berry Other OverheatThunderboltProtectWill-O-WispNasty PlotVolt SwitchTrickHelping HandDischarge Other",
+    "raw": "21595",
+    "percent": "0.30",
+    "types": ["electric", "fire"],
+    "l": "en"
+  },
+  {
+    "name": "Gardevoir",
+    "rank": "86",
+    "search": "psychicfairyTraceTelepathySynchronize Sitrus BerryChoice ScarfFocus Sash Choice Specs Covert Cloak Assault Vest Kasib Berry Mental Herb Aguav Berry Leftovers Life Orb Other MoonblastTrick RoomProtectPsyshockDazzling GleamPsychicImprisonThunderboltHelping HandIcy Wind Mystical Fire Trick Heal Pulse Aura Sphere Other",
+    "raw": "17531",
+    "percent": "0.29",
+    "types": ["psychic", "fairy"],
+    "name_trans": "Gardevoir",
+    "l": "en"
+  },
+  {
+    "name": "Cetitan",
+    "rank": "87",
+    "search": "iceSlush RushThick FatSheer Force Assault VestSitrus BerryChoice BandClear AmuletLife Orb Other Ice SpinnerHeavy SlamLiquidationIce ShardEarthquakeProtectBelly DrumStomping TantrumSuperpowerPlay RoughOther",
+    "raw": "23320",
+    "percent": "0.26",
+    "types": ["ice"],
+    "ss": true,
+    "id": 948,
+    "l": "en"
+  },
+  {
+    "name": "Hawlucha",
+    "rank": "88",
+    "search": "fightingflyingUnburdenMold Breaker Limber Psychic SeedMirror Herb Lum Berry Other AcrobaticsDrain PunchRock SlideBulk UpSwords DanceClose CombatDetectProtectFlying Press Other",
+    "raw": "11654",
+    "percent": "0.24",
+    "types": ["fighting", "flying"],
+    "name_trans": "Hawlucha",
+    "l": "en"
+  },
+  {
+    "name": "Coalossal",
+    "rank": "89",
+    "search": "rockfireSteam EngineFlame Body Flash Fire Weakness PolicyAbsorb Bulb Eject Button Life Orb Assault Vest Other ProtectRock SlideFlare BlitzHeat WavePower GemEarthquakeExplosionTera BlastEarth PowerTar Shot Substitute Heat Crash Flamethrower Other",
+    "raw": "17242",
+    "percent": "0.24",
+    "types": ["rock", "fire"],
+    "ss": true,
+    "id": 839,
+    "name_trans": "Coalossal",
+    "l": "en"
+  },
+  {
+    "name": "Magnezone",
+    "rank": "90",
+    "search": "electricsteelAnalyticSturdyMagnet Pull Assault VestChoice SpecsSitrus Berry Air Balloon Wiki Berry Covert Cloak Leftovers Life Orb Safety Goggles Other Flash CannonThunderboltVolt SwitchTera BlastProtectDischargeThunder Wave Thunder Other",
+    "raw": "15789",
+    "percent": "0.21",
+    "types": ["electric", "steel"],
+    "name_trans": "Magnezone",
+    "l": "en"
+  },
+  {
+    "name": "Staraptor",
+    "rank": "91",
+    "search": "normalflyingRecklessIntimidateChoice ScarfChoice Band Focus Sash Assault Vest Safety Goggles Other Brave BirdClose CombatU-turnFinal GambitTailwindDouble-EdgeQuick Attack Other",
+    "raw": "13321",
+    "percent": "0.20",
+    "types": ["normal", "flying"],
+    "name_trans": "Staraptor",
+    "l": "en"
+  },
+  {
+    "name": "Bellibolt",
+    "rank": "92",
+    "search": "electricElectromorphosisStatic Damp Assault VestLeftoversWeakness PolicyMagnet Sitrus Berry Other Parabolic ChargeThunderboltMuddy WaterSucker PunchTera BlastProtectVolt SwitchChilling WaterSoakDischargeAcid Spray Other",
+    "raw": "23626",
+    "percent": "0.20",
+    "types": ["electric"],
+    "ss": true,
+    "id": 941,
+    "l": "en"
+  },
+  {
+    "name": "Quaquaval",
+    "rank": "93",
+    "search": "waterfightingMoxieTorrent Clear AmuletLife OrbLeftoversChoice Scarf Assault Vest Choice Band Salac Berry Mystic Water Scope Lens Expert Belt White Herb Focus Sash Room Service Aguav Berry Weakness Policy Other Aqua StepClose CombatProtectIce SpinnerBrave BirdAqua JetBrick BreakDetectBulk UpU-turnBaton Pass Wave Crash Swords Dance Encore Air Slash Other",
+    "raw": "28381",
+    "percent": "0.20",
+    "types": ["water", "fighting"],
+    "ss": true,
+    "id": 914,
+    "l": "en"
+  },
+  {
+    "name": "Arboliva",
+    "rank": "94",
+    "search": "grassnormalSeed SowerHarvestSitrus BerryGrassy Seed Life Orb Leftovers Assault Vest Throat Spray Expert Belt Choice Specs Absorb Bulb Miracle Seed Covert Cloak Wise Glasses Rocky Helmet Aguav Berry Other ProtectGiga DrainEarth PowerHyper VoicePollen PuffStrength SapEnergy BallLeech SeedDazzling GleamTera BlastHelping Hand Grass Knot Terrain Pulse Leaf Storm Other",
+    "raw": "27239",
+    "percent": "0.20",
+    "types": ["grass", "normal"],
+    "ss": true,
+    "id": 937,
+    "l": "en"
+  },
+  {
+    "name": "Toxapex",
+    "rank": "95",
+    "search": "poisonwaterRegeneratorMercilessLimber Black SludgeLeftoversRocky Helmet Assault Vest Safety Goggles Life Orb Other Baneful BunkerInfestationRecoverToxicToxic SpikesHazeChilling WaterWide Guard Sludge Bomb Acid Spray Liquidation Hydro Pump Tera Blast Stockpile Other",
+    "raw": "18779",
+    "percent": "0.19",
+    "types": ["poison", "water"],
+    "name_trans": "Toxapex",
+    "l": "en"
+  },
+  {
+    "name": "Chansey",
+    "rank": "96",
+    "search": "normalHealerNatural CureSerene Grace EvioliteOther Seismic TossLife DewHelping HandSingThunder WaveSkill SwapSoft-BoiledHeal Pulse Light Screen Other",
+    "raw": "3248",
+    "percent": "0.18",
+    "types": ["normal"],
+    "name_trans": "Chansey",
+    "l": "en"
+  },
+  {
+    "name": "Rabsca",
+    "rank": "97",
+    "search": "bugpsychicTelepathySynchronizeMental HerbLeppa BerryCovert Cloak Twisted Spoon Focus Sash Choice Specs Mirror Herb Throat Spray Other Revival BlessingTrick RoomBug BuzzPsyshockPsychicProtectPounce Earth Power Dazzling Gleam Struggle Bug Shadow Ball Other",
+    "raw": "7619",
+    "percent": "0.17",
+    "types": ["bug", "psychic"],
+    "ss": true,
+    "id": 923,
+    "l": "en"
+  },
+  {
+    "name": "Gengar",
+    "rank": "98",
+    "search": "ghostpoisonCursed BodyFocus SashLife Orb Choice Scarf Mirror Herb Other Shadow BallSludge BombHazeAcid SprayProtectIcy WindDazzling Gleam Trick Room Encore Hypnosis Destiny Bond Toxic Taunt Will-O-Wisp Energy Ball Clear Smog Other",
+    "raw": "15312",
+    "percent": "0.17",
+    "types": ["ghost", "poison"],
+    "name_trans": "Gengar",
+    "l": "en"
+  },
+  {
+    "name": "Iron Thorns",
+    "rank": "99",
+    "search": "rockelectricQuark DriveLoaded DiceBooster EnergyAssault VestLeftovers Choice Band Other ProtectWild ChargeRock SlidePin MissileRock BlastThunder PunchTera BlastDragon DanceHeavy SlamSwords DanceEarthquake Low Kick Thunder Fang Substitute Stomping Tantrum Ice Punch Other",
+    "raw": "19307",
+    "percent": "0.17",
+    "types": ["rock", "electric"],
+    "ss": true,
+    "id": 991,
+    "l": "en"
+  },
+  {
+    "name": "Dragalge",
+    "rank": "100",
+    "search": "poisondragonAdaptabilityPoison Point Poison Touch Air BalloonWhite Herb Life Orb Safety Goggles Assault Vest Choice Specs Black Sludge Other Sludge BombDraco MeteorHazeAcid SprayProtectTera BlastOther",
+    "raw": "6583",
+    "percent": "0.14",
+    "types": ["poison", "dragon"],
+    "name_trans": "Dragalge",
+    "l": "en"
+  },
+  {
+    "name": "Pincurchin",
+    "rank": "101",
+    "search": "electricElectric SurgeLightning Rod Terrain ExtenderLeftoversElectric SeedChoice Band Eject Button Sitrus Berry Air Balloon Magnet Assault Vest Eject Pack Choice Specs Black Glasses Other Zing ZapSucker PunchProtectThunder WaveLiquidationRecoverAcupressureCursePoison JabDischargeWild Charge Thunderbolt Chilling Water Surf Toxic Spikes Hydro Pump Other",
+    "raw": "13636",
+    "percent": "0.14",
+    "types": ["electric"],
+    "ss": true,
+    "id": 871,
+    "name_trans": "Pincurchin",
+    "l": "en"
+  },
+  {
+    "name": "Medicham",
+    "rank": "102",
+    "search": "fightingpsychicPure PowerTelepathy Focus SashLife OrbAssault VestSitrus Berry Choice Scarf Other Close CombatFake OutSkill SwapDetectBullet PunchTrick RoomZen HeadbuttPsycho CutIce PunchProtect Other",
+    "raw": "12879",
+    "percent": "0.13",
+    "types": ["fighting", "psychic"],
+    "name_trans": "Medicham",
+    "l": "en"
+  },
+  {
+    "name": "Scovillain",
+    "rank": "103",
+    "search": "grassfireChlorophyllMoodyInsomnia Focus SashEject PackLeftoversChoice ScarfChoice Specs Life Orb Lum Berry Air Balloon Sitrus Berry Other ProtectOverheatFlamethrowerRage PowderWill-O-WispSpicy ExtractSolar BeamLeech SeedTera BlastFire BlastBullet SeedLeaf StormEnergy BallGiga Drain Fire Fang Seed Bomb Other",
+    "raw": "11424",
+    "percent": "0.13",
+    "types": ["grass", "fire"],
+    "ss": true,
+    "id": 939,
+    "l": "en"
+  },
+  {
+    "name": "Lumineon",
+    "rank": "104",
+    "search": "waterStorm DrainSwift Swim Water Veil Wiki BerryCovert Cloak Rindo Berry Other TailwindEncoreChilling WaterAttractOther",
+    "raw": "4070",
+    "percent": "0.12",
+    "types": ["water"],
+    "name_trans": "Lumineon",
+    "l": "en"
+  },
+  {
+    "name": "Bruxish",
+    "rank": "105",
+    "search": "waterpsychicDazzlingStrong Jaw Wonder Skin Lum BerryChoice ScarfColbur Berry Mystic Water Assault Vest Focus Sash Safety Goggles Clear Amulet Bright Powder Other Aqua JetWave CrashProtectTauntPsychic FangsSuper FangTrick RoomSurf Crunch Disable Light Screen Other",
+    "raw": "7439",
+    "percent": "0.12",
+    "types": ["water", "psychic"],
+    "name_trans": "Bruxish",
+    "l": "en"
+  },
+  {
+    "name": "Floatzel",
+    "rank": "106",
+    "search": "waterSwift SwimWater Veil Choice BandLife OrbMystic WaterFocus Sash Other Wave CrashAqua JetIce SpinnerProtectGiga ImpactBrick BreakTauntSubstituteLiquidation Sleep Talk Tera Blast Other",
+    "raw": "8064",
+    "percent": "0.12",
+    "types": ["water"],
+    "name_trans": "Floatzel",
+    "l": "en"
+  },
+  {
+    "name": "Slowking",
+    "rank": "107",
+    "search": "waterpsychicObliviousRegeneratorOwn Tempo LeftoversCovert CloakSafety Goggles Focus Sash Sitrus Berry Colbur Berry Icy Rock Mental Herb Mystic Water Light Clay Aguav Berry Rocky Helmet Other Trick RoomProtectChilling WaterChilly ReceptionSwaggerPsychicFlamethrowerHydro PumpHelping HandSurfHeal Pulse Yawn Ice Beam Psyshock Slack Off Shadow Ball Blizzard Psych Up Other",
+    "raw": "12407",
+    "percent": "0.11",
+    "types": ["water", "psychic"],
+    "name_trans": "Slowking",
+    "l": "en"
+  },
+  {
+    "name": "Goodra",
+    "rank": "108",
+    "search": "dragonSap SipperGooey Hydration Assault VestLeftoversLife Orb Sitrus Berry Wiki Berry Covert Cloak Choice Specs White Herb Dragon Fang Rocky Helmet Other Muddy WaterDraco MeteorThunderboltFlamethrowerProtectAcid SprayDragon PulseSludge BombLife DewIce BeamChilling WaterEarthquake Hydro Pump Bulldoze Thunder Substitute Dragon Claw Power Whip Feint Blizzard Curse Acid Armor Body Press Outrage Dragon Tail Fire Blast Fire Punch Other",
+    "raw": "20594",
+    "percent": "0.11",
+    "types": ["dragon"],
+    "name_trans": "Goodra",
+    "l": "en"
+  },
+  {
+    "name": "Vaporeon",
+    "rank": "109",
+    "search": "waterWater AbsorbHydration LeftoversSitrus BerrySafety GogglesChoice Specs Mystic Water Covert Cloak Mago Berry Wide Lens Other Muddy WaterProtectHazeIce BeamHydro PumpYawnTera BlastCalm MindIcy WindSurfWishDetect Shadow Ball Chilling Water Other",
+    "raw": "14730",
+    "percent": "0.11",
+    "types": ["water"],
+    "name_trans": "Vaporeon",
+    "l": "en"
+  },
+  {
+    "name": "Blissey",
+    "rank": "110",
+    "search": "normalHealerSerene Grace Natural Cure Mirror HerbLeftovers Aguav Berry Other Soft-BoiledSkill SwapStored PowerSeismic TossHyper VoiceThunder Wave Life Dew Other",
+    "raw": "4925",
+    "percent": "0.11",
+    "types": ["normal"],
+    "name_trans": "Blissey",
+    "l": "en"
+  },
+  {
+    "name": "Lucario",
+    "rank": "111",
+    "search": "fightingsteelInner FocusJustifiedSteadfast Life OrbAssault VestExpert Belt Focus Sash Safety Goggles Clear Amulet Choice Band Silk Scarf Choice Scarf Lum Berry Other Bullet PunchExtreme SpeedProtectClose CombatVacuum WaveDrain PunchMeteor MashEarthquakeAura SphereFlash Cannon Detect Steel Beam Swords Dance Howl Thunder Punch Feint Bone Rush Rock Slide Quick Guard Ice Punch Shadow Ball Zen Headbutt Other",
+    "raw": "20086",
+    "percent": "0.10",
+    "types": ["fighting", "steel"],
+    "name_trans": "Lucario",
+    "l": "en"
+  },
+  {
+    "name": "Mudsdale",
+    "rank": "112",
+    "search": "groundOwn TempoStaminaInner FocusAssault VestChoice BandSafety GogglesLeftoversLife Orb Sitrus Berry Other Rock SlideHeavy SlamClose CombatHigh HorsepowerBody PressEarthquakeProtectIron HeadStomping TantrumFissure Counter Iron Defense Other",
+    "raw": "10319",
+    "percent": "0.10",
+    "types": ["ground"],
+    "name_trans": "Mudsdale",
+    "l": "en"
+  },
+  {
+    "name": "Glaceon",
+    "rank": "113",
+    "search": "iceSnow CloakIce BodyBright PowderAssault VestNever-Melt IceLeftovers Life Orb Choice Specs Other Freeze-DryTera BlastBlizzardProtectYawnShadow BallIcy WindIce BeamCalm MindDetect Other",
+    "raw": "6746",
+    "percent": "0.10",
+    "types": ["ice"],
+    "name_trans": "Glaceon",
+    "l": "en"
+  },
+  {
+    "name": "Revavroom",
+    "rank": "114",
+    "search": "steelpoisonOvercoatFilter Clear AmuletChoice ScarfLife Orb Focus Sash Choice Band Other Tera BlastProtectIron HeadShift GearParting ShotSpin OutGunk ShotPoison JabOther",
+    "raw": "5707",
+    "percent": "0.10",
+    "types": ["steel", "poison"],
+    "ss": true,
+    "id": 943,
+    "l": "en"
+  },
+  {
+    "name": "Toxtricity",
+    "rank": "115",
+    "search": "electricpoisonPunk RockMinus Technician Plus Choice SpecsAssault VestThroat SprayChoice Scarf Focus Sash Life Orb Other OverdriveSludge BombBoomburstSnarlTera BlastVolt SwitchProtectNuzzleAcid Spray Other",
+    "raw": "9165",
+    "percent": "0.10",
+    "types": ["electric", "poison"],
+    "ss": true,
+    "id": 849,
+    "name_trans": "Toxtricity",
+    "l": "en"
+  },
+  {
+    "name": "Slowbro",
+    "rank": "116",
+    "search": "waterpsychicObliviousRegeneratorOwn Tempo Chesto BerryEvioliteMystic WaterLeftovers Covert Cloak Safety Goggles Sitrus Berry Colbur Berry Rocky Helmet Figy Berry Other Trick RoomHeal PulseSurfIce BeamSlack OffChilling WaterPsychicProtectFuture SightYawnNasty PlotIcy Wind Thunder Wave Body Press Hydro Pump Iron Defense Other",
+    "raw": "6441",
+    "percent": "0.10",
+    "types": ["water", "psychic"],
+    "name_trans": "Slowbro",
+    "l": "en"
+  },
+  {
+    "name": "Indeedee",
+    "rank": "117",
+    "search": "psychicnormalPsychic SurgeInner Focus Synchronize Psychic SeedChoice SpecsFocus SashLife Orb Choice Scarf Terrain Extender Throat Spray Other PsychicDazzling GleamEncoreHyper VoiceHelping HandTrick RoomTera BlastProtectImprisonFake Out Psyshock Other",
+    "raw": "7518",
+    "percent": "0.09",
+    "types": ["psychic", "normal"],
+    "ss": true,
+    "id": 876,
+    "name_trans": "Indeedee",
+    "l": "en"
+  },
+  {
+    "name": "Hippowdon",
+    "rank": "118",
+    "search": "groundSand StreamSand Force Smooth RockLeftoversSitrus BerryLife Orb Aguav Berry Quick Claw Binding Band Assault Vest Rocky Helmet Other YawnProtectBody PressSlack OffHelping HandEarthquakeStomping TantrumStone EdgeRock SlideStealth RockFissureSand Tomb Iron Head Heavy Slam Rest Sleep Talk Other",
+    "raw": "9084",
+    "percent": "0.09",
+    "types": ["ground"],
+    "name_trans": "Hippowdon",
+    "l": "en"
+  },
+  {
+    "name": "Grafaiai",
+    "rank": "119",
+    "search": "poisonnormalPranksterUnburden Poison Touch Focus SashCovert CloakRed Card Sitrus Berry Wide Lens Lagging Tail Psychic Seed Black Sludge Aguav Berry Air Balloon Rocky Helmet Eject Button Mental Herb Damp Rock Safety Goggles Life Orb Heavy-Duty Boots Bright Powder Other EncoreParting ShotSuper FangDoodleProtectFoul PlayRain DanceKnock OffSwaggerTauntHelping HandToxicScary FaceCopycatSunny DaySwitcherooGunk Shot Acid Spray Other",
+    "raw": "17855",
+    "percent": "0.09",
+    "types": ["poison", "normal"],
+    "ss": true,
+    "id": 969,
+    "l": "en"
+  },
+  {
+    "name": "Lycanroc-Midnight",
+    "rank": "120",
+    "search": "rockNo GuardVital SpiritKeen Eye Scope LensClear AmuletFocus SashRazor Claw Other ProtectRock SlideStone EdgeHelping HandClose CombatPlay RoughThunder PunchEndeavorBulldoze Other",
+    "raw": "10490",
+    "percent": "0.09",
+    "types": ["rock"],
+    "l": "en"
+  },
+  {
+    "name": "Rotom-Mow",
+    "rank": "121",
+    "search": "electricgrassLevitateSitrus BerryChoice ScarfIapapa BerryLife Orb Choice Specs Assault Vest Wiki Berry Leftovers Wide Lens Focus Sash Other Leaf StormProtectThunderboltVolt SwitchWill-O-WispDischargeNasty PlotTrickThunderOther",
+    "raw": "8809",
+    "percent": "0.09",
+    "types": ["electric", "grass"],
+    "l": "en"
+  },
+  {
+    "name": "Raichu",
+    "rank": "122",
+    "search": "electricLightning RodStatic Focus SashAssault VestAir Balloon Light Clay Life Orb Sitrus Berry Other Fake OutNuzzleVolt SwitchThunderFeintThunderboltElectric TerrainEncoreHelping HandSurf Draining Kiss Tera Blast Volt Tackle Discharge Protect Other",
+    "raw": "12605",
+    "percent": "0.08",
+    "types": ["electric"],
+    "name_trans": "Raichu",
+    "l": "en"
+  },
+  {
+    "name": "Cryogonal",
+    "rank": "123",
+    "search": "iceLevitateFocus SashLeftovers Light Clay Bright Powder Sitrus Berry Choice Scarf Other Freeze-DryHazeProtectIcy WindSheer ColdReflect Light Screen Aurora Veil Recover Blizzard Other",
+    "raw": "3115",
+    "percent": "0.07",
+    "types": ["ice"],
+    "name_trans": "Cryogonal",
+    "l": "en"
+  },
+  {
+    "name": "Brambleghast",
+    "rank": "124",
+    "search": "grassghostWind RiderInfiltrator Loaded DiceLife OrbChoice BandFocus SashClear Amulet Choice Scarf Power Herb Other Shadow SneakProtectPower WhipPhantom ForceTera BlastBullet SeedStrength SapSeed BombBeat Up Rapid Spin Other",
+    "raw": "10063",
+    "percent": "0.07",
+    "types": ["grass", "ghost"],
+    "ss": true,
+    "id": 975,
+    "l": "en"
+  },
+  {
+    "name": "Toedscruel",
+    "rank": "125",
+    "search": "groundgrassMycelium MightRocky HelmetOcca BerryLeftoversCovert CloakMental Herb Focus Sash Sitrus Berry Aguav Berry Figy Berry Wiki Berry Other SporeRage PowderEarth PowerGiga DrainTrick RoomProtectLeech SeedKnock Off Energy Ball Reflect Light Screen Dazzling Gleam Other",
+    "raw": "9962",
+    "percent": "0.07",
+    "types": ["ground", "grass"],
+    "ss": true,
+    "id": 1007,
+    "l": "en"
+  },
+  {
+    "name": "Clodsire",
+    "rank": "126",
+    "search": "poisongroundWater AbsorbUnawarePoison Point LeftoversBlack SludgeAguav BerrySafety GogglesChoice Band Covert Cloak Air Balloon Sitrus Berry Figy Berry Iapapa Berry Other RecoverProtectToxicYawnEarthquakeStomping TantrumPoison JabHazeLiquidation Curse Stealth Rock Toxic Spikes Gunk Shot Body Press Acid Spray Stockpile Rock Slide Helping Hand Counter Other",
+    "raw": "13384",
+    "percent": "0.07",
+    "types": ["poison", "ground"],
+    "ss": true,
+    "id": 1009,
+    "l": "en"
+  },
+  {
+    "name": "Stantler",
+    "rank": "127",
+    "search": "normalIntimidateSap Sipper Frisk EvioliteRoom ServiceOther Trick RoomProtectSkill SwapMegahornZen HeadbuttBody SlamDisableHelping HandBulldozeOther",
+    "raw": "3911",
+    "percent": "0.07",
+    "types": ["normal"],
+    "name_trans": "Stantler",
+    "l": "en"
+  },
+  {
+    "name": "Ditto",
+    "rank": "128",
+    "search": "normalImposterLimber Choice ScarfAguav BerryFocus SashLeftovers Quick Claw Life Orb Other NothingTransform",
+    "raw": "6113",
+    "percent": "0.06",
+    "types": ["normal"],
+    "name_trans": "Ditto",
+    "l": "en"
+  },
+  {
+    "name": "Drifblim",
+    "rank": "129",
+    "search": "ghostflyingUnburdenAftermathFlare BoostPsychic SeedRocky HelmetFlame OrbPower Herb Mirror Herb Sitrus Berry Focus Sash Mental Herb Choice Scarf Weakness Policy Petaya Berry Normal Gem Red Card Other Shadow BallHazeTailwindTrick RoomStrength SapNight ShadeWill-O-WispProtectDisableAcrobaticsExplosionDestiny BondThunderbolt Minimize Air Slash Helping Hand Imprison Hypnosis Phantom Force Baton Pass Stored Power Hex Skill Swap Clear Smog Substitute Other",
+    "raw": "9980",
+    "percent": "0.06",
+    "types": ["ghost", "flying"],
+    "name_trans": "Drifblim",
+    "l": "en"
+  },
+  {
+    "name": "Eelektross",
+    "rank": "130",
+    "search": "electricLevitateLife OrbLeftoversChoice SpecsAssault VestPunching Glove Aguav Berry Shuca Berry Choice Band Other Drain PunchWild ChargeLiquidationVolt SwitchProtectCoilFacadeFlamethrowerDischargeThunderboltDragon PulseGrass KnotFlash Cannon Giga Drain Thunder Punch Heavy Slam Tera Blast Fire Punch Thunder Close Combat U-turn Other",
+    "raw": "9645",
+    "percent": "0.06",
+    "types": ["electric"],
+    "name_trans": "Eelektross",
+    "l": "en"
+  },
+  {
+    "name": "Dudunsparce",
+    "rank": "131",
+    "search": "normalSerene GraceRattledRun Away Weakness PolicyChoice BandAssault VestSitrus Berry Leftovers Wide Lens Choice Scarf Silk Scarf Choice Specs Rocky Helmet Other Rock SlideHyper DrillProtectBody SlamStored PowerBoomburstSmart StrikeIce SpinnerRoostBaton PassTailwindHyper Voice Glare Coil Fire Blast Agility Nothing Blizzard Yawn Headbutt Calm Mind Ancient Power Bite Drill Run Flamethrower Other",
+    "raw": "10031",
+    "percent": "0.06",
+    "types": ["normal"],
+    "ss": true,
+    "id": 917,
+    "l": "en"
+  },
+  {
+    "name": "Florges",
+    "rank": "132",
+    "search": "fairySymbiosisFlower VeilLife OrbSitrus BerryLeftoversChoice ScarfMirror HerbCovert Cloak Assault Vest Lum Berry Loaded Dice Choice Specs Booster Energy Safety Goggles Other Pollen PuffMoonblastHelping HandProtectDazzling GleamSkill SwapCalm MindBaton PassSynthesisChilling Water Light Screen Petal Blizzard Energy Ball Trick Misty Terrain Tera Blast Giga Drain Charm Other",
+    "raw": "9744",
+    "percent": "0.06",
+    "types": ["fairy"],
+    "name_trans": "Florges",
+    "l": "en"
+  },
+  {
+    "name": "Lycanroc-Dusk",
+    "rank": "133",
+    "search": "rockTough ClawsHard StoneFocus SashLife OrbChoice BandChoice Scarf Other Close CombatRock SlideAccelerockProtectEndeavorDrill Run Play Rough Psychic Fangs Iron Head Helping Hand Other",
+    "raw": "3894",
+    "percent": "0.06",
+    "types": ["rock"],
+    "l": "en"
+  },
+  {
+    "name": "Umbreon",
+    "rank": "134",
+    "search": "darkInner FocusSynchronizeLeftoversMirror HerbLight ClaySafety GogglesSitrus Berry Black Glasses Aguav Berry Other Foul PlayMoonlightSnarlProtectYawnTauntReflectSkill SwapLight ScreenWishCalm Mind Baby-Doll Eyes Helping Hand Stored Power Assurance Other",
+    "raw": "12083",
+    "percent": "0.06",
+    "types": ["dark"],
+    "name_trans": "Umbreon",
+    "l": "en"
+  },
+  {
+    "name": "Noivern",
+    "rank": "135",
+    "search": "flyingdragonFriskTelepathyInfiltratorFocus SashWide LensMirror HerbThroat Spray Covert Cloak Choice Specs Choice Scarf Heavy-Duty Boots Life Orb Safety Goggles Other TailwindDraco MeteorBoomburstSuper FangTauntProtectAir SlashHurricaneHeat WaveShadow Ball Flamethrower Dragon Pulse Other",
+    "raw": "6026",
+    "percent": "0.05",
+    "types": ["flying", "dragon"],
+    "name_trans": "Noivern",
+    "l": "en"
+  },
+  {
+    "name": "Luxray",
+    "rank": "136",
+    "search": "electricIntimidateGuts Rivalry Sitrus BerryAssault VestClear Amulet Safety Goggles Leftovers Rocky Helmet Choice Band Flame Orb Other Volt SwitchWild ChargeThunder WaveBaby-Doll EyesSnarlTera BlastThunderboltPlay RoughProtectThunder Howl Helping Hand Ice Fang Other",
+    "raw": "5379",
+    "percent": "0.05",
+    "types": ["electric"],
+    "name_trans": "Luxray",
+    "l": "en"
+  },
+  {
+    "name": "Oricorio-Pom-Pom",
+    "rank": "137",
+    "search": "electricflyingDancerFocus SashCovert CloakBright PowderSitrus BerryLeftovers Life Orb Lum Berry Weakness Policy Clear Amulet Other Revelation DanceProtectTailwindAir SlashQuiver DanceBaton PassIcy WindHelping Hand Hurricane Roost Taunt Other",
+    "raw": "6070",
+    "percent": "0.05",
+    "types": ["electric", "flying"],
+    "l": "en"
+  },
+  {
+    "name": "Copperajah",
+    "rank": "138",
+    "search": "steelSheer ForceHeavy Metal Life OrbAssault Vest Choice Band Other Iron HeadPlay RoughRock SlideZen HeadbuttHigh HorsepowerSuperpower Protect Rock Blast Heavy Slam Other",
+    "raw": "2886",
+    "percent": "0.05",
+    "types": ["steel"],
+    "ss": true,
+    "id": 879,
+    "name_trans": "Copperajah",
+    "l": "en"
+  },
+  {
+    "name": "Pachirisu",
+    "rank": "139",
+    "search": "electricVolt AbsorbRun Away Pickup Sitrus BerryRocky HelmetFocus Sash Safety Goggles Air Balloon Iapapa Berry Mental Herb Other Follow MeNuzzleSuper FangProtectEncoreHelping HandFake TearsElectric Terrain Other",
+    "raw": "8076",
+    "percent": "0.05",
+    "types": ["electric"],
+    "name_trans": "Pachirisu",
+    "l": "en"
+  },
+  {
+    "name": "Beartic",
+    "rank": "140",
+    "search": "iceSwift SwimSlush RushSnow Cloak Wide LensLife OrbAssault VestLum Berry Choice Band Clear Amulet Focus Sash Other Icicle CrashProtectRock SlideLow KickLiquidationClose CombatAqua JetEarthquakeSwords Dance Play Rough Other",
+    "raw": "4808",
+    "percent": "0.05",
+    "types": ["ice"],
+    "name_trans": "Beartic",
+    "l": "en"
+  },
+  {
+    "name": "Salazzle",
+    "rank": "141",
+    "search": "poisonfireObliviousCorrosionEject PackFocus SashLife Orb Black Sludge Air Balloon Wide Lens Other Fake OutOverheatProtectEncoreAcid SprayToxicHeat WaveDisableSludge BombFlamethrowerEndeavorPoison GasWill-O-WispHelping Hand Other",
+    "raw": "7610",
+    "percent": "0.05",
+    "types": ["poison", "fire"],
+    "name_trans": "Salazzle",
+    "l": "en"
+  },
+  {
+    "name": "Krookodile",
+    "rank": "142",
+    "search": "grounddarkIntimidateAnger PointMoxie Salac BerryChoice ScarfAssault VestClear AmuletRed Card Choice Band Focus Sash Life Orb Sitrus Berry Aguav Berry Leftovers Other EarthquakeRock SlideProtectCrunchPower TripClose CombatGunk Shot Endure Snarl Brick Break Stone Edge Tera Blast Bulldoze Stomping Tantrum Fire Fang Aqua Tail Other",
+    "raw": "10669",
+    "percent": "0.05",
+    "types": ["ground", "dark"],
+    "name_trans": "Krookodile",
+    "l": "en"
+  },
+  {
+    "name": "Ursaring",
+    "rank": "143",
+    "search": "normalGutsUnnerveQuick Feet Flame OrbEvioliteLeftovers Other High HorsepowerProtectBody SlamClose CombatFacadeEarthquakeCrunchFake TearsRock TombDouble-EdgeBelly DrumShadow ClawPlay RoughIce Punch Helping Hand Other",
+    "raw": "4471",
+    "percent": "0.05",
+    "types": ["normal"],
+    "name_trans": "Ursaring",
+    "l": "en"
+  },
+  {
+    "name": "Clawitzer",
+    "rank": "144",
+    "search": "waterMega LauncherLife OrbChoice SpecsAssault VestExpert Belt Mystic Water Choice Scarf Leftovers Other Aura SphereDragon PulseWater PulseDark PulseProtectMuddy WaterIce BeamHeal Pulse Other",
+    "raw": "7931",
+    "percent": "0.05",
+    "types": ["water"],
+    "name_trans": "Clawitzer",
+    "l": "en"
+  },
+  {
+    "name": "Glalie",
+    "rank": "145",
+    "search": "iceMoodyInner Focus Ice Body LeftoversChesto Berry Focus Sash Sitrus Berry Other ProtectSubstituteFreeze-DryEarthquakeSheer ColdDisable Rest Blizzard Double Team Other",
+    "raw": "1970",
+    "percent": "0.05",
+    "types": ["ice"],
+    "name_trans": "Glalie",
+    "l": "en"
+  },
+  {
+    "name": "Appletun",
+    "rank": "146",
+    "search": "grassdragonThick FatRipenGluttony LeftoversCovert CloakMiracle SeedSitrus Berry Choice Specs Aguav Berry Other ProtectLeech SeedDraco MeteorBody PressIron DefenseRecoverApple AcidDragon PulseTera BlastEnergy BallOther",
+    "raw": "6379",
+    "percent": "0.04",
+    "types": ["grass", "dragon"],
+    "ss": true,
+    "id": 842,
+    "name_trans": "Appletun",
+    "l": "en"
+  },
+  {
+    "name": "Lokix",
+    "rank": "147",
+    "search": "bugdarkTinted LensSwarm Life OrbSilver PowderWhite Herb Choice Band Focus Sash Muscle Band Assault Vest Other First ImpressionSucker PunchLeech LifeU-turnProtectDetectThroat ChopAxe KickOther",
+    "raw": "5862",
+    "percent": "0.04",
+    "types": ["bug", "dark"],
+    "ss": true,
+    "id": 921,
+    "l": "en"
+  },
+  {
+    "name": "Toxicroak",
+    "rank": "148",
+    "search": "poisonfightingDry SkinPoison Touch Anticipation Assault VestSafety GogglesFocus SashLife Orb Leftovers Black Sludge Other Drain PunchFake OutSucker PunchGunk ShotPoison JabClose CombatBulk UpProtectBullet Punch Taunt Toxic Quick Guard Earthquake Swords Dance Other",
+    "raw": "6284",
+    "percent": "0.04",
+    "types": ["poison", "fighting"],
+    "name_trans": "Toxicroak",
+    "l": "en"
+  },
+  {
+    "name": "Slaking",
+    "rank": "149",
+    "search": "normalTruantLife OrbAssault VestClear AmuletChoice BandLeftoversLum Berry Bright Powder Aguav Berry Punching Glove Safety Goggles Other Body SlamDrain PunchGunk ShotEarthquakeIce PunchSucker PunchBulk UpProtectShadow ClawGiga ImpactPlay RoughSlack OffFacadeThroat ChopHeavy Slam Rock Slide Fire Punch Hammer Arm Brick Break Poison Jab Zen Headbutt Other",
+    "raw": "10875",
+    "percent": "0.04",
+    "types": ["normal"],
+    "name_trans": "Slaking",
+    "l": "en"
+  },
+  {
+    "name": "Misdreavus",
+    "rank": "150",
+    "search": "ghostLevitateEvioliteOther Trick RoomPain SplitWill-O-WispFoul PlayProtectNight ShadeHexTauntPerish SongHelping HandShadow Ball Other",
+    "raw": "4976",
+    "percent": "0.04",
+    "types": ["ghost"],
+    "name_trans": "Misdreavus",
+    "l": "en"
+  },
+  {
+    "name": "Forretress",
+    "rank": "151",
+    "search": "bugsteelOvercoatSturdyLeftoversRocky Helmet Assault Vest Sitrus Berry Light Clay Room Service Choice Band Life Orb Other Body PressGyro BallIron DefenseProtectExplosionVolt SwitchHeavy SlamRestCurse Stealth Rock Earthquake Ice Spinner Light Screen Rock Slide Counter Other",
+    "raw": "3977",
+    "percent": "0.04",
+    "types": ["bug", "steel"],
+    "name_trans": "Forretress",
+    "l": "en"
+  },
+  {
+    "name": "Bombirdier",
+    "rank": "152",
+    "search": "flyingdarkRocky PayloadBig Pecks Keen Eye Assault VestRoom ServiceSitrus BerryFocus SashChoice ScarfCovert Cloak Choice Band Life Orb Hard Stone Other Rock SlideKnock OffSucker PunchBrave BirdTailwindAcrobaticsProtectParting ShotRock Blast U-turn Dual Wingbeat Other",
+    "raw": "6001",
+    "percent": "0.04",
+    "types": ["flying", "dark"],
+    "ss": true,
+    "id": 959,
+    "l": "en"
+  },
+  {
+    "name": "Leafeon",
+    "rank": "153",
+    "search": "grassChlorophyllLeaf Guard Life OrbClear AmuletNormal GemLoaded Dice Assault Vest Scope Lens Other Leaf BladeSwords DanceTera BlastDetectDouble-EdgeX-ScissorProtectQuick AttackHelping HandBullet Seed Yawn Synthesis Double Kick Other",
+    "raw": "5713",
+    "percent": "0.04",
+    "types": ["grass"],
+    "name_trans": "Leafeon",
+    "l": "en"
+  },
+  {
+    "name": "Frosmoth",
+    "rank": "154",
+    "search": "icebugIce ScalesShield Dust LeftoversFocus SashLight Clay Choice Scarf Assault Vest Life Orb Weakness Policy Choice Specs Never-Melt Ice Sitrus Berry Wiki Berry Heavy-Duty Boots Other BlizzardBug BuzzIcy WindIce BeamProtectGiga DrainWide GuardStruggle BugQuiver DanceTera BlastTailwindDazzling GleamAurora Veil Other",
+    "raw": "7533",
+    "percent": "0.04",
+    "types": ["ice", "bug"],
+    "ss": true,
+    "id": 873,
+    "name_trans": "Frosmoth",
+    "l": "en"
+  },
+  {
+    "name": "Weavile",
+    "rank": "155",
+    "search": "darkicePressurePickpocketFocus SashAssault VestLife OrbWide Lens Choice Band Other Fake OutIce SpinnerProtectIce ShardBeat UpAssuranceFoul PlayIcicle CrashIcy WindNight SlashShadow ClawSnarl Helping Hand Spite Brick Break Other",
+    "raw": "3357",
+    "percent": "0.04",
+    "types": ["dark", "ice"],
+    "name_trans": "Weavile",
+    "l": "en"
+  },
+  {
+    "name": "Rotom-Frost",
+    "rank": "156",
+    "search": "electriciceLevitateAssault VestFocus SashChoice SpecsChoice ScarfAguav Berry Sitrus Berry Wide Lens Blunder Policy Other BlizzardDischargeThunderboltWill-O-WispTera BlastVolt SwitchDark PulseShadow BallProtectHelping Hand Other",
+    "raw": "2828",
+    "percent": "0.03",
+    "types": ["electric", "ice"],
+    "l": "en"
+  },
+  {
+    "name": "Bisharp",
+    "rank": "157",
+    "search": "darksteelDefiantInner FocusPressure EvioliteOther Sucker PunchIron HeadSwords DanceProtectNight SlashGuillotineAssuranceTera BlastAerial AceBrick Break Thunder Wave Nothing Taunt Poison Jab Other",
+    "raw": "6213",
+    "percent": "0.03",
+    "types": ["dark", "steel"],
+    "name_trans": "Bisharp",
+    "l": "en"
+  },
+  {
+    "name": "Haxorus",
+    "rank": "158",
+    "search": "dragonMold BreakerUnnerve Rivalry Lum BerryLife OrbChoice ScarfChoice Band Clear Amulet Focus Sash Leftovers Scope Lens Mirror Herb Weakness Policy Dragon Fang Other Dragon ClawEarthquakeProtectClose CombatIron HeadDragon DanceFirst ImpressionRock SlideTera BlastOutragePoison JabBreaking Swipe Aqua Tail Giga Impact Focus Energy Other",
+    "raw": "8463",
+    "percent": "0.03",
+    "types": ["dragon"],
+    "name_trans": "Haxorus",
+    "l": "en"
+  },
+  {
+    "name": "Crabominable",
+    "rank": "159",
+    "search": "fightingiceIron FistHyper CutterAnger Point Clear AmuletLife OrbPunching Glove Safety Goggles Choice Band Focus Sash Other Ice HammerClose CombatDrain PunchCrabhammerThunder PunchProtectBulk Up Wide Guard Other",
+    "raw": "3628",
+    "percent": "0.03",
+    "types": ["fighting", "ice"],
+    "name_trans": "Crabominable",
+    "l": "en"
+  },
+  {
+    "name": "Tropius",
+    "rank": "160",
+    "search": "grassflyingHarvestSolar Power Chlorophyll Sitrus BerryOther Leech SeedProtectAir SlashTailwindSubstituteLeaf BladeWide GuardCurseGiga DrainHelping Hand Other",
+    "raw": "3634",
+    "percent": "0.03",
+    "types": ["grass", "flying"],
+    "name_trans": "Tropius",
+    "l": "en"
+  },
+  {
+    "name": "Jolteon",
+    "rank": "161",
+    "search": "electricVolt AbsorbQuick Feet Focus SashLoaded DiceChoice SpecsMagnet Life Orb Shuca Berry Flame Orb Heavy-Duty Boots Choice Scarf Other ThunderboltTera BlastShadow BallVolt SwitchProtectThunder WavePin MissileDetectCharmEerie ImpulseDischarge Calm Mind Fake Tears Other",
+    "raw": "7453",
+    "percent": "0.03",
+    "types": ["electric"],
+    "name_trans": "Jolteon",
+    "l": "en"
+  },
+  {
+    "name": "Avalugg",
+    "rank": "162",
+    "search": "iceOwn TempoSturdyIce BodyLeftoversRocky HelmetGanlon BerryHeavy-Duty Boots Assault Vest Other Body PressRecoverIron DefenseAvalancheIce SpinnerWide GuardHeavy SlamCurseProtectEarthquakeIcy WindIcicle Crash Other",
+    "raw": "4487",
+    "percent": "0.03",
+    "types": ["ice"],
+    "name_trans": "Avalugg",
+    "l": "en"
+  },
+  {
+    "name": "Electrode",
+    "rank": "163",
+    "search": "electricStaticAftermathSoundproofFocus SashCovert CloakWide LensMagnet Air Balloon Choice Band Choice Scarf Normal Gem Terrain Extender Choice Specs Other Thunder WaveVolt SwitchTauntFoul PlayProtectThunderboltEerie ImpulseDischargeElectric TerrainMetal SoundScreechExplosionTera BlastLight ScreenThunderScary Face Other",
+    "raw": "5657",
+    "percent": "0.03",
+    "types": ["electric"],
+    "name_trans": "Electrode",
+    "l": "en"
+  },
+  {
+    "name": "Spiritomb",
+    "rank": "164",
+    "search": "ghostdarkPressureInfiltratorSafety GogglesLeftoversRoseli Berry Lum Berry Rocky Helmet Sitrus Berry Iron Ball Mental Herb Kasib Berry Assault Vest Other Trick RoomWill-O-WispPain SplitSnarlFoul PlayDark PulseDisableMementoShadow SneakTauntAlly SwitchNight ShadeHelping Hand Protect Shadow Ball Imprison Other",
+    "raw": "4791",
+    "percent": "0.03",
+    "types": ["ghost", "dark"],
+    "name_trans": "Spiritomb",
+    "l": "en"
+  },
+  {
+    "name": "Espeon",
+    "rank": "165",
+    "search": "psychicMagic BounceSynchronize Choice SpecsLife OrbFocus Sash Hard Stone Expert Belt Kasib Berry Wise Glasses Aguav Berry Twisted Spoon Covert Cloak Choice Scarf Sitrus Berry Other PsychicDazzling GleamProtectShadow BallPower GemPsyshockTrick RoomTera BlastCopycatCalm Mind Helping Hand Light Screen Reflect Skill Swap Detect Morning Sun Other",
+    "raw": "5346",
+    "percent": "0.03",
+    "types": ["psychic"],
+    "name_trans": "Espeon",
+    "l": "en"
+  },
+  {
+    "name": "Cyclizar",
+    "rank": "166",
+    "search": "dragonnormalRegeneratorShed Skin Choice ScarfSitrus BerryHeat Rock Mental Herb Aguav Berry Leftovers Wiki Berry Rocky Helmet Choice Band Covert Cloak Other Shed TailKnock OffBreaking SwipeU-turnDragon ClawProtectIce SpinnerIron HeadDraco MeteorTera BlastDragon Tail Sunny Day Taunt Giga Impact Other",
+    "raw": "8433",
+    "percent": "0.03",
+    "types": ["dragon", "normal"],
+    "ss": true,
+    "id": 953,
+    "l": "en"
+  },
+  {
+    "name": "Altaria",
+    "rank": "167",
+    "search": "dragonflyingCloud NineNatural CureSafety GogglesLeftoversHeavy-Duty BootsWide Lens Sitrus Berry Mental Herb Aguav Berry Covert Cloak Expert Belt Iapapa Berry Other HazeWill-O-WispTailwindRoostBrave BirdPerish SongProtectCotton GuardDraco MeteorDazzling GleamFire SpinHelping Hand Dragon Dance Dragon Claw Dragon Breath Other",
+    "raw": "5667",
+    "percent": "0.03",
+    "types": ["dragon", "flying"],
+    "name_trans": "Altaria",
+    "l": "en"
+  },
+  {
+    "name": "Masquerain",
+    "rank": "168",
+    "search": "bugflyingIntimidateUnnerve Focus SashCovert CloakOcca Berry Assault Vest Sitrus Berry Eject Button Safety Goggles Iapapa Berry Other TailwindAqua JetProtectHelping HandBug BuzzIcy WindStruggle BugChilling WaterSticky WebQuiver DanceAir SlashHazeU-turn Hurricane Rain Dance Soak Other",
+    "raw": "6397",
+    "percent": "0.03",
+    "types": ["bug", "flying"],
+    "name_trans": "Masquerain",
+    "l": "en"
+  },
+  {
+    "name": "Cloyster",
+    "rank": "169",
+    "search": "watericeSkill LinkOvercoatShell Armor White HerbFocus SashLoaded DiceClear Amulet Life Orb Other Icicle SpearRock BlastShell SmashProtectLiquidationWaterfallIce ShardHelping HandDrill Run Toxic Spikes Other",
+    "raw": "5324",
+    "percent": "0.03",
+    "types": ["water", "ice"],
+    "name_trans": "Cloyster",
+    "l": "en"
+  },
+  {
+    "name": "Slowpoke",
+    "rank": "170",
+    "search": "waterpsychicObliviousRegenerator EvioliteOther Trick RoomHeal PulseSurfYawnSunny DayOther",
+    "raw": "1129",
+    "percent": "0.03",
+    "types": ["water", "psychic"],
+    "name_trans": "Slowpoke",
+    "l": "en"
+  },
+  {
+    "name": "Palossand",
+    "rank": "171",
+    "search": "ghostgroundWater CompactionSand Veil Assault VestLeftovers Absorb Bulb Other Earth PowerShadow BallGiga DrainFlash CannonShore UpProtectOther",
+    "raw": "2656",
+    "percent": "0.02",
+    "types": ["ghost", "ground"],
+    "name_trans": "Palossand",
+    "l": "en"
+  },
+  {
+    "name": "Scyther",
+    "rank": "172",
+    "search": "bugflyingTechnicianSwarmSteadfast EvioliteFocus Sash Other TailwindAerial AcePounceProtectU-turnHelping HandLight ScreenX-ScissorSwords DanceTrailblazeFeintQuick GuardClose CombatOther",
+    "raw": "3392",
+    "percent": "0.02",
+    "types": ["bug", "flying"],
+    "name_trans": "Scyther",
+    "l": "en"
+  },
+  {
+    "name": "Dugtrio",
+    "rank": "173",
+    "search": "groundArena TrapSand ForceSand Veil Focus SashLife OrbChoice ScarfClear Amulet Choice Band Other ProtectEarthquakeSucker PunchStomping TantrumCharmBulldozeFoul PlayHelping HandRock SlideFissureStone EdgeMementoEndureNothing Final Gambit Swords Dance Dig Other",
+    "raw": "3059",
+    "percent": "0.02",
+    "types": ["ground"],
+    "name_trans": "Dugtrio",
+    "l": "en"
+  },
+  {
+    "name": "Lurantis",
+    "rank": "174",
+    "search": "grassContraryLeaf Guard LeftoversSitrus BerryAssault VestChoice ScarfHeavy-Duty Boots Life Orb Aguav Berry Big Root Choice Band Wide Lens Miracle Seed Other Leaf StormTera BlastPollen PuffProtectPoison JabGiga DrainDefogSynthesis Leaf Blade Leech Life Petal Blizzard Other",
+    "raw": "5519",
+    "percent": "0.02",
+    "types": ["grass"],
+    "name_trans": "Lurantis",
+    "l": "en"
+  },
+  {
+    "name": "Flapple",
+    "rank": "175",
+    "search": "grassdragonHustleRipenGluttony Liechi BerryChoice BandChoice ScarfFocus Sash Miracle Seed Life Orb Other Grav AppleSucker PunchProtectAcrobaticsU-turnDragon RushOutrageTera BlastDragon Dance Other",
+    "raw": "3101",
+    "percent": "0.02",
+    "types": ["grass", "dragon"],
+    "ss": true,
+    "id": 841,
+    "name_trans": "Flapple",
+    "l": "en"
+  },
+  {
+    "name": "Heracross",
+    "rank": "176",
+    "search": "bugfightingGutsMoxieSwarm Flame OrbLoaded DiceChoice Scarf Expert Belt Clear Amulet Other ProtectClose CombatPin MissileRock BlastMegahornBullet SeedRock SlideEarthquakeFlingShadow Claw Facade Tera Blast Trailblaze Other",
+    "raw": "5455",
+    "percent": "0.02",
+    "types": ["bug", "fighting"],
+    "name_trans": "Heracross",
+    "l": "en"
+  },
+  {
+    "name": "Golduck",
+    "rank": "177",
+    "search": "waterSwift SwimCloud NineDamp Life OrbChoice SpecsMystic Water Assault Vest Choice Scarf Leftovers Focus Sash Sitrus Berry Light Clay Other Ice BeamHydro PumpGrass KnotClear SmogSurfProtectPsychicEncorePower GemNasty PlotChilling WaterYawnIcy Wind Rain Dance Light Screen Tera Blast Other",
+    "raw": "3767",
+    "percent": "0.02",
+    "types": ["water"],
+    "name_trans": "Golduck",
+    "l": "en"
+  },
+  {
+    "name": "Muk",
+    "rank": "178",
+    "search": "poisonPoison TouchStenchSticky HoldLeftoversBlack SludgeAssault Vest Punching Glove Other Poison JabShadow SneakDrain PunchProtectMinimizeCurseDisableHelping HandToxicFire PunchSubstituteGunk ShotTera Blast Ice Punch Other",
+    "raw": "4761",
+    "percent": "0.02",
+    "types": ["poison"],
+    "name_trans": "Muk",
+    "l": "en"
+  },
+  {
+    "name": "Zoroark",
+    "rank": "179",
+    "search": "darkIllusionChoice BandFocus SashChoice Specs Life Orb Expert Belt Choice Scarf Other Sucker PunchU-turnLow KickDark PulseKnock OffProtectSludge BombNight DazeFlamethrowerEncoreCrunchNasty PlotTera Blast Helping Hand Counter Grass Knot Trick Hyper Voice Psychic Focus Blast Other",
+    "raw": "4980",
+    "percent": "0.02",
+    "types": ["dark"],
+    "name_trans": "Zoroark",
+    "l": "en"
+  },
+  {
+    "name": "Sandaconda",
+    "rank": "180",
+    "search": "groundSand VeilShed SkinSand SpitBright PowderLeftoversSitrus BerryScope Lens Rocky Helmet Assault Vest Other EarthquakeBody PressMinimizeProtectGlareCoilRock SlideIron DefenseStone EdgeDrill RunBulldoze Other",
+    "raw": "1362",
+    "percent": "0.02",
+    "types": ["ground"],
+    "ss": true,
+    "id": 844,
+    "name_trans": "Sandaconda",
+    "l": "en"
+  },
+  {
+    "name": "Greedent",
+    "rank": "181",
+    "search": "normalCheek PouchGluttonySitrus BerryIapapa BerryApicot Berry Other Belly DrumProtectBody SlamPsychic FangsTera BlastEarthquakeStomping TantrumCrunchSeed Bomb Stuff Cheeks Thief Body Press Other",
+    "raw": "2624",
+    "percent": "0.02",
+    "types": ["normal"],
+    "ss": true,
+    "id": 820,
+    "name_trans": "Greedent",
+    "l": "en"
+  },
+  {
+    "name": "Alomomola",
+    "rank": "182",
+    "search": "waterRegeneratorHealerHydration Eject ButtonLeftoversSitrus BerryRocky Helmet Bright Powder Binding Band Other Helping HandWide GuardAqua JetChilling WaterIcy WindWhirlpoolSoakWishAqua RingLight ScreenMirror CoatProtect Pain Split Other",
+    "raw": "1742",
+    "percent": "0.02",
+    "types": ["water"],
+    "name_trans": "Alomomola",
+    "l": "en"
+  },
+  {
+    "name": "Mismagius",
+    "rank": "183",
+    "search": "ghostLevitateFocus SashChoice ScarfChoice SpecsLeftovers Colbur Berry Other Shadow BallDazzling GleamIcy WindProtectHexMystical FireEnergy BallTera BlastTrick RoomWill-O-WispPower GemSkill SwapDark PulseTaunt Nasty Plot Other",
+    "raw": "1997",
+    "percent": "0.01",
+    "types": ["ghost"],
+    "name_trans": "Mismagius",
+    "l": "en"
+  },
+  {
+    "name": "Ampharos",
+    "rank": "184",
+    "search": "electricStaticPlusAssault VestMagnetChoice SpecsLeftovers Mental Herb Shuca Berry Life Orb Light Clay Sitrus Berry Other Dazzling GleamThunderboltElectrowebProtectDischargePower GemVolt SwitchFocus BlastTera BlastThunderHelping Hand Cotton Guard Dragon Pulse Magnetic Flux Other",
+    "raw": "3930",
+    "percent": "0.01",
+    "types": ["electric"],
+    "name_trans": "Ampharos",
+    "l": "en"
+  },
+  {
+    "name": "Flareon",
+    "rank": "185",
+    "search": "fireGutsFlash FireToxic OrbAssault VestLeftovers Flame Orb Life Orb Expert Belt Other Flare BlitzFacadeQuick AttackProtectDetectWill-O-WispDouble KickTrailblaze Nothing Yawn Other",
+    "raw": "2701",
+    "percent": "0.01",
+    "types": ["fire"],
+    "name_trans": "Flareon",
+    "l": "en"
+  },
+  {
+    "name": "Primeape",
+    "rank": "186",
+    "search": "fightingAnger PointVital SpiritDefiant EvioliteOther Drain PunchRage FistProtectEarthquakeBulk UpIce PunchSeed Bomb Taunt Other",
+    "raw": "1957",
+    "percent": "0.01",
+    "types": ["fighting"],
+    "name_trans": "Primeape",
+    "l": "en"
+  },
+  {
+    "name": "Cacturne",
+    "rank": "187",
+    "search": "grassdarkWater AbsorbSand VeilClear AmuletLoaded DiceFocus Sash Bright Powder Leftovers Assault Vest Black Glasses Life Orb Other Sucker PunchSpiky ShieldSwords DanceTera BlastProtectBullet SeedLeech SeedSeed Bomb Drain Punch Dark Pulse Leaf Storm Giga Drain Poison Jab Energy Ball Substitute Stomping Tantrum Other",
+    "raw": "2138",
+    "percent": "0.01",
+    "types": ["grass", "dark"],
+    "name_trans": "Cacturne",
+    "l": "en"
+  },
+  {
+    "name": "Polteageist",
+    "rank": "188",
+    "search": "ghostCursed BodyWeak ArmorMental HerbFocus SashWhite Herb Covert Cloak Weakness Policy Other Shadow BallTrick RoomWill-O-WispTeatimeShell SmashStored PowerTera BlastDark PulseGiga DrainMementoProtect Other",
+    "raw": "2992",
+    "percent": "0.01",
+    "types": ["ghost"],
+    "ss": true,
+    "id": 855,
+    "name_trans": "Polteageist",
+    "l": "en"
+  },
+  {
+    "name": "Froslass",
+    "rank": "189",
+    "search": "iceghostCursed BodySnow CloakFocus SashBright PowderLight Clay Sitrus Berry Other Icy WindFrost BreathWill-O-WispProtectDestiny BondShadow BallTauntIce ShardBlizzardLight ScreenReflectAurora Veil Thunder Wave Snowscape Thunderbolt Other",
+    "raw": "3953",
+    "percent": "0.01",
+    "types": ["ice", "ghost"],
+    "name_trans": "Froslass",
+    "l": "en"
+  },
+  {
+    "name": "Pawmo",
+    "rank": "190",
+    "search": "electricfightingVolt AbsorbNatural Cure Choice ScarfOther NothingAgilityOther ",
+    "raw": "21",
+    "percent": "0.01",
+    "types": ["electric", "fighting"],
+    "ss": true,
+    "id": 955,
+    "l": "en"
+  },
+  {
+    "name": "Honchkrow",
+    "rank": "191",
+    "search": "darkflyingMoxieSuper LuckInsomnia Clear AmuletFocus SashScope LensOther Sucker PunchBrave BirdHazeHelping HandNight SlashProtectDrill PeckTailwindTauntHeat Wave Other",
+    "raw": "2013",
+    "percent": "0.01",
+    "types": ["dark", "flying"],
+    "name_trans": "Honchkrow",
+    "l": "en"
+  },
+  {
+    "name": "Gothorita",
+    "rank": "192",
+    "search": "psychicShadow TagFrisk Competitive EvioliteOther Fake OutTrick RoomProtectHeal PulseFoul PlayPsyshock Other",
+    "raw": "1970",
+    "percent": "0.01",
+    "types": ["psychic"],
+    "name_trans": "Gothorita",
+    "l": "en"
+  },
+  {
+    "name": "Squawkabilly",
+    "rank": "193",
+    "search": "normalflyingIntimidateHustleGutsSheer Force Choice ScarfSitrus BerryFocus SashFlame OrbOther Parting ShotBrave BirdU-turnTauntTailwindFinal GambitProtectFoul PlayGrowlDouble-EdgeGiga ImpactFacadeQuick Attack Other",
+    "raw": "2952",
+    "percent": "0.01",
+    "types": ["normal", "flying"],
+    "ss": true,
+    "id": 960,
+    "l": "en"
+  },
+  {
+    "name": "Oricorio-Sensu",
+    "rank": "194",
+    "search": "ghostflyingDancerFocus SashColbur BerryIapapa Berry Aguav Berry Other Revelation DanceProtectQuiver DanceHelping HandTailwindAir SlashIcy WindU-turnOther",
+    "raw": "2443",
+    "percent": "0.01",
+    "types": ["ghost", "flying"],
+    "l": "en"
+  },
+  {
+    "name": "Wugtrio",
+    "rank": "195",
+    "search": "waterGooeySand VeilRattledSafety GogglesMystic WaterFocus SashLife Orb Choice Scarf Bright Powder Sticky Barb Other Aqua JetProtectMementoSurfTriple DiveHelping HandFoul PlayMud-Slap Stomping Tantrum Other",
+    "raw": "1258",
+    "percent": "0.01",
+    "types": ["water"],
+    "ss": true,
+    "id": 930,
+    "l": "en"
+  },
+  {
+    "name": "Falinks",
+    "rank": "196",
+    "search": "fightingDefiantBattle Armor Adrenaline OrbLum BerrySitrus Berry Psychic Seed Life Orb Leftovers Other No RetreatClose CombatProtectZen HeadbuttIron HeadRock SlideOther",
+    "raw": "2053",
+    "percent": "0.01",
+    "types": ["fighting"],
+    "ss": true,
+    "id": 870,
+    "name_trans": "Falinks",
+    "l": "en"
+  },
+  {
+    "name": "Sunflora",
+    "rank": "197",
+    "raw": "983",
+    "percent": "0.01",
+    "types": ["grass"],
+    "name_trans": "Sunflora",
+    "l": "en"
+  },
+  {
+    "name": "Camerupt",
+    "rank": "198",
+    "raw": "3211",
+    "percent": "0.01",
+    "types": ["fire", "ground"],
+    "name_trans": "Camerupt",
+    "l": "en"
+  },
+  {
+    "name": "Oricorio",
+    "rank": "199",
+    "raw": "1260",
+    "percent": "0.01",
+    "types": ["fire", "flying"],
+    "name_trans": "Oricorio",
+    "l": "en"
+  },
+  {
+    "name": "Whiscash",
+    "rank": "200",
+    "raw": "525",
+    "percent": "0.01",
+    "types": ["water", "ground"],
+    "name_trans": "Whiscash",
+    "l": "en"
+  },
+  {
+    "name": "Rotom-Fan",
+    "rank": "201",
+    "raw": "1014",
+    "percent": "0.01",
+    "types": ["electric", "flying"],
+    "l": "en"
+  },
+  {
+    "name": "Houndoom",
+    "rank": "202",
+    "raw": "2320",
+    "percent": "0.01",
+    "types": ["dark", "fire"],
+    "name_trans": "Houndoom",
+    "l": "en"
+  },
+  {
+    "name": "Mabosstiff",
+    "rank": "203",
+    "raw": "1945",
+    "percent": "0.01",
+    "types": ["dark"],
+    "ss": true,
+    "id": 973,
+    "l": "en"
+  },
+  {
+    "name": "Klawf",
+    "rank": "204",
+    "raw": "2092",
+    "percent": "0.01",
+    "types": ["rock"],
+    "ss": true,
+    "id": 962,
+    "l": "en"
+  },
+  {
+    "name": "Wigglytuff",
+    "rank": "205",
+    "raw": "1649",
+    "percent": "0.01",
+    "types": ["normal", "fairy"],
+    "name_trans": "Wigglytuff",
+    "l": "en"
+  },
+  {
+    "name": "Veluza",
+    "rank": "206",
+    "raw": "2108",
+    "percent": "0.01",
+    "types": ["water", "psychic"],
+    "ss": true,
+    "id": 932,
+    "l": "en"
+  },
+  {
+    "name": "Sawsbuck",
+    "rank": "207",
+    "raw": "1452",
+    "percent": "0.01",
+    "types": ["normal", "grass"],
+    "name_trans": "Sawsbuck",
+    "l": "en"
+  },
+  {
+    "name": "Jigglypuff",
+    "rank": "208",
+    "raw": "1091",
+    "percent": "0.01",
+    "types": ["normal", "fairy"],
+    "name_trans": "Jigglypuff",
+    "l": "en"
+  },
+  {
+    "name": "Sudowoodo",
+    "rank": "209",
+    "raw": "986",
+    "percent": "0.01",
+    "types": ["rock"],
+    "name_trans": "Sudowoodo",
+    "l": "en"
+  },
+  {
+    "name": "Qwilfish",
+    "rank": "210",
+    "raw": "1227",
+    "percent": "0.00",
+    "types": ["water", "poison"],
+    "name_trans": "Qwilfish",
+    "l": "en"
+  },
+  {
+    "name": "Pyroar",
+    "rank": "211",
+    "raw": "1907",
+    "percent": "0.00",
+    "types": ["fire", "normal"],
+    "name_trans": "Pyroar",
+    "l": "en"
+  },
+  {
+    "name": "Donphan",
+    "rank": "212",
+    "raw": "1852",
+    "percent": "0.00",
+    "types": ["ground"],
+    "name_trans": "Donphan",
+    "l": "en"
+  },
+  {
+    "name": "Gogoat",
+    "rank": "213",
+    "raw": "1714",
+    "percent": "0.00",
+    "types": ["grass"],
+    "name_trans": "Gogoat",
+    "l": "en"
+  },
+  {
+    "name": "Kricketune",
+    "rank": "214",
+    "raw": "202",
+    "percent": "0.00",
+    "types": ["bug"],
+    "name_trans": "Kricketune",
+    "l": "en"
+  },
+  {
+    "name": "Pikachu",
+    "rank": "215",
+    "raw": "2373",
+    "percent": "0.00",
+    "types": ["electric"],
+    "name_trans": "Pikachu",
+    "l": "en"
+  },
+  {
+    "name": "Dedenne",
+    "rank": "216",
+    "raw": "1443",
+    "percent": "0.00",
+    "types": ["electric", "fairy"],
+    "name_trans": "Dedenne",
+    "l": "en"
+  },
+  {
+    "name": "Naclstack",
+    "rank": "217",
+    "raw": "403",
+    "percent": "0.00",
+    "types": ["rock"],
+    "ss": true,
+    "id": 964,
+    "l": "en"
+  },
+  {
+    "name": "Grumpig",
+    "rank": "218",
+    "raw": "1135",
+    "percent": "0.00",
+    "types": ["psychic"],
+    "name_trans": "Grumpig",
+    "l": "en"
+  },
+  {
+    "name": "Marill",
+    "rank": "219",
+    "raw": "113",
+    "percent": "0.00",
+    "types": ["water", "fairy"],
+    "name_trans": "Marill",
+    "l": "en"
+  },
+  {
+    "name": "Haunter",
+    "rank": "220",
+    "raw": "1119",
+    "percent": "0.00",
+    "types": ["ghost", "poison"],
+    "name_trans": "Haunter",
+    "l": "en"
+  },
+  {
+    "name": "Persian",
+    "rank": "221",
+    "raw": "1380",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Persian",
+    "l": "en"
+  },
+  {
+    "name": "Basculin",
+    "rank": "222",
+    "raw": "668",
+    "percent": "0.00",
+    "types": ["water"],
+    "name_trans": "Basculin",
+    "l": "en"
+  },
+  {
+    "name": "Zangoose",
+    "rank": "223",
+    "raw": "1343",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Zangoose",
+    "l": "en"
+  },
+  {
+    "name": "Magneton",
+    "rank": "224",
+    "raw": "1295",
+    "percent": "0.00",
+    "types": ["electric", "steel"],
+    "name_trans": "Magneton",
+    "l": "en"
+  },
+  {
+    "name": "Hypno",
+    "rank": "225",
+    "raw": "792",
+    "percent": "0.00",
+    "types": ["psychic"],
+    "name_trans": "Hypno",
+    "l": "en"
+  },
+  {
+    "name": "Eiscue",
+    "rank": "226",
+    "raw": "2264",
+    "percent": "0.00",
+    "types": ["ice"],
+    "ss": true,
+    "id": 875,
+    "name_trans": "Eiscue",
+    "l": "en"
+  },
+  {
+    "name": "Banette",
+    "rank": "227",
+    "raw": "1259",
+    "percent": "0.00",
+    "types": ["ghost"],
+    "name_trans": "Banette",
+    "l": "en"
+  },
+  {
+    "name": "Passimian",
+    "rank": "228",
+    "raw": "1196",
+    "percent": "0.00",
+    "types": ["fighting"],
+    "name_trans": "Passimian",
+    "l": "en"
+  },
+  {
+    "name": "Spidops",
+    "rank": "229",
+    "raw": "1253",
+    "percent": "0.00",
+    "types": ["bug"],
+    "ss": true,
+    "id": 919,
+    "l": "en"
+  },
+  {
+    "name": "Finneon",
+    "rank": "230",
+    "raw": "28",
+    "percent": "0.00",
+    "types": ["water"],
+    "name_trans": "Finneon",
+    "l": "en"
+  },
+  {
+    "name": "Vespiquen",
+    "rank": "231",
+    "raw": "826",
+    "percent": "0.00",
+    "types": ["bug", "flying"],
+    "name_trans": "Vespiquen",
+    "l": "en"
+  },
+  {
+    "name": "Skuntank",
+    "rank": "232",
+    "raw": "931",
+    "percent": "0.00",
+    "types": ["poison", "dark"],
+    "name_trans": "Skuntank",
+    "l": "en"
+  },
+  {
+    "name": "Riolu",
+    "rank": "233",
+    "raw": "1651",
+    "percent": "0.00",
+    "types": ["fighting"],
+    "name_trans": "Riolu",
+    "l": "en"
+  },
+  {
+    "name": "Toedscool",
+    "rank": "234",
+    "raw": "664",
+    "percent": "0.00",
+    "types": ["ground", "grass"],
+    "ss": true,
+    "id": 1006,
+    "l": "en"
+  },
+  {
+    "name": "Snover",
+    "rank": "235",
+    "raw": "67",
+    "percent": "0.00",
+    "types": ["grass", "ice"],
+    "name_trans": "Snover",
+    "l": "en"
+  },
+  {
+    "name": "Fletchling",
+    "rank": "236",
+    "raw": "408",
+    "percent": "0.00",
+    "types": ["normal", "flying"],
+    "name_trans": "Fletchling",
+    "l": "en"
+  },
+  {
+    "name": "Bonsly",
+    "rank": "237",
+    "raw": "29",
+    "percent": "0.00",
+    "types": ["rock"],
+    "name_trans": "Bonsly",
+    "l": "en"
+  },
+  {
+    "name": "Delibird",
+    "rank": "238",
+    "raw": "628",
+    "percent": "0.00",
+    "types": ["ice", "flying"],
+    "name_trans": "Delibird",
+    "l": "en"
+  },
+  {
+    "name": "Swalot",
+    "rank": "239",
+    "raw": "1159",
+    "percent": "0.00",
+    "types": ["poison"],
+    "name_trans": "Swalot",
+    "l": "en"
+  },
+  {
+    "name": "Dunsparce",
+    "rank": "240",
+    "raw": "872",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Dunsparce",
+    "l": "en"
+  },
+  {
+    "name": "Gumshoos",
+    "rank": "241",
+    "raw": "457",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Gumshoos",
+    "l": "en"
+  },
+  {
+    "name": "Oinkologne",
+    "rank": "242",
+    "raw": "718",
+    "percent": "0.00",
+    "types": ["normal"],
+    "ss": true,
+    "id": 916,
+    "l": "en"
+  },
+  {
+    "name": "Foongus",
+    "rank": "243",
+    "raw": "216",
+    "percent": "0.00",
+    "types": ["grass", "poison"],
+    "name_trans": "Foongus",
+    "l": "en"
+  },
+  {
+    "name": "Oinkologne-F",
+    "rank": "244",
+    "raw": "432",
+    "percent": "0.00",
+    "types": ["normal"],
+    "ss": true,
+    "id": 916,
+    "l": "en"
+  },
+  {
+    "name": "Glimmet",
+    "rank": "245",
+    "raw": "64",
+    "percent": "0.00",
+    "types": ["rock", "poison"],
+    "ss": true,
+    "id": 966,
+    "l": "en"
+  },
+  {
+    "name": "Dragonair",
+    "rank": "246",
+    "raw": "420",
+    "percent": "0.00",
+    "types": ["dragon"],
+    "name_trans": "Dragonair",
+    "l": "en"
+  },
+  {
+    "name": "Tauros-Paldea-Combat",
+    "rank": "247",
+    "raw": "445",
+    "percent": "0.00",
+    "l": "en"
+  },
+  {
+    "name": "Sneasel",
+    "rank": "248",
+    "raw": "405",
+    "percent": "0.00",
+    "types": ["dark", "ice"],
+    "name_trans": "Sneasel",
+    "l": "en"
+  },
+  {
+    "name": "Bronzor",
+    "rank": "249",
+    "raw": "225",
+    "percent": "0.00",
+    "types": ["steel", "psychic"],
+    "name_trans": "Bronzor",
+    "l": "en"
+  },
+  {
+    "name": "Venomoth",
+    "rank": "250",
+    "raw": "1146",
+    "percent": "0.00",
+    "types": ["bug", "poison"],
+    "name_trans": "Venomoth",
+    "l": "en"
+  },
+  {
+    "name": "Hippopotas",
+    "rank": "251",
+    "raw": "203",
+    "percent": "0.00",
+    "types": ["ground"],
+    "name_trans": "Hippopotas",
+    "l": "en"
+  },
+  {
+    "name": "Phanpy",
+    "rank": "252",
+    "raw": "8",
+    "percent": "0.00",
+    "types": ["ground"],
+    "name_trans": "Phanpy",
+    "l": "en"
+  },
+  {
+    "name": "Sunkern",
+    "rank": "253",
+    "raw": "39",
+    "percent": "0.00",
+    "types": ["grass"],
+    "name_trans": "Sunkern",
+    "l": "en"
+  },
+  {
+    "name": "Komala",
+    "rank": "254",
+    "raw": "872",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Komala",
+    "l": "en"
+  },
+  {
+    "name": "Luvdisc",
+    "rank": "255",
+    "raw": "207",
+    "percent": "0.00",
+    "types": ["water"],
+    "name_trans": "Luvdisc",
+    "l": "en"
+  },
+  {
+    "name": "Bramblin",
+    "rank": "256",
+    "raw": "19",
+    "percent": "0.00",
+    "types": ["grass", "ghost"],
+    "ss": true,
+    "id": 974,
+    "l": "en"
+  },
+  {
+    "name": "Surskit",
+    "rank": "257",
+    "raw": "175",
+    "percent": "0.00",
+    "types": ["bug", "water"],
+    "name_trans": "Surskit",
+    "l": "en"
+  },
+  {
+    "name": "Lechonk",
+    "rank": "258",
+    "raw": "93",
+    "percent": "0.00",
+    "types": ["normal"],
+    "ss": true,
+    "id": 915,
+    "l": "en"
+  },
+  {
+    "name": "Numel",
+    "rank": "259",
+    "raw": "309",
+    "percent": "0.00",
+    "types": ["fire", "ground"],
+    "name_trans": "Numel",
+    "l": "en"
+  },
+  {
+    "name": "Nacli",
+    "rank": "260",
+    "raw": "86",
+    "percent": "0.00",
+    "types": ["rock"],
+    "ss": true,
+    "id": 963,
+    "l": "en"
+  },
+  {
+    "name": "Sliggoo",
+    "rank": "261",
+    "raw": "46",
+    "percent": "0.00",
+    "types": ["dragon"],
+    "name_trans": "Sliggoo",
+    "l": "en"
+  },
+  {
+    "name": "Girafarig",
+    "rank": "262",
+    "raw": "538",
+    "percent": "0.00",
+    "types": ["normal", "psychic"],
+    "name_trans": "Girafarig",
+    "l": "en"
+  },
+  {
+    "name": "Sprigatito",
+    "rank": "263",
+    "raw": "205",
+    "percent": "0.00",
+    "types": ["grass"],
+    "ss": true,
+    "id": 906,
+    "l": "en"
+  },
+  {
+    "name": "Rotom",
+    "rank": "264",
+    "raw": "193",
+    "percent": "0.00",
+    "types": ["electric", "ghost"],
+    "name_trans": "Rotom",
+    "l": "en"
+  },
+  {
+    "name": "Venonat",
+    "rank": "265",
+    "raw": "167",
+    "percent": "0.00",
+    "types": ["bug", "poison"],
+    "name_trans": "Venonat",
+    "l": "en"
+  },
+  {
+    "name": "Spewpa",
+    "rank": "266",
+    "raw": "376",
+    "percent": "0.00",
+    "types": ["bug"],
+    "name_trans": "Spewpa",
+    "l": "en"
+  },
+  {
+    "name": "Capsakid",
+    "rank": "267",
+    "raw": "10",
+    "percent": "0.00",
+    "types": ["grass"],
+    "ss": true,
+    "id": 938,
+    "l": "en"
+  },
+  {
+    "name": "Morgrem",
+    "rank": "268",
+    "raw": "114",
+    "percent": "0.00",
+    "types": ["dark", "fairy"],
+    "ss": true,
+    "id": 860,
+    "name_trans": "Morgrem",
+    "l": "en"
+  },
+  {
+    "name": "Scatterbug",
+    "rank": "269",
+    "raw": "77",
+    "percent": "0.00",
+    "types": ["bug"],
+    "name_trans": "Scatterbug",
+    "l": "en"
+  },
+  {
+    "name": "Shelgon",
+    "rank": "270",
+    "raw": "272",
+    "percent": "0.00",
+    "types": ["dragon"],
+    "name_trans": "Shelgon",
+    "l": "en"
+  },
+  {
+    "name": "Drowzee",
+    "rank": "271",
+    "raw": "53",
+    "percent": "0.00",
+    "types": ["psychic"],
+    "name_trans": "Drowzee",
+    "l": "en"
+  },
+  {
+    "name": "Vigoroth",
+    "rank": "272",
+    "raw": "281",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Vigoroth",
+    "l": "en"
+  },
+  {
+    "name": "Magikarp",
+    "rank": "273",
+    "raw": "189",
+    "percent": "0.00",
+    "types": ["water"],
+    "name_trans": "Magikarp",
+    "l": "en"
+  },
+  {
+    "name": "Zweilous",
+    "rank": "274",
+    "raw": "91",
+    "percent": "0.00",
+    "types": ["dark", "dragon"],
+    "name_trans": "Zweilous",
+    "l": "en"
+  },
+  {
+    "name": "Seviper",
+    "rank": "275",
+    "raw": "380",
+    "percent": "0.00",
+    "types": ["poison"],
+    "name_trans": "Seviper",
+    "l": "en"
+  },
+  {
+    "name": "Fletchinder",
+    "rank": "276",
+    "raw": "206",
+    "percent": "0.00",
+    "types": ["fire", "flying"],
+    "name_trans": "Fletchinder",
+    "l": "en"
+  },
+  {
+    "name": "Voltorb",
+    "rank": "277",
+    "raw": "27",
+    "percent": "0.00",
+    "types": ["electric"],
+    "name_trans": "Voltorb",
+    "l": "en"
+  },
+  {
+    "name": "Eevee",
+    "rank": "278",
+    "raw": "78",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Eevee",
+    "l": "en"
+  },
+  {
+    "name": "Skiploom",
+    "rank": "279",
+    "raw": "137",
+    "percent": "0.00",
+    "types": ["grass", "flying"],
+    "name_trans": "Skiploom",
+    "l": "en"
+  },
+  {
+    "name": "Carkol",
+    "rank": "280",
+    "raw": "104",
+    "percent": "0.00",
+    "types": ["rock", "fire"],
+    "ss": true,
+    "id": 838,
+    "name_trans": "Carkol",
+    "l": "en"
+  },
+  {
+    "name": "Mareep",
+    "rank": "281",
+    "raw": "23",
+    "percent": "0.00",
+    "types": ["electric"],
+    "name_trans": "Mareep",
+    "l": "en"
+  },
+  {
+    "name": "Oricorio-Pa'u",
+    "rank": "282",
+    "raw": "150",
+    "percent": "0.00",
+    "l": "en"
+  },
+  {
+    "name": "Hattrem",
+    "rank": "283",
+    "raw": "161",
+    "percent": "0.00",
+    "types": ["psychic"],
+    "ss": true,
+    "id": 857,
+    "name_trans": "Hattrem",
+    "l": "en"
+  },
+  {
+    "name": "Crocalor",
+    "rank": "284",
+    "raw": "356",
+    "percent": "0.00",
+    "types": ["fire"],
+    "ss": true,
+    "id": 910,
+    "l": "en"
+  },
+  {
+    "name": "Tandemaus",
+    "rank": "285",
+    "raw": "41",
+    "percent": "0.00",
+    "types": ["normal"],
+    "ss": true,
+    "id": 945,
+    "l": "en"
+  },
+  {
+    "name": "Luxio",
+    "rank": "286",
+    "raw": "15",
+    "percent": "0.00",
+    "types": ["electric"],
+    "name_trans": "Luxio",
+    "l": "en"
+  },
+  {
+    "name": "Sinistea",
+    "rank": "287",
+    "raw": "19",
+    "percent": "0.00",
+    "types": ["ghost"],
+    "ss": true,
+    "id": 854,
+    "name_trans": "Sinistea",
+    "l": "en"
+  },
+  {
+    "name": "Psyduck",
+    "rank": "288",
+    "raw": "34",
+    "percent": "0.00",
+    "types": ["water"],
+    "name_trans": "Psyduck",
+    "l": "en"
+  },
+  {
+    "name": "Mareanie",
+    "rank": "289",
+    "raw": "14",
+    "percent": "0.00",
+    "types": ["poison", "water"],
+    "name_trans": "Mareanie",
+    "l": "en"
+  },
+  {
+    "name": "Drifloon",
+    "rank": "290",
+    "raw": "158",
+    "percent": "0.00",
+    "types": ["ghost", "flying"],
+    "name_trans": "Drifloon",
+    "l": "en"
+  },
+  {
+    "name": "Drakloak",
+    "rank": "291",
+    "raw": "23",
+    "percent": "0.00",
+    "types": ["dragon", "ghost"],
+    "ss": true,
+    "id": 886,
+    "name_trans": "Drakloak",
+    "l": "en"
+  },
+  {
+    "name": "Fidough",
+    "rank": "292",
+    "raw": "26",
+    "percent": "0.00",
+    "types": ["fairy"],
+    "ss": true,
+    "id": 970,
+    "l": "en"
+  },
+  {
+    "name": "Tarountula",
+    "rank": "293",
+    "raw": "20",
+    "percent": "0.00",
+    "types": ["bug"],
+    "ss": true,
+    "id": 918,
+    "l": "en"
+  },
+  {
+    "name": "Mankey",
+    "rank": "294",
+    "raw": "19",
+    "percent": "0.00",
+    "types": ["fighting"],
+    "name_trans": "Mankey",
+    "l": "en"
+  },
+  {
+    "name": "Cetoddle",
+    "rank": "295",
+    "raw": "65",
+    "percent": "0.00",
+    "types": ["ice"],
+    "ss": true,
+    "id": 947,
+    "l": "en"
+  },
+  {
+    "name": "Stunky",
+    "rank": "296",
+    "raw": "1",
+    "percent": "0.00",
+    "types": ["poison", "dark"],
+    "name_trans": "Stunky",
+    "l": "en"
+  },
+  {
+    "name": "Wiglett",
+    "rank": "297",
+    "raw": "60",
+    "percent": "0.00",
+    "types": ["water"],
+    "ss": true,
+    "id": 929,
+    "l": "en"
+  },
+  {
+    "name": "Axew",
+    "rank": "298",
+    "raw": "10",
+    "percent": "0.00",
+    "types": ["dragon"],
+    "name_trans": "Axew",
+    "l": "en"
+  },
+  {
+    "name": "Steenee",
+    "rank": "299",
+    "raw": "13",
+    "percent": "0.00",
+    "types": ["grass"],
+    "name_trans": "Steenee",
+    "l": "en"
+  },
+  {
+    "name": "Fuecoco",
+    "rank": "300",
+    "raw": "12",
+    "percent": "0.00",
+    "types": ["fire"],
+    "ss": true,
+    "id": 909,
+    "l": "en"
+  },
+  {
+    "name": "Mudbray",
+    "rank": "301",
+    "raw": "67",
+    "percent": "0.00",
+    "types": ["ground"],
+    "name_trans": "Mudbray",
+    "l": "en"
+  },
+  {
+    "name": "Applin",
+    "rank": "302",
+    "raw": "11",
+    "percent": "0.00",
+    "types": ["grass", "dragon"],
+    "ss": true,
+    "id": 840,
+    "name_trans": "Applin",
+    "l": "en"
+  },
+  {
+    "name": "Flaaffy",
+    "rank": "303",
+    "raw": "63",
+    "percent": "0.00",
+    "types": ["electric"],
+    "name_trans": "Flaaffy",
+    "l": "en"
+  },
+  {
+    "name": "Quaxwell",
+    "rank": "304",
+    "raw": "66",
+    "percent": "0.00",
+    "types": ["water"],
+    "ss": true,
+    "id": 913,
+    "l": "en"
+  },
+  {
+    "name": "Impidimp",
+    "rank": "305",
+    "raw": "16",
+    "percent": "0.00",
+    "types": ["dark", "fairy"],
+    "ss": true,
+    "id": 859,
+    "name_trans": "Impidimp",
+    "l": "en"
+  },
+  {
+    "name": "Growlithe",
+    "rank": "306",
+    "raw": "14",
+    "percent": "0.00",
+    "types": ["fire"],
+    "name_trans": "Growlithe",
+    "l": "en"
+  },
+  {
+    "name": "Gastly",
+    "rank": "307",
+    "raw": "11",
+    "percent": "0.00",
+    "types": ["ghost", "poison"],
+    "name_trans": "Gastly",
+    "l": "en"
+  },
+  {
+    "name": "Cubchoo",
+    "rank": "308",
+    "raw": "41",
+    "percent": "0.00",
+    "types": ["ice"],
+    "name_trans": "Cubchoo",
+    "l": "en"
+  },
+  {
+    "name": "Greavard",
+    "rank": "309",
+    "raw": "148",
+    "percent": "0.00",
+    "types": ["ghost"],
+    "ss": true,
+    "id": 924,
+    "l": "en"
+  },
+  {
+    "name": "Floette",
+    "rank": "310",
+    "raw": "153",
+    "percent": "0.00",
+    "types": ["fairy"],
+    "name_trans": "Floette",
+    "l": "en"
+  },
+  {
+    "name": "Finizen",
+    "rank": "311",
+    "raw": "16",
+    "percent": "0.00",
+    "types": ["water"],
+    "ss": true,
+    "id": 933,
+    "l": "en"
+  },
+  {
+    "name": "Pawniard",
+    "rank": "312",
+    "raw": "33",
+    "percent": "0.00",
+    "types": ["dark", "steel"],
+    "name_trans": "Pawniard",
+    "l": "en"
+  },
+  {
+    "name": "Meditite",
+    "rank": "313",
+    "raw": "40",
+    "percent": "0.00",
+    "types": ["fighting", "psychic"],
+    "name_trans": "Meditite",
+    "l": "en"
+  },
+  {
+    "name": "Croagunk",
+    "rank": "314",
+    "raw": "9",
+    "percent": "0.00",
+    "types": ["poison", "fighting"],
+    "name_trans": "Croagunk",
+    "l": "en"
+  },
+  {
+    "name": "Shroomish",
+    "rank": "315",
+    "raw": "26",
+    "percent": "0.00",
+    "types": ["grass"],
+    "name_trans": "Shroomish",
+    "l": "en"
+  },
+  {
+    "name": "Dolliv",
+    "rank": "316",
+    "raw": "5",
+    "percent": "0.00",
+    "types": ["grass", "normal"],
+    "ss": true,
+    "id": 936,
+    "l": "en"
+  },
+  {
+    "name": "Rockruff",
+    "rank": "317",
+    "raw": "13",
+    "percent": "0.00",
+    "types": ["rock"],
+    "name_trans": "Rockruff",
+    "l": "en"
+  },
+  {
+    "name": "Azurill",
+    "rank": "318",
+    "raw": "25",
+    "percent": "0.00",
+    "types": ["normal", "fairy"],
+    "name_trans": "Azurill",
+    "l": "en"
+  },
+  {
+    "name": "Starly",
+    "rank": "319",
+    "raw": "50",
+    "percent": "0.00",
+    "types": ["normal", "flying"],
+    "name_trans": "Starly",
+    "l": "en"
+  },
+  {
+    "name": "Wooper-Paldea",
+    "rank": "320",
+    "raw": "76",
+    "percent": "0.00",
+    "types": ["poison", "ground"],
+    "l": "en"
+  },
+  {
+    "name": "Magnemite",
+    "rank": "321",
+    "raw": "13",
+    "percent": "0.00",
+    "types": ["electric", "steel"],
+    "name_trans": "Magnemite",
+    "l": "en"
+  },
+  {
+    "name": "Shroodle",
+    "rank": "322",
+    "raw": "12",
+    "percent": "0.00",
+    "types": ["poison", "normal"],
+    "ss": true,
+    "id": 968,
+    "l": "en"
+  },
+  {
+    "name": "Slakoth",
+    "rank": "323",
+    "raw": "6",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Slakoth",
+    "l": "en"
+  },
+  {
+    "name": "Smoliv",
+    "rank": "324",
+    "raw": "18",
+    "percent": "0.00",
+    "types": ["grass", "normal"],
+    "ss": true,
+    "id": 935,
+    "l": "en"
+  },
+  {
+    "name": "Skwovet",
+    "rank": "325",
+    "raw": "27",
+    "percent": "0.00",
+    "types": ["normal"],
+    "ss": true,
+    "id": 819,
+    "name_trans": "Skwovet",
+    "l": "en"
+  },
+  {
+    "name": "Quaxly",
+    "rank": "326",
+    "raw": "9",
+    "percent": "0.00",
+    "types": ["water"],
+    "ss": true,
+    "id": 912,
+    "l": "en"
+  },
+  {
+    "name": "Diglett",
+    "rank": "327",
+    "raw": "38",
+    "percent": "0.00",
+    "types": ["ground"],
+    "name_trans": "Diglett",
+    "l": "en"
+  },
+  {
+    "name": "Eelektrik",
+    "rank": "328",
+    "raw": "53",
+    "percent": "0.00",
+    "types": ["electric"],
+    "name_trans": "Eelektrik",
+    "l": "en"
+  },
+  {
+    "name": "Tinkatuff",
+    "rank": "329",
+    "raw": "34",
+    "percent": "0.00",
+    "types": ["fairy", "steel"],
+    "ss": true,
+    "id": 1001,
+    "l": "en"
+  },
+  {
+    "name": "Igglybuff",
+    "rank": "330",
+    "raw": "23",
+    "percent": "0.00",
+    "types": ["normal", "fairy"],
+    "name_trans": "Igglybuff",
+    "l": "en"
+  },
+  {
+    "name": "Gabite",
+    "rank": "331",
+    "raw": "13",
+    "percent": "0.00",
+    "types": ["dragon", "ground"],
+    "name_trans": "Gabite",
+    "l": "en"
+  },
+  {
+    "name": "Happiny",
+    "rank": "332",
+    "raw": "28",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Happiny",
+    "l": "en"
+  },
+  {
+    "name": "Pineco",
+    "rank": "333",
+    "raw": "24",
+    "percent": "0.00",
+    "types": ["bug"],
+    "name_trans": "Pineco",
+    "l": "en"
+  },
+  {
+    "name": "Skiddo",
+    "rank": "334",
+    "raw": "12",
+    "percent": "0.00",
+    "types": ["grass"],
+    "name_trans": "Skiddo",
+    "l": "en"
+  },
+  {
+    "name": "Shinx",
+    "rank": "335",
+    "raw": "4",
+    "percent": "0.00",
+    "types": ["electric"],
+    "name_trans": "Shinx",
+    "l": "en"
+  },
+  {
+    "name": "Charcadet",
+    "rank": "336",
+    "raw": "11",
+    "percent": "0.00",
+    "types": ["fire"],
+    "ss": true,
+    "id": 1003,
+    "l": "en"
+  },
+  {
+    "name": "Litleo",
+    "rank": "337",
+    "raw": "2",
+    "percent": "0.00",
+    "types": ["fire", "normal"],
+    "name_trans": "Litleo",
+    "l": "en"
+  },
+  {
+    "name": "Arrokuda",
+    "rank": "338",
+    "raw": "44",
+    "percent": "0.00",
+    "types": ["water"],
+    "ss": true,
+    "id": 846,
+    "name_trans": "Arrokuda",
+    "l": "en"
+  },
+  {
+    "name": "Tadbulb",
+    "rank": "339",
+    "raw": "26",
+    "percent": "0.00",
+    "types": ["electric"],
+    "ss": true,
+    "id": 940,
+    "l": "en"
+  },
+  {
+    "name": "Larvesta",
+    "rank": "340",
+    "raw": "29",
+    "percent": "0.00",
+    "types": ["bug", "fire"],
+    "name_trans": "Larvesta",
+    "l": "en"
+  },
+  {
+    "name": "Fraxure",
+    "rank": "341",
+    "raw": "58",
+    "percent": "0.00",
+    "types": ["dragon"],
+    "name_trans": "Fraxure",
+    "l": "en"
+  },
+  {
+    "name": "Nymble",
+    "rank": "342",
+    "raw": "21",
+    "percent": "0.00",
+    "types": ["bug"],
+    "ss": true,
+    "id": 920,
+    "l": "en"
+  },
+  {
+    "name": "Krokorok",
+    "rank": "343",
+    "raw": "2",
+    "percent": "0.00",
+    "types": ["ground", "dark"],
+    "name_trans": "Krokorok",
+    "l": "en"
+  },
+  {
+    "name": "Pupitar",
+    "rank": "344",
+    "raw": "10",
+    "percent": "0.00",
+    "types": ["rock", "ground"],
+    "name_trans": "Pupitar",
+    "l": "en"
+  },
+  {
+    "name": "Wattrel",
+    "rank": "345",
+    "raw": "21",
+    "percent": "0.00",
+    "types": ["electric", "flying"],
+    "ss": true,
+    "id": 957,
+    "l": "en"
+  },
+  {
+    "name": "Dreepy",
+    "rank": "346",
+    "raw": "4",
+    "percent": "0.00",
+    "types": ["dragon", "ghost"],
+    "ss": true,
+    "id": 885,
+    "name_trans": "Dreepy",
+    "l": "en"
+  },
+  {
+    "name": "Zorua",
+    "rank": "347",
+    "raw": "24",
+    "percent": "0.00",
+    "types": ["dark"],
+    "name_trans": "Zorua",
+    "l": "en"
+  },
+  {
+    "name": "Snom",
+    "rank": "348",
+    "raw": "42",
+    "percent": "0.00",
+    "types": ["ice", "bug"],
+    "ss": true,
+    "id": 872,
+    "name_trans": "Snom",
+    "l": "en"
+  },
+  {
+    "name": "Tinkatink",
+    "rank": "349",
+    "raw": "10",
+    "percent": "0.00",
+    "types": ["fairy", "steel"],
+    "ss": true,
+    "id": 1000,
+    "l": "en"
+  },
+  {
+    "name": "Cacnea",
+    "rank": "350",
+    "raw": "20",
+    "percent": "0.00",
+    "types": ["grass"],
+    "name_trans": "Cacnea",
+    "l": "en"
+  },
+  {
+    "name": "Rufflet",
+    "rank": "351",
+    "raw": "10",
+    "percent": "0.00",
+    "types": ["normal", "flying"],
+    "name_trans": "Rufflet",
+    "l": "en"
+  },
+  {
+    "name": "Skrelp",
+    "rank": "352",
+    "raw": "4",
+    "percent": "0.00",
+    "types": ["poison", "water"],
+    "name_trans": "Skrelp",
+    "l": "en"
+  },
+  {
+    "name": "Pawmi",
+    "rank": "353",
+    "raw": "32",
+    "percent": "0.00",
+    "types": ["electric"],
+    "ss": true,
+    "id": 954,
+    "l": "en"
+  },
+  {
+    "name": "Meowth",
+    "rank": "354",
+    "raw": "15",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Meowth",
+    "l": "en"
+  },
+  {
+    "name": "Gimmighoul",
+    "rank": "355",
+    "raw": "5",
+    "percent": "0.00",
+    "types": ["ghost"],
+    "ss": true,
+    "id": 976,
+    "l": "en"
+  },
+  {
+    "name": "Staravia",
+    "rank": "356",
+    "raw": "10",
+    "percent": "0.00",
+    "types": ["normal", "flying"],
+    "name_trans": "Staravia",
+    "l": "en"
+  },
+  {
+    "name": "Cufant",
+    "rank": "357",
+    "raw": "3",
+    "percent": "0.00",
+    "types": ["steel"],
+    "ss": true,
+    "id": 878,
+    "name_trans": "Cufant",
+    "l": "en"
+  },
+  {
+    "name": "Varoom",
+    "rank": "358",
+    "raw": "1",
+    "percent": "0.00",
+    "types": ["steel", "poison"],
+    "ss": true,
+    "id": 942,
+    "l": "en"
+  },
+  {
+    "name": "Floragato",
+    "rank": "359",
+    "raw": "14",
+    "percent": "0.00",
+    "types": ["grass"],
+    "ss": true,
+    "id": 907,
+    "l": "en"
+  },
+  {
+    "name": "Salandit",
+    "rank": "360",
+    "raw": "14",
+    "percent": "0.00",
+    "types": ["poison", "fire"],
+    "name_trans": "Salandit",
+    "l": "en"
+  },
+  {
+    "name": "Clauncher",
+    "rank": "361",
+    "raw": "3",
+    "percent": "0.00",
+    "types": ["water"],
+    "name_trans": "Clauncher",
+    "l": "en"
+  },
+  {
+    "name": "Barboach",
+    "rank": "362",
+    "raw": "14",
+    "percent": "0.00",
+    "types": ["water", "ground"],
+    "name_trans": "Barboach",
+    "l": "en"
+  },
+  {
+    "name": "Flittle",
+    "rank": "363",
+    "raw": "3",
+    "percent": "0.00",
+    "types": ["psychic"],
+    "ss": true,
+    "id": 926,
+    "l": "en"
+  },
+  {
+    "name": "Corvisquire",
+    "rank": "364",
+    "raw": "28",
+    "percent": "0.00",
+    "types": ["flying"],
+    "ss": true,
+    "id": 822,
+    "name_trans": "Corvisquire",
+    "l": "en"
+  },
+  {
+    "name": "Toxel",
+    "rank": "365",
+    "raw": "4",
+    "percent": "0.00",
+    "types": ["electric", "poison"],
+    "ss": true,
+    "id": 848,
+    "name_trans": "Toxel",
+    "l": "en"
+  },
+  {
+    "name": "Shellos",
+    "rank": "366",
+    "raw": "37",
+    "percent": "0.00",
+    "types": ["water"],
+    "name_trans": "Shellos",
+    "l": "en"
+  },
+  {
+    "name": "Ralts",
+    "rank": "367",
+    "raw": "7",
+    "percent": "0.00",
+    "types": ["psychic", "fairy"],
+    "name_trans": "Ralts",
+    "l": "en"
+  },
+  {
+    "name": "Dratini",
+    "rank": "368",
+    "raw": "3",
+    "percent": "0.00",
+    "types": ["dragon"],
+    "name_trans": "Dratini",
+    "l": "en"
+  },
+  {
+    "name": "Kricketot",
+    "rank": "369",
+    "raw": "11",
+    "percent": "0.00",
+    "types": ["bug"],
+    "name_trans": "Kricketot",
+    "l": "en"
+  },
+  {
+    "name": "Swablu",
+    "rank": "370",
+    "raw": "16",
+    "percent": "0.00",
+    "types": ["normal", "flying"],
+    "name_trans": "Swablu",
+    "l": "en"
+  },
+  {
+    "name": "Pichu",
+    "rank": "371",
+    "raw": "12",
+    "percent": "0.00",
+    "types": ["electric"],
+    "name_trans": "Pichu",
+    "l": "en"
+  },
+  {
+    "name": "Goomy",
+    "rank": "372",
+    "raw": "20",
+    "percent": "0.00",
+    "types": ["dragon"],
+    "name_trans": "Goomy",
+    "l": "en"
+  },
+  {
+    "name": "Arctibax",
+    "rank": "373",
+    "raw": "36",
+    "percent": "0.00",
+    "types": ["dragon", "ice"],
+    "ss": true,
+    "id": 950,
+    "l": "en"
+  },
+  {
+    "name": "Bergmite",
+    "rank": "374",
+    "raw": "1",
+    "percent": "0.00",
+    "types": ["ice"],
+    "name_trans": "Bergmite",
+    "l": "en"
+  },
+  {
+    "name": "Makuhita",
+    "rank": "375",
+    "raw": "1",
+    "percent": "0.00",
+    "types": ["fighting"],
+    "name_trans": "Makuhita",
+    "l": "en"
+  },
+  {
+    "name": "Rolycoly",
+    "rank": "376",
+    "raw": "1",
+    "percent": "0.00",
+    "types": ["rock"],
+    "ss": true,
+    "id": 837,
+    "name_trans": "Rolycoly",
+    "l": "en"
+  },
+  {
+    "name": "Kirlia",
+    "rank": "377",
+    "raw": "7",
+    "percent": "0.00",
+    "types": ["psychic", "fairy"],
+    "name_trans": "Kirlia",
+    "l": "en"
+  },
+  {
+    "name": "Shuppet",
+    "rank": "378",
+    "raw": "9",
+    "percent": "0.00",
+    "types": ["ghost"],
+    "name_trans": "Shuppet",
+    "l": "en"
+  },
+  {
+    "name": "Sandygast",
+    "rank": "379",
+    "raw": "25",
+    "percent": "0.00",
+    "types": ["ghost", "ground"],
+    "name_trans": "Sandygast",
+    "l": "en"
+  },
+  {
+    "name": "Frigibax",
+    "rank": "380",
+    "raw": "2",
+    "percent": "0.00",
+    "types": ["dragon", "ice"],
+    "ss": true,
+    "id": 949,
+    "l": "en"
+  },
+  {
+    "name": "Gulpin",
+    "rank": "381",
+    "raw": "5",
+    "percent": "0.00",
+    "types": ["poison"],
+    "name_trans": "Gulpin",
+    "l": "en"
+  },
+  {
+    "name": "Wingull",
+    "rank": "382",
+    "raw": "4",
+    "percent": "0.00",
+    "types": ["water", "flying"],
+    "name_trans": "Wingull",
+    "l": "en"
+  },
+  {
+    "name": "Petilil",
+    "rank": "383",
+    "raw": "75",
+    "percent": "0.00",
+    "types": ["grass"],
+    "name_trans": "Petilil",
+    "l": "en"
+  },
+  {
+    "name": "Gothita",
+    "rank": "384",
+    "raw": "5",
+    "percent": "0.00",
+    "types": ["psychic"],
+    "name_trans": "Gothita",
+    "l": "en"
+  },
+  {
+    "name": "Buizel",
+    "rank": "385",
+    "raw": "21",
+    "percent": "0.00",
+    "types": ["water"],
+    "name_trans": "Buizel",
+    "l": "en"
+  },
+  {
+    "name": "Shellder",
+    "rank": "386",
+    "raw": "1",
+    "percent": "0.00",
+    "types": ["water"],
+    "name_trans": "Shellder",
+    "l": "en"
+  },
+  {
+    "name": "Teddiursa",
+    "rank": "387",
+    "raw": "16",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Teddiursa",
+    "l": "en"
+  },
+  {
+    "name": "Crabrawler",
+    "rank": "388",
+    "raw": "4",
+    "percent": "0.00",
+    "types": ["fighting"],
+    "name_trans": "Crabrawler",
+    "l": "en"
+  },
+  {
+    "name": "Hatenna",
+    "rank": "389",
+    "raw": "2",
+    "percent": "0.00",
+    "types": ["psychic"],
+    "ss": true,
+    "id": 856,
+    "name_trans": "Hatenna",
+    "l": "en"
+  },
+  {
+    "name": "Rellor",
+    "rank": "390",
+    "raw": "4",
+    "percent": "0.00",
+    "types": ["bug"],
+    "ss": true,
+    "id": 922,
+    "l": "en"
+  },
+  {
+    "name": "Grimer",
+    "rank": "391",
+    "raw": "8",
+    "percent": "0.00",
+    "types": ["poison"],
+    "name_trans": "Grimer",
+    "l": "en"
+  },
+  {
+    "name": "Yungoos",
+    "rank": "392",
+    "raw": "1",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Yungoos",
+    "l": "en"
+  },
+  {
+    "name": "Deerling",
+    "rank": "393",
+    "raw": "1",
+    "percent": "0.00",
+    "types": ["normal", "grass"],
+    "name_trans": "Deerling",
+    "l": "en"
+  },
+  {
+    "name": "Fomantis",
+    "rank": "394",
+    "raw": "10",
+    "percent": "0.00",
+    "types": ["grass"],
+    "name_trans": "Fomantis",
+    "l": "en"
+  },
+  {
+    "name": "Houndour",
+    "rank": "395",
+    "raw": "13",
+    "percent": "0.00",
+    "types": ["dark", "fire"],
+    "name_trans": "Houndour",
+    "l": "en"
+  },
+  {
+    "name": "Hoppip",
+    "rank": "396",
+    "raw": "12",
+    "percent": "0.00",
+    "types": ["grass", "flying"],
+    "name_trans": "Hoppip",
+    "l": "en"
+  }
+]
