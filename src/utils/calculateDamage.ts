@@ -24,7 +24,7 @@ import {
 import { CalcList } from "../types/calcList";
 import { getPokemonSprite } from "./getPokemonSprite";
 import { getCancelAction, setCancelAction } from "./cancelAction";
-import { PokemonData } from "../types/gen9pokedex";
+import { PokemonData } from "../types/gen9Pokedex";
 import {
   getGen9PokemonDefensiveDataList,
   getGen9PokemonNames,
