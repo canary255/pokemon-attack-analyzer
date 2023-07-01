@@ -1,0 +1,3259 @@
+[
+  {
+    "name": "Flutter Mane",
+    "item": "Choice Specs",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Amoonguss",
+    "item": "Sitrus Berry",
+    "evs": "244/0/236/4/20/4",
+    "nature": "Bold"
+  },
+  {
+    "name": "Ting-Lu",
+    "item": "Assault Vest",
+    "evs": "68/156/28/0/252/4",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Chi-Yu",
+    "item": "Choice Scarf",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Chien-Pao",
+    "item": "Focus Sash",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Arcanine",
+    "item": "Safety Goggles",
+    "evs": "236/68/4/0/4/196",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Dragonite",
+    "item": "Choice Band",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Iron Bundle",
+    "item": "Booster Energy",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Gyarados",
+    "item": "Sitrus Berry",
+    "evs": "236/4/92/0/4/172",
+    "nature": "Careful"
+  },
+  {
+    "name": "Palafin",
+    "item": "Mystic Water",
+    "evs": "252/236/4/0/4/12",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Iron Hands",
+    "item": "Assault Vest",
+    "evs": "100/156/36/0/204/12",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Dondozo",
+    "item": "Leftovers",
+    "evs": "4/76/4/0/172/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Glimmora",
+    "item": "Assault Vest",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Tatsugiri",
+    "item": "Choice Scarf",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Great Tusk",
+    "item": "Choice Scarf",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Kingambit",
+    "item": "Assault Vest",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Annihilape",
+    "item": "Leftovers",
+    "evs": "252/4/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Gholdengo",
+    "item": "Leftovers",
+    "evs": "252/0/4/156/12/84",
+    "nature": "Modest"
+  },
+  {
+    "name": "Wo-Chien",
+    "item": "Leftovers",
+    "evs": "252/0/140/0/116/0",
+    "nature": "Calm"
+  },
+  {
+    "name": "Torkoal",
+    "item": "Charcoal",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Quiet"
+  },
+  {
+    "name": "Corviknight",
+    "item": "Choice Band",
+    "evs": "116/252/0/0/0/140",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Abomasnow",
+    "item": "Focus Sash",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Modest"
+  },
+  {
+    "name": "Azumarill",
+    "item": "Sitrus Berry",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Tyranitar",
+    "item": "Assault Vest",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Baxcalibur",
+    "item": "Clear Amulet",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Maushold",
+    "item": "Safety Goggles",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Talonflame",
+    "item": "Safety Goggles",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Roaring Moon",
+    "item": "Booster Energy",
+    "evs": "212/252/4/0/36/4",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Indeedee-F",
+    "item": "Psychic Seed",
+    "evs": "252/0/252/0/4/0",
+    "nature": "Bold"
+  },
+  {
+    "name": "Garchomp",
+    "item": "Clear Amulet",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Murkrow",
+    "item": "Eviolite",
+    "evs": "252/0/140/0/116/0",
+    "nature": "Bold"
+  },
+  {
+    "name": "Dragapult",
+    "item": "Choice Band",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Scizor",
+    "item": "Clear Amulet",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Armarouge",
+    "item": "Life Orb",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Modest"
+  },
+  {
+    "name": "Brute Bonnet",
+    "item": "Loaded Dice",
+    "evs": "28/252/0/0/0/228",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Grimmsnarl",
+    "item": "Light Clay",
+    "evs": "252/0/140/0/116/0",
+    "nature": "Careful"
+  },
+  {
+    "name": "Pelipper",
+    "item": "Damp Rock",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Modest"
+  },
+  {
+    "name": "Garganacl",
+    "item": "Leftovers",
+    "evs": "252/0/60/0/196/0",
+    "nature": "Careful"
+  },
+  {
+    "name": "Farigiraf",
+    "item": "Throat Spray",
+    "evs": "252/0/4/252/0/0",
+    "nature": "Modest"
+  },
+  {
+    "name": "Orthworm",
+    "item": "Sitrus Berry",
+    "evs": "212/4/36/0/252/4",
+    "nature": "Impish"
+  },
+  {
+    "name": "Ceruledge",
+    "item": "Clear Amulet",
+    "evs": "244/44/60/0/148/12",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Tsareena",
+    "item": "Sitrus Berry",
+    "evs": "156/188/4/0/68/92",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Salamence",
+    "item": "Life Orb",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Hydreigon",
+    "item": "Life Orb",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Espathra",
+    "item": "Covert Cloak",
+    "evs": "44/0/0/252/0/212",
+    "nature": "Timid"
+  },
+  {
+    "name": "Iron Valiant",
+    "item": "Booster Energy",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Slither Wing",
+    "item": "Assault Vest",
+    "evs": "164/212/36/0/4/92",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Barraskewda",
+    "item": "Focus Sash",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Skeledirge",
+    "item": "Leftovers",
+    "evs": "252/0/188/4/44/20",
+    "nature": "Bold"
+  },
+  {
+    "name": "Flamigo",
+    "item": "Choice Scarf",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Kilowattrel",
+    "item": "Focus Sash",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Hawlucha",
+    "item": "Psychic Seed",
+    "evs": "4/252/12/0/108/132",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Coalossal",
+    "item": "Weakness Policy",
+    "evs": "36/252/0/0/0/220",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Magnezone",
+    "item": "Assault Vest",
+    "evs": "236/0/44/84/140/4",
+    "nature": "Modest"
+  },
+  {
+    "name": "Staraptor",
+    "item": "Choice Scarf",
+    "evs": "252/108/0/0/0/148",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Quaquaval",
+    "item": "Clear Amulet",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Bellibolt",
+    "item": "Assault Vest",
+    "evs": "244/0/0/252/12/0",
+    "nature": "Modest"
+  },
+  {
+    "name": "Arboliva",
+    "item": "Sitrus Berry",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Modest"
+  },
+  {
+    "name": "Toxapex",
+    "item": "Black Sludge",
+    "evs": "252/0/164/0/92/0",
+    "nature": "Bold"
+  },
+  {
+    "name": "Chansey",
+    "item": "Eviolite",
+    "evs": "252/0/252/0/4/0",
+    "nature": "Bold"
+  },
+  {
+    "name": "Rabsca",
+    "item": "Mental Herb",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Quiet"
+  },
+  {
+    "name": "Iron Thorns",
+    "item": "Loaded Dice",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Gothitelle",
+    "item": "Sitrus Berry",
+    "evs": "252/0/124/0/132/0",
+    "nature": "Calm"
+  },
+  {
+    "name": "Rotom-Wash",
+    "item": "Sitrus Berry",
+    "evs": "252/0/252/0/0/4",
+    "nature": "Bold"
+  },
+  {
+    "name": "Lilligant",
+    "item": "Focus Sash",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Volcarona",
+    "item": "Sitrus Berry",
+    "evs": "212/0/84/20/4/188",
+    "nature": "Timid"
+  },
+  {
+    "name": "Scream Tail",
+    "item": "Booster Energy",
+    "evs": "252/60/60/0/36/100",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Hatterene",
+    "item": "Life Orb",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Quiet"
+  },
+  {
+    "name": "Lycanroc",
+    "item": "Focus Sash",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Mimikyu",
+    "item": "Life Orb",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Gastrodon",
+    "item": "Leftovers",
+    "evs": "180/0/116/140/68/4",
+    "nature": "Modest"
+  },
+  {
+    "name": "Oranguru",
+    "item": "Mental Herb",
+    "evs": "244/0/188/0/76/0",
+    "nature": "Sassy"
+  },
+  {
+    "name": "Iron Jugulis",
+    "item": "Booster Energy",
+    "evs": "252/0/4/4/132/116",
+    "nature": "Timid"
+  },
+  {
+    "name": "Sylveon",
+    "item": "Choice Specs",
+    "evs": "244/0/12/252/0/0",
+    "nature": "Quiet"
+  },
+  {
+    "name": "Tauros-Paldea-Aqua",
+    "item": "Mirror Herb",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Klefki",
+    "item": "Light Clay",
+    "evs": "252/0/76/0/180/0",
+    "nature": "Calm"
+  },
+  {
+    "name": "Bronzong",
+    "item": "Safety Goggles",
+    "evs": "252/0/252/0/4/0",
+    "nature": "Relaxed"
+  },
+  {
+    "name": "Vivillon",
+    "item": "Focus Sash",
+    "evs": "0/0/4/252/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Jumpluff",
+    "item": "Covert Cloak",
+    "evs": "244/0/60/4/4/196",
+    "nature": "Timid"
+  },
+  {
+    "name": "Meowscarada",
+    "item": "Focus Sash",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Sandy Shocks",
+    "item": "Booster Energy",
+    "evs": "44/0/4/204/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Breloom",
+    "item": "Loaded Dice",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Iron Moth",
+    "item": "Booster Energy",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Dachsbun",
+    "item": "Leftovers",
+    "evs": "252/0/4/0/252/0",
+    "nature": "Careful"
+  },
+  {
+    "name": "Drednaw",
+    "item": "Choice Band",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Iron Treads",
+    "item": "Booster Energy",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Hariyama",
+    "item": "Flame Orb",
+    "evs": "36/236/0/0/236/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Pawmot",
+    "item": "Focus Sash",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Tinkaton",
+    "item": "Shuca Berry",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Tauros-Paldea-Blaze",
+    "item": "Safety Goggles",
+    "evs": "252/76/4/0/124/52",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Braviary",
+    "item": "Safety Goggles",
+    "evs": "188/252/68/0/0/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Sableye",
+    "item": "Light Clay",
+    "evs": "252/0/4/0/252/0",
+    "nature": "Calm"
+  },
+  {
+    "name": "Houndstone",
+    "item": "Life Orb",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Stonjourner",
+    "item": "Focus Sash",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Gallade",
+    "item": "Focus Sash",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Rotom-Heat",
+    "item": "Iapapa Berry",
+    "evs": "252/0/68/4/180/4",
+    "nature": "Calm"
+  },
+  {
+    "name": "Gardevoir",
+    "item": "Sitrus Berry",
+    "evs": "252/0/188/36/4/28",
+    "nature": "Modest"
+  },
+  {
+    "name": "Cetitan",
+    "item": "Assault Vest",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Gengar",
+    "item": "Focus Sash",
+    "evs": "0/0/4/252/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Dragalge",
+    "item": "Air Balloon",
+    "evs": "244/0/12/252/0/0",
+    "nature": "Quiet"
+  },
+  {
+    "name": "Pincurchin",
+    "item": "Terrain Extender",
+    "evs": "252/4/252/0/0/0",
+    "nature": "Impish"
+  },
+  {
+    "name": "Medicham",
+    "item": "Focus Sash",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Scovillain",
+    "item": "Focus Sash",
+    "evs": "244/0/196/0/68/0",
+    "nature": "Bold"
+  },
+  {
+    "name": "Lumineon",
+    "item": "Wiki Berry",
+    "evs": "252/0/188/4/60/4",
+    "nature": "Bold"
+  },
+  {
+    "name": "Bruxish",
+    "item": "Lum Berry",
+    "evs": "252/4/36/0/212/4",
+    "nature": "Careful"
+  },
+  {
+    "name": "Floatzel",
+    "item": "Choice Band",
+    "evs": "4/252/92/0/4/156",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Slowking",
+    "item": "Leftovers",
+    "evs": "252/0/156/4/96/0",
+    "nature": "Sassy"
+  },
+  {
+    "name": "Goodra",
+    "item": "Assault Vest",
+    "evs": "196/0/76/228/4/4",
+    "nature": "Calm"
+  },
+  {
+    "name": "Vaporeon",
+    "item": "Leftovers",
+    "evs": "188/0/156/84/36/44",
+    "nature": "Modest"
+  },
+  {
+    "name": "Blissey",
+    "item": "Mirror Herb",
+    "evs": "4/0/252/252/0/0",
+    "nature": "Relaxed"
+  },
+  {
+    "name": "Lucario",
+    "item": "Life Orb",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Mudsdale",
+    "item": "Assault Vest",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Glaceon",
+    "item": "Bright Powder",
+    "evs": "252/0/4/252/0/0",
+    "nature": "Modest"
+  },
+  {
+    "name": "Revavroom",
+    "item": "Clear Amulet",
+    "evs": "252/4/4/0/244/4",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Toxtricity",
+    "item": "Choice Specs",
+    "evs": "204/0/4/204/4/92",
+    "nature": "Modest"
+  },
+  {
+    "name": "Slowbro",
+    "item": "Chesto Berry",
+    "evs": "252/0/20/0/236/0",
+    "nature": "Relaxed"
+  },
+  {
+    "name": "Indeedee",
+    "item": "Psychic Seed",
+    "evs": "196/0/0/60/0/252",
+    "nature": "Modest"
+  },
+  {
+    "name": "Hippowdon",
+    "item": "Smooth Rock",
+    "evs": "252/0/252/0/4/0",
+    "nature": "Impish"
+  },
+  {
+    "name": "Grafaiai",
+    "item": "Focus Sash",
+    "evs": "252/4/0/0/252/0",
+    "nature": "Careful"
+  },
+  {
+    "name": "Lycanroc-Midnight",
+    "item": "Scope Lens",
+    "evs": "36/252/4/0/4/212",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Rotom-Mow",
+    "item": "Sitrus Berry",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Raichu",
+    "item": "Focus Sash",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Cryogonal",
+    "item": "Focus Sash",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Brambleghast",
+    "item": "Loaded Dice",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Toedscruel",
+    "item": "Rocky Helmet",
+    "evs": "252/0/196/0/60/0",
+    "nature": "Bold"
+  },
+  {
+    "name": "Clodsire",
+    "item": "Leftovers",
+    "evs": "252/0/4/0/252/0",
+    "nature": "Calm"
+  },
+  {
+    "name": "Stantler",
+    "item": "Eviolite",
+    "evs": "252/252/4/0/0/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Ditto",
+    "item": "Choice Scarf",
+    "evs": "252/0/252/0/0/4",
+    "nature": "Impish"
+  },
+  {
+    "name": "Drifblim",
+    "item": "Psychic Seed",
+    "evs": "236/0/252/0/20/0",
+    "nature": "Relaxed"
+  },
+  {
+    "name": "Eelektross",
+    "item": "Life Orb",
+    "evs": "0/252/124/0/128/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Dudunsparce",
+    "item": "Weakness Policy",
+    "evs": "4/252/28/0/220/4",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Florges",
+    "item": "Life Orb",
+    "evs": "252/0/252/0/4/0",
+    "nature": "Bold"
+  },
+  {
+    "name": "Lycanroc-Dusk",
+    "item": "Hard Stone",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Umbreon",
+    "item": "Leftovers",
+    "evs": "4/0/252/0/252/0",
+    "nature": "Bold"
+  },
+  {
+    "name": "Noivern",
+    "item": "Focus Sash",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Luxray",
+    "item": "Sitrus Berry",
+    "evs": "244/4/84/0/44/132",
+    "nature": "Bold"
+  },
+  {
+    "name": "Ursaring",
+    "item": "Flame Orb",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Clawitzer",
+    "item": "Life Orb",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Modest"
+  },
+  {
+    "name": "Oricorio-Pom-Pom",
+    "item": "Focus Sash",
+    "evs": "36/0/12/252/12/196",
+    "nature": "Modest"
+  },
+  {
+    "name": "Appletun",
+    "item": "Leftovers",
+    "evs": "252/0/0/4/252/0",
+    "nature": "Calm"
+  },
+  {
+    "name": "Lokix",
+    "item": "Life Orb",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Salazzle",
+    "item": "Eject Pack",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Glalie",
+    "item": "Leftovers",
+    "evs": "244/0/0/244/0/20",
+    "nature": "Modest"
+  },
+  {
+    "name": "Krookodile",
+    "item": "Salac Berry",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Pachirisu",
+    "item": "Sitrus Berry",
+    "evs": "252/4/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Beartic",
+    "item": "Wide Lens",
+    "evs": "52/252/4/0/4/196",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Frosmoth",
+    "item": "Leftovers",
+    "evs": "252/0/0/4/252/0",
+    "nature": "Calm"
+  },
+  {
+    "name": "Weavile",
+    "item": "Focus Sash",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Rotom-Frost",
+    "item": "Assault Vest",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Modest"
+  },
+  {
+    "name": "Tropius",
+    "item": "Sitrus Berry",
+    "evs": "252/0/212/0/44/0",
+    "nature": "Bold"
+  },
+  {
+    "name": "Jolteon",
+    "item": "Focus Sash",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Avalugg",
+    "item": "Leftovers",
+    "evs": "236/4/52/0/212/0",
+    "nature": "Relaxed"
+  },
+  {
+    "name": "Cyclizar",
+    "item": "Choice Scarf",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Altaria",
+    "item": "Safety Goggles",
+    "evs": "252/36/52/0/140/28",
+    "nature": "Careful"
+  },
+  {
+    "name": "Masquerain",
+    "item": "Focus Sash",
+    "evs": "252/0/0/4/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Cloyster",
+    "item": "White Herb",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Electrode",
+    "item": "Focus Sash",
+    "evs": "252/0/0/4/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Spiritomb",
+    "item": "Safety Goggles",
+    "evs": "252/0/4/0/252/0",
+    "nature": "Sassy"
+  },
+  {
+    "name": "Espeon",
+    "item": "Choice Specs",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Gothorita",
+    "item": "Eviolite",
+    "evs": "252/0/156/0/100/0",
+    "nature": "Relaxed"
+  },
+  {
+    "name": "Squawkabilly",
+    "item": "Choice Scarf",
+    "evs": "252/0/4/0/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Oricorio-Sensu",
+    "item": "Focus Sash",
+    "evs": "0/20/0/252/0/236",
+    "nature": "Mild"
+  },
+  {
+    "name": "Wugtrio",
+    "item": "Safety Goggles",
+    "evs": "252/0/4/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Falinks",
+    "item": "Adrenaline Orb",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Haxorus",
+    "item": "Lum Berry",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Slowpoke",
+    "item": "Eviolite",
+    "evs": "252/0/124/0/128/0",
+    "nature": "Sassy"
+  },
+  {
+    "name": "Crabominable",
+    "item": "Clear Amulet",
+    "evs": "60/252/36/0/156/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Palossand",
+    "item": "Assault Vest",
+    "evs": "116/0/76/252/60/4",
+    "nature": "Modest"
+  },
+  {
+    "name": "Mismagius",
+    "item": "Focus Sash",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Ampharos",
+    "item": "Assault Vest",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Modest"
+  },
+  {
+    "name": "Flareon",
+    "item": "Toxic Orb",
+    "evs": "244/252/0/0/12/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Primeape",
+    "item": "Eviolite",
+    "evs": "252/252/4/0/0/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Froslass",
+    "item": "Focus Sash",
+    "evs": "252/0/0/4/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Pawmo",
+    "item": "Choice Scarf",
+    "evs": "0/0/252/0/0/252",
+    "nature": "Hardy"
+  },
+  {
+    "name": "Muk",
+    "item": "Leftovers",
+    "evs": "252/252/4/0/0/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Zoroark",
+    "item": "Choice Band",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Sandaconda",
+    "item": "Bright Powder",
+    "evs": "236/0/20/0/252/0",
+    "nature": "Careful"
+  },
+  {
+    "name": "Greedent",
+    "item": "Sitrus Berry",
+    "evs": "251/252/0/0/5/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Alomomola",
+    "item": "Eject Button",
+    "evs": "252/0/4/0/252/0",
+    "nature": "Calm"
+  },
+  {
+    "name": "Cacturne",
+    "item": "Clear Amulet",
+    "evs": "252/0/124/0/132/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Polteageist",
+    "item": "Mental Herb",
+    "evs": "252/0/0/0/252/4",
+    "nature": "Calm"
+  },
+  {
+    "name": "Honchkrow",
+    "item": "Clear Amulet",
+    "evs": "0/252/124/0/128/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Golduck",
+    "item": "Life Orb",
+    "evs": "108/0/76/252/4/68",
+    "nature": "Modest"
+  },
+  {
+    "name": "Copperajah",
+    "item": "Life Orb",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Toxicroak",
+    "item": "Assault Vest",
+    "evs": "76/108/4/0/244/76",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Slaking",
+    "item": "Life Orb",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Misdreavus",
+    "item": "Eviolite",
+    "evs": "252/0/4/0/252/0",
+    "nature": "Calm"
+  },
+  {
+    "name": "Forretress",
+    "item": "Leftovers",
+    "evs": "252/4/4/0/248/0",
+    "nature": "Sassy"
+  },
+  {
+    "name": "Bombirdier",
+    "item": "Assault Vest",
+    "evs": "252/252/4/0/0/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Leafeon",
+    "item": "Life Orb",
+    "evs": "52/252/0/0/0/204",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Bisharp",
+    "item": "Eviolite",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Scyther",
+    "item": "Eviolite",
+    "evs": "252/252/0/0/0/4",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Dugtrio",
+    "item": "Focus Sash",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Lurantis",
+    "item": "Leftovers",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Modest"
+  },
+  {
+    "name": "Flapple",
+    "item": "Liechi Berry",
+    "evs": "252/248/4/0/0/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Heracross",
+    "item": "Flame Orb",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+
+  {
+    "name": "Golduck",
+    "rank": "177",
+    "search": "waterSwift SwimCloud NineDamp Life OrbChoice SpecsMystic Water Assault Vest Choice Scarf Leftovers Focus Sash Sitrus Berry Light Clay Other Ice BeamHydro PumpGrass KnotClear SmogSurfProtectPsychicEncorePower GemNasty PlotChilling WaterYawnIcy Wind Rain Dance Light Screen Tera Blast Other",
+    "raw": "3767",
+    "percent": "0.02",
+    "types": ["water"],
+    "name_trans": "Golduck",
+    "l": "en"
+  },
+  {
+    "name": "Muk",
+    "rank": "178",
+    "search": "poisonPoison TouchStenchSticky HoldLeftoversBlack SludgeAssault Vest Punching Glove Other Poison JabShadow SneakDrain PunchProtectMinimizeCurseDisableHelping HandToxicFire PunchSubstituteGunk ShotTera Blast Ice Punch Other",
+    "raw": "4761",
+    "percent": "0.02",
+    "types": ["poison"],
+    "name_trans": "Muk",
+    "l": "en"
+  },
+  {
+    "name": "Zoroark",
+    "rank": "179",
+    "search": "darkIllusionChoice BandFocus SashChoice Specs Life Orb Expert Belt Choice Scarf Other Sucker PunchU-turnLow KickDark PulseKnock OffProtectSludge BombNight DazeFlamethrowerEncoreCrunchNasty PlotTera Blast Helping Hand Counter Grass Knot Trick Hyper Voice Psychic Focus Blast Other",
+    "raw": "4980",
+    "percent": "0.02",
+    "types": ["dark"],
+    "name_trans": "Zoroark",
+    "l": "en"
+  },
+  {
+    "name": "Sandaconda",
+    "rank": "180",
+    "search": "groundSand VeilShed SkinSand SpitBright PowderLeftoversSitrus BerryScope Lens Rocky Helmet Assault Vest Other EarthquakeBody PressMinimizeProtectGlareCoilRock SlideIron DefenseStone EdgeDrill RunBulldoze Other",
+    "raw": "1362",
+    "percent": "0.02",
+    "types": ["ground"],
+    "ss": true,
+    "id": 844,
+    "name_trans": "Sandaconda",
+    "l": "en"
+  },
+  {
+    "name": "Greedent",
+    "rank": "181",
+    "search": "normalCheek PouchGluttonySitrus BerryIapapa BerryApicot Berry Other Belly DrumProtectBody SlamPsychic FangsTera BlastEarthquakeStomping TantrumCrunchSeed Bomb Stuff Cheeks Thief Body Press Other",
+    "raw": "2624",
+    "percent": "0.02",
+    "types": ["normal"],
+    "ss": true,
+    "id": 820,
+    "name_trans": "Greedent",
+    "l": "en"
+  },
+  {
+    "name": "Alomomola",
+    "rank": "182",
+    "search": "waterRegeneratorHealerHydration Eject ButtonLeftoversSitrus BerryRocky Helmet Bright Powder Binding Band Other Helping HandWide GuardAqua JetChilling WaterIcy WindWhirlpoolSoakWishAqua RingLight ScreenMirror CoatProtect Pain Split Other",
+    "raw": "1742",
+    "percent": "0.02",
+    "types": ["water"],
+    "name_trans": "Alomomola",
+    "l": "en"
+  },
+  {
+    "name": "Mismagius",
+    "rank": "183",
+    "search": "ghostLevitateFocus SashChoice ScarfChoice SpecsLeftovers Colbur Berry Other Shadow BallDazzling GleamIcy WindProtectHexMystical FireEnergy BallTera BlastTrick RoomWill-O-WispPower GemSkill SwapDark PulseTaunt Nasty Plot Other",
+    "raw": "1997",
+    "percent": "0.01",
+    "types": ["ghost"],
+    "name_trans": "Mismagius",
+    "l": "en"
+  },
+  {
+    "name": "Ampharos",
+    "rank": "184",
+    "search": "electricStaticPlusAssault VestMagnetChoice SpecsLeftovers Mental Herb Shuca Berry Life Orb Light Clay Sitrus Berry Other Dazzling GleamThunderboltElectrowebProtectDischargePower GemVolt SwitchFocus BlastTera BlastThunderHelping Hand Cotton Guard Dragon Pulse Magnetic Flux Other",
+    "raw": "3930",
+    "percent": "0.01",
+    "types": ["electric"],
+    "name_trans": "Ampharos",
+    "l": "en"
+  },
+  {
+    "name": "Flareon",
+    "rank": "185",
+    "search": "fireGutsFlash FireToxic OrbAssault VestLeftovers Flame Orb Life Orb Expert Belt Other Flare BlitzFacadeQuick AttackProtectDetectWill-O-WispDouble KickTrailblaze Nothing Yawn Other",
+    "raw": "2701",
+    "percent": "0.01",
+    "types": ["fire"],
+    "name_trans": "Flareon",
+    "l": "en"
+  },
+  {
+    "name": "Primeape",
+    "rank": "186",
+    "search": "fightingAnger PointVital SpiritDefiant EvioliteOther Drain PunchRage FistProtectEarthquakeBulk UpIce PunchSeed Bomb Taunt Other",
+    "raw": "1957",
+    "percent": "0.01",
+    "types": ["fighting"],
+    "name_trans": "Primeape",
+    "l": "en"
+  },
+  {
+    "name": "Cacturne",
+    "rank": "187",
+    "search": "grassdarkWater AbsorbSand VeilClear AmuletLoaded DiceFocus Sash Bright Powder Leftovers Assault Vest Black Glasses Life Orb Other Sucker PunchSpiky ShieldSwords DanceTera BlastProtectBullet SeedLeech SeedSeed Bomb Drain Punch Dark Pulse Leaf Storm Giga Drain Poison Jab Energy Ball Substitute Stomping Tantrum Other",
+    "raw": "2138",
+    "percent": "0.01",
+    "types": ["grass", "dark"],
+    "name_trans": "Cacturne",
+    "l": "en"
+  },
+  {
+    "name": "Polteageist",
+    "rank": "188",
+    "search": "ghostCursed BodyWeak ArmorMental HerbFocus SashWhite Herb Covert Cloak Weakness Policy Other Shadow BallTrick RoomWill-O-WispTeatimeShell SmashStored PowerTera BlastDark PulseGiga DrainMementoProtect Other",
+    "raw": "2992",
+    "percent": "0.01",
+    "types": ["ghost"],
+    "ss": true,
+    "id": 855,
+    "name_trans": "Polteageist",
+    "l": "en"
+  },
+  {
+    "name": "Froslass",
+    "rank": "189",
+    "search": "iceghostCursed BodySnow CloakFocus SashBright PowderLight Clay Sitrus Berry Other Icy WindFrost BreathWill-O-WispProtectDestiny BondShadow BallTauntIce ShardBlizzardLight ScreenReflectAurora Veil Thunder Wave Snowscape Thunderbolt Other",
+    "raw": "3953",
+    "percent": "0.01",
+    "types": ["ice", "ghost"],
+    "name_trans": "Froslass",
+    "l": "en"
+  },
+  {
+    "name": "Pawmo",
+    "rank": "190",
+    "search": "electricfightingVolt AbsorbNatural Cure Choice ScarfOther NothingAgilityOther ",
+    "raw": "21",
+    "percent": "0.01",
+    "types": ["electric", "fighting"],
+    "ss": true,
+    "id": 955,
+    "l": "en"
+  },
+  {
+    "name": "Honchkrow",
+    "rank": "191",
+    "search": "darkflyingMoxieSuper LuckInsomnia Clear AmuletFocus SashScope LensOther Sucker PunchBrave BirdHazeHelping HandNight SlashProtectDrill PeckTailwindTauntHeat Wave Other",
+    "raw": "2013",
+    "percent": "0.01",
+    "types": ["dark", "flying"],
+    "name_trans": "Honchkrow",
+    "l": "en"
+  },
+  {
+    "name": "Gothorita",
+    "rank": "192",
+    "search": "psychicShadow TagFrisk Competitive EvioliteOther Fake OutTrick RoomProtectHeal PulseFoul PlayPsyshock Other",
+    "raw": "1970",
+    "percent": "0.01",
+    "types": ["psychic"],
+    "name_trans": "Gothorita",
+    "l": "en"
+  },
+  {
+    "name": "Squawkabilly",
+    "rank": "193",
+    "search": "normalflyingIntimidateHustleGutsSheer Force Choice ScarfSitrus BerryFocus SashFlame OrbOther Parting ShotBrave BirdU-turnTauntTailwindFinal GambitProtectFoul PlayGrowlDouble-EdgeGiga ImpactFacadeQuick Attack Other",
+    "raw": "2952",
+    "percent": "0.01",
+    "types": ["normal", "flying"],
+    "ss": true,
+    "id": 960,
+    "l": "en"
+  },
+  {
+    "name": "Oricorio-Sensu",
+    "rank": "194",
+    "search": "ghostflyingDancerFocus SashColbur BerryIapapa Berry Aguav Berry Other Revelation DanceProtectQuiver DanceHelping HandTailwindAir SlashIcy WindU-turnOther",
+    "raw": "2443",
+    "percent": "0.01",
+    "types": ["ghost", "flying"],
+    "l": "en"
+  },
+  {
+    "name": "Wugtrio",
+    "rank": "195",
+    "search": "waterGooeySand VeilRattledSafety GogglesMystic WaterFocus SashLife Orb Choice Scarf Bright Powder Sticky Barb Other Aqua JetProtectMementoSurfTriple DiveHelping HandFoul PlayMud-Slap Stomping Tantrum Other",
+    "raw": "1258",
+    "percent": "0.01",
+    "types": ["water"],
+    "ss": true,
+    "id": 930,
+    "l": "en"
+  },
+  {
+    "name": "Falinks",
+    "rank": "196",
+    "search": "fightingDefiantBattle Armor Adrenaline OrbLum BerrySitrus Berry Psychic Seed Life Orb Leftovers Other No RetreatClose CombatProtectZen HeadbuttIron HeadRock SlideOther",
+    "raw": "2053",
+    "percent": "0.01",
+    "types": ["fighting"],
+    "ss": true,
+    "id": 870,
+    "name_trans": "Falinks",
+    "l": "en"
+  },
+  {
+    "name": "Sunflora",
+    "rank": "197",
+    "raw": "983",
+    "percent": "0.01",
+    "types": ["grass"],
+    "name_trans": "Sunflora",
+    "l": "en"
+  },
+  {
+    "name": "Camerupt",
+    "rank": "198",
+    "raw": "3211",
+    "percent": "0.01",
+    "types": ["fire", "ground"],
+    "name_trans": "Camerupt",
+    "l": "en"
+  },
+  {
+    "name": "Oricorio",
+    "rank": "199",
+    "raw": "1260",
+    "percent": "0.01",
+    "types": ["fire", "flying"],
+    "name_trans": "Oricorio",
+    "l": "en"
+  },
+  {
+    "name": "Whiscash",
+    "rank": "200",
+    "raw": "525",
+    "percent": "0.01",
+    "types": ["water", "ground"],
+    "name_trans": "Whiscash",
+    "l": "en"
+  },
+  {
+    "name": "Rotom-Fan",
+    "rank": "201",
+    "raw": "1014",
+    "percent": "0.01",
+    "types": ["electric", "flying"],
+    "l": "en"
+  },
+  {
+    "name": "Houndoom",
+    "rank": "202",
+    "raw": "2320",
+    "percent": "0.01",
+    "types": ["dark", "fire"],
+    "name_trans": "Houndoom",
+    "l": "en"
+  },
+  {
+    "name": "Mabosstiff",
+    "rank": "203",
+    "raw": "1945",
+    "percent": "0.01",
+    "types": ["dark"],
+    "ss": true,
+    "id": 973,
+    "l": "en"
+  },
+  {
+    "name": "Klawf",
+    "rank": "204",
+    "raw": "2092",
+    "percent": "0.01",
+    "types": ["rock"],
+    "ss": true,
+    "id": 962,
+    "l": "en"
+  },
+  {
+    "name": "Wigglytuff",
+    "rank": "205",
+    "raw": "1649",
+    "percent": "0.01",
+    "types": ["normal", "fairy"],
+    "name_trans": "Wigglytuff",
+    "l": "en"
+  },
+  {
+    "name": "Veluza",
+    "rank": "206",
+    "raw": "2108",
+    "percent": "0.01",
+    "types": ["water", "psychic"],
+    "ss": true,
+    "id": 932,
+    "l": "en"
+  },
+  {
+    "name": "Sawsbuck",
+    "rank": "207",
+    "raw": "1452",
+    "percent": "0.01",
+    "types": ["normal", "grass"],
+    "name_trans": "Sawsbuck",
+    "l": "en"
+  },
+  {
+    "name": "Jigglypuff",
+    "rank": "208",
+    "raw": "1091",
+    "percent": "0.01",
+    "types": ["normal", "fairy"],
+    "name_trans": "Jigglypuff",
+    "l": "en"
+  },
+  {
+    "name": "Sudowoodo",
+    "rank": "209",
+    "raw": "986",
+    "percent": "0.01",
+    "types": ["rock"],
+    "name_trans": "Sudowoodo",
+    "l": "en"
+  },
+  {
+    "name": "Qwilfish",
+    "rank": "210",
+    "raw": "1227",
+    "percent": "0.00",
+    "types": ["water", "poison"],
+    "name_trans": "Qwilfish",
+    "l": "en"
+  },
+  {
+    "name": "Pyroar",
+    "rank": "211",
+    "raw": "1907",
+    "percent": "0.00",
+    "types": ["fire", "normal"],
+    "name_trans": "Pyroar",
+    "l": "en"
+  },
+  {
+    "name": "Donphan",
+    "rank": "212",
+    "raw": "1852",
+    "percent": "0.00",
+    "types": ["ground"],
+    "name_trans": "Donphan",
+    "l": "en"
+  },
+  {
+    "name": "Gogoat",
+    "rank": "213",
+    "raw": "1714",
+    "percent": "0.00",
+    "types": ["grass"],
+    "name_trans": "Gogoat",
+    "l": "en"
+  },
+  {
+    "name": "Kricketune",
+    "rank": "214",
+    "raw": "202",
+    "percent": "0.00",
+    "types": ["bug"],
+    "name_trans": "Kricketune",
+    "l": "en"
+  },
+  {
+    "name": "Pikachu",
+    "rank": "215",
+    "raw": "2373",
+    "percent": "0.00",
+    "types": ["electric"],
+    "name_trans": "Pikachu",
+    "l": "en"
+  },
+  {
+    "name": "Dedenne",
+    "rank": "216",
+    "raw": "1443",
+    "percent": "0.00",
+    "types": ["electric", "fairy"],
+    "name_trans": "Dedenne",
+    "l": "en"
+  },
+  {
+    "name": "Naclstack",
+    "rank": "217",
+    "raw": "403",
+    "percent": "0.00",
+    "types": ["rock"],
+    "ss": true,
+    "id": 964,
+    "l": "en"
+  },
+  {
+    "name": "Grumpig",
+    "rank": "218",
+    "raw": "1135",
+    "percent": "0.00",
+    "types": ["psychic"],
+    "name_trans": "Grumpig",
+    "l": "en"
+  },
+  {
+    "name": "Marill",
+    "rank": "219",
+    "raw": "113",
+    "percent": "0.00",
+    "types": ["water", "fairy"],
+    "name_trans": "Marill",
+    "l": "en"
+  },
+  {
+    "name": "Haunter",
+    "rank": "220",
+    "raw": "1119",
+    "percent": "0.00",
+    "types": ["ghost", "poison"],
+    "name_trans": "Haunter",
+    "l": "en"
+  },
+  {
+    "name": "Persian",
+    "rank": "221",
+    "raw": "1380",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Persian",
+    "l": "en"
+  },
+  {
+    "name": "Basculin",
+    "rank": "222",
+    "raw": "668",
+    "percent": "0.00",
+    "types": ["water"],
+    "name_trans": "Basculin",
+    "l": "en"
+  },
+  {
+    "name": "Zangoose",
+    "rank": "223",
+    "raw": "1343",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Zangoose",
+    "l": "en"
+  },
+  {
+    "name": "Magneton",
+    "rank": "224",
+    "raw": "1295",
+    "percent": "0.00",
+    "types": ["electric", "steel"],
+    "name_trans": "Magneton",
+    "l": "en"
+  },
+  {
+    "name": "Hypno",
+    "rank": "225",
+    "raw": "792",
+    "percent": "0.00",
+    "types": ["psychic"],
+    "name_trans": "Hypno",
+    "l": "en"
+  },
+  {
+    "name": "Eiscue",
+    "rank": "226",
+    "raw": "2264",
+    "percent": "0.00",
+    "types": ["ice"],
+    "ss": true,
+    "id": 875,
+    "name_trans": "Eiscue",
+    "l": "en"
+  },
+  {
+    "name": "Banette",
+    "rank": "227",
+    "raw": "1259",
+    "percent": "0.00",
+    "types": ["ghost"],
+    "name_trans": "Banette",
+    "l": "en"
+  },
+  {
+    "name": "Passimian",
+    "rank": "228",
+    "raw": "1196",
+    "percent": "0.00",
+    "types": ["fighting"],
+    "name_trans": "Passimian",
+    "l": "en"
+  },
+  {
+    "name": "Spidops",
+    "rank": "229",
+    "raw": "1253",
+    "percent": "0.00",
+    "types": ["bug"],
+    "ss": true,
+    "id": 919,
+    "l": "en"
+  },
+  {
+    "name": "Finneon",
+    "rank": "230",
+    "raw": "28",
+    "percent": "0.00",
+    "types": ["water"],
+    "name_trans": "Finneon",
+    "l": "en"
+  },
+  {
+    "name": "Vespiquen",
+    "rank": "231",
+    "raw": "826",
+    "percent": "0.00",
+    "types": ["bug", "flying"],
+    "name_trans": "Vespiquen",
+    "l": "en"
+  },
+  {
+    "name": "Skuntank",
+    "rank": "232",
+    "raw": "931",
+    "percent": "0.00",
+    "types": ["poison", "dark"],
+    "name_trans": "Skuntank",
+    "l": "en"
+  },
+  {
+    "name": "Riolu",
+    "rank": "233",
+    "raw": "1651",
+    "percent": "0.00",
+    "types": ["fighting"],
+    "name_trans": "Riolu",
+    "l": "en"
+  },
+  {
+    "name": "Toedscool",
+    "rank": "234",
+    "raw": "664",
+    "percent": "0.00",
+    "types": ["ground", "grass"],
+    "ss": true,
+    "id": 1006,
+    "l": "en"
+  },
+  {
+    "name": "Snover",
+    "rank": "235",
+    "raw": "67",
+    "percent": "0.00",
+    "types": ["grass", "ice"],
+    "name_trans": "Snover",
+    "l": "en"
+  },
+  {
+    "name": "Fletchling",
+    "rank": "236",
+    "raw": "408",
+    "percent": "0.00",
+    "types": ["normal", "flying"],
+    "name_trans": "Fletchling",
+    "l": "en"
+  },
+  {
+    "name": "Bonsly",
+    "rank": "237",
+    "raw": "29",
+    "percent": "0.00",
+    "types": ["rock"],
+    "name_trans": "Bonsly",
+    "l": "en"
+  },
+  {
+    "name": "Delibird",
+    "rank": "238",
+    "raw": "628",
+    "percent": "0.00",
+    "types": ["ice", "flying"],
+    "name_trans": "Delibird",
+    "l": "en"
+  },
+  {
+    "name": "Swalot",
+    "rank": "239",
+    "raw": "1159",
+    "percent": "0.00",
+    "types": ["poison"],
+    "name_trans": "Swalot",
+    "l": "en"
+  },
+  {
+    "name": "Dunsparce",
+    "rank": "240",
+    "raw": "872",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Dunsparce",
+    "l": "en"
+  },
+  {
+    "name": "Gumshoos",
+    "rank": "241",
+    "raw": "457",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Gumshoos",
+    "l": "en"
+  },
+  {
+    "name": "Oinkologne",
+    "rank": "242",
+    "raw": "718",
+    "percent": "0.00",
+    "types": ["normal"],
+    "ss": true,
+    "id": 916,
+    "l": "en"
+  },
+  {
+    "name": "Foongus",
+    "rank": "243",
+    "raw": "216",
+    "percent": "0.00",
+    "types": ["grass", "poison"],
+    "name_trans": "Foongus",
+    "l": "en"
+  },
+  {
+    "name": "Oinkologne-F",
+    "rank": "244",
+    "raw": "432",
+    "percent": "0.00",
+    "types": ["normal"],
+    "ss": true,
+    "id": 916,
+    "l": "en"
+  },
+  {
+    "name": "Glimmet",
+    "rank": "245",
+    "raw": "64",
+    "percent": "0.00",
+    "types": ["rock", "poison"],
+    "ss": true,
+    "id": 966,
+    "l": "en"
+  },
+  {
+    "name": "Dragonair",
+    "rank": "246",
+    "raw": "420",
+    "percent": "0.00",
+    "types": ["dragon"],
+    "name_trans": "Dragonair",
+    "l": "en"
+  },
+  {
+    "name": "Tauros-Paldea-Combat",
+    "rank": "247",
+    "raw": "445",
+    "percent": "0.00",
+    "l": "en"
+  },
+  {
+    "name": "Sneasel",
+    "rank": "248",
+    "raw": "405",
+    "percent": "0.00",
+    "types": ["dark", "ice"],
+    "name_trans": "Sneasel",
+    "l": "en"
+  },
+  {
+    "name": "Bronzor",
+    "rank": "249",
+    "raw": "225",
+    "percent": "0.00",
+    "types": ["steel", "psychic"],
+    "name_trans": "Bronzor",
+    "l": "en"
+  },
+  {
+    "name": "Venomoth",
+    "rank": "250",
+    "raw": "1146",
+    "percent": "0.00",
+    "types": ["bug", "poison"],
+    "name_trans": "Venomoth",
+    "l": "en"
+  },
+  {
+    "name": "Hippopotas",
+    "rank": "251",
+    "raw": "203",
+    "percent": "0.00",
+    "types": ["ground"],
+    "name_trans": "Hippopotas",
+    "l": "en"
+  },
+  {
+    "name": "Phanpy",
+    "rank": "252",
+    "raw": "8",
+    "percent": "0.00",
+    "types": ["ground"],
+    "name_trans": "Phanpy",
+    "l": "en"
+  },
+  {
+    "name": "Sunkern",
+    "rank": "253",
+    "raw": "39",
+    "percent": "0.00",
+    "types": ["grass"],
+    "name_trans": "Sunkern",
+    "l": "en"
+  },
+  {
+    "name": "Komala",
+    "rank": "254",
+    "raw": "872",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Komala",
+    "l": "en"
+  },
+  {
+    "name": "Luvdisc",
+    "rank": "255",
+    "raw": "207",
+    "percent": "0.00",
+    "types": ["water"],
+    "name_trans": "Luvdisc",
+    "l": "en"
+  },
+  {
+    "name": "Bramblin",
+    "rank": "256",
+    "raw": "19",
+    "percent": "0.00",
+    "types": ["grass", "ghost"],
+    "ss": true,
+    "id": 974,
+    "l": "en"
+  },
+  {
+    "name": "Surskit",
+    "rank": "257",
+    "raw": "175",
+    "percent": "0.00",
+    "types": ["bug", "water"],
+    "name_trans": "Surskit",
+    "l": "en"
+  },
+  {
+    "name": "Lechonk",
+    "rank": "258",
+    "raw": "93",
+    "percent": "0.00",
+    "types": ["normal"],
+    "ss": true,
+    "id": 915,
+    "l": "en"
+  },
+  {
+    "name": "Numel",
+    "rank": "259",
+    "raw": "309",
+    "percent": "0.00",
+    "types": ["fire", "ground"],
+    "name_trans": "Numel",
+    "l": "en"
+  },
+  {
+    "name": "Nacli",
+    "rank": "260",
+    "raw": "86",
+    "percent": "0.00",
+    "types": ["rock"],
+    "ss": true,
+    "id": 963,
+    "l": "en"
+  },
+  {
+    "name": "Sliggoo",
+    "rank": "261",
+    "raw": "46",
+    "percent": "0.00",
+    "types": ["dragon"],
+    "name_trans": "Sliggoo",
+    "l": "en"
+  },
+  {
+    "name": "Girafarig",
+    "rank": "262",
+    "raw": "538",
+    "percent": "0.00",
+    "types": ["normal", "psychic"],
+    "name_trans": "Girafarig",
+    "l": "en"
+  },
+  {
+    "name": "Sprigatito",
+    "rank": "263",
+    "raw": "205",
+    "percent": "0.00",
+    "types": ["grass"],
+    "ss": true,
+    "id": 906,
+    "l": "en"
+  },
+  {
+    "name": "Rotom",
+    "rank": "264",
+    "raw": "193",
+    "percent": "0.00",
+    "types": ["electric", "ghost"],
+    "name_trans": "Rotom",
+    "l": "en"
+  },
+  {
+    "name": "Venonat",
+    "rank": "265",
+    "raw": "167",
+    "percent": "0.00",
+    "types": ["bug", "poison"],
+    "name_trans": "Venonat",
+    "l": "en"
+  },
+  {
+    "name": "Spewpa",
+    "rank": "266",
+    "raw": "376",
+    "percent": "0.00",
+    "types": ["bug"],
+    "name_trans": "Spewpa",
+    "l": "en"
+  },
+  {
+    "name": "Capsakid",
+    "rank": "267",
+    "raw": "10",
+    "percent": "0.00",
+    "types": ["grass"],
+    "ss": true,
+    "id": 938,
+    "l": "en"
+  },
+  {
+    "name": "Morgrem",
+    "rank": "268",
+    "raw": "114",
+    "percent": "0.00",
+    "types": ["dark", "fairy"],
+    "ss": true,
+    "id": 860,
+    "name_trans": "Morgrem",
+    "l": "en"
+  },
+  {
+    "name": "Scatterbug",
+    "rank": "269",
+    "raw": "77",
+    "percent": "0.00",
+    "types": ["bug"],
+    "name_trans": "Scatterbug",
+    "l": "en"
+  },
+  {
+    "name": "Shelgon",
+    "rank": "270",
+    "raw": "272",
+    "percent": "0.00",
+    "types": ["dragon"],
+    "name_trans": "Shelgon",
+    "l": "en"
+  },
+  {
+    "name": "Drowzee",
+    "rank": "271",
+    "raw": "53",
+    "percent": "0.00",
+    "types": ["psychic"],
+    "name_trans": "Drowzee",
+    "l": "en"
+  },
+  {
+    "name": "Vigoroth",
+    "rank": "272",
+    "raw": "281",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Vigoroth",
+    "l": "en"
+  },
+  {
+    "name": "Magikarp",
+    "rank": "273",
+    "raw": "189",
+    "percent": "0.00",
+    "types": ["water"],
+    "name_trans": "Magikarp",
+    "l": "en"
+  },
+  {
+    "name": "Zweilous",
+    "rank": "274",
+    "raw": "91",
+    "percent": "0.00",
+    "types": ["dark", "dragon"],
+    "name_trans": "Zweilous",
+    "l": "en"
+  },
+  {
+    "name": "Seviper",
+    "rank": "275",
+    "raw": "380",
+    "percent": "0.00",
+    "types": ["poison"],
+    "name_trans": "Seviper",
+    "l": "en"
+  },
+  {
+    "name": "Fletchinder",
+    "rank": "276",
+    "raw": "206",
+    "percent": "0.00",
+    "types": ["fire", "flying"],
+    "name_trans": "Fletchinder",
+    "l": "en"
+  },
+  {
+    "name": "Voltorb",
+    "rank": "277",
+    "raw": "27",
+    "percent": "0.00",
+    "types": ["electric"],
+    "name_trans": "Voltorb",
+    "l": "en"
+  },
+  {
+    "name": "Eevee",
+    "rank": "278",
+    "raw": "78",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Eevee",
+    "l": "en"
+  },
+  {
+    "name": "Skiploom",
+    "rank": "279",
+    "raw": "137",
+    "percent": "0.00",
+    "types": ["grass", "flying"],
+    "name_trans": "Skiploom",
+    "l": "en"
+  },
+  {
+    "name": "Carkol",
+    "rank": "280",
+    "raw": "104",
+    "percent": "0.00",
+    "types": ["rock", "fire"],
+    "ss": true,
+    "id": 838,
+    "name_trans": "Carkol",
+    "l": "en"
+  },
+  {
+    "name": "Mareep",
+    "rank": "281",
+    "raw": "23",
+    "percent": "0.00",
+    "types": ["electric"],
+    "name_trans": "Mareep",
+    "l": "en"
+  },
+  {
+    "name": "Oricorio-Pa'u",
+    "rank": "282",
+    "raw": "150",
+    "percent": "0.00",
+    "l": "en"
+  },
+  {
+    "name": "Hattrem",
+    "rank": "283",
+    "raw": "161",
+    "percent": "0.00",
+    "types": ["psychic"],
+    "ss": true,
+    "id": 857,
+    "name_trans": "Hattrem",
+    "l": "en"
+  },
+  {
+    "name": "Crocalor",
+    "rank": "284",
+    "raw": "356",
+    "percent": "0.00",
+    "types": ["fire"],
+    "ss": true,
+    "id": 910,
+    "l": "en"
+  },
+  {
+    "name": "Tandemaus",
+    "rank": "285",
+    "raw": "41",
+    "percent": "0.00",
+    "types": ["normal"],
+    "ss": true,
+    "id": 945,
+    "l": "en"
+  },
+  {
+    "name": "Luxio",
+    "rank": "286",
+    "raw": "15",
+    "percent": "0.00",
+    "types": ["electric"],
+    "name_trans": "Luxio",
+    "l": "en"
+  },
+  {
+    "name": "Sinistea",
+    "rank": "287",
+    "raw": "19",
+    "percent": "0.00",
+    "types": ["ghost"],
+    "ss": true,
+    "id": 854,
+    "name_trans": "Sinistea",
+    "l": "en"
+  },
+  {
+    "name": "Psyduck",
+    "rank": "288",
+    "raw": "34",
+    "percent": "0.00",
+    "types": ["water"],
+    "name_trans": "Psyduck",
+    "l": "en"
+  },
+  {
+    "name": "Mareanie",
+    "rank": "289",
+    "raw": "14",
+    "percent": "0.00",
+    "types": ["poison", "water"],
+    "name_trans": "Mareanie",
+    "l": "en"
+  },
+  {
+    "name": "Drifloon",
+    "rank": "290",
+    "raw": "158",
+    "percent": "0.00",
+    "types": ["ghost", "flying"],
+    "name_trans": "Drifloon",
+    "l": "en"
+  },
+  {
+    "name": "Drakloak",
+    "rank": "291",
+    "raw": "23",
+    "percent": "0.00",
+    "types": ["dragon", "ghost"],
+    "ss": true,
+    "id": 886,
+    "name_trans": "Drakloak",
+    "l": "en"
+  },
+  {
+    "name": "Fidough",
+    "rank": "292",
+    "raw": "26",
+    "percent": "0.00",
+    "types": ["fairy"],
+    "ss": true,
+    "id": 970,
+    "l": "en"
+  },
+  {
+    "name": "Tarountula",
+    "rank": "293",
+    "raw": "20",
+    "percent": "0.00",
+    "types": ["bug"],
+    "ss": true,
+    "id": 918,
+    "l": "en"
+  },
+  {
+    "name": "Mankey",
+    "rank": "294",
+    "raw": "19",
+    "percent": "0.00",
+    "types": ["fighting"],
+    "name_trans": "Mankey",
+    "l": "en"
+  },
+  {
+    "name": "Cetoddle",
+    "rank": "295",
+    "raw": "65",
+    "percent": "0.00",
+    "types": ["ice"],
+    "ss": true,
+    "id": 947,
+    "l": "en"
+  },
+  {
+    "name": "Stunky",
+    "rank": "296",
+    "raw": "1",
+    "percent": "0.00",
+    "types": ["poison", "dark"],
+    "name_trans": "Stunky",
+    "l": "en"
+  },
+  {
+    "name": "Wiglett",
+    "rank": "297",
+    "raw": "60",
+    "percent": "0.00",
+    "types": ["water"],
+    "ss": true,
+    "id": 929,
+    "l": "en"
+  },
+  {
+    "name": "Axew",
+    "rank": "298",
+    "raw": "10",
+    "percent": "0.00",
+    "types": ["dragon"],
+    "name_trans": "Axew",
+    "l": "en"
+  },
+  {
+    "name": "Steenee",
+    "rank": "299",
+    "raw": "13",
+    "percent": "0.00",
+    "types": ["grass"],
+    "name_trans": "Steenee",
+    "l": "en"
+  },
+  {
+    "name": "Fuecoco",
+    "rank": "300",
+    "raw": "12",
+    "percent": "0.00",
+    "types": ["fire"],
+    "ss": true,
+    "id": 909,
+    "l": "en"
+  },
+  {
+    "name": "Mudbray",
+    "rank": "301",
+    "raw": "67",
+    "percent": "0.00",
+    "types": ["ground"],
+    "name_trans": "Mudbray",
+    "l": "en"
+  },
+  {
+    "name": "Applin",
+    "rank": "302",
+    "raw": "11",
+    "percent": "0.00",
+    "types": ["grass", "dragon"],
+    "ss": true,
+    "id": 840,
+    "name_trans": "Applin",
+    "l": "en"
+  },
+  {
+    "name": "Flaaffy",
+    "rank": "303",
+    "raw": "63",
+    "percent": "0.00",
+    "types": ["electric"],
+    "name_trans": "Flaaffy",
+    "l": "en"
+  },
+  {
+    "name": "Quaxwell",
+    "rank": "304",
+    "raw": "66",
+    "percent": "0.00",
+    "types": ["water"],
+    "ss": true,
+    "id": 913,
+    "l": "en"
+  },
+  {
+    "name": "Impidimp",
+    "rank": "305",
+    "raw": "16",
+    "percent": "0.00",
+    "types": ["dark", "fairy"],
+    "ss": true,
+    "id": 859,
+    "name_trans": "Impidimp",
+    "l": "en"
+  },
+  {
+    "name": "Growlithe",
+    "rank": "306",
+    "raw": "14",
+    "percent": "0.00",
+    "types": ["fire"],
+    "name_trans": "Growlithe",
+    "l": "en"
+  },
+  {
+    "name": "Gastly",
+    "rank": "307",
+    "raw": "11",
+    "percent": "0.00",
+    "types": ["ghost", "poison"],
+    "name_trans": "Gastly",
+    "l": "en"
+  },
+  {
+    "name": "Cubchoo",
+    "rank": "308",
+    "raw": "41",
+    "percent": "0.00",
+    "types": ["ice"],
+    "name_trans": "Cubchoo",
+    "l": "en"
+  },
+  {
+    "name": "Greavard",
+    "rank": "309",
+    "raw": "148",
+    "percent": "0.00",
+    "types": ["ghost"],
+    "ss": true,
+    "id": 924,
+    "l": "en"
+  },
+  {
+    "name": "Floette",
+    "rank": "310",
+    "raw": "153",
+    "percent": "0.00",
+    "types": ["fairy"],
+    "name_trans": "Floette",
+    "l": "en"
+  },
+  {
+    "name": "Finizen",
+    "rank": "311",
+    "raw": "16",
+    "percent": "0.00",
+    "types": ["water"],
+    "ss": true,
+    "id": 933,
+    "l": "en"
+  },
+  {
+    "name": "Pawniard",
+    "rank": "312",
+    "raw": "33",
+    "percent": "0.00",
+    "types": ["dark", "steel"],
+    "name_trans": "Pawniard",
+    "l": "en"
+  },
+  {
+    "name": "Meditite",
+    "rank": "313",
+    "raw": "40",
+    "percent": "0.00",
+    "types": ["fighting", "psychic"],
+    "name_trans": "Meditite",
+    "l": "en"
+  },
+  {
+    "name": "Croagunk",
+    "rank": "314",
+    "raw": "9",
+    "percent": "0.00",
+    "types": ["poison", "fighting"],
+    "name_trans": "Croagunk",
+    "l": "en"
+  },
+  {
+    "name": "Shroomish",
+    "rank": "315",
+    "raw": "26",
+    "percent": "0.00",
+    "types": ["grass"],
+    "name_trans": "Shroomish",
+    "l": "en"
+  },
+  {
+    "name": "Dolliv",
+    "rank": "316",
+    "raw": "5",
+    "percent": "0.00",
+    "types": ["grass", "normal"],
+    "ss": true,
+    "id": 936,
+    "l": "en"
+  },
+  {
+    "name": "Rockruff",
+    "rank": "317",
+    "raw": "13",
+    "percent": "0.00",
+    "types": ["rock"],
+    "name_trans": "Rockruff",
+    "l": "en"
+  },
+  {
+    "name": "Azurill",
+    "rank": "318",
+    "raw": "25",
+    "percent": "0.00",
+    "types": ["normal", "fairy"],
+    "name_trans": "Azurill",
+    "l": "en"
+  },
+  {
+    "name": "Starly",
+    "rank": "319",
+    "raw": "50",
+    "percent": "0.00",
+    "types": ["normal", "flying"],
+    "name_trans": "Starly",
+    "l": "en"
+  },
+  {
+    "name": "Wooper-Paldea",
+    "rank": "320",
+    "raw": "76",
+    "percent": "0.00",
+    "types": ["poison", "ground"],
+    "l": "en"
+  },
+  {
+    "name": "Magnemite",
+    "rank": "321",
+    "raw": "13",
+    "percent": "0.00",
+    "types": ["electric", "steel"],
+    "name_trans": "Magnemite",
+    "l": "en"
+  },
+  {
+    "name": "Shroodle",
+    "rank": "322",
+    "raw": "12",
+    "percent": "0.00",
+    "types": ["poison", "normal"],
+    "ss": true,
+    "id": 968,
+    "l": "en"
+  },
+  {
+    "name": "Slakoth",
+    "rank": "323",
+    "raw": "6",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Slakoth",
+    "l": "en"
+  },
+  {
+    "name": "Smoliv",
+    "rank": "324",
+    "raw": "18",
+    "percent": "0.00",
+    "types": ["grass", "normal"],
+    "ss": true,
+    "id": 935,
+    "l": "en"
+  },
+  {
+    "name": "Skwovet",
+    "rank": "325",
+    "raw": "27",
+    "percent": "0.00",
+    "types": ["normal"],
+    "ss": true,
+    "id": 819,
+    "name_trans": "Skwovet",
+    "l": "en"
+  },
+  {
+    "name": "Quaxly",
+    "rank": "326",
+    "raw": "9",
+    "percent": "0.00",
+    "types": ["water"],
+    "ss": true,
+    "id": 912,
+    "l": "en"
+  },
+  {
+    "name": "Diglett",
+    "rank": "327",
+    "raw": "38",
+    "percent": "0.00",
+    "types": ["ground"],
+    "name_trans": "Diglett",
+    "l": "en"
+  },
+  {
+    "name": "Eelektrik",
+    "rank": "328",
+    "raw": "53",
+    "percent": "0.00",
+    "types": ["electric"],
+    "name_trans": "Eelektrik",
+    "l": "en"
+  },
+  {
+    "name": "Tinkatuff",
+    "rank": "329",
+    "raw": "34",
+    "percent": "0.00",
+    "types": ["fairy", "steel"],
+    "ss": true,
+    "id": 1001,
+    "l": "en"
+  },
+  {
+    "name": "Igglybuff",
+    "rank": "330",
+    "raw": "23",
+    "percent": "0.00",
+    "types": ["normal", "fairy"],
+    "name_trans": "Igglybuff",
+    "l": "en"
+  },
+  {
+    "name": "Gabite",
+    "rank": "331",
+    "raw": "13",
+    "percent": "0.00",
+    "types": ["dragon", "ground"],
+    "name_trans": "Gabite",
+    "l": "en"
+  },
+  {
+    "name": "Happiny",
+    "rank": "332",
+    "raw": "28",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Happiny",
+    "l": "en"
+  },
+  {
+    "name": "Pineco",
+    "rank": "333",
+    "raw": "24",
+    "percent": "0.00",
+    "types": ["bug"],
+    "name_trans": "Pineco",
+    "l": "en"
+  },
+  {
+    "name": "Skiddo",
+    "rank": "334",
+    "raw": "12",
+    "percent": "0.00",
+    "types": ["grass"],
+    "name_trans": "Skiddo",
+    "l": "en"
+  },
+  {
+    "name": "Shinx",
+    "rank": "335",
+    "raw": "4",
+    "percent": "0.00",
+    "types": ["electric"],
+    "name_trans": "Shinx",
+    "l": "en"
+  },
+  {
+    "name": "Charcadet",
+    "rank": "336",
+    "raw": "11",
+    "percent": "0.00",
+    "types": ["fire"],
+    "ss": true,
+    "id": 1003,
+    "l": "en"
+  },
+  {
+    "name": "Litleo",
+    "rank": "337",
+    "raw": "2",
+    "percent": "0.00",
+    "types": ["fire", "normal"],
+    "name_trans": "Litleo",
+    "l": "en"
+  },
+  {
+    "name": "Arrokuda",
+    "rank": "338",
+    "raw": "44",
+    "percent": "0.00",
+    "types": ["water"],
+    "ss": true,
+    "id": 846,
+    "name_trans": "Arrokuda",
+    "l": "en"
+  },
+  {
+    "name": "Tadbulb",
+    "rank": "339",
+    "raw": "26",
+    "percent": "0.00",
+    "types": ["electric"],
+    "ss": true,
+    "id": 940,
+    "l": "en"
+  },
+  {
+    "name": "Larvesta",
+    "rank": "340",
+    "raw": "29",
+    "percent": "0.00",
+    "types": ["bug", "fire"],
+    "name_trans": "Larvesta",
+    "l": "en"
+  },
+  {
+    "name": "Fraxure",
+    "rank": "341",
+    "raw": "58",
+    "percent": "0.00",
+    "types": ["dragon"],
+    "name_trans": "Fraxure",
+    "l": "en"
+  },
+  {
+    "name": "Nymble",
+    "rank": "342",
+    "raw": "21",
+    "percent": "0.00",
+    "types": ["bug"],
+    "ss": true,
+    "id": 920,
+    "l": "en"
+  },
+  {
+    "name": "Krokorok",
+    "rank": "343",
+    "raw": "2",
+    "percent": "0.00",
+    "types": ["ground", "dark"],
+    "name_trans": "Krokorok",
+    "l": "en"
+  },
+  {
+    "name": "Pupitar",
+    "rank": "344",
+    "raw": "10",
+    "percent": "0.00",
+    "types": ["rock", "ground"],
+    "name_trans": "Pupitar",
+    "l": "en"
+  },
+  {
+    "name": "Wattrel",
+    "rank": "345",
+    "raw": "21",
+    "percent": "0.00",
+    "types": ["electric", "flying"],
+    "ss": true,
+    "id": 957,
+    "l": "en"
+  },
+  {
+    "name": "Dreepy",
+    "rank": "346",
+    "raw": "4",
+    "percent": "0.00",
+    "types": ["dragon", "ghost"],
+    "ss": true,
+    "id": 885,
+    "name_trans": "Dreepy",
+    "l": "en"
+  },
+  {
+    "name": "Zorua",
+    "rank": "347",
+    "raw": "24",
+    "percent": "0.00",
+    "types": ["dark"],
+    "name_trans": "Zorua",
+    "l": "en"
+  },
+  {
+    "name": "Snom",
+    "rank": "348",
+    "raw": "42",
+    "percent": "0.00",
+    "types": ["ice", "bug"],
+    "ss": true,
+    "id": 872,
+    "name_trans": "Snom",
+    "l": "en"
+  },
+  {
+    "name": "Tinkatink",
+    "rank": "349",
+    "raw": "10",
+    "percent": "0.00",
+    "types": ["fairy", "steel"],
+    "ss": true,
+    "id": 1000,
+    "l": "en"
+  },
+  {
+    "name": "Cacnea",
+    "rank": "350",
+    "raw": "20",
+    "percent": "0.00",
+    "types": ["grass"],
+    "name_trans": "Cacnea",
+    "l": "en"
+  },
+  {
+    "name": "Rufflet",
+    "rank": "351",
+    "raw": "10",
+    "percent": "0.00",
+    "types": ["normal", "flying"],
+    "name_trans": "Rufflet",
+    "l": "en"
+  },
+  {
+    "name": "Skrelp",
+    "rank": "352",
+    "raw": "4",
+    "percent": "0.00",
+    "types": ["poison", "water"],
+    "name_trans": "Skrelp",
+    "l": "en"
+  },
+  {
+    "name": "Pawmi",
+    "rank": "353",
+    "raw": "32",
+    "percent": "0.00",
+    "types": ["electric"],
+    "ss": true,
+    "id": 954,
+    "l": "en"
+  },
+  {
+    "name": "Meowth",
+    "rank": "354",
+    "raw": "15",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Meowth",
+    "l": "en"
+  },
+  {
+    "name": "Gimmighoul",
+    "rank": "355",
+    "raw": "5",
+    "percent": "0.00",
+    "types": ["ghost"],
+    "ss": true,
+    "id": 976,
+    "l": "en"
+  },
+  {
+    "name": "Staravia",
+    "rank": "356",
+    "raw": "10",
+    "percent": "0.00",
+    "types": ["normal", "flying"],
+    "name_trans": "Staravia",
+    "l": "en"
+  },
+  {
+    "name": "Cufant",
+    "rank": "357",
+    "raw": "3",
+    "percent": "0.00",
+    "types": ["steel"],
+    "ss": true,
+    "id": 878,
+    "name_trans": "Cufant",
+    "l": "en"
+  },
+  {
+    "name": "Varoom",
+    "rank": "358",
+    "raw": "1",
+    "percent": "0.00",
+    "types": ["steel", "poison"],
+    "ss": true,
+    "id": 942,
+    "l": "en"
+  },
+  {
+    "name": "Floragato",
+    "rank": "359",
+    "raw": "14",
+    "percent": "0.00",
+    "types": ["grass"],
+    "ss": true,
+    "id": 907,
+    "l": "en"
+  },
+  {
+    "name": "Salandit",
+    "rank": "360",
+    "raw": "14",
+    "percent": "0.00",
+    "types": ["poison", "fire"],
+    "name_trans": "Salandit",
+    "l": "en"
+  },
+  {
+    "name": "Clauncher",
+    "rank": "361",
+    "raw": "3",
+    "percent": "0.00",
+    "types": ["water"],
+    "name_trans": "Clauncher",
+    "l": "en"
+  },
+  {
+    "name": "Barboach",
+    "rank": "362",
+    "raw": "14",
+    "percent": "0.00",
+    "types": ["water", "ground"],
+    "name_trans": "Barboach",
+    "l": "en"
+  },
+  {
+    "name": "Flittle",
+    "rank": "363",
+    "raw": "3",
+    "percent": "0.00",
+    "types": ["psychic"],
+    "ss": true,
+    "id": 926,
+    "l": "en"
+  },
+  {
+    "name": "Corvisquire",
+    "rank": "364",
+    "raw": "28",
+    "percent": "0.00",
+    "types": ["flying"],
+    "ss": true,
+    "id": 822,
+    "name_trans": "Corvisquire",
+    "l": "en"
+  },
+  {
+    "name": "Toxel",
+    "rank": "365",
+    "raw": "4",
+    "percent": "0.00",
+    "types": ["electric", "poison"],
+    "ss": true,
+    "id": 848,
+    "name_trans": "Toxel",
+    "l": "en"
+  },
+  {
+    "name": "Shellos",
+    "rank": "366",
+    "raw": "37",
+    "percent": "0.00",
+    "types": ["water"],
+    "name_trans": "Shellos",
+    "l": "en"
+  },
+  {
+    "name": "Ralts",
+    "rank": "367",
+    "raw": "7",
+    "percent": "0.00",
+    "types": ["psychic", "fairy"],
+    "name_trans": "Ralts",
+    "l": "en"
+  },
+  {
+    "name": "Dratini",
+    "rank": "368",
+    "raw": "3",
+    "percent": "0.00",
+    "types": ["dragon"],
+    "name_trans": "Dratini",
+    "l": "en"
+  },
+  {
+    "name": "Kricketot",
+    "rank": "369",
+    "raw": "11",
+    "percent": "0.00",
+    "types": ["bug"],
+    "name_trans": "Kricketot",
+    "l": "en"
+  },
+  {
+    "name": "Swablu",
+    "rank": "370",
+    "raw": "16",
+    "percent": "0.00",
+    "types": ["normal", "flying"],
+    "name_trans": "Swablu",
+    "l": "en"
+  },
+  {
+    "name": "Pichu",
+    "rank": "371",
+    "raw": "12",
+    "percent": "0.00",
+    "types": ["electric"],
+    "name_trans": "Pichu",
+    "l": "en"
+  },
+  {
+    "name": "Goomy",
+    "rank": "372",
+    "raw": "20",
+    "percent": "0.00",
+    "types": ["dragon"],
+    "name_trans": "Goomy",
+    "l": "en"
+  },
+  {
+    "name": "Arctibax",
+    "rank": "373",
+    "raw": "36",
+    "percent": "0.00",
+    "types": ["dragon", "ice"],
+    "ss": true,
+    "id": 950,
+    "l": "en"
+  },
+  {
+    "name": "Bergmite",
+    "rank": "374",
+    "raw": "1",
+    "percent": "0.00",
+    "types": ["ice"],
+    "name_trans": "Bergmite",
+    "l": "en"
+  },
+  {
+    "name": "Makuhita",
+    "rank": "375",
+    "raw": "1",
+    "percent": "0.00",
+    "types": ["fighting"],
+    "name_trans": "Makuhita",
+    "l": "en"
+  },
+  {
+    "name": "Rolycoly",
+    "rank": "376",
+    "raw": "1",
+    "percent": "0.00",
+    "types": ["rock"],
+    "ss": true,
+    "id": 837,
+    "name_trans": "Rolycoly",
+    "l": "en"
+  },
+  {
+    "name": "Kirlia",
+    "rank": "377",
+    "raw": "7",
+    "percent": "0.00",
+    "types": ["psychic", "fairy"],
+    "name_trans": "Kirlia",
+    "l": "en"
+  },
+  {
+    "name": "Shuppet",
+    "rank": "378",
+    "raw": "9",
+    "percent": "0.00",
+    "types": ["ghost"],
+    "name_trans": "Shuppet",
+    "l": "en"
+  },
+  {
+    "name": "Sandygast",
+    "rank": "379",
+    "raw": "25",
+    "percent": "0.00",
+    "types": ["ghost", "ground"],
+    "name_trans": "Sandygast",
+    "l": "en"
+  },
+  {
+    "name": "Frigibax",
+    "rank": "380",
+    "raw": "2",
+    "percent": "0.00",
+    "types": ["dragon", "ice"],
+    "ss": true,
+    "id": 949,
+    "l": "en"
+  },
+  {
+    "name": "Gulpin",
+    "rank": "381",
+    "raw": "5",
+    "percent": "0.00",
+    "types": ["poison"],
+    "name_trans": "Gulpin",
+    "l": "en"
+  },
+  {
+    "name": "Wingull",
+    "rank": "382",
+    "raw": "4",
+    "percent": "0.00",
+    "types": ["water", "flying"],
+    "name_trans": "Wingull",
+    "l": "en"
+  },
+  {
+    "name": "Petilil",
+    "rank": "383",
+    "raw": "75",
+    "percent": "0.00",
+    "types": ["grass"],
+    "name_trans": "Petilil",
+    "l": "en"
+  },
+  {
+    "name": "Gothita",
+    "rank": "384",
+    "raw": "5",
+    "percent": "0.00",
+    "types": ["psychic"],
+    "name_trans": "Gothita",
+    "l": "en"
+  },
+  {
+    "name": "Buizel",
+    "rank": "385",
+    "raw": "21",
+    "percent": "0.00",
+    "types": ["water"],
+    "name_trans": "Buizel",
+    "l": "en"
+  },
+  {
+    "name": "Shellder",
+    "rank": "386",
+    "raw": "1",
+    "percent": "0.00",
+    "types": ["water"],
+    "name_trans": "Shellder",
+    "l": "en"
+  },
+  {
+    "name": "Teddiursa",
+    "rank": "387",
+    "raw": "16",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Teddiursa",
+    "l": "en"
+  },
+  {
+    "name": "Crabrawler",
+    "rank": "388",
+    "raw": "4",
+    "percent": "0.00",
+    "types": ["fighting"],
+    "name_trans": "Crabrawler",
+    "l": "en"
+  },
+  {
+    "name": "Hatenna",
+    "rank": "389",
+    "raw": "2",
+    "percent": "0.00",
+    "types": ["psychic"],
+    "ss": true,
+    "id": 856,
+    "name_trans": "Hatenna",
+    "l": "en"
+  },
+  {
+    "name": "Rellor",
+    "rank": "390",
+    "raw": "4",
+    "percent": "0.00",
+    "types": ["bug"],
+    "ss": true,
+    "id": 922,
+    "l": "en"
+  },
+  {
+    "name": "Grimer",
+    "rank": "391",
+    "raw": "8",
+    "percent": "0.00",
+    "types": ["poison"],
+    "name_trans": "Grimer",
+    "l": "en"
+  },
+  {
+    "name": "Yungoos",
+    "rank": "392",
+    "raw": "1",
+    "percent": "0.00",
+    "types": ["normal"],
+    "name_trans": "Yungoos",
+    "l": "en"
+  },
+  {
+    "name": "Deerling",
+    "rank": "393",
+    "raw": "1",
+    "percent": "0.00",
+    "types": ["normal", "grass"],
+    "name_trans": "Deerling",
+    "l": "en"
+  },
+  {
+    "name": "Fomantis",
+    "rank": "394",
+    "raw": "10",
+    "percent": "0.00",
+    "types": ["grass"],
+    "name_trans": "Fomantis",
+    "l": "en"
+  },
+  {
+    "name": "Houndour",
+    "rank": "395",
+    "raw": "13",
+    "percent": "0.00",
+    "types": ["dark", "fire"],
+    "name_trans": "Houndour",
+    "l": "en"
+  },
+  {
+    "name": "Hoppip",
+    "rank": "396",
+    "raw": "12",
+    "percent": "0.00",
+    "types": ["grass", "flying"],
+    "name_trans": "Hoppip",
+    "l": "en"
+  }
+]

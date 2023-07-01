@@ -1,5 +1,5 @@
 import { ReportProps } from "../types/reportProps";
-import { get9thGenDexNames, getCompleteDexNames } from "./pokemonConsts/lists";
+import { getCompleteDexNames } from "./pokemonConsts/lists";
 import React, { SetStateAction } from "react";
 import {
   calculate,
@@ -24,13 +24,13 @@ import {
 import { CalcList } from "../types/calcList";
 import { getPokemonSprite } from "./getPokemonSprite";
 import { getCancelAction, setCancelAction } from "./cancelAction";
-import { getDate } from "./obtainApiDate";
+import { PokemonData } from "../types/gen9Pokedex";
+import {
+  getGen9PokemonDefensiveDataList,
+  getGen9PokemonNames,
+} from "../adapter/gen9";
 
-type PokemonData = {
-  items: string;
-  nature: string;
-  evs: string;
-};
+const defensivePokemonList = getGen9PokemonDefensiveDataList();
 
 const canSurvive = (
   ko_chance:
@@ -76,7 +76,7 @@ export const loadDataCalculator = async (
   const dex =
     form.selectPokemon === "all"
       ? getCompleteDexNames()
-      : await get9thGenDexNames();
+      : getGen9PokemonNames();
 
   setTotalDex(dex.length);
   const calcsList = [];
@@ -108,27 +108,32 @@ export const loadDataCalculator = async (
       (pokemonType[1] && typeValue?.[moveType]?.[pokemonType[1]] === 0)
     ) {
       calcsList.push(await inmmunePokemon(pokemon, form));
+      i++;
       continue;
     }
 
-    //STEPS:
-    //2 - The pokemon has a set stored
-    const setCalc = await calculateDamageWithSet(pokemon, form);
-    //3 - Add extreme set
-    const extremeCalc = calculateExtremeDamage(pokemon, form);
-    //4 - Add optimal set
-    //const optimalCalc = calculateOptimalDamage(pokemon, form);
+    try {
+      //STEPS:
+      //2 - The pokemon has a set stored
+      const setCalc = await calculateDamageWithSet(pokemon, form);
+      //3 - Add extreme set
+      const extremeCalc = calculateExtremeDamage(pokemon, form);
+      //4 - Add optimal set
+      //const optimalCalc = calculateOptimalDamage(pokemon, form);
 
-    calcsList.push({
-      pokemon: pokemon as string,
-      isInmune: false,
-      calcSet: setCalc,
-      calcExtreme: extremeCalc,
-      canSurvive: canSurvive(extremeCalc?.ko_chance),
-      img: await getPokemonSprite(pokemon),
-    });
-
-    i++;
+      calcsList.push({
+        pokemon: pokemon as string,
+        isInmune: false,
+        calcSet: setCalc,
+        calcExtreme: extremeCalc,
+        canSurvive: canSurvive(extremeCalc?.ko_chance),
+        img: await getPokemonSprite(pokemon),
+      });
+    } catch (error) {
+      calcsList.push(await inmmunePokemon(pokemon, form));
+    } finally {
+      i++;
+    }
   }
   setPage((prev) => {
     return prev + 1;
@@ -139,7 +144,7 @@ export const loadDataCalculator = async (
 const calculateExtremeDamage = (pokemon: any, form: ReportProps) => {
   try {
     const defensiveData: PokemonData = {
-      items: SPECIES[SPECIES.length - 1][pokemon].nfe ? "Eviolite" : "",
+      item: SPECIES[SPECIES.length - 1][pokemon].nfe ? "Eviolite" : "",
       nature: form.category === "Physical" ? "Bold" : "Calm",
       evs: "252/0/252/0/252/0",
     };
@@ -158,40 +163,16 @@ const calculateExtremeDamage = (pokemon: any, form: ReportProps) => {
   }
 };
 
-const calculateDamageWithSet = async (pokemon: any, form: ReportProps) => {
-  try {
-    //////////////////////////////////////////
-    ///////                            ///////
-    ///////       SET OBTENTION        ///////
-    ///////                            ///////
-    //////////////////////////////////////////
-    const { year, month } = getDate();
-    try {
-      const fetchData = await fetch(
-        `https://www.pikalytics.com/api/p/${year}-${month
-          .toString()
-          .padStart(2, "0")}/gen9vgc2023regc-1760/${pokemon
-          .toLowerCase()
-          .trim()}`
-      );
-      if (!fetchData.ok) {
-        throw new Error("Request failed");
-      }
-      const responseData = await fetchData.json();
-      const defensiveData: PokemonData = {
-        items: responseData.items[0].item,
-        nature: responseData.spreads[0].nature,
-        evs: responseData.spreads[0].ev ?? "0/0/0/0/0/0",
-      };
-      return calculateDamage(form, pokemon, defensiveData);
-    } catch (e) {
-      //console.log("Error fetching data", e);
-      return undefined;
-    }
-  } catch (e) {
-    //console.log("Invalid data", pokemon, e);
-    return undefined;
-  }
+const calculateDamageWithSet = async (pokemon: string, form: ReportProps) => {
+  //////////////////////////////////////////
+  ///////                            ///////
+  ///////       SET OBTENTION        ///////
+  ///////                            ///////
+  //////////////////////////////////////////
+  const defensiveData: PokemonData | undefined =
+    defensivePokemonList.get(pokemon);
+  if (!defensiveData) return undefined;
+  return calculateDamage(form, pokemon, defensiveData);
 };
 
 const calculateDamage = (
@@ -214,7 +195,7 @@ const calculateDamage = (
   });
 
   const DEFENDER = new Pokemon(Generations.get(9), pokemon, {
-    item: defensiveData.items as ItemName,
+    item: defensiveData.item as ItemName,
     nature: defensiveData.nature as NatureName,
     evs: { hp: evSpread.hp, def: evSpread.def, spd: evSpread.spd },
     ivs: { hp: 31, def: 31, spd: 31 },

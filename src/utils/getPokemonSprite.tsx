@@ -5,7 +5,6 @@ export async function getPokemonSprite(name: string) {
   return await fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      //const smallSprite = data.sprites.versions["generation-viii"].icons.front_default;
       const frontSprite = data.sprites.front_default;
       return frontSprite;
     })
