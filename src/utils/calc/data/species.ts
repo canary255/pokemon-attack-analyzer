@@ -6703,7 +6703,7 @@ const SM_PATCH: { [name: string]: DeepPartial<SpeciesData> } = {
     abilities: { 0: "Leaf Guard" },
     baseSpecies: "Lurantis",
   },
-  Lycanroc: {
+  "Lycanroc-Midday": {
     types: ["Rock"],
     bs: { hp: 75, at: 115, df: 65, sa: 55, sd: 65, sp: 112 },
     weightkg: 25,
@@ -6783,7 +6783,7 @@ const SM_PATCH: { [name: string]: DeepPartial<SpeciesData> } = {
     nfe: true,
     abilities: { 0: "Pickup" },
   },
-  Mimikyu: {
+  "Mimikyu-Disguised": {
     types: ["Ghost", "Fairy"],
     bs: { hp: 55, at: 90, df: 80, sa: 50, sd: 105, sp: 96 },
     weightkg: 0.7,
@@ -6924,33 +6924,33 @@ const SM_PATCH: { [name: string]: DeepPartial<SpeciesData> } = {
     weightkg: 76,
     abilities: { 0: "Inner Focus" },
   },
-  Oricorio: {
+  "Oricorio-Baile": {
     types: ["Fire", "Flying"],
     bs: { hp: 75, at: 70, df: 70, sa: 98, sd: 70, sp: 93 },
     weightkg: 3.4,
     abilities: { 0: "Dancer" },
     otherFormes: ["Oricorio-Pa'u", "Oricorio-Pom-Pom", "Oricorio-Sensu"],
   },
-  "Oricorio-Pa'u": {
+  "Oricorio-Pau": {
     types: ["Psychic", "Flying"],
     bs: { hp: 75, at: 70, df: 70, sa: 98, sd: 70, sp: 93 },
     weightkg: 3.4,
     abilities: { 0: "Dancer" },
-    baseSpecies: "Oricorio",
+    baseSpecies: "Oricorio-Baile",
   },
   "Oricorio-Pom-Pom": {
     types: ["Electric", "Flying"],
     bs: { hp: 75, at: 70, df: 70, sa: 98, sd: 70, sp: 93 },
     weightkg: 3.4,
     abilities: { 0: "Dancer" },
-    baseSpecies: "Oricorio",
+    baseSpecies: "Oricorio-Baile",
   },
   "Oricorio-Sensu": {
     types: ["Ghost", "Flying"],
     bs: { hp: 75, at: 70, df: 70, sa: 98, sd: 70, sp: 93 },
     weightkg: 3.4,
     abilities: { 0: "Dancer" },
-    baseSpecies: "Oricorio",
+    baseSpecies: "Oricorio-Baile",
   },
   Pajantom: {
     types: ["Dragon", "Ghost"],
@@ -8029,7 +8029,7 @@ const SS_PATCH: { [name: string]: DeepPartial<SpeciesData> } = {
     abilities: { 0: "Run Away" },
     baseSpecies: "Eevee",
   },
-  Eiscue: {
+  "Eiscue-Ice": {
     types: ["Ice"],
     bs: { hp: 75, at: 80, df: 110, sa: 65, sd: 90, sp: 50 },
     weightkg: 89,
@@ -8041,7 +8041,7 @@ const SS_PATCH: { [name: string]: DeepPartial<SpeciesData> } = {
     bs: { hp: 75, at: 80, df: 70, sa: 65, sd: 50, sp: 130 },
     weightkg: 89,
     abilities: { 0: "Ice Face" },
-    baseSpecies: "Eiscue",
+    baseSpecies: "Eiscue-Ice",
   },
   Eldegoss: {
     types: ["Grass"],
@@ -8196,19 +8196,19 @@ const SS_PATCH: { [name: string]: DeepPartial<SpeciesData> } = {
     abilities: { 0: "Prankster" },
     nfe: true,
   },
-  Indeedee: {
+  "Indeedee-Male": {
     types: ["Psychic", "Normal"],
     bs: { hp: 60, at: 65, df: 55, sa: 105, sd: 95, sp: 95 },
     weightkg: 28,
     abilities: { 0: "Inner Focus" },
-    otherFormes: ["Indeedee-F"],
+    otherFormes: ["Indeedee-Female"],
   },
-  "Indeedee-F": {
+  "Indeedee-Female": {
     types: ["Psychic", "Normal"],
     bs: { hp: 70, at: 55, df: 65, sa: 95, sd: 105, sp: 85 },
     weightkg: 28,
     abilities: { 0: "Own Tempo" },
-    baseSpecies: "Indeedee",
+    baseSpecies: "Indeedee-Male",
   },
   Inteleon: {
     types: ["Water"],
@@ -8663,7 +8663,7 @@ const SS_PATCH: { [name: string]: DeepPartial<SpeciesData> } = {
     abilities: { 0: "Rattled" },
     nfe: true,
   },
-  Toxtricity: {
+  "Toxtricity-Amped": {
     types: ["Electric", "Poison"],
     bs: { hp: 75, at: 98, df: 70, sa: 114, sd: 70, sp: 75 },
     weightkg: 40,
@@ -8888,19 +8888,19 @@ const PLA_PATCH: { [name: string]: DeepPartial<SpeciesData> } = {
     abilities: { 0: "Strong Jaw" },
     baseSpecies: "Avalugg",
   },
-  Basculegion: {
+  "Basculegion-Male": {
     types: ["Water", "Ghost"],
     bs: { hp: 120, at: 112, df: 65, sa: 80, sd: 75, sp: 78 },
     weightkg: 110,
     abilities: { 0: "Swift Swim" },
-    otherFormes: ["Basculegion-F"],
+    otherFormes: ["Basculegion-Female"],
   },
-  "Basculegion-F": {
+  "Basculegion-Female": {
     types: ["Water", "Ghost"],
     bs: { hp: 120, at: 92, df: 65, sa: 100, sd: 75, sp: 78 },
     weightkg: 110,
     abilities: { 0: "Swift Swim" },
-    baseSpecies: "Basculegion",
+    baseSpecies: "Basculegion-Male",
   },
   "Basculin-White-Striped": {
     types: ["Water"],
@@ -8940,7 +8940,7 @@ const PLA_PATCH: { [name: string]: DeepPartial<SpeciesData> } = {
     abilities: { 0: "Soundproof" },
     baseSpecies: "Electrode",
   },
-  Enamorus: {
+  "Enamorus-Incarnate": {
     types: ["Fairy", "Flying"],
     bs: { hp: 74, at: 115, df: 70, sa: 135, sd: 80, sp: 106 },
     weightkg: 48,
@@ -9086,9 +9086,9 @@ const SV_PATCH: { [name: string]: DeepPartial<SpeciesData> } = {
   Primeape: { nfe: true },
   Tauros: {
     otherFormes: [
-      "Tauros-Paldea-Aqua",
-      "Tauros-Paldea-Blaze",
-      "Tauros-Paldea-Combat",
+      "Tauros-Paldea-Aqua-Breed",
+      "Tauros-Paldea-Blaze-Breed",
+      "Tauros-Paldea-Combat-Breed",
     ],
   },
   Wooper: { otherFormes: ["Wooper-Paldea"] },
@@ -9557,9 +9557,9 @@ const SV_PATCH: { [name: string]: DeepPartial<SpeciesData> } = {
     bs: { hp: 110, at: 100, df: 75, sa: 59, sd: 80, sp: 65 },
     weightkg: 120,
     abilities: { 0: "Lingering Aroma" },
-    otherFormes: ["Oinkologne-F"],
+    otherFormes: ["Oinkologne-Female"],
   },
-  "Oinkologne-F": {
+  "Oinkologne-Female": {
     types: ["Normal"],
     bs: { hp: 115, at: 90, df: 70, sa: 59, sd: 90, sp: 65 },
     weightkg: 120,
@@ -9772,21 +9772,21 @@ const SV_PATCH: { [name: string]: DeepPartial<SpeciesData> } = {
     weightkg: 8,
     abilities: { 0: "Commander" },
   },
-  "Tauros-Paldea-Aqua": {
+  "Tauros-Paldea-Aqua-Breed": {
     types: ["Fighting", "Water"],
     bs: { hp: 75, at: 110, df: 105, sa: 30, sd: 70, sp: 100 },
     weightkg: 88.4,
     abilities: { 0: "Intimidate" },
     baseSpecies: "Tauros",
   },
-  "Tauros-Paldea-Blaze": {
+  "Tauros-Paldea-Blaze-Breed": {
     types: ["Fighting", "Fire"],
     bs: { hp: 75, at: 110, df: 105, sa: 30, sd: 70, sp: 100 },
     weightkg: 88.4,
     abilities: { 0: "Intimidate" },
     baseSpecies: "Tauros",
   },
-  "Tauros-Paldea-Combat": {
+  "Tauros-Paldea-Combat-Breed": {
     types: ["Fighting"],
     bs: { hp: 75, at: 110, df: 105, sa: 30, sd: 70, sp: 100 },
     weightkg: 88.4,

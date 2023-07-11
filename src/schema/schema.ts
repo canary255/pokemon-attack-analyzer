@@ -17,7 +17,7 @@ export const reportInitialState: ReportProps = {
   evSpa: "0",
   ivSpa: "31",
   target: "Singles",
-  selectPokemon: "all",
+  selectPokemon: "vgc",
   defenderList: "",
   boostDef: "0",
   boostSpd: "0",

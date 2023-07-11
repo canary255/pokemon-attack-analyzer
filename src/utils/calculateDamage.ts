@@ -150,7 +150,6 @@ const calculateExtremeDamage = (pokemon: any, form: ReportProps) => {
     };
     return calculateDamage(form, pokemon, defensiveData);
   } catch (e) {
-    //console.log("Invalid data", pokemon, e);
     return {
       description: "You can't hit it bro",
       damage_range: 0,
