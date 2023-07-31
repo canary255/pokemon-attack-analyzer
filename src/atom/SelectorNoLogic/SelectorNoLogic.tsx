@@ -44,13 +44,13 @@ export const SelectorNoLogic = ({
 
   return (
     <>
-      <div className={`flex flex-col w-full ${className}`}>
-        {label ? <Text className="mb-1">{label}</Text> : null}
+      <div className={`flex flex-col w-full gap-y-1 ${className}`}>
+        {label ? <Text>{label}</Text> : null}
         <Listbox defaultValue={value} onChange={onChange} refName={name}>
           <Listbox.Button className={`relative`}>
             <div className="grid grid-cols-8">
               <span
-                className={`col-span-5 dark:bg-inputBackground p-2 ${
+                className={`col-span-5 dark:bg-inputBackground sm:p-2 min-[315px]:p-1 ${
                   centerText ? "text-center" : ""
                 } border border-black border-r-0 bg-white`}
               >

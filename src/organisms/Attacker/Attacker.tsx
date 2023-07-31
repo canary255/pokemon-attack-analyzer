@@ -103,7 +103,7 @@ export const Attacker = ({
             teratype={watch("teraType")}
             className="flex flex-row justify-center mt-5"
           />
-          <div className=" grid place-items-center sm:grid-rows-3 min-[315px]:grid-cols-1 gap-y-2 w-[90%]">
+          <div className=" grid place-items-center sm:grid-rows-3 min-[315px]:grid-cols-1 gap-y-2 xl:w-[90%]">
             {localStorage.getItem("pokemonSetData") && (
               <Button
                 className="w-full"
@@ -113,6 +113,7 @@ export const Attacker = ({
             )}
             <ComboBoxUI
               options={dex}
+              className="w-full"
               name="name"
               label={t("attacker.selectPokemon")}
             />

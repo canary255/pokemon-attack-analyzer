@@ -32,7 +32,7 @@ export const FieldStats = ({
 
   return (
     <div className="grid grid-cols-6 gap-x-2 ">
-      <Text className="text-base p-2">{categoryName}</Text>
+      <Text className="text-base sm:p-2 min-[315px]:p-1">{categoryName}</Text>
       <TextFieldCommon readOnly value={base} className="text-base" />
       <TextField name={ivName} maxLength={2} maxNumber={31} onlyNumber />
       <TextField name={evName} maxLength={3} maxNumber={252} onlyNumber />

@@ -25,13 +25,13 @@ export const SwitchUI = ({
         <Switch
           checked={field.value}
           onChange={field.onChange}
-          className={`items-center p-2
+          className={`items-center min-[315px]:p-1 sm:p-2
           ${className}
       ${borderDirection[circleBorder]} 
       ${field.value ? "bg-primary" : "bg-gray-200"}`}
         >
           <span
-            className={`transition ${
+            className={`transition min-[315px]:text-xs sm:text-sm ${
               field.value ? "text-white bold" : "text-black"
             }`}
           >

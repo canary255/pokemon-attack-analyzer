@@ -13,7 +13,7 @@ import { Divider } from "../../atom/Divider/Divider";
 import { SwitchUI } from "../../atom/Switch/Switch";
 import { WeatherGroup } from "../../molecules/WeatherGroup/WeatherGroup";
 
-const SWITCH_UI_BLACK = "text-[12px] border border-black dark:border-white";
+const SWITCH_UI_BLACK = "xl:text-[12px] border border-black dark:border-white";
 
 export const Defender = () => {
   const { t } = useTranslation();
@@ -126,7 +126,7 @@ export const Defender = () => {
           <SwitchUI label={t("button.auroraVeil")} name="auroraVeil" />
         </div>
         <div
-          className={`${margin} grid grid-cols-4 place-items-center sm:mb-4`}
+          className={`${margin} grid grid-cols-4 place-items-center min-[315px]:mb-4`}
         >
           <SwitchUI label={t("button.battery")} name="battery" />
           <RadioGroupUI className="col-span-2" options={spikes} name="spikes" />

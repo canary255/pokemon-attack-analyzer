@@ -47,8 +47,8 @@ export const ComboBoxUI = ({
       control={control}
       defaultValue={""}
       render={({ field }) => (
-        <div className="flex flex-col">
-          {label ? <Text className="mb-1">{label}</Text> : null}
+        <div className={`flex flex-col gap-y-1 ${className}`}>
+          {label ? <Text>{label}</Text> : null}
           <Combobox
             defaultValue={field.value}
             value={field.value}
@@ -59,7 +59,7 @@ export const ComboBoxUI = ({
               <Combobox.Input
                 className={` dark:bg-inputBackground${
                   centerText ? "text-center" : ""
-                } p-2 w-full border border-black  ${className}`}
+                } p-2 w-full border border-black`}
                 onChange={(event) => setQuery(event.target.value)}
               />
 
