@@ -24,20 +24,20 @@ export const Defender = () => {
         <div className={`${margin} grid place-items-center`}>
           <RadioGroupUI name="selectPokemon" options={selectPokemon} />
         </div>
-        <div className={`${margin} grid grid-cols-2 place-items-center`}>
+        <div
+          className={`${margin} grid grid-cols-4 place-items-center gap-x-6`}
+        >
           <SelectorUI
             options={boost}
+            className="col-start-2"
             label={t("message.defStatBoost")}
             name={"boostDef"}
-            width={"XS"}
-            height={"S"}
           />
           <SelectorUI
             options={boost}
+            className="col-start-3"
             label={t("message.spdStatBoost")}
             name={"boostSpd"}
-            width={"XS"}
-            height={"S"}
           />
         </div>
 

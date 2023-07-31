@@ -75,7 +75,6 @@ export const PokemonCalcResultList = ({
           <TextFieldCommon
             label={t("common.searchPokemon")}
             placeholder="Write the Pokémon name"
-            width="L"
             value={text}
             onChange={handleFilter}
           />
