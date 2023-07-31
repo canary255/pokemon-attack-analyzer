@@ -50,9 +50,9 @@ export const SelectorNoLogic = ({
           <Listbox.Button className={`relative`}>
             <div className="grid grid-cols-8">
               <span
-                className={`col-span-5 dark:bg-inputBackground sm:p-2 min-[315px]:p-1 ${
-                  centerText ? "text-center" : ""
-                } border border-black border-r-0 bg-white`}
+                className={`col-span-5 dark:bg-inputBackground p-2 ${
+                  centerText ? "text-center" : "flex justify-start"
+                } border border-black border-r-0 bg-white `}
               >
                 {limitText(t(getTitle(value)) ?? "")}
               </span>
