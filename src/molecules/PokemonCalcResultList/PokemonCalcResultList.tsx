@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState, useRef, useMemo, useLayoutEffect } from "react";
 import { Sprite } from "../../atom/Sprite/Sprite";
 import { TextFieldCommon } from "../../atom/TextFieldCommon/TextFieldCommon";
 import { CalcList } from "../../types/calcList";
@@ -10,9 +10,12 @@ import { useTranslation } from "react-i18next";
 
 type PokemonCalcResultProps = {
   resultsCalcs: CalcList[];
+  pokemonInfo?: CalcList;
   setPokemonInfo: React.Dispatch<React.SetStateAction<CalcList | undefined>>;
   filteredList: CalcList[];
   setFilteredList: React.Dispatch<React.SetStateAction<CalcList[]>>;
+  lastScrollPosition: number;
+  setLastScrollPosition: React.Dispatch<React.SetStateAction<number>>;
 };
 
 type SurvivalOptions = "all" | "yes" | "barely" | "no";
@@ -22,10 +25,38 @@ export const PokemonCalcResultList = ({
   setPokemonInfo,
   filteredList,
   setFilteredList,
+  pokemonInfo,
+  lastScrollPosition,
+  setLastScrollPosition,
 }: PokemonCalcResultProps) => {
   const { t } = useTranslation();
   const [selector, setSelector] = useState<SurvivalOptions>("all");
   const [text, setText] = useState<string>("");
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    const scrollPosition = scrollContainerRef.current?.scrollTop ?? 0;
+    setScrollPosition(scrollPosition);
+  };
+
+  const filterBySurvival = (canSurvive: "yes" | "barely" | "no") => {
+    const filtered = resultsCalcs.filter((item) => {
+      return item.canSurvive.includes(canSurvive);
+    });
+    setFilteredList(filtered);
+  };
+
+  useLayoutEffect(() => {
+    if (!pokemonInfo) {
+      scrollContainerRef.current?.scrollTo(0, lastScrollPosition);
+    }
+  }, [pokemonInfo]);
+
+  const handlePokemonInfo = (item: CalcList) => {
+    setLastScrollPosition(scrollPosition);
+    setPokemonInfo(item);
+  };
 
   const survivalOptions: OptionsType[] = [
     { name: "common.all", value: "all" },
@@ -34,7 +65,7 @@ export const PokemonCalcResultList = ({
     { name: "common.cannot", value: "no" },
   ];
 
-  useEffect(() => {
+  useMemo(() => {
     setText("");
     if (selector === "all") {
       setFilteredList(resultsCalcs);
@@ -55,13 +86,6 @@ export const PokemonCalcResultList = ({
       );
     });
 
-    setFilteredList(filtered);
-  };
-
-  const filterBySurvival = (canSurvive: "yes" | "barely" | "no") => {
-    const filtered = resultsCalcs.filter((item) => {
-      return item.canSurvive.includes(canSurvive);
-    });
     setFilteredList(filtered);
   };
 
@@ -90,17 +114,21 @@ export const PokemonCalcResultList = ({
           </div>
         </div>
       </div>
-      <div className="grid min-[315px]:grid-cols-3 sm:grid-cols-5 gap-y-6 lg:max-h-80 min-[315px]:max-h-64 overflow-auto place-items-center px-6">
-        {filteredList.map((item, index) => {
+      <div
+        ref={scrollContainerRef}
+        onScroll={handleScroll}
+        className="grid min-[315px]:grid-cols-3 sm:grid-cols-5 gap-y-6 lg:max-h-80 min-[315px]:max-h-64 overflow-auto place-items-center px-6"
+      >
+        {filteredList.map((item) => {
           return (
             <Sprite
-              key={index}
+              key={item.pokemon}
               src={item?.img}
               pokemonName={item?.pokemon}
               className={`${survivalColor(
                 item?.calcExtreme?.ko_chance
               )} w-[72px] cursor-pointer`}
-              onClick={() => setPokemonInfo(item)}
+              onClick={() => handlePokemonInfo(item)}
             />
           );
         })}

@@ -41,7 +41,7 @@ export const Attacker = ({
   const specie: string = watch("name");
   const move: string = watch("move");
 
-  useMemo(() => {
+  useEffect(() => {
     if (move !== "") {
       const oneMove = getMoveDetails(move);
       setMoveDetails(oneMove);

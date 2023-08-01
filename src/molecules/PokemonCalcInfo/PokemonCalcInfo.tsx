@@ -5,7 +5,7 @@ import { CalcList } from "../../types/calcList";
 import { survivalColor } from "../../utils/color";
 
 type PokemonCalcResultProps = {
-  pokemonInfo: CalcList | undefined;
+  pokemonInfo?: CalcList;
   setPokemonInfo: React.Dispatch<React.SetStateAction<CalcList | undefined>>;
 };
 
