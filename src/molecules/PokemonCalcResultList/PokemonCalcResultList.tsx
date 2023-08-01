@@ -1,4 +1,4 @@
-import { useState, useRef, useMemo, useLayoutEffect } from "react";
+import { useState, useRef, useMemo, useLayoutEffect, useEffect } from "react";
 import { Sprite } from "../../atom/Sprite/Sprite";
 import { TextFieldCommon } from "../../atom/TextFieldCommon/TextFieldCommon";
 import { CalcList } from "../../types/calcList";
@@ -65,7 +65,7 @@ export const PokemonCalcResultList = ({
     { name: "common.cannot", value: "no" },
   ];
 
-  useMemo(() => {
+  useEffect(() => {
     setText("");
     if (selector === "all") {
       setFilteredList(resultsCalcs);

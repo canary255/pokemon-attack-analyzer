@@ -62,7 +62,9 @@ const inmmunePokemon = async (pokemon: any, form: ReportProps) => {
       move_category: MOVES[MOVES.length - 1][form.move].category,
     },
     calcsSet: undefined,
-    img: await getPokemonSprite(pokemon),
+    img: await getPokemonSprite(
+      pokemon.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    ),
   } as unknown as CalcData;
 };
 
@@ -87,6 +89,8 @@ export const loadDataCalculator = async (
 
   let i = 1;
   for (const pokemon of dex) {
+    const normalizedPokemon = pokemon.normalize("NFD");
+
     const isCancelledAction = getCancelAction();
     if (isCancelledAction) {
       setPage((prev) => {
@@ -98,7 +102,7 @@ export const loadDataCalculator = async (
     //Uncomment for testing
     //if (i === 30) break;
     setNumberDex(i);
-    const pokemonType = SPECIES[SPECIES.length - 1][pokemon].types;
+    const pokemonType = SPECIES[SPECIES.length - 1][normalizedPokemon].types;
     const typeValue = TYPE_CHART[TYPE_CHART.length - 1];
 
     //1 - add type immunity
@@ -115,9 +119,9 @@ export const loadDataCalculator = async (
     try {
       //STEPS:
       //2 - The pokemon has a set stored
-      const setCalc = await calculateDamageWithSet(pokemon, form);
+      const setCalc = await calculateDamageWithSet(normalizedPokemon, form);
       //3 - Add extreme set
-      const extremeCalc = calculateExtremeDamage(pokemon, form);
+      const extremeCalc = calculateExtremeDamage(normalizedPokemon, form);
       //4 - Add optimal set
       //const optimalCalc = calculateOptimalDamage(pokemon, form);
 
@@ -127,7 +131,9 @@ export const loadDataCalculator = async (
         calcSet: setCalc,
         calcExtreme: extremeCalc,
         canSurvive: canSurvive(extremeCalc?.ko_chance),
-        img: await getPokemonSprite(pokemon),
+        img: await getPokemonSprite(
+          normalizedPokemon.replace(/[\u0300-\u036f]/g, "")
+        ),
       });
     } catch (error) {
       calcsList.push(await inmmunePokemon(pokemon, form));
