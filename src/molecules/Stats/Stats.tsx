@@ -12,21 +12,20 @@ export const Stats = ({ atk, spa }: StatsProps) => {
 
   const Layer = () => {
     return (
-      <>
-        <div></div>
-        <Text>Base</Text>
+      <div className="grid grid-cols-6 gap-x-2">
+        <Text className="col-start-2">Base</Text>
         <Text>IV</Text>
         <Text>EV</Text>
-        <div></div>
-        <div></div>
-      </>
+      </div>
     );
   };
 
   return (
     <>
-      <div className="w-[80%] grid grid-rows-3 gap-y-2 grid-cols-6">
+      <div className="w-full grid grid-rows-1 gap-y-1">
         <Layer />
+      </div>
+      <div className="grid grid-rows-2 gap-y-1">
         <FieldStats
           boostName="boostAtk"
           base={atk}

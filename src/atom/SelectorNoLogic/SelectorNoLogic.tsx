@@ -1,7 +1,4 @@
 import { Listbox } from "@headlessui/react";
-import { heightSize, widthSize } from "../../utils/styleConsts";
-import { SizeProps } from "../../types/size";
-import { isSmall } from "../../utils/isSmall";
 import { OptionsType } from "../../types/options";
 import { useTranslation } from "react-i18next";
 import { Text } from "../Text/Text";
@@ -10,25 +7,23 @@ import { limitText } from "../../utils/limitText";
 interface SelectorProps {
   className?: string;
   onChange?: (e: any) => void;
-  width?: SizeProps;
-  height?: SizeProps;
   centerText?: boolean;
   label?: string | null;
   selectorAbove?: boolean;
   options: OptionsType[];
   value: string;
+  name?: string;
 }
 
 export const SelectorNoLogic = ({
   className,
   onChange,
-  width = "M",
-  height = "S",
   value,
   centerText = false,
   label,
   selectorAbove = false,
   options,
+  name,
 }: SelectorProps) => {
   const { t } = useTranslation();
 
@@ -49,28 +44,28 @@ export const SelectorNoLogic = ({
 
   return (
     <>
-      <div className="flex flex-col">
-        {label ? <Text className="mb-1">{label}</Text> : null}
-        <Listbox defaultValue={value} onChange={onChange}>
-          <Listbox.Button
-            className={`dark:bg-inputBackground ${
-              centerText ? "text-center" : ""
-            } pr-4 border border-black bg-white ${widthSize[width]} ${
-              heightSize[height]
-            } ${className}`}
-          >
+      <div className={`flex flex-col w-full gap-y-1 ${className}`}>
+        {label ? <Text>{label}</Text> : null}
+        <Listbox defaultValue={value} onChange={onChange} refName={name}>
+          <Listbox.Button className={`relative`}>
             <div className="grid grid-cols-8">
-              <span className="col-span-7">
+              <span
+                className={`col-span-5 dark:bg-inputBackground p-2 ${
+                  centerText ? "text-center" : "flex justify-start"
+                } border border-black border-r-0 bg-white `}
+              >
                 {limitText(t(getTitle(value)) ?? "")}
               </span>
-              <span className="col-span-1 material-symbols-outlined">
+              <span
+                className="flex flex-col col-span-3
+                items-center justify-center focus:border-none
+               bg-white border border-black border-l-0 material-symbols-outlined"
+              >
                 expand_more
               </span>
             </div>
-          </Listbox.Button>
-          <div>
             <Listbox.Options
-              className={`bg-white absolute ${widthSize[width]} 
+              className={`bg-white absolute w-full z-10
               ${selectorAbove ? "mt-[-15rem]" : ""}
                rounded-md border border-black overflow-auto max-h-60`}
             >
@@ -80,9 +75,11 @@ export const SelectorNoLogic = ({
                       key={index}
                       value={item?.value}
                       className={({ selected, active, disabled }) =>
-                        `cursor-default select-none py-2 
-                    ${isSmall(width) ? "pl-1 pr-0" : "pl-5"}
-                     pr-4 ${optionStyles(selected, active, disabled)}`
+                        `cursor-default select-none p-2 ${optionStyles(
+                          selected,
+                          active,
+                          disabled
+                        )}`
                       }
                     >
                       {({ selected }) => (
@@ -98,7 +95,7 @@ export const SelectorNoLogic = ({
                   ))
                 : null}
             </Listbox.Options>
-          </div>
+          </Listbox.Button>
         </Listbox>
       </div>
     </>

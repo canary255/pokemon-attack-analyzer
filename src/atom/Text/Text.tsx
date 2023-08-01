@@ -5,7 +5,7 @@ interface TextProps {
   children?: React.ReactNode;
 }
 
-export const Text = ({ className, children }: TextProps) => {
+export const Text = ({ className = "", children }: TextProps) => {
   return (
     <p className={`text-sm text-black dark:text-white ${className} `}>
       {children}

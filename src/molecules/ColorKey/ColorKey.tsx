@@ -15,14 +15,17 @@ export const ColorKey = () => {
   }) => {
     return (
       <div className="flex flex-row gap-x-1 items-center">
-        <Sprite isExample className={`${COLOR[color]} w-10 h-10`} />
-        <Text className="text-lg">{t(text)}</Text>
+        <Sprite
+          isExample
+          className={`${COLOR[color]} sm:w-10 sm:h-10 min-[315px]:w-5 min-[315px]:h-5`}
+        />
+        <Text className="sm:text-lg min-[315px]:text-sm">{t(text)}</Text>
       </div>
     );
   };
 
   return (
-    <div className="p-1 grid grid-cols-3 px-8 py-3 gap-x-8">
+    <div className="flex  py-3 justify-center md:gap-x-12 min-[315px]:gap-x-8">
       <ColorWrapper color="green" text="common.survive" />
       <ColorWrapper color="yellow" text="common.barely" />
       <ColorWrapper color="red" text="common.cannot" />

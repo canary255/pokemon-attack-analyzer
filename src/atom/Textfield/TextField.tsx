@@ -1,16 +1,11 @@
 import { FieldValues, useFormContext, UseFormSetValue } from "react-hook-form";
-import { SizeProps } from "../../types/size";
-import { heightSize, widthSize } from "../../utils/styleConsts";
-import { isSmall } from "../../utils/isSmall";
-import { Text } from "../Text/Text";
+import { TextFieldCommon } from "../TextFieldCommon/TextFieldCommon";
 
 interface TextFieldProps {
   type?: string;
   name: string;
   className?: string;
   onChange?: () => void;
-  width?: SizeProps;
-  height?: SizeProps;
   centerText?: boolean;
   readonly?: boolean;
   label?: string | null;
@@ -48,10 +43,8 @@ export const TextField = ({
   name,
   className,
   onChange,
-  width = "M",
-  height = "S",
   centerText = false,
-  readonly = false,
+  readonly: readOnly = false,
   label,
   onlyNumber = false,
   maxLength,
@@ -60,23 +53,18 @@ export const TextField = ({
 }: TextFieldProps) => {
   const { getValues, setValue } = useFormContext();
   return (
-    <div className="flex flex-col gap-y-1">
-      {label ? <Text>{label}</Text> : null}
-      <input
-        onChange={(e: any) => {
-          handleNumber(e, setValue, name, onlyNumber, maxNumber, minNumber);
-        }}
-        value={getValues(name)}
-        className={`border py-2 pl-1 pr-4 border-black 
-              ${isSmall(width) ? "pl-1 pr-0" : "pl-5"}
-              ${readonly ? "bg-gray-100 " : "bg-white dark:bg-inputBackground"}
-              ${centerText ? "text-center" : ""} ${widthSize[width]}
-              ${heightSize[height]} ${className}`}
-        type={type}
-        name={name}
-        readOnly={readonly}
-        maxLength={maxLength}
-      />
-    </div>
+    <TextFieldCommon
+      label={label}
+      onChange={(e: any) => {
+        handleNumber(e, setValue, name, onlyNumber, maxNumber, minNumber);
+      }}
+      value={getValues(name)}
+      className={`border border-black `}
+      centerText={centerText}
+      type={type}
+      name={name}
+      readOnly={readOnly}
+      maxLength={maxLength}
+    />
   );
 };

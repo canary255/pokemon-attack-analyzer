@@ -33,6 +33,7 @@ export const Results = ({
   const [filteredList, setFilteredList] = useState<CalcList[]>([
     ...resultsCalcs,
   ]);
+  const [lastScrollPosition, setLastScrollPosition] = useState(0);
 
   const resetPage = () => {
     setPage(0);
@@ -69,7 +70,10 @@ export const Results = ({
             resultsCalcs={resultsCalcs}
             filteredList={filteredList}
             setFilteredList={setFilteredList}
+            pokemonInfo={pokemonInfo}
             setPokemonInfo={setPokemonInfo}
+            lastScrollPosition={lastScrollPosition}
+            setLastScrollPosition={setLastScrollPosition}
           />
         )}
       </div>

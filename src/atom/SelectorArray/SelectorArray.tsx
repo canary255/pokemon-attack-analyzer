@@ -1,7 +1,4 @@
 import { Listbox } from "@headlessui/react";
-import { heightSize, widthSize } from "../../utils/styleConsts";
-import { SizeProps } from "../../types/size";
-import { isSmall } from "../../utils/isSmall";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { Text } from "../Text/Text";
@@ -11,8 +8,6 @@ interface SelectorProps {
   name: string;
   className?: string;
   onChange?: () => void;
-  width?: SizeProps;
-  height?: SizeProps;
   centerText?: boolean;
   label?: string | null;
   selectorAbove?: boolean;
@@ -23,8 +18,6 @@ export const SelectorArray = ({
   name,
   className,
   onChange,
-  width = "M",
-  height = "S",
   centerText = false,
   label,
   selectorAbove = false,
@@ -60,23 +53,25 @@ export const SelectorArray = ({
               onChange={field.onChange}
               refName={field.name}
             >
-              <Listbox.Button
-                className={`dark:bg-inputBackground ${
-                  centerText ? "text-center" : ""
-                } pr-4 border border-black bg-white ${widthSize[width]} ${
-                  heightSize[height]
-                } ${className}`}
-              >
+              <Listbox.Button className={`relative ${className}`}>
                 <div className="grid grid-cols-8">
-                  <span className="col-span-7">{field.value}</span>
-                  <span className="col-span-1 material-symbols-outlined">
+                  <span
+                    className={`col-span-5 dark:bg-inputBackground p-2 ${
+                      centerText ? "text-center" : ""
+                    } border border-black border-r-0 bg-white`}
+                  >
+                    {field.value}
+                  </span>
+                  <span
+                    className="flex flex-col col-span-3
+                items-center justify-center focus:border-none
+               bg-white border border-black border-l-0 material-symbols-outlined"
+                  >
                     expand_more
                   </span>
                 </div>
-              </Listbox.Button>
-              <div>
                 <Listbox.Options
-                  className={`bg-white absolute ${widthSize[width]} 
+                  className={`bg-white absolute w-full z-10
               ${selectorAbove ? "mt-[-15rem]" : ""}
                rounded-md border border-black overflow-auto max-h-60`}
                 >
@@ -85,30 +80,28 @@ export const SelectorArray = ({
                         <Listbox.Option
                           key={index}
                           value={item}
-                          className={({ active, disabled }) =>
-                            `cursor-default select-none py-2 
-                    ${isSmall(width) ? "pl-1 pr-0" : "pl-5"}
-                     pr-4 ${optionStyles(
-                       field.value === String(item),
-                       active,
-                       disabled
-                     )}`
+                          className={({ selected, active, disabled }) =>
+                            `cursor-default select-none p-2 ${optionStyles(
+                              selected,
+                              active,
+                              disabled
+                            )}`
                           }
                         >
-                          <span
-                            className={`block truncate ${
-                              field.value === String(item)
-                                ? "font-medium"
-                                : "font-normal"
-                            }`}
-                          >
-                            {t(limitText(String(item)))}
-                          </span>
+                          {({ selected }) => (
+                            <span
+                              className={`block truncate ${
+                                selected ? "font-medium" : "font-normal"
+                              }`}
+                            >
+                              {limitText(t(String(item)))}
+                            </span>
+                          )}
                         </Listbox.Option>
                       ))
                     : null}
                 </Listbox.Options>
-              </div>
+              </Listbox.Button>
             </Listbox>
           )}
         />

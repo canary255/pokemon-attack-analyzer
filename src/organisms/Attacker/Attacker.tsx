@@ -8,7 +8,7 @@ import { nature, mechanic, category } from "../../utils/pokemonConsts";
 import { RadioGroupUI } from "../../atom/RadioGroup/RadioGroup";
 import teraType from "../../utils/pokemonConsts/teraType";
 import { useFormContext } from "react-hook-form";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { capitalizeEveryWord } from "../../utils/capitalize";
 import { getMoveDetails } from "../../utils/pokemonConsts/lists";
 import { SelectorArray } from "../../atom/SelectorArray/SelectorArray";
@@ -52,7 +52,7 @@ export const Attacker = ({
     }
   }, [move]);
 
-  useEffect(() => {
+  useMemo(() => {
     if (specie !== "") {
       fetch(
         `https://pokeapi.co/api/v2/pokemon/${specie
@@ -97,32 +97,33 @@ export const Attacker = ({
   return (
     <>
       <div className="flex flex-col p-4">
-        <div className="grid lg:grid-cols-2 md:grid-cols-1 justify-center gap-x-16">
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 justify-center gap-x-16 gap-y-4">
           <Avatar
             url={avatar}
             teratype={watch("teraType")}
             className="flex flex-row justify-center mt-5"
           />
-          <div className=" mt-3 grid place-items-center sm:grid-rows-3 min-[315px]:grid-cols-1 gap-x-2">
+          <div className=" grid place-items-center sm:grid-rows-3 min-[315px]:grid-cols-1 gap-y-2 xl:w-[90%]">
             {localStorage.getItem("pokemonSetData") && (
               <Button
+                className="w-full"
                 onClick={() => handleRestore()}
-                className="w-48 xl:mr-5"
                 label="Restore last set"
               ></Button>
             )}
             <ComboBoxUI
               options={dex}
+              className="w-full"
               name="name"
-              className="xl:w-[90%]"
               label={t("attacker.selectPokemon")}
             />
-            <SelectorUI
-              options={teraType}
-              name="teraType"
-              className="xl:w-[90%]"
-              label={t("attacker.selectTeraType")}
-            />
+            <div className="w-full">
+              <SelectorUI
+                options={teraType}
+                name="teraType"
+                label={t("attacker.selectTeraType")}
+              />
+            </div>
           </div>
         </div>
         <div className="mt-3 grid place-items-center p-2 sm:grid-cols-2 gap-x-2">
@@ -133,7 +134,6 @@ export const Attacker = ({
           />
           <ComboBoxUI
             options={itemList}
-            className="md:w-[90%]"
             name="item"
             label={t("attacker.selectItem")}
           />
@@ -145,13 +145,15 @@ export const Attacker = ({
             options={mechanic}
           />
         </div>
-        <div className="mt-3 grid grid-cols-1 place-items-center gap-x-2">
-          <SelectorUI
-            name="nature"
-            options={nature}
-            label={t("attacker.nature")}
-            selectorAbove
-          />
+        <div className="mt-3  place-items-center gap-x-2">
+          <div className="xl:px-32 px-12 ">
+            <SelectorUI
+              className="col-span-5"
+              name="nature"
+              options={nature}
+              label={t("attacker.nature")}
+            />
+          </div>
         </div>
         <div className="mt-3 grid w-full place-items-center sm:grid-cols-12 gap-x-6">
           <div className="col-span-6">
@@ -164,7 +166,6 @@ export const Attacker = ({
           <div className="xl:col-span-2 sm:col-span-6 min-[315px]:col-span-2">
             <SelectorUI
               options={category}
-              width="XS"
               name="category"
               label={t("attacker.category")}
             />
@@ -173,7 +174,6 @@ export const Attacker = ({
             <div className="xl:col-span-2 sm:col-span-6 min-[315px]:col-span-2">
               <SelectorArray
                 options={numberOfHits(moveDetails?.multihit)}
-                width="XS"
                 name="hits"
                 label={t("attacker.numHits")}
               />
