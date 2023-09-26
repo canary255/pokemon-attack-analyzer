@@ -55,7 +55,7 @@ import * as A from "./adaptable";
 // we can call that instead.
 //
 // This is obviously kludge, use a bundler kids.
-//const Acalculate = exports.calculate;
+const Acalculate = exports.calculate;
 
 export function calculate(
   gen: I.GenerationNum | I.Generation,
@@ -64,7 +64,7 @@ export function calculate(
   move: A.Move,
   field?: A.Field
 ): A.Result {
-  return A.calculate(
+  return (Acalculate || A.calculate)(
     typeof gen === "number" ? Generations.get(gen) : gen,
     attacker,
     defender,
