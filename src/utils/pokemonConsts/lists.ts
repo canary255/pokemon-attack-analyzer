@@ -1,5 +1,5 @@
 import { set } from "react-hook-form";
-import { ABILITIES, ITEMS, MOVES, SPECIES } from "../calc";
+import { MOVES, SPECIES, ITEMS, ABILITIES } from "@smogon/calc";
 import { getDate, setPreviousDate } from "../obtainApiDate";
 import { notAllowedForms } from "./notAllowedForms";
 

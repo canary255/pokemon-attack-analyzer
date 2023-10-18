@@ -1,26 +1,7 @@
 import { ReportProps } from "../types/reportProps";
 import { getCompleteDexNames } from "./pokemonConsts/lists";
 import React, { SetStateAction } from "react";
-import {
-  calculate,
-  Field,
-  Generations,
-  MOVES,
-  SPECIES,
-  TYPE_CHART,
-} from "./calc";
-import { Pokemon } from "./calc/pokemon";
-import { Move } from "./calc/move";
 import { CalcData } from "../types/calcData";
-import {
-  AbilityName,
-  GameType,
-  ItemName,
-  MoveCategory,
-  NatureName,
-  Terrain,
-  Weather,
-} from "./calc/data/interface";
 import { CalcList } from "../types/calcList";
 import { getPokemonSprite } from "./getPokemonSprite";
 import { getCancelAction, setCancelAction } from "./cancelAction";
@@ -29,6 +10,19 @@ import {
   getGen9PokemonDefensiveDataList,
   getGen9PokemonNames,
 } from "../adapter/gen9";
+import { MOVES, SPECIES, TYPE_CHART, Generations, Field } from "@smogon/calc";
+import { Pokemon } from "@smogon/calc/dist/pokemon";
+import {
+  AbilityName,
+  GameType,
+  ItemName,
+  MoveCategory,
+  NatureName,
+  Terrain,
+  Weather,
+} from "@smogon/calc/dist/data/interface";
+import { Move } from "@smogon/calc/dist/move";
+import { calculate } from "@smogon/calc/dist/calc";
 
 const defensivePokemonList = getGen9PokemonDefensiveDataList();
 
@@ -107,14 +101,14 @@ export const loadDataCalculator = async (
 
     //1 - add type immunity
 
-    if (
+    /*if (
       typeValue?.[moveType]?.[pokemonType[0]] === 0 ||
       (pokemonType[1] && typeValue?.[moveType]?.[pokemonType[1]] === 0)
     ) {
       calcsList.push(await inmmunePokemon(pokemon, form));
       i++;
       continue;
-    }
+    }*/
 
     try {
       //STEPS:
@@ -248,7 +242,7 @@ const calculateDamage = (
     },
   });
 
-  const result = calculate(9, ATTACKER, DEFENDER, MOVE, FIELD);
+  const result = calculate(Generations.get(9), ATTACKER, DEFENDER, MOVE, FIELD);
   const sendData: CalcData = {
     description: result.desc(),
     damage_range: result.damage,

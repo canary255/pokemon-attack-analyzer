@@ -2,31 +2,25 @@
   {
     "name": "Flutter Mane",
     "item": "Booster Energy",
-    "evs": "212/0/132/36/4/124",
+    "evs": "0/0/0/252/4/252",
     "nature": "Timid"
-  },
-  {
-    "name": "Urshifu-Rapid-Strike",
-    "item": "Mystic Water",
-    "evs": "0/252/0/0/4/252",
-    "nature": "Jolly"
   },
   {
     "name": "Iron Hands",
     "item": "Assault Vest",
-    "evs": "44/76/4/0/236/148",
+    "evs": "140/156/4/0/204/4",
     "nature": "Adamant"
-  },
-  {
-    "name": "Amoonguss",
-    "item": "Rocky Helmet",
-    "evs": "236/0/204/4/36/28",
-    "nature": "Bold"
   },
   {
     "name": "Landorus-Therian",
     "item": "Choice Scarf",
-    "evs": "252/36/84/0/68/68",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Chien-Pao",
+    "item": "Focus Sash",
+    "evs": "0/252/4/0/0/252",
     "nature": "Adamant"
   },
   {
@@ -36,9 +30,27 @@
     "nature": "Timid"
   },
   {
-    "name": "Chien-Pao",
-    "item": "Focus Sash",
-    "evs": "0/252/4/0/0/252",
+    "name": "Ogerpon-Hearthflame",
+    "item": "Hearthflame Mask",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Urshifu-Rapid-Strike",
+    "item": "Choice Scarf",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Rillaboom",
+    "item": "Assault Vest",
+    "evs": "244/132/36/0/44/52",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Ogerpon-Wellspring",
+    "item": "Wellspring Mask",
+    "evs": "252/76/148/0/28/4",
     "nature": "Adamant"
   },
   {
@@ -48,46 +60,22 @@
     "nature": "Timid"
   },
   {
-    "name": "Rillaboom",
-    "item": "Assault Vest",
-    "evs": "244/132/36/0/44/52",
-    "nature": "Adamant"
-  },
-  {
     "name": "Heatran",
     "item": "Leftovers",
     "evs": "252/0/36/180/4/36",
     "nature": "Modest"
   },
   {
-    "name": "Gholdengo",
-    "item": "Choice Specs",
-    "evs": "244/0/44/52/4/164",
-    "nature": "Timid"
-  },
-  {
-    "name": "Urshifu-Single-Strike",
-    "item": "Focus Sash",
-    "evs": "0/252/0/0/4/252",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Cresselia",
-    "item": "Safety Goggles",
-    "evs": "252/0/172/0/84/0",
+    "name": "Sinistcha",
+    "item": "Sitrus Berry",
+    "evs": "252/0/92/4/156/4",
     "nature": "Calm"
   },
   {
-    "name": "Ursaluna",
-    "item": "Flame Orb",
-    "evs": "252/252/0/0/4/0",
-    "nature": "Brave"
-  },
-  {
-    "name": "Gyarados",
-    "item": "Sitrus Berry",
-    "evs": "188/4/164/0/4/148",
-    "nature": "Impish"
+    "name": "Amoonguss",
+    "item": "Rocky Helmet",
+    "evs": "236/0/204/4/36/28",
+    "nature": "Bold"
   },
   {
     "name": "Arcanine-Hisui",
@@ -96,40 +84,64 @@
     "nature": "Adamant"
   },
   {
+    "name": "Cresselia",
+    "item": "Safety Goggles",
+    "evs": "252/0/156/0/100/0",
+    "nature": "Bold"
+  },
+  {
     "name": "Dragonite",
     "item": "Choice Band",
-    "evs": "20/252/36/0/4/196",
-    "nature": "Jolly"
+    "evs": "196/252/4/0/4/52",
+    "nature": "Adamant"
   },
   {
     "name": "Roaring Moon",
     "item": "Booster Energy",
-    "evs": "212/252/36/0/4/4",
+    "evs": "148/252/20/0/4/84",
     "nature": "Adamant"
   },
   {
+    "name": "Gholdengo",
+    "item": "Choice Specs",
+    "evs": "108/0/44/100/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Ursaluna-Bloodmoon",
+    "item": "Throat Spray",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Quiet"
+  },
+  {
+    "name": "Urshifu-Single-Strike",
+    "item": "Focus Sash",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Ninetales-Alola",
+    "item": "Light Clay",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid"
+  },
+  {
     "name": "Farigiraf",
-    "item": "Rocky Helmet",
-    "evs": "188/0/156/0/164/0",
-    "nature": "Bold"
+    "item": "Sitrus Berry",
+    "evs": "252/0/236/4/4/12",
+    "nature": "Modest"
+  },
+  {
+    "name": "Kingambit",
+    "item": "Black Glasses",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Adamant"
   },
   {
     "name": "Dondozo",
     "item": "Leftovers",
-    "evs": "0/252/0/0/20/236",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Gastrodon",
-    "item": "Sitrus Berry",
-    "evs": "252/0/180/60/12/4",
-    "nature": "Bold"
-  },
-  {
-    "name": "Indeedee-Female",
-    "item": "Rocky Helmet",
-    "evs": "252/0/252/0/4/0",
-    "nature": "Relaxed"
+    "evs": "116/0/0/0/148/244",
+    "nature": "Impish"
   },
   {
     "name": "Tatsugiri",
@@ -138,10 +150,10 @@
     "nature": "Timid"
   },
   {
-    "name": "Basculegion-Male",
-    "item": "Life Orb",
-    "evs": "92/252/140/0/20/0",
-    "nature": "Brave"
+    "name": "Indeedee-Female",
+    "item": "Rocky Helmet",
+    "evs": "252/0/252/0/4/0",
+    "nature": "Relaxed"
   },
   {
     "name": "Iron Bundle",
@@ -150,22 +162,16 @@
     "nature": "Timid"
   },
   {
-    "name": "Grimmsnarl",
-    "item": "Light Clay",
-    "evs": "252/0/180/0/76/0",
-    "nature": "Careful"
-  },
-  {
     "name": "Torkoal",
     "item": "Charcoal",
     "evs": "252/0/0/252/4/0",
     "nature": "Quiet"
   },
   {
-    "name": "Kingambit",
-    "item": "Assault Vest",
-    "evs": "252/196/4/0/4/52",
-    "nature": "Adamant"
+    "name": "Gyarados",
+    "item": "Sitrus Berry",
+    "evs": "188/0/164/0/0/156",
+    "nature": "Impish"
   },
   {
     "name": "Armarouge",
@@ -174,27 +180,171 @@
     "nature": "Modest"
   },
   {
-    "name": "Pelipper",
-    "item": "Rocky Helmet",
-    "evs": "92/0/4/212/4/196",
+    "name": "Ursaluna",
+    "item": "Flame Orb",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Grimmsnarl",
+    "item": "Light Clay",
+    "evs": "252/0/140/0/116/0",
+    "nature": "Careful"
+  },
+  {
+    "name": "Milotic",
+    "item": "Leftovers",
+    "evs": "228/0/156/76/4/44",
+    "nature": "Modest"
+  },
+  {
+    "name": "Okidogi",
+    "item": "Assault Vest",
+    "evs": "228/172/4/0/100/4",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Kommo-o",
+    "item": "Throat Spray",
+    "evs": "108/0/0/236/0/164",
+    "nature": "Modest"
+  },
+  {
+    "name": "Ogerpon",
+    "item": "Focus Sash",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Clefairy",
+    "item": "Eviolite",
+    "evs": "252/0/220/0/36/0",
+    "nature": "Sassy"
+  },
+  {
+    "name": "Ogerpon-Cornerstone",
+    "item": "Cornerstone Mask",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Baxcalibur",
+    "item": "Loaded Dice",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Empoleon",
+    "item": "Assault Vest",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Modest"
+  },
+  {
+    "name": "Volcarona",
+    "item": "Safety Goggles",
+    "evs": "124/0/188/36/4/156",
+    "nature": "Modest"
+  },
+  {
+    "name": "Lilligant-Hisui",
+    "item": "Focus Sash",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Glimmora",
+    "item": "Assault Vest",
+    "evs": "252/0/4/156/4/92",
+    "nature": "Modest"
+  },
+  {
+    "name": "Fezandipiti",
+    "item": "Sitrus Berry",
+    "evs": "140/0/4/116/4/244",
     "nature": "Timid"
+  },
+  {
+    "name": "Annihilape",
+    "item": "Leftovers",
+    "evs": "252/4/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Maushold",
+    "item": "Wide Lens",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
   },
   {
     "name": "Regidrago",
     "item": "Dragon Fang",
-    "evs": "4/0/100/252/12/140",
+    "evs": "4/0/0/252/0/252",
     "nature": "Modest"
   },
   {
-    "name": "Thundurus-Incarnate",
-    "item": "Sitrus Berry",
-    "evs": "236/0/212/4/44/12",
+    "name": "Gastrodon",
+    "item": "Leftovers",
+    "evs": "252/0/252/0/4/0",
     "nature": "Bold"
   },
   {
+    "name": "Goodra-Hisui",
+    "item": "Leftovers",
+    "evs": "252/0/252/0/4/0",
+    "nature": "Careful"
+  },
+  {
+    "name": "Sylveon",
+    "item": "Choice Specs",
+    "evs": "164/0/60/252/4/28",
+    "nature": "Modest"
+  },
+  {
+    "name": "Politoed",
+    "item": "Sitrus Berry",
+    "evs": "204/0/44/236/4/20",
+    "nature": "Modest"
+  },
+  {
+    "name": "Dusclops",
+    "item": "Eviolite",
+    "evs": "252/0/4/0/252/0",
+    "nature": "Sassy"
+  },
+  {
+    "name": "Dragapult",
+    "item": "Choice Band",
+    "evs": "0/252/4/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Basculegion-Male",
+    "item": "Assault Vest",
+    "evs": "4/220/204/0/4/76",
+    "nature": "Adamant"
+  },
+  {
     "name": "Zapdos",
-    "item": "Rocky Helmet",
-    "evs": "196/0/156/4/52/100",
+    "item": "Sitrus Berry",
+    "evs": "196/0/124/4/52/132",
+    "nature": "Bold"
+  },
+  {
+    "name": "Pelipper",
+    "item": "Focus Sash",
+    "evs": "0/0/12/244/0/252",
+    "nature": "Modest"
+  },
+  {
+    "name": "Hatterene",
+    "item": "Life Orb",
+    "evs": "212/0/44/252/0/0",
+    "nature": "Quiet"
+  },
+  {
+    "name": "Thundurus-Incarnate",
+    "item": "Covert Cloak",
+    "evs": "252/0/156/0/100/0",
     "nature": "Bold"
   },
   {
@@ -204,70 +354,40 @@
     "nature": "Adamant"
   },
   {
-    "name": "Regieleki",
-    "item": "Focus Sash",
-    "evs": "4/0/0/252/0/252",
-    "nature": "Timid"
-  },
-  {
-    "name": "Maushold",
-    "item": "Wide Lens",
-    "evs": "252/0/252/0/4/0",
-    "nature": "Relaxed"
-  },
-  {
-    "name": "Baxcalibur",
-    "item": "Assault Vest",
-    "evs": "244/228/4/0/28/4",
+    "name": "Arcanine",
+    "item": "Safety Goggles",
+    "evs": "252/20/28/0/68/140",
     "nature": "Adamant"
+  },
+  {
+    "name": "Weezing-Galar",
+    "item": "Sitrus Berry",
+    "evs": "252/0/156/4/20/76",
+    "nature": "Bold"
   },
   {
     "name": "Ting-Lu",
     "item": "Assault Vest",
-    "evs": "100/236/4/0/164/4",
-    "nature": "Adamant"
+    "evs": "172/12/68/0/252/4",
+    "nature": "Impish"
   },
   {
-    "name": "Annihilape",
-    "item": "Leftovers",
-    "evs": "180/36/68/0/76/148",
-    "nature": "Adamant"
+    "name": "Snorlax",
+    "item": "Sitrus Berry",
+    "evs": "244/0/188/0/76/0",
+    "nature": "Relaxed"
   },
   {
-    "name": "Goodra-Hisui",
-    "item": "Leftovers",
-    "evs": "252/0/252/0/4/0",
-    "nature": "Careful"
-  },
-  {
-    "name": "Lilligant-Hisui",
+    "name": "Regieleki",
     "item": "Focus Sash",
-    "evs": "0/252/0/0/4/252",
+    "evs": "0/252/252/0/4/0",
     "nature": "Adamant"
   },
   {
-    "name": "Brute Bonnet",
-    "item": "Rocky Helmet",
-    "evs": "220/180/68/4/36/0",
-    "nature": "Brave"
-  },
-  {
-    "name": "Volcarona",
-    "item": "Safety Goggles",
-    "evs": "212/0/252/44/0/0",
+    "name": "Gothitelle",
+    "item": "Sitrus Berry",
+    "evs": "244/0/116/4/132/12",
     "nature": "Bold"
-  },
-  {
-    "name": "Dragapult",
-    "item": "Choice Band",
-    "evs": "4/252/0/0/0/252",
-    "nature": "Jolly"
-  },
-  {
-    "name": "Sylveon",
-    "item": "Choice Specs",
-    "evs": "164/0/60/252/4/28",
-    "nature": "Modest"
   },
   {
     "name": "Enamorus-Therian",
@@ -276,28 +396,58 @@
     "nature": "Quiet"
   },
   {
-    "name": "Arcanine",
-    "item": "Safety Goggles",
-    "evs": "252/76/4/0/4/172",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Bruxish",
+    "name": "Munkidori",
     "item": "Focus Sash",
-    "evs": "252/116/4/4/132/0",
-    "nature": "Brave"
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid"
   },
   {
     "name": "Moltres-Galar",
     "item": "Sitrus Berry",
-    "evs": "252/0/4/116/4/132",
+    "evs": "244/0/100/156/4/4",
     "nature": "Modest"
   },
   {
-    "name": "Azumarill",
-    "item": "Assault Vest",
-    "evs": "124/196/12/0/12/164",
+    "name": "Scizor",
+    "item": "Sitrus Berry",
+    "evs": "252/252/0/0/4/0",
     "nature": "Adamant"
+  },
+  {
+    "name": "Landorus-Incarnate",
+    "item": "Life Orb",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Shiftry",
+    "item": "Focus Sash",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Oranguru",
+    "item": "Mental Herb",
+    "evs": "252/0/252/0/4/0",
+    "nature": "Relaxed"
+  },
+  {
+    "name": "Tyranitar",
+    "item": "Assault Vest",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Ninetales",
+    "item": "Focus Sash",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Weezing",
+    "item": "Sitrus Berry",
+    "evs": "252/0/4/0/252/0",
+    "nature": "Bold"
   },
   {
     "name": "Sneasler",
@@ -306,148 +456,190 @@
     "nature": "Adamant"
   },
   {
-    "name": "Abomasnow",
-    "item": "Rocky Helmet",
-    "evs": "252/4/52/196/4/0",
-    "nature": "Quiet"
+    "name": "Bruxish",
+    "item": "Focus Sash",
+    "evs": "140/116/0/0/252/0",
+    "nature": "Brave"
   },
   {
-    "name": "Tyranitar",
-    "item": "Choice Band",
-    "evs": "0/252/0/0/4/252",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Landorus-Incarnate",
-    "item": "Life Orb",
-    "evs": "4/0/0/252/0/252",
-    "nature": "Timid"
-  },
-  {
-    "name": "Glimmora",
+    "name": "Azumarill",
     "item": "Assault Vest",
-    "evs": "252/0/28/76/4/148",
-    "nature": "Modest"
-  },
-  {
-    "name": "Wo-Chien",
-    "item": "Sitrus Berry",
-    "evs": "252/0/156/4/92/4",
-    "nature": "Bold"
-  },
-  {
-    "name": "Mimikyu-Disguised",
-    "item": "Rocky Helmet",
-    "evs": "228/244/36/0/0/0",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Oranguru",
-    "item": "Safety Goggles",
-    "evs": "244/0/188/0/76/0",
-    "nature": "Sassy"
-  },
-  {
-    "name": "Hatterene",
-    "item": "Life Orb",
-    "evs": "252/0/0/252/4/0",
-    "nature": "Quiet"
-  },
-  {
-    "name": "Talonflame",
-    "item": "Life Orb",
-    "evs": "4/252/0/0/0/252",
+    "evs": "252/236/4/0/4/12",
     "nature": "Adamant"
   },
   {
     "name": "Scream Tail",
     "item": "Booster Energy",
-    "evs": "252/0/20/36/12/188",
+    "evs": "252/0/4/76/4/172",
     "nature": "Timid"
   },
   {
-    "name": "Gothitelle",
-    "item": "Sitrus Berry",
-    "evs": "252/0/116/4/116/20",
-    "nature": "Calm"
-  },
-  {
-    "name": "Lycanroc-Midday",
-    "item": "Focus Sash",
-    "evs": "4/252/0/0/0/252",
+    "name": "Salamence",
+    "item": "Clear Amulet",
+    "evs": "132/196/0/0/0/180",
     "nature": "Adamant"
   },
   {
-    "name": "Spectrier",
-    "item": "Sitrus Berry",
-    "evs": "132/0/60/116/4/196",
-    "nature": "Modest"
-  },
-  {
-    "name": "Kleavor",
-    "item": "Assault Vest",
-    "evs": "212/172/68/0/4/52",
+    "name": "Palafin",
+    "item": "Mystic Water",
+    "evs": "252/252/4/0/0/0",
     "nature": "Adamant"
   },
   {
     "name": "Articuno",
     "item": "Bright Powder",
-    "evs": "252/0/68/116/4/68",
+    "evs": "212/0/68/124/4/100",
     "nature": "Modest"
   },
   {
-    "name": "Murkrow",
-    "item": "Eviolite",
-    "evs": "4/0/252/0/252/0",
+    "name": "Talonflame",
+    "item": "Life Orb",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Moltres",
+    "item": "Rocky Helmet",
+    "evs": "204/0/36/196/4/68",
+    "nature": "Modest"
+  },
+  {
+    "name": "Chandelure",
+    "item": "Focus Sash",
+    "evs": "252/0/4/252/0/0",
+    "nature": "Quiet"
+  },
+  {
+    "name": "Ludicolo",
+    "item": "Assault Vest",
+    "evs": "116/0/108/76/60/148",
+    "nature": "Modest"
+  },
+  {
+    "name": "Illumise",
+    "item": "Mental Herb",
+    "evs": "252/0/188/0/68/0",
+    "nature": "Bold"
+  },
+  {
+    "name": "Mimikyu-Disguised",
+    "item": "Rocky Helmet",
+    "evs": "212/236/28/0/4/28",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Glastrier",
+    "item": "Leftovers",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Sandy Shocks",
+    "item": "Life Orb",
+    "evs": "52/0/0/204/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Conkeldurr",
+    "item": "Flame Orb",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Gallade",
+    "item": "Scope Lens",
+    "evs": "220/252/36/0/0/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Mamoswine",
+    "item": "Assault Vest",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Wo-Chien",
+    "item": "Leftovers",
+    "evs": "252/0/140/0/116/0",
     "nature": "Calm"
   },
   {
     "name": "Flamigo",
-    "item": "Sitrus Berry",
-    "evs": "4/252/0/0/0/252",
-    "nature": "Jolly"
-  },
-  {
-    "name": "Palafin",
-    "item": "Mystic Water",
-    "evs": "252/252/0/0/4/0",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Garchomp",
     "item": "Clear Amulet",
-    "evs": "4/220/28/0/4/252",
+    "evs": "252/4/0/0/0/252",
     "nature": "Jolly"
   },
   {
-    "name": "Tsareena",
-    "item": "Rocky Helmet",
-    "evs": "204/236/4/0/4/60",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Thundurus-Therian",
-    "item": "Choice Specs",
-    "evs": "92/0/12/84/68/252",
+    "name": "Spectrier",
+    "item": "Grassy Seed",
+    "evs": "68/0/0/252/0/188",
     "nature": "Timid"
   },
   {
-    "name": "Scizor",
+    "name": "Corviknight",
+    "item": "Leftovers",
+    "evs": "212/172/36/0/84/4",
+    "nature": "Impish"
+  },
+  {
+    "name": "Ceruledge",
     "item": "Clear Amulet",
-    "evs": "252/252/0/0/4/0",
+    "evs": "244/196/60/0/4/4",
     "nature": "Adamant"
   },
   {
-    "name": "Breloom",
-    "item": "Focus Sash",
-    "evs": "4/252/0/0/0/252",
+    "name": "Iron Moth",
+    "item": "Booster Energy",
+    "evs": "0/0/140/116/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Sableye",
+    "item": "Roseli Berry",
+    "evs": "252/0/4/0/252/0",
+    "nature": "Calm"
+  },
+  {
+    "name": "Dipplin",
+    "item": "Eviolite",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Modest"
+  },
+  {
+    "name": "Torterra",
+    "item": "White Herb",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Vikavolt",
+    "item": "Choice Specs",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Quiet"
+  },
+  {
+    "name": "Wyrdeer",
+    "item": "Mental Herb",
+    "evs": "108/0/140/72/180/4",
+    "nature": "Modest"
+  },
+  {
+    "name": "Slaking",
+    "item": "Life Orb",
+    "evs": "0/252/0/0/4/252",
     "nature": "Jolly"
   },
   {
-    "name": "Garganacl",
-    "item": "Leftovers",
-    "evs": "252/4/180/0/72/0",
-    "nature": "Relaxed"
+    "name": "Gliscor",
+    "item": "Toxic Orb",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Zoroark-Hisui",
+    "item": "Choice Scarf",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid"
   },
   {
     "name": "Great Tusk",
@@ -456,238 +648,64 @@
     "nature": "Jolly"
   },
   {
-    "name": "Glastrier",
+    "name": "Garchomp",
     "item": "Clear Amulet",
-    "evs": "252/252/0/0/4/0",
-    "nature": "Brave"
-  },
-  {
-    "name": "Corviknight",
-    "item": "Leftovers",
-    "evs": "252/188/12/0/20/36",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Enamorus-Incarnate",
-    "item": "Life Orb",
-    "evs": "0/0/0/252/4/252",
-    "nature": "Timid"
-  },
-  {
-    "name": "Charizard",
-    "item": "Choice Scarf",
-    "evs": "0/0/4/252/0/252",
-    "nature": "Timid"
-  },
-  {
-    "name": "Pawmot",
-    "item": "Focus Sash",
-    "evs": "4/252/0/0/0/252",
+    "evs": "0/252/0/0/4/252",
     "nature": "Jolly"
-  },
-  {
-    "name": "Klefki",
-    "item": "Light Clay",
-    "evs": "252/0/180/0/76/0",
-    "nature": "Bold"
   },
   {
     "name": "Zapdos-Galar",
-    "item": "Grassy Seed",
-    "evs": "220/44/92/0/148/4",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Skeledirge",
-    "item": "Sitrus Berry",
-    "evs": "228/0/12/12/252/4",
-    "nature": "Calm"
-  },
-  {
-    "name": "Sableye",
-    "item": "Light Clay",
-    "evs": "252/0/116/0/140/0",
-    "nature": "Bold"
-  },
-  {
-    "name": "Sandy Shocks",
-    "item": "Booster Energy",
-    "evs": "52/0/0/204/0/252",
-    "nature": "Timid"
-  },
-  {
-    "name": "Typhlosion-Hisui",
     "item": "Choice Scarf",
-    "evs": "4/0/0/252/0/252",
-    "nature": "Timid"
-  },
-  {
-    "name": "Zoroark-Hisui",
-    "item": "Focus Sash",
-    "evs": "0/0/0/252/4/252",
-    "nature": "Timid"
-  },
-  {
-    "name": "Meowscarada",
-    "item": "Focus Sash",
     "evs": "0/252/0/0/4/252",
     "nature": "Jolly"
   },
   {
-    "name": "Articuno-Galar",
-    "item": "Sitrus Berry",
-    "evs": "0/0/0/252/4/252",
-    "nature": "Timid"
-  },
-  {
-    "name": "Rotom-Wash",
-    "item": "Sitrus Berry",
-    "evs": "244/0/100/76/4/84",
-    "nature": "Bold"
-  },
-  {
-    "name": "Iron Valiant",
-    "item": "Booster Energy",
-    "evs": "4/0/0/252/0/252",
-    "nature": "Timid"
-  },
-  {
-    "name": "Tinkaton",
-    "item": "Assault Vest",
-    "evs": "156/252/4/0/68/28",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Bronzong",
-    "item": "Mental Herb",
-    "evs": "252/0/60/0/196/0",
-    "nature": "Relaxed"
-  },
-  {
-    "name": "Muk-Alola",
-    "item": "Leftovers",
-    "evs": "228/0/252/0/28/0",
-    "nature": "Impish"
-  },
-  {
-    "name": "Iron Moth",
-    "item": "Booster Energy",
-    "evs": "0/0/0/252/4/252",
-    "nature": "Timid"
-  },
-  {
-    "name": "Ceruledge",
-    "item": "Clear Amulet",
-    "evs": "252/252/4/0/0/0",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Scovillain",
-    "item": "Wide Lens",
-    "evs": "244/0/28/4/28/204",
-    "nature": "Timid"
-  },
-  {
-    "name": "Uxie",
-    "item": "Mental Herb",
-    "evs": "252/0/124/4/128/0",
-    "nature": "Modest"
-  },
-  {
-    "name": "Lycanroc-Dusk",
-    "item": "Focus Sash",
-    "evs": "0/252/0/0/4/252",
-    "nature": "Jolly"
-  },
-  {
-    "name": "Orthworm",
-    "item": "Sitrus Berry",
-    "evs": "252/0/252/0/4/0",
-    "nature": "Impish"
-  },
-  {
-    "name": "Wyrdeer",
-    "item": "Mental Herb",
-    "evs": "244/0/68/44/148/0",
-    "nature": "Quiet"
-  },
-  {
-    "name": "Dudunsparce",
-    "item": "Weakness Policy",
-    "evs": "4/0/0/252/0/252",
-    "nature": "Modest"
-  },
-  {
-    "name": "Greninja",
-    "item": "Loaded Dice",
-    "evs": "252/0/0/0/4/252",
-    "nature": "Jolly"
-  },
-  {
-    "name": "Hydreigon",
+    "name": "Thundurus-Therian",
     "item": "Choice Specs",
     "evs": "0/0/0/252/4/252",
     "nature": "Timid"
   },
   {
-    "name": "Espathra",
-    "item": "Focus Sash",
+    "name": "Garganacl",
+    "item": "Leftovers",
+    "evs": "252/0/0/0/252/0",
+    "nature": "Relaxed"
+  },
+  {
+    "name": "Abomasnow",
+    "item": "Light Clay",
+    "evs": "252/0/4/252/0/0",
+    "nature": "Modest"
+  },
+  {
+    "name": "Murkrow",
+    "item": "Eviolite",
+    "evs": "236/0/124/0/140/8",
+    "nature": "Calm"
+  },
+  {
+    "name": "Brute Bonnet",
+    "item": "Loaded Dice",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Staraptor",
+    "item": "Choice Scarf",
+    "evs": "132/108/28/0/4/236",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Tsareena",
+    "item": "Miracle Seed",
+    "evs": "252/0/252/0/4/0",
+    "nature": "Impish"
+  },
+  {
+    "name": "Articuno-Galar",
+    "item": "Choice Scarf",
     "evs": "4/0/0/252/0/252",
     "nature": "Modest"
-  },
-  {
-    "name": "Moltres",
-    "item": "Sitrus Berry",
-    "evs": "156/0/156/4/188/4",
-    "nature": "Modest"
-  },
-  {
-    "name": "Salamence",
-    "item": "Life Orb",
-    "evs": "4/252/0/0/0/252",
-    "nature": "Jolly"
-  },
-  {
-    "name": "Lucario",
-    "item": "Life Orb",
-    "evs": "4/252/0/0/0/252",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Overqwil",
-    "item": "Choice Band",
-    "evs": "4/252/0/0/0/252",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Cinderace",
-    "item": "Life Orb",
-    "evs": "0/252/0/0/4/252",
-    "nature": "Jolly"
-  },
-  {
-    "name": "Samurott-Hisui",
-    "item": "Roseli Berry",
-    "evs": "0/252/0/0/4/252",
-    "nature": "Jolly"
-  },
-  {
-    "name": "Drifblim",
-    "item": "Psychic Seed",
-    "evs": "4/0/188/4/196/116",
-    "nature": "Timid"
-  },
-  {
-    "name": "Houndstone",
-    "item": "Life Orb",
-    "evs": "0/252/0/0/4/252",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Raichu",
-    "item": "Assault Vest",
-    "evs": "252/0/196/4/52/4",
-    "nature": "Bold"
   },
   {
     "name": "Perrserker",
@@ -696,76 +714,244 @@
     "nature": "Jolly"
   },
   {
-    "name": "Gallade",
-    "item": "Scope Lens",
-    "evs": "0/252/0/0/4/252",
-    "nature": "Jolly"
-  },
-  {
-    "name": "Glaceon",
-    "item": "Bright Powder",
-    "evs": "140/0/0/252/0/116",
-    "nature": "Timid"
-  },
-  {
-    "name": "Bellibolt",
-    "item": "Rocky Helmet",
-    "evs": "180/0/204/52/68/4",
-    "nature": "Modest"
-  },
-  {
-    "name": "Arboliva",
-    "item": "Sitrus Berry",
-    "evs": "252/0/0/252/4/0",
-    "nature": "Modest"
-  },
-  {
-    "name": "Magnezone",
-    "item": "Wiki Berry",
-    "evs": "236/0/20/252/0/0",
-    "nature": "Modest"
-  },
-  {
-    "name": "Slowking-Galar",
-    "item": "Mental Herb",
-    "evs": "252/0/180/76/0/0",
-    "nature": "Quiet"
-  },
-  {
-    "name": "Decidueye",
-    "item": "Life Orb",
-    "evs": "204/228/4/0/68/4",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Jumpluff",
-    "item": "Covert Cloak",
-    "evs": "196/0/68/4/4/236",
-    "nature": "Timid"
-  },
-  {
-    "name": "Slowbro",
-    "item": "Safety Goggles",
-    "evs": "252/0/252/0/4/0",
-    "nature": "Relaxed"
-  },
-  {
-    "name": "Clodsire",
-    "item": "Leftovers",
-    "evs": "252/0/4/0/252/0",
-    "nature": "Calm"
-  },
-  {
-    "name": "Tauros-Paldea-Aqua-Breed",
-    "item": "Safety Goggles",
+    "name": "Meowscarada",
+    "item": "Focus Sash",
     "evs": "4/252/0/0/0/252",
     "nature": "Jolly"
   },
   {
+    "name": "Jumpluff",
+    "item": "Choice Scarf",
+    "evs": "252/0/4/0/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Klefki",
+    "item": "Light Clay",
+    "evs": "252/0/180/0/76/0",
+    "nature": "Bold"
+  },
+  {
+    "name": "Typhlosion-Hisui",
+    "item": "Choice Scarf",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Modest"
+  },
+  {
+    "name": "Iron Valiant",
+    "item": "Booster Energy",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Enamorus-Incarnate",
+    "item": "Assault Vest",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Clefable",
+    "item": "Fairy Feather",
+    "evs": "188/0/164/116/4/36",
+    "nature": "Modest"
+  },
+  {
+    "name": "Mienshao",
+    "item": "Focus Sash",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Orthworm",
+    "item": "Sitrus Berry",
+    "evs": "244/0/36/0/228/0",
+    "nature": "Relaxed"
+  },
+  {
+    "name": "Infernape",
+    "item": "Focus Sash",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Golem-Alola",
+    "item": "Life Orb",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Bronzong",
+    "item": "Mental Herb",
+    "evs": "252/0/68/0/188/0",
+    "nature": "Sassy"
+  },
+  {
+    "name": "Overqwil",
+    "item": "Covert Cloak",
+    "evs": "252/0/4/0/252/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Sandslash-Alola",
+    "item": "Life Orb",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Kleavor",
+    "item": "Choice Scarf",
+    "evs": "252/252/4/0/0/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Charizard",
+    "item": "Choice Scarf",
+    "evs": "0/0/4/252/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Lycanroc-Midday",
+    "item": "Focus Sash",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Espathra",
+    "item": "Focus Sash",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Houndstone",
+    "item": "Focus Sash",
+    "evs": "252/4/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Skeledirge",
+    "item": "Leftovers",
+    "evs": "220/0/36/252/0/0",
+    "nature": "Modest"
+  },
+  {
+    "name": "Tinkaton",
+    "item": "Assault Vest",
+    "evs": "252/4/100/0/36/116",
+    "nature": "Impish"
+  },
+  {
+    "name": "Volbeat",
+    "item": "Focus Sash",
+    "evs": "252/0/252/0/0/0",
+    "nature": "Bold"
+  },
+  {
+    "name": "Gardevoir",
+    "item": "Life Orb",
+    "evs": "252/0/252/4/0/0",
+    "nature": "Quiet"
+  },
+  {
+    "name": "Breloom",
+    "item": "Focus Sash",
+    "evs": "252/252/0/0/0/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Rotom-Wash",
+    "item": "Sitrus Berry",
+    "evs": "248/0/4/252/4/0",
+    "nature": "Modest"
+  },
+  {
+    "name": "Cetitan",
+    "item": "Sitrus Berry",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Scovillain",
+    "item": "Focus Sash",
+    "evs": "252/0/0/76/0/180",
+    "nature": "Modest"
+  },
+  {
+    "name": "Glaceon",
+    "item": "Bright Powder",
+    "evs": "172/0/0/252/84/0",
+    "nature": "Modest"
+  },
+  {
+    "name": "Ambipom",
+    "item": "Focus Sash",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Tauros-Paldea-Blaze-Breed",
+    "item": "Mirror Herb",
+    "evs": "84/108/4/0/76/236",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Pawmot",
+    "item": "Focus Sash",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Hariyama",
+    "item": "Flame Orb",
+    "evs": "0/252/100/0/156/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Mandibuzz",
+    "item": "Leftovers",
+    "evs": "252/0/108/0/148/0",
+    "nature": "Bold"
+  },
+  {
+    "name": "Hippowdon",
+    "item": "Figy Berry",
+    "evs": "236/4/44/0/220/4",
+    "nature": "Careful"
+  },
+  {
+    "name": "Cinderace",
+    "item": "Wide Lens",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Slowbro",
+    "item": "Leftovers",
+    "evs": "252/0/180/4/72/0",
+    "nature": "Relaxed"
+  },
+  {
     "name": "Iron Jugulis",
     "item": "Booster Energy",
-    "evs": "180/0/4/108/4/212",
+    "evs": "100/0/4/196/4/204",
     "nature": "Timid"
+  },
+  {
+    "name": "Muk-Alola",
+    "item": "Leftovers",
+    "evs": "252/44/132/0/76/4",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Drifblim",
+    "item": "Psychic Seed",
+    "evs": "4/0/92/252/4/156",
+    "nature": "Modest"
+  },
+  {
+    "name": "Bellibolt",
+    "item": "Assault Vest",
+    "evs": "252/0/196/0/60/0",
+    "nature": "Modest"
   },
   {
     "name": "Lilligant",
@@ -774,16 +960,34 @@
     "nature": "Timid"
   },
   {
-    "name": "Kilowattrel",
+    "name": "Raichu",
     "item": "Focus Sash",
-    "evs": "0/0/0/252/4/252",
+    "evs": "4/0/4/244/4/252",
     "nature": "Timid"
   },
   {
-    "name": "Cetitan",
-    "item": "Sitrus Berry",
-    "evs": "4/212/20/0/36/236",
-    "nature": "Adamant"
+    "name": "Toxapex",
+    "item": "Choice Specs",
+    "evs": "252/0/4/252/0/0",
+    "nature": "Quiet"
+  },
+  {
+    "name": "Crawdaunt",
+    "item": "Choice Band",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Toxtricity-Amped",
+    "item": "Throat Spray",
+    "evs": "212/0/4/204/20/68",
+    "nature": "Modest"
+  },
+  {
+    "name": "Hydreigon",
+    "item": "Life Orb",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Timid"
   },
   {
     "name": "Rotom-Heat",
@@ -792,484 +996,130 @@
     "nature": "Modest"
   },
   {
-    "name": "Iron Treads",
-    "item": "Booster Energy",
-    "evs": "28/252/0/0/0/228",
-    "nature": "Jolly"
-  },
-  {
-    "name": "Florges",
-    "item": "Leftovers",
-    "evs": "180/0/252/76/0/0",
-    "nature": "Bold"
-  },
-  {
-    "name": "Dachsbun",
-    "item": "Leftovers",
-    "evs": "252/0/4/0/252/0",
-    "nature": "Careful"
-  },
-  {
-    "name": "Electrode-Hisui",
-    "item": "Loaded Dice",
-    "evs": "4/0/0/252/0/252",
-    "nature": "Timid"
-  },
-  {
-    "name": "Hariyama",
-    "item": "Flame Orb",
-    "evs": "28/236/0/0/244/0",
-    "nature": "Brave"
-  },
-  {
-    "name": "Slowking",
-    "item": "Safety Goggles",
-    "evs": "252/0/4/0/252/0",
-    "nature": "Sassy"
-  },
-  {
-    "name": "Toxapex",
+    "name": "Arboliva",
     "item": "Rocky Helmet",
-    "evs": "252/0/140/0/116/0",
-    "nature": "Bold"
+    "evs": "244/0/164/0/100/0",
+    "nature": "Relaxed"
   },
   {
-    "name": "Azelf",
-    "item": "Covert Cloak",
-    "evs": "4/252/0/0/0/252",
-    "nature": "Jolly"
+    "name": "Stantler",
+    "item": "Eviolite",
+    "evs": "140/0/204/0/164/0",
+    "nature": "Calm"
   },
   {
     "name": "Slither Wing",
-    "item": "Booster Energy",
-    "evs": "252/36/164/0/4/52",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Primeape",
-    "item": "Eviolite",
-    "evs": "252/36/140/0/76/4",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Indeedee-Male",
     "item": "Life Orb",
-    "evs": "0/0/4/252/0/252",
-    "nature": "Modest"
-  },
-  {
-    "name": "Staraptor",
-    "item": "Choice Scarf",
-    "evs": "252/116/0/0/0/140",
+    "evs": "4/252/0/0/0/252",
     "nature": "Adamant"
   },
   {
-    "name": "Braviary-Hisui",
-    "item": "Life Orb",
-    "evs": "124/0/252/132/0/0",
-    "nature": "Quiet"
-  },
-  {
-    "name": "Decidueye-Hisui",
-    "item": "Assault Vest",
-    "evs": "140/252/116/0/0/0",
-    "nature": "Brave"
-  },
-  {
-    "name": "Toxicroak",
-    "item": "Assault Vest",
-    "evs": "140/76/148/0/116/28",
-    "nature": "Careful"
-  },
-  {
-    "name": "Misdreavus",
-    "item": "Eviolite",
+    "name": "Slowking-Galar",
+    "item": "Mental Herb",
     "evs": "252/0/252/0/4/0",
     "nature": "Relaxed"
   },
   {
-    "name": "Qwilfish-Hisui",
+    "name": "Tauros-Paldea-Aqua-Breed",
+    "item": "Sitrus Berry",
+    "evs": "198/198/0/0/52/60",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Charjabug",
     "item": "Eviolite",
-    "evs": "236/36/36/0/196/0",
-    "nature": "Careful"
+    "evs": "252/0/68/0/188/0",
+    "nature": "Sassy"
   },
   {
-    "name": "Gardevoir",
-    "item": "Focus Sash",
-    "evs": "132/0/252/36/36/52",
-    "nature": "Modest"
-  },
-  {
-    "name": "Golduck",
-    "item": "Focus Sash",
-    "evs": "4/0/0/252/0/252",
-    "nature": "Modest"
-  },
-  {
-    "name": "Gengar",
-    "item": "Focus Sash",
-    "evs": "0/0/0/252/4/252",
-    "nature": "Timid"
-  },
-  {
-    "name": "Tornadus-Therian",
-    "item": "Wide Lens",
-    "evs": "116/0/0/140/0/252",
-    "nature": "Timid"
-  },
-  {
-    "name": "Grafaiai",
-    "item": "Covert Cloak",
-    "evs": "252/0/116/0/140/0",
-    "nature": "Bold"
-  },
-  {
-    "name": "Chesnaught",
-    "item": "Leftovers",
-    "evs": "252/4/0/0/252/0",
+    "name": "Lycanroc-Dusk",
+    "item": "Life Orb",
+    "evs": "4/252/0/0/0/252",
     "nature": "Adamant"
   },
   {
-    "name": "Leafeon",
-    "item": "Clear Amulet",
-    "evs": "68/212/4/0/36/188",
-    "nature": "Adamant"
+    "name": "Samurott-Hisui",
+    "item": "Assault Vest",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
   },
   {
-    "name": "Spiritomb",
-    "item": "Safety Goggles",
-    "evs": "252/0/100/0/156/0",
-    "nature": "Relaxed"
+    "name": "Azelf",
+    "item": "Focus Sash",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Stonjourner",
+    "item": "King's Rock",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
   },
   {
     "name": "Espeon",
-    "item": "Focus Sash",
+    "item": "Wiki Berry",
     "evs": "252/0/4/0/0/252",
     "nature": "Timid"
   },
   {
-    "name": "Copperajah",
-    "item": "Life Orb",
-    "evs": "252/252/0/0/4/0",
-    "nature": "Brave"
-  },
-  {
-    "name": "Drednaw",
-    "item": "Choice Band",
-    "evs": "156/252/0/0/0/100",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Qwilfish",
-    "item": "Air Balloon",
-    "evs": "252/140/4/0/52/60",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Avalugg-Hisui",
-    "item": "Assault Vest",
-    "evs": "252/252/0/0/4/0",
-    "nature": "Brave"
-  },
-  {
-    "name": "Umbreon",
-    "item": "Leftovers",
-    "evs": "252/0/172/0/84/0",
-    "nature": "Impish"
-  },
-  {
-    "name": "Rotom-Mow",
-    "item": "Sitrus Berry",
-    "evs": "252/0/0/252/4/0",
-    "nature": "Modest"
-  },
-  {
-    "name": "Persian-Alola",
-    "item": "Rocky Helmet",
-    "evs": "28/0/252/0/0/228",
-    "nature": "Jolly"
-  },
-  {
-    "name": "Appletun",
-    "item": "Leftovers",
-    "evs": "252/0/156/0/100/0",
-    "nature": "Calm"
-  },
-  {
-    "name": "Basculegion-Female",
-    "item": "Choice Specs",
-    "evs": "0/0/4/252/0/252",
-    "nature": "Modest"
-  },
-  {
-    "name": "Lokix",
-    "item": "Covert Cloak",
-    "evs": "252/252/4/0/0/0",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Pincurchin",
-    "item": "Sitrus Berry",
-    "evs": "252/4/252/0/0/0",
-    "nature": "Impish"
-  },
-  {
-    "name": "Toedscruel",
-    "item": "Sitrus Berry",
-    "evs": "196/0/244/68/0/0",
-    "nature": "Bold"
-  },
-  {
-    "name": "Mudsdale",
-    "item": "Assault Vest",
-    "evs": "252/0/252/0/4/0",
-    "nature": "Impish"
-  },
-  {
-    "name": "Haxorus",
-    "item": "Lum Berry",
-    "evs": "0/252/0/0/4/252",
-    "nature": "Jolly"
-  },
-  {
-    "name": "Coalossal",
-    "item": "Weakness Policy",
-    "evs": "28/0/4/252/4/220",
-    "nature": "Modest"
-  },
-  {
-    "name": "Vivillon",
-    "item": "Focus Sash",
-    "evs": "252/0/0/0/4/252",
-    "nature": "Jolly"
-  },
-  {
-    "name": "Hippowdon",
-    "item": "Lum Berry",
-    "evs": "252/0/12/0/236/4",
-    "nature": "Careful"
-  },
-  {
-    "name": "Stonjourner",
-    "item": "Focus Sash",
-    "evs": "0/252/4/0/0/252",
-    "nature": "Jolly"
-  },
-  {
-    "name": "Slowbro-Galar",
-    "item": "Quick Claw",
-    "evs": "252/0/0/252/4/0",
-    "nature": "Quiet"
-  },
-  {
-    "name": "Forretress",
-    "item": "Leftovers",
-    "evs": "244/4/100/4/156/0",
-    "nature": "Sassy"
-  },
-  {
-    "name": "Bisharp",
-    "item": "Eviolite",
-    "evs": "252/252/0/0/0/0",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Vaporeon",
-    "item": "Leftovers",
-    "evs": "124/0/252/36/92/0",
-    "nature": "Bold"
-  },
-  {
-    "name": "Tauros-Paldea-Blaze-Breed",
-    "item": "Sitrus Berry",
-    "evs": "0/252/0/0/4/252",
-    "nature": "Jolly"
-  },
-  {
-    "name": "Inteleon",
-    "item": "Scope Lens",
-    "evs": "0/0/0/252/4/252",
-    "nature": "Timid"
-  },
-  {
-    "name": "Jolteon",
-    "item": "Focus Sash",
-    "evs": "4/0/0/252/0/252",
-    "nature": "Modest"
-  },
-  {
-    "name": "Eelektross",
-    "item": "Assault Vest",
-    "evs": "188/0/116/0/204/0",
-    "nature": "Relaxed"
-  },
-  {
-    "name": "Typhlosion",
-    "item": "Choice Scarf",
-    "evs": "252/0/0/0/0/252",
-    "nature": "Timid"
-  },
-  {
-    "name": "Dragalge",
-    "item": "Assault Vest",
-    "evs": "252/0/0/252/4/0",
-    "nature": "Modest"
-  },
-  {
     "name": "Pikachu",
-    "item": "Light Ball",
-    "evs": "0/252/0/0/4/252",
-    "nature": "Jolly"
+    "item": "Eviolite",
+    "evs": "252/0/244/0/12/0",
+    "nature": "Bold"
+  },
+  {
+    "name": "Polteageist",
+    "item": "White Herb",
+    "evs": "252/0/0/252/0/4",
+    "nature": "Modest"
   },
   {
     "name": "Quaquaval",
-    "item": "Life Orb",
-    "evs": "4/252/0/0/0/252",
-    "nature": "Jolly"
+    "item": "Clear Amulet",
+    "evs": "140/60/92/0/68/148",
+    "nature": "Adamant"
   },
   {
-    "name": "Toxtricity-Amped",
-    "item": "Throat Spray",
-    "evs": "252/0/0/252/0/0",
-    "nature": "Quiet"
+    "name": "Furret",
+    "item": "Eject Button",
+    "evs": "252/0/252/0/0/0",
+    "nature": "Impish"
   },
   {
-    "name": "Ampharos",
-    "item": "Leftovers",
-    "evs": "0/0/252/252/4/0",
-    "nature": "Quiet"
+    "name": "Poliwrath",
+    "item": "Sitrus Berry",
+    "evs": "212/52/4/0/140/100",
+    "nature": "Adamant"
   },
   {
     "name": "Rabsca",
     "item": "Leppa Berry",
-    "evs": "252/0/0/252/4/0",
-    "nature": "Quiet"
-  },
-  {
-    "name": "Lumineon",
-    "item": "Sitrus Berry",
-    "evs": "252/0/164/0/92/0",
+    "evs": "0/0/252/0/252/4",
     "nature": "Sassy"
   },
   {
-    "name": "Medicham",
-    "item": "Focus Sash",
-    "evs": "0/252/0/0/4/252",
-    "nature": "Jolly"
-  },
-  {
-    "name": "Slaking",
-    "item": "Clear Amulet",
-    "evs": "196/12/12/0/252/36",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Cyclizar",
-    "item": "Choice Scarf",
-    "evs": "252/252/0/0/4/0",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Mesprit",
-    "item": "Mental Herb",
-    "evs": "252/0/196/0/60/0",
-    "nature": "Bold"
-  },
-  {
-    "name": "Ditto",
-    "item": "Choice Scarf",
-    "evs": "252/0/4/0/0/252",
-    "nature": "Jolly"
-  },
-  {
-    "name": "Bombirdier",
+    "name": "Trevenant",
     "item": "Sitrus Berry",
-    "evs": "0/252/0/4/0/252",
-    "nature": "Naughty"
-  },
-  {
-    "name": "Goodra",
-    "item": "Assault Vest",
-    "evs": "252/0/0/252/4/0",
-    "nature": "Modest"
-  },
-  {
-    "name": "Beartic",
-    "item": "Choice Band",
-    "evs": "0/252/0/0/0/252",
+    "evs": "196/140/92/0/80/0",
     "nature": "Adamant"
   },
   {
-    "name": "Frosmoth",
-    "item": "Covert Cloak",
-    "evs": "156/0/84/116/4/148",
-    "nature": "Modest"
-  },
-  {
-    "name": "Pachirisu",
-    "item": "Sitrus Berry",
-    "evs": "252/0/236/0/20/0",
-    "nature": "Impish"
-  },
-  {
-    "name": "Iron Thorns",
-    "item": "Loaded Dice",
-    "evs": "4/240/0/0/12/252",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Avalugg",
-    "item": "Assault Vest",
-    "evs": "100/156/0/0/252/0",
-    "nature": "Careful"
-  },
-  {
-    "name": "Noivern",
-    "item": "Throat Spray",
-    "evs": "4/0/0/252/0/252",
-    "nature": "Timid"
-  },
-  {
-    "name": "Raichu-Alola",
-    "item": "Life Orb",
-    "evs": "4/0/0/252/0/252",
-    "nature": "Timid"
-  },
-  {
-    "name": "Froslass",
-    "item": "Assault Vest",
-    "evs": "188/0/0/140/0/180",
-    "nature": "Timid"
-  },
-  {
-    "name": "Krookodile",
-    "item": "Salac Berry",
-    "evs": "60/188/4/0/4/252",
-    "nature": "Jolly"
-  },
-  {
-    "name": "Blissey",
-    "item": "Mental Herb",
-    "evs": "252/0/252/4/0/0",
+    "name": "Chesnaught",
+    "item": "Leftovers",
+    "evs": "252/0/4/0/252/0",
     "nature": "Calm"
   },
   {
-    "name": "Hawlucha",
-    "item": "Grassy Seed",
-    "evs": "0/252/0/0/4/252",
-    "nature": "Adamant"
+    "name": "Typhlosion",
+    "item": "Choice Scarf",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Timid"
   },
   {
-    "name": "Clawitzer",
-    "item": "Choice Specs",
-    "evs": "252/0/0/252/4/0",
-    "nature": "Quiet"
-  },
-  {
-    "name": "Heracross",
-    "item": "Loaded Dice",
-    "evs": "108/252/4/0/4/140",
-    "nature": "Adamant"
+    "name": "Toedscruel",
+    "item": "Sitrus Berry",
+    "evs": "252/0/0/4/0/252",
+    "nature": "Timid"
   },
   {
     "name": "Barraskewda",
@@ -1278,481 +1128,1282 @@
     "nature": "Adamant"
   },
   {
-    "name": "Palossand",
-    "item": "Weakness Policy",
-    "evs": "252/0/0/180/76/0",
-    "nature": "Modest"
+    "name": "Ribombee",
+    "item": "Focus Sash",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Hardy"
   },
   {
-    "name": "Braviary",
-    "item": "Choice Scarf",
-    "evs": "4/252/0/0/0/252",
-    "nature": "Jolly"
-  },
-  {
-    "name": "Grumpig",
-    "item": "Aguav Berry",
-    "evs": "252/0/252/0/4/0",
-    "nature": "Bold"
-  },
-  {
-    "name": "Venomoth",
-    "item": "Rocky Helmet",
-    "evs": "228/0/252/0/0/28",
-    "nature": "Bold"
-  },
-  {
-    "name": "Carbink",
-    "item": "Mental Herb",
-    "evs": "4/0/252/0/252/0",
-    "nature": "Sassy"
-  },
-  {
-    "name": "Flareon",
-    "item": "Toxic Orb",
-    "evs": "236/252/0/0/0/20",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Scyther",
-    "item": "Eviolite",
-    "evs": "252/252/0/0/4/0",
-    "nature": "Adamant"
-  },
-  {
-    "name": "Masquerain",
+    "name": "Kilowattrel",
     "item": "Focus Sash",
     "evs": "0/0/0/252/4/252",
     "nature": "Timid"
   },
   {
-    "name": "Delphox",
-    "item": "Nothing",
+    "name": "Frosmoth",
+    "item": "Leftovers",
+    "evs": "244/0/156/4/60/44",
+    "nature": "Modest"
+  },
+  {
+    "name": "Basculegion-Female",
+    "item": "Life Orb",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Coalossal",
+    "item": "Weakness Policy",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Brave"
+  },
+  {
+    "name": "Piloswine",
+    "item": "Eviolite",
+    "evs": "220/180/28/0/76/4",
+    "nature": "Careful"
+  },
+  {
+    "name": "Scyther",
+    "item": "Eviolite",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Umbreon",
+    "item": "Safety Goggles",
+    "evs": "252/0/4/0/252/0",
+    "nature": "Calm"
+  },
+  {
+    "name": "Dachsbun",
+    "item": "Leftovers",
+    "evs": "252/0/4/0/252/0",
+    "nature": "Careful"
+  },
+  {
+    "name": "Indeedee-Male",
+    "item": "Choice Scarf",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Arbok",
+    "item": "Assault Vest",
+    "evs": "44/36/92/0/244/92",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Lumineon",
+    "item": "Covert Cloak",
+    "evs": "252/4/36/0/92/124",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Iron Treads",
+    "item": "Booster Energy",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Greninja",
+    "item": "Choice Scarf",
     "evs": "4/0/0/252/0/252",
     "nature": "Timid"
   },
   {
-    "name": "Stantler",
-    "item": "Eviolite",
-    "evs": "244/36/12/0/204/12",
-    "nature": "Careful"
+    "name": "Dusknoir",
+    "item": "Mental Herb",
+    "evs": "244/252/0/0/12/0",
+    "nature": "Brave"
   },
   {
-    "name": "Cloyster",
+    "name": "Grafaiai",
+    "item": "Mental Herb",
+    "evs": "252/4/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Toxicroak",
+    "item": "Focus Sash",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Clodsire",
+    "item": "Leftovers",
+    "evs": "252/0/4/0/252/0",
+    "nature": "Calm"
+  },
+  {
+    "name": "Weavile",
     "item": "Focus Sash",
     "evs": "4/252/0/0/0/252",
     "nature": "Jolly"
   },
   {
-    "name": "Haunter",
+    "name": "Iron Thorns",
+    "item": "Air Balloon",
+    "evs": "152/252/0/0/0/100",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Florges",
+    "item": "Wiki Berry",
+    "evs": "252/0/252/4/0/0",
+    "nature": "Bold"
+  },
+  {
+    "name": "Decidueye",
+    "item": "Life Orb",
+    "evs": "204/228/4/0/68/4",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Inteleon",
+    "item": "Scope Lens",
+    "evs": "4/0/36/212/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Gengar",
+    "item": "Focus Sash",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Slowking",
     "item": "Leftovers",
+    "evs": "252/0/140/108/4/0",
+    "nature": "Quiet"
+  },
+  {
+    "name": "Clawitzer",
+    "item": "Life Orb",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Modest"
+  },
+  {
+    "name": "Krookodile",
+    "item": "Expert Belt",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Pincurchin",
+    "item": "Terrain Extender",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Camerupt",
+    "item": "Iron Ball",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Quiet"
+  },
+  {
+    "name": "Dragalge",
+    "item": "Life Orb",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Quiet"
+  },
+  {
+    "name": "Drednaw",
+    "item": "Life Orb",
+    "evs": "0/252/0/4/0/252",
+    "nature": "Naughty"
+  },
+  {
+    "name": "Victreebel",
+    "item": "Life Orb",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Modest"
+  },
+  {
+    "name": "Yanmega",
+    "item": "Focus Sash",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Modest"
+  },
+  {
+    "name": "Carbink",
+    "item": "Mental Herb",
+    "evs": "252/0/252/0/4/0",
+    "nature": "Relaxed"
+  },
+  {
+    "name": "Probopass",
+    "item": "Leftovers",
+    "evs": "252/0/4/252/0/0",
+    "nature": "Quiet"
+  },
+  {
+    "name": "Qwilfish-Hisui",
+    "item": "Eviolite",
+    "evs": "236/36/36/0/196/0",
+    "nature": "Careful"
+  },
+  {
+    "name": "Braviary-Hisui",
+    "item": "Life Orb",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Modest"
+  },
+  {
+    "name": "Vaporeon",
+    "item": "Leftovers",
+    "evs": "252/0/252/4/0/0",
+    "nature": "Bold"
+  },
+  {
+    "name": "Goodra",
+    "item": "Assault Vest",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Modest"
+  },
+  {
+    "name": "Vivillon",
+    "item": "Focus Sash",
     "evs": "4/0/0/252/0/252",
     "nature": "Timid"
   },
   {
     "name": "Oricorio-Pom-Pom",
-    "item": "Clear Amulet",
-    "evs": "0/0/0/252/4/252",
+    "item": "Focus Sash",
+    "evs": "0/0/0/252/124/132",
     "nature": "Modest"
   },
   {
-    "name": "Camerupt",
-    "item": "Shuca Berry",
+    "name": "Mesprit",
+    "item": "Iron Ball",
+    "evs": "252/0/4/252/0/0",
+    "nature": "Quiet"
+  },
+  {
+    "name": "Tornadus-Therian",
+    "item": "Choice Specs",
+    "evs": "0/0/0/252/0/252",
+    "nature": "Modest"
+  },
+  {
+    "name": "Cramorant",
+    "item": "Focus Sash",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Slowbro-Galar",
+    "item": "Sitrus Berry",
+    "evs": "252/4/4/0/244/4",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Uxie",
+    "item": "Mental Herb",
+    "evs": "252/0/84/0/168/0",
+    "nature": "Relaxed"
+  },
+  {
+    "name": "Salazzle",
+    "item": "Focus Sash",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Eelektross",
+    "item": "Sitrus Berry",
+    "evs": "244/252/0/0/0/12",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Electrode-Hisui",
+    "item": "Loaded Dice",
+    "evs": "252/0/0/4/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Medicham",
+    "item": "Focus Sash",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Dudunsparce",
+    "item": "Weakness Policy",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Modest"
+  },
+  {
+    "name": "Lurantis",
+    "item": "Assault Vest",
     "evs": "252/252/0/0/4/0",
     "nature": "Brave"
   },
   {
-    "name": "Rotom-Frost"
+    "name": "Cloyster",
+    "item": "White Herb",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
   },
   {
-    "name": "Falinks"
+    "name": "Cyclizar",
+    "item": "Choice Scarf",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly"
   },
   {
-    "name": "Crabominable"
+    "name": "Braviary",
+    "item": "Figy Berry",
+    "evs": "204/180/36/0/68/20",
+    "nature": "Adamant"
   },
   {
-    "name": "Chansey"
+    "name": "Noivern",
+    "item": "Focus Sash",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid"
   },
   {
-    "name": "Lurantis"
+    "name": "Golem",
+    "item": "Leftovers",
+    "evs": "252/0/4/0/252/0",
+    "nature": "Careful"
   },
   {
-    "name": "Floatzel"
+    "name": "Pachirisu",
+    "item": "Sitrus Berry",
+    "evs": "252/0/36/0/164/52",
+    "nature": "Careful"
   },
   {
-    "name": "Salazzle"
+    "name": "Ditto",
+    "item": "Focus Sash",
+    "evs": "252/0/236/0/4/0",
+    "nature": "Serious"
   },
   {
-    "name": "Finizen"
+    "name": "Floatzel",
+    "item": "Choice Band",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant"
   },
   {
-    "name": "Oricorio-Sensu"
+    "name": "Magnezone",
+    "item": "Choice Specs",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Modest"
   },
   {
-    "name": "Lycanroc-Midnight"
+    "name": "Squawkabilly",
+    "item": "Choice Scarf",
+    "evs": "252/4/0/0/0/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Beartic",
+    "item": "Choice Band",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Decidueye-Hisui",
+    "item": "Choice Scarf",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Haxorus",
+    "item": "Choice Band",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant"
+  },
+  {
+    "name": "Persian-Alola",
+    "item": "Sitrus Berry",
+    "evs": "92/4/100/0/60/252",
+    "nature": "Jolly"
+  },
+  {
+    "name": "Spiritomb",
+    "item": "Sitrus Berry",
+    "evs": "252/0/92/0/164/0",
+    "nature": "Bold"
+  },
+  {
+    "name": "Skiploom",
+    "item": "Eviolite",
+    "evs": "252/0/228/0/28/0",
+    "nature": "Calm"
+  },
+  {
+    "name": "Blissey",
+    "item": "Mental Herb",
+    "evs": "0/0/252/252/4/0",
+    "nature": "Bold"
+  },
+  {
+    "name": "Jolteon",
+    "item": "Life Orb",
+    "evs": "252/0/0/4/0/252",
+    "nature": "Timid"
+  },
+  {
+    "name": "Lucario"
+  },
+  {
+    "name": "Leafeon"
+  },
+  {
+    "name": "Haxorus"
   },
   {
     "name": "Slowpoke"
   },
   {
-    "name": "Altaria"
+    "name": "Mudsdale"
   },
   {
-    "name": "Revavroom"
+    "name": "Lokix"
   },
   {
-    "name": "Weavile"
+    "name": "Bisharp"
   },
   {
-    "name": "Cryogonal"
+    "name": "Blissey"
   },
   {
-    "name": "Riolu"
+    "name": "Skiploom"
   },
   {
-    "name": "Squawkabilly"
+    "name": "Appletun"
   },
   {
     "name": "Eiscue-Ice"
   },
   {
-    "name": "Jigglypuff"
-  },
-  {
-    "name": "Greedent"
-  },
-  {
-    "name": "Gogoat"
-  },
-  {
-    "name": "Polteageist"
-  },
-  {
-    "name": "Passimian"
-  },
-  {
-    "name": "Glalie"
-  },
-  {
     "name": "Luxray"
+  },
+  {
+    "name": "Golduck"
   },
   {
     "name": "Alomomola"
   },
   {
-    "name": "Banette"
-  },
-  {
-    "name": "Delibird"
-  },
-  {
-    "name": "Dedenne"
-  },
-  {
-    "name": "Dugtrio"
-  },
-  {
-    "name": "Samurott"
-  },
-  {
-    "name": "Cacturne"
-  },
-  {
     "name": "Muk"
   },
   {
-    "name": "Honchkrow"
+    "name": "Palossand"
   },
   {
-    "name": "Whiscash"
+    "name": "Delphox"
   },
   {
-    "name": "Wooper"
+    "name": "Misdreavus"
+  },
+  {
+    "name": "Leavanny"
+  },
+  {
+    "name": "Poltchageist"
+  },
+  {
+    "name": "Altaria"
   },
   {
     "name": "Tropius"
   },
   {
+    "name": "Greedent"
+  },
+  {
+    "name": "Rotom-Frost"
+  },
+  {
+    "name": "Bombirdier"
+  },
+  {
+    "name": "Rotom-Mow"
+  },
+  {
     "name": "Flapple"
   },
   {
-    "name": "Dunsparce"
+    "name": "Morpeko"
   },
   {
-    "name": "Wigglytuff"
+    "name": "Froslass"
   },
   {
-    "name": "Electrode"
+    "name": "Heracross"
   },
   {
-    "name": "Sunflora"
+    "name": "Masquerain"
   },
   {
-    "name": "Gumshoos"
+    "name": "Avalugg"
   },
   {
-    "name": "Wugtrio"
+    "name": "Raichu-Alola"
   },
   {
-    "name": "Impidimp"
+    "name": "Gogoat"
   },
   {
-    "name": "Gothorita"
+    "name": "Chimecho"
   },
   {
-    "name": "Rotom-Fan"
+    "name": "Sandslash"
   },
   {
-    "name": "Houndoom"
+    "name": "Ampharos"
   },
   {
-    "name": "Mismagius"
+    "name": "Qwilfish"
   },
   {
-    "name": "Donphan"
+    "name": "Mightyena"
   },
   {
-    "name": "Klawf"
+    "name": "Oricorio-Sensu"
   },
   {
-    "name": "Veluza"
-  },
-  {
-    "name": "Dugtrio-Alola"
-  },
-  {
-    "name": "Crocalor"
-  },
-  {
-    "name": "Swalot"
-  },
-  {
-    "name": "Hypno"
-  },
-  {
-    "name": "Oricorio-Baile"
-  },
-  {
-    "name": "Naclstack"
-  },
-  {
-    "name": "Zangoose"
-  },
-  {
-    "name": "Sawsbuck"
-  },
-  {
-    "name": "Toedscool"
-  },
-  {
-    "name": "Magikarp"
-  },
-  {
-    "name": "Sneasel"
-  },
-  {
-    "name": "Psyduck"
-  },
-  {
-    "name": "Quagsire"
-  },
-  {
-    "name": "Phanpy"
-  },
-  {
-    "name": "Mabosstiff"
-  },
-  {
-    "name": "Spidops"
-  },
-  {
-    "name": "Bronzor"
+    "name": "Crabominable"
   },
   {
     "name": "Pyroar"
   },
   {
-    "name": "Ursaring"
+    "name": "Spinarak"
   },
   {
-    "name": "Cetoddle"
+    "name": "Klawf"
   },
   {
-    "name": "Surskit"
+    "name": "Ariados"
   },
   {
-    "name": "Sneasel-Hisui"
+    "name": "Hypno"
   },
   {
-    "name": "Sliggoo-Hisui"
+    "name": "Magcargo"
   },
   {
-    "name": "Persian"
+    "name": "Dugtrio"
   },
   {
-    "name": "Slowpoke-Galar"
+    "name": "Dugtrio-Alola"
   },
   {
-    "name": "Vespiquen"
+    "name": "Gothorita"
   },
   {
-    "name": "Foongus"
+    "name": "Glalie"
   },
   {
-    "name": "Carkol"
+    "name": "Forretress"
   },
   {
-    "name": "Oricorio-Pau"
-  },
-  {
-    "name": "Magneton"
-  },
-  {
-    "name": "Basculin-Blue-Striped"
-  },
-  {
-    "name": "Skuntank"
-  },
-  {
-    "name": "Spewpa"
-  },
-  {
-    "name": "Mankey"
-  },
-  {
-    "name": "Thwackey"
-  },
-  {
-    "name": "Sudowoodo"
-  },
-  {
-    "name": "Marill"
-  },
-  {
-    "name": "Floette"
-  },
-  {
-    "name": "Zoroark"
-  },
-  {
-    "name": "Hattrem"
+    "name": "Copperajah"
   },
   {
     "name": "Komala"
   },
   {
-    "name": "Fletchinder"
+    "name": "Samurott"
   },
   {
-    "name": "Greavard"
+    "name": "Grumpig"
   },
   {
-    "name": "Snorunt"
+    "name": "Electrode"
   },
   {
-    "name": "Girafarig"
+    "name": "Wugtrio"
   },
   {
-    "name": "Shroodle"
+    "name": "Donphan"
   },
   {
-    "name": "Eevee"
-  },
-  {
-    "name": "Tauros"
-  },
-  {
-    "name": "Pichu"
+    "name": "Lycanroc-Midnight"
   },
   {
     "name": "Tauros-Paldea-Combat-Breed"
   },
   {
-    "name": "Numel"
+    "name": "Falinks"
   },
   {
-    "name": "Morgrem"
+    "name": "Quagsire"
   },
   {
-    "name": "Oinkologne"
+    "name": "Koffing"
   },
   {
-    "name": "Croagunk"
+    "name": "Zoroark"
   },
   {
-    "name": "Arctibax"
+    "name": "Primeape"
   },
   {
-    "name": "Kricketune"
+    "name": "Grotle"
   },
   {
-    "name": "Quaxly"
+    "name": "Mismagius"
   },
   {
-    "name": "Braixen"
+    "name": "Honchkrow"
   },
   {
-    "name": "Shellos"
+    "name": "Sudowoodo"
   },
   {
-    "name": "Meditite"
+    "name": "Houndoom"
   },
   {
-    "name": "Tandemaus"
+    "name": "Revavroom"
   },
   {
-    "name": "Arrokuda"
+    "name": "Noctowl"
   },
   {
-    "name": "Sprigatito"
+    "name": "Riolu"
   },
   {
-    "name": "Grookey"
-  },
-  {
-    "name": "Mareanie"
-  },
-  {
-    "name": "Tinkatuff"
-  },
-  {
-    "name": "Zorua-Hisui"
-  },
-  {
-    "name": "Yungoos"
-  },
-  {
-    "name": "Luvdisc"
-  },
-  {
-    "name": "Vigoroth"
-  },
-  {
-    "name": "Zorua"
-  },
-  {
-    "name": "Eelektrik"
+    "name": "Mudbray"
   },
   {
     "name": "Oinkologne-Female"
   },
   {
-    "name": "Fletchling"
+    "name": "Venomoth"
   },
   {
-    "name": "Pawmo"
+    "name": "Flareon"
+  },
+  {
+    "name": "Mabosstiff"
+  },
+  {
+    "name": "Dedenne"
+  },
+  {
+    "name": "Ursaring"
+  },
+  {
+    "name": "Persian"
+  },
+  {
+    "name": "Tauros"
+  },
+  {
+    "name": "Banette"
+  },
+  {
+    "name": "Azurill"
+  },
+  {
+    "name": "Passimian"
+  },
+  {
+    "name": "Girafarig"
+  },
+  {
+    "name": "Sneasel"
+  },
+  {
+    "name": "Dunsparce"
+  },
+  {
+    "name": "Sunflora"
+  },
+  {
+    "name": "Wigglytuff"
+  },
+  {
+    "name": "Swanna"
+  },
+  {
+    "name": "Hattrem"
+  },
+  {
+    "name": "Bellsprout"
+  },
+  {
+    "name": "Frogadier"
+  },
+  {
+    "name": "Vespiquen"
+  },
+  {
+    "name": "Cacturne"
+  },
+  {
+    "name": "Oricorio-Baile"
+  },
+  {
+    "name": "Veluza"
+  },
+  {
+    "name": "Sliggoo-Hisui"
+  },
+  {
+    "name": "Spidops"
+  },
+  {
+    "name": "Pichu"
+  },
+  {
+    "name": "Spewpa"
+  },
+  {
+    "name": "Jigglypuff"
+  },
+  {
+    "name": "Zangoose"
+  },
+  {
+    "name": "Munchlax"
+  },
+  {
+    "name": "Delibird"
+  },
+  {
+    "name": "Sneasel-Hisui"
+  },
+  {
+    "name": "Morgrem"
+  },
+  {
+    "name": "Sandaconda"
+  },
+  {
+    "name": "Slowpoke-Galar"
+  },
+  {
+    "name": "Vulpix-Alola"
+  },
+  {
+    "name": "Basculin-Blue-Striped"
+  },
+  {
+    "name": "Gligar"
+  },
+  {
+    "name": "Lampent"
+  },
+  {
+    "name": "Graveler"
+  },
+  {
+    "name": "Gumshoos"
+  },
+  {
+    "name": "Rotom-Fan"
+  },
+  {
+    "name": "Foongus"
+  },
+  {
+    "name": "Haunter"
+  },
+  {
+    "name": "Oricorio-Pau"
+  },
+  {
+    "name": "Buizel"
+  },
+  {
+    "name": "Surskit"
+  },
+  {
+    "name": "Graveler-Alola"
+  },
+  {
+    "name": "Skuntank"
+  },
+  {
+    "name": "Thwackey"
   },
   {
     "name": "Seviper"
   },
   {
-    "name": "Bramblin"
+    "name": "Quaxwell"
+  },
+  {
+    "name": "Nosepass"
+  },
+  {
+    "name": "Kricketune"
+  },
+  {
+    "name": "Fletchling"
+  },
+  {
+    "name": "Oinkologne"
+  },
+  {
+    "name": "Sawsbuck"
+  },
+  {
+    "name": "Bronzor"
+  },
+  {
+    "name": "Swalot"
+  },
+  {
+    "name": "Magikarp"
+  },
+  {
+    "name": "Swadloon"
+  },
+  {
+    "name": "Numel"
+  },
+  {
+    "name": "Crocalor"
+  },
+  {
+    "name": "Magneton"
+  },
+  {
+    "name": "Whiscash"
+  },
+  {
+    "name": "Ekans"
+  },
+  {
+    "name": "Piplup"
+  },
+  {
+    "name": "Venonat"
+  },
+  {
+    "name": "Sentret"
+  },
+  {
+    "name": "Naclstack"
+  },
+  {
+    "name": "Barboach"
+  },
+  {
+    "name": "Luvdisc"
+  },
+  {
+    "name": "Snom"
+  },
+  {
+    "name": "Cleffa"
+  },
+  {
+    "name": "Krokorok"
+  },
+  {
+    "name": "Tandemaus"
+  },
+  {
+    "name": "Gothita"
+  },
+  {
+    "name": "Toedscool"
+  },
+  {
+    "name": "Marill"
+  },
+  {
+    "name": "Yanma"
+  },
+  {
+    "name": "Turtwig"
+  },
+  {
+    "name": "Wattrel"
+  },
+  {
+    "name": "Grimer-Alola"
+  },
+  {
+    "name": "Litwick"
+  },
+  {
+    "name": "Dolliv"
+  },
+  {
+    "name": "Croagunk"
+  },
+  {
+    "name": "Sinistea"
+  },
+  {
+    "name": "Drowzee"
+  },
+  {
+    "name": "Psyduck"
+  },
+  {
+    "name": "Drifloon"
+  },
+  {
+    "name": "Fraxure"
+  },
+  {
+    "name": "Mareep"
+  },
+  {
+    "name": "Maschiff"
+  },
+  {
+    "name": "Gurdurr"
+  },
+  {
+    "name": "Fletchinder"
+  },
+  {
+    "name": "Grimer"
+  },
+  {
+    "name": "Meditite"
+  },
+  {
+    "name": "Prinplup"
+  },
+  {
+    "name": "Lechonk"
+  },
+  {
+    "name": "Sandile"
+  },
+  {
+    "name": "Vulpix"
+  },
+  {
+    "name": "Vigoroth"
+  },
+  {
+    "name": "Rotom"
+  },
+  {
+    "name": "Poliwhirl"
+  },
+  {
+    "name": "Snover"
+  },
+  {
+    "name": "Floette"
+  },
+  {
+    "name": "Tinkatink"
+  },
+  {
+    "name": "Dewott"
+  },
+  {
+    "name": "Braixen"
+  },
+  {
+    "name": "Charmeleon"
+  },
+  {
+    "name": "Cetoddle"
+  },
+  {
+    "name": "Pawmo"
+  },
+  {
+    "name": "Dartrix"
+  },
+  {
+    "name": "Phantump"
+  },
+  {
+    "name": "Seedot"
+  },
+  {
+    "name": "Eevee"
+  },
+  {
+    "name": "Zweilous"
+  },
+  {
+    "name": "Houndour"
+  },
+  {
+    "name": "Kubfu"
+  },
+  {
+    "name": "Chimchar"
+  },
+  {
+    "name": "Larvesta"
+  },
+  {
+    "name": "Ralts"
+  },
+  {
+    "name": "Chingling"
+  },
+  {
+    "name": "Aipom"
+  },
+  {
+    "name": "Phanpy"
+  },
+  {
+    "name": "Tinkatuff"
+  },
+  {
+    "name": "Cubchoo"
+  },
+  {
+    "name": "Capsakid"
+  },
+  {
+    "name": "Wingull"
+  },
+  {
+    "name": "Poliwag"
+  },
+  {
+    "name": "Hippopotas"
+  },
+  {
+    "name": "Silicobra"
+  },
+  {
+    "name": "Wooper"
+  },
+  {
+    "name": "Applin"
+  },
+  {
+    "name": "Magnemite"
+  },
+  {
+    "name": "Dragonair"
+  },
+  {
+    "name": "Oshawott"
+  },
+  {
+    "name": "Starly"
+  },
+  {
+    "name": "Raboot"
+  },
+  {
+    "name": "Drakloak"
+  },
+  {
+    "name": "Hakamo-o"
+  },
+  {
+    "name": "Meowth"
+  },
+  {
+    "name": "Kirlia"
+  },
+  {
+    "name": "Bagon"
+  },
+  {
+    "name": "Litleo"
+  },
+  {
+    "name": "Glimmet"
+  },
+  {
+    "name": "Pawniard"
+  },
+  {
+    "name": "Feebas"
+  },
+  {
+    "name": "Weepinbell"
+  },
+  {
+    "name": "Rowlet"
+  },
+  {
+    "name": "Froakie"
+  },
+  {
+    "name": "Slugma"
+  },
+  {
+    "name": "Rufflet"
+  },
+  {
+    "name": "Staravia"
+  },
+  {
+    "name": "Luxio"
+  },
+  {
+    "name": "Combee"
+  },
+  {
+    "name": "Grookey"
+  },
+  {
+    "name": "Dratini"
+  },
+  {
+    "name": "Flaaffy"
+  },
+  {
+    "name": "Wooper-Paldea"
+  },
+  {
+    "name": "Eelektrik"
+  },
+  {
+    "name": "Noibat"
+  },
+  {
+    "name": "Mienfoo"
+  },
+  {
+    "name": "Sprigatito"
+  },
+  {
+    "name": "Wiglett"
+  },
+  {
+    "name": "Flittle"
+  },
+  {
+    "name": "Sandshrew"
+  },
+  {
+    "name": "Diglett"
+  },
+  {
+    "name": "Sunkern"
+  },
+  {
+    "name": "Spoink"
+  },
+  {
+    "name": "Flabébé"
+  },
+  {
+    "name": "Zorua-Hisui"
+  },
+  {
+    "name": "Shroomish"
+  },
+  {
+    "name": "Voltorb"
+  },
+  {
+    "name": "Growlithe-Hisui"
+  },
+  {
+    "name": "Sandshrew-Alola"
+  },
+  {
+    "name": "Corphish"
+  },
+  {
+    "name": "Sandygast"
   },
   {
     "name": "Shelgon"
   },
   {
-    "name": "Oshawott"
+    "name": "Greavard"
+  },
+  {
+    "name": "Quaxly"
+  },
+  {
+    "name": "Shuppet"
+  },
+  {
+    "name": "Monferno"
+  },
+  {
+    "name": "Fomantis"
+  },
+  {
+    "name": "Scorbunny"
+  },
+  {
+    "name": "Dreepy"
+  },
+  {
+    "name": "Mankey"
+  },
+  {
+    "name": "Nacli"
+  },
+  {
+    "name": "Impidimp"
+  },
+  {
+    "name": "Duskull"
+  },
+  {
+    "name": "Ducklett"
+  },
+  {
+    "name": "Meowth-Galar"
+  },
+  {
+    "name": "Geodude"
+  },
+  {
+    "name": "Bounsweet"
+  },
+  {
+    "name": "Zorua"
+  },
+  {
+    "name": "Carkol"
+  },
+  {
+    "name": "Makuhita"
+  },
+  {
+    "name": "Cutiefly"
+  },
+  {
+    "name": "Salandit"
+  },
+  {
+    "name": "Jangmo-o"
+  },
+  {
+    "name": "Gulpin"
+  },
+  {
+    "name": "Geodude-Alola"
+  },
+  {
+    "name": "Fuecoco"
+  },
+  {
+    "name": "Mareanie"
+  },
+  {
+    "name": "Finneon"
+  },
+  {
+    "name": "Poochyena"
+  },
+  {
+    "name": "Lombre"
+  },
+  {
+    "name": "Shellder"
+  },
+  {
+    "name": "Pineco"
+  },
+  {
+    "name": "Shellos"
   },
   {
     "name": "Bonsly"
@@ -1761,393 +2412,57 @@
     "name": "Igglybuff"
   },
   {
-    "name": "Wingull"
-  },
-  {
-    "name": "Dewott"
-  },
-  {
-    "name": "Skiploom"
-  },
-  {
-    "name": "Flittle"
-  },
-  {
-    "name": "Cubchoo"
-  },
-  {
-    "name": "Diglett"
-  },
-  {
-    "name": "Kubfu"
-  },
-  {
-    "name": "Dragonair"
-  },
-  {
-    "name": "Applin"
-  },
-  {
-    "name": "Smoliv"
-  },
-  {
-    "name": "Happiny"
-  },
-  {
-    "name": "Froakie"
-  },
-  {
-    "name": "Dartrix"
-  },
-  {
-    "name": "Glimmet"
-  },
-  {
-    "name": "Raboot"
-  },
-  {
-    "name": "Growlithe-Hisui"
-  },
-  {
-    "name": "Gothita"
-  },
-  {
-    "name": "Drifloon"
-  },
-  {
-    "name": "Azurill"
-  },
-  {
-    "name": "Drakloak"
-  },
-  {
-    "name": "Voltorb-Hisui"
-  },
-  {
-    "name": "Varoom"
-  },
-  {
-    "name": "Stunky"
-  },
-  {
-    "name": "Clauncher"
-  },
-  {
-    "name": "Magnemite"
-  },
-  {
-    "name": "Pineco"
-  },
-  {
-    "name": "Rolycoly"
-  },
-  {
-    "name": "Larvitar"
-  },
-  {
-    "name": "Salandit"
-  },
-  {
-    "name": "Tynamo"
-  },
-  {
     "name": "Toxel"
   },
   {
-    "name": "Rowlet"
-  },
-  {
-    "name": "Charmeleon"
-  },
-  {
-    "name": "Drowzee"
-  },
-  {
-    "name": "Sandile"
-  },
-  {
-    "name": "Buizel"
-  },
-  {
-    "name": "Gastly"
-  },
-  {
-    "name": "Staravia"
-  },
-  {
-    "name": "Gimmighoul-Roaming"
-  },
-  {
-    "name": "Snover"
-  },
-  {
-    "name": "Venonat"
-  },
-  {
-    "name": "Growlithe"
-  },
-  {
-    "name": "Mudbray"
+    "name": "Hoothoot"
   },
   {
     "name": "Swablu"
   },
   {
-    "name": "Gimmighoul"
+    "name": "Gible"
   },
   {
-    "name": "Kirlia"
-  },
-  {
-    "name": "Cufant"
-  },
-  {
-    "name": "Sunkern"
-  },
-  {
-    "name": "Pupitar"
-  },
-  {
-    "name": "Starly"
-  },
-  {
-    "name": "Fidough"
+    "name": "Gastly"
   },
   {
     "name": "Teddiursa"
   },
   {
-    "name": "Krokorok"
-  },
-  {
-    "name": "Scorbunny"
-  },
-  {
-    "name": "Wooper-Paldea"
-  },
-  {
-    "name": "Skrelp"
-  },
-  {
-    "name": "Deino"
-  },
-  {
-    "name": "Pawniard"
-  },
-  {
-    "name": "Frigibax"
-  },
-  {
-    "name": "Grimer-Alola"
-  },
-  {
-    "name": "Wiglett"
-  },
-  {
-    "name": "Sliggoo"
-  },
-  {
-    "name": "Lechonk"
-  },
-  {
-    "name": "Zweilous"
-  },
-  {
-    "name": "Cyndaquil"
+    "name": "Timburr"
   },
   {
     "name": "Charmander"
   },
   {
-    "name": "Silicobra"
-  },
-  {
-    "name": "Hippopotas"
-  },
-  {
-    "name": "Deerling"
-  },
-  {
-    "name": "Rotom"
-  },
-  {
-    "name": "Quilladin"
-  },
-  {
-    "name": "Mareep"
-  },
-  {
-    "name": "Quaxwell"
-  },
-  {
-    "name": "Shellder"
-  },
-  {
-    "name": "Sinistea"
-  },
-  {
-    "name": "Wattrel"
-  },
-  {
-    "name": "Fraxure"
-  },
-  {
-    "name": "Fuecoco"
-  },
-  {
-    "name": "Finneon"
-  },
-  {
-    "name": "Snom"
-  },
-  {
-    "name": "Shinx"
-  },
-  {
-    "name": "Rufflet"
-  },
-  {
-    "name": "Maschiff"
-  },
-  {
-    "name": "Ralts"
-  },
-  {
-    "name": "Makuhita"
-  },
-  {
-    "name": "Crabrawler"
-  },
-  {
-    "name": "Steenee"
-  },
-  {
-    "name": "Houndour"
-  },
-  {
-    "name": "Hatenna"
-  },
-  {
-    "name": "Floragato"
+    "name": "Voltorb-Hisui"
   },
   {
     "name": "Rockruff"
   },
   {
-    "name": "Tarountula"
+    "name": "Steenee"
   },
   {
-    "name": "Litleo"
+    "name": "Sliggoo"
   },
   {
-    "name": "Meowth-Galar"
+    "name": "Growlithe"
   },
   {
-    "name": "Fennekin"
+    "name": "Vullaby"
   },
   {
-    "name": "Larvesta"
+    "name": "Yungoos"
   },
   {
     "name": "Gabite"
   },
   {
-    "name": "Rellor"
+    "name": "Quilladin"
   },
   {
-    "name": "Drizzile"
-  },
-  {
-    "name": "Chewtle"
-  },
-  {
-    "name": "Axew"
-  },
-  {
-    "name": "Charcadet"
-  },
-  {
-    "name": "Meowth-Alola"
-  },
-  {
-    "name": "Shuppet"
-  },
-  {
-    "name": "Diglett-Alola"
-  },
-  {
-    "name": "Sandygast"
-  },
-  {
-    "name": "Gulpin"
-  },
-  {
-    "name": "Barboach"
-  },
-  {
-    "name": "Luxio"
-  },
-  {
-    "name": "Sobble"
-  },
-  {
-    "name": "Shroomish"
-  },
-  {
-    "name": "Spoink"
-  },
-  {
-    "name": "Bounsweet"
-  },
-  {
-    "name": "Flaaffy"
-  },
-  {
-    "name": "Voltorb"
-  },
-  {
-    "name": "Pawmi"
-  },
-  {
-    "name": "Petilil"
-  },
-  {
-    "name": "Dreepy"
-  },
-  {
-    "name": "Corvisquire"
-  },
-  {
-    "name": "Bagon"
-  },
-  {
-    "name": "Quilava"
-  },
-  {
-    "name": "Nacli"
-  },
-  {
-    "name": "Meowth"
-  },
-  {
-    "name": "Tadbulb"
-  },
-  {
-    "name": "Combee"
-  },
-  {
-    "name": "Fomantis"
-  },
-  {
-    "name": "Rookidee"
-  },
-  {
-    "name": "Capsakid"
-  },
-  {
-    "name": "Nymble"
-  },
-  {
-    "name": "Cacnea"
+    "name": "Deerling"
   }
 ]
