@@ -26,7 +26,7 @@ export const Report = () => {
   const [resultsCalcs, setResultCalcs] = useState<CalcList[]>([]);
   const [numberDex, setNumberDex] = useState<number>(0);
   const [totalDex, setTotalDex] = useState<number>(0);
-  const [avatar, setAvatar] = useState<string>(missingno);
+  const [avatar, setAvatar] = useState<string | undefined>(missingno);
   const [data, setData] = useState<ReportProps>();
   const onSubmit = (data: ReportProps) => {
     if (data.name === "" || data.move === "" || data.category === "") {

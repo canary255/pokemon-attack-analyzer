@@ -2,20 +2,12 @@ import { ReportProps } from "../../types/reportProps";
 import { CalcList } from "../../types/calcList";
 
 type ReportPDFProps = {
-  avatar: string;
+  avatar?: string;
   data: ReportProps | undefined;
   resultsCalcs: CalcList[] | undefined;
 };
 
-const bgColor = (
-  ko_chance:
-    | {
-        chance?: number;
-        n: number;
-        text: string;
-      }
-    | undefined
-) => {
+const bgColor = (ko_chance?: { chance?: number; n: number; text: string }) => {
   if (!ko_chance || ko_chance.chance === undefined) return "bg-green-200";
   if (ko_chance.chance === 1 && ko_chance.n === 1) return "bg-red-300";
   if (ko_chance.chance < 1 && ko_chance.n === 1) return "bg-yellow-300";

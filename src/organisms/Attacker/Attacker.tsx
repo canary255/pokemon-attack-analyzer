@@ -15,15 +15,16 @@ import { SelectorArray } from "../../atom/SelectorArray/SelectorArray";
 import { numberOfHits } from "../../utils/numberOfHits";
 import { Button } from "../../atom/Button/Button";
 import { ReportProps } from "../../types/reportProps";
-import { nameConverter } from "../../utils/pokemonNameConverter";
+import { usePokeapiData } from "../../hooks/usePokeapiData";
+import { getAvatarUrl } from "../../utils/getAvatarUrl";
 
 interface AttackerProps {
   dex: string[];
   itemList: string[];
   abilityList: string[];
   moveList: string[];
-  avatar: string;
-  setAvatar: React.Dispatch<React.SetStateAction<string>>;
+  avatar?: string;
+  setAvatar: React.Dispatch<React.SetStateAction<string | undefined>>;
 }
 
 export const Attacker = ({
@@ -41,6 +42,7 @@ export const Attacker = ({
   const [moveDetails, setMoveDetails] = useState<any>();
   const specie: string = watch("name");
   const move: string = watch("move");
+  const { data, isLoading } = usePokeapiData(specie);
 
   useEffect(() => {
     if (move !== "") {
@@ -55,37 +57,25 @@ export const Attacker = ({
 
   useMemo(() => {
     if (specie !== "") {
-      fetch(
-        `https://pokeapi.co/api/v2/pokemon/${nameConverter(specie)
-          .replace(" ", "-")
-          .toLowerCase()}`
-      ).then((res) => {
-        res
-          .json()
-          .then((data) => {
-            const avatarUrl =
-              data.name === "porygon-z"
-                ? data.sprites.front_shiny
-                : data.sprites.front_default ?? "";
-            setAvatar(avatarUrl);
-            setAtk(data.stats[1].base_stat.toString());
-            setSpa(data.stats[3].base_stat.toString());
-            setValue(
-              "ability",
-              capitalizeEveryWord(
-                data.abilities[0].ability.name.replaceAll("-", " ")
-              )
-            );
-            setValue("avatar", avatarUrl);
-          })
-          .catch(() => {
-            setAvatar("");
-            setAtk("90");
-            setSpa("90");
-          });
-      });
+      if (!isLoading && data) {
+        const avatarUrl = getAvatarUrl(data?.name, data);
+        setAvatar(avatarUrl);
+        setAtk(data?.stats?.[1].base_stat.toString() ?? "90");
+        setSpa(data?.stats?.[3].base_stat.toString() ?? "90");
+        setValue(
+          "ability",
+          capitalizeEveryWord(
+            data?.abilities?.[0].ability?.name.replaceAll("-", " ") ?? ""
+          )
+        );
+        setValue("avatar", avatarUrl);
+      } else {
+        setAvatar(undefined);
+        setAtk("90");
+        setSpa("90");
+      }
     }
-  }, [specie]);
+  }, [isLoading]);
 
   const handleRestore = () => {
     const data = localStorage.getItem("pokemonSetData");

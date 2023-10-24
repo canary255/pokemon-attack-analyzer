@@ -16,7 +16,7 @@ interface LoadingCalcsProps {
   resultsCalcs: CalcList[];
   setPage: React.Dispatch<React.SetStateAction<number>>;
   data: ReportProps | undefined;
-  avatar: string;
+  avatar?: string;
 }
 
 const DOWNLOAD_BUTTON_CLASS =

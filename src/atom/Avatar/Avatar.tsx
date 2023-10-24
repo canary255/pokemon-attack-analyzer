@@ -1,6 +1,6 @@
 import { teratypeImage } from "../../utils/teratypeImage";
 import missingno from "../../assets/const/Missingno.png";
-import { TypeName } from "../../utils/calc/data/interface";
+import { TypeName } from "@smogon/calc/dist/data/interface";
 
 interface AvatarProps {
   className: string;

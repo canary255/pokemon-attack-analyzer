@@ -1,3 +1,5 @@
+import { PokeAPIProps } from "../types/pokeAPIProps";
+import { getAvatarUrl } from "./getAvatarUrl";
 import { nameConverter } from "./pokemonNameConverter";
 
 export async function getPokemonSprite(name: string) {
@@ -6,8 +8,8 @@ export async function getPokemonSprite(name: string) {
 
   return await fetch(url)
     .then((response) => response.json())
-    .then((data) => {
-      const frontSprite = data.sprites.front_default;
+    .then((data: PokeAPIProps) => {
+      const frontSprite = getAvatarUrl(name, data);
       return frontSprite;
     })
     .catch((error) => console.error(error));
