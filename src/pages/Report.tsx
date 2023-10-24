@@ -9,12 +9,6 @@ import { reportInitialState, testingSet } from "../schema/schema";
 import { ReportProps } from "../types/reportProps";
 import { loadDataCalculator } from "../utils/calculateDamage";
 import missingno from "../assets/const/Missingno.png";
-import {
-  getAbilityList,
-  getCompleteDexNames,
-  getItemList,
-  getMoveList,
-} from "../utils/pokemonConsts/lists";
 import { CalcList } from "../types/calcList";
 import { Results } from "../organisms/Results/Results";
 
@@ -46,24 +40,12 @@ export const Report = () => {
     localStorage.setItem("pokemonSetData", JSON.stringify(data));
   };
 
-  const dexList = getCompleteDexNames();
-  const itemList = getItemList();
-  const abilityList = getAbilityList();
-  const moveList = getMoveList();
-
   return (
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
         <div className="grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 xl:h-[91.5vh] bg-gray-100 dark:bg-darkGray">
           <div className="border lg:border-b-0 sm:border-b border-black dark:border-white">
-            <Attacker
-              dex={dexList}
-              itemList={itemList}
-              abilityList={abilityList}
-              moveList={moveList}
-              avatar={avatar}
-              setAvatar={setAvatar}
-            />
+            <Attacker avatar={avatar} setAvatar={setAvatar} />
           </div>
           <div className="border lg:border-b-0 sm:border-b border-black dark:border-white">
             <Defender />

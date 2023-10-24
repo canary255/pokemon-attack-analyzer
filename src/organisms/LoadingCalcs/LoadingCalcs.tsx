@@ -6,8 +6,6 @@ import { Button } from "../../atom/Button/Button";
 import { setCancelAction } from "../../utils/cancelAction";
 
 interface LoadingCalcsProps {
-  //data: ReportProps | undefined;
-  //Recordatorio cambiar el any
   numberDex: number;
   totalDex: number;
   avatar: string;
@@ -20,8 +18,6 @@ export const LoadingCalcs = ({
 }: LoadingCalcsProps) => {
   const { t } = useTranslation();
   const percentage = (numberDex / totalDex) * 100;
-
-  //todo: obtener lista de pokes, crear un array vacio, e ir añadiendo los pokes que se van calculando de 1 en 1
 
   return (
     <div className="flex flex-col gap-y-1">

@@ -10,7 +10,13 @@ import teraType from "../../utils/pokemonConsts/teraType";
 import { useFormContext } from "react-hook-form";
 import { useEffect, useState, useMemo } from "react";
 import { capitalizeEveryWord } from "../../utils/capitalize";
-import { getMoveDetails } from "../../utils/pokemonConsts/lists";
+import {
+  getAbilityList,
+  getCompleteDexNames,
+  getItemList,
+  getMoveDetails,
+  getMoveList,
+} from "../../utils/pokemonConsts/lists";
 import { SelectorArray } from "../../atom/SelectorArray/SelectorArray";
 import { numberOfHits } from "../../utils/numberOfHits";
 import { Button } from "../../atom/Button/Button";
@@ -19,22 +25,11 @@ import { usePokeapiData } from "../../hooks/usePokeapiData";
 import { getAvatarUrl } from "../../utils/getAvatarUrl";
 
 interface AttackerProps {
-  dex: string[];
-  itemList: string[];
-  abilityList: string[];
-  moveList: string[];
   avatar?: string;
   setAvatar: React.Dispatch<React.SetStateAction<string | undefined>>;
 }
 
-export const Attacker = ({
-  dex,
-  itemList,
-  abilityList,
-  moveList,
-  avatar,
-  setAvatar,
-}: AttackerProps) => {
+export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
   const { t } = useTranslation();
   const { watch, setValue, reset } = useFormContext();
   const [atk, setAtk] = useState<string>("90");
@@ -43,6 +38,11 @@ export const Attacker = ({
   const specie: string = watch("name");
   const move: string = watch("move");
   const { data, isLoading } = usePokeapiData(specie);
+
+  const dexList = getCompleteDexNames();
+  const itemList = getItemList();
+  const abilityList = getAbilityList();
+  const moveList = getMoveList();
 
   useEffect(() => {
     if (move !== "") {
@@ -55,7 +55,7 @@ export const Attacker = ({
     }
   }, [move]);
 
-  useMemo(() => {
+  useEffect(() => {
     if (specie !== "") {
       if (!isLoading && data) {
         const avatarUrl = getAvatarUrl(data?.name, data);
@@ -103,7 +103,7 @@ export const Attacker = ({
               ></Button>
             )}
             <ComboBoxUI
-              options={dex}
+              options={dexList}
               className="w-full"
               name="name"
               label={t("attacker.selectPokemon")}
