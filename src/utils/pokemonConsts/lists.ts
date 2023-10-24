@@ -1,15 +1,17 @@
 import { MOVES, SPECIES, ITEMS, ABILITIES } from "@smogon/calc";
 import { notAllowedForms } from "./notAllowedForms";
+import { SpeciesData } from "@smogon/calc/dist/data/species";
+import { MoveData } from "@smogon/calc/dist/data/moves";
 
 const moveMap = new Map(Object.entries(MOVES[MOVES.length - 1]));
-const moveList: any = [];
+const moveList: (MoveData & { name: string })[] = [];
 moveMap.forEach((value, key) => {
   if (value.category !== "Status") moveList.push({ ...value, name: key });
 });
 
 export const getCompleteDex = () => {
   const map = new Map(Object.entries(SPECIES[SPECIES.length - 1]));
-  const list: any = [];
+  const list: (SpeciesData & { name: string })[] = [];
 
   map.forEach((value, key) => {
     const form = key.split("-");
@@ -26,7 +28,7 @@ export const getCompleteDexNames = () => {
 
 export const getItemList = () => {
   const map = new Map(Object.entries(ITEMS[ITEMS.length - 1]));
-  const list: any = [];
+  const list: string[] = [];
   map.forEach((value) => {
     list.push(value);
   });
@@ -35,7 +37,7 @@ export const getItemList = () => {
 
 export const getAbilityList = () => {
   const map = new Map(Object.entries(ABILITIES[ABILITIES.length - 1]));
-  const list: any = [];
+  const list: string[] = [];
   map.forEach((value) => {
     list.push(value);
   });
@@ -43,9 +45,9 @@ export const getAbilityList = () => {
 };
 
 export const getMoveList = () => {
-  return moveList.map((value: any) => value.name);
+  return moveList.map((value) => value.name);
 };
 
 export const getMoveDetails = (move: string) => {
-  return moveList.find((value: any) => value.name === move);
+  return moveList.find((value) => value.name === move);
 };

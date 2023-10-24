@@ -1548,52 +1548,46 @@
     "nature": "Timid"
   },
   {
+    "name": "Appletun"
+  },
+  {
     "name": "Lucario"
-  },
-  {
-    "name": "Leafeon"
-  },
-  {
-    "name": "Haxorus"
-  },
-  {
-    "name": "Slowpoke"
   },
   {
     "name": "Mudsdale"
   },
   {
-    "name": "Lokix"
-  },
-  {
-    "name": "Bisharp"
-  },
-  {
-    "name": "Blissey"
-  },
-  {
-    "name": "Skiploom"
-  },
-  {
-    "name": "Appletun"
-  },
-  {
-    "name": "Eiscue"
-  },
-  {
     "name": "Luxray"
   },
   {
-    "name": "Golduck"
+    "name": "Slowpoke"
   },
   {
     "name": "Alomomola"
   },
   {
-    "name": "Muk"
+    "name": "Golduck"
+  },
+  {
+    "name": "Leafeon"
+  },
+  {
+    "name": "Avalugg-Hisui"
   },
   {
     "name": "Palossand"
+  },
+  {
+    "name": "Poltchageist"
+  },
+  {
+    "name": "Chansey"
+  },
+  {
+    "name": "Eiscue"
+  },
+  {
+    "name": "Lokix"
   },
   {
     "name": "Delphox"
@@ -1602,181 +1596,163 @@
     "name": "Misdreavus"
   },
   {
-    "name": "Leavanny"
+    "name": "Bombirdier"
   },
   {
-    "name": "Poltchageist"
+    "name": "Bisharp"
   },
   {
     "name": "Altaria"
   },
   {
-    "name": "Tropius"
-  },
-  {
-    "name": "Greedent"
+    "name": "Morpeko"
   },
   {
     "name": "Rotom-Frost"
   },
   {
-    "name": "Bombirdier"
-  },
-  {
     "name": "Rotom-Mow"
-  },
-  {
-    "name": "Flapple"
-  },
-  {
-    "name": "Morpeko"
-  },
-  {
-    "name": "Froslass"
   },
   {
     "name": "Heracross"
   },
   {
+    "name": "Tropius"
+  },
+  {
+    "name": "Muk"
+  },
+  {
     "name": "Masquerain"
+  },
+  {
+    "name": "Flapple"
   },
   {
     "name": "Avalugg"
   },
   {
-    "name": "Raichu-Alola"
-  },
-  {
-    "name": "Gogoat"
-  },
-  {
-    "name": "Chimecho"
-  },
-  {
-    "name": "Sandslash"
+    "name": "Froslass"
   },
   {
     "name": "Ampharos"
   },
   {
+    "name": "Leavanny"
+  },
+  {
+    "name": "Raichu-Alola"
+  },
+  {
     "name": "Qwilfish"
   },
   {
-    "name": "Mightyena"
+    "name": "Sandslash"
+  },
+  {
+    "name": "Cryogonal"
   },
   {
     "name": "Oricorio-Sensu"
   },
   {
-    "name": "Crabominable"
-  },
-  {
-    "name": "Pyroar"
-  },
-  {
-    "name": "Spinarak"
-  },
-  {
     "name": "Klawf"
   },
   {
-    "name": "Ariados"
+    "name": "Gogoat"
   },
   {
     "name": "Hypno"
   },
   {
+    "name": "Ariados"
+  },
+  {
     "name": "Magcargo"
   },
   {
-    "name": "Dugtrio"
+    "name": "Chimecho"
   },
   {
-    "name": "Dugtrio-Alola"
-  },
-  {
-    "name": "Gothorita"
-  },
-  {
-    "name": "Glalie"
-  },
-  {
-    "name": "Forretress"
-  },
-  {
-    "name": "Copperajah"
-  },
-  {
-    "name": "Komala"
+    "name": "Pyroar"
   },
   {
     "name": "Samurott"
   },
   {
-    "name": "Grumpig"
+    "name": "Komala"
   },
   {
-    "name": "Electrode"
+    "name": "Dugtrio-Alola"
   },
   {
     "name": "Wugtrio"
   },
   {
-    "name": "Donphan"
+    "name": "Grumpig"
+  },
+  {
+    "name": "Copperajah"
   },
   {
     "name": "Lycanroc-Midnight"
   },
   {
+    "name": "Greedent"
+  },
+  {
     "name": "Tauros-Paldea-Combat"
   },
   {
-    "name": "Falinks"
+    "name": "Forretress"
   },
   {
     "name": "Quagsire"
   },
   {
-    "name": "Koffing"
+    "name": "Crabominable"
+  },
+  {
+    "name": "Donphan"
   },
   {
     "name": "Zoroark"
   },
   {
-    "name": "Primeape"
-  },
-  {
     "name": "Grotle"
   },
   {
-    "name": "Mismagius"
+    "name": "Dugtrio"
+  },
+  {
+    "name": "Mightyena"
   },
   {
     "name": "Honchkrow"
   },
   {
-    "name": "Sudowoodo"
+    "name": "Mismagius"
+  },
+  {
+    "name": "Electrode"
+  },
+  {
+    "name": "Primeape"
   },
   {
     "name": "Houndoom"
   },
   {
-    "name": "Revavroom"
+    "name": "Sudowoodo"
   },
   {
-    "name": "Noctowl"
+    "name": "Falinks"
   },
   {
     "name": "Riolu"
   },
   {
-    "name": "Mudbray"
-  },
-  {
     "name": "Oinkologne-F"
-  },
-  {
-    "name": "Venomoth"
   },
   {
     "name": "Flareon"
@@ -1788,13 +1764,7 @@
     "name": "Dedenne"
   },
   {
-    "name": "Ursaring"
-  },
-  {
-    "name": "Persian"
-  },
-  {
-    "name": "Tauros"
+    "name": "Gothorita"
   },
   {
     "name": "Banette"
@@ -1803,10 +1773,19 @@
     "name": "Azurill"
   },
   {
+    "name": "Tauros"
+  },
+  {
     "name": "Passimian"
   },
   {
-    "name": "Girafarig"
+    "name": "Spinarak"
+  },
+  {
+    "name": "Persian"
+  },
+  {
+    "name": "Noctowl"
   },
   {
     "name": "Sneasel"
@@ -1815,16 +1794,31 @@
     "name": "Dunsparce"
   },
   {
-    "name": "Sunflora"
+    "name": "Ursaring"
+  },
+  {
+    "name": "Koffing"
   },
   {
     "name": "Wigglytuff"
   },
   {
-    "name": "Swanna"
+    "name": "Glalie"
+  },
+  {
+    "name": "Revavroom"
+  },
+  {
+    "name": "Girafarig"
   },
   {
     "name": "Hattrem"
+  },
+  {
+    "name": "Venomoth"
+  },
+  {
+    "name": "Swanna"
   },
   {
     "name": "Bellsprout"
@@ -1833,19 +1827,19 @@
     "name": "Frogadier"
   },
   {
+    "name": "Oricorio"
+  },
+  {
     "name": "Vespiquen"
+  },
+  {
+    "name": "Sunflora"
   },
   {
     "name": "Cacturne"
   },
   {
-    "name": "Oricorio"
-  },
-  {
     "name": "Veluza"
-  },
-  {
-    "name": "Sliggoo-Hisui"
   },
   {
     "name": "Spidops"
@@ -1866,16 +1860,10 @@
     "name": "Munchlax"
   },
   {
-    "name": "Delibird"
-  },
-  {
     "name": "Sneasel-Hisui"
   },
   {
     "name": "Morgrem"
-  },
-  {
-    "name": "Sandaconda"
   },
   {
     "name": "Slowpoke-Galar"
@@ -1890,13 +1878,7 @@
     "name": "Gligar"
   },
   {
-    "name": "Lampent"
-  },
-  {
-    "name": "Graveler"
-  },
-  {
-    "name": "Gumshoos"
+    "name": "Sandaconda"
   },
   {
     "name": "Rotom-Fan"
@@ -1905,10 +1887,13 @@
     "name": "Foongus"
   },
   {
-    "name": "Haunter"
+    "name": "Delibird"
   },
   {
     "name": "Oricorio-Pa'u"
+  },
+  {
+    "name": "Haunter"
   },
   {
     "name": "Buizel"
@@ -1929,7 +1914,16 @@
     "name": "Seviper"
   },
   {
+    "name": "Graveler"
+  },
+  {
     "name": "Quaxwell"
+  },
+  {
+    "name": "Sliggoo-Hisui"
+  },
+  {
+    "name": "Gumshoos"
   },
   {
     "name": "Nosepass"
@@ -1944,12 +1938,6 @@
     "name": "Oinkologne"
   },
   {
-    "name": "Sawsbuck"
-  },
-  {
-    "name": "Bronzor"
-  },
-  {
     "name": "Swalot"
   },
   {
@@ -1959,16 +1947,10 @@
     "name": "Swadloon"
   },
   {
-    "name": "Numel"
-  },
-  {
     "name": "Crocalor"
   },
   {
     "name": "Magneton"
-  },
-  {
-    "name": "Whiscash"
   },
   {
     "name": "Ekans"
@@ -1980,10 +1962,16 @@
     "name": "Venonat"
   },
   {
+    "name": "Sawsbuck"
+  },
+  {
     "name": "Sentret"
   },
   {
     "name": "Naclstack"
+  },
+  {
+    "name": "Numel"
   },
   {
     "name": "Barboach"
@@ -2010,10 +1998,7 @@
     "name": "Toedscool"
   },
   {
-    "name": "Marill"
-  },
-  {
-    "name": "Yanma"
+    "name": "Mudbray"
   },
   {
     "name": "Turtwig"
@@ -2028,6 +2013,9 @@
     "name": "Litwick"
   },
   {
+    "name": "Yanma"
+  },
+  {
     "name": "Dolliv"
   },
   {
@@ -2037,19 +2025,16 @@
     "name": "Sinistea"
   },
   {
+    "name": "Whiscash"
+  },
+  {
     "name": "Drowzee"
   },
   {
     "name": "Psyduck"
   },
   {
-    "name": "Drifloon"
-  },
-  {
     "name": "Fraxure"
-  },
-  {
-    "name": "Mareep"
   },
   {
     "name": "Maschiff"
@@ -2073,6 +2058,9 @@
     "name": "Lechonk"
   },
   {
+    "name": "Lampent"
+  },
+  {
     "name": "Sandile"
   },
   {
@@ -2088,7 +2076,7 @@
     "name": "Poliwhirl"
   },
   {
-    "name": "Snover"
+    "name": "Bronzor"
   },
   {
     "name": "Floette"
@@ -2121,40 +2109,22 @@
     "name": "Seedot"
   },
   {
-    "name": "Eevee"
-  },
-  {
-    "name": "Zweilous"
-  },
-  {
     "name": "Houndour"
   },
   {
     "name": "Kubfu"
   },
   {
-    "name": "Chimchar"
-  },
-  {
-    "name": "Larvesta"
-  },
-  {
-    "name": "Ralts"
+    "name": "Snover"
   },
   {
     "name": "Chingling"
   },
   {
-    "name": "Aipom"
-  },
-  {
-    "name": "Phanpy"
+    "name": "Zweilous"
   },
   {
     "name": "Tinkatuff"
-  },
-  {
-    "name": "Cubchoo"
   },
   {
     "name": "Capsakid"
@@ -2163,19 +2133,16 @@
     "name": "Wingull"
   },
   {
-    "name": "Poliwag"
-  },
-  {
     "name": "Hippopotas"
   },
   {
-    "name": "Silicobra"
-  },
-  {
-    "name": "Wooper"
+    "name": "Marill"
   },
   {
     "name": "Applin"
+  },
+  {
+    "name": "Wooper"
   },
   {
     "name": "Magnemite"
@@ -2187,7 +2154,7 @@
     "name": "Oshawott"
   },
   {
-    "name": "Starly"
+    "name": "Poliwag"
   },
   {
     "name": "Raboot"
@@ -2196,13 +2163,16 @@
     "name": "Drakloak"
   },
   {
+    "name": "Drifloon"
+  },
+  {
     "name": "Hakamo-o"
   },
   {
     "name": "Meowth"
   },
   {
-    "name": "Kirlia"
+    "name": "Eevee"
   },
   {
     "name": "Bagon"
@@ -2232,6 +2202,9 @@
     "name": "Slugma"
   },
   {
+    "name": "Aipom"
+  },
+  {
     "name": "Rufflet"
   },
   {
@@ -2239,6 +2212,9 @@
   },
   {
     "name": "Luxio"
+  },
+  {
+    "name": "Kirlia"
   },
   {
     "name": "Combee"
@@ -2259,9 +2235,6 @@
     "name": "Eelektrik"
   },
   {
-    "name": "Noibat"
-  },
-  {
     "name": "Mienfoo"
   },
   {
@@ -2278,6 +2251,9 @@
   },
   {
     "name": "Diglett"
+  },
+  {
+    "name": "Noibat"
   },
   {
     "name": "Sunkern"
@@ -2310,7 +2286,13 @@
     "name": "Sandygast"
   },
   {
+    "name": "Mareep"
+  },
+  {
     "name": "Shelgon"
+  },
+  {
+    "name": "Cubchoo"
   },
   {
     "name": "Greavard"
@@ -2340,6 +2322,9 @@
     "name": "Nacli"
   },
   {
+    "name": "Chimchar"
+  },
+  {
     "name": "Impidimp"
   },
   {
@@ -2347,6 +2332,9 @@
   },
   {
     "name": "Ducklett"
+  },
+  {
+    "name": "Starly"
   },
   {
     "name": "Meowth-Galar"
@@ -2428,9 +2416,6 @@
   },
   {
     "name": "Teddiursa"
-  },
-  {
-    "name": "Timburr"
   },
   {
     "name": "Charmander"

@@ -60,12 +60,12 @@ export const Attacker = ({
       if (!isLoading && data) {
         const avatarUrl = getAvatarUrl(data?.name, data);
         setAvatar(avatarUrl);
-        setAtk(data?.stats?.[1].base_stat.toString() ?? "90");
-        setSpa(data?.stats?.[3].base_stat.toString() ?? "90");
+        setAtk(data.stats?.[1].base_stat.toString() ?? "90");
+        setSpa(data.stats?.[3].base_stat.toString() ?? "90");
         setValue(
           "ability",
           capitalizeEveryWord(
-            data?.abilities?.[0].ability?.name.replaceAll("-", " ") ?? ""
+            data.abilities?.[0].ability?.name.replaceAll("-", " ") ?? ""
           )
         );
         setValue("avatar", avatarUrl);

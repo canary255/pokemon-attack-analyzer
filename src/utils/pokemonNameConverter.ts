@@ -56,6 +56,9 @@ export const nameConverter = (name: string) => {
   if (name === "Flabébé") {
     return "Flabebe";
   }
+  if (name === "Morpeko") {
+    return name + "-Full-Belly";
+  }
 
   return name;
 };
