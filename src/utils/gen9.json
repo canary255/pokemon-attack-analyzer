@@ -24,7 +24,7 @@
     "nature": "Adamant"
   },
   {
-    "name": "Tornadus-Incarnate",
+    "name": "Tornadus",
     "item": "Covert Cloak",
     "evs": "4/0/0/252/0/252",
     "nature": "Timid"
@@ -114,7 +114,7 @@
     "nature": "Quiet"
   },
   {
-    "name": "Urshifu-Single-Strike",
+    "name": "Urshifu",
     "item": "Focus Sash",
     "evs": "4/252/0/0/0/252",
     "nature": "Adamant"
@@ -150,7 +150,7 @@
     "nature": "Timid"
   },
   {
-    "name": "Indeedee-Female",
+    "name": "Indeedee-F",
     "item": "Rocky Helmet",
     "evs": "252/0/252/0/4/0",
     "nature": "Relaxed"
@@ -318,7 +318,7 @@
     "nature": "Jolly"
   },
   {
-    "name": "Basculegion-Male",
+    "name": "Basculegion",
     "item": "Assault Vest",
     "evs": "4/220/204/0/4/76",
     "nature": "Adamant"
@@ -342,7 +342,7 @@
     "nature": "Quiet"
   },
   {
-    "name": "Thundurus-Incarnate",
+    "name": "Thundurus",
     "item": "Covert Cloak",
     "evs": "252/0/156/0/100/0",
     "nature": "Bold"
@@ -414,7 +414,7 @@
     "nature": "Adamant"
   },
   {
-    "name": "Landorus-Incarnate",
+    "name": "Landorus",
     "item": "Life Orb",
     "evs": "0/0/0/252/4/252",
     "nature": "Timid"
@@ -522,7 +522,7 @@
     "nature": "Bold"
   },
   {
-    "name": "Mimikyu-Disguised",
+    "name": "Mimikyu",
     "item": "Rocky Helmet",
     "evs": "212/236/28/0/4/28",
     "nature": "Adamant"
@@ -744,7 +744,7 @@
     "nature": "Timid"
   },
   {
-    "name": "Enamorus-Incarnate",
+    "name": "Enamorus",
     "item": "Assault Vest",
     "evs": "0/0/0/252/4/252",
     "nature": "Timid"
@@ -810,7 +810,7 @@
     "nature": "Timid"
   },
   {
-    "name": "Lycanroc-Midday",
+    "name": "Lycanroc",
     "item": "Focus Sash",
     "evs": "4/252/0/0/0/252",
     "nature": "Adamant"
@@ -888,7 +888,7 @@
     "nature": "Jolly"
   },
   {
-    "name": "Tauros-Paldea-Blaze-Breed",
+    "name": "Tauros-Paldea-Blaze",
     "item": "Mirror Herb",
     "evs": "84/108/4/0/76/236",
     "nature": "Jolly"
@@ -978,7 +978,7 @@
     "nature": "Brave"
   },
   {
-    "name": "Toxtricity-Amped",
+    "name": "Toxtricity",
     "item": "Throat Spray",
     "evs": "212/0/4/204/20/68",
     "nature": "Modest"
@@ -1020,7 +1020,7 @@
     "nature": "Relaxed"
   },
   {
-    "name": "Tauros-Paldea-Aqua-Breed",
+    "name": "Tauros-Paldea-Aqua",
     "item": "Sitrus Berry",
     "evs": "198/198/0/0/52/60",
     "nature": "Adamant"
@@ -1146,7 +1146,7 @@
     "nature": "Modest"
   },
   {
-    "name": "Basculegion-Female",
+    "name": "Basculegion-F",
     "item": "Life Orb",
     "evs": "0/0/0/252/4/252",
     "nature": "Timid"
@@ -1182,7 +1182,7 @@
     "nature": "Careful"
   },
   {
-    "name": "Indeedee-Male",
+    "name": "Indeedee",
     "item": "Choice Scarf",
     "evs": "0/0/0/252/4/252",
     "nature": "Timid"
@@ -1578,7 +1578,7 @@
     "name": "Appletun"
   },
   {
-    "name": "Eiscue-Ice"
+    "name": "Eiscue"
   },
   {
     "name": "Luxray"
@@ -1728,7 +1728,7 @@
     "name": "Lycanroc-Midnight"
   },
   {
-    "name": "Tauros-Paldea-Combat-Breed"
+    "name": "Tauros-Paldea-Combat"
   },
   {
     "name": "Falinks"
@@ -1773,7 +1773,7 @@
     "name": "Mudbray"
   },
   {
-    "name": "Oinkologne-Female"
+    "name": "Oinkologne-F"
   },
   {
     "name": "Venomoth"
@@ -1839,7 +1839,7 @@
     "name": "Cacturne"
   },
   {
-    "name": "Oricorio-Baile"
+    "name": "Oricorio"
   },
   {
     "name": "Veluza"
@@ -1884,7 +1884,7 @@
     "name": "Vulpix-Alola"
   },
   {
-    "name": "Basculin-Blue-Striped"
+    "name": "Basculin"
   },
   {
     "name": "Gligar"
@@ -1908,7 +1908,7 @@
     "name": "Haunter"
   },
   {
-    "name": "Oricorio-Pau"
+    "name": "Oricorio-Pa'u"
   },
   {
     "name": "Buizel"

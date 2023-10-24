@@ -15,6 +15,7 @@ import { SelectorArray } from "../../atom/SelectorArray/SelectorArray";
 import { numberOfHits } from "../../utils/numberOfHits";
 import { Button } from "../../atom/Button/Button";
 import { ReportProps } from "../../types/reportProps";
+import { nameConverter } from "../../utils/pokemonNameConverter";
 
 interface AttackerProps {
   dex: string[];
@@ -55,7 +56,7 @@ export const Attacker = ({
   useMemo(() => {
     if (specie !== "") {
       fetch(
-        `https://pokeapi.co/api/v2/pokemon/${specie
+        `https://pokeapi.co/api/v2/pokemon/${nameConverter(specie)
           .replace(" ", "-")
           .toLowerCase()}`
       ).then((res) => {

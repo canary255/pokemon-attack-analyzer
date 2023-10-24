@@ -1,5 +1,7 @@
+import { nameConverter } from "./pokemonNameConverter";
+
 export async function getPokemonSprite(name: string) {
-  var pokemonName = name.toLowerCase().trim().replace(" ", "-");
+  var pokemonName = nameConverter(name).toLowerCase().trim().replace(" ", "-");
   var url = "https://pokeapi.co/api/v2/pokemon/" + pokemonName;
 
   return await fetch(url)

@@ -1,6 +1,4 @@
-import { set } from "react-hook-form";
 import { MOVES, SPECIES, ITEMS, ABILITIES } from "@smogon/calc";
-import { getDate, setPreviousDate } from "../obtainApiDate";
 import { notAllowedForms } from "./notAllowedForms";
 
 const moveMap = new Map(Object.entries(MOVES[MOVES.length - 1]));
