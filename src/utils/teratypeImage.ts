@@ -16,7 +16,7 @@ import dragon from "../assets/teraType/dragon.png";
 import dark from "../assets/teraType/dark.png";
 import steel from "../assets/teraType/steel.png";
 import fairy from "../assets/teraType/fairy.png";
-import { TypeName } from "./calc/data/interface";
+import { TypeName } from "@smogon/calc/dist/data/interface";
 
 type Teratype = Exclude<TypeName, "Normal" | "???">;
 

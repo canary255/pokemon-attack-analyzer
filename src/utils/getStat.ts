@@ -63,12 +63,12 @@ export const getStat = (
     ? getPhysicalNatureMultiplier(nature)
     : getSpecialNatureMultiplier(nature);
 
-  const baseInt = +base;
-  let evInt = +ev;
+  const baseInt = Number(base);
+  let evInt = Number(ev);
   if (evInt > 252) evInt = 252;
   if (evInt < 0) evInt = 0;
 
-  let ivInt = +iv;
+  let ivInt = Number(iv);
   if (ivInt > 31) ivInt = 31;
   if (ivInt < 0) ivInt = 0;
   const boostMultiplier = getBoostMultiplier(boost);

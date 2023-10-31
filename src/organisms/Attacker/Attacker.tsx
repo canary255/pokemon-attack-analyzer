@@ -32,12 +32,12 @@ interface AttackerProps {
 export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
   const { t } = useTranslation();
   const { watch, setValue, reset } = useFormContext();
-  const [atk, setAtk] = useState<string>("90");
-  const [spa, setSpa] = useState<string>("90");
   const [moveDetails, setMoveDetails] = useState<any>();
   const specie: string = watch("name");
   const move: string = watch("move");
   const { data, isLoading } = usePokeapiData(specie);
+  const atk = data?.stats?.[1].base_stat.toString() ?? "90";
+  const spa = data?.stats?.[3].base_stat.toString() ?? "90";
 
   const dexList = getCompleteDexNames();
   const itemList = getItemList();
@@ -60,8 +60,6 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
       if (!isLoading && data) {
         const avatarUrl = getAvatarUrl(data?.name, data);
         setAvatar(avatarUrl);
-        setAtk(data.stats?.[1].base_stat.toString() ?? "90");
-        setSpa(data.stats?.[3].base_stat.toString() ?? "90");
         setValue(
           "ability",
           capitalizeEveryWord(
@@ -71,8 +69,6 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
         setValue("avatar", avatarUrl);
       } else {
         setAvatar(undefined);
-        setAtk("90");
-        setSpa("90");
       }
     }
   }, [isLoading]);
