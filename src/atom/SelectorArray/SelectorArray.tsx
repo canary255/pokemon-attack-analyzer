@@ -3,6 +3,7 @@ import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { Text } from "../Text/Text";
 import { limitText } from "../../utils/limitText";
+import { Icon } from "@iconify/react";
 
 interface SelectorProps {
   name: string;
@@ -54,20 +55,20 @@ export const SelectorArray = ({
               refName={field.name}
             >
               <Listbox.Button className={`relative ${className}`}>
-                <div className="grid grid-cols-8">
+                <div className="flex">
                   <span
-                    className={`col-span-5 dark:bg-inputBackground p-2 ${
+                    className={`w-full dark:bg-inputBackground p-2 ${
                       centerText ? "text-center" : ""
                     } border border-black border-r-0 bg-white`}
                   >
                     {field.value}
                   </span>
                   <span
-                    className="flex flex-col col-span-3
+                    className="flex flex-col w-8
                 items-center justify-center focus:border-none
-               bg-white border border-black border-l-0 material-symbols-outlined"
+               bg-white border border-black border-l-0"
                   >
-                    expand_more
+                    <Icon icon="ic:outline-keyboard-arrow-down" fontSize={24} />
                   </span>
                 </div>
                 <Listbox.Options

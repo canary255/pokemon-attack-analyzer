@@ -27,15 +27,13 @@ import { calculate } from "@smogon/calc/dist/calc";
 const defensivePokemonList = getGen9PokemonDefensiveDataList();
 
 const canSurvive = (
-  ko_chance:
-    | {
-        chance?: number;
-        n: number;
-        text: string;
-      }
-    | undefined
+  ko_chance?: {
+    chance?: number;
+    n: number;
+    text: string;
+  }
 ) => {
-  if (!ko_chance || ko_chance.chance === undefined) return "yes";
+  if (!ko_chance || !ko_chance.chance) return "yes";
   if (ko_chance.chance === 1 && ko_chance.n === 1) return "no";
   if (ko_chance.chance < 1 && ko_chance.n === 1) return "barely";
   return "yes";
