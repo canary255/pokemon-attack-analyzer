@@ -63,4 +63,5 @@ export const notAllowedForms = [
   "white",
   "four",
   "both",
+  "tera",
 ];

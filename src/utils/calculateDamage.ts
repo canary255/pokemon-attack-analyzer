@@ -1,7 +1,11 @@
 import { ReportProps } from "../types/reportProps";
 import { getCompleteDexNames } from "./pokemonConsts/lists";
 import React, { SetStateAction } from "react";
-import { CalcData } from "../types/calcData";
+import {
+  CalcData,
+  PokemonCalculatedData,
+  surviveEnum,
+} from "../types/calcData";
 import { CalcList } from "../types/calcList";
 import { getPokemonSprite } from "./getPokemonSprite";
 import { getCancelAction, setCancelAction } from "./cancelAction";
@@ -23,41 +27,21 @@ import {
 } from "@smogon/calc/dist/data/interface";
 import { Move } from "@smogon/calc/dist/move";
 import { calculate } from "@smogon/calc/dist/calc";
+import { inmmunePokemon } from "./calculateDamage/inmmunePokemon";
+import { EXTREME_EV_SPREAD, INMMUNE_POKEMON_SET } from "./consts";
 
 const defensivePokemonList = getGen9PokemonDefensiveDataList();
+const MAX_IV = 31;
 
-const canSurvive = (
-  ko_chance?: {
-    chance?: number;
-    n: number;
-    text: string;
-  }
-) => {
-  if (!ko_chance || !ko_chance.chance) return "yes";
-  if (ko_chance.chance === 1 && ko_chance.n === 1) return "no";
-  if (ko_chance.chance < 1 && ko_chance.n === 1) return "barely";
-  return "yes";
-};
-
-const inmmunePokemon = async (pokemon: any, form: ReportProps) => {
-  return {
-    pokemon: pokemon as string,
-    isInmune: true,
-    canSurvive: "yes",
-    calcExtreme: {
-      description: "You can't hit it bro",
-      damage_range: 0,
-      percent_range: [0, 0],
-      ko_chance: { chance: 0, n: 0, text: "0%" },
-      defender_evs: { atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
-      text_evs: "0/0/0/0/0",
-      move_category: MOVES[MOVES.length - 1][form.move].category,
-    },
-    calcsSet: undefined,
-    img: await getPokemonSprite(
-      pokemon.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    ),
-  } as unknown as CalcData;
+const canSurvive = (ko_chance?: {
+  chance?: number;
+  n: number;
+  text: string;
+}) => {
+  if (!ko_chance || !ko_chance.chance) return surviveEnum.YES;
+  if (ko_chance.chance === 1 && ko_chance.n === 1) return surviveEnum.NO;
+  if (ko_chance.chance < 1 && ko_chance.n === 1) return surviveEnum.BARELY;
+  return surviveEnum.YES;
 };
 
 export const loadDataCalculator = async (
@@ -73,7 +57,7 @@ export const loadDataCalculator = async (
       : getGen9PokemonNames();
 
   setTotalDex(dex.length);
-  const calcsList = [];
+  const calcsList: PokemonCalculatedData[] = [];
   const moveType =
     form.move === "Tera Blast" && form.mechanic === "tera"
       ? form.teraType
@@ -111,15 +95,15 @@ export const loadDataCalculator = async (
     try {
       //STEPS:
       //2 - The pokemon has a set stored
-      const setCalc = await calculateDamageWithSet(normalizedPokemon, form);
+      const setCalc = calculateDamageWithSet(normalizedPokemon, form);
       //3 - Add extreme set
       const extremeCalc = calculateExtremeDamage(normalizedPokemon, form);
       //4 - Add optimal set
       //const optimalCalc = calculateOptimalDamage(pokemon, form);
 
       calcsList.push({
-        pokemon: pokemon as string,
-        isInmune: false,
+        pokemon: pokemon,
+        isInmmune: false,
         calcSet: setCalc,
         calcExtreme: extremeCalc,
         canSurvive: canSurvive(extremeCalc?.ko_chance),
@@ -139,35 +123,26 @@ export const loadDataCalculator = async (
   setResultCalcs(calcsList as any);
 };
 
-const calculateExtremeDamage = (pokemon: any, form: ReportProps) => {
+const calculateExtremeDamage = (pokemon: string, form: ReportProps) => {
   try {
     const defensiveData: PokemonData = {
       item: SPECIES[SPECIES.length - 1][pokemon].nfe ? "Eviolite" : "",
       nature: form.category === "Physical" ? "Bold" : "Calm",
-      evs: "252/0/252/0/252/0",
+      evs: EXTREME_EV_SPREAD,
     };
     return calculateDamage(form, pokemon, defensiveData);
   } catch (e) {
-    return {
-      description: "You can't hit it bro",
-      damage_range: 0,
-      percent_range: [0, 0],
-      ko_chance: { chance: 0, n: 0, text: "0%" },
-      defender_evs: { atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
-      text_evs: "0/0/0/0/0",
-      move_category: MOVES[MOVES.length - 1][form.move].category,
-    };
+    return INMMUNE_POKEMON_SET;
   }
 };
 
-const calculateDamageWithSet = async (pokemon: string, form: ReportProps) => {
+const calculateDamageWithSet = (pokemon: string, form: ReportProps) => {
   //////////////////////////////////////////
   ///////                            ///////
   ///////       SET OBTENTION        ///////
   ///////                            ///////
   //////////////////////////////////////////
-  const defensiveData: PokemonData | undefined =
-    defensivePokemonList.get(pokemon);
+  const defensiveData = defensivePokemonList.get(pokemon);
   if (!defensiveData) return undefined;
   return calculateDamage(form, pokemon, defensiveData);
 };
@@ -181,8 +156,8 @@ const calculateDamage = (
   const LEVEL = 50;
 
   const ATTACKER = new Pokemon(Generations.get(9), form.name, {
-    item: form.item as any,
-    nature: form.nature as any,
+    item: form.item as ItemName,
+    nature: form.nature as NatureName,
     evs: { atk: +form.evAtk, spa: +form.evSpa },
     ivs: { atk: +form.ivAtk, spa: +form.ivSpa },
     boosts: { atk: +form.boostAtk, spa: +form.boostSpa },
@@ -195,7 +170,7 @@ const calculateDamage = (
     item: defensiveData.item as ItemName,
     nature: defensiveData.nature as NatureName,
     evs: { hp: evSpread.hp, def: evSpread.def, spd: evSpread.spd },
-    ivs: { hp: 31, def: 31, spd: 31 },
+    ivs: { hp: MAX_IV, def: MAX_IV, spd: MAX_IV },
     boosts: { def: +form.boostDef, spd: +form.boostSpd },
     level: LEVEL,
   });
@@ -204,7 +179,7 @@ const calculateDamage = (
     ability: form?.ability as AbilityName,
     item: form?.item as ItemName,
     isCrit: form?.crit,
-    hits: +form?.hits,
+    hits: Number(form?.hits),
     useZ: form?.mechanic === "zMove",
     useMax: form?.mechanic === "dynamax",
     overrides: { category: form?.category as MoveCategory },
@@ -253,18 +228,18 @@ const calculateDamage = (
     text_evs: getEvsText(result.defender.evs),
     move_category: result.move.category,
   };
-  return sendData;
+  return sendData as CalcData;
 };
 
 const getEvSpread = (spread: string) => {
   const evs = spread.split("/");
   const evSpread = {
-    hp: +evs[0],
-    atk: +evs[1],
-    def: +evs[2],
-    spa: +evs[3],
-    spd: +evs[4],
-    spe: +evs[5],
+    hp: Number(evs[0]),
+    atk: Number(evs[1]),
+    def: Number(evs[2]),
+    spa: Number(evs[3]),
+    spd: Number(evs[4]),
+    spe: Number(evs[5]),
   };
   return evSpread;
 };

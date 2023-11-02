@@ -6,11 +6,17 @@ export async function getPokemonSprite(name: string) {
   var pokemonName = nameConverter(name).toLowerCase().trim().replace(" ", "-");
   var url = "https://pokeapi.co/api/v2/pokemon/" + pokemonName;
 
-  return await fetch(url)
-    .then((response) => response.json())
-    .then((data: PokeAPIProps) => {
+  try {
+    const request = await fetch(url);
+    if (request.status === 200) {
+      const data: PokeAPIProps = await request.json();
       const frontSprite = getAvatarUrl(name, data);
       return frontSprite;
-    })
-    .catch((error) => console.error(error));
+    }
+  } catch (error) {
+    console.error(error);
+    return undefined;
+  }
+
+  return undefined;
 }
