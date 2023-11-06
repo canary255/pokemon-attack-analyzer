@@ -1,4 +1,4 @@
-import { Terrain } from "../calc/data/interface";
+import { Terrain } from "@smogon/calc/dist/data/interface";
 
 type TerrainProps = {
   name: string;

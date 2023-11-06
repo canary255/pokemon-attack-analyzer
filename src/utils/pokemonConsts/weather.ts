@@ -1,4 +1,4 @@
-import type { Weather } from "../calc/data/interface";
+import { Weather } from "@smogon/calc/dist/data/interface";
 
 type WeatherProps = {
   name: string;

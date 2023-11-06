@@ -23,6 +23,7 @@ import {
   MoveCategory,
   NatureName,
   Terrain,
+  TypeName,
   Weather,
 } from "@smogon/calc/dist/data/interface";
 import { Move } from "@smogon/calc/dist/move";
@@ -30,6 +31,7 @@ import { calculate } from "@smogon/calc/dist/calc";
 import { inmmunePokemon } from "./calculateDamage/inmmunePokemon";
 import { EXTREME_EV_SPREAD, INMMUNE_POKEMON_SET } from "./consts";
 import { nameConverter } from "./pokemonNameConverter";
+import { TypeChart } from "@smogon/calc/dist/data/types";
 
 const defensivePokemonList = getGen9PokemonDefensiveDataList();
 const MAX_IV = 31;
@@ -59,7 +61,7 @@ export const loadDataCalculator = async (
 
   setTotalDex(dex.length);
   const calcsList: PokemonCalculatedData[] = [];
-  const moveType =
+  const moveType: TypeName =
     form.move === "Tera Blast" && form.mechanic === "tera"
       ? form.teraType
       : MOVES[MOVES.length - 1][form.move].type;
@@ -82,16 +84,16 @@ export const loadDataCalculator = async (
     //Uncomment for testing
     //if (i === 30) break;
     setNumberDex(i);
-    const pokemonType = SPECIES[SPECIES.length - 1][normalizedPokemon].types;
-    const typeValue = TYPE_CHART[TYPE_CHART.length - 1];
+    const pokemonType: [TypeName, TypeName?] =
+      SPECIES[SPECIES.length - 1][normalizedPokemon].types;
+    const typeValue: TypeChart = TYPE_CHART[TYPE_CHART.length - 1];
 
     //1 - add type immunity
-
     if (
       typeValue?.[moveType]?.[pokemonType[0]] === 0 ||
       (pokemonType[1] && typeValue?.[moveType]?.[pokemonType[1]] === 0)
     ) {
-      calcsList.push(await inmmunePokemon(pokemon, form));
+      calcsList.push(await inmmunePokemon(pokemon));
       i++;
       continue;
     }
@@ -118,7 +120,7 @@ export const loadDataCalculator = async (
           )),
       });
     } catch (error) {
-      calcsList.push(await inmmunePokemon(pokemon, form));
+      calcsList.push(await inmmunePokemon(pokemon));
     } finally {
       i++;
     }

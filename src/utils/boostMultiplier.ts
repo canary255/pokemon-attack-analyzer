@@ -1,5 +1,5 @@
 export const getBoostMultiplier = (boost: string) => {
-  const numericBoost = +boost;
+  const numericBoost = Number(boost);
   if (numericBoost === -6) return 1 / 4;
   if (numericBoost === -5) return 2 / 7;
   if (numericBoost === -4) return 1 / 3;

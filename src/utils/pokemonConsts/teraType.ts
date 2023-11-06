@@ -1,4 +1,4 @@
-import type { TypeName } from "../calc/data/interface";
+import { TypeName } from "@smogon/calc/dist/data/interface";
 
 type TypeProps = {
   name: string;
