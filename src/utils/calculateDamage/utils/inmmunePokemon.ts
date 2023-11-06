@@ -1,6 +1,6 @@
-import { getPokemonSprite } from "../getPokemonSprite";
-import { PokemonCalculatedData, surviveEnum } from "../../types/calcData";
-import { INMMUNE_POKEMON_SET } from "../consts";
+import { getPokemonSprite } from "../../getPokemonSprite";
+import { PokemonCalculatedData, surviveEnum } from "../../../types/calcData";
+import { INMMUNE_POKEMON_SET } from "../../consts";
 
 export const inmmunePokemon = async (pokemon: string) => {
   return {
