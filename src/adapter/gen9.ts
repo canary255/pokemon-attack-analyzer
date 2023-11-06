@@ -10,11 +10,12 @@ export const getGen9PokemonNames = () => {
 export const getGen9PokemonDefensiveDataList = () => {
   const list: Map<string, PokemonData> = new Map<string, PokemonData>();
   gen9Pokedex.forEach((pokemon) => {
-    const { name, item, evs, nature } = pokemon;
+    const { name, item, evs, nature, img } = pokemon;
     list.set(name, {
       item: item ?? "",
       evs: evs ?? "0/0/0/0/0/0",
       nature: nature ?? "Hardy",
+      img: img ?? "",
     });
   });
   return list;

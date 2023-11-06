@@ -29,6 +29,7 @@ import { Move } from "@smogon/calc/dist/move";
 import { calculate } from "@smogon/calc/dist/calc";
 import { inmmunePokemon } from "./calculateDamage/inmmunePokemon";
 import { EXTREME_EV_SPREAD, INMMUNE_POKEMON_SET } from "./consts";
+import { nameConverter } from "./pokemonNameConverter";
 
 const defensivePokemonList = getGen9PokemonDefensiveDataList();
 const MAX_IV = 31;
@@ -66,6 +67,9 @@ export const loadDataCalculator = async (
   let i = 1;
   for (const pokemon of dex) {
     const normalizedPokemon = pokemon.normalize("NFD");
+    const getPokemonImageFromJson = defensivePokemonList.get(
+      nameConverter(normalizedPokemon)
+    )?.img;
 
     const isCancelledAction = getCancelAction();
     if (isCancelledAction) {
@@ -107,9 +111,11 @@ export const loadDataCalculator = async (
         calcSet: setCalc,
         calcExtreme: extremeCalc,
         canSurvive: canSurvive(extremeCalc?.ko_chance),
-        img: await getPokemonSprite(
-          normalizedPokemon.replace(/[\u0300-\u036f]/g, "")
-        ),
+        img:
+          getPokemonImageFromJson ??
+          (await getPokemonSprite(
+            normalizedPokemon.replace(/[\u0300-\u036f]/g, "")
+          )),
       });
     } catch (error) {
       calcsList.push(await inmmunePokemon(pokemon, form));
