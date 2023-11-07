@@ -1,4 +1,4 @@
-import { Terrain, TypeName, Weather } from "../utils/calc/data/interface";
+import { Terrain, TypeName, Weather } from "@smogon/calc/dist/data/interface";
 
 export type ReportProps = {
   name: string;
