@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { PokeAPIProps } from "../types/pokeAPIProps";
 import { nameConverter } from "../utils/pokemonNameConverter";
 import { useCustomSWR } from "./useCustomSWR";
