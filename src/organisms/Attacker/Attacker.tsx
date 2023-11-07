@@ -93,7 +93,7 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
           <div className=" grid place-items-center sm:grid-rows-3 min-[315px]:grid-cols-1 gap-y-2 xl:w-[90%]">
             {localStorage.getItem("pokemonSetData") && (
               <Button
-                className="w-full"
+                className="w-full rounded-lg"
                 onClick={() => handleRestore()}
                 label="Restore last set"
               ></Button>

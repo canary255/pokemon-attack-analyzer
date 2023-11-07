@@ -23,3 +23,8 @@
   border-radius: 15px;
   border: 1px solid #909090;
 }
+
+@font-face {
+  font-family: "Pokemon";
+  src: url("./fonts/PokemonGb-RAeo.ttf");
+}

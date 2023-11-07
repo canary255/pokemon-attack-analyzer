@@ -59,7 +59,7 @@ export const ComboBoxUI = ({
               <Combobox.Input
                 className={` dark:bg-inputBackground${
                   centerText ? "text-center" : ""
-                } p-2 w-full border border-black`}
+                } p-2 w-full border border-black rounded-lg`}
                 onChange={(event) => setQuery(event.target.value)}
               />
 

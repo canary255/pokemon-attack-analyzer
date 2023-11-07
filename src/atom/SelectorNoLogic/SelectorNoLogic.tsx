@@ -53,14 +53,14 @@ export const SelectorNoLogic = ({
               <span
                 className={`w-full dark:bg-inputBackground p-2 ${
                   centerText ? "text-center" : "flex justify-start"
-                } border border-black border-r-0 bg-white `}
+                } border border-black border-r-0 bg-white rounded-lg rounded-r-none`}
               >
                 {limitText(t(getTitle(value)) ?? "")}
               </span>
               <span
                 className="flex flex-col w-8 dark:bg-inputBackground
                 items-center justify-center focus:border-none
-               bg-white border border-black border-l-0"
+               bg-white border border-black border-l-0 rounded-lg rounded-l-none"
               >
                 <Icon icon="ic:outline-keyboard-arrow-down" fontSize={24} />
               </span>
