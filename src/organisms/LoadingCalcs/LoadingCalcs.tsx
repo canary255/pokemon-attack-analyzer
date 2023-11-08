@@ -4,6 +4,8 @@ import { Carousel } from "../../molecules/Carousel/Carousel";
 import { LoadingBar } from "../../molecules/LoadingBar/LoadingBar";
 import { Button } from "../../atom/Button/Button";
 import { setCancelAction } from "../../utils/cancelAction";
+import { CircularProgressbarWithChildren } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
 interface LoadingCalcsProps {
   numberDex: number;
@@ -26,12 +28,12 @@ export const LoadingCalcs = ({
       </Text>
       {/*<Carousel />*/}
       <div className="flex flex-col items-center gap-y-16">
-        <img
-          className={`w-[20%] h-[20%] flex-none`}
-          src={avatar}
-          alt="Rounded avatar"
-        />
-        <LoadingBar width={isNaN(percentage) ? "0" : percentage.toFixed(2)} />
+        <CircularProgressbarWithChildren value={percentage}>
+          <img src={avatar} alt="Rounded avatar" />
+          <div className="text-xl">
+            <strong>{percentage.toFixed(2)}%</strong>
+          </div>
+        </CircularProgressbarWithChildren>
         <Button
           name="cancel"
           label={t("message.cancelProcess")}

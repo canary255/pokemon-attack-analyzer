@@ -35,19 +35,19 @@ export const RadioGroupUI = ({
       control={control}
       defaultValue={options ? options[0].value : ""}
       render={({ field }) => (
-        <>
+        <div className={`flex flex-col gap-y-1 ${className}`}>
           {label && <Text>{label}</Text>}
           <RadioGroup
             defaultValue={field.value}
             onChange={field.onChange}
-            className={`flex flex-row ${className}`}
+            className={`flex`}
           >
             {options
               ? options?.map((option, index) => (
                   <RadioGroup.Option
                     key={index}
                     value={option.value}
-                    className={`h-7 p-3 flex items-center justify-center border cursor-pointer border-black col-span-1
+                    className={`h-7 p-3 flex w-full items-center justify-center border cursor-pointer border-black col-span-1
             ${borderDirection[setBorderDirection(index, options?.length)]}
              ${
                value === option.value
@@ -72,7 +72,7 @@ export const RadioGroupUI = ({
                 ))
               : null}
           </RadioGroup>
-        </>
+        </div>
       )}
     />
   );

@@ -33,7 +33,7 @@ export const TextFieldCommon = ({
         placeholder={placeholder}
         onChange={onChange}
         value={value}
-        className={`border sm:p-2 min-[315px]:p-1 border-black rounded-lg
+        className={`border  min-[315px]:p-1 border-black rounded-lg px-2 py-1
               ${
                 readOnly
                   ? "bg-transparent border-none"

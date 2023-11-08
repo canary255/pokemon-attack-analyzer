@@ -83,66 +83,49 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
 
   return (
     <>
-      <div className="flex flex-col p-4">
-        <div className="grid lg:grid-cols-2 md:grid-cols-1 justify-center gap-x-16 gap-y-4">
+      <div className="flex flex-col px-12 py-4 gap-y-4">
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 justify-center gap-x-1 gap-y-8 w-full">
           <Avatar
             url={avatar}
             teratype={watch("teraType")}
-            className="flex flex-row justify-center mt-5"
+            className="flex flex-row justify-center"
           />
-          <div className=" grid place-items-center sm:grid-rows-3 min-[315px]:grid-cols-1 gap-y-2 xl:w-[90%]">
+          <div className=" grid place-items-center sm:grid-rows-2 min-[315px]:grid-cols-1 gap-y-2 px-4">
             {localStorage.getItem("pokemonSetData") && (
               <Button
-                className="w-full rounded-lg"
+                className="rounded-lg w-full"
                 onClick={() => handleRestore()}
                 label="Restore last set"
               ></Button>
             )}
             <ComboBoxUI
               options={dexList}
-              className="w-full"
               name="name"
               label={t("attacker.selectPokemon")}
             />
-            <div className="w-full">
-              <SelectorUI
-                options={teraType}
-                name="teraType"
-                label={t("attacker.selectTeraType")}
-              />
-            </div>
           </div>
         </div>
-        <div className="mt-3 grid place-items-center p-2 sm:grid-cols-2 gap-x-2">
+        <div className="grid place-items-center sm:grid-cols-2 gap-y-2 gap-x-8 ">
           <ComboBoxUI
             options={abilityList}
             name="ability"
+            className="w-full"
             label={t("attacker.selectAbility")}
           />
           <ComboBoxUI
             options={itemList}
             name="item"
+            className="w-full"
             label={t("attacker.selectItem")}
           />
-        </div>
-        <div className="mt-6">
-          <RadioGroupUI
-            className="w-full justify-center"
-            name="mechanic"
-            options={mechanic}
+          <SelectorUI
+            className="w-full"
+            name="nature"
+            options={nature}
+            label={t("attacker.nature")}
           />
         </div>
-        <div className="mt-3  place-items-center gap-x-2">
-          <div className="xl:px-32 px-12 ">
-            <SelectorUI
-              className="col-span-5"
-              name="nature"
-              options={nature}
-              label={t("attacker.nature")}
-            />
-          </div>
-        </div>
-        <div className="mt-3 grid w-full place-items-center sm:grid-cols-12 gap-x-6">
+        <div className="grid w-full  sm:grid-cols-12 gap-2">
           <div className="col-span-6">
             <ComboBoxUI
               options={moveList}
@@ -172,7 +155,19 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
             name="crit"
           />
         </div>
-        <div className="mt-3 grid place-items-center sm:mb-4 gap-x-2">
+        <RadioGroupUI
+          label={t("attacker.selectMechanic") ?? ""}
+          className="w-full"
+          name="mechanic"
+          options={mechanic}
+        />
+        <SelectorUI
+          options={teraType}
+          name="teraType"
+          label={t("attacker.selectTeraType")}
+        />
+
+        <div className="py-4 sm:mb-4 gap-x-2">
           <Stats atk={atk} spa={spa} />
         </div>
       </div>

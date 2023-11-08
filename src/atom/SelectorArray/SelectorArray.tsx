@@ -57,16 +57,16 @@ export const SelectorArray = ({
               <Listbox.Button className={`relative ${className}`}>
                 <div className="flex">
                   <span
-                    className={`w-full dark:bg-inputBackground p-2 ${
+                    className={`w-full dark:bg-inputBackground px-2 py-1 ${
                       centerText ? "text-center" : ""
-                    } border border-black border-r-0 bg-white`}
+                    } border border-black border-r-0 bg-white rounded-lg rounded-r-none`}
                   >
                     {field.value}
                   </span>
                   <span
                     className="flex flex-col w-8
                 items-center justify-center focus:border-none
-               bg-white border border-black border-l-0"
+               bg-white border border-black border-l-0 rounded-lg rounded-l-none"
                   >
                     <Icon icon="ic:outline-keyboard-arrow-down" fontSize={24} />
                   </span>

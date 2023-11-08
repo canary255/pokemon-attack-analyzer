@@ -13,15 +13,15 @@ export const Avatar = ({ className, url, teratype }: AvatarProps) => {
     <>
       <div className={className}>
         <div
-          className={`relative w-48 h-48 flex flex-row justify-center items-center border border-black rounded-full bg-cyan-200 dark:bg-sky-700`}
+          className={`relative w-28 h-28 flex flex-row justify-center items-center border border-black rounded-full bg-cyan-200 dark:bg-sky-700`}
         >
           <img
-            className={`w-[70%] h-[70%] `}
+            className={`w-[95%] h-[95%] `}
             src={url ?? missingno}
             alt="Rounded avatar"
           />
           <img
-            className="absolute top-32 left-40 w-16 h-16"
+            className="absolute top-16 left-16 w-12 h-12"
             src={teratypeImage(teratype)}
           />
         </div>
