@@ -57,7 +57,7 @@ export const RadioGroupUI = ({
                   >
                     {
                       <span
-                        className={`sm:text-sm min-[315px]:text-[10px] 
+                        className={`sm:text-sm min-[315px]:text-[10px] truncate
               ${borderDirection[setBorderDirection(index, options?.length)]}
                 ${
                   value === option.value
