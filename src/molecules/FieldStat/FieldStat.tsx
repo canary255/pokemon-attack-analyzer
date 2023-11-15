@@ -40,7 +40,12 @@ export const FieldStats = ({
         readOnly
         value={getStat(base, ev, iv, boostStat, nature, isPhysical)}
       />
-      <SelectorUI options={boost} selectorAbove name={boostName} />
+      <SelectorUI
+        className="w-fit"
+        options={boost}
+        selectorAbove
+        name={boostName}
+      />
     </div>
   );
 };
