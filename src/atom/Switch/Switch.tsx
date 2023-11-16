@@ -25,7 +25,7 @@ export const SwitchUI = ({
         <Switch
           checked={field.value}
           onChange={field.onChange}
-          className={`items-center min-[315px]:p-1 sm:p-2 shadow-lg 
+          className={`items-center dark:  border-black min-[315px]:p-1 sm:p-2 shadow-lg 
           ${className}
       ${borderDirection[circleBorder]} 
       ${field.value ? "bg-primary" : "bg-white"}`}

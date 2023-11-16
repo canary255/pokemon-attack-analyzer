@@ -61,6 +61,7 @@ export const ComboBoxUI = ({
                   centerText ? "text-center" : ""
                 } px-2 py-1 w-full border border-black rounded-lg shadow-lg`}
                 onChange={(event) => setQuery(event.target.value)}
+                autoComplete="off"
               />
 
               {filteredArray && (

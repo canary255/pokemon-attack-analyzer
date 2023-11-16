@@ -25,7 +25,7 @@
     "item": "Wellspring Mask",
     "evs": "252/76/100/0/20/60",
     "nature": "Adamant",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10273.png"
   },
   {
     "name": "Heatran",
@@ -60,7 +60,7 @@
     "item": "Hearthflame Mask",
     "evs": "244/116/68/0/4/76",
     "nature": "Adamant",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10274.png"
   },
   {
     "name": "Amoonguss",
@@ -74,7 +74,7 @@
     "item": "Covert Cloak",
     "evs": "252/0/252/0/4/0",
     "nature": "Bold",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/641.png"
   },
   {
     "name": "Chi-Yu",
@@ -137,14 +137,14 @@
     "item": "Focus Sash",
     "evs": "4/252/0/0/0/252",
     "nature": "Adamant",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/892.png"
   },
   {
     "name": "Indeedee-F",
     "item": "Psychic Seed",
     "evs": "252/0/252/0/4/0",
     "nature": "Relaxed",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10186.png"
   },
   {
     "name": "Cresselia",
@@ -158,7 +158,7 @@
     "item": "Life Orb",
     "evs": "252/0/0/252/4/0",
     "nature": "Quiet",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10272.png"
   },
   {
     "name": "Dondozo",
@@ -186,7 +186,7 @@
     "item": "Rocky Helmet",
     "evs": "252/0/4/0/252/0",
     "nature": "Sassy",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1013.png"
   },
   {
     "name": "Armarouge",
@@ -221,7 +221,7 @@
     "item": "Cornerstone Mask",
     "evs": "4/252/0/0/0/252",
     "nature": "Adamant",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10275.png"
   },
   {
     "name": "Baxcalibur",
@@ -263,7 +263,7 @@
     "item": "Leftovers",
     "evs": "148/180/4/0/116/60",
     "nature": "Adamant",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1014.png"
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1014.png"
   },
   {
     "name": "Milotic",
@@ -319,7 +319,7 @@
     "item": "Choice Band",
     "evs": "20/236/4/0/28/220",
     "nature": "Adamant",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1017.png"
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1017.png"
   },
   {
     "name": "Gastrodon",
@@ -375,7 +375,7 @@
     "item": "Covert Cloak",
     "evs": "252/0/156/0/100/0",
     "nature": "Bold",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/642.png"
   },
   {
     "name": "Volcarona",
@@ -424,7 +424,7 @@
     "item": "Life Orb",
     "evs": "212/0/0/116/0/180",
     "nature": "Modest",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/645.png"
   },
   {
     "name": "Zapdos-Galar",
@@ -536,7 +536,7 @@
     "item": "Sitrus Berry",
     "evs": "228/0/60/12/36/172",
     "nature": "Timid",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1016.png"
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1016.png"
   },
   {
     "name": "Mamoswine",
@@ -550,7 +550,7 @@
     "item": "Assault Vest",
     "evs": "4/220/204/0/4/76",
     "nature": "Adamant",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/902.png"
   },
   {
     "name": "Politoed",
@@ -620,7 +620,7 @@
     "item": "Focus Sash",
     "evs": "4/0/12/252/4/236",
     "nature": "Modest",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1015.png"
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1015.png"
   },
   {
     "name": "Snorlax",
@@ -718,7 +718,7 @@
     "item": "Assault Vest",
     "evs": "252/84/108/44/0/20",
     "nature": "Quiet",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/905.png"
   },
   {
     "name": "Wo-Chien",
@@ -809,7 +809,7 @@
     "item": "Rocky Helmet",
     "evs": "52/236/44/0/4/172",
     "nature": "Adamant",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png"
   },
   {
     "name": "Slowbro",
@@ -851,7 +851,7 @@
     "item": "Mirror Herb",
     "evs": "212/76/4/0/116/100",
     "nature": "Adamant",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10251.png"
   },
   {
     "name": "Klefki",
@@ -1019,7 +1019,7 @@
     "item": "Focus Sash",
     "evs": "4/252/0/0/0/252",
     "nature": "Jolly",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png"
   },
   {
     "name": "Ludicolo",
@@ -1096,7 +1096,7 @@
     "item": "Eviolite",
     "evs": "252/0/76/0/180/0",
     "nature": "Calm",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1011.png"
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1011.png"
   },
   {
     "name": "Drifblim",
@@ -1124,7 +1124,7 @@
     "item": "Choice Specs",
     "evs": "4/0/0/252/0/252",
     "nature": "Modest",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/876.png"
   },
   {
     "name": "Mienshao",
@@ -1261,7 +1261,7 @@
   },
   {
     "name": "Tauros-Paldea-Aqua",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10252.png"
   },
   {
     "name": "Kilowattrel",
@@ -1325,7 +1325,7 @@
   },
   {
     "name": "Toxtricity",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/849.png"
   },
   {
     "name": "Charjabug",
@@ -1389,7 +1389,7 @@
   },
   {
     "name": "Basculegion-F",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10248.png"
   },
   {
     "name": "Slowbro-Galar",
@@ -1605,7 +1605,7 @@
   },
   {
     "name": "Morpeko",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/877.png"
   },
   {
     "name": "Mismagius",
@@ -1661,7 +1661,7 @@
   },
   {
     "name": "Tauros-Paldea-Combat",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10250.png"
   },
   {
     "name": "Azelf",
@@ -1717,7 +1717,7 @@
   },
   {
     "name": "Poltchageist",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1012.png"
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1012.png"
   },
   {
     "name": "Marill",
@@ -1753,7 +1753,7 @@
   },
   {
     "name": "Eiscue",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/875.png"
   },
   {
     "name": "Lycanroc-Midnight",
@@ -1845,7 +1845,7 @@
   },
   {
     "name": "Oricorio-Pa'u",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10124.png"
   },
   {
     "name": "Skrelp",
@@ -1869,7 +1869,7 @@
   },
   {
     "name": "Flabébé",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/669.png"
   },
   {
     "name": "Falinks",
@@ -1913,11 +1913,11 @@
   },
   {
     "name": "Basculin",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10016.png"
   },
   {
     "name": "Oinkologne-F",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10254.png"
   },
   {
     "name": "Sudowoodo",
@@ -1961,7 +1961,7 @@
   },
   {
     "name": "Oricorio",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/741.png"
   },
   {
     "name": "Naclstack",

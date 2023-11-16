@@ -59,6 +59,13 @@ export const nameConverter = (name: string) => {
   if (name === "Morpeko") {
     return name + "-Full-Belly";
   }
+  if (
+    name === "Ogerpon-Wellspring" ||
+    name === "Ogerpon-Hearthflame" ||
+    name === "Ogerpon-Cornerstone"
+  ) {
+    return name + "-Mask";
+  }
 
   return name;
 };
