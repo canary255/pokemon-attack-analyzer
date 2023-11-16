@@ -28,7 +28,7 @@ export const SwitchUI = ({
           className={`items-center min-[315px]:p-1 sm:p-2 shadow-lg 
           ${className}
       ${borderDirection[circleBorder]} 
-      ${field.value ? "bg-primary" : "bg-gray-200"}`}
+      ${field.value ? "bg-primary" : "bg-white"}`}
         >
           <span
             className={`transition min-[315px]:text-xs sm:text-sm  ${

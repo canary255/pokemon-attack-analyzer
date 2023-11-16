@@ -8,7 +8,7 @@ interface LayoutProps {
 export const Layout = ({ children }: LayoutProps) => {
   return (
     <>
-      <div className="text-sm">
+      <div className="flex flex-col text-sm h-screen bg-gray-200 dark:bg-darkGray">
         <Header />
         {children}
       </div>

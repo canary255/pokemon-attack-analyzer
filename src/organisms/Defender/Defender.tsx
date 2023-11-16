@@ -20,7 +20,7 @@ export const Defender = () => {
   const margin = "";
   return (
     <>
-      <div className="flex flex-col py-6 gap-y-1">
+      <div className="flex flex-col pt-6 pb-5 gap-y-1">
         <div className="flex flex-col gap-y-3">
           <div className={`grid place-items-center`}>
             <RadioGroupUI
@@ -132,7 +132,7 @@ export const Defender = () => {
             <SwitchUI label={t("button.reflect")} name="reflect" />
             <SwitchUI label={t("button.auroraVeil")} name="auroraVeil" />
           </div>
-          <div className="grid grid-cols-4 px-4 gap-x-4 min-[315px]:mb-4">
+          <div className="grid grid-cols-4 px-4 gap-x-4">
             <SwitchUI label={t("button.battery")} name="battery" />
             <RadioGroupUI
               className="col-span-2"
