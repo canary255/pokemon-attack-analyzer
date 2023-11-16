@@ -59,12 +59,12 @@ export const SelectorArray = ({
                   <span
                     className={`w-full dark:bg-inputBackground px-2 py-1 ${
                       centerText ? "text-center" : ""
-                    } border border-black border-r-0 bg-white rounded-lg rounded-r-none`}
+                    } border border-black border-r-0 bg-white rounded-lg rounded-r-none shadow-lg `}
                   >
                     {field.value}
                   </span>
                   <span
-                    className="flex flex-col w-8
+                    className="flex flex-col w-8 dark:bg-inputBackground
                 items-center justify-center focus:border-none
                bg-white border border-black border-l-0 rounded-lg rounded-l-none"
                   >

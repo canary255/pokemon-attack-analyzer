@@ -47,23 +47,32 @@ export const RadioGroupUI = ({
                   <RadioGroup.Option
                     key={index}
                     value={option.value}
-                    className={`h-7 p-3 flex w-full items-center justify-center border cursor-pointer border-black col-span-1
-            ${borderDirection[setBorderDirection(index, options?.length)]}
-             ${
-               value === option.value
-                 ? "bg-primary text-white"
-                 : "bg-white text-black dark:bg-inputBackground"
-             }`}
+                    className={`h-7 p-3 flex w-full items-center justify-center border cursor-pointer
+                     border-black col-span-1 shadow-lg 
+                    ${
+                      borderDirection[
+                        setBorderDirection(index, options?.length)
+                      ]
+                    }
+                    ${
+                      value === option.value
+                        ? "bg-primary text-white"
+                        : "bg-white text-black dark:bg-inputBackground"
+                    }`}
                   >
                     {
                       <span
                         className={`sm:text-sm min-[315px]:text-[10px] truncate
-              ${borderDirection[setBorderDirection(index, options?.length)]}
-                ${
-                  value === option.value
-                    ? "bg-primary text-white font-medium"
-                    : "text-black"
-                }`}
+                        ${
+                          borderDirection[
+                            setBorderDirection(index, options?.length)
+                          ]
+                        }
+                          ${
+                            value === option.value
+                              ? "bg-primary text-white font-medium"
+                              : "text-black"
+                          }`}
                       >
                         {t(option.name)}
                       </span>

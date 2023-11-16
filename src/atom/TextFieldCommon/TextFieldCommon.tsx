@@ -37,7 +37,7 @@ export const TextFieldCommon = ({
               ${
                 readOnly
                   ? "bg-transparent border-none"
-                  : "bg-white dark:bg-inputBackground"
+                  : "bg-white dark:bg-inputBackground shadow-lg "
               }
               ${centerText ? "text-center" : ""}
                ${className}`}

@@ -13,7 +13,8 @@ export const Avatar = ({ className, url, teratype }: AvatarProps) => {
     <>
       <div className={className}>
         <div
-          className={`relative w-28 h-28 flex flex-row justify-center items-center border border-black rounded-full bg-cyan-200 dark:bg-sky-700`}
+          className={`relative w-28 h-28 flex flex-row justify-center items-center 
+          border border-black rounded-full bg-cyan-200 dark:bg-sky-700 shadow-lg `}
         >
           <img
             className={`w-[95%] h-[95%] `}

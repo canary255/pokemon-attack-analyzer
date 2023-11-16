@@ -53,7 +53,7 @@ export const SelectorNoLogic = ({
               <span
                 className={`w-full dark:bg-inputBackground px-2 py-1 ${
                   centerText ? "text-center" : "flex justify-start"
-                } border border-black border-r-0 bg-white rounded-lg rounded-r-none`}
+                } border border-black border-r-0 bg-white rounded-lg rounded-r-none shadow-lg`}
               >
                 {limitText(t(getTitle(value)) ?? "")}
               </span>

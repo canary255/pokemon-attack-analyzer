@@ -20,7 +20,8 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      className={`${className} ${borderDirection[circleBorder]} px-2 py-1 border border-black bg-primary text-white`}
+      className={`${className} ${borderDirection[circleBorder]} px-2 py-1 border border-black 
+      bg-primary text-white shadow-lg`}
       name={name}
       type={type}
       onClick={onClick}
