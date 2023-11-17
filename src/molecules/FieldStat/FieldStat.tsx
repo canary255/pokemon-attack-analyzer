@@ -2,7 +2,11 @@ import { useFormContext } from "react-hook-form";
 import { Text } from "../../atom/Text/Text";
 import { SelectorUI } from "../../atom/Selector/Selector";
 import { TextField } from "../../atom/Textfield/TextField";
-import { getStat } from "../../utils/getStat";
+import {
+  getPhysicalNatureMultiplier,
+  getSpecialNatureMultiplier,
+  getStat,
+} from "../../utils/getStat";
 import { boost } from "../../utils/pokemonConsts";
 import { TextFieldCommon } from "../../atom/TextFieldCommon/TextFieldCommon";
 
@@ -30,6 +34,27 @@ export const FieldStats = ({
   const boostStat = values[boostName];
   const nature = values["nature"];
 
+  const getColorNatureStat = () => {
+    const natureBoost = isPhysical
+      ? getPhysicalNatureMultiplier(nature)
+      : getSpecialNatureMultiplier(nature);
+
+    if (natureBoost === 1.1) {
+      return {
+        class: "text-red-500 font-bold",
+        symbol: "⬆",
+      };
+    }
+    if (natureBoost === 0.9) {
+      return {
+        class: "text-blue-400 font-bold",
+        symbol: "⬇",
+      };
+    }
+  };
+
+  const statReference = getColorNatureStat();
+
   return (
     <div className="grid grid-cols-6 gap-x-2 ">
       <Text className="py-1">{categoryName}</Text>
@@ -38,6 +63,7 @@ export const FieldStats = ({
       <TextField name={evName} maxLength={3} maxNumber={252} onlyNumber />
       <TextFieldCommon
         readOnly
+        className={statReference?.class}
         value={getStat(base, ev, iv, boostStat, nature, isPhysical)}
       />
       <SelectorUI
