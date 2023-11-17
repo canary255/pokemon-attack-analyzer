@@ -2,6 +2,7 @@ import { MOVES, SPECIES, ITEMS, ABILITIES } from "@smogon/calc";
 import { notAllowedForms } from "./notAllowedForms";
 import { SpeciesData } from "@smogon/calc/dist/data/species";
 import { MoveData } from "@smogon/calc/dist/data/moves";
+import { notAllowedPokemon } from "./notAllowedPokemon";
 
 const moveMap = new Map(Object.entries(MOVES[MOVES.length - 1]));
 const moveList: (MoveData & { name: string })[] = [];
@@ -16,7 +17,11 @@ export const getCompleteDex = () => {
   map.forEach((value, key) => {
     const form = key.split("-");
     const notAllowed = form[form.length - 1].toLowerCase();
-    if (form.length > 1 && notAllowedForms.includes(notAllowed)) return;
+    if (
+      (form.length > 1 && notAllowedForms.includes(notAllowed)) ||
+      notAllowedPokemon.includes(key)
+    )
+      return;
     list.push({ ...value, name: key });
   });
   return list;
