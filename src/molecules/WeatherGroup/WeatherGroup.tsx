@@ -79,7 +79,7 @@ export const WeatherGroup = ({ name, label, className }: RadioGroupProps) => {
                 >
                   {
                     <span
-                      className={`sm:text-sm min-[315px]:text-[10px] 
+                      className={`sm:text-sm min-[315px]:text-[10px] truncate
               ${
                 borderDirection[
                   setBorderDirection(index, strongWeather?.length)

@@ -85,11 +85,7 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
     <>
       <div className="flex flex-col px-12 py-4 gap-y-4">
         <div className="grid lg:grid-cols-2 md:grid-cols-1 justify-center gap-x-6 gap-y-8 w-full">
-          <Avatar
-            url={avatar}
-            teratype={watch("teraType")}
-            className="flex flex-row justify-center"
-          />
+          <Avatar url={avatar} className="flex flex-row justify-center" />
           <div className=" grid place-items-center sm:grid-rows-2 min-[315px]:grid-cols-1 gap-y-2 ">
             {localStorage.getItem("pokemonSetData") && (
               <Button
@@ -161,11 +157,13 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
           name="mechanic"
           options={mechanic}
         />
-        <SelectorUI
-          options={teraType}
-          name="teraType"
-          label={t("attacker.selectTeraType")}
-        />
+        {watch("mechanic") === "tera" && (
+          <SelectorUI
+            options={teraType}
+            name="teraType"
+            label={t("attacker.selectTeraType")}
+          />
+        )}
 
         <div className="py-4 gap-x-2">
           <Stats atk={atk} spa={spa} />

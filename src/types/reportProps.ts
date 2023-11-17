@@ -1,4 +1,5 @@
 import { Terrain, TypeName, Weather } from "@smogon/calc/dist/data/interface";
+import { Mechanic } from "./mechanic";
 
 export type ReportProps = {
   name: string;
@@ -8,7 +9,7 @@ export type ReportProps = {
   item: string;
   move: string;
   category: string;
-  mechanic: string;
+  mechanic: Mechanic;
   crit: boolean;
   //baseAtk: string;
   boostAtk: string;

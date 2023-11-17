@@ -1,3 +1,4 @@
+import { Mechanic } from "../types/mechanic";
 import { ReportProps } from "../types/reportProps";
 
 export const reportInitialState: ReportProps = {
@@ -7,7 +8,7 @@ export const reportInitialState: ReportProps = {
   nature: "modest",
   item: "",
   move: "Absorb",
-  mechanic: "none",
+  mechanic: Mechanic.none,
   category: "Special",
   crit: false,
   boostAtk: "0",
@@ -53,7 +54,7 @@ export const testingSet: ReportProps = {
   nature: "modest",
   item: "Choice Scarf",
   move: "Hyper Beam",
-  mechanic: "tera",
+  mechanic: Mechanic.terastal,
   category: "Special",
   crit: false,
   boostAtk: "0",
