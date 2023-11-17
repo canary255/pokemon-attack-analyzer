@@ -71,7 +71,7 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
         setAvatar(undefined);
       }
     }
-  }, [isLoading]);
+  }, [isLoading, specie]);
 
   const handleRestore = () => {
     const data = localStorage.getItem("pokemonSetData");
