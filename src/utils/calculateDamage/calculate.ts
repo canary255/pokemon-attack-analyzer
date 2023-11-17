@@ -66,7 +66,6 @@ export const calculateDamage = (
     gameType: form.target as GameType,
     defenderSide: {
       isAuroraVeil: form.auroraVeil,
-      isBattery: form.battery,
       isFriendGuard: form.friendGuard,
       isReflect: form.reflect,
       isLightScreen: form.lightScreen,
@@ -79,6 +78,7 @@ export const calculateDamage = (
     attackerSide: {
       isHelpingHand: form.helpingHand,
       isTailwind: form.tailwind,
+      isBattery: form.battery,
     },
   });
 

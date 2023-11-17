@@ -78,8 +78,9 @@ export const loadDataCalculator = async (
 
     //1 - add type immunity
     if (
-      typeValue?.[moveType]?.[pokemonType[0]] === 0 ||
-      (pokemonType[1] && typeValue?.[moveType]?.[pokemonType[1]] === 0)
+      !form.foresight &&
+      (typeValue?.[moveType]?.[pokemonType[0]] === 0 ||
+        (pokemonType[1] && typeValue?.[moveType]?.[pokemonType[1]] === 0))
     ) {
       calcsList.push(await inmmunePokemon(pokemon));
       i++;

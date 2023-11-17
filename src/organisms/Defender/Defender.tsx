@@ -20,7 +20,7 @@ export const Defender = () => {
   const margin = "";
   return (
     <>
-      <div className="flex flex-col pt-6 pb-5 gap-y-1">
+      <div className="flex flex-col pt-6 pb-4 gap-y-1">
         <div className="flex flex-col gap-y-3">
           <div className={`grid place-items-center`}>
             <RadioGroupUI
