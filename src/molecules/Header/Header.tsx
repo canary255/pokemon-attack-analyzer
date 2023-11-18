@@ -1,6 +1,7 @@
 import { Switch } from "@headlessui/react";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import pokeball from "../../assets/const/Pokeball.png";
 
 interface HeaderProps {
   children?: React.ReactNode;
@@ -37,29 +38,18 @@ export const Header = ({ children }: HeaderProps) => {
   };
 
   return (
-    <div className="p-4 sticky z-10 top-0 grid grid-cols-4 content-center bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-blue-600 dark:to-cyan-900 h-16 w-full">
-      <p className="text-white md:text-3xl sm:text-2xl max-[315px]:text-md col-span-2 p-4">
+    <div className="pl-4 sticky z-10 top-0 grid grid-cols-4 content-center bg-gradient-to-r from-blue-600 to-cyan-900 h-16 w-full">
+      <p className="flex font-bebas brondan items-center text-white md:text-4xl sm:text-2xl max-[315px]:text-md col-span-2">
         Pokémon Attack Analyzer
       </p>
 
-      <div className="grid grid-cols-2 col-span-2">
-        <div className="flex flex-row justify-center items-center w-full h-full p-4">
-          <select
-            value={i18n.language}
-            onChange={(e) => changeLanguageHandler(e.target.value)}
-            className="w-20 h-10 border border-black rounded-md"
-          >
-            <option value="es">Español</option>
-            <option value="en">English</option>
-          </select>
-        </div>
-        <div className="flex flex-row justify-center">
+      <div className="flex justify-end gap-x-8 col-span-2">
+        <div className="flex justify-end w-1/8">
           <Switch checked={darkMode} onChange={handleDarkMode}>
             {({ checked }) => (
-              /* Use the `checked` state to conditionally style the button. */
               <div
                 className={`${
-                  checked ? "bg-blue-900" : "bg-gray-200"
+                  checked ? "bg-blue-900" : " bg-gray-200"
                 } relative inline-flex h-10 w-16 items-center rounded-full`}
               >
                 <span className="sr-only">Dark mode</span>
@@ -78,6 +68,19 @@ export const Header = ({ children }: HeaderProps) => {
               </div>
             )}
           </Switch>
+        </div>
+        <div className="flex justify-end items-center w-1/8 h-full">
+          <select
+            value={i18n.language}
+            onChange={(e) => changeLanguageHandler(e.target.value)}
+            className="w-20 h-10 border border-black rounded-md"
+          >
+            <option value="es">Español</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+        <div className="flex justify-end place-items-end">
+          <img className="h-16" src={pokeball} />
         </div>
       </div>
     </div>

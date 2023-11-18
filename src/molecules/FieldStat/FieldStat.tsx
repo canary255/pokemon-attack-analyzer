@@ -41,13 +41,13 @@ export const FieldStats = ({
 
     if (natureBoost === 1.1) {
       return {
-        class: "text-red-500 font-bold",
+        class: "dark:text-red-400 text-red-500 font-bold",
         symbol: "⬆",
       };
     }
     if (natureBoost === 0.9) {
       return {
-        class: "text-blue-400 font-bold",
+        class: "dark:text-blue-300 text-blue-400 font-bold",
         symbol: "⬇",
       };
     }

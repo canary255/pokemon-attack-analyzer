@@ -31,17 +31,17 @@ export const Avatar = ({ className, url }: AvatarProps) => {
     <>
       <div className={className}>
         <div
-          className={`relative w-28 h-28 flex flex-row justify-center items-center 
+          className={`relative w-32 h-32 flex flex-row justify-center items-center 
           border border-black rounded-full bg-cyan-200 dark:bg-sky-700 shadow-lg `}
         >
           <img
-            className={`w-[95%] h-[95%] `}
+            className={`w-[90%] h-[90%] drop-shadow-xl`}
             src={url ?? missingno}
             alt="Rounded avatar"
           />
           {mechanic !== Mechanic.none && (
             <img
-              className="absolute top-20 left-20 w-12 h-12"
+              className="absolute top-24 left-24  w-10 h-10 "
               src={getMechanicImg()}
             />
           )}

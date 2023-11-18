@@ -43,14 +43,14 @@ export const Report = () => {
   return (
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
-        <div className="grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 h-full bg-gray-200 dark:bg-darkGray">
-          <div className="border lg:border-b-0 sm:border-b border-black dark:border-white">
+        <div className="grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 h-full bg-gray-200 dark:bg-gray-800">
+          <div className="border border-l-0 border-y-0 lg:border-b-0 sm:border-b border-black dark:border-gray-500">
             <Attacker avatar={avatar} setAvatar={setAvatar} />
           </div>
-          <div className="border lg:border-b-0 sm:border-b border-black dark:border-white">
+          <div className="border lg:border-y-0 border-l-0 sm:border-b border-black dark:border-gray-500">
             <Defender />
           </div>
-          <div className="border border-black lg:border-b-0 xl:col-span-1 md:col-span-2">
+          <div className="border border-t-0 border-l-0 border-black lg:border-b-0 xl:col-span-1 md:col-span-2">
             {page === 0 && <Information />}
             {page === 1 && (
               <LoadingCalcs

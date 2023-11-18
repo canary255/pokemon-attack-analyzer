@@ -5,7 +5,7 @@ import { Text } from "../../atom/Text/Text";
 export const Information = () => {
   const { t } = useTranslation();
   return (
-    <div className="flex flex-col gap-y-2 p-3">
+    <div className="flex flex-col gap-y-2 px-3 py-6">
       <div>
         <Text className="text-xl font-medium">Pokémon Attack Analyzer</Text>
         <Text className="text-sm font-medium">

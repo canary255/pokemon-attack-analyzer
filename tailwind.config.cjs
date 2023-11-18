@@ -19,7 +19,7 @@ module.exports = {
         lg: "0 8px 16px var(--tw-shadow-color)",
       },
       fontFamily: {
-        pokemon: ["Pokemon", "sans-serif"],
+        bebas: ["Bebas", "sans-serif"],
       },
     },
   },
