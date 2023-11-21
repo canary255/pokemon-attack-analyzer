@@ -67,7 +67,7 @@ export const FieldStats = ({
         value={getStat(base, ev, iv, boostStat, nature, isPhysical)}
       />
       <SelectorUI
-        className="w-fit"
+        className="w-fit max-sm:text-xs max-sm:w-6"
         options={boost}
         selectorAbove
         name={boostName}
