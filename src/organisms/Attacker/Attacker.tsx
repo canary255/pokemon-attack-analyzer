@@ -23,6 +23,7 @@ import { Button } from "../../atom/Button/Button";
 import { ReportProps } from "../../types/reportProps";
 import { usePokeapiData } from "../../hooks/usePokeapiData";
 import { getAvatarUrl } from "../../utils/getAvatarUrl";
+import { MoveData } from "@smogon/calc/dist/data/moves";
 
 interface AttackerProps {
   avatar?: string;
@@ -32,7 +33,12 @@ interface AttackerProps {
 export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
   const { t } = useTranslation();
   const { watch, setValue, reset } = useFormContext();
-  const [moveDetails, setMoveDetails] = useState<any>();
+  const [moveDetails, setMoveDetails] = useState<
+    | (MoveData & {
+        name: string;
+      })
+    | undefined
+  >();
   const specie: string = watch("name");
   const move: string = watch("move");
   const { data, isLoading } = usePokeapiData(specie);
@@ -52,6 +58,7 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
         "hits",
         oneMove?.multihit ? String(numberOfHits(oneMove.multihit)[0]) : ""
       );
+      setValue("category", oneMove?.category);
     }
   }, [move]);
 

@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Text } from "../Text/Text";
 import { limitText } from "../../utils/limitText";
 import { Icon } from "@iconify/react";
+import { optionStyles } from "../../utils/styleConsts";
 
 interface SelectorProps {
   className?: string;
@@ -27,17 +28,6 @@ export const SelectorNoLogic = ({
   name,
 }: SelectorProps) => {
   const { t } = useTranslation();
-
-  const optionStyles = (
-    selected: boolean,
-    active: boolean,
-    disabled: boolean
-  ) => {
-    if (disabled) return "text-gray-300";
-    if (selected) return "bg-purple-600 text-white";
-    if (active) return "bg-purple-500 text-white cursor-pointer";
-    return "text-gray-900";
-  };
 
   const getTitle = (value: string) => {
     return options.find((item) => item.value == value)?.name ?? "";
@@ -75,23 +65,22 @@ export const SelectorNoLogic = ({
                     <Listbox.Option
                       key={index}
                       value={item?.value}
-                      className={({ selected, active, disabled }) =>
-                        `cursor-default select-none p-2 ${optionStyles(
-                          selected,
-                          active,
-                          disabled
+                      className={({ disabled }) =>
+                        `cursor-default select-none p-2 hover:bg-purple-500 hover:text-white hover:cursor-pointer ${optionStyles(
+                          {
+                            selected: item?.value === value,
+                            disabled,
+                          }
                         )}`
                       }
                     >
-                      {({ selected }) => (
-                        <span
-                          className={`block truncate ${
-                            selected ? "font-medium" : "font-normal"
-                          }`}
-                        >
-                          {limitText(t(item?.name))}
-                        </span>
-                      )}
+                      <span
+                        className={`block truncate ${
+                          item?.value === value ? "font-medium" : "font-normal"
+                        }`}
+                      >
+                        {limitText(t(item?.name))}
+                      </span>
                     </Listbox.Option>
                   ))
                 : null}
