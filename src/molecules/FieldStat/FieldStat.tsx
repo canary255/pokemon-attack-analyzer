@@ -33,6 +33,7 @@ export const FieldStats = ({
   const ev = values[evName];
   const boostStat = values[boostName];
   const nature = values["nature"];
+  const level = values["level"];
 
   const getColorNatureStat = () => {
     const natureBoost = isPhysical
@@ -64,7 +65,7 @@ export const FieldStats = ({
       <TextFieldCommon
         readOnly
         className={statReference?.class}
-        value={getStat(base, ev, iv, boostStat, nature, isPhysical)}
+        value={getStat(base, ev, iv, boostStat, nature, isPhysical, level)}
       />
       <SelectorUI
         className="w-fit max-sm:text-xs max-sm:w-6"

@@ -10,7 +10,7 @@ interface SwitchProps {
 }
 
 export const SwitchUI = ({
-  label = "Switch",
+  label = "",
   circleBorder = "all",
   name,
   className,

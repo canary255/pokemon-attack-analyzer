@@ -57,7 +57,8 @@ export const getStat = (
   iv: string,
   boost: string,
   nature: string,
-  isPhysical: boolean
+  isPhysical: boolean,
+  level: string
 ) => {
   const natureMultiplier = isPhysical
     ? getPhysicalNatureMultiplier(nature)
@@ -72,7 +73,7 @@ export const getStat = (
   if (ivInt > 31) ivInt = 31;
   if (ivInt < 0) ivInt = 0;
   const boostMultiplier = getBoostMultiplier(boost);
-  const LEVEL = 50;
+  const LEVEL = Number(level);
 
   const stat = Math.floor(
     (Math.floor(((2 * baseInt + ivInt + evInt / 4) * LEVEL) / 100) + 5) *

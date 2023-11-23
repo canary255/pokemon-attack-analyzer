@@ -47,4 +47,6 @@ export type ReportProps = {
   beads: boolean;
   hits: string;
   avatar: string;
+  level: string;
+  av: boolean;
 };
