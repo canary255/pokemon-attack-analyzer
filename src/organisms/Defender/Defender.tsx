@@ -4,7 +4,6 @@ import {
   target,
   boost,
   terrain,
-  aura,
   spikes,
 } from "../../utils/pokemonConsts";
 import { RadioGroupUI } from "../../atom/RadioGroup/RadioGroup";
@@ -17,7 +16,6 @@ const SWITCH_UI_BLACK = "xl:text-[12px] border border-black dark:border-white";
 
 export const Defender = () => {
   const { t } = useTranslation();
-  const margin = "";
   return (
     <>
       <div className="flex flex-col pt-6 pb-4 gap-y-1">

@@ -50,7 +50,8 @@
     "selectMove": "Selecciona un movimiento",
     "category": "Categoría",
     "nature": "Naturaleza",
-    "numHits": "Nº Golpes"
+    "numHits": "Nº Golpes",
+    "selectMechanic": "Selecciona la mecánica"
   },
   "category": {
     "physical": "Fís",

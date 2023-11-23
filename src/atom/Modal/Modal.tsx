@@ -50,7 +50,7 @@ export const Modal = ({ isOpen, setIsOpen }: Props) => {
                   <div className="mt-2 bg-gray-100 shadow-lg p-4 rounded-md">
                     <div>
                       <Text className=" font-sm">
-                        <p className="font-bold">Pokémon Attack Analyzer </p>
+                        Pokémon Attack Analyzer{" "}
                         {t("projectExplain.description")}
                       </Text>
                     </div>

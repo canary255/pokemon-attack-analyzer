@@ -8,7 +8,7 @@ import { nature, mechanic, category } from "../../utils/pokemonConsts";
 import { RadioGroupUI } from "../../atom/RadioGroup/RadioGroup";
 import teraType from "../../utils/pokemonConsts/teraType";
 import { useFormContext } from "react-hook-form";
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState } from "react";
 import { capitalizeEveryWord } from "../../utils/capitalize";
 import {
   getAbilityList,
@@ -81,9 +81,9 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
   }, [isLoading, specie]);
 
   const handleRestore = () => {
-    const data = localStorage.getItem("pokemonSetData");
-    if (data) {
-      const parsedData: ReportProps = JSON.parse(data);
+    const storedData = localStorage.getItem("pokemonSetData");
+    if (storedData) {
+      const parsedData: ReportProps = JSON.parse(storedData);
       reset(parsedData);
     }
   };
