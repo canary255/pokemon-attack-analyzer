@@ -3,8 +3,8 @@ import { Button } from "../../atom/Button/Button";
 import { Modal } from "../../atom/Modal/Modal";
 import { useState } from "react";
 import { Text } from "../../atom/Text/Text";
-import { SwitchUI } from "../../atom/Switch/Switch";
 import { RadioGroupUI } from "../../atom/RadioGroup/RadioGroup";
+import { Checkbox } from "../../atom/Checkbox/Checkbox";
 
 export const Information = () => {
   let [isOpenModal, setIsOpenModal] = useState(false);
@@ -27,14 +27,14 @@ export const Information = () => {
           </div>
           <Modal isOpen={isOpenModal} setIsOpen={setIsOpenModal} />
         </div>
-        <div className="flex items-center gap-x-4">
-          <Text className="font-medium w-1/2">
-            Every Pokémon Has Assault Vest
+        <div className="flex items-center gap-x-1">
+          <Text className="font-medium w-52">
+            Every Pokémon has Assault Vest
           </Text>
-          <SwitchUI className="w-10 " name="av" label={"X"}></SwitchUI>
+          <Checkbox name="av" />
         </div>
-        <div className="flex items-center gap-x-4">
-          <Text className="font-medium w-1/2">Pokémon Level</Text>
+        <div className="flex items-center gap-x-1">
+          <Text className="font-medium w-52">Pokémon Level</Text>
           <RadioGroupUI
             options={[
               { name: "Level 50", value: "50" },

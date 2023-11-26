@@ -20,7 +20,7 @@ export const calculateDamage = (
   defensiveData: PokemonData
 ) => {
   const evSpread = getEvSpread(defensiveData.evs);
-  const LEVEL = 50;
+  const LEVEL = Number(form.level);
 
   const ATTACKER = new Pokemon(Generations.get(9), form.name, {
     item: form.item as ItemName,
@@ -34,7 +34,7 @@ export const calculateDamage = (
   });
 
   const DEFENDER = new Pokemon(Generations.get(9), pokemon, {
-    item: defensiveData.item as ItemName,
+    item: form.av ? "Assault Vest" : (defensiveData.item as ItemName),
     nature: defensiveData.nature as NatureName,
     evs: { hp: evSpread.hp, def: evSpread.def, spd: evSpread.spd },
     ivs: { hp: MAX_IV, def: MAX_IV, spd: MAX_IV },
