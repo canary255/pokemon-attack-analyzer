@@ -47,6 +47,7 @@ export const reportInitialState: ReportProps = {
   avatar: "",
   av: false,
   level: "50",
+  status: "",
 };
 
 export const testingSet: ReportProps = {
@@ -96,4 +97,5 @@ export const testingSet: ReportProps = {
   level: "50",
   avatar:
     "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/474.png",
+  status: "",
 };

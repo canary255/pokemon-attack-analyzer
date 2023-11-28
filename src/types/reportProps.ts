@@ -1,4 +1,9 @@
-import { Terrain, TypeName, Weather } from "@smogon/calc/dist/data/interface";
+import {
+  StatusName,
+  Terrain,
+  TypeName,
+  Weather,
+} from "@smogon/calc/dist/data/interface";
 import { Mechanic } from "./mechanic";
 
 export type ReportProps = {
@@ -49,4 +54,5 @@ export type ReportProps = {
   avatar: string;
   level: string;
   av: boolean;
+  status: "" | StatusName;
 };

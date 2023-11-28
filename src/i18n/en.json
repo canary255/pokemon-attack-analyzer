@@ -51,11 +51,22 @@
     "category": "Category",
     "nature": "Nature",
     "numHits": "Hits",
-    "selectMechanic": "Select the mechanic"
+    "selectMechanic": "Select the mechanic",
+    "status": "Status"
   },
+
   "category": {
     "physical": "Phy",
     "special": "Spe"
+  },
+
+  "status": {
+    "burn": "Burn",
+    "freeze": "Freeze",
+    "paralysis": "Paralysis",
+    "sleep": "Sleep",
+    "poison": "Poison",
+    "toxic": "Toxic"
   },
 
   "button": {

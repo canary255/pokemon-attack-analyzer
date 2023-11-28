@@ -31,6 +31,7 @@ export const calculateDamage = (
     level: LEVEL,
     ability: form.ability as AbilityName,
     teraType: form.mechanic === "tera" ? form.teraType : undefined,
+    status: form.status,
   });
 
   const DEFENDER = new Pokemon(Generations.get(9), pokemon, {

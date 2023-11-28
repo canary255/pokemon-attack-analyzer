@@ -24,6 +24,7 @@ import { ReportProps } from "../../types/reportProps";
 import { usePokeapiData } from "../../hooks/usePokeapiData";
 import { getAvatarUrl } from "../../utils/getAvatarUrl";
 import { MoveData } from "@smogon/calc/dist/data/moves";
+import { status } from "../../utils/pokemonConsts/status";
 
 interface AttackerProps {
   avatar?: string;
@@ -126,6 +127,12 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
             name="nature"
             options={nature}
             label={t("attacker.nature")}
+          />
+          <SelectorUI
+            className="w-full"
+            name="status"
+            options={status}
+            label={t("attacker.status")}
           />
         </div>
         <div className="grid w-full  sm:grid-cols-12 gap-2">
