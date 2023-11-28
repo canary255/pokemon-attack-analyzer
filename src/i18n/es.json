@@ -51,11 +51,21 @@
     "category": "Categoría",
     "nature": "Naturaleza",
     "numHits": "Nº Golpes",
-    "selectMechanic": "Selecciona la mecánica"
+    "selectMechanic": "Selecciona la mecánica",
+    "status": "Estado"
   },
   "category": {
     "physical": "Fís",
     "special": "Esp"
+  },
+
+  "status": {
+    "burn": "Quemado",
+    "freeze": "Congelado",
+    "paralysis": "Paralizado",
+    "sleep": "Dormido",
+    "poison": "Envenenado",
+    "toxic": "Tóxico"
   },
 
   "button": {
