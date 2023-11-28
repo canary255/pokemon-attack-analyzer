@@ -45,6 +45,7 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
   const { data, isLoading } = usePokeapiData(specie);
   const atk = data?.stats?.[1].base_stat.toString() ?? "90";
   const spa = data?.stats?.[3].base_stat.toString() ?? "90";
+  const spe = data?.stats?.[5].base_stat.toString() ?? "90";
 
   const dexList = getCompleteDexNames();
   const itemList = getItemList();
@@ -180,7 +181,7 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
         )}
 
         <div className="py-4 gap-x-2">
-          <Stats atk={atk} spa={spa} />
+          <Stats atk={atk} spa={spa} spe={spe} />
         </div>
       </div>
     </div>

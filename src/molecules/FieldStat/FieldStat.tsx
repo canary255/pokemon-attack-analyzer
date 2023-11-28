@@ -2,13 +2,10 @@ import { useFormContext } from "react-hook-form";
 import { Text } from "../../atom/Text/Text";
 import { SelectorUI } from "../../atom/Selector/Selector";
 import { TextField } from "../../atom/Textfield/TextField";
-import {
-  getPhysicalNatureMultiplier,
-  getSpecialNatureMultiplier,
-  getStat,
-} from "../../utils/getStat";
+import { getStat } from "../../utils/getStat";
 import { boost } from "../../utils/pokemonConsts";
 import { TextFieldCommon } from "../../atom/TextFieldCommon/TextFieldCommon";
+import { getNatureMultiplier } from "../../utils/getNatureMultiplier";
 
 interface FieldStatsProps {
   categoryName: string | null;
@@ -16,7 +13,6 @@ interface FieldStatsProps {
   ivName: string;
   evName: string;
   boostName: string;
-  isPhysical?: boolean;
 }
 
 export const FieldStats = ({
@@ -25,7 +21,6 @@ export const FieldStats = ({
   ivName,
   evName,
   boostName,
-  isPhysical = false,
 }: FieldStatsProps) => {
   const { watch } = useFormContext();
   const values = watch();
@@ -36,9 +31,7 @@ export const FieldStats = ({
   const level = values["level"];
 
   const getColorNatureStat = () => {
-    const natureBoost = isPhysical
-      ? getPhysicalNatureMultiplier(nature)
-      : getSpecialNatureMultiplier(nature);
+    const natureBoost = getNatureMultiplier(evName, nature);
 
     if (natureBoost === 1.1) {
       return {
@@ -65,7 +58,7 @@ export const FieldStats = ({
       <TextFieldCommon
         readOnly
         className={statReference?.class}
-        value={getStat(base, ev, iv, boostStat, nature, isPhysical, level)}
+        value={getStat(base, ev, iv, boostStat, nature, evName, level)}
       />
       <SelectorUI
         className="w-fit max-sm:text-xs max-sm:w-6"

@@ -5,9 +5,10 @@ import { FieldStats } from "../FieldStat/FieldStat";
 interface StatsProps {
   atk: string;
   spa: string;
+  spe: string;
 }
 
-export const Stats = ({ atk, spa }: StatsProps) => {
+export const Stats = ({ atk, spa, spe }: StatsProps) => {
   const { t } = useTranslation();
 
   const Layer = () => {
@@ -32,7 +33,6 @@ export const Stats = ({ atk, spa }: StatsProps) => {
           categoryName={t("stats.atk")}
           evName="evAtk"
           ivName="ivAtk"
-          isPhysical
         />
         <FieldStats
           boostName="boostSpa"
@@ -40,6 +40,13 @@ export const Stats = ({ atk, spa }: StatsProps) => {
           categoryName={t("stats.spa")}
           evName="evSpa"
           ivName="ivSpa"
+        />
+        <FieldStats
+          boostName="boostSpe"
+          base={spe}
+          categoryName={t("stats.spe")}
+          evName="evSpe"
+          ivName="ivSpe"
         />
       </div>
     </>

@@ -24,6 +24,9 @@ export type ReportProps = {
   boostSpa: string;
   evSpa: string;
   ivSpa: string;
+  boostSpe: string;
+  evSpe: string;
+  ivSpe: string;
   target: "Singles" | "Doubles";
   selectPokemon: "all" | "vgc";
   defenderList: string;

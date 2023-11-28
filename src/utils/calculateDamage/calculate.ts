@@ -25,9 +25,21 @@ export const calculateDamage = (
   const ATTACKER = new Pokemon(Generations.get(9), form.name, {
     item: form.item as ItemName,
     nature: form.nature as NatureName,
-    evs: { atk: Number(form.evAtk), spa: Number(form.evSpa) },
-    ivs: { atk: Number(form.ivAtk), spa: Number(form.ivSpa) },
-    boosts: { atk: Number(form.boostAtk), spa: Number(form.boostSpa) },
+    evs: {
+      atk: Number(form.evAtk),
+      spa: Number(form.evSpa),
+      spe: Number(form.evSpe),
+    },
+    ivs: {
+      atk: Number(form.ivAtk),
+      spa: Number(form.ivSpa),
+      spe: Number(form.ivSpe),
+    },
+    boosts: {
+      atk: Number(form.boostAtk),
+      spa: Number(form.boostSpa),
+      spe: Number(form.boostSpe),
+    },
     level: LEVEL,
     ability: form.ability as AbilityName,
     teraType: form.mechanic === "tera" ? form.teraType : undefined,
