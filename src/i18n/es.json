@@ -90,7 +90,7 @@
     "battery": "Batería",
     "friendGuard": "Compiescolta",
     "tailwind": "Viento Afín",
-    "generateReport": "¡Generar Informe!"
+    "generateReport": "¡Generar!"
   },
   "message": {
     "specifyPokemon": "Especifica el Pokémon escribiendo el nombre y separandolo con una coma.",

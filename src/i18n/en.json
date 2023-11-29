@@ -91,7 +91,7 @@
     "battery": "Battery",
     "friendGuard": "Friend Guard",
     "tailwind": "Tailwind",
-    "generateReport": "Generate Report!"
+    "generateReport": "Generate!"
   },
   "message": {
     "specifyPokemon": "Specify Pokémon by writing the name and separating it with a comma...",
