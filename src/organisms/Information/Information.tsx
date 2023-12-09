@@ -14,7 +14,7 @@ export const Information = () => {
       <div className="h-3/4 flex flex-col gap-y-4">
         <div className="flex w-full">
           <Text className="flex justify-start items-center font-medium text-2xl w-1/2">
-            Additional options
+            {t("common.additionalOptions")}
           </Text>
           <div className="flex justify-end w-1/2">
             <Button
@@ -29,12 +29,12 @@ export const Information = () => {
         </div>
         <div className="flex items-center gap-x-1">
           <Text className="font-medium w-52">
-            Every Pokémon has Assault Vest
+            {t("common.everyPokemonHasAV")}
           </Text>
           <Checkbox name="av" />
         </div>
         <div className="flex items-center gap-x-1">
-          <Text className="font-medium w-52">Pokémon Level</Text>
+          <Text className="font-medium w-52">{t("common.pokemonLevel")}</Text>
           <RadioGroupUI
             options={[
               { name: "Level 50", value: "50" },
