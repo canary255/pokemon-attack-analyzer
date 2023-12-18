@@ -15,7 +15,7 @@
     "reportGenerator": "Pokémon Attack Analyzer",
     "filter": "Filter",
     "search": "Search",
-    "filterBy": "Filter By",
+    "filterBy": "Survival filter",
     "all": "All",
     "survive": "Survive",
     "cannot": "Cannot",
@@ -27,7 +27,10 @@
     "madeBy": "Made by",
     "additionalOptions": "Additional options",
     "everyPokemonHasAV": "Every Pokémon has Assault Vest",
-    "pokemonLevel": "Pokémon Level"
+    "pokemonLevel": "Pokémon Level",
+    "setFilter": "Set filter",
+    "extreme": "Extreme",
+    "set": "Common"
   },
   "projectExplain": {
     "description": "is a project where a user checks if a Pokémon can survive an attack with certain conditions of a Pokémon attacker. It also allows to create a PDF with those calculations.",

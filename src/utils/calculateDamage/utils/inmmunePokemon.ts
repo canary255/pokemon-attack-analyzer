@@ -6,7 +6,6 @@ export const inmmunePokemon = async (pokemon: string) => {
   return {
     pokemon: pokemon,
     isInmune: true,
-    canSurvive: surviveEnum.YES,
     calcExtreme: INMMUNE_POKEMON_SET,
     calcsSet: undefined,
     img: await getPokemonSprite(

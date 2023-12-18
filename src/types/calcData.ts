@@ -21,6 +21,5 @@ export interface PokemonCalculatedData {
   isInmmune: boolean;
   calcSet?: CalcData;
   calcExtreme: CalcData;
-  canSurvive: surviveEnum;
   img: string | void;
 }

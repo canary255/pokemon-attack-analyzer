@@ -24,17 +24,6 @@ import { calculateDamage } from "./calculate";
 
 const defensivePokemonList = getGen9PokemonDefensiveDataList();
 
-const canSurvive = (ko_chance?: {
-  chance?: number;
-  n: number;
-  text: string;
-}) => {
-  if (!ko_chance || !ko_chance.chance) return surviveEnum.YES;
-  if (ko_chance.chance === 1 && ko_chance.n === 1) return surviveEnum.NO;
-  if (ko_chance.chance < 1 && ko_chance.n === 1) return surviveEnum.BARELY;
-  return surviveEnum.YES;
-};
-
 export const loadDataCalculator = async (
   form: ReportProps,
   setNumberDex: React.Dispatch<SetStateAction<number>>,
@@ -101,7 +90,6 @@ export const loadDataCalculator = async (
         isInmmune: false,
         calcSet: setCalc,
         calcExtreme: extremeCalc,
-        canSurvive: canSurvive(extremeCalc?.ko_chance),
         img:
           getPokemonImageFromJson ??
           (await getPokemonSprite(

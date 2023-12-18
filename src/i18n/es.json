@@ -27,7 +27,10 @@
     "madeBy": "Hecho por",
     "additionalOptions": "Opciones adicionales",
     "everyPokemonHasAV": "Todos los Pokémon tienen Chaleco Asalto",
-    "pokemonLevel": "Nivel Pokémon"
+    "pokemonLevel": "Nivel Pokémon",
+    "setFilter": "Filtrar set por",
+    "extreme": "Extremo",
+    "set": "Común"
   },
   "projectExplain": {
     "description": "es un proyecto donde un usuario puede comprobar si un Pokémon puede sobrevivir a un ataque con ciertas condiciones de un Pokémon atacante. También permite crear un PDF con esos cálculos.",
