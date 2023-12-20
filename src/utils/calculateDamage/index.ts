@@ -1,11 +1,7 @@
 import { ReportProps } from "../../types/reportProps";
 import { getCompleteDexNames } from "../pokemonConsts/lists";
 import React, { SetStateAction } from "react";
-import {
-  CalcData,
-  PokemonCalculatedData,
-  surviveEnum,
-} from "../../types/calcData";
+import { PokemonCalculatedData } from "../../types/calcData";
 import { CalcList } from "../../types/calcList";
 import { getPokemonSprite } from "../getPokemonSprite";
 import { getCancelAction, setCancelAction } from "../cancelAction";

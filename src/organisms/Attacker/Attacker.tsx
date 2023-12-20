@@ -91,98 +91,96 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
   };
 
   return (
-    <div>
-      <div className="flex flex-col min-[315px]:px-4 sm:px-12 py-4 gap-y-4">
-        <div className="grid lg:grid-cols-2 md:grid-cols-1 justify-center gap-x-6 gap-y-8 w-full">
-          <Avatar url={avatar} className="flex flex-row justify-center" />
-          <div className=" grid place-items-center sm:grid-rows-2 min-[315px]:grid-cols-1 gap-y-2 ">
-            {localStorage.getItem("pokemonSetData") && (
-              <Button
-                className="rounded-lg w-full"
-                onClick={() => handleRestore()}
-                label="Restore last set"
-              ></Button>
-            )}
-            <ComboBoxUI
-              options={dexList}
-              name="name"
-              label={t("attacker.selectPokemon")}
-            />
-          </div>
-        </div>
-        <div className="grid place-items-center sm:grid-cols-2 gap-y-2 gap-x-8 ">
-          <ComboBoxUI
-            options={abilityList}
-            name="ability"
-            className="w-full"
-            label={t("attacker.selectAbility")}
-          />
-          <ComboBoxUI
-            options={itemList}
-            name="item"
-            className="w-full"
-            label={t("attacker.selectItem")}
-          />
-          <SelectorUI
-            className="w-full"
-            name="nature"
-            options={nature}
-            label={t("attacker.nature")}
-          />
-          <SelectorUI
-            className="w-full"
-            name="status"
-            options={status}
-            label={t("attacker.status")}
-          />
-        </div>
-        <div className="grid w-full  sm:grid-cols-12 gap-2">
-          <div className="col-span-6">
-            <ComboBoxUI
-              options={moveList}
-              name="move"
-              label={t("attacker.selectMove")}
-            />
-          </div>
-          <div className="xl:col-span-2 sm:col-span-6 min-[315px]:col-span-2">
-            <SelectorUI
-              options={category}
-              name="category"
-              label={t("attacker.category")}
-            />
-          </div>
-          {moveDetails?.multihit && (
-            <div className="xl:col-span-2 sm:col-span-6 min-[315px]:col-span-2">
-              <SelectorArray
-                options={numberOfHits(moveDetails?.multihit)}
-                name="hits"
-                label={t("attacker.numHits")}
-              />
-            </div>
+    <div className="flex flex-col min-[315px]:px-4 sm:px-12 py-4 gap-y-4">
+      <div className="grid lg:grid-cols-2 md:grid-cols-1 justify-center gap-x-6 gap-y-8 w-full">
+        <Avatar url={avatar} className="flex flex-row justify-center" />
+        <div className=" grid place-items-center sm:grid-rows-2 min-[315px]:grid-cols-1 gap-y-2 ">
+          {localStorage.getItem("pokemonSetData") && (
+            <Button
+              className="rounded-lg w-full"
+              onClick={() => handleRestore()}
+              label="Restore last set"
+            ></Button>
           )}
-          <SwitchUI
-            label={t("button.crit")}
-            className="mt-5 xl:col-span-2 sm:col-span-6 min-[315px]:col-span-2"
-            name="crit"
+          <ComboBoxUI
+            options={dexList}
+            name="name"
+            label={t("attacker.selectPokemon")}
           />
         </div>
-        <RadioGroupUI
-          label={t("attacker.selectMechanic") ?? ""}
+      </div>
+      <div className="grid place-items-center sm:grid-cols-2 gap-y-2 gap-x-8 ">
+        <ComboBoxUI
+          options={abilityList}
+          name="ability"
           className="w-full"
-          name="mechanic"
-          options={mechanic}
+          label={t("attacker.selectAbility")}
         />
-        {watch("mechanic") === "tera" && (
-          <SelectorUI
-            options={teraType}
-            name="teraType"
-            label={t("attacker.selectTeraType")}
+        <ComboBoxUI
+          options={itemList}
+          name="item"
+          className="w-full"
+          label={t("attacker.selectItem")}
+        />
+        <SelectorUI
+          className="w-full"
+          name="nature"
+          options={nature}
+          label={t("attacker.nature")}
+        />
+        <SelectorUI
+          className="w-full"
+          name="status"
+          options={status}
+          label={t("attacker.status")}
+        />
+      </div>
+      <div className="grid w-full  sm:grid-cols-12 gap-2">
+        <div className="col-span-6">
+          <ComboBoxUI
+            options={moveList}
+            name="move"
+            label={t("attacker.selectMove")}
           />
-        )}
-
-        <div className="py-4 gap-x-2">
-          <Stats atk={atk} spa={spa} spe={spe} />
         </div>
+        <div className="xl:col-span-2 sm:col-span-6 min-[315px]:col-span-2">
+          <SelectorUI
+            options={category}
+            name="category"
+            label={t("attacker.category")}
+          />
+        </div>
+        {moveDetails?.multihit && (
+          <div className="xl:col-span-2 sm:col-span-6 min-[315px]:col-span-2">
+            <SelectorArray
+              options={numberOfHits(moveDetails?.multihit)}
+              name="hits"
+              label={t("attacker.numHits")}
+            />
+          </div>
+        )}
+        <SwitchUI
+          label={t("button.crit")}
+          className="mt-5 xl:col-span-2 sm:col-span-6 min-[315px]:col-span-2"
+          name="crit"
+        />
+      </div>
+      <RadioGroupUI
+        label={t("attacker.selectMechanic") ?? ""}
+        className="w-full"
+        name="mechanic"
+        options={mechanic}
+      />
+      {watch("mechanic") === "tera" && (
+        <SelectorUI
+          options={teraType}
+          name="teraType"
+          label={t("attacker.selectTeraType")}
+        />
+      )}
+
+      <div className="py-4 gap-x-2">
+        <Stats atk={atk} spa={spa} spe={spe} />
       </div>
     </div>
   );
