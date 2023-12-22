@@ -11,6 +11,7 @@ import { renderToString } from "react-dom/server";
 import { ReportPDF } from "../../molecules/ReportPDF/ReportPDF";
 import { Text } from "../../atom/Text/Text";
 import jsPDF from "jspdf";
+import { useResultsStore } from "../../hooks/useResultsStore";
 
 interface LoadingCalcsProps {
   resultsCalcs: CalcList[];
@@ -29,11 +30,10 @@ export const Results = ({
   avatar,
 }: LoadingCalcsProps) => {
   const { t } = useTranslation();
-  const [pokemonInfo, setPokemonInfo] = useState<CalcList | undefined>();
   const [filteredList, setFilteredList] = useState<CalcList[]>([
     ...resultsCalcs,
   ]);
-  const [lastScrollPosition, setLastScrollPosition] = useState(0);
+  const { pokemonInfo } = useResultsStore();
 
   const resetPage = () => {
     setPage(0);
@@ -61,19 +61,12 @@ export const Results = ({
       <Divider className="my-0" />
       <div className="h-96">
         {pokemonInfo ? (
-          <PokemonCalcInfo
-            pokemonInfo={pokemonInfo}
-            setPokemonInfo={setPokemonInfo}
-          />
+          <PokemonCalcInfo />
         ) : (
           <PokemonCalcResultList
             resultsCalcs={resultsCalcs}
             filteredList={filteredList}
             setFilteredList={setFilteredList}
-            pokemonInfo={pokemonInfo}
-            setPokemonInfo={setPokemonInfo}
-            lastScrollPosition={lastScrollPosition}
-            setLastScrollPosition={setLastScrollPosition}
           />
         )}
       </div>
