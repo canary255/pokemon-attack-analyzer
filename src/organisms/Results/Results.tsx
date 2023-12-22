@@ -33,10 +33,11 @@ export const Results = ({
   const [filteredList, setFilteredList] = useState<CalcList[]>([
     ...resultsCalcs,
   ]);
-  const { pokemonInfo } = useResultsStore();
+  const { pokemonInfo, setPokemonInfo } = useResultsStore();
 
   const resetPage = () => {
     setPage(0);
+    setPokemonInfo(undefined);
   };
 
   const print = () => {
