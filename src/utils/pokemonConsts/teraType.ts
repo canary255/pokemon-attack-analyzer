@@ -24,6 +24,7 @@ const teraType: TypeProps[] = [
   { name: "type.dark", value: "Dark" },
   { name: "type.steel", value: "Steel" },
   { name: "type.fairy", value: "Fairy" },
+  //{ name: "type.stellar", value: "Stellar" },
 ];
 
 export default teraType.sort((a, b) => {
