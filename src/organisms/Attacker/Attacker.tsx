@@ -25,6 +25,7 @@ import { usePokeapiData } from "../../hooks/usePokeapiData";
 import { getAvatarUrl } from "../../utils/getAvatarUrl";
 import { MoveData } from "@smogon/calc/dist/data/moves";
 import { status } from "../../utils/pokemonConsts/status";
+import { speedDependantMoves } from "../../utils/speedDependantMoves";
 
 interface AttackerProps {
   avatar?: string;
@@ -44,6 +45,7 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
   const move: string = watch("move");
   const { data, isLoading } = usePokeapiData(specie);
   const atk = data?.stats?.[1].base_stat.toString() ?? "90";
+  const def = data?.stats?.[2].base_stat.toString() ?? "90";
   const spa = data?.stats?.[3].base_stat.toString() ?? "90";
   const spe = data?.stats?.[5].base_stat.toString() ?? "90";
 
@@ -61,6 +63,16 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
         oneMove?.multihit ? String(numberOfHits(oneMove.multihit)[0]) : ""
       );
       setValue("category", oneMove?.category);
+      if (!speedDependantMoves.includes(move) && watch("evSpe") !== "0") {
+        setValue("evSpe", "0");
+        setValue("ivSpe", "31");
+        setValue("boostSpe", "0");
+      }
+      if (move !== "Body Press" && watch("evUserDef") !== "0") {
+        setValue("evUserDef", "0");
+        setValue("ivUserDef", "31");
+        setValue("boostUserDef", "0");
+      }
     }
   }, [move]);
 
@@ -180,7 +192,7 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
       )}
 
       <div className="py-4 gap-x-2">
-        <Stats atk={atk} spa={spa} spe={spe} />
+        <Stats atk={atk} def={def} spa={spa} spe={spe} />
       </div>
     </div>
   );

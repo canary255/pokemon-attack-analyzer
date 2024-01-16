@@ -17,6 +17,8 @@ enum NatureNames {
   NAIVE = "naive",
   RELAXED = "relaxed",
   SASSY = "sassy",
+  LAX = "lax",
+  GENTLE = "gentle",
 }
 
 export const getPhysicalNatureMultiplier = (nature: string) => {
@@ -70,6 +72,23 @@ export const getSpeedNatureMultiplier = (nature: string) => {
   }
 };
 
+export const getDefenseNatureMultiplier = (nature: string) => {
+  switch (nature?.toLowerCase()) {
+    case NatureNames.BOLD:
+    case NatureNames.IMPISH:
+    case NatureNames.LAX:
+    case NatureNames.RELAXED:
+      return 1.1;
+    case NatureNames.LONELY:
+    case NatureNames.MILD:
+    case NatureNames.GENTLE:
+    case NatureNames.HASTY:
+      return 0.9;
+    default:
+      return 1;
+  }
+};
+
 export const getNatureMultiplier = (evName: string, nature: string) => {
   if (evName === "evAtk") {
     return getPhysicalNatureMultiplier(nature);
@@ -77,6 +96,10 @@ export const getNatureMultiplier = (evName: string, nature: string) => {
 
   if (evName === "evSpa") {
     return getSpecialNatureMultiplier(nature);
+  }
+
+  if (evName === "evUserDef") {
+    return getDefenseNatureMultiplier(nature);
   }
 
   return getSpeedNatureMultiplier(nature);

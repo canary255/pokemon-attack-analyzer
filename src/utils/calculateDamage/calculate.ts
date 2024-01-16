@@ -27,16 +27,19 @@ export const calculateDamage = (
     nature: form.nature as NatureName,
     evs: {
       atk: Number(form.evAtk),
+      def: Number(form.evUserDef),
       spa: Number(form.evSpa),
       spe: Number(form.evSpe),
     },
     ivs: {
       atk: Number(form.ivAtk),
+      def: Number(form.ivUserDef),
       spa: Number(form.ivSpa),
       spe: Number(form.ivSpe),
     },
     boosts: {
       atk: Number(form.boostAtk),
+      def: Number(form.boostUserDef),
       spa: Number(form.boostSpa),
       spe: Number(form.boostSpe),
     },
