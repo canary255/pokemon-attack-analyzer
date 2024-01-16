@@ -89,11 +89,11 @@ export const PokemonCalcResultList = ({
   return (
     <>
       <div className="flex justify-center w-full mb-3">
-        <div className="grid lg:grid-cols-3 grid-cols-1 px-6 gap-x-8 gap-y-1">
-          <Text className="text-3xl lg:col-span-3 mb-1">
+        <div className="grid grid-cols-3 px-6 sm:gap-x-8 gap-y-1">
+          <Text className="text-3xl col-span-3 mb-1">
             Total: {filteredList.length}
           </Text>
-          <div>
+          <div className="col-span-3 sm:col-span-1">
             <TextFieldCommon
               label={t("common.searchPokemon")}
               placeholder="Write the Pokémon name"
@@ -101,15 +101,15 @@ export const PokemonCalcResultList = ({
               onChange={handleFilter}
             />
           </div>
-          <div>
+          <div className="col-span-2 w-3/4 sm:w-full sm:col-span-1">
             <SelectorNoLogic
               label={t("common.filterBy")}
               value={selector}
               options={survivalOptions}
               onChange={handleSurvival}
-            ></SelectorNoLogic>
+            />
           </div>
-          <div>
+          <div className="w-3/4 sm:w-full">
             <SelectorNoLogic
               label={t("common.setFilter")}
               value={pokemonSet}

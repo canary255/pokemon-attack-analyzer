@@ -57,22 +57,23 @@ export const loadDataCalculator = async (
     //Uncomment for testing
     //if (i === 30) break;
     setNumberDex(i);
-    const pokemonType: [TypeName, TypeName?] =
-      SPECIES[SPECIES.length - 1][normalizedPokemon].types;
-    const typeValue: TypeChart = TYPE_CHART[TYPE_CHART.length - 1];
-
-    //1 - add type immunity
-    if (
-      !form.foresight &&
-      (typeValue?.[moveType]?.[pokemonType[0]] === 0 ||
-        (pokemonType[1] && typeValue?.[moveType]?.[pokemonType[1]] === 0))
-    ) {
-      calcsList.push(await inmmunePokemon(pokemon));
-      i++;
-      continue;
-    }
 
     try {
+      const pokemonType: [TypeName, TypeName?] =
+        SPECIES[SPECIES.length - 1][normalizedPokemon].types;
+      const typeValue: TypeChart = TYPE_CHART[TYPE_CHART.length - 1];
+
+      //1 - add type immunity
+      if (
+        !form.foresight &&
+        (typeValue?.[moveType]?.[pokemonType[0]] === 0 ||
+          (pokemonType[1] && typeValue?.[moveType]?.[pokemonType[1]] === 0))
+      ) {
+        calcsList.push(await inmmunePokemon(pokemon));
+        i++;
+        continue;
+      }
+
       //STEPS:
       //2 - The pokemon has a set stored in the json file
       const setCalc = calculateDamageWithSet(normalizedPokemon, form);
@@ -93,6 +94,7 @@ export const loadDataCalculator = async (
           )),
       });
     } catch (error) {
+      console.log(error);
       calcsList.push(await inmmunePokemon(pokemon));
     } finally {
       i++;
