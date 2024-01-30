@@ -18,7 +18,7 @@ export const Defender = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="flex flex-col pt-6 pb-4 gap-y-1">
+      <div className="flex flex-col py-2 gap-y-1">
         <div className="flex flex-col gap-y-3">
           <div className={`grid place-items-center`}>
             <RadioGroupUI
@@ -114,7 +114,7 @@ export const Defender = () => {
         </div>
         <Divider />
 
-        <div className="flex flex-col gap-y-4">
+        <div className="flex flex-col gap-y-3">
           <div className="grid grid-cols-3 px-4 gap-x-4">
             <SwitchUI label={t("button.protect")} name="protect" />
             <SwitchUI label={t("button.stealthRock")} name="stealthRock" />

@@ -57,10 +57,10 @@ export const Results = ({
   };
 
   return (
-    <div className="flex flex-col gap-y-2">
+    <div className="flex flex-col gap-y-1">
       <ColorKey />
       <Divider className="my-0" />
-      <div className="h-96">
+      <div className="max-h-96">
         {pokemonInfo ? (
           <PokemonCalcInfo />
         ) : (
@@ -71,7 +71,7 @@ export const Results = ({
           />
         )}
       </div>
-      <Divider className="mt-16" />
+      <Divider className="mt-12" />
 
       <Text className="px-2 font-semibold">{t("projectExplain.note2")}</Text>
       <div className="flex flex-row gap-x-4">
