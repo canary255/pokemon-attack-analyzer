@@ -28,6 +28,13 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/645.png"
   },
   {
+    "name": "Rillaboom",
+    "item": "Assault Vest",
+    "evs": "212/116/4/0/108/68",
+    "nature": "Adamant",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/812.png"
+  },
+  {
     "name": "Ogerpon-Wellspring",
     "item": "Wellspring Mask",
     "evs": "196/116/4/0/4/188",
@@ -39,14 +46,7 @@
     "item": "Assault Vest",
     "evs": "180/0/140/180/4/4",
     "nature": "Modest",
-    "img": null
-  },
-  {
-    "name": "Rillaboom",
-    "item": "Assault Vest",
-    "evs": "212/116/4/0/108/68",
-    "nature": "Adamant",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/812.png"
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1021.png"
   },
   {
     "name": "Tornadus",
@@ -121,16 +121,9 @@
   {
     "name": "Farigiraf",
     "item": "Sitrus Berry",
-    "evs": "252/0/140/0/116/0",
-    "nature": "Calm",
+    "evs": "116/0/156/76/156/0",
+    "nature": "Quiet",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/981.png"
-  },
-  {
-    "name": "Dragonite",
-    "item": "Choice Band",
-    "evs": "252/252/0/0/4/0",
-    "nature": "Adamant",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png"
   },
   {
     "name": "Indeedee-F",
@@ -144,14 +137,21 @@
     "item": "Assault Vest",
     "evs": "212/0/12/36/132/116",
     "nature": "Modest",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1018.png"
+  },
+  {
+    "name": "Dragonite",
+    "item": "Choice Band",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Adamant",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png"
   },
   {
     "name": "Iron Crown",
     "item": "Booster Energy",
     "evs": "0/0/0/252/4/252",
     "nature": "Timid",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1023.png"
   },
   {
     "name": "Metagross",
@@ -184,9 +184,16 @@
   {
     "name": "Pelipper",
     "item": "Focus Sash",
-    "evs": "252/0/4/60/188/4",
-    "nature": "Bold",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Modest",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png"
+  },
+  {
+    "name": "Porygon2",
+    "item": "Eviolite",
+    "evs": "252/0/4/124/108/20",
+    "nature": "Modest",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/233.png"
   },
   {
     "name": "Dondozo",
@@ -210,13 +217,6 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1004.png"
   },
   {
-    "name": "Porygon2",
-    "item": "Eviolite",
-    "evs": "244/0/196/12/52/4",
-    "nature": "Bold",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/233.png"
-  },
-  {
     "name": "Heatran",
     "item": "Leftovers",
     "evs": "244/0/68/100/4/92",
@@ -226,8 +226,8 @@
   {
     "name": "Ursaluna-Bloodmoon",
     "item": "Life Orb",
-    "evs": "4/0/4/252/4/244",
-    "nature": "Modest",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Quiet",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10272.png"
   },
   {
@@ -235,14 +235,7 @@
     "item": "Clear Amulet",
     "evs": "4/252/0/0/0/252",
     "nature": "Adamant",
-    "img": null
-  },
-  {
-    "name": "Regidrago",
-    "item": "Dragon Fang",
-    "evs": "4/0/0/252/0/252",
-    "nature": "Modest",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/895.png"
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1020.png"
   },
   {
     "name": "Iron Bundle",
@@ -252,18 +245,18 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/991.png"
   },
   {
+    "name": "Regidrago",
+    "item": "Dragon Fang",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Modest",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/895.png"
+  },
+  {
     "name": "Arcanine-Hisui",
     "item": "Choice Band",
     "evs": "124/228/0/0/0/156",
     "nature": "Adamant",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10230.png"
-  },
-  {
-    "name": "Volcarona",
-    "item": "Leftovers",
-    "evs": "252/0/100/20/4/132",
-    "nature": "Timid",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/637.png"
   },
   {
     "name": "Torkoal",
@@ -273,6 +266,13 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/324.png"
   },
   {
+    "name": "Volcarona",
+    "item": "Leftovers",
+    "evs": "252/0/100/20/4/132",
+    "nature": "Timid",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/637.png"
+  },
+  {
     "name": "Cresselia",
     "item": "Safety Goggles",
     "evs": "220/0/100/12/140/36",
@@ -280,16 +280,9 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/488.png"
   },
   {
-    "name": "Registeel",
-    "item": "Leftovers",
-    "evs": "164/28/220/0/92/4",
-    "nature": "Impish",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/379.png"
-  },
-  {
     "name": "Araquanid",
     "item": "Clear Amulet",
-    "evs": "252/252/0/0/4/0",
+    "evs": "252/252/4/0/0/0",
     "nature": "Brave",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/752.png"
   },
@@ -299,6 +292,13 @@
     "evs": "188/0/124/164/28/0",
     "nature": "Quiet",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png"
+  },
+  {
+    "name": "Registeel",
+    "item": "Leftovers",
+    "evs": "164/28/220/0/92/4",
+    "nature": "Impish",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/379.png"
   },
   {
     "name": "Ursaluna",
@@ -344,7 +344,7 @@
   },
   {
     "name": "Zapdos-Galar",
-    "item": "Psychic Seed",
+    "item": "Choice Scarf",
     "evs": "0/252/0/0/4/252",
     "nature": "Jolly",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10170.png"
@@ -364,13 +364,6 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/642.png"
   },
   {
-    "name": "Orthworm",
-    "item": "Sitrus Berry",
-    "evs": "244/4/12/0/244/4",
-    "nature": "Impish",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/968.png"
-  },
-  {
     "name": "Hatterene",
     "item": "Life Orb",
     "evs": "212/0/44/252/0/0",
@@ -378,25 +371,18 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/858.png"
   },
   {
-    "name": "Ogerpon-Cornerstone",
-    "item": "Cornerstone Mask",
-    "evs": "0/252/0/0/4/252",
-    "nature": "Jolly",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10275.png"
+    "name": "Orthworm",
+    "item": "Sitrus Berry",
+    "evs": "244/4/12/0/244/4",
+    "nature": "Impish",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/968.png"
   },
   {
     "name": "Iron Boulder",
     "item": "Clear Amulet",
-    "evs": "172/116/4/0/4/212",
-    "nature": "Adamant",
-    "img": null
-  },
-  {
-    "name": "Suicune",
-    "item": "Sitrus Berry",
-    "evs": "244/0/76/4/124/60",
-    "nature": "Calm",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png"
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1022.png"
   },
   {
     "name": "Armarouge",
@@ -404,6 +390,13 @@
     "evs": "156/0/12/252/12/76",
     "nature": "Modest",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/936.png"
+  },
+  {
+    "name": "Ogerpon-Cornerstone",
+    "item": "Cornerstone Mask",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10275.png"
   },
   {
     "name": "Grimmsnarl",
@@ -420,11 +413,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10237.png"
   },
   {
-    "name": "Salamence",
-    "item": "Rocky Helmet",
-    "evs": "252/0/4/156/4/92",
-    "nature": "Modest",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/373.png"
+    "name": "Suicune",
+    "item": "Sitrus Berry",
+    "evs": "244/0/76/4/124/60",
+    "nature": "Calm",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png"
   },
   {
     "name": "Gastrodon",
@@ -441,11 +434,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
   },
   {
-    "name": "Talonflame",
-    "item": "Life Orb",
-    "evs": "4/252/0/0/0/252",
-    "nature": "Adamant",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/663.png"
+    "name": "Salamence",
+    "item": "Rocky Helmet",
+    "evs": "252/0/4/156/4/92",
+    "nature": "Modest",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/373.png"
   },
   {
     "name": "Latios",
@@ -455,6 +448,13 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/381.png"
   },
   {
+    "name": "Baxcalibur",
+    "item": "Clear Amulet",
+    "evs": "220/252/4/0/28/4",
+    "nature": "Adamant",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/998.png"
+  },
+  {
     "name": "Smeargle",
     "item": "Focus Sash",
     "evs": "252/0/4/0/0/252",
@@ -462,18 +462,18 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/235.png"
   },
   {
+    "name": "Talonflame",
+    "item": "Life Orb",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/663.png"
+  },
+  {
     "name": "Ting-Lu",
     "item": "Assault Vest",
     "evs": "212/164/4/0/124/4",
     "nature": "Adamant",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1003.png"
-  },
-  {
-    "name": "Baxcalibur",
-    "item": "Clear Amulet",
-    "evs": "220/252/4/0/28/4",
-    "nature": "Adamant",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/998.png"
   },
   {
     "name": "Gothitelle",
@@ -490,11 +490,25 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/350.png"
   },
   {
+    "name": "Ninetales-Alola",
+    "item": "Light Clay",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10104.png"
+  },
+  {
     "name": "Hydrapple",
     "item": "Assault Vest",
     "evs": "228/0/4/236/36/4",
     "nature": "Modest",
-    "img": null
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1019.png"
+  },
+  {
+    "name": "Dragapult",
+    "item": "Choice Band",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/887.png"
   },
   {
     "name": "Okidogi",
@@ -504,18 +518,25 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1014.png"
   },
   {
+    "name": "Tyranitar",
+    "item": "Assault Vest",
+    "evs": "4/252/4/0/4/244",
+    "nature": "Adamant",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/248.png"
+  },
+  {
+    "name": "Serperior",
+    "item": "Wide Lens",
+    "evs": "164/0/4/84/4/252",
+    "nature": "Timid",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/497.png"
+  },
+  {
     "name": "Bronzong",
     "item": "Leftovers",
     "evs": "252/0/252/0/4/0",
     "nature": "Relaxed",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/437.png"
-  },
-  {
-    "name": "Ninetales-Alola",
-    "item": "Light Clay",
-    "evs": "212/0/4/92/4/196",
-    "nature": "Timid",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10104.png"
   },
   {
     "name": "Gyarados",
@@ -525,6 +546,13 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png"
   },
   {
+    "name": "Excadrill",
+    "item": "Clear Amulet",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Adamant",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/530.png"
+  },
+  {
     "name": "Mamoswine",
     "item": "Life Orb",
     "evs": "0/252/0/0/4/252",
@@ -532,25 +560,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/473.png"
   },
   {
-    "name": "Tyranitar",
-    "item": "Assault Vest",
-    "evs": "4/252/4/0/4/244",
-    "nature": "Adamant",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/248.png"
-  },
-  {
     "name": "Gallade",
     "item": "Clear Amulet",
     "evs": "252/252/4/0/0/0",
     "nature": "Brave",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/475.png"
-  },
-  {
-    "name": "Dragapult",
-    "item": "Choice Band",
-    "evs": "4/252/0/0/0/252",
-    "nature": "Jolly",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/887.png"
   },
   {
     "name": "Corviknight",
@@ -567,18 +581,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/973.png"
   },
   {
-    "name": "Serperior",
+    "name": "Maushold",
     "item": "Wide Lens",
-    "evs": "116/0/4/132/4/252",
-    "nature": "Timid",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/497.png"
-  },
-  {
-    "name": "Excadrill",
-    "item": "Clear Amulet",
-    "evs": "0/252/0/0/4/252",
-    "nature": "Adamant",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/530.png"
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/925.png"
   },
   {
     "name": "Terrakion",
@@ -595,11 +602,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/609.png"
   },
   {
-    "name": "Staraptor",
-    "item": "Choice Scarf",
-    "evs": "148/116/4/0/4/236",
+    "name": "Scizor",
+    "item": "Clear Amulet",
+    "evs": "196/108/12/0/76/116",
     "nature": "Adamant",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/398.png"
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/212.png"
   },
   {
     "name": "Moltres-Galar",
@@ -609,25 +616,18 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10171.png"
   },
   {
+    "name": "Staraptor",
+    "item": "Choice Scarf",
+    "evs": "148/116/4/0/4/236",
+    "nature": "Adamant",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/398.png"
+  },
+  {
     "name": "Comfey",
     "item": "Kebia Berry",
     "evs": "252/0/164/4/84/4",
     "nature": "Bold",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/764.png"
-  },
-  {
-    "name": "Maushold",
-    "item": "Wide Lens",
-    "evs": "4/244/4/0/4/252",
-    "nature": "Jolly",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/925.png"
-  },
-  {
-    "name": "Muk-Alola",
-    "item": "Leftovers",
-    "evs": "252/0/196/0/60/0",
-    "nature": "Bold",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10113.png"
   },
   {
     "name": "Weezing",
@@ -637,11 +637,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png"
   },
   {
-    "name": "Scizor",
-    "item": "Clear Amulet",
-    "evs": "196/108/12/0/76/116",
-    "nature": "Adamant",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/212.png"
+    "name": "Muk-Alola",
+    "item": "Leftovers",
+    "evs": "252/0/196/0/60/0",
+    "nature": "Bold",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10113.png"
   },
   {
     "name": "Magmar",
@@ -651,6 +651,13 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png"
   },
   {
+    "name": "Politoed",
+    "item": "Sitrus Berry",
+    "evs": "252/0/196/4/52/4",
+    "nature": "Bold",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/186.png"
+  },
+  {
     "name": "Empoleon",
     "item": "Assault Vest",
     "evs": "164/0/4/228/44/68",
@@ -658,11 +665,18 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/395.png"
   },
   {
-    "name": "Politoed",
-    "item": "Sitrus Berry",
-    "evs": "252/0/196/4/52/4",
+    "name": "Regieleki",
+    "item": "Magnet",
+    "evs": "204/0/4/220/4/76",
+    "nature": "Timid",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/894.png"
+  },
+  {
+    "name": "Zapdos",
+    "item": "Rocky Helmet",
+    "evs": "196/0/108/4/76/124",
     "nature": "Bold",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/186.png"
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png"
   },
   {
     "name": "Electabuzz",
@@ -679,25 +693,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/985.png"
   },
   {
-    "name": "Zapdos",
-    "item": "Rocky Helmet",
-    "evs": "196/0/108/4/76/124",
+    "name": "Alcremie",
+    "item": "Sitrus Berry",
+    "evs": "196/0/124/4/4/180",
     "nature": "Bold",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png"
-  },
-  {
-    "name": "Enamorus-Therian",
-    "item": "Life Orb",
-    "evs": "236/0/0/252/20/0",
-    "nature": "Quiet",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10249.png"
-  },
-  {
-    "name": "Regieleki",
-    "item": "Magnet",
-    "evs": "204/0/4/220/4/76",
-    "nature": "Timid",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/894.png"
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/869.png"
   },
   {
     "name": "Articuno-Galar",
@@ -707,18 +707,18 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10169.png"
   },
   {
-    "name": "Alcremie",
-    "item": "Mental Herb",
-    "evs": "196/0/124/4/4/180",
-    "nature": "Bold",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/869.png"
+    "name": "Blaziken",
+    "item": "Clear Amulet",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Adamant",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/257.png"
   },
   {
-    "name": "Goodra-Hisui",
-    "item": "Leftovers",
-    "evs": "252/0/156/0/100/0",
-    "nature": "Careful",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10242.png"
+    "name": "Enamorus-Therian",
+    "item": "Life Orb",
+    "evs": "236/0/0/252/20/0",
+    "nature": "Quiet",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10249.png"
   },
   {
     "name": "Rhyperior",
@@ -728,11 +728,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/464.png"
   },
   {
-    "name": "Pawmot",
-    "item": "Focus Sash",
-    "evs": "0/252/0/0/4/252",
-    "nature": "Jolly",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/923.png"
+    "name": "Goodra-Hisui",
+    "item": "Leftovers",
+    "evs": "252/0/156/0/100/0",
+    "nature": "Careful",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10242.png"
   },
   {
     "name": "Kommo-o",
@@ -742,20 +742,6 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/784.png"
   },
   {
-    "name": "Iron Moth",
-    "item": "Power Herb",
-    "evs": "0/0/0/252/4/252",
-    "nature": "Timid",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/994.png"
-  },
-  {
-    "name": "Blaziken",
-    "item": "Clear Amulet",
-    "evs": "0/252/0/0/4/252",
-    "nature": "Adamant",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/257.png"
-  },
-  {
     "name": "Brambleghast",
     "item": "Focus Sash",
     "evs": "0/252/0/0/4/252",
@@ -763,11 +749,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/947.png"
   },
   {
-    "name": "Sableye",
-    "item": "Light Clay",
-    "evs": "252/0/4/0/252/0",
-    "nature": "Sassy",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/302.png"
+    "name": "Pawmot",
+    "item": "Focus Sash",
+    "evs": "0/252/0/0/4/252",
+    "nature": "Jolly",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/923.png"
   },
   {
     "name": "Azumarill",
@@ -777,39 +763,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/184.png"
   },
   {
-    "name": "Dusclops",
-    "item": "Eviolite",
-    "evs": "252/0/100/0/156/0",
-    "nature": "Sassy",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/356.png"
-  },
-  {
-    "name": "Slowking",
-    "item": "Life Orb",
-    "evs": "228/0/28/252/0/0",
-    "nature": "Quiet",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/199.png"
-  },
-  {
-    "name": "Kingdra",
-    "item": "Life Orb",
-    "evs": "4/0/0/252/0/252",
-    "nature": "Modest",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/230.png"
-  },
-  {
-    "name": "Ninetales",
-    "item": "Eject Pack",
-    "evs": "4/0/0/252/0/252",
+    "name": "Iron Moth",
+    "item": "Power Herb",
+    "evs": "0/0/0/252/4/252",
     "nature": "Timid",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png"
-  },
-  {
-    "name": "Iron Treads",
-    "item": "Assault Vest",
-    "evs": "76/140/4/0/92/196",
-    "nature": "Adamant",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/990.png"
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/994.png"
   },
   {
     "name": "Basculegion",
@@ -826,11 +784,67 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/237.png"
   },
   {
+    "name": "Sableye",
+    "item": "Light Clay",
+    "evs": "252/0/4/0/252/0",
+    "nature": "Sassy",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/302.png"
+  },
+  {
+    "name": "Kingdra",
+    "item": "Life Orb",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Modest",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/230.png"
+  },
+  {
+    "name": "Dusclops",
+    "item": "Eviolite",
+    "evs": "252/0/100/0/156/0",
+    "nature": "Sassy",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/356.png"
+  },
+  {
+    "name": "Ninetales",
+    "item": "Eject Pack",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png"
+  },
+  {
     "name": "Palafin",
     "item": "Mystic Water",
     "evs": "212/252/4/0/4/36",
     "nature": "Adamant",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/964.png"
+  },
+  {
+    "name": "Slowking",
+    "item": "Life Orb",
+    "evs": "228/0/28/252/0/0",
+    "nature": "Quiet",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/199.png"
+  },
+  {
+    "name": "Oranguru",
+    "item": "Mental Herb",
+    "evs": "0/0/252/4/252/0",
+    "nature": "Relaxed",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/765.png"
+  },
+  {
+    "name": "Iron Treads",
+    "item": "Assault Vest",
+    "evs": "76/140/4/0/92/196",
+    "nature": "Adamant",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/990.png"
+  },
+  {
+    "name": "Tsareena",
+    "item": "Assault Vest",
+    "evs": "252/208/0/0/0/48",
+    "nature": "Adamant",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/763.png"
   },
   {
     "name": "Pincurchin",
@@ -840,11 +854,39 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/871.png"
   },
   {
+    "name": "Enamorus",
+    "item": "Life Orb",
+    "evs": "0/0/4/252/0/252",
+    "nature": "Modest",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/905.png"
+  },
+  {
+    "name": "Typhlosion-Hisui",
+    "item": "Choice Scarf",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Modest",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10233.png"
+  },
+  {
+    "name": "Spectrier",
+    "item": "Throat Spray",
+    "evs": "164/0/140/4/4/196",
+    "nature": "Timid",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/897.png"
+  },
+  {
     "name": "Great Tusk",
     "item": "Choice Scarf",
     "evs": "4/252/0/0/0/252",
     "nature": "Adamant",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/984.png"
+  },
+  {
+    "name": "Sneasler",
+    "item": "Psychic Seed",
+    "evs": "12/252/4/0/12/228",
+    "nature": "Adamant",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/903.png"
   },
   {
     "name": "Krookodile",
@@ -854,11 +896,18 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/553.png"
   },
   {
-    "name": "Enamorus",
-    "item": "Life Orb",
-    "evs": "0/0/4/252/0/252",
-    "nature": "Modest",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/905.png"
+    "name": "Thundurus-Therian",
+    "item": "Assault Vest",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10020.png"
+  },
+  {
+    "name": "Iron Valiant",
+    "item": "Booster Energy",
+    "evs": "0/108/0/148/0/252",
+    "nature": "Naive",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1006.png"
   },
   {
     "name": "Jumpluff",
@@ -882,11 +931,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1016.png"
   },
   {
-    "name": "Spectrier",
-    "item": "Throat Spray",
-    "evs": "164/0/140/4/4/196",
-    "nature": "Timid",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/897.png"
+    "name": "Sylveon",
+    "item": "Choice Specs",
+    "evs": "252/0/0/252/4/0",
+    "nature": "Quiet",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/700.png"
   },
   {
     "name": "Greninja",
@@ -896,88 +945,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/658.png"
   },
   {
-    "name": "Iron Valiant",
-    "item": "Booster Energy",
-    "evs": "0/108/0/148/0/252",
-    "nature": "Naive",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1006.png"
-  },
-  {
-    "name": "Sylveon",
-    "item": "Choice Specs",
-    "evs": "252/0/0/252/4/0",
-    "nature": "Quiet",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/700.png"
-  },
-  {
-    "name": "Sneasler",
-    "item": "Psychic Seed",
-    "evs": "12/252/4/0/12/228",
-    "nature": "Adamant",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/903.png"
-  },
-  {
     "name": "Zoroark-Hisui",
     "item": "Focus Sash",
     "evs": "4/0/0/252/0/252",
     "nature": "Timid",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10239.png"
-  },
-  {
-    "name": "Porygon-Z",
-    "item": "Life Orb",
-    "evs": "4/0/0/252/0/252",
-    "nature": "Modest",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/474.png"
-  },
-  {
-    "name": "Iron Jugulis",
-    "item": "Assault Vest",
-    "evs": "60/0/4/140/124/180",
-    "nature": "Modest",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/993.png"
-  },
-  {
-    "name": "Thundurus-Therian",
-    "item": "Assault Vest",
-    "evs": "4/0/0/252/0/252",
-    "nature": "Timid",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10020.png"
-  },
-  {
-    "name": "Tsareena",
-    "item": "Assault Vest",
-    "evs": "252/76/28/0/28/124",
-    "nature": "Adamant",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/763.png"
-  },
-  {
-    "name": "Drifblim",
-    "item": "Grassy Seed",
-    "evs": "4/0/148/4/100/252",
-    "nature": "Timid",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/426.png"
-  },
-  {
-    "name": "Garchomp",
-    "item": "Clear Amulet",
-    "evs": "4/252/0/0/0/252",
-    "nature": "Jolly",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png"
-  },
-  {
-    "name": "Garganacl",
-    "item": "Leftovers",
-    "evs": "252/0/4/0/252/0",
-    "nature": "Impish",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/934.png"
-  },
-  {
-    "name": "Typhlosion-Hisui",
-    "item": "Choice Scarf",
-    "evs": "4/0/0/252/0/252",
-    "nature": "Modest",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10233.png"
   },
   {
     "name": "Glastrier",
@@ -987,18 +959,74 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/896.png"
   },
   {
+    "name": "Iron Jugulis",
+    "item": "Assault Vest",
+    "evs": "60/0/4/140/124/180",
+    "nature": "Modest",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/993.png"
+  },
+  {
+    "name": "Porygon-Z",
+    "item": "Life Orb",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Modest",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/474.png"
+  },
+  {
+    "name": "Indeedee",
+    "item": "Choice Scarf",
+    "evs": "0/0/0/252/4/252",
+    "nature": "Modest",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/876.png"
+  },
+  {
+    "name": "Drifblim",
+    "item": "Grassy Seed",
+    "evs": "4/0/148/4/100/252",
+    "nature": "Timid",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/426.png"
+  },
+  {
+    "name": "Weezing-Galar",
+    "item": "Room Service",
+    "evs": "252/0/4/252/0/0",
+    "nature": "Quiet",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10167.png"
+  },
+  {
+    "name": "Rotom-Wash",
+    "item": "Sitrus Berry",
+    "evs": "244/0/68/116/20/60",
+    "nature": "Modest",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10009.png"
+  },
+  {
+    "name": "Garganacl",
+    "item": "Leftovers",
+    "evs": "252/0/4/0/252/0",
+    "nature": "Impish",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/934.png"
+  },
+  {
+    "name": "Garchomp",
+    "item": "Clear Amulet",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png"
+  },
+  {
+    "name": "Raikou",
+    "item": "Assault Vest",
+    "evs": "132/0/132/116/4/124",
+    "nature": "Modest",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png"
+  },
+  {
     "name": "Illumise",
     "item": "Mental Herb",
     "evs": "244/0/68/0/196/0",
     "nature": "Calm",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/314.png"
-  },
-  {
-    "name": "Delibird",
-    "item": "Focus Sash",
-    "evs": "4/0/0/252/0/252",
-    "nature": "Timid",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/225.png"
   },
   {
     "name": "Brute Bonnet",
@@ -1008,25 +1036,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/986.png"
   },
   {
-    "name": "Rotom-Heat",
-    "item": "Sitrus Berry",
-    "evs": "236/0/0/180/0/92",
-    "nature": "Modest",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10008.png"
-  },
-  {
-    "name": "Regigigas",
-    "item": "Life Orb",
-    "evs": "4/252/0/0/0/252",
-    "nature": "Jolly",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/486.png"
-  },
-  {
-    "name": "Indeedee",
-    "item": "Focus Sash",
-    "evs": "4/0/0/252/0/252",
-    "nature": "Timid",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/876.png"
+    "name": "Lapras",
+    "item": "Throat Spray",
+    "evs": "188/0/204/116/0/0",
+    "nature": "Quiet",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png"
   },
   {
     "name": "Iron Leaves",
@@ -1036,11 +1050,25 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1010.png"
   },
   {
-    "name": "Rabsca",
-    "item": "Twisted Spoon",
-    "evs": "244/0/60/196/4/0",
-    "nature": "Quiet",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/954.png"
+    "name": "Regigigas",
+    "item": "Life Orb",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Jolly",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/486.png"
+  },
+  {
+    "name": "Delibird",
+    "item": "Focus Sash",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/225.png"
+  },
+  {
+    "name": "Rotom-Heat",
+    "item": "Sitrus Berry",
+    "evs": "236/0/0/180/0/92",
+    "nature": "Modest",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10008.png"
   },
   {
     "name": "Sceptile",
@@ -1050,11 +1078,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/254.png"
   },
   {
-    "name": "Lapras",
-    "item": "Throat Spray",
-    "evs": "188/0/204/116/0/0",
-    "nature": "Quiet",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png"
+    "name": "Moltres",
+    "item": "Mago Berry",
+    "evs": "204/0/36/196/4/68",
+    "nature": "Modest",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png"
   },
   {
     "name": "Tinkaton",
@@ -1064,11 +1092,32 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/959.png"
   },
   {
+    "name": "Rabsca",
+    "item": "Twisted Spoon",
+    "evs": "244/0/60/196/4/0",
+    "nature": "Quiet",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/954.png"
+  },
+  {
+    "name": "Sandy Shocks",
+    "item": "Booster Energy",
+    "evs": "188/0/4/20/44/252",
+    "nature": "Timid",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/989.png"
+  },
+  {
     "name": "Mienshao",
     "item": "Focus Sash",
     "evs": "0/252/0/0/4/252",
     "nature": "Jolly",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/620.png"
+  },
+  {
+    "name": "Mimikyu",
+    "item": "Mental Herb",
+    "evs": "252/76/108/0/68/4",
+    "nature": "Adamant",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png"
   },
   {
     "name": "Altaria",
@@ -1078,18 +1127,18 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/334.png"
   },
   {
+    "name": "Duraludon",
+    "item": "Eviolite",
+    "evs": "252/0/36/12/156/52",
+    "nature": "Modest",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/884.png"
+  },
+  {
     "name": "Hydreigon",
     "item": "Life Orb",
     "evs": "244/0/52/116/4/92",
     "nature": "Modest",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/635.png"
-  },
-  {
-    "name": "Moltres",
-    "item": "Mago Berry",
-    "evs": "204/0/36/196/4/68",
-    "nature": "Modest",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png"
   },
   {
     "name": "Charizard",
@@ -1106,39 +1155,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/182.png"
   },
   {
-    "name": "Weezing-Galar",
-    "item": "Sitrus Berry",
-    "evs": "252/0/76/4/148/28",
-    "nature": "Bold",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10167.png"
-  },
-  {
-    "name": "Raikou",
-    "item": "Sitrus Berry",
-    "evs": "172/0/196/116/4/20",
-    "nature": "Modest",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png"
-  },
-  {
     "name": "Snorlax",
     "item": "Sitrus Berry",
     "evs": "244/12/252/0/0/0",
     "nature": "Brave",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png"
-  },
-  {
-    "name": "Wo-Chien",
-    "item": "Sitrus Berry",
-    "evs": "252/0/156/4/92/4",
-    "nature": "Bold",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1001.png"
-  },
-  {
-    "name": "Sandy Shocks",
-    "item": "Booster Energy",
-    "evs": "188/0/4/20/44/252",
-    "nature": "Timid",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/989.png"
   },
   {
     "name": "Slowbro",
@@ -1148,11 +1169,32 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png"
   },
   {
-    "name": "Mimikyu",
-    "item": "Mental Herb",
-    "evs": "252/76/108/0/68/4",
-    "nature": "Adamant",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png"
+    "name": "Wo-Chien",
+    "item": "Sitrus Berry",
+    "evs": "252/0/156/4/92/4",
+    "nature": "Bold",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1001.png"
+  },
+  {
+    "name": "Clefable",
+    "item": "Life Orb",
+    "evs": "252/0/0/252/0/0",
+    "nature": "Quiet",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png"
+  },
+  {
+    "name": "Ludicolo",
+    "item": "Assault Vest",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Modest",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/272.png"
+  },
+  {
+    "name": "Malamar",
+    "item": "Sitrus Berry",
+    "evs": "244/252/0/0/12/0",
+    "nature": "Brave",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/687.png"
   },
   {
     "name": "Hitmonchan",
@@ -1162,25 +1204,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png"
   },
   {
-    "name": "Rotom-Wash",
-    "item": "Sitrus Berry",
-    "evs": "0/0/4/252/0/252",
-    "nature": "Modest",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10009.png"
-  },
-  {
     "name": "Munkidori",
     "item": "Focus Sash",
     "evs": "4/0/0/252/0/252",
     "nature": "Timid",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1015.png"
-  },
-  {
-    "name": "Malamar",
-    "item": "Sitrus Berry",
-    "evs": "244/252/0/0/12/0",
-    "nature": "Brave",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/687.png"
   },
   {
     "name": "Slowking-Galar",
@@ -1204,25 +1232,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/377.png"
   },
   {
-    "name": "Duraludon",
-    "item": "Eviolite",
-    "evs": "252/0/36/12/156/52",
-    "nature": "Modest",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/884.png"
-  },
-  {
-    "name": "Clefable",
-    "item": "Life Orb",
-    "evs": "252/0/0/252/0/0",
-    "nature": "Quiet",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png"
-  },
-  {
-    "name": "Oranguru",
-    "item": "Mental Herb",
-    "evs": "244/0/188/0/76/0",
-    "nature": "Sassy",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/765.png"
+    "name": "Rampardos",
+    "item": "Choice Band",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Brave",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/409.png"
   },
   {
     "name": "Blastoise",
@@ -1232,11 +1246,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
   },
   {
-    "name": "Galvantula",
-    "item": "Focus Sash",
-    "evs": "4/0/0/252/0/252",
-    "nature": "Timid",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/596.png"
+    "name": "Regice",
+    "item": "Life Orb",
+    "evs": "188/0/68/252/0/0",
+    "nature": "Modest",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/378.png"
   },
   {
     "name": "Magnezone",
@@ -1244,6 +1258,13 @@
     "evs": "252/0/4/164/4/84",
     "nature": "Modest",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/462.png"
+  },
+  {
+    "name": "Galvantula",
+    "item": "Focus Sash",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/596.png"
   },
   {
     "name": "Raichu",
@@ -1260,6 +1281,27 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/286.png"
   },
   {
+    "name": "Exeggutor-Alola",
+    "item": "Sitrus Berry",
+    "evs": "244/0/92/0/172/0",
+    "nature": "Sassy",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10114.png"
+  },
+  {
+    "name": "Perrserker",
+    "item": "Focus Sash",
+    "evs": "252/172/0/0/84/0",
+    "nature": "Careful",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/863.png"
+  },
+  {
+    "name": "Torterra",
+    "item": "Life Orb",
+    "evs": "4/252/0/0/0/252",
+    "nature": "Adamant",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/389.png"
+  },
+  {
     "name": "Lilligant",
     "item": "Wide Lens",
     "evs": "4/0/0/252/0/252",
@@ -1274,11 +1316,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/500.png"
   },
   {
-    "name": "Rampardos",
-    "item": "Choice Band",
-    "evs": "252/252/0/0/4/0",
-    "nature": "Brave",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/409.png"
+    "name": "Scrafty",
+    "item": "Assault Vest",
+    "evs": "252/52/132/0/68/0",
+    "nature": "Sassy",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/560.png"
   },
   {
     "name": "Reuniclus",
@@ -1288,18 +1330,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/579.png"
   },
   {
-    "name": "Torterra",
-    "item": "Life Orb",
-    "evs": "4/252/0/0/0/252",
-    "nature": "Adamant",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/389.png"
-  },
-  {
-    "name": "Scrafty",
-    "item": "Assault Vest",
-    "evs": "252/52/132/0/68/0",
-    "nature": "Sassy",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/560.png"
+    "name": "Articuno",
+    "item": "Bright Powder",
+    "evs": "212/0/68/124/4/100",
+    "nature": "Modest",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png"
   },
   {
     "name": "Kleavor",
@@ -1316,39 +1351,11 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png"
   },
   {
-    "name": "Articuno",
-    "item": "Bright Powder",
-    "evs": "212/0/68/124/4/100",
-    "nature": "Modest",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png"
-  },
-  {
-    "name": "Conkeldurr",
-    "item": "Flame Orb",
-    "evs": "252/252/0/0/4/0",
-    "nature": "Brave",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/534.png"
-  },
-  {
-    "name": "Perrserker",
-    "item": "Assault Vest",
-    "evs": "252/172/0/0/84/0",
-    "nature": "Careful",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/863.png"
-  },
-  {
-    "name": "Electrode-Hisui",
-    "item": "Loaded Dice",
-    "evs": "252/4/0/0/0/252",
-    "nature": "Hasty",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10232.png"
-  },
-  {
-    "name": "Exeggutor-Alola",
-    "item": "Sitrus Berry",
-    "evs": "188/0/4/252/4/60",
-    "nature": "Modest",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10114.png"
+    "name": "Exeggutor",
+    "item": "Focus Sash",
+    "evs": "4/0/0/252/0/252",
+    "nature": "Timid",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png"
   },
   {
     "name": "Infernape",
@@ -1358,11 +1365,39 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/392.png"
   },
   {
+    "name": "Conkeldurr",
+    "item": "Flame Orb",
+    "evs": "252/252/0/0/4/0",
+    "nature": "Brave",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/534.png"
+  },
+  {
     "name": "Meowstic",
     "item": "Covert Cloak",
     "evs": "252/0/244/0/12/0",
     "nature": "Bold",
     "img": null
+  },
+  {
+    "name": "Electrode-Hisui",
+    "item": "Loaded Dice",
+    "evs": "252/4/0/0/0/252",
+    "nature": "Hasty",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10232.png"
+  },
+  {
+    "name": "Swampert",
+    "item": "Sitrus Berry",
+    "evs": "252/76/4/0/116/60",
+    "nature": "Adamant",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/260.png"
+  },
+  {
+    "name": "Cobalion",
+    "item": "Leftovers",
+    "evs": "236/60/108/0/60/44",
+    "nature": "Impish",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/638.png"
   },
   {
     "name": "Toxicroak",
@@ -1372,11 +1407,15 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/454.png"
   },
   {
-    "name": "Vileplume",
-    "item": "Wide Lens",
-    "evs": "68/0/4/252/4/180",
+    "name": "Espathra",
+    "item": "Covert Cloak",
+    "evs": "36/0/252/4/4/212",
     "nature": "Timid",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png"
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/956.png"
+  },
+  {
+    "name": "Ceruledge",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/937.png"
   },
   {
     "name": "Klefki",
@@ -1387,76 +1426,64 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/941.png"
   },
   {
-    "name": "Ludicolo",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/272.png"
-  },
-  {
-    "name": "Exeggutor",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png"
-  },
-  {
     "name": "Slaking",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/289.png"
-  },
-  {
-    "name": "Espathra",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/956.png"
-  },
-  {
-    "name": "Lurantis",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/754.png"
-  },
-  {
-    "name": "Regice",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/378.png"
   },
   {
     "name": "Bastiodon",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/411.png"
   },
   {
-    "name": "Medicham",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/308.png"
+    "name": "Pikachu",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
   },
   {
-    "name": "Scovillain",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/952.png"
+    "name": "Lurantis",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/754.png"
+  },
+  {
+    "name": "Medicham",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/308.png"
   },
   {
     "name": "Inteleon",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/818.png"
   },
   {
-    "name": "Bruxish",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/779.png"
-  },
-  {
-    "name": "Rhydon",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png"
-  },
-  {
-    "name": "Floatzel",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/419.png"
-  },
-  {
-    "name": "Dewgong",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png"
-  },
-  {
-    "name": "Meowscarada",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/908.png"
-  },
-  {
-    "name": "Cobalion",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/638.png"
+    "name": "Scovillain",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/952.png"
   },
   {
     "name": "Stonjourner",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/874.png"
   },
   {
+    "name": "Bruxish",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/779.png"
+  },
+  {
+    "name": "Dewgong",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png"
+  },
+  {
+    "name": "Rhydon",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png"
+  },
+  {
     "name": "Dragalge",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/691.png"
+  },
+  {
+    "name": "Persian-Alola",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10108.png"
+  },
+  {
+    "name": "Floatzel",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/419.png"
+  },
+  {
+    "name": "Meowscarada",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/908.png"
   },
   {
     "name": "Riolu",
@@ -1491,16 +1518,12 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png"
   },
   {
-    "name": "Houndstone",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/972.png"
-  },
-  {
     "name": "Drednaw",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/834.png"
   },
   {
-    "name": "Swampert",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/260.png"
+    "name": "Houndstone",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/972.png"
   },
   {
     "name": "Abomasnow",
@@ -1509,10 +1532,6 @@
   {
     "name": "Weavile",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/461.png"
-  },
-  {
-    "name": "Pikachu",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
   },
   {
     "name": "Meganium",
@@ -1535,12 +1554,16 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/904.png"
   },
   {
-    "name": "Grafaiai",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/945.png"
+    "name": "Hariyama",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/297.png"
   },
   {
     "name": "Electivire",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/466.png"
+  },
+  {
+    "name": "Grafaiai",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/945.png"
   },
   {
     "name": "Gengar",
@@ -1555,6 +1578,14 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10165.png"
   },
   {
+    "name": "Cottonee",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/546.png"
+  },
+  {
+    "name": "Clodsire",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/980.png"
+  },
+  {
     "name": "Lokix",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/920.png"
   },
@@ -1567,52 +1598,52 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png"
   },
   {
+    "name": "Salazzle",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/758.png"
+  },
+  {
+    "name": "Goodra",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/706.png"
+  },
+  {
     "name": "Ampharos",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/181.png"
-  },
-  {
-    "name": "Cottonee",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/546.png"
-  },
-  {
-    "name": "Toxapex",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/748.png"
   },
   {
     "name": "Bisharp",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/625.png"
   },
   {
-    "name": "Salazzle",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/758.png"
-  },
-  {
-    "name": "Clodsire",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/980.png"
+    "name": "Toxapex",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/748.png"
   },
   {
     "name": "Honchkrow",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/430.png"
   },
   {
+    "name": "Vikavolt",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/738.png"
+  },
+  {
     "name": "Braviary",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/628.png"
   },
   {
-    "name": "Vikavolt",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/738.png"
+    "name": "Espeon",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png"
   },
   {
     "name": "Skeledirge",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/911.png"
   },
   {
-    "name": "Luxray",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/405.png"
+    "name": "Crabominable",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/740.png"
   },
   {
-    "name": "Hariyama",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/297.png"
+    "name": "Luxray",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/405.png"
   },
   {
     "name": "Florges",
@@ -1621,10 +1652,6 @@
   {
     "name": "Mesprit",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/481.png"
-  },
-  {
-    "name": "Crabominable",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/740.png"
   },
   {
     "name": "Slither Wing",
@@ -1647,6 +1674,14 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/899.png"
   },
   {
+    "name": "Rotom-Mow",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10012.png"
+  },
+  {
+    "name": "Dipplin",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1011.png"
+  },
+  {
     "name": "Squawkabilly",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/931.png"
   },
@@ -1663,20 +1698,36 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png"
   },
   {
-    "name": "Goodra",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/706.png"
+    "name": "Dusknoir",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/477.png"
+  },
+  {
+    "name": "Mudsdale",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/750.png"
   },
   {
     "name": "Flygon",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png"
   },
   {
-    "name": "Dusknoir",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/477.png"
+    "name": "Decidueye-Hisui",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10244.png"
+  },
+  {
+    "name": "Quaquaval",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/914.png"
+  },
+  {
+    "name": "Toxtricity",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/849.png"
   },
   {
     "name": "Tornadus-Therian",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10019.png"
+  },
+  {
+    "name": "Magmortar",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/467.png"
   },
   {
     "name": "Leafeon",
@@ -1687,24 +1738,20 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10251.png"
   },
   {
-    "name": "Mudsdale",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/750.png"
+    "name": "Minior",
+    "img": null
   },
   {
-    "name": "Decidueye-Hisui",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10244.png"
-  },
-  {
-    "name": "Espeon",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png"
-  },
-  {
-    "name": "Toxtricity",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/849.png"
+    "name": "Slowpoke",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
   },
   {
     "name": "Quagsire",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/195.png"
+  },
+  {
+    "name": "Vaporeon",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png"
   },
   {
     "name": "Ribombee",
@@ -1719,12 +1766,12 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/496.png"
   },
   {
-    "name": "Minior",
-    "img": null
-  },
-  {
     "name": "Arboliva",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/930.png"
+  },
+  {
+    "name": "Braviary-Hisui",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10240.png"
   },
   {
     "name": "Granbull",
@@ -1735,16 +1782,12 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/575.png"
   },
   {
-    "name": "Vaporeon",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png"
-  },
-  {
     "name": "Uxie",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/480.png"
   },
   {
-    "name": "Braviary-Hisui",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10240.png"
+    "name": "Appletun",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/842.png"
   },
   {
     "name": "Revavroom",
@@ -1755,8 +1798,12 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/839.png"
   },
   {
-    "name": "Quaquaval",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/914.png"
+    "name": "Delphox",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/655.png"
+  },
+  {
+    "name": "Charjabug",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/737.png"
   },
   {
     "name": "Tauros-Paldea-Aqua",
@@ -1767,12 +1814,16 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/342.png"
   },
   {
-    "name": "Delphox",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/655.png"
-  },
-  {
     "name": "Cinderace",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/815.png"
+  },
+  {
+    "name": "Torchic",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/255.png"
+  },
+  {
+    "name": "Haxorus",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/612.png"
   },
   {
     "name": "Eelektross",
@@ -1787,12 +1838,12 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/943.png"
   },
   {
-    "name": "Hippowdon",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/450.png"
+    "name": "Spiritomb",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/442.png"
   },
   {
-    "name": "Appletun",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/842.png"
+    "name": "Hippowdon",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/450.png"
   },
   {
     "name": "Mismagius",
@@ -1815,8 +1866,8 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/982.png"
   },
   {
-    "name": "Spiritomb",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/442.png"
+    "name": "Barraskewda",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/847.png"
   },
   {
     "name": "Trevenant",
@@ -1839,10 +1890,6 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png"
   },
   {
-    "name": "Barraskewda",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/847.png"
-  },
-  {
     "name": "Virizion",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/640.png"
   },
@@ -1859,24 +1906,8 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png"
   },
   {
-    "name": "Charjabug",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/737.png"
-  },
-  {
-    "name": "Haxorus",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/612.png"
-  },
-  {
     "name": "Seel",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png"
-  },
-  {
-    "name": "Persian-Alola",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10108.png"
-  },
-  {
-    "name": "Yanmega",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/469.png"
   },
   {
     "name": "Cloyster",
@@ -1887,6 +1918,10 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png"
   },
   {
+    "name": "Yanmega",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/469.png"
+  },
+  {
     "name": "Forretress",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/205.png"
   },
@@ -1895,8 +1930,20 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/841.png"
   },
   {
+    "name": "Solosis",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/577.png"
+  },
+  {
+    "name": "Frosmoth",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/873.png"
+  },
+  {
     "name": "Iron Thorns",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/995.png"
+  },
+  {
+    "name": "Hawlucha",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/701.png"
   },
   {
     "name": "Skarmory",
@@ -1907,16 +1954,12 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/715.png"
   },
   {
-    "name": "Frosmoth",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/873.png"
+    "name": "Ditto",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
   },
   {
     "name": "Pachirisu",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/417.png"
-  },
-  {
-    "name": "Ditto",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
   },
   {
     "name": "Blissey",
@@ -1931,20 +1974,16 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/471.png"
   },
   {
-    "name": "Dipplin",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1011.png"
-  },
-  {
-    "name": "Hawlucha",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/701.png"
-  },
-  {
     "name": "Wooper",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png"
   },
   {
     "name": "Ursaring",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/217.png"
+  },
+  {
+    "name": "Heracross",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/214.png"
   },
   {
     "name": "Tauros-Paldea-Combat",
@@ -1957,6 +1996,10 @@
   {
     "name": "Ariados",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/168.png"
+  },
+  {
+    "name": "Trapinch",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/328.png"
   },
   {
     "name": "Oricorio",
@@ -1999,16 +2042,16 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/927.png"
   },
   {
+    "name": "Mandibuzz",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/630.png"
+  },
+  {
     "name": "Grumpig",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/326.png"
   },
   {
     "name": "Scyther",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png"
-  },
-  {
-    "name": "Mandibuzz",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/630.png"
   },
   {
     "name": "Rotom-Fan",
@@ -2039,6 +2082,10 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png"
   },
   {
+    "name": "Vivillon",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666.png"
+  },
+  {
     "name": "Noctowl",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/164.png"
   },
@@ -2055,16 +2102,16 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/594.png"
   },
   {
-    "name": "Vivillon",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666.png"
-  },
-  {
     "name": "Flareon",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png"
   },
   {
     "name": "Eiscue",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/875.png"
+  },
+  {
+    "name": "Falinks",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/870.png"
   },
   {
     "name": "Munchlax",
@@ -2115,24 +2162,12 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/891.png"
   },
   {
-    "name": "Heracross",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/214.png"
-  },
-  {
-    "name": "Falinks",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/870.png"
-  },
-  {
     "name": "Hypno",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png"
   },
   {
-    "name": "Slowpoke",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
-  },
-  {
-    "name": "Magmortar",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/467.png"
+    "name": "Basculegion-F",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10248.png"
   },
   {
     "name": "Toucannon",
@@ -2153,14 +2188,6 @@
   {
     "name": "Cryogonal",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/615.png"
-  },
-  {
-    "name": "Rotom-Mow",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10012.png"
-  },
-  {
-    "name": "Basculegion-F",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10248.png"
   },
   {
     "name": "Vespiquen",
@@ -2239,6 +2266,14 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png"
   },
   {
+    "name": "Sunkern",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/191.png"
+  },
+  {
+    "name": "Snom",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/872.png"
+  },
+  {
     "name": "Sunflora",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/192.png"
   },
@@ -2253,6 +2288,14 @@
   {
     "name": "Klawf",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/950.png"
+  },
+  {
+    "name": "Graveler-Alola",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10110.png"
+  },
+  {
+    "name": "Dragonair",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png"
   },
   {
     "name": "Polteageist",
@@ -2277,10 +2320,6 @@
   {
     "name": "Arbok",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png"
-  },
-  {
-    "name": "Dragonair",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png"
   },
   {
     "name": "Yanma",
@@ -2319,12 +2358,12 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/670.png"
   },
   {
-    "name": "Primeape",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png"
-  },
-  {
     "name": "Skiploom",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png"
+  },
+  {
+    "name": "Primeape",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png"
   },
   {
     "name": "Cleffa",
@@ -2345,6 +2384,10 @@
   {
     "name": "Misdreavus",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/200.png"
+  },
+  {
+    "name": "Komala",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/775.png"
   },
   {
     "name": "Sobble",
@@ -2369,10 +2412,6 @@
   {
     "name": "Bombirdier",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/962.png"
-  },
-  {
-    "name": "Trapinch",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/328.png"
   },
   {
     "name": "Magcargo",
@@ -2409,6 +2448,10 @@
   {
     "name": "Seviper",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/336.png"
+  },
+  {
+    "name": "Vulpix-Alola",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10103.png"
   },
   {
     "name": "Psyduck",
@@ -2467,6 +2510,10 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png"
   },
   {
+    "name": "Nosepass",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/299.png"
+  },
+  {
     "name": "Duskull",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/355.png"
   },
@@ -2501,10 +2548,6 @@
   {
     "name": "Ducklett",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/580.png"
-  },
-  {
-    "name": "Komala",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/775.png"
   },
   {
     "name": "Chingling",
@@ -2575,16 +2618,16 @@
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/183.png"
   },
   {
+    "name": "Seadra",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png"
+  },
+  {
     "name": "Probopass",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/476.png"
   },
   {
     "name": "Rhyhorn",
     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png"
-  },
-  {
-    "name": "Torchic",
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/255.png"
   },
   {
     "name": "Crocalor",
