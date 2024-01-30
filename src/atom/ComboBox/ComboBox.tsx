@@ -1,5 +1,5 @@
 import { Combobox } from "@headlessui/react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { Text } from "../Text/Text";
@@ -25,7 +25,25 @@ export const ComboBoxUI = ({
   const [query, setQuery] = useState("");
   const { control } = useFormContext();
   const { t } = useTranslation();
+  const comboBoxRef = useRef<HTMLDivElement>(null);
+  const [isAbove, setIsAbove] = useState<boolean>(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (comboBoxRef.current) {
+        const ComboboxRect = comboBoxRef.current.getBoundingClientRect();
+        const isOverlappingBottom =
+          window.innerHeight - ComboboxRect.bottom < 150;
+        setIsAbove(isOverlappingBottom);
+      }
+    };
+
+    window.addEventListener("click", handleScroll);
+
+    return () => {
+      window.removeEventListener("click", handleScroll);
+    };
+  }, []);
   const filteredArray =
     query === ""
       ? undefined
@@ -47,7 +65,12 @@ export const ComboBoxUI = ({
       control={control}
       defaultValue={""}
       render={({ field }) => (
-        <div className={`flex flex-col gap-y-1 w-full ${className}`}>
+        <div
+          ref={comboBoxRef}
+          className={`flex flex-col gap-y-1 w-full ${className} ${
+            isAbove ? "absolute bottom-full transform -translate-y-full" : ""
+          }`}
+        >
           {label ? <Text>{label}</Text> : null}
           <Combobox
             defaultValue={field.value}
@@ -65,41 +88,45 @@ export const ComboBoxUI = ({
               />
 
               {filteredArray && (
-                <Combobox.Options
-                  className={`w-full rounded-md border absolute z-10 border-black overflow-auto max-h-60`}
-                >
-                  {filteredArray?.length > 0 ? (
-                    <>
-                      {filteredArray?.map((item, index) => (
-                        <Combobox.Option
-                          key={index}
-                          value={item}
-                          className={({
-                            active,
-                            selected,
-                          }) => `cursor-default select-none py-2 
+                <div ref={comboBoxRef}>
+                  <Combobox.Options
+                    className={`w-full rounded-md border absolute z-10 border-black overflow-auto max-h-60 ${
+                      isAbove ? "bottom-full transform " : ""
+                    }`}
+                  >
+                    {filteredArray?.length > 0 ? (
+                      <>
+                        {filteredArray?.map((item, index) => (
+                          <Combobox.Option
+                            key={index}
+                            value={item}
+                            className={({
+                              active,
+                              selected,
+                            }) => `cursor-default select-none py-2 
                   pl-5 pr-4 
                  
                   ${selectedOrActiveStyles(selected, active)}`}
-                        >
-                          {({ selected }) => (
-                            <span
-                              className={`block truncate ${
-                                selected ? "font-medium " : "font-normal"
-                              }`}
-                            >
-                              {item}
-                            </span>
-                          )}
-                        </Combobox.Option>
-                      ))}
-                    </>
-                  ) : (
-                    <span className="block bg-white truncate select-none py-2 pl-5 pr-4">
-                      {t("error.resultNotFound")}
-                    </span>
-                  )}
-                </Combobox.Options>
+                          >
+                            {({ selected }) => (
+                              <span
+                                className={`block truncate ${
+                                  selected ? "font-medium " : "font-normal"
+                                }`}
+                              >
+                                {item}
+                              </span>
+                            )}
+                          </Combobox.Option>
+                        ))}
+                      </>
+                    ) : (
+                      <span className="block bg-white truncate select-none py-2 pl-5 pr-4">
+                        {t("error.resultNotFound")}
+                      </span>
+                    )}
+                  </Combobox.Options>
+                </div>
               )}
             </div>
           </Combobox>
