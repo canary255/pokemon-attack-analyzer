@@ -24,7 +24,13 @@
     "generatePdf": "Generar PDF",
     "downloadReport": "Descargar informe",
     "instructions": "Instrucciones",
-    "madeBy": "Hecho por"
+    "madeBy": "Hecho por",
+    "additionalOptions": "Opciones adicionales",
+    "everyPokemonHasAV": "Todos los Pokémon tienen Chaleco Asalto",
+    "pokemonLevel": "Nivel Pokémon",
+    "setFilter": "Filtrar set por",
+    "extreme": "Extremo",
+    "set": "Común"
   },
   "projectExplain": {
     "description": "es un proyecto donde un usuario puede comprobar si un Pokémon puede sobrevivir a un ataque con ciertas condiciones de un Pokémon atacante. También permite crear un PDF con esos cálculos.",
@@ -50,11 +56,22 @@
     "selectMove": "Selecciona un movimiento",
     "category": "Categoría",
     "nature": "Naturaleza",
-    "numHits": "Nº Golpes"
+    "numHits": "Nº Golpes",
+    "selectMechanic": "Selecciona la mecánica",
+    "status": "Estado"
   },
   "category": {
     "physical": "Fís",
     "special": "Esp"
+  },
+
+  "status": {
+    "burn": "Quemado",
+    "freeze": "Congelado",
+    "paralysis": "Paralizado",
+    "sleep": "Dormido",
+    "poison": "Envenenado",
+    "toxic": "Tóxico"
   },
 
   "button": {
@@ -79,7 +96,7 @@
     "battery": "Batería",
     "friendGuard": "Compiescolta",
     "tailwind": "Viento Afín",
-    "generateReport": "¡Generar Informe!"
+    "generateReport": "¡Generar!"
   },
   "message": {
     "specifyPokemon": "Especifica el Pokémon escribiendo el nombre y separandolo con una coma.",
@@ -134,7 +151,8 @@
     "dragon": "Dragón",
     "dark": "Siniestro",
     "steel": "Acero",
-    "fairy": "Hada"
+    "fairy": "Hada",
+    "stellar": "Astral"
   },
   "weather": {
     "sun": "Sol",

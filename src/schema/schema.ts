@@ -1,3 +1,4 @@
+import { Mechanic } from "../types/mechanic";
 import { ReportProps } from "../types/reportProps";
 
 export const reportInitialState: ReportProps = {
@@ -7,15 +8,21 @@ export const reportInitialState: ReportProps = {
   nature: "modest",
   item: "",
   move: "Absorb",
-  mechanic: "none",
+  mechanic: Mechanic.none,
   category: "Special",
   crit: false,
   boostAtk: "0",
   evAtk: "0",
   ivAtk: "31",
+  boostUserDef: "0",
+  evUserDef: "0",
+  ivUserDef: "31",
   boostSpa: "0",
   evSpa: "0",
   ivSpa: "31",
+  boostSpe: "0",
+  evSpe: "0",
+  ivSpe: "31",
   target: "Singles",
   selectPokemon: "vgc",
   defenderList: "",
@@ -44,6 +51,9 @@ export const reportInitialState: ReportProps = {
   beads: false,
   hits: "",
   avatar: "",
+  av: false,
+  level: "50",
+  status: "",
 };
 
 export const testingSet: ReportProps = {
@@ -53,15 +63,21 @@ export const testingSet: ReportProps = {
   nature: "modest",
   item: "Choice Scarf",
   move: "Hyper Beam",
-  mechanic: "tera",
+  mechanic: Mechanic.terastal,
   category: "Special",
   crit: false,
   boostAtk: "0",
   evAtk: "0",
   ivAtk: "31",
+  boostUserDef: "0",
+  evUserDef: "0",
+  ivUserDef: "31",
   boostSpa: "0",
   evSpa: "252",
   ivSpa: "31",
+  boostSpe: "0",
+  evSpe: "0",
+  ivSpe: "31",
   target: "Singles",
   selectPokemon: "all",
   defenderList: "",
@@ -89,6 +105,9 @@ export const testingSet: ReportProps = {
   sword: false,
   beads: false,
   hits: "",
+  av: false,
+  level: "50",
   avatar:
     "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/474.png",
+  status: "",
 };

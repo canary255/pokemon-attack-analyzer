@@ -1,4 +1,10 @@
-import { StatsTable } from "../utils/calc";
+import { StatsTable } from "@smogon/calc";
+
+export enum surviveEnum {
+  YES = "yes",
+  NO = "no",
+  BARELY = "barely",
+}
 
 export interface CalcData {
   description: string;
@@ -7,5 +13,13 @@ export interface CalcData {
   ko_chance: { chance?: number; n: number; text: string };
   defender_evs: StatsTable<number>;
   text_evs: string;
-  move_category: string;
+  move_category?: string;
+}
+
+export interface PokemonCalculatedData {
+  pokemon: string;
+  isInmmune: boolean;
+  calcSet?: CalcData;
+  calcExtreme: CalcData;
+  img: string | void;
 }

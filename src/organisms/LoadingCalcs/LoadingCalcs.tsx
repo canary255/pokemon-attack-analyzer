@@ -4,10 +4,10 @@ import { Carousel } from "../../molecules/Carousel/Carousel";
 import { LoadingBar } from "../../molecules/LoadingBar/LoadingBar";
 import { Button } from "../../atom/Button/Button";
 import { setCancelAction } from "../../utils/cancelAction";
+import { CircularProgressbarWithChildren } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
 interface LoadingCalcsProps {
-  //data: ReportProps | undefined;
-  //Recordatorio cambiar el any
   numberDex: number;
   totalDex: number;
   avatar: string;
@@ -21,8 +21,6 @@ export const LoadingCalcs = ({
   const { t } = useTranslation();
   const percentage = (numberDex / totalDex) * 100;
 
-  //todo: obtener lista de pokes, crear un array vacio, e ir añadiendo los pokes que se van calculando de 1 en 1
-
   return (
     <div className="flex flex-col gap-y-1">
       <Text className="p-5 text-xl font-semibold">
@@ -30,12 +28,12 @@ export const LoadingCalcs = ({
       </Text>
       {/*<Carousel />*/}
       <div className="flex flex-col items-center gap-y-16">
-        <img
-          className={`w-[20%] h-[20%] flex-none`}
-          src={avatar}
-          alt="Rounded avatar"
-        />
-        <LoadingBar width={isNaN(percentage) ? "0" : percentage.toFixed(2)} />
+        <CircularProgressbarWithChildren value={percentage}>
+          <img src={avatar} alt="Rounded avatar" />
+          <div className="text-xl">
+            <strong>{percentage.toFixed(2)}%</strong>
+          </div>
+        </CircularProgressbarWithChildren>
         <Button
           name="cancel"
           label={t("message.cancelProcess")}

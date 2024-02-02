@@ -1,4 +1,4 @@
-export const numberOfHits = (move: string | number[]) => {
+export const numberOfHits = (move: number | number[]) => {
   if (move && typeof move === "object") return getArrayHits(move);
   if (move && typeof move === "number") return getArrayHits([1, move]);
   return [1];

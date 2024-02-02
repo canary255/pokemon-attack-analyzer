@@ -1,18 +1,14 @@
 import { Button } from "../../atom/Button/Button";
 import { Sprite } from "../../atom/Sprite/Sprite";
 import { Text } from "../../atom/Text/Text";
-import { CalcList } from "../../types/calcList";
+import { useFilterStore } from "../../hooks/useFilterStore";
+import { useResultsStore } from "../../hooks/useResultsStore";
 import { survivalColor } from "../../utils/color";
 
-type PokemonCalcResultProps = {
-  pokemonInfo?: CalcList;
-  setPokemonInfo: React.Dispatch<React.SetStateAction<CalcList | undefined>>;
-};
+export const PokemonCalcInfo = () => {
+  const { pokemonInfo, setPokemonInfo } = useResultsStore();
+  const { pokemonSet } = useFilterStore();
 
-export const PokemonCalcInfo = ({
-  pokemonInfo,
-  setPokemonInfo,
-}: PokemonCalcResultProps) => {
   return (
     <>
       <Button
@@ -27,7 +23,9 @@ export const PokemonCalcInfo = ({
             src={pokemonInfo?.img}
             pokemonName={pokemonInfo?.pokemon}
             className={`${survivalColor(
-              pokemonInfo?.calcExtreme?.ko_chance
+              pokemonInfo?.[
+                pokemonSet === "extreme" ? "calcExtreme" : "calcSet"
+              ]?.ko_chance
             )} w-[72px]`}
           />
           <Text className="text-lg font-semibold">{pokemonInfo?.pokemon}</Text>

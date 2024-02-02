@@ -1,4 +1,10 @@
-import { Terrain, TypeName, Weather } from "../utils/calc/data/interface";
+import {
+  StatusName,
+  Terrain,
+  TypeName,
+  Weather,
+} from "@smogon/calc/dist/data/interface";
+import { Mechanic } from "./mechanic";
 
 export type ReportProps = {
   name: string;
@@ -8,16 +14,20 @@ export type ReportProps = {
   item: string;
   move: string;
   category: string;
-  mechanic: string;
+  mechanic: Mechanic;
   crit: boolean;
-  //baseAtk: string;
   boostAtk: string;
   evAtk: string;
   ivAtk: string;
-  //baseSpa: string;
+  boostUserDef: string;
+  evUserDef: string;
+  ivUserDef: string;
   boostSpa: string;
   evSpa: string;
   ivSpa: string;
+  boostSpe: string;
+  evSpe: string;
+  ivSpe: string;
   target: "Singles" | "Doubles";
   selectPokemon: "all" | "vgc";
   defenderList: string;
@@ -46,4 +56,7 @@ export type ReportProps = {
   beads: boolean;
   hits: string;
   avatar: string;
+  level: string;
+  av: boolean;
+  status: "" | StatusName;
 };

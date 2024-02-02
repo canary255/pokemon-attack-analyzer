@@ -10,7 +10,7 @@ interface SwitchProps {
 }
 
 export const SwitchUI = ({
-  label = "Switch",
+  label = "",
   circleBorder = "all",
   name,
   className,
@@ -25,13 +25,13 @@ export const SwitchUI = ({
         <Switch
           checked={field.value}
           onChange={field.onChange}
-          className={`items-center min-[315px]:p-1 sm:p-2
+          className={`items-center dark: border border-black min-[315px]:p-1 sm:p-2 shadow-lg 
           ${className}
       ${borderDirection[circleBorder]} 
-      ${field.value ? "bg-primary" : "bg-gray-200"}`}
+      ${field.value ? "bg-primary" : "bg-white"}`}
         >
           <span
-            className={`transition min-[315px]:text-xs sm:text-sm ${
+            className={`transition min-[315px]:text-xs sm:text-sm  ${
               field.value ? "text-white bold" : "text-black"
             }`}
           >

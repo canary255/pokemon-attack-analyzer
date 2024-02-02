@@ -23,3 +23,27 @@
   border-radius: 15px;
   border: 1px solid #909090;
 }
+
+@font-face {
+  font-family: "Bebas";
+  src: url("./fonts/BebasNeue-Regular.ttf");
+}
+
+.brondan {
+  color: white;
+  text-shadow: 1px 1px 2px #000, -1px 1px 2px #000, -1px -1px 0 #000,
+    1px -1px 0 #000;
+}
+
+@keyframes checkAnimation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.checked {
+  animation: checkAnimation 0.3s ease-out;
+}

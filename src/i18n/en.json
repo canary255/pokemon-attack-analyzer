@@ -15,7 +15,7 @@
     "reportGenerator": "Pokémon Attack Analyzer",
     "filter": "Filter",
     "search": "Search",
-    "filterBy": "Filter By",
+    "filterBy": "Survival filter",
     "all": "All",
     "survive": "Survive",
     "cannot": "Cannot",
@@ -24,10 +24,16 @@
     "generatePdf": "Generate PDF",
     "downloadReport": "Download Report",
     "instructions": "Instructions",
-    "madeBy": "Made by"
+    "madeBy": "Made by",
+    "additionalOptions": "Additional options",
+    "everyPokemonHasAV": "Every Pokémon has Assault Vest",
+    "pokemonLevel": "Pokémon Level",
+    "setFilter": "Set filter",
+    "extreme": "Extreme",
+    "set": "Common"
   },
   "projectExplain": {
-    "description": "is a project where a user can check if Pokémon can survive an attack with certain conditions of a Pokémon attacker. It also allows to create a PDF with those calculations.",
+    "description": "is a project where a user checks if a Pokémon can survive an attack with certain conditions of a Pokémon attacker. It also allows to create a PDF with those calculations.",
     "step1": "Fill the attacker section with the Pokémon, item, move, etc.",
     "step2": "Put the boost of the defensive Pokémon, and mark the target.",
     "step3": "Add any field conditions",
@@ -50,11 +56,23 @@
     "selectMove": "Select a Move",
     "category": "Category",
     "nature": "Nature",
-    "numHits": "Hits"
+    "numHits": "Hits",
+    "selectMechanic": "Select the mechanic",
+    "status": "Status"
   },
+
   "category": {
     "physical": "Phy",
     "special": "Spe"
+  },
+
+  "status": {
+    "burn": "Burn",
+    "freeze": "Freeze",
+    "paralysis": "Paralysis",
+    "sleep": "Sleep",
+    "poison": "Poison",
+    "toxic": "Toxic"
   },
 
   "button": {
@@ -79,7 +97,7 @@
     "battery": "Battery",
     "friendGuard": "Friend Guard",
     "tailwind": "Tailwind",
-    "generateReport": "Generate Report!"
+    "generateReport": "Generate!"
   },
   "message": {
     "specifyPokemon": "Specify Pokémon by writing the name and separating it with a comma...",
@@ -134,7 +152,8 @@
     "dragon": "Dragon",
     "dark": "Dark",
     "steel": "Steel",
-    "fairy": "Fairy"
+    "fairy": "Fairy",
+    "stellar": "Stellar"
   },
   "weather": {
     "sun": "Sun",

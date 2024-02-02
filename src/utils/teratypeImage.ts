@@ -16,7 +16,8 @@ import dragon from "../assets/teraType/dragon.png";
 import dark from "../assets/teraType/dark.png";
 import steel from "../assets/teraType/steel.png";
 import fairy from "../assets/teraType/fairy.png";
-import { TypeName } from "./calc/data/interface";
+import stellar from "../assets/teraType/stellar.png";
+import { TypeName } from "@smogon/calc/dist/data/interface";
 
 type Teratype = Exclude<TypeName, "Normal" | "???">;
 
@@ -38,6 +39,7 @@ const teratypeImages: Record<Teratype, string> = {
   Dark: dark,
   Steel: steel,
   Fairy: fairy,
+  Stellar: stellar,
 };
 
 export const teratypeImage = (type: Teratype): string => {

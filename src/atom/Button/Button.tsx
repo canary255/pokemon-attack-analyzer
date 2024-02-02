@@ -1,3 +1,4 @@
+import { Children } from "react";
 import { capitalizeEveryWord } from "../../utils/capitalize";
 import { borderDirection } from "../../utils/styleConsts";
 
@@ -8,6 +9,7 @@ interface ButtonProps {
   className?: string;
   onClick?: () => void;
   circleBorder?: "left" | "right" | "all" | "none";
+  children?: React.ReactNode;
 }
 
 export const Button = ({
@@ -16,16 +18,18 @@ export const Button = ({
   circleBorder = "none",
   name,
   className,
+  children,
   onClick,
 }: ButtonProps) => {
   return (
     <button
-      className={`${className} ${borderDirection[circleBorder]} p-2 border border-black bg-primary text-white`}
+      className={`${className} ${borderDirection[circleBorder]} px-2 py-1 border border-black 
+      bg-primary text-white shadow-lg`}
       name={name}
       type={type}
       onClick={onClick}
     >
-      {capitalizeEveryWord(label ?? "")}
+      {children ?? capitalizeEveryWord(label ?? "")}
     </button>
   );
 };

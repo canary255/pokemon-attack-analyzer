@@ -14,10 +14,12 @@ export interface Pokemon {
   l?: string;
   ss?: boolean;
   id?: number;
+  img?: string | null;
 }
 
 export interface PokemonData {
   item: string;
   evs: string;
   nature: string;
+  img?: string;
 }

@@ -11,12 +11,13 @@ import { renderToString } from "react-dom/server";
 import { ReportPDF } from "../../molecules/ReportPDF/ReportPDF";
 import { Text } from "../../atom/Text/Text";
 import jsPDF from "jspdf";
+import { useResultsStore } from "../../hooks/useResultsStore";
 
 interface LoadingCalcsProps {
   resultsCalcs: CalcList[];
   setPage: React.Dispatch<React.SetStateAction<number>>;
   data: ReportProps | undefined;
-  avatar: string;
+  avatar?: string;
 }
 
 const DOWNLOAD_BUTTON_CLASS =
@@ -29,14 +30,14 @@ export const Results = ({
   avatar,
 }: LoadingCalcsProps) => {
   const { t } = useTranslation();
-  const [pokemonInfo, setPokemonInfo] = useState<CalcList | undefined>();
   const [filteredList, setFilteredList] = useState<CalcList[]>([
     ...resultsCalcs,
   ]);
-  const [lastScrollPosition, setLastScrollPosition] = useState(0);
+  const { pokemonInfo, setPokemonInfo } = useResultsStore();
 
   const resetPage = () => {
     setPage(0);
+    setPokemonInfo(undefined);
   };
 
   const print = () => {
@@ -56,28 +57,21 @@ export const Results = ({
   };
 
   return (
-    <div className="flex flex-col gap-y-2">
+    <div className="flex flex-col gap-y-1">
       <ColorKey />
       <Divider className="my-0" />
       <div className="h-96">
         {pokemonInfo ? (
-          <PokemonCalcInfo
-            pokemonInfo={pokemonInfo}
-            setPokemonInfo={setPokemonInfo}
-          />
+          <PokemonCalcInfo />
         ) : (
           <PokemonCalcResultList
             resultsCalcs={resultsCalcs}
             filteredList={filteredList}
             setFilteredList={setFilteredList}
-            pokemonInfo={pokemonInfo}
-            setPokemonInfo={setPokemonInfo}
-            lastScrollPosition={lastScrollPosition}
-            setLastScrollPosition={setLastScrollPosition}
           />
         )}
       </div>
-      <Divider className="mt-16" />
+      <Divider className="mt-12" />
 
       <Text className="px-2 font-semibold">{t("projectExplain.note2")}</Text>
       <div className="flex flex-row gap-x-4">

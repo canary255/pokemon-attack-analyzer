@@ -1,50 +1,49 @@
-import { useState, useRef, useMemo, useLayoutEffect, useEffect } from "react";
+import { useState, useRef, useLayoutEffect, useMemo } from "react";
 import { Sprite } from "../../atom/Sprite/Sprite";
 import { TextFieldCommon } from "../../atom/TextFieldCommon/TextFieldCommon";
 import { CalcList } from "../../types/calcList";
 import { survivalColor } from "../../utils/color";
 import { Text } from "../../atom/Text/Text";
 import { SelectorNoLogic } from "../../atom/SelectorNoLogic/SelectorNoLogic";
-import { OptionsType } from "../../types/options";
 import { useTranslation } from "react-i18next";
+import { setOptions, survivalOptions } from "../../utils/consts";
+import { canSurvive } from "./utils/helpers";
+import { useResultsStore } from "../../hooks/useResultsStore";
+import { SetOptions, SurvivalOptions } from "./interfaces/options";
+import { useFilterStore } from "../../hooks/useFilterStore";
 
 type PokemonCalcResultProps = {
   resultsCalcs: CalcList[];
-  pokemonInfo?: CalcList;
-  setPokemonInfo: React.Dispatch<React.SetStateAction<CalcList | undefined>>;
   filteredList: CalcList[];
   setFilteredList: React.Dispatch<React.SetStateAction<CalcList[]>>;
-  lastScrollPosition: number;
-  setLastScrollPosition: React.Dispatch<React.SetStateAction<number>>;
 };
-
-type SurvivalOptions = "all" | "yes" | "barely" | "no";
 
 export const PokemonCalcResultList = ({
   resultsCalcs,
-  setPokemonInfo,
   filteredList,
   setFilteredList,
-  pokemonInfo,
-  lastScrollPosition,
-  setLastScrollPosition,
 }: PokemonCalcResultProps) => {
   const { t } = useTranslation();
-  const [selector, setSelector] = useState<SurvivalOptions>("all");
-  const [text, setText] = useState<string>("");
+  const {
+    selector,
+    setSelector,
+    pokemonSet,
+    setPokemonSet,
+    pokemonName,
+    setPokemonName,
+  } = useFilterStore();
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const {
+    pokemonInfo,
+    setPokemonInfo,
+    lastScrollPosition,
+    setLastScrollPosition,
+  } = useResultsStore();
 
   const handleScroll = () => {
     const scrollPosition = scrollContainerRef.current?.scrollTop ?? 0;
     setScrollPosition(scrollPosition);
-  };
-
-  const filterBySurvival = (canSurvive: "yes" | "barely" | "no") => {
-    const filtered = resultsCalcs.filter((item) => {
-      return item.canSurvive.includes(canSurvive);
-    });
-    setFilteredList(filtered);
   };
 
   useLayoutEffect(() => {
@@ -58,58 +57,64 @@ export const PokemonCalcResultList = ({
     setPokemonInfo(item);
   };
 
-  const survivalOptions: OptionsType[] = [
-    { name: "common.all", value: "all" },
-    { name: "common.survive", value: "yes" },
-    { name: "common.barely", value: "barely" },
-    { name: "common.cannot", value: "no" },
-  ];
-
-  useEffect(() => {
-    setText("");
-    if (selector === "all") {
-      setFilteredList(resultsCalcs);
-      return;
-    }
-    filterBySurvival(selector as "yes" | "barely" | "no");
-  }, [selector]);
-
-  const handleFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    setText(value);
+  useMemo(() => {
     const filtered = resultsCalcs.filter((item) => {
+      const canPokemonSurvive = canSurvive(
+        pokemonSet === "common" ? item.calcSet : item.calcExtreme
+      );
       if (selector === "all")
-        return item.pokemon.toLowerCase().includes(value.toLowerCase());
+        return item.pokemon.toLowerCase().includes(pokemonName.toLowerCase());
       return (
-        item.pokemon.toLowerCase().includes(value.toLowerCase()) &&
-        item.canSurvive.includes(selector)
+        item.pokemon.toLowerCase().includes(pokemonName.toLowerCase()) &&
+        canPokemonSurvive === selector
       );
     });
 
     setFilteredList(filtered);
+  }, [pokemonName, selector, pokemonSet]);
+
+  const handleFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setPokemonName(value);
+  };
+
+  const handleSurvival = (e: SurvivalOptions) => {
+    setSelector(e);
+  };
+
+  const handleSet = (value: SetOptions) => {
+    setPokemonSet(value);
   };
 
   return (
     <>
-      <div className="flex justify-center mb-3">
-        <div className="grid lg:grid-cols-2 grid-cols-1 px-6 gap-x-12 gap-y-1">
-          <Text className="text-3xl lg:col-span-2 mb-1">
+      <div className="flex justify-center w-full mb-3">
+        <div className="grid grid-cols-3 px-6 sm:gap-x-8 gap-y-1">
+          <Text className="text-3xl col-span-3 mb-1">
             Total: {filteredList.length}
           </Text>
-          <TextFieldCommon
-            label={t("common.searchPokemon")}
-            placeholder="Write the Pokémon name"
-            value={text}
-            onChange={handleFilter}
-          />
-          <div>
+          <div className="col-span-3 sm:col-span-1">
+            <TextFieldCommon
+              label={t("common.searchPokemon")}
+              placeholder="Write the Pokémon name"
+              value={pokemonName}
+              onChange={handleFilter}
+            />
+          </div>
+          <div className="col-span-2 w-3/4 sm:w-full sm:col-span-1">
             <SelectorNoLogic
               label={t("common.filterBy")}
               value={selector}
               options={survivalOptions}
-              onChange={(e: SurvivalOptions) => {
-                setSelector(e);
-              }}
+              onChange={handleSurvival}
+            />
+          </div>
+          <div className="w-3/4 sm:w-full">
+            <SelectorNoLogic
+              label={t("common.setFilter")}
+              value={pokemonSet}
+              options={setOptions}
+              onChange={handleSet}
             ></SelectorNoLogic>
           </div>
         </div>
@@ -126,7 +131,8 @@ export const PokemonCalcResultList = ({
               src={item?.img}
               pokemonName={item?.pokemon}
               className={`${survivalColor(
-                item?.calcExtreme?.ko_chance
+                item?.[pokemonSet === "extreme" ? "calcExtreme" : "calcSet"]
+                  ?.ko_chance
               )} w-[72px] cursor-pointer`}
               onClick={() => handlePokemonInfo(item)}
             />

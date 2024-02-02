@@ -33,11 +33,11 @@ export const TextFieldCommon = ({
         placeholder={placeholder}
         onChange={onChange}
         value={value}
-        className={`border sm:p-2 min-[315px]:p-1 border-black 
+        className={`border min-[315px]:p-1 border-black rounded-lg px-2 py-1
               ${
                 readOnly
-                  ? "bg-transparent border-none"
-                  : "bg-white dark:bg-inputBackground"
+                  ? "bg-transparent border-none dark:text-white"
+                  : "bg-white dark:bg-inputBackground shadow-lg "
               }
               ${centerText ? "text-center" : ""}
                ${className}`}
