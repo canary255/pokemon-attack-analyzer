@@ -50,7 +50,7 @@ export const Report = () => {
           <div className="border lg:border-y-0 border-l-0 sm:border-b border-black bg-gray-200 dark:border-gray-500">
             <Defender />
           </div>
-          <div className="border border-t-0 border-l-0 border-black bg-gray-200 lg:border-b-0 xl:col-span-1 md:col-span-2">
+          <div className="border border-t-1 border-l-0 border-black bg-gray-200 lg:border-b-0 xl:col-span-1 xl:border-t-0 md:col-span-2">
             {page === 0 && <Information />}
             {page === 1 && (
               <LoadingCalcs
