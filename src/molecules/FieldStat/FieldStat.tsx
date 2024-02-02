@@ -63,7 +63,6 @@ export const FieldStats = ({
       <SelectorUI
         className="w-fit max-sm:text-xs max-sm:w-6"
         options={boost}
-        selectorAbove
         name={boostName}
       />
     </div>
