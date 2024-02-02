@@ -34,7 +34,7 @@ export const SelectorArray: React.FC<SelectorProps> = ({
       if (selectorRef.current) {
         const SelectorRect = selectorRef.current.getBoundingClientRect();
         const isOverlappingBottom =
-          window.innerHeight - SelectorRect.bottom < 150;
+          window.innerHeight - SelectorRect.bottom < 200;
         setIsAbove(isOverlappingBottom);
       }
     };

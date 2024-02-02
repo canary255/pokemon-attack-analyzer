@@ -33,7 +33,7 @@ export const ComboBoxUI = ({
       if (comboBoxRef.current) {
         const ComboboxRect = comboBoxRef.current.getBoundingClientRect();
         const isOverlappingBottom =
-          window.innerHeight - ComboboxRect.bottom < 150;
+          window.innerHeight - ComboboxRect.bottom < 200;
         setIsAbove(isOverlappingBottom);
       }
     };
@@ -65,12 +65,7 @@ export const ComboBoxUI = ({
       control={control}
       defaultValue={""}
       render={({ field }) => (
-        <div
-          ref={comboBoxRef}
-          className={`flex flex-col gap-y-1 w-full ${className} ${
-            isAbove ? "absolute bottom-full transform -translate-y-full" : ""
-          }`}
-        >
+        <div className={`flex flex-col gap-y-1 w-full ${className}`}>
           {label ? <Text>{label}</Text> : null}
           <Combobox
             defaultValue={field.value}

@@ -35,7 +35,7 @@ export const SelectorNoLogic = ({
       if (selectorRef.current) {
         const SelectorRect = selectorRef.current.getBoundingClientRect();
         const isOverlappingBottom =
-          window.innerHeight - SelectorRect.bottom < 150;
+          window.innerHeight - SelectorRect.bottom < 200;
         setIsAbove(isOverlappingBottom);
       }
     };
@@ -55,7 +55,7 @@ export const SelectorNoLogic = ({
     <div className={`flex flex-col gap-y-1 ${className}`}>
       {label ? <Text>{label}</Text> : null}
       <Listbox defaultValue={value} onChange={onChange} refName={name}>
-        <Listbox.Button className={`relative`}>
+        <Listbox.Button className="relative">
           <div className="flex">
             <span
               className={`w-full dark:bg-inputBackground px-2 py-1 ${
@@ -72,38 +72,39 @@ export const SelectorNoLogic = ({
               <Icon icon="ic:outline-keyboard-arrow-down" fontSize={24} />
             </span>
           </div>
-          <div className={` `} ref={selectorRef}></div>
-          <Listbox.Options
-            className={`bg-white absolute w-full z-10
+          <div ref={selectorRef}>
+            <Listbox.Options
+              className={`bg-white absolute w-full z-10
               
                rounded-md border border-black overflow-auto max-h-60
                ${isAbove ? "bottom-full transform " : ""}`}
-          >
-            {options?.length > 0
-              ? options.map((item, index) => (
-                  <Listbox.Option
-                    key={index}
-                    value={item?.value}
-                    className={({ disabled }) =>
-                      `cursor-default select-none p-2 hover:bg-purple-500 hover:text-white hover:cursor-pointer ${optionStyles(
-                        {
-                          selected: item?.value === value,
-                          disabled,
-                        }
-                      )}`
-                    }
-                  >
-                    <span
-                      className={`block truncate ${
-                        item?.value === value ? "font-medium" : "font-normal"
-                      }`}
+            >
+              {options?.length > 0
+                ? options.map((item, index) => (
+                    <Listbox.Option
+                      key={index}
+                      value={item?.value}
+                      className={({ disabled }) =>
+                        `cursor-default select-none p-2 hover:bg-purple-500 hover:text-white hover:cursor-pointer ${optionStyles(
+                          {
+                            selected: item?.value === value,
+                            disabled,
+                          }
+                        )}`
+                      }
                     >
-                      {limitText(t(item?.name))}
-                    </span>
-                  </Listbox.Option>
-                ))
-              : null}
-          </Listbox.Options>
+                      <span
+                        className={`block truncate ${
+                          item?.value === value ? "font-medium" : "font-normal"
+                        }`}
+                      >
+                        {limitText(t(item?.name))}
+                      </span>
+                    </Listbox.Option>
+                  ))
+                : null}
+            </Listbox.Options>
+          </div>
         </Listbox.Button>
       </Listbox>
     </div>

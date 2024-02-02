@@ -39,7 +39,7 @@ const teratypeImages: Record<Teratype, string> = {
   Dark: dark,
   Steel: steel,
   Fairy: fairy,
-  //Stellar: stellar,
+  Stellar: stellar,
 };
 
 export const teratypeImage = (type: Teratype): string => {
