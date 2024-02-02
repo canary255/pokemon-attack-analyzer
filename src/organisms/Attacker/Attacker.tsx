@@ -191,7 +191,7 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
         />
       )}
 
-      <div className="py-4 gap-x-2">
+      <div className=" gap-x-2">
         <Stats atk={atk} def={def} spa={spa} spe={spe} />
       </div>
     </div>

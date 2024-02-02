@@ -60,7 +60,7 @@ export const Results = ({
     <div className="flex flex-col gap-y-1">
       <ColorKey />
       <Divider className="my-0" />
-      <div className="max-h-96">
+      <div className="h-96">
         {pokemonInfo ? (
           <PokemonCalcInfo />
         ) : (
