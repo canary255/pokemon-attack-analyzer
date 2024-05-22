@@ -22,7 +22,7 @@ export const LoadingCalcs = ({
   const percentage = (numberDex / totalDex) * 100;
 
   return (
-    <div className="flex flex-col gap-y-1">
+    <>
       <Text className="p-5 text-xl font-semibold">
         {t("projectExplain.calcProcess")}
       </Text>
@@ -42,6 +42,6 @@ export const LoadingCalcs = ({
           onClick={() => setCancelAction()}
         />
       </div>
-    </div>
+    </>
   );
 };

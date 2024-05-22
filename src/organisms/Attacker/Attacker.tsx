@@ -103,7 +103,7 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
   };
 
   return (
-    <div className="flex flex-col min-[315px]:px-4 sm:px-12 py-4 gap-y-4">
+    <>
       <div className="grid lg:grid-cols-2 md:grid-cols-1 justify-center gap-x-6 gap-y-8 w-full">
         <Avatar url={avatar} className="flex flex-row justify-center" />
         <div className=" grid place-items-center sm:grid-rows-2 min-[315px]:grid-cols-1 gap-y-2 ">
@@ -194,6 +194,6 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
       <div className=" gap-x-2">
         <Stats atk={atk} def={def} spa={spa} spe={spe} />
       </div>
-    </div>
+    </>
   );
 };

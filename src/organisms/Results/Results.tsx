@@ -57,7 +57,7 @@ export const Results = ({
   };
 
   return (
-    <div className="flex flex-col gap-y-1">
+    <>
       <ColorKey />
       <Divider className="my-0" />
       <div className="h-96">
@@ -94,6 +94,6 @@ export const Results = ({
           }}
         />
       </div>
-    </div>
+    </>
   );
 };

@@ -10,7 +10,7 @@ export const Information = () => {
   let [isOpenModal, setIsOpenModal] = useState(false);
   const { t } = useTranslation();
   return (
-    <div className="flex flex-col px-3 py-3 h-full">
+    <>
       <div className="h-3/4 flex flex-col gap-y-4">
         <div className="flex w-full">
           <Text className="flex justify-start items-center font-medium text-2xl w-1/2">
@@ -53,6 +53,6 @@ export const Information = () => {
           label={t("button.generateReport")}
         />
       </div>
-    </div>
+    </>
   );
 };
