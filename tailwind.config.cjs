@@ -21,6 +21,9 @@ module.exports = {
       fontFamily: {
         bebas: ["Bebas", "sans-serif"],
       },
+      height: {
+        "minus-header": "calc(100vh - 4rem)",
+      },
     },
   },
   plugins: [
