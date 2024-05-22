@@ -21,7 +21,7 @@ interface LoadingCalcsProps {
 }
 
 const DOWNLOAD_BUTTON_CLASS =
-  "text-[14px] border border-red-300 bg-red-600 text-white font-semibold rounded-full w-1/4 h-16 mx-auto flex justify-center items-center hover:bg-red-700";
+  "text-[0.875rem] border border-red-300 bg-red-600 text-white font-semibold rounded-full w-1/4 h-16 mx-auto flex justify-center items-center hover:bg-red-700";
 
 export const Results = ({
   resultsCalcs,
@@ -58,9 +58,11 @@ export const Results = ({
 
   return (
     <>
-      <ColorKey />
+      <div className="h-1/8">
+        <ColorKey />
+      </div>
       <Divider className="my-0" />
-      <div className="h-96">
+      <div className="h-[27rem] py-2">
         {pokemonInfo ? (
           <PokemonCalcInfo />
         ) : (
@@ -71,28 +73,30 @@ export const Results = ({
           />
         )}
       </div>
-      <Divider className="mt-12" />
+      <Divider />
 
-      <Text className="px-2 font-semibold">{t("projectExplain.note2")}</Text>
-      <div className="flex flex-row gap-x-4">
-        <Button
-          name=""
-          onClick={() => {
-            print();
-          }}
-          label={t("common.generatePdf")}
-          className={DOWNLOAD_BUTTON_CLASS}
-        ></Button>
+      <div className="flex flex-col h-full justify-between py-4">
+        <Text className="px-2 font-semibold">{t("projectExplain.note2")}</Text>
+        <div className="flex flex-row gap-x-4">
+          <Button
+            name=""
+            onClick={() => {
+              print();
+            }}
+            label={t("common.generatePdf")}
+            className={DOWNLOAD_BUTTON_CLASS}
+          ></Button>
 
-        <Button
-          circleBorder="all"
-          className="w-1/2 h-16 mx-auto"
-          name=""
-          label={t("message.generateAnother")}
-          onClick={() => {
-            resetPage();
-          }}
-        />
+          <Button
+            circleBorder="all"
+            className="w-1/2 h-16 mx-auto"
+            name=""
+            label={t("message.generateAnother")}
+            onClick={() => {
+              resetPage();
+            }}
+          />
+        </div>
       </div>
     </>
   );

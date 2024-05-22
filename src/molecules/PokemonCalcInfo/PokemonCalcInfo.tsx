@@ -17,7 +17,7 @@ export const PokemonCalcInfo = () => {
         label="back"
         className="rounded-xl w-24 ml-4 mb-2"
       />
-      <div className="flex flex-col gap-y-6 max-h-96 overflow-auto px-6">
+      <div className="flex flex-col gap-y-6 h-[27rem] overflow-auto px-6">
         <div className="flex flex-row gap-x-8 p-4 items-center">
           <Sprite
             src={pokemonInfo?.img}
@@ -26,7 +26,7 @@ export const PokemonCalcInfo = () => {
               pokemonInfo?.[
                 pokemonSet === "extreme" ? "calcExtreme" : "calcSet"
               ]?.ko_chance
-            )} w-[72px]`}
+            )} w-[6rem]`}
           />
           <Text className="text-lg font-semibold">{pokemonInfo?.pokemon}</Text>
         </div>

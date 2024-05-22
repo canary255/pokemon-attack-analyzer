@@ -58,31 +58,23 @@ export const Report = () => {
             <Defender />
           </div>
           <div
-            className={`${backgroundColors} border-t-1 border-l-0 lg:border-b-0 xl:col-span-1 xl:border-t-0 md:col-span-2`}
+            className={`${backgroundColors} border-t-1 border-l-0 lg:border-b-0 xl:col-span-1 xl:border-t-0 md:col-span-2 flex flex-col `}
           >
-            {page === 0 && (
-              <div className="flex flex-col px-3 py-3 h-full">
-                <Information />
-              </div>
-            )}
+            {page === 0 && <Information />}
             {page === 1 && (
-              <div className="flex flex-col gap-y-1">
-                <LoadingCalcs
-                  numberDex={numberDex}
-                  totalDex={totalDex}
-                  avatar={data?.avatar || missingno}
-                />
-              </div>
+              <LoadingCalcs
+                numberDex={numberDex}
+                totalDex={totalDex}
+                avatar={data?.avatar || missingno}
+              />
             )}
             {page === 2 && (
-              <div className="flex flex-col gap-y-1">
-                <Results
-                  resultsCalcs={resultsCalcs}
-                  setPage={setPage}
-                  data={data}
-                  avatar={avatar}
-                />
-              </div>
+              <Results
+                resultsCalcs={resultsCalcs}
+                setPage={setPage}
+                data={data}
+                avatar={avatar}
+              />
             )}
           </div>
         </div>
