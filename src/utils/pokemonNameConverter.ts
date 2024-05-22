@@ -66,6 +66,24 @@ export const nameConverter = (name: string) => {
   ) {
     return name + "-Mask";
   }
+  if (name === "Necrozma-Dusk-Mane") {
+    return "Necrozma-Dusk";
+  }
+  if (name === "Necrozma-Dawn-Wings") {
+    return "Necrozma-Dawn";
+  }
+  if (name === "Minior") {
+    return "Minior-Red-Meteor";
+  }
+  if (name === "Giratina") {
+    return "Giratina-Altered";
+  }
+  if (name === "Meowstic") {
+    return "Meowstic-Male";
+  }
+  if (name === "Meowstic-F") {
+    return "Meowstic-Female";
+  }
 
   return name;
 };
