@@ -48,7 +48,7 @@ export const Report = () => {
       <form onSubmit={methods.handleSubmit(onSubmit)}>
         <div className="grid xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 dark:bg-gray-800">
           <div
-            className={`${backgroundColors} md:h-minus-header border-l-0 border-y-0 lg:border-b-0 sm:border-b flex flex-col min-[315px]:px-4 sm:px-12 py-4 justify-evenly `}
+            className={`${backgroundColors} md:h-minus-header border-l-0 border-y-0 lg:border-b-0 sm:border-b flex flex-col min-[315px]:px-4 sm:px-12 gap-y-4 py-4 justify-evenly `}
           >
             <Attacker avatar={avatar} setAvatar={setAvatar} />
           </div>
