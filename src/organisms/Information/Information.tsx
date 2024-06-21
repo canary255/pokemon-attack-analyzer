@@ -44,7 +44,7 @@ export const Information = () => {
           ></RadioGroupUI>
         </div>
       </div>
-      <div className="items-end flex justify-center h-1/4 max-xl:mt-20 py-3">
+      <div className="items-end flex justify-center">
         <Button
           name="upload"
           type="submit"
