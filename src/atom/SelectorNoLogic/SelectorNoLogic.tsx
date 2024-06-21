@@ -15,6 +15,7 @@ interface SelectorProps {
   options: OptionsType[];
   value: string;
   name?: string;
+  disabled?: boolean;
 }
 
 export const SelectorNoLogic = ({
@@ -25,6 +26,7 @@ export const SelectorNoLogic = ({
   label,
   options,
   name,
+  disabled,
 }: SelectorProps) => {
   const { t } = useTranslation();
   const selectorRef = useRef<HTMLDivElement>(null);
@@ -54,8 +56,15 @@ export const SelectorNoLogic = ({
   return (
     <div className={`flex flex-col gap-y-1 ${className}`}>
       {label ? <Text>{label}</Text> : null}
-      <Listbox defaultValue={value} onChange={onChange} refName={name}>
-        <Listbox.Button className="relative">
+      <Listbox
+        defaultValue={value}
+        onChange={onChange}
+        refName={name}
+        disabled={disabled}
+      >
+        <Listbox.Button
+          className={`relative ${disabled && "opacity-50 cursor-not-allowed"}`}
+        >
           <div className="flex">
             <span
               className={`w-full dark:bg-inputBackground px-2 py-1 ${
