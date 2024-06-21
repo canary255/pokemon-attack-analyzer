@@ -12,6 +12,7 @@ module.exports = {
         redSemaphore: "#CB3234",
         darkGray: "rgb(72,73,76)",
         inputBackground: "#EEEEEE",
+        light: "#f0f0f0",
       },
       textShadow: {
         sm: "0 1px 2px var(--tw-shadow-color)",
@@ -22,7 +23,15 @@ module.exports = {
         bebas: ["Bebas", "sans-serif"],
       },
       height: {
-        "minus-header": "calc(100vh - 4rem)",
+        "minus-header": "calc(100vh - 6rem)",
+      },
+      boxShadow: {
+        "custom-light":
+          "0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)",
+        "custom-medium":
+          "0 6px 10px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1)",
+        "custom-heavy":
+          "0 8px 15px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.15)",
       },
     },
   },

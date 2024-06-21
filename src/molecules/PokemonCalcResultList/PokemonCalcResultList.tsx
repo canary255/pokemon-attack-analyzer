@@ -89,7 +89,7 @@ export const PokemonCalcResultList = ({
   return (
     <>
       <div className="flex justify-center w-full mb-3">
-        <div className="grid grid-cols-3 px-6 sm:gap-x-8 gap-y-1">
+        <div className="grid grid-cols-3 px-6 sm:gap-x-8 gap-y-1 mb-2">
           <Text className="text-3xl col-span-3 mb-1">
             Total: {filteredList.length}
           </Text>
@@ -122,7 +122,7 @@ export const PokemonCalcResultList = ({
       <div
         ref={scrollContainerRef}
         onScroll={handleScroll}
-        className="grid min-[315px]:grid-cols-3 sm:grid-cols-5 gap-y-6 lg:max-h-80 min-[315px]:max-h-64 overflow-auto place-items-center px-6"
+        className="shadow-custom-medium grid min-[315px]:grid-cols-3 bg-gray-100 dark:bg-gray-600 rounded-lg py-2 sm:grid-cols-5 gap-y-6 max-h-96  overflow-auto place-items-center px-6"
       >
         {filteredList.map((item) => {
           return (
