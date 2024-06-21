@@ -40,8 +40,6 @@ export const Report = () => {
     localStorage.setItem("pokemonSetData", JSON.stringify(data));
   };
 
-  const backgroundColors = "";
-
   return (
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
@@ -57,7 +55,7 @@ export const Report = () => {
             </div>
           </div>
           <div
-            className={`${backgroundColors} xl:col-span-1 xl:border-t-0 md:col-span-2 flex flex-col min-[315px]:px-4 sm:px-8 py-4`}
+            className={`xl:col-span-1 xl:border-t-0 md:col-span-2 flex flex-col min-[315px]:px-4 sm:px-8 py-4`}
           >
             <div className=" bg-light dark:bg-darkGray flex flex-col justify-evenly md:h-minus-header rounded-xl p-4 shadow-custom-heavy">
               {page === 0 && <Information />}
