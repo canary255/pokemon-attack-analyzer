@@ -9,6 +9,7 @@ interface SelectorProps {
   centerText?: boolean;
   label?: string | null;
   options: OptionsType[];
+  disabled?: boolean;
 }
 
 export const SelectorUI = ({
@@ -17,6 +18,7 @@ export const SelectorUI = ({
   centerText = false,
   label,
   options,
+  disabled,
 }: SelectorProps) => {
   const { control } = useFormContext();
 
@@ -36,6 +38,7 @@ export const SelectorUI = ({
           className={className}
           centerText={centerText}
           label={label}
+          disabled={disabled}
         />
       )}
     />

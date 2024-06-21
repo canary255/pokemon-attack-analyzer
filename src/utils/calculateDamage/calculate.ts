@@ -89,7 +89,8 @@ export const calculateDamage = (
       spikes: Number(form.spikes),
       isProtected: form.protect,
       isSR: form.stealthRock,
-      isForesight: form.foresight,
+      //TODO: REMOVE STELLAR TERATYPE FROM ISFORESIGHT
+      isForesight: form.foresight || form.teraType === "Stellar",
     },
     attackerSide: {
       isHelpingHand: form.helpingHand,

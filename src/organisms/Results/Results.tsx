@@ -62,7 +62,7 @@ export const Results = ({
         <ColorKey />
       </div>
       <Divider className="my-0" />
-      <div className="h-[27rem] py-2">
+      <div className="py-2">
         {pokemonInfo ? (
           <PokemonCalcInfo />
         ) : (

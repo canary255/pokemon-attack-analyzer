@@ -3,22 +3,43 @@ import { Sprite } from "../../atom/Sprite/Sprite";
 import { Text } from "../../atom/Text/Text";
 import { useFilterStore } from "../../hooks/useFilterStore";
 import { useResultsStore } from "../../hooks/useResultsStore";
+import { CalcData } from "../../types/calcData";
 import { survivalColor } from "../../utils/color";
 
 export const PokemonCalcInfo = () => {
   const { pokemonInfo, setPokemonInfo } = useResultsStore();
   const { pokemonSet } = useFilterStore();
 
+  const PokemonInfoCard = ({
+    pokemonInfo,
+    title,
+  }: {
+    pokemonInfo: CalcData;
+    title: string;
+  }) => {
+    return (
+      <div
+        className={`${survivalColor(pokemonInfo?.ko_chance)}
+          p-3 rounded-xl shadow-md`}
+      >
+        <Text className="text-lg !text-gray-800 font-bold">{title}</Text>
+        <Text className="!text-gray-800 font-semibold">
+          {pokemonInfo?.description}
+        </Text>
+      </div>
+    );
+  };
+
   return (
-    <>
+    <div className="flex flex-col w-full gap-y-4">
       <Button
         name="back"
         onClick={() => setPokemonInfo(undefined)}
         label="back"
-        className="rounded-xl w-24 ml-4 mb-2"
+        className="rounded-xl w-24 text-xl"
       />
-      <div className="flex flex-col gap-y-6 h-[27rem] overflow-auto px-6">
-        <div className="flex flex-row gap-x-8 p-4 items-center">
+      <div className="flex flex-col gap-y-6 overflow-auto px-10 bg-gray-100 dark:bg-gray-600 shadow-custom-medium rounded-lg py-4">
+        <div className="flex flex-row gap-x-8 items-center">
           <Sprite
             src={pokemonInfo?.img}
             pokemonName={pokemonInfo?.pokemon}
@@ -28,37 +49,27 @@ export const PokemonCalcInfo = () => {
               ]?.ko_chance
             )} w-[6rem]`}
           />
-          <Text className="text-lg font-semibold">{pokemonInfo?.pokemon}</Text>
+          <Text className="text-2xl font-semibold dark:text-shadow-sm">
+            {pokemonInfo?.pokemon}
+          </Text>
         </div>
 
         <div className="flex flex-col gap-y-3">
           {pokemonInfo?.calcSet && (
-            <div
-              className={`${survivalColor(pokemonInfo?.calcSet?.ko_chance)}
-          p-3 ml-4 mr-4 rounded-xl shadow-md`}
-            >
-              <Text className="font-bold">
-                Pokémon with set case: {pokemonInfo.calcSet.text_evs}
-              </Text>
-              <Text className="dark:text-shadow-sm dark:shadow-black dark:font-bold">
-                {pokemonInfo.calcSet.description}
-              </Text>
-            </div>
+            <PokemonInfoCard
+              pokemonInfo={pokemonInfo?.calcSet}
+              title={`Pokémon with set case: ${pokemonInfo?.calcSet?.text_evs}`}
+            />
           )}
 
           {pokemonInfo?.calcExtreme && (
-            <div
-              className={`${survivalColor(pokemonInfo?.calcExtreme?.ko_chance)}
-          p-3 ml-4 mr-4 rounded-xl shadow-md`}
-            >
-              <Text className="font-bold">Extreme case:</Text>
-              <Text className="dark:text-shadow-sm dark:shadow-black dark:font-bold">
-                {pokemonInfo.calcExtreme.description}
-              </Text>
-            </div>
+            <PokemonInfoCard
+              pokemonInfo={pokemonInfo?.calcExtreme}
+              title="Extreme case"
+            />
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 };

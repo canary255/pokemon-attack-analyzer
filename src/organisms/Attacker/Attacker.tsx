@@ -26,6 +26,9 @@ import { getAvatarUrl } from "../../utils/getAvatarUrl";
 import { MoveData } from "@smogon/calc/dist/data/moves";
 import { status } from "../../utils/pokemonConsts/status";
 import { speedDependantMoves } from "../../utils/speedDependantMoves";
+import { disallowMechanicOptions } from "../../utils/disallowMechanicOptions";
+import { checkSpeciesValues } from "../../utils/checkSpeciesValues";
+import { Fields } from "../../types/fields";
 
 interface AttackerProps {
   avatar?: string;
@@ -78,6 +81,7 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
 
   useEffect(() => {
     if (specie !== "") {
+      checkSpeciesValues(specie, watch, setValue);
       if (!isLoading && data) {
         const avatarUrl = getAvatarUrl(data?.name, data);
         setAvatar(avatarUrl);
@@ -182,12 +186,14 @@ export const Attacker = ({ avatar, setAvatar }: AttackerProps) => {
         className="w-full"
         name="mechanic"
         options={mechanic}
+        disabledOptions={disallowMechanicOptions(specie)}
       />
       {watch("mechanic") === "tera" && (
         <SelectorUI
           options={teraType}
           name="teraType"
           label={t("attacker.selectTeraType")}
+          disabled={disallowMechanicOptions(specie).includes(Fields.TERATYPE)}
         />
       )}
 

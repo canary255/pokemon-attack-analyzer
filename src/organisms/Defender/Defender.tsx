@@ -50,7 +50,7 @@ export const Defender = () => {
 
       <div className="flex flex-col gap-y-3">
         <div className="grid place-items-center">
-          <RadioGroupUI options={terrain} name="terrain" className="w-3/4" />
+          <RadioGroupUI options={terrain} name="terrain" />
         </div>
         <div className={`grid gap-y-1 place-items-center`}>
           <div>

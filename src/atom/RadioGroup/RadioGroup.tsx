@@ -11,6 +11,7 @@ interface RadioGroupProps {
   className?: string;
   circleBorder?: "left" | "right" | "all" | "none";
   options: OptionsType[];
+  disabledOptions?: string[];
 }
 
 const setBorderDirection = (index: number, length: number) => {
@@ -24,6 +25,7 @@ export const RadioGroupUI = ({
   label,
   className,
   options,
+  disabledOptions,
 }: RadioGroupProps) => {
   const { t } = useTranslation();
   const { control, watch } = useFormContext();
@@ -47,6 +49,7 @@ export const RadioGroupUI = ({
                   <RadioGroup.Option
                     key={index}
                     value={option.value}
+                    disabled={disabledOptions?.includes(option.value)}
                     className={`h-7 p-3 flex w-full items-center justify-center border cursor-pointer
                      border-black col-span-1 shadow-lg 
                     ${
@@ -58,6 +61,11 @@ export const RadioGroupUI = ({
                       value === option.value
                         ? "bg-primary text-white"
                         : "bg-white text-black dark:bg-inputBackground"
+                    }
+                    ${
+                      disabledOptions?.includes(option.value)
+                        ? "opacity-50 cursor-not-allowed"
+                        : ""
                     }`}
                   >
                     {

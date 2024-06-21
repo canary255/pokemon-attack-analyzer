@@ -17,8 +17,26 @@ import { EXTREME_EV_SPREAD, INMMUNE_POKEMON_SET } from "../consts";
 import { nameConverter } from "../pokemonNameConverter";
 import { TypeChart } from "@smogon/calc/dist/data/types";
 import { calculateDamage } from "./calculate";
+import { Mechanic } from "../../types/mechanic";
 
 const defensivePokemonList = getGen9PokemonDefensiveDataList();
+
+type moveCheckerProps = {
+  move: string;
+  mechanic: Mechanic;
+  teraType: TypeName;
+};
+
+const moveChecker = ({ move, mechanic, teraType }: moveCheckerProps) => {
+  if (
+    move === "Tera Blast" ||
+    (move === "Tera Starstorm" && mechanic === "tera")
+  ) {
+    return teraType;
+  }
+
+  return MOVES[MOVES.length - 1][move].type;
+};
 
 export const loadDataCalculator = async (
   form: ReportProps,
@@ -34,10 +52,11 @@ export const loadDataCalculator = async (
 
   setTotalDex(dex.length);
   const calcsList: PokemonCalculatedData[] = [];
-  const moveType: TypeName =
-    form.move === "Tera Blast" && form.mechanic === "tera"
-      ? form.teraType
-      : MOVES[MOVES.length - 1][form.move].type;
+  const moveType: TypeName = moveChecker({
+    move: form.move,
+    mechanic: form.mechanic,
+    teraType: form.teraType,
+  });
 
   let i = 1;
   for (const pokemon of dex) {
@@ -61,13 +80,14 @@ export const loadDataCalculator = async (
     try {
       const pokemonType: [TypeName, TypeName?] =
         SPECIES[SPECIES.length - 1][normalizedPokemon].types;
-      const typeValue: TypeChart = TYPE_CHART[TYPE_CHART.length - 1];
+      const everyTypeValue: TypeChart = TYPE_CHART[TYPE_CHART.length - 1];
 
       //1 - add type immunity
       if (
         !form.foresight &&
-        (typeValue?.[moveType]?.[pokemonType[0]] === 0 ||
-          (pokemonType[1] && typeValue?.[moveType]?.[pokemonType[1]] === 0))
+        (everyTypeValue?.[moveType]?.[pokemonType[0]] === 0 ||
+          (pokemonType[1] &&
+            everyTypeValue?.[moveType]?.[pokemonType[1]] === 0))
       ) {
         calcsList.push(await inmmunePokemon(pokemon));
         i++;
@@ -94,7 +114,7 @@ export const loadDataCalculator = async (
           )),
       });
     } catch (error) {
-      console.log(error);
+      console.log(error, pokemon);
       calcsList.push(await inmmunePokemon(pokemon));
     } finally {
       i++;
